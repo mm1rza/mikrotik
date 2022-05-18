@@ -1,0 +1,24 @@
+:local bot "xx:xx-xx";
+:local chatID "xxxx";
+:local namaINT "lan";
+:local upscript "~total-$namaINT-DOWN";
+:local dlscript "~total-$namaINT-UP";
+:local tx [/interface get value-name="tx-byte" [find name="$namaINT"]];
+:local rx [/interface get value-name="rx-byte" [find name="$namaINT"]];
+:local txMB ($tx / 1024 / 1024 / 1024);
+:local rxMB ($rx / 1024 / 1024 / 1024);
+:if ([:len [/system script find name="$upscript"]] = 0) do={
+/system script add name=$upscript
+:delay 1s;
+}
+:if ([:len [/system script find name="$dlscript"]] = 0) do={
+/system script add name=$dlscript
+:delay 1s;
+}
+/system script set [find name=$upscript] source="$txMB"
+/system script set [find name=$dlscript] source="$rxMB"
+:delay 1s;
+:local totalUP [/system script get [find name=$upscript] source];
+:local totalDOWN [/system script get [find name=$dlscript] source];
+:local total ($totalUP + $totalDOWN);
+/tool fetch url="https://api.telegram.org/bot$bot/sendmessage\?chat_id=$chatID&text=\E2\9C\85 Pemakaian $namaINT%0A DOWNLOAD  : $totalUP GB %0A UPLOAD          : $totalDOWN GB %0A TOTAL              : $total GB" keep-result=no;

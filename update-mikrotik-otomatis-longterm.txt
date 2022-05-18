@@ -1,0 +1,7 @@
+/system package update
+set channel=long-term
+:delay 2s;
+/system package update
+check-for-updates once
+:delay 3s;
+:if ( [get status] = "New version is available") do={ install }

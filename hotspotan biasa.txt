@@ -1,0 +1,33 @@
+
+:local x "$user";
+:if ([/ip hotspot user get $x uptime]<00:00:01 ) do={
+{
+:local nama "$user";
+:local ips [/ip hotspot active get [find user="$nama"] address];
+:local exp [/ip hotspot user get [find name="$nama"] comment];
+:local exp2 [ :pick $exp 16 25 ];
+:local profile [/ip hotspot user get [find name="$nama"] profile];
+:local date "$[/system clock get date]";
+:local time "$[/system clock get time]";
+:local time2 [ :pick $time 0 5 ];
+:local mac [/ip hotspot active get [find user="$nama"] mac-address];
+:local host [/ip dhcp-server lease get [find address="$ips"] host-name];
+:local host2 [len $host];
+:if ($host2 < 1) do={:set host ($host "<s>unknown</s>");};
+:if ($host2 > 2) do={:set host ($host "$host");};
+:local host3 [ :pick $host 0 18 ];
+:local lby [/ip hotspot active get [find user="$nama"] login-by];
+:local limitjam [/ip hotspot user get [find name="$nama"] limit-uptime];
+:local yasip  [ :pick $limitjam  1 2 ];
+:local yasip2 [ :pick $limitjam  0 2 ];
+:local limit [/ip hotspot active get [find user="$nama"] limit-bytes-total];
+:local totq [(($limit)/1048576)];
+:local useraktif [/ip hotspot active print count-only];
+:local avgRtt;
+/tool flood-ping $ips count=5 do={
+  :if ($sent = 5) do={
+    :set avgRtt $"avg-rtt"
+}}
+/tool fetch url="https://api.telegram.org/botXXXX-XXXX/sendMessage?chat_id=XXXX&text=\F0\9F\9F\A2 <b>AKTIF = <code>$nama</code></b>%0A- pada : $date %2d $time2%0A- paket : $profile%2d3mb%0A- mac : $mac%0A- hp : $host3%0A- ping ke hp : $avgRtt%0Dms&parse_mode=html" mode=http keep-result=no;
+}
+};

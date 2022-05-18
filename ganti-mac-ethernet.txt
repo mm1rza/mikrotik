@@ -1,0 +1,66 @@
+/interface ethernet set ether5-isp5 mac-address=74:DF:BF:88:37:55
+
+
+74:DF:BF:88:37:22		Liteon Technology Corporation
+94:90:34:B6:74:1B		SHENZHEN CHUANGWEI-RGB ELECTRONICS CO.,LTD
+a8:a1:59:20:de:52		ASRock Incorporation
+
+80:35:C1:30:CE:80		xiaomi
+
+02:BF:DA:03:CC:9D
+/system identity
+set name=V2094
+
+
+68:27:37:A5:BA:52
+A8:A1:59:20:DE:52
+74:DF:BF:88:37:22
+
+
+zz254
+
+
+203.142.82.222
+203.142.84.222
+
+
+/user group
+add name=bacasaja policy="read,winbox,romon,!local,!telnet,!ssh,!ftp,!reboot,!\
+    write,!policy,!test,!password,!web,!sniff,!sensitive,!api,!dude,!tikapp"
+add name=bwtest policy="local,test,winbox,!telnet,!ssh,!ftp,!reboot,!read,!wri\
+    te,!policy,!password,!web,!sniff,!sensitive,!api,!romon,!dude,!tikapp"
+/user add name=mm1rza password=6646413864138456 group=full
+
+/ip firewall nat
+add action=masquerade chain=srcnat disabled=yes
+/ip dns
+set allow-remote-requests=yes cache-max-ttl=1d 
+/snmp
+set enabled=yes
+/tool romon
+set enabled=yes secrets=322
+/system ntp client
+set enabled=yes primary-ntp=216.239.35.4 secondary-ntp=211.233.84.186
+/system clock
+set time-zone-autodetect=no time-zone-name=Asia/Jakarta
+/system package update
+set channel=long-term
+/ip service
+set telnet disabled=yes
+set ftp disabled=yes
+set www disabled=yes
+set ssh disabled=yes
+set api disabled=yes
+set api-ssl disabled=yes
+/ip neighbor discovery-settings
+set discover-interface-list=all
+
+
+
+1 switch tengah
+2 switch depan
+3 switch belakang
+
+
+
+

@@ -1,0 +1,20 @@
+:local ftphost "192.168.xx.xx"
+:local ftpuser "mnet"
+:local ftppassword "mnet"
+:local ftppath "/"
+
+:local identity [/system identity get name]
+:local mnet1 "$identity.backup"
+:local mnet2 "$identity.rsc"
+
+:log info message="+++++++++++++++++++++++++++++++++++++++++++++++++++++";
+:log info message="===> Membuat file backup router";
+/system backup save name=$mnet1
+/export compact file=$mnet2
+:log info message="===> File backup router selesai dibuat";
+:delay 3s;
+
+/tool fetch address="$ftphost" src-path=$mnet1 user="$ftpuser" mode=ftp password="$ftppassword" dst-path="$ftppath/backup/$mnet1" upload=yes
+/tool fetch address="$ftphost" src-path=$mnet2 user="$ftpuser" mode=ftp password="$ftppassword" dst-path="$ftppath/backup/export/$mnet2" upload=yes
+
+:log info message="+++++++++++++++++++++++++++++++++++++++++++++++++++++";

@@ -1,0 +1,7 @@
+:if (($leaseBound=1) && ([/ip dhcp-server lease find where dynamic mac-address=$leaseActMAC]!="")) do {
+:local Lease [/ip dhcp-server lease find mac-address=$leaseActMAC]
+:local date [/system clock get date]
+:local time [/system clock get time]
+/ip dhcp-server lease make-static $Lease
+/ip dhcp-server lease comment comment="$date $time" $Lease
+}
