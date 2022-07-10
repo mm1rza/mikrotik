@@ -1,0 +1,4 @@
+:local namaINT "lan-client";
+:local tx [/interface get value-name="tx-byte" [find name="$namaINT"]];
+:local txMB ($tx / 1024 / 1024 / 1024);
+/system sche set comment=$txMB [find name="#TRAFIK-UPLOAD"]
