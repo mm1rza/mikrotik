@@ -1,0 +1,17 @@
+bot garuda		6100161454:AAG0zi0jeagXPbR9xTy9soSU3fa9Mbqy9rA
+log				-1001939617038
+hotspot			-1001875211354
+rumahan			-1001876603288
+koneksi			-1001880353671
+
+ON
+/tool fetch url="https://api.telegram.org/bot6100161454:AAG0zi0jeagXPbR9xTy9soSU3fa9Mbqy9rA/sendmessage\?chat_id=-938282431&text=\E2\9C\85 = AP JTB" keep-result=no;
+}
+
+OFF
+/tool fetch url="https://api.telegram.org/bot6100161454:AAG0zi0jeagXPbR9xTy9soSU3fa9Mbqy9rA/sendmessage\?chat_id=-938282431&text=\E2\9D\8C = AP BEBEK" keep-result=no;
+}
+
+
+/tool fetch url="https://api.telegram.org/bot6100161454:AAG0zi0jeagXPbR9xTy9soSU3fa9Mbqy9rA/sendmessage\?chat_id=-938282431&text=\E2\9D\8C = PUAD" keep-result=no;
+}
