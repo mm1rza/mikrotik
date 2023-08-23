@@ -1,0 +1,157 @@
+##	UPDATE PACKAGE & UPGRADE DI SCRIPT
+## 	BUAT FOLDER BACKUP DI SERVER AGAR BISA AUTO BACKUP
+
+###################################################
+## 				  BASIC SETTING 				 ##
+###################################################
+/system ntp client
+set enabled=yes primary-ntp=216.239.35.4 secondary-ntp=211.233.84.186
+/system clock
+set time-zone-autodetect=no time-zone-name=Asia/Jakarta
+/ip dns
+set allow-remote-requests=yes cache-max-ttl=1d
+#set allow-remote-requests=yes cache-max-ttl=1d servers=8.8.8.8,8.8.4.4
+/system package update
+set channel=long-term
+
+
+###################################################
+## 				  ADVANCE SETTINGS 				 ##
+###################################################
+/tool romon
+set enabled=yes
+/snmp
+set enabled=yes
+/ip neighbor discovery-settings
+set discover-interface-list=all
+/ip service
+set telnet disabled=yes
+set ftp disabled=yes
+set www disabled=yes
+set ssh disabled=yes
+set api disabled=yes
+set api-ssl disabled=yes
+#/ip firewall nat
+#add action=masquerade chain=srcnat disabled=yes
+
+
+###################################################
+## 			  USERNAME & PASSWORD 				 ##
+###################################################
+/user group
+add name=bacasaja policy="read,winbox,romon,!local,!telnet,!ssh,!ftp,!reboot,!\
+    write,!policy,!test,!password,!web,!sniff,!sensitive,!api,!dude,!tikapp"
+add name=bwtest policy="local,test,winbox,!telnet,!ssh,!ftp,!reboot,!read,!wri\
+    te,!policy,!password,!web,!sniff,!sensitive,!api,!romon,!dude,!tikapp"
+	
+/user add name=tegalakalakanemen password=walikotanedandutanbae456 group=full
+/user add name=mm1rza password=polisibobo456 group=full
+/user add name=mm1rzamm1rza password=awasadawewe456 group=bacasaja
+/user add name=usermirza password=usermirza456 group=bacasaja
+/user add name=admin1 group=bwtest
+/user add name=admin2 group=bwtest
+/user add name=admin3 group=bwtest
+/user add name=admin123 group=bwtest
+
+/user set tegalakalakanemen password=walikotanedandutanbae456 group=full
+/user set mm1rza password=polisibobo456 group=full
+/user set mm1rzamm1rza password=awasadawewe456 group=bacasaja
+/user set usermirza password=usermirza456 group=bacasaja
+/user set admin1 password="" group=bwtest
+/user set admin2 password="" group=bwtest
+/user set admin3 password="" group=bwtest
+/user set admin123 password="" group=bwtest
+
+#/user set admin password="" group=bwtest
+
+
+###################################################
+##	SCRIPT AUTO BACKUP SETINGAN KE SERVER MIRZA	 ##
+###################################################
+/system scheduler
+add interval=12h name="##backup ke server mirza" on-event=\
+    "/system script run ##backupkeservermirza" policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    start-date=jan/01/2020 start-time=00:00:00
+/system script
+add dont-require-permissions=yes name=##backupkeservermirza owner=admin \
+    policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    source=":local ftphost \"vpn.mnet.my.id\"\r\
+    \n:local ftpuser \"mnet\"\r\
+    \n:local ftppassword \"mnet\"\r\
+    \n:local ftppath \"/backup-client/baru-tegal/\"\r\
+    \n\r\
+    \n:local identity [/system identity get name]\r\
+    \n:local mnet1 \"\$identity.backup\"\r\
+    \n:local mnet2 \"\$identity.rsc\"\r\
+    \n\r\
+    \n/system backup save name=\$mnet1\r\
+    \n/export compact file=\$mnet2\r\
+    \n\r\
+    \n:delay 10s;\r\
+    \n/tool fetch address=\"\$ftphost\" src-path=\$mnet1 user=\"\$ftpuser\" mo\
+    de=ftp password=\"\$ftppassword\" dst-path=\"\$ftppath/\$mnet1\" upload=ye\
+    s\r\
+    \n/tool fetch address=\"\$ftphost\" src-path=\$mnet2 user=\"\$ftpuser\" mo\
+    de=ftp password=\"\$ftppassword\" dst-path=\"\$ftppath/\$mnet2\" upload=ye\
+    s"
+add dont-require-permissions=no name=##updatedanupgrade owner=mm1rza policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/\
+    system package update\r\
+    \nset channel=long-term\r\
+    \n:delay 2s;\r\
+    \n/system package update\r\
+    \ncheck-for-updates once\r\
+    \n:delay 3s;\r\
+    \n:if ( [get status] = \"New version is available\") do={ install }\r\
+    \n\r\
+    \n#update frimware\r\
+    \n/system routerboard upgrade\r\
+    \ny\r\
+    \ny"
+
+
+###################################################
+## 				 WIRELESS 						 ##
+###################################################
+/interface wireless nstreme
+set wlan1 enable-nstreme=yes
+/interface wireless
+set [ find default-name=wlan1 ] disabled=no 
+/interface wireless
+set [ find default-name=wlan1 ] band=5ghz-a/n channel-width=20/40mhz-XX
+/interface wireless
+set [ find default-name=wlan1 ] country=no_country_set disabled=no 
+/interface wireless
+set [ find default-name=wlan1 ] frequency-mode=superchannel
+/interface wireless
+set [ find default-name=wlan1 ] mode=station-bridge
+
+
+###################################################
+## 				  IP ADDRESS	 				 ##
+###################################################
+/interface bridge
+add name=bridge
+
+/ip route
+add distance=10 gateway=192.168.55.1
+/ip dns
+set servers=192.168.55.1
+/ip address
+add address=192.168.55.2/24 interface=bridge network=192.168.55.0
+/system identity
+set name=002-AP-asep
+#	002-AP-asep
+#	003-ST-asep
+
+
+/interface bridge port
+add bridge=bridge interface=all
+
+
+####   SELESAI - SELESAI - SELESAI - SELESAI ####
+
+
+
+

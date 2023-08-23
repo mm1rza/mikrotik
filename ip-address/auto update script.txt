@@ -1,0 +1,32 @@
+/ip firewall address-list remove [find comment="MNET-GOOGLE"]
+:delay 1s
+:if ([:len [/file find name=list-ip-google.rsc]] > 0) do={/file remove list-ip-google.rsc }; 
+:delay 1s
+/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-google.rsc" mode=http;
+/import list-ip-google.rsc
+:delay 5s
+/file remove list-ip-google.rsc
+:log info message="berhasil import list-ip-google.rsc";
+
+
+
+/ip firewall address-list remove [find comment="MNET-SPEEDTEST"]
+:delay 1s
+:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file remove list-ip-speedtest.rsc }; 
+:delay 1s
+/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-speedtest.rsc" mode=http;
+/import list-ip-speedtest.rsc
+:delay 5s
+/file remove list-ip-speedtest.rsc
+:log info message="berhasil import list-ip-speedtest.rsc";
+
+
+
+--------------------ORIGINAL--------------------------
+:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file remove list-ip-speedtest.rsc }; 
+
+:delay 1s
+/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-speedtest.rsc" mode=http;
+/import list-ip-speedtest.rsc
+:delay 5s
+/file remove list-ip-speedtest.rsc

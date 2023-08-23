@@ -1,8 +1,0 @@
-:if ([/ping address=8.8.8.8 count=5] = 0) do={
-log error ("internet mati")
-/interface disable wlan1
-} else={
-log warning ("internet nyala")
-/interface enable wlan1
-};
- 

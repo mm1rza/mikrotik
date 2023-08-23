@@ -1,0 +1,185 @@
+/interface ethernet set [ find default-name=ether5 ] mac-address=74:DF:BF:88:37:55 name=ether5-isp5
+/interface list member add interface=ether5-isp5 list=ISP
+/ip dhcp-client add add-default-route=no interface=ether5-isp5
+
+/ip address add address=192.168.21.6/24 disabled=yes interface=ether5-isp5 network=192.168.21.0
+
+/ip firewall mangle add action=mark-routing chain=prerouting dst-address-list=!ip-modem-isp new-routing-mark=ether5 passthrough=no src-address-list=ip-local-to-isp5
+
+/ip route add comment=isp5 disabled=yes distance=1 gateway=192.168.21.1 routing-mark=ether5
+/ip route add comment=iisp5 disabled=yes distance=50 gateway=192.168.21.1
+/ip route add comment="     cek ISP5" distance=1 dst-address=9.9.9.11/32 gateway=192.168.21.1
+
+
+
+/tool netwatch add comment="     5" disabled=yes down-script="\r\
+    \n\r\
+    \n/ip route disable [find comment=\"isp5\"]\r\
+    \n/ip firewall nat disable [find comment=\"isp5\"]\r\
+    \n/ip firewall mangle disable [find comment=\"isp5\"]\r\
+    \n\r\
+    \n/ip route disable [find comment=\"iisp5\"]\r\
+    \n/ip route disable [find comment=\"iiisp5\"]\r\
+    \n\r\
+    \n/ip route disable [find comment=\"isp1>isp5\"]\r\
+    \n/ip route disable [find comment=\"isp2>isp5\"]\r\
+    \n/ip route disable [find comment=\"isp3>isp5\"]\r\
+    \n/ip route disable [find comment=\"isp4>isp5\"]\r\
+    \n\r\
+    \n\r\
+    \nlog error (\"isp5 mati\")\r\
+    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\8C isp5\" keep-result=no;" host=9.9.9.11 interval=5s timeout=2s up-script="/tool netwatch set disabled=yes [find comment=\"z 5 NOTIF\"]\r\
+    \n\r\
+    \n/ip route enable [find comment=\"isp5\"]\r\
+    \n/ip firewall nat enable [find comment=\"isp5\"]\r\
+    \n/ip firewall mangle enable [find comment=\"isp5\"]\r\
+    \n\r\
+    \n/ip route enable [find comment=\"iisp5\"]\r\
+    \n/ip route enable [find comment=\"iiisp5\"]\r\
+    \n\r\
+    \n/ip route enable [find comment=\"isp1>isp5\"]\r\
+    \n/ip route enable [find comment=\"isp2>isp5\"]\r\
+    \n/ip route enable [find comment=\"isp3>isp5\"]\r\
+    \n/ip route enable [find comment=\"isp4>isp5\"]\r\
+    \n\r\
+    \n:delay 500ms;\r\
+    \nlog warning (\"isp5 on\")\r\
+    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\85 isp5\" keep-result=no;"
+
+
+/tool netwatch add comment="z 5 NOTIF" disabled=yes down-script="\r\
+    \n\r\
+    \nlog error (\"isp5 mati notif\")\r\
+    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\8C isp5 notif\" keep-result=no;" host=9.9.9.11 interval=5s timeout=100ms up-script="\r\
+    \n:delay 500ms;\r\
+    \nlog warning (\"isp5 on notif\")\r\
+    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\85 isp5 notif\" keep-result=no;"
+
+
+
+/system script add dont-require-permissions=no name="!   isp5    ON ( AKTIF )" owner=mm1rza policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/interface disable vpn1\r\
+    \n\r\
+    \n/tool netwatch set disabled=no [find comment=\"     5\"]\r\
+    \n/tool netwatch set disabled=yes [find comment=\"z 5 NOTIF\"]\r\
+    \n\r\
+    \n/ip route enable [find comment=\"isp5\"]\r\
+    \n/ip firewall nat enable [find comment=\"isp5\"]\r\
+    \n/ip firewall mangle enable [find comment=\"isp5\"]\r\
+    \n\r\
+    \n/ip route enable [find comment=\"iisp5\"]\r\
+    \n/ip route enable [find comment=\"iiisp5\"]\r\
+    \n\r\
+    \n/ip route enable [find comment=\"isp1>isp5\"]\r\
+    \n/ip route enable [find comment=\"isp2>isp5\"]\r\
+    \n/ip route enable [find comment=\"isp3>isp5\"]\r\
+    \n/ip route enable [find comment=\"isp4>isp5\"]\r\
+    \n\r\
+    \n/interface enable vpn1\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN 1\"]\r\
+    \n\r\
+    \n/ip dns cache flush"
+/system script add dont-require-permissions=no name="!  isp5   OFF" owner=mm1rza policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/interface disable vpn1\r\
+    \n\r\
+    \n/tool netwatch set disabled=yes [find comment=\"     5\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"z 5 NOTIF\"]\r\
+    \n\r\
+    \n/ip route disable [find comment=\"isp5\"]\r\
+    \n/ip firewall nat disable [find comment=\"isp5\"]\r\
+    \n/ip firewall mangle disable [find comment=\"isp5\"]\r\
+    \n\r\
+    \n/ip route disable [find comment=\"iisp5\"]\r\
+    \n/ip route disable [find comment=\"iiisp5\"]\r\
+    \n\r\
+    \n/ip route disable [find comment=\"isp1>isp5\"]\r\
+    \n/ip route disable [find comment=\"isp2>isp5\"]\r\
+    \n/ip route disable [find comment=\"isp3>isp5\"]\r\
+    \n/ip route disable [find comment=\"isp4>isp5\"]\r\
+    \n\r\
+    \n/interface enable vpn1\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN 1\"]\r\
+    \n\r\
+    \n/ip dns cache flush"
+
+
+
+/system scheduler add disabled=yes interval=1m name="~ping isp5" on-event=":local intisp \"ether5\"\r\
+    \n:local namaisp \"isp5\"\r\
+    \n\r\
+    \n:local time [/system clock get time]\r\
+    \n:local error \"\$namaisp mati \$time -\"\r\
+    \n:local aman \"\$namaisp nyala \$time -\"\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.1 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 1.0.0.1\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.0.0.1\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.1 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 1.1.1.1\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.1.1.1\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.4.4 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 8.8.4.4\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 8.8.4.4\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.8.8 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 8.8.8.8\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 8.8.8.8\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.10 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 9.9.9.10\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 9.9.9.10\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.11 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 9.9.9.11\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 9.9.9.11\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.9 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 9.9.9.9\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 9.9.9.9\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.112 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 149.112.112.112\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 149.112.112.112\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.220 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 208.67.220.220\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.220.220\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.222.222 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 208.67.222.222\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.222.222\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.14 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 94.140.14.14\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.14\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.15 count=3 ] = 0) do={\r\
+    \nlog error (\"\$error 94.140.14.15\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.15\")\r\
+    \n};\r\
+    \n\r\
+    \n#:delay 1s;\r\
+    \n#log info message=\"\$namaisp batasssss\"" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon start-date=apr/11/2022 start-time=17:31:44

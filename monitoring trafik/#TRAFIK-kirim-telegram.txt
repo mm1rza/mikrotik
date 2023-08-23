@@ -1,6 +1,0 @@
-:local bot "xx";
-:local chatID "-xx";
-:local totalUP [/system sche get [find name="#TRAFIK-DOWNLOAD"] comment];
-:local totalDOWN [/system sche get [find name="#TRAFIK-UPLOAD"] comment];
-:local total ($totalUP + $totalDOWN);
-/tool fetch url="https://api.telegram.org/bot$bot/sendmessage\?chat_id=$chatID&text=\E2\9C\85 Pemakaian internet%0A DOWNLOAD  : $totalDOWN GB %0A UPLOAD          : $totalUP GB %0A TOTAL              : $total GB" keep-result=no;}
