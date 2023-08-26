@@ -1,4 +1,4 @@
-# aug/21/2023 12:00:00 by RouterOS 6.47.10
+# aug/23/2023 00:00:00 by RouterOS 6.47.10
 # software id = F371-ZY5D
 #
 # model = RBLHG-5nD

@@ -1,69 +1,166 @@
-:local intisp "ether4"
-:local namaisp "isp4"
+:local intisp "ether1"
+:local namaisp "isp1"
 
 :local time [/system clock get time]
-:local error "$namaisp mati $time"
-:local aman "$namaisp nyala $time"
+:local error "$namaisp mati $time -"
+:local aman "$namaisp nyala $time -"
 
 :if ([/ping routing-table="$intisp" address=8.8.8.8 count=3 ] = 0) do={
-log error ("    $error")
+log error ("$error 8.8.8.8 GOOGLE")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 8.8.8.8 GOOGLE")
 };
 
 :if ([/ping routing-table="$intisp" address=8.8.4.4 count=3 ] = 0) do={
-log error ("    $error")
+log error ("$error 8.8.4.4 GOOGLE")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 8.8.4.4 GOOGLE")
 };
 
 :if ([/ping routing-table="$intisp" address=1.1.1.1 count=3 ] = 0) do={
-log error ("    $error")
+log error ("$error 1.1.1.1 CLOUDFLARE")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 1.1.1.1 CLOUDFLARE")
 };
 
 :if ([/ping routing-table="$intisp" address=1.0.0.1 count=3 ] = 0) do={
-log error ("    $error")
+log error ("$error 1.0.0.1 CLOUDFLARE")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 1.0.0.1 CLOUDFLARE")
 };
 
-:if ([/ping routing-table="$intisp" address=4.2.2.1 count=3 ] = 0) do={
-log error ("    $error")
+:if ([/ping routing-table="$intisp" address=1.1.1.2 count=3 ] = 0) do={
+log error ("$error 1.1.1.2 CLOUDFLARE Malware Blocking Only")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 1.1.1.2 CLOUDFLARE Malware Blocking Only")
 };
 
-:if ([/ping routing-table="$intisp" address=4.2.2.2 count=3 ] = 0) do={
-log error ("    $error")
+:if ([/ping routing-table="$intisp" address=1.0.0.2 count=3 ] = 0) do={
+log error ("$error 1.0.0.2 CLOUDFLARE Malware Blocking Only")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 1.0.0.2 CLOUDFLARE Malware Blocking Only")
 };
 
-:if ([/ping routing-table="$intisp" address=4.2.2.3 count=3 ] = 0) do={
-log error ("    $error")
+:if ([/ping routing-table="$intisp" address=1.1.1.3 count=3 ] = 0) do={
+log error ("$error 1.1.1.3 CLOUDFLARE Malware and Adult Content Blocking Together")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 1.1.1.3 CLOUDFLARE Malware and Adult Content Blocking Together")
 };
 
-:if ([/ping routing-table="$intisp" address=4.2.2.4 count=3 ] = 0) do={
-log error ("    $error")
+:if ([/ping routing-table="$intisp" address=1.0.0.3 count=3 ] = 0) do={
+log error ("$error 1.0.0.3 CLOUDFLARE Malware and Adult Content Blocking Together")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 1.0.0.3 CLOUDFLARE Malware and Adult Content Blocking Together")
 };
 
-:if ([/ping routing-table="$intisp" address=4.2.2.5 count=3 ] = 0) do={
-log error ("    $error")
+:if ([/ping routing-table="$intisp" address=9.9.9.9 count=3 ] = 0) do={
+log error ("$error 9.9.9.9 QUAD 9")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 9.9.9.9 QUAD 9")
 };
 
-:if ([/ping routing-table="$intisp" address=4.2.2.6 count=3 ] = 0) do={
-log error ("    $error")
+:if ([/ping routing-table="$intisp" address=149.112.112.112 count=3 ] = 0) do={
+log error ("$error 149.112.112.112 QUAD 9")
 } else={
-log warning ("    $aman")
+#log warning ("$aman 149.112.112.112 QUAD 9")
 };
 
-:delay 1s;
-log info message="$namaisp batasssss"
+:if ([/ping routing-table="$intisp" address=9.9.9.11 count=3 ] = 0) do={
+log error ("$error 9.9.9.11 QUAD 9 Secured ECS: Malware blocking, DNSSEC Validation")
+} else={
+#log warning ("$aman 9.9.9.11 QUAD 9 Secured ECS: Malware blocking, DNSSEC Validation")
+};
+
+:if ([/ping routing-table="$intisp" address=149.112.112.11 count=3 ] = 0) do={
+log error ("$error 149.112.112.11 QUAD 9 Secured ECS: Malware blocking, DNSSEC Validation")
+} else={
+#log warning ("$aman 149.112.112.11 QUAD 9 Secured ECS: Malware blocking, DNSSEC Validation")
+};
+
+:if ([/ping routing-table="$intisp" address=9.9.9.10 count=3 ] = 0) do={
+log error ("$error 9.9.9.10 QUAD 9 Unsecured: No Malware blocking, no DNSSEC validation")
+} else={
+#log warning ("$aman 9.9.9.10 QUAD 9 Unsecured: No Malware blocking, no DNSSEC validation")
+};
+
+:if ([/ping routing-table="$intisp" address=149.112.112.10 count=3 ] = 0) do={
+log error ("$error 149.112.112.10 QUAD 9 Unsecured: No Malware blocking, no DNSSEC validation")
+} else={
+#log warning ("$aman 149.112.112.10 QUAD 9 Unsecured: No Malware blocking, no DNSSEC validation")
+};
+
+:if ([/ping routing-table="$intisp" address=208.67.222.222 count=3 ] = 0) do={
+log error ("$error 208.67.222.222 OpenDNS")
+} else={
+#log warning ("$aman 208.67.222.222 OpenDNS")
+};
+
+:if ([/ping routing-table="$intisp" address=208.67.220.220 count=3 ] = 0) do={
+log error ("$error 208.67.220.220 OpenDNS")
+} else={
+#log warning ("$aman 208.67.220.220 OpenDNS")
+};
+
+:if ([/ping routing-table="$intisp" address=208.67.222.123 count=3 ] = 0) do={
+log error ("$error 208.67.222.123 OpenDNS FamilyShield")
+} else={
+#log warning ("$aman 208.67.222.123 OpenDNS FamilyShield")
+};
+
+:if ([/ping routing-table="$intisp" address=208.67.220.123 count=3 ] = 0) do={
+log error ("$error 208.67.220.123 OpenDNS FamilyShield")
+} else={
+#log warning ("$aman 208.67.220.123 OpenDNS FamilyShield")
+};
+
+:if ([/ping routing-table="$intisp" address=94.140.14.14 count=3 ] = 0) do={
+log error ("$error 94.140.14.14 AdGuard")
+} else={
+#log warning ("$aman 94.140.14.14 AdGuard")
+};
+
+:if ([/ping routing-table="$intisp" address=94.140.15.15 count=3 ] = 0) do={
+log error ("$error 94.140.15.15 AdGuard")
+} else={
+#log warning ("$aman 94.140.15.15 AdGuard")
+};
+
+:if ([/ping routing-table="$intisp" address=94.140.14.140 count=3 ] = 0) do={
+log error ("$error 94.140.14.140 AdGuard Non-filtering")
+} else={
+#log warning ("$aman 94.140.14.140 AdGuard Non-filtering")
+};
+
+:if ([/ping routing-table="$intisp" address=94.140.14.141 count=3 ] = 0) do={
+log error ("$error 94.140.14.141 AdGuard Non-filtering")
+} else={
+#log warning ("$aman 94.140.14.141 AdGuard Non-filtering")
+};
+
+:if ([/ping routing-table="$intisp" address=94.140.14.15 count=3 ] = 0) do={
+log error ("$error 94.140.14.15 AdGuard Family protection")
+} else={
+#log warning ("$aman 94.140.14.15 AdGuard Family protection")
+};
+
+:if ([/ping routing-table="$intisp" address=94.140.15.16 count=3 ] = 0) do={
+log error ("$error 94.140.15.16 AdGuard Family protection")
+} else={
+#log warning ("$aman 94.140.15.16 AdGuard Family protection")
+};
+
+:if ([/ping routing-table="$intisp" address=77.88.8.1 count=3 ] = 0) do={
+log error ("$error 77.88.8.1 Yandex")
+} else={
+#log warning ("$aman 77.88.8.1 Yandex")
+};
+
+:if ([/ping routing-table="$intisp" address=77.88.8.8 count=3 ] = 0) do={
+log error ("$error 77.88.8.8 Yandex")
+} else={
+#log warning ("$aman 77.88.8.8 Yandex")
+};
+
+
+#:delay 1s;
+#log info message="$namaisp batasssss"

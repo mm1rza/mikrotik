@@ -1,8 +1,8 @@
-/ip firewall mangle add action=jump chain=prerouting comment="                BYPASS bbrp koneksi" dst-address-list=ip-private-local jump-target=lokal src-address-list=ip-private-local
-/ip firewall mangle add action=jump chain=input dst-address-list=ip-private-local jump-target=lokal src-address-list=ip-private-local
-/ip firewall mangle add action=jump chain=forward dst-address-list=ip-private-local jump-target=lokal src-address-list=ip-private-local
-/ip firewall mangle add action=jump chain=output dst-address-list=ip-private-local jump-target=lokal src-address-list=ip-private-local
-/ip firewall mangle add action=jump chain=postrouting dst-address-list=ip-private-local jump-target=lokal src-address-list=ip-private-local
+/ip firewall mangle add action=jump chain=prerouting comment="                BYPASS bbrp koneksi" dst-address-list=ip-local-private jump-target=lokal src-address-list=ip-local-private
+/ip firewall mangle add action=jump chain=input dst-address-list=ip-local-private jump-target=lokal src-address-list=ip-local-private
+/ip firewall mangle add action=jump chain=forward dst-address-list=ip-local-private jump-target=lokal src-address-list=ip-local-private
+/ip firewall mangle add action=jump chain=output dst-address-list=ip-local-private jump-target=lokal src-address-list=ip-local-private
+/ip firewall mangle add action=jump chain=postrouting dst-address-list=ip-local-private jump-target=lokal src-address-list=ip-local-private
 /ip firewall mangle add action=mark-packet chain=lokal new-packet-mark=lokal passthrough=no
 /ip firewall mangle add action=jump chain=prerouting jump-target=vip protocol=icmp
 /ip firewall mangle add action=jump chain=input jump-target=vip protocol=icmp

@@ -1,4 +1,4 @@
-# aug/21/2023 21:11:55 by RouterOS 6.48.6
+# aug/23/2023 04:23:18 by RouterOS 6.49.8
 # software id = 1ULD-5FDY
 #
 # model = RouterBOARD 3011UiAS
@@ -127,7 +127,7 @@ add max-limit=35M/35M name="~~MIRZA TV KAMAR" parent=\
     10.20.254.4/32,10.20.254.5/32,10.20.254.6/32
 add disabled=yes max-limit=100M/100M name=~rtrw-muksin-LOSS parent=\
     "--------ALL TRAFIK--------" target=10.10.12.2/32
-add max-limit=60M/60M name=~rtrw-muksin parent="--------ALL TRAFIK--------" \
+add max-limit=80M/80M name=~rtrw-muksin parent="--------ALL TRAFIK--------" \
     target=10.10.12.2/32
 add name=rumahan parent="--------ALL TRAFIK--------" target=\
     10.10.0.0/21,10.10.12.3/32
@@ -195,11 +195,6 @@ set [ find default=yes ] add-mac-cookie=no address-list=ip-local-to-isp1 \
     \$host3%0A- ping ke hp : \$avgRtt%0Dms&parse_mode=html\" mode=http keep-re\
     sult=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n};" parent-queue=hotspotan rate-limit="2M/5M 0/0 0/0 0/0 8 0/0" \
     shared-users=unlimited
 add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
@@ -258,11 +253,6 @@ add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
     paket : \$profile%2d3mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="1M/3M 0/0 0/0 0/0 8 0/0"
 add insert-queue-before="==warung-evi" keepalive-timeout=4m name=wawan \
@@ -325,11 +315,6 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=wawan \
     paket : \$profile%2d3mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="1M/4M 0/0 0/0 0/0 8 0/0"
 add insert-queue-before="==warung-evi" keepalive-timeout=4m name=witno-12jam \
@@ -391,11 +376,6 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=witno-12jam \
     paket : \$profile%2d1mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="1M/2M 0/0 0/0 0/0 8 0/0"
 add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
@@ -457,11 +437,6 @@ add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
     paket : \$profile%2d3mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="4M/7M 0/0 0/0 0/0 8 0/0"
 add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
@@ -521,11 +496,6 @@ add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
     paket : \$profile%2d3mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="4M/7M 0/0 0/0 0/0 8 0/0"
 add insert-queue-before="==warung-evi" keepalive-timeout=4m name=wati \
@@ -587,11 +557,6 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=wati \
     paket : \$profile%2d3mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="1M/3M 0/0 0/0 0/0 8 0/0"
 add insert-queue-before="==warung-evi" keepalive-timeout=4m name=nazim \
@@ -653,11 +618,6 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=nazim \
     paket : \$profile%2d3mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="1M/3M 0/0 0/0 0/0 8 0/0"
 add insert-queue-before="==warung-evi" keepalive-timeout=4m name=dian \
@@ -717,11 +677,6 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=dian \
     paket : \$profile%2d3mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="1M/3M 0/0 0/0 0/0 8 0/0"
 add add-mac-cookie=no address-list=ip-local-to-isp1 insert-queue-before=\
@@ -767,11 +722,6 @@ add add-mac-cookie=no address-list=ip-local-to-isp1 insert-queue-before=\
     \$host3%0A- ping ke hp : \$avgRtt%0Dms&parse_mode=html\" mode=http keep-re\
     sult=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n};" parent-queue=hotspotan rate-limit="1M/4M 0/0 0/0 0/0 8 0/0" \
     shared-users=unlimited
 add add-mac-cookie=no address-list=ip-local-to-isp1 insert-queue-before=\
@@ -831,11 +781,6 @@ add add-mac-cookie=no address-list=ip-local-to-isp1 insert-queue-before=\
     paket : \$profile%2d3mb%0A- mac : \$mac%0A- hp : \$host3%0A- ping ke hp : \
     \$avgRtt%0Dms&parse_mode=html\" mode=http keep-result=no;\r\
     \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%F0%9F%9F%A2+AKTI\
-    F+=+\$nama%0A-+pada+:+\$date+%2d+\$time2%0A-+paket+:+\$profile%2d3mb%0A-+m\
-    ac+:+\$mac%0A-+hp+:+\$host3%0A-+ping+ke+hp+:+\$avgRtt+ms\" keep-result=no;\
-    \r\
     \n}\r\
     \n};" parent-queue=hotspotan rate-limit="1M/2M 0/0 0/0 0/0 8 0/0"
 /queue simple
@@ -982,7 +927,7 @@ add address=172.16.3.253 address-lists=ip-local-to-isp1 client-id=\
 /ip dhcp-server network
 add address=172.16.0.0/22 gateway=172.16.0.1
 /ip dns
-set allow-remote-requests=yes cache-max-ttl=5m cache-size=51200KiB servers=\
+set allow-remote-requests=yes cache-max-ttl=3m cache-size=51200KiB servers=\
     192.168.18.1,192.168.23.1
 /ip dns static
 add address=172.16.0.1 name=hotspot.com ttl=5m
@@ -1041,7 +986,8 @@ add address=10.10.1.0/24 comment=bebek/24 list=ip-local-to-isp2
 add address=172.16.0.0/12 comment=hotspot-voucher/12 list=ip-local-to-isp2
 add address=vpn.mnet.my.id list=ip-vpn-publik
 add address=10.10.1.28 comment=bebek-sd-pager-3 list=ip-local-to-isp1
-add address=10.10.2.254 comment=tegal-belakangrumah list=ip-local-to-isp1
+add address=10.10.2.254 comment=tegal-belakangrumah disabled=yes list=\
+    ip-local-to-isp1
 add address=172.16.0.0/12 comment=@@hotspot-voucher/12 list=ip-local-to-isp1
 add address=www.uzone.id list=z-list-ip-web-blokir
 add address=mercusuar.uzone.id list=z-list-ip-web-blokir
@@ -1301,37 +1247,6 @@ add address=10.10.12.1-10.10.12.254 comment=\
     "    10.10.12.1   -   10.10.12.254" list=z-list-ip-redirect
 add address=192.168.55.1-192.168.55.254 comment=\
     "192.168.55.1   -   192.168.55.254" list=z-list-ip-redirect
-add address=tiktok.com comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.176.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.177.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.178.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.179.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.180.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.181.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.182.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.183.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.184.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.185.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.187.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.188.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.189.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.190.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=147.160.191.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=103.136.221.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=103.136.220.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=103.136.220.0/23 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=192.64.14.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=199.103.24.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=199.103.25.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=130.44.212.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=130.44.213.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=130.44.214.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=130.44.215.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=139.177.224.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=139.177.225.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=139.177.226.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=139.177.254.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
-add address=139.177.255.0/24 comment=TikTok.com list=zz-list-raw-ip-tiktok
 add address=23.37.192.0/20 list=z-list-ip-isp2
 add address=61.247.0.0/18 list=z-list-ip-isp2
 add address=61.247.0.0/19 list=z-list-ip-isp2
@@ -1851,1287 +1766,6 @@ add address=203.142.83.0/24 list=z-list-ip-isp1
 add address=203.142.84.0/24 list=z-list-ip-isp1
 add address=203.142.86.0/24 list=z-list-ip-isp1
 add address=203.142.87.0/24 list=z-list-ip-isp1
-add address=43.254.127.234 comment=MNET-SPEEDTEST disabled=yes list=\
-    z-list-ip-speedtest
-add address=58.147.188.41 comment=MNET-SPEEDTEST disabled=yes list=\
-    z-list-ip-speedtest
-add address=103.197.188.181 comment=MNET-SPEEDTEST disabled=yes list=\
-    z-list-ip-speedtest
-add address=151.101.86.219 comment=MNET-SPEEDTEST disabled=yes list=\
-    z-list-ip-speedtest
-add address=202.3.78.3 comment=MNET-SPEEDTEST disabled=yes list=\
-    z-list-ip-speedtest
-add address=203.6.148.212 comment=MNET-SPEEDTEST disabled=yes list=\
-    z-list-ip-speedtest
-add address=account.hotspotshield.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=alleasyseo.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ambon.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=apac-sg-ookla1.offsitedatasync.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=api.fast.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=api.ip2location.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=api.mxtoolbox.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=api.speedspot.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=api.tunnelbear.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=astrill.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=att-services.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=balikpapan.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=bandung.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=banjarmasin.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=batam.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=bdg-speedtest.link.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=bdl.lampungmonitor.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=bearsmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=bgp.he.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=bittrex.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=browserleaks.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=bwtest.tanahbumbukab.go.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=c.speedtest.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=c.speedtestcustom.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=cactusvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=cbn.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=cekipsaya.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=check-host.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=checkip.dyndns.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=checkip.perfect-privacy.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=co2speedtest1.starhub.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=corebdo1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=corebth4.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=corecgk1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=corecgk2.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=coredps1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=corepku1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=coreplm1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=coresoc1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=coresub1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=coreupg1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=debianx.petra.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=denpasar.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=dnschecker.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=dnsleak.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=dnsleaktest.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=dualstack.zd.map.fastly.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=encodable.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=expressvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=fast.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=fireprobe.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=goldenfrog.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=gurgle.speedtest.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=he.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=hfs.cni.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=hide.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=id.wizcase.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ifconfig.co comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=income.speedtestcustom.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=inet-ip.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=inmotionhosting.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=ip-adress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ip-adress.eu comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ip2location.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ip4.host comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ip.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ip.nf comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ip.zscaler.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipaddress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipaddress.my comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipapi.co comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipburger.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipchicken.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipcost.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipcow.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=iperf-1.ntt.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=ipinfo.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipinfo.io comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipku.in comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipleak.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipleak.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=iplocation.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=iplocation.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=iplogger.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipsaya.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipstack.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipv4.lookup.test-ipv6.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=ipv6test.hide.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipvanish.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ipvoid.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ispeedtest.bpk.go.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=jakarta.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=jayapura.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=jkt-speedtest.fast.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=jkt1.speedtest.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=jkt1-speedtest.smartfren.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=kalianda.lampungmonitor.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=kinsta.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=knrpc.olark.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=kuta.speedtest.gratis.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=locator.atlasvpn.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=m1speedtest1.m1net.com.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=m.wolframalpha.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=mainspeedtest.nap.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=makasar.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=manado.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=mapi.clearlink.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=mataram.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=maxmind.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=medan.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=metro.lampungmonitor.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=mm1.unnes.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=mw.ipburger.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=mxtoolbox.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=my-ip-finder.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=mybrowserinfo.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=myglobalip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=myip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=myipaddress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=namecheap.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=net.etrality.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=nms-bdg.neuviz.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=noc.kemdikbud.go.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=noc.unsrat.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=nordvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ookla-id1.buana.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=ookla-singapore.renaissance.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=ookla.gigacommunity.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=ookla.uii.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ookla.usonyx.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ooklaspeed.axarva.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=overplay.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=padi.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=palembang.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=palu.kailiglobal.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=passwordsgenerator.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=pekanbaru.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=perfect-privacy.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=prd.nperf.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=privateinternetaccess.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=purevpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=realip.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=s1.ikamisa96.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=sby-speedtest.link.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sby1-speedtest.smartfren.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=semarang.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sg-speedtest.fast.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sg.ipungpurbaya.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sgspeedtest.nap.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=showmyipaddress.eu comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=showmyisp.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=sin.speedtest.interoute.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sorong.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sp1.infotek.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sp1.jogjamedianet.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sp1.solnet.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=sp1.swin.co.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=sp1.unlam.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=sp1-jkt.wowrack.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sp1-sby.wowrack.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=sp.uny.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=spd1.inti.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speed1.wds.co.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speed.cloudflare.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speed.mncplay.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speed.sng.host.co.ug comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speed.ui.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speed.undip.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedcheckerapi.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedinternet.varnion.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedof.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedone.maduroo.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedsmart.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedtest-1.wanxp.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-bali.biznetgiocloud.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-bali.hyper.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-bali.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-bali.smartconnect.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-bdg.hyper.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-btm.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-idc.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-iix.xl.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-iix.xl.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-intl.xl.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-intl.xl.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-ix.idola.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-jkt01.bit-teknologi.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-jkt1.skyline.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-jkt.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-lampung.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-mdn.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-noc.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-sby.hyper.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-sby.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-sg01.bit-teknologi.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-sg.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-sgp1.digitalocean.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-sgp.apac-tools.ovh comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest-smg.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest1.bali.ldp.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest1.boltsuper4g.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest1.inet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest1.jlm.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest1.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest1.oss.myrepublic.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest1.telkomsel.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest2.centrin.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest2.gunadarma.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest2.indosat.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest2.starnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest2.telkomsel.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest2.unud.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest07.fpt.vn comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest08.fpt.vn comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest10.vqbn.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.acenet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.angkasa.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.apac.aptilon.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.ats-com.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.bali.gerbangakses.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.balifiber.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.bitek.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.bits.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.biznetgiocloud.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.biznetnetworks.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.blueline.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.cbn.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedtest.cbn.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.channel-11.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.cifo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.circleone.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.citra.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.cni.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.co.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedtest.com.sg comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedtest.crypto.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.cyberplus.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.dash.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.dps.dnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.dtp.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.faznet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.gig.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedtest.googlefiber.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.houtos.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.iconpln.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.idola.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.indosat.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.ipungpurbaya.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.jagat.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.jatengprov.go.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.jinom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.jogja.citra.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.kemsos.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.king.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.link.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.lovelivesupport.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.lungit.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.maxindo.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.mtmbali.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.mybroadband.co.za comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.myrepublic.com.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.nap.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.nes.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.net1.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedtest.net.cdn.cloudflare.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.net.in comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=speedtest.netpluz.asia comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.nusa.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.orion.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.padinet.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.pesat.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.powertel.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.primacom.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.qiandra.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.rndlabbankmandiri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.routelink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.sby.datautama.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.sby.dnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.sdi.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.sg.bgp.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.singnet.com.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.smartconnect.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.smartmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.sng01.softlayer.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.solo.citra.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.starnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.sti-group.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.sumberdata.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.super.net.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.tachyon.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.telin.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.telin.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.turbo.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.ub.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.ugm.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.uin-suka.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.umn.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.unair.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.unsyiah.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.unud.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.upg.crypto.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.varnion.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.verd.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.vjn.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.vodien.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.yam.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtest.zettagrid.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtestcustom.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtestdps1.gmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtestmlg1.gmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtestserver.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtestsmg1.gmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=speedtestyk1.gmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=spyber.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=st-btm1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=st-dumai1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=st-pdg1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=st-riau1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=st1.mlink.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=st1.unpad.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=stest.ltn.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=support.naftalie.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=surabaya.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=surfshark.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ternate.speedtest.telkom.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=test-ipv6.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=test.ads.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=test.neuviz.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=testspeed.melsa.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=timika.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=tools.ip2location.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=touch.whatsmyip.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=ultratools.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=v4.myipstack.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=vermiip.es comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=vps5.vianet.com.np comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=vstream.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=vyprvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=what-is-my-ipv4.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=whatismyasn.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatismybrowser.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=whatismycountry.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=whatismyip4.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatismyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatismyip.host comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatismyip.li comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatismyip.live comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatismyip.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatismyip.network comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=whatismyip.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatismyipaddress.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=whatismypublicip.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=whatsmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatsmyip.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatsmyip.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whatsmyrouterip.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=whoer.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=whoismyisp.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=wolframalpha.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=ws-ipv4.nperf.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=wtfismyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.account.hotspotshield.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.alleasyseo.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ambon.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.apac-sg-ookla1.offsitedatasync.com comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.api.fast.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.api.ip2location.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.api.mxtoolbox.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.api.speedspot.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.api.tunnelbear.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.astrill.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.att-services.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.balikpapan.speedtest.telkom.net.id comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.bandung.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.banjarmasin.speedtest.telkom.net.id comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.batam.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.bdg-speedtest.link.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.bdl.lampungmonitor.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.bearsmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.bgp.he.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.bittrex.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.browserleaks.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.bwtest.tanahbumbukab.go.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.c.speedtest.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.c.speedtestcustom.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.cactusvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.cbn.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.cekipsaya.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.check-host.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.checkip.dyndns.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.checkip.perfect-privacy.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.co2speedtest1.starhub.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.corebdo1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.corebth4.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.corecgk1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.corecgk2.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.coredps1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.corepku1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.coreplm1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.coresoc1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.coresub1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.coreupg1.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.debianx.petra.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.denpasar.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.dnschecker.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.dnsleak.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.dnsleaktest.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.dualstack.zd.map.fastly.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.encodable.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.expressvpn.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.fast.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.fireprobe.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.goldenfrog.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.gurgle.speedtest.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.he.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.hfs.cni.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.hide.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.id.wizcase.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ifconfig.co comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.income.speedtestcustom.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.inet-ip.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.inmotionhosting.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ip-adress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ip-adress.eu comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ip2location.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ip4.host comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ip.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ip.nf comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ip.zscaler.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ipaddress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipaddress.my comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipapi.co comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipburger.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipchicken.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipcost.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipcow.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.iperf-1.ntt.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ipinfo.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipinfo.io comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipku.in comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipleak.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipleak.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.iplocation.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.iplocation.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.iplogger.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipsaya.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipstack.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipv4.lookup.test-ipv6.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ipv6test.hide.me comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ipvanish.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ipvoid.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ispeedtest.bpk.go.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.jakarta.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.jayapura.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.jkt-speedtest.fast.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.jkt1.speedtest.tri.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.jkt1-speedtest.smartfren.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.kalianda.lampungmonitor.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.kinsta.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.knrpc.olark.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.kuta.speedtest.gratis.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.locator.atlasvpn.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.m1speedtest1.m1net.com.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.m.wolframalpha.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.mainspeedtest.nap.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.makasar.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.manado.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.mapi.clearlink.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.mataram.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.maxmind.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.medan.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.metro.lampungmonitor.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.mm1.unnes.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.mw.ipburger.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.mxtoolbox.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.my-ip-finder.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.mybrowserinfo.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.myglobalip.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.myip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.myipaddress.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.namecheap.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.net.etrality.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.nms-bdg.neuviz.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.noc.kemdikbud.go.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.noc.unsrat.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.nordvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ookla-id1.buana.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ookla-singapore.renaissance.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ookla.gigacommunity.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ookla.uii.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ookla.usonyx.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ooklaspeed.axarva.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.overplay.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.padi.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.palembang.speedtest.telkom.net.id comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.palu.kailiglobal.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.passwordsgenerator.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.pekanbaru.speedtest.telkom.net.id comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.perfect-privacy.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.prd.nperf.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.privateinternetaccess.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.purevpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.realip.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.s1.ikamisa96.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sby-speedtest.link.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sby1-speedtest.smartfren.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.semarang.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sg-speedtest.fast.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sg.ipungpurbaya.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sgspeedtest.nap.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.showmyipaddress.eu comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.showmyisp.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.sin.speedtest.interoute.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sorong.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sp1.infotek.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sp1.jogjamedianet.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sp1.solnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sp1.swin.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sp1.unlam.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sp1-jkt.wowrack.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sp1-sby.wowrack.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.sp.uny.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.spd1.inti.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speed1.wds.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speed.cloudflare.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speed.mncplay.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speed.sng.host.co.ug comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speed.ui.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.speed.undip.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedcheckerapi.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedinternet.varnion.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedof.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.speedone.maduroo.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedsmart.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-1.wanxp.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-bali.biznetgiocloud.com comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.speedtest-bali.hyper.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-bali.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-bali.smartconnect.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-bdg.hyper.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-btm.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-idc.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-iix.xl.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-iix.xl.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-intl.xl.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-intl.xl.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-ix.idola.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-jkt01.bit-teknologi.com comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.speedtest-jkt1.skyline.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-jkt.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-lampung.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-mdn.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedwww.astrill.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-noc.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-sby.hyper.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-sby.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-sg01.bit-teknologi.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-sg.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-sgp1.digitalocean.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-sgp.apac-tools.ovh comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest-smg.hypernet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest1.bali.ldp.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest1.boltsuper4g.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest1.inet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest1.jlm.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest1.moratelindo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest1.oss.myrepublic.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest1.telkomsel.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest2.centrin.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest2.gunadarma.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest2.indosat.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest2.starnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest2.telkomsel.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest2.unud.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest07.fpt.vn comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest08.fpt.vn comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest10.vqbn.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.acenet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.angkasa.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.apac.aptilon.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.ats-com.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.bali.gerbangakses.net.id comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.speedtest.balifiber.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.bitek.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.bits.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.biznetgiocloud.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.biznetnetworks.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.blueline.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.cbn.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.cbn.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.channel-11.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.cifo.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.circleone.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.citra.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.cni.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.com.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.crypto.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.cyberplus.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.dash.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.dps.dnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.dtp.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.faznet.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.gig.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.googlefiber.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.houtos.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.iconpln.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.idola.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.indosat.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.ipungpurbaya.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.jagat.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.jatengprov.go.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.jinom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.jogja.citra.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.kemsos.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.king.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.link.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.lovelivesupport.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.lungit.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.maxindo.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.mtmbali.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.mybroadband.co.za comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.myrepublic.com.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.nap.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.nes.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.net1.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.speedtest.net.cdn.cloudflare.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.net.in comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.netpluz.asia comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.nusa.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.orion.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.padinet.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.pesat.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.powertel.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.primacom.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.qiandra.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.rndlabbankmandiri.co.id comment=MNET-SPEEDTEST \
-    list=z-list-ip-speedtest
-add address=www.speedtest.routelink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.sby.datautama.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.sby.dnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.sdi.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.sg.bgp.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.singnet.com.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.smartconnect.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.smartmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.sng01.softlayer.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.solo.citra.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.starnet.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.sti-group.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.sumberdata.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.super.net.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.tachyon.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.telin.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.telin.sg comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.turbo.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.ub.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.ugm.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.uin-suka.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.umn.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.unair.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.unsyiah.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.unud.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.upg.crypto.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.varnion.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.verd.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.vjn.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.vodien.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.yam.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtest.zettagrid.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtestcustom.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtestdps1.gmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtestmlg1.gmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtestserver.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtestsmg1.gmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.speedtestyk1.gmedia.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.spyber.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.st-btm1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.st-dumai1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.st-pdg1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.st-riau1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.st1.mlink.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.st1.unpad.ac.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.stest.ltn.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.support.naftalie.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.surabaya.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.surfshark.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.ternate.speedtest.telkom.co.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.test-ipv6.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.test.ads.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.test.neuviz.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.testspeed.melsa.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.timika.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.tools.ip2location.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.touch.whatsmyip.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ultratools.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.v4.myipstack.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.vermiip.es comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.vps5.vianet.com.np comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.vstream.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.vyprvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.what-is-my-ipv4.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyasn.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismybrowser.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismycountry.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyip4.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyip.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyip.host comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyip.li comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.whatismyip.live comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyip.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyip.network comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyip.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismyipaddress.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatismypublicip.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whatsmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.whatsmyip.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.whatsmyip.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.whatsmyrouterip.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.whoer.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.whoismyisp.org comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.wolframalpha.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.ws-ipv4.nperf.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.wtfismyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.xmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=www.yougetsignal.com comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.zd.map.fastly.net comment=MNET-SPEEDTEST list=\
-    z-list-ip-speedtest
-add address=www.zenmate.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=xmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=yougetsignal.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=zd.map.fastly.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=zenmate.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=8.34.208.0/20 comment=MNET-GOOGLE list=z-list-ip-google
 add address=8.35.192.0/20 comment=MNET-GOOGLE list=z-list-ip-google
 add address=23.236.48.0/20 comment=MNET-GOOGLE list=z-list-ip-google
@@ -3208,6 +1842,683 @@ add address=10.20.254.4 comment="MIRZA PC KAMAR" disabled=yes list=\
     ip-local-dns-khusus
 add address=10.20.254.3 comment="MIRZA KOMPUTER KAMAR" disabled=yes list=\
     ip-local-dns-khusus
+add address=43.254.127.234 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=58.147.188.41 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=103.197.188.181 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=151.101.86.219 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=202.3.78.3 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=203.6.148.212 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=account.hotspotshield.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=alleasyseo.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ambon.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=apac-sg-ookla1.offsitedatasync.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=api.fast.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=api.ip2location.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=api.mxtoolbox.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=api.speedspot.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=api.tunnelbear.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=astrill.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=att-services.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=balikpapan.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=bandung.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=banjarmasin.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=batam.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=bdg-speedtest.link.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=bearsmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=bgp.he.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=bittrex.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=browserleaks.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=c.speedtest.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=c.speedtestcustom.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=cactusvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=cbn.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=cekipsaya.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=check-host.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=checkip.dyndns.org comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=checkip.perfect-privacy.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=co2speedtest1.starhub.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=corebdo1.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=corebth4.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=corecgk1.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=corecgk2.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=coredps1.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=corepku1.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=coreplm1.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=coresoc1.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=coresub1.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=coreupg1.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=denpasar.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=dnschecker.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=dnsleak.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=dnsleaktest.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=dualstack.zd.map.fastly.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=encodable.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=expressvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=fast.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=fireprobe.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=goldenfrog.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=gurgle.speedtest.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=he.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=hide.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=id.wizcase.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ifconfig.co comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=income.speedtestcustom.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=inet-ip.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=inmotionhosting.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=ip-adress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ip-adress.eu comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ip2location.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ip4.host comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ip.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ip.nf comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ip.zscaler.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipaddress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipaddress.my comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipapi.co comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipburger.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipchicken.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipcost.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipcow.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=iperf-1.ntt.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=ipinfo.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipinfo.io comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipku.in comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipleak.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipleak.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=iplocation.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=iplocation.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=iplogger.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipsaya.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipstack.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipv4.lookup.test-ipv6.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=ipvanish.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ipvoid.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ispeedtest.bpk.go.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=jakarta.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=jayapura.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=jkt-speedtest.fast.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=jkt1.speedtest.tri.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=jkt1-speedtest.smartfren.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=kinsta.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=knrpc.olark.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=kuta.speedtest.gratis.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=locator.atlasvpn.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=m1speedtest1.m1net.com.sg comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=m.wolframalpha.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=mainspeedtest.nap.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=makasar.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=manado.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=mapi.clearlink.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=mataram.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=maxmind.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=medan.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=mm1.unnes.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=mw.ipburger.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=mxtoolbox.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=my-ip-finder.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=mybrowserinfo.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=myglobalip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=myip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=myipaddress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=namecheap.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=net.etrality.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=nms-bdg.neuviz.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=noc.kemdikbud.go.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=noc.unsrat.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=nordvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ookla-id1.buana.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=ookla.uii.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ookla.usonyx.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ooklaspeed.axarva.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=overplay.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=padi.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=palembang.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=passwordsgenerator.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=pekanbaru.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=perfect-privacy.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=prd.nperf.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=privateinternetaccess.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=purevpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=realip.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=sby-speedtest.link.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sby1-speedtest.smartfren.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=semarang.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sg-speedtest.fast.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sgspeedtest.nap.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=showmyipaddress.eu comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=showmyisp.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=sin.speedtest.interoute.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sorong.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sp1.infotek.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sp1.jogjamedianet.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sp1.solnet.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=sp1.swin.co.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=sp1-jkt.wowrack.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sp1-sby.wowrack.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=sp.uny.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=spd1.inti.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speed.cloudflare.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speed.mncplay.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speed.ui.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speedcheckerapi.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedinternet.varnion.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedof.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speedsmart.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speedtest-1.wanxp.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-bali.biznetgiocloud.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-bali.hyper.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-bali.hypernet.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-bdg.hyper.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-btm.moratelindo.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-idc.hypernet.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-iix.xl.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-iix.xl.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-intl.xl.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-intl.xl.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-ix.idola.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-jkt1.skyline.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-jkt.hypernet.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-mdn.moratelindo.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-sby.hyper.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-sby.moratelindo.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest-smg.hypernet.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest1.bali.ldp.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest1.boltsuper4g.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest1.inet.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest1.jlm.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest1.moratelindo.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest1.oss.myrepublic.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest1.telkomsel.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest2.centrin.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest2.starnet.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest2.telkomsel.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest2.unud.ac.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest07.fpt.vn comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest08.fpt.vn comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest10.vqbn.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.angkasa.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.balifiber.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.bitek.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.biznetgiocloud.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.biznetnetworks.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.cbn.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speedtest.cbn.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.channel-11.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.cifo.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.circleone.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.citra.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.cni.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.com.sg comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speedtest.crypto.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.cyberplus.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.dash.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.dtp.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.googlefiber.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.houtos.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.iconpln.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.idola.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.indosat.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.jatengprov.go.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.jinom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.jogja.citra.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.kemsos.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.link.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.lungit.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.maxindo.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.mtmbali.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.mybroadband.co.za comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.myrepublic.com.sg comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.net1.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speedtest.net.in comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=speedtest.netpluz.asia comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.nusa.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.orion.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.padinet.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.pesat.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.powertel.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.primacom.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.qiandra.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.routelink.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.sby.datautama.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.sby.dnet.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.sdi.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.sg.bgp.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.singnet.com.sg comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.sng01.softlayer.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.solo.citra.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.starnet.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.sti-group.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.super.net.sg comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.tachyon.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.telin.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.turbo.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.ub.ac.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.ugm.ac.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.uin-suka.ac.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.unair.ac.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.unsyiah.ac.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.unud.ac.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.upg.crypto.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.varnion.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.vodien.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtest.yam.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtestcustom.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtestdps1.gmedia.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtestmlg1.gmedia.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtestserver.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtestsmg1.gmedia.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=speedtestyk1.gmedia.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=spyber.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=st1.unpad.ac.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=surabaya.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=surfshark.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ternate.speedtest.telkom.co.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=test-ipv6.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=test.ads.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=test.neuviz.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=testspeed.melsa.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=timika.speedtest.telkom.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=tools.ip2location.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=touch.whatsmyip.org comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=ultratools.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=v4.myipstack.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=vermiip.es comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=vps5.vianet.com.np comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=vyprvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=what-is-my-ipv4.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=whatismyasn.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismybrowser.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=whatismycountry.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=whatismyip4.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyip.host comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyip.li comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyip.live comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyip.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyip.network comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=whatismyip.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyipaddress.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=whatismypublicip.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=whatsmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatsmyip.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatsmyip.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatsmyrouterip.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=whoer.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whoismyisp.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=wolframalpha.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ws-ipv4.nperf.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=wtfismyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.alleasyseo.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.astrill.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.att-services.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.bearsmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.bgp.he.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.bittrex.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.browserleaks.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.c.speedtest.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.c.speedtestcustom.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.cactusvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.cbn.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.cekipsaya.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.check-host.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.dnschecker.org comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.dnsleak.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.dnsleaktest.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.encodable.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.expressvpn.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.fast.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.fireprobe.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.goldenfrog.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.gurgle.speedtest.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.he.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.hide.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.income.speedtestcustom.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.inmotionhosting.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.ip-adress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ip-adress.eu comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ip2location.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.ip4.host comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ip.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ip.nf comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipaddress.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipaddress.my comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipapi.co comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipburger.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipchicken.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipcost.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipcow.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipinfo.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipinfo.io comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipku.in comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipleak.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipleak.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.iplocation.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.iplocation.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.iplogger.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipsaya.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipstack.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipvanish.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ipvoid.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.kinsta.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.maxmind.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.mxtoolbox.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.my-ip-finder.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.mybrowserinfo.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.myglobalip.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.myip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.myipaddress.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.namecheap.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.nordvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.ookla.uii.ac.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.overplay.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.padi.net.id comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.passwordsgenerator.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.perfect-privacy.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.privateinternetaccess.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.purevpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.realip.info comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.showmyipaddress.eu comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.showmyisp.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.sp1.jogjamedianet.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedcheckerapi.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedof.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.speedsmart.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest1.boltsuper4g.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest.cbn.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest.com.sg comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest.houtos.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest.idola.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest.lungit.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest.mybroadband.co.za comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.speedtest.net.cdn.cloudflare.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtest.net.in comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtestcustom.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.speedtestserver.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.spyber.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.surfshark.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.test-ipv6.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.test.ads.net.id comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.touch.whatsmyip.org comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.ultratools.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.vermiip.es comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.vyprvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.what-is-my-ipv4.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyasn.org comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismybrowser.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismycountry.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyip4.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyip.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyip.host comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyip.li comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.whatismyip.live comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyip.net comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyip.network comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyip.org comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismyipaddress.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatismypublicip.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whatsmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.whatsmyip.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.whatsmyip.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.whatsmyrouterip.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.whoer.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.whoismyisp.org comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.wolframalpha.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.wtfismyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.xmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.yougetsignal.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.zenmate.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=xmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=yougetsignal.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=zd.map.fastly.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=zenmate.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 /ip firewall filter
 add action=passthrough chain=unused-hs-chain comment=\
     "place hotspot rules here" disabled=yes
@@ -3218,15 +2529,12 @@ add action=fasttrack-connection chain=forward dst-address-list=\
     !z-list-ip-speedtest src-address-list=ip-local-mirza
 add action=fasttrack-connection chain=forward dst-address-list=ip-local-mirza \
     src-address-list=!z-list-ip-speedtest
-add action=reject chain=forward comment="                DROP ping" log=yes \
-    log-prefix=isp packet-size=!0-800 protocol=icmp reject-with=\
-    icmp-network-unreachable
-add action=reject chain=forward fragment=yes log=yes log-prefix=isp protocol=\
-    icmp reject-with=icmp-network-unreachable
-add action=reject chain=input log=yes log-prefix=isp packet-size=!0-800 \
-    protocol=icmp reject-with=icmp-network-unreachable
-add action=reject chain=input fragment=yes log=yes log-prefix=isp protocol=\
-    icmp reject-with=icmp-network-unreachable
+add action=drop chain=forward comment="                DROP ping" \
+    dst-address-list=z-list-ip-redirect packet-size=!0-800 protocol=icmp
+add action=drop chain=forward dst-address-list=z-list-ip-redirect fragment=\
+    yes protocol=icmp
+add action=drop chain=input packet-size=!0-800 protocol=icmp
+add action=drop chain=input fragment=yes protocol=icmp
 add action=drop chain=forward comment="                DROP tracert" \
     icmp-options=11:0 in-interface-list=ISP protocol=icmp
 add action=drop chain=forward icmp-options=3:3 in-interface-list=ISP \
@@ -3263,6 +2571,8 @@ add action=mark-routing chain=prerouting comment=\
     "                BYPASS speedtest" dst-address-list=z-list-ip-speedtest \
     dst-port=80,443,5060 new-routing-mark=vpn passthrough=no protocol=tcp \
     src-address-list=ip-local
+add action=accept chain=prerouting comment="MIRZA ACCEPT" src-address-list=\
+    ip-local-mirza
 add action=jump chain=forward dst-address-list=z-list-ip-speedtest dst-port=\
     80,443,5060 jump-target=vip protocol=tcp src-address-list=ip-local
 add action=jump chain=forward dst-address-list=ip-local jump-target=vip \
@@ -3295,79 +2605,86 @@ add action=jump chain=prerouting jump-target=vip port=53,5353,853 protocol=\
 add action=jump chain=prerouting jump-target=vip port=53,5353,853 protocol=\
     tcp
 add action=mark-packet chain=vip new-packet-mark=vip passthrough=no
-add action=jump chain=forward comment="                BYPASS game" \
-    dst-address-list=!ip-private-2-local&dns dst-port="6006,6008,6674,7000-799\
-    9,8001-8012,9006,9137,10000-10015,11000-11019,12006,12008" jump-target=\
-    game-ff protocol=tcp src-address-list=ip-local-game
-add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
-    game-ff protocol=tcp src-address-list=!ip-private-2-local&dns src-port="60\
-    06,6008,6674,7000-7999,8001-8012,9006,9137,10000-10015,11000-11019,12006,1\
-    2008"
-add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
-    dst-port=13006,15006,20561,39003,39006,39698,39779,39800 jump-target=\
-    game-ff protocol=tcp src-address-list=ip-local-game
-add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
-    game-ff protocol=tcp src-address-list=!ip-private-2-local&dns src-port=\
-    13006,15006,20561,39003,39006,39698,39779,39800
-add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
-    dst-port="6006,6008,6674,7000-7999,8001-8012,8130,8443,9008,9120,10000-100\
-    15,10100,12008" jump-target=game-ff protocol=udp src-address-list=\
-    ip-local-game
-add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
-    game-ff protocol=udp src-address-list=!ip-private-2-local&dns src-port="60\
-    06,6008,6674,7000-7999,8001-8012,8130,8443,9008,9120,10000-10015,10100,120\
-    08"
-add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
-    dst-port=11000-11019,13008 jump-target=game-ff protocol=udp \
+add action=jump chain=forward comment="                BYPASS game" disabled=\
+    yes dst-address-list=!ip-private-2-local&dns dst-port="6006,6008,6674,7000\
+    -7999,8001-8012,9006,9137,10000-10015,11000-11019,12006,12008" \
+    jump-target=game-ff protocol=tcp src-address-list=ip-local-game
+add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
+    jump-target=game-ff protocol=tcp src-address-list=!ip-private-2-local&dns \
+    src-port="6006,6008,6674,7000-7999,8001-8012,9006,9137,10000-10015,11000-1\
+    1019,12006,12008"
+add action=jump chain=forward disabled=yes dst-address-list=\
+    !ip-private-2-local&dns dst-port=\
+    13006,15006,20561,39003,39006,39698,39779,39800 jump-target=game-ff \
+    protocol=tcp src-address-list=ip-local-game
+add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
+    jump-target=game-ff protocol=tcp src-address-list=!ip-private-2-local&dns \
+    src-port=13006,15006,20561,39003,39006,39698,39779,39800
+add action=jump chain=forward disabled=yes dst-address-list=\
+    !ip-private-2-local&dns dst-port="6006,6008,6674,7000-7999,8001-8012,8130,\
+    8443,9008,9120,10000-10015,10100,12008" jump-target=game-ff protocol=udp \
     src-address-list=ip-local-game
-add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
-    game-ff protocol=udp src-address-list=!ip-private-2-local&dns src-port=\
-    11000-11019,13008
-add action=mark-packet chain=game-ff new-packet-mark=game-ff passthrough=no
-add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
-    dst-port=5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517 \
-    jump-target=game-ml protocol=tcp src-address-list=ip-local-game
-add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
-    game-ml protocol=tcp src-address-list=!ip-private-2-local&dns src-port=\
-    5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517
-add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
-    dst-port="5000-5221,5224-5227,5229-5241,5243-5287,5551-5559,5601-5700,9000\
-    -9010,9443" jump-target=game-ml protocol=tcp src-address-list=\
-    ip-local-game
-add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
-    game-ml protocol=tcp src-address-list=!ip-private-2-local&dns src-port="50\
-    00-5221,5224-5227,5229-5241,5243-5287,5551-5559,5601-5700,9000-9010,9443"
-add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
-    dst-port="4001-4009,5000-5221,5224-5241,5243-5509,5551-5559,5601-5700,8130\
-    ,8443,9120" jump-target=game-ml protocol=udp src-address-list=\
-    ip-local-game
-add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
-    game-ml protocol=udp src-address-list=!ip-private-2-local&dns src-port="40\
-    01-4009,5000-5221,5224-5241,5243-5509,5551-5559,5601-5700,8130,8443,9120"
-add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
-    dst-port=\
+add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
+    jump-target=game-ff protocol=udp src-address-list=!ip-private-2-local&dns \
+    src-port="6006,6008,6674,7000-7999,8001-8012,8130,8443,9008,9120,10000-100\
+    15,10100,12008"
+add action=jump chain=forward disabled=yes dst-address-list=\
+    !ip-private-2-local&dns dst-port=11000-11019,13008 jump-target=game-ff \
+    protocol=udp src-address-list=ip-local-game
+add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
+    jump-target=game-ff protocol=udp src-address-list=!ip-private-2-local&dns \
+    src-port=11000-11019,13008
+add action=mark-packet chain=game-ff disabled=yes new-packet-mark=game-ff \
+    passthrough=no
+add action=jump chain=forward disabled=yes dst-address-list=\
+    !ip-private-2-local&dns dst-port=\
+    5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517 jump-target=\
+    game-ml protocol=tcp src-address-list=ip-local-game
+add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
+    jump-target=game-ml protocol=tcp src-address-list=!ip-private-2-local&dns \
+    src-port=5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517
+add action=jump chain=forward disabled=yes dst-address-list=\
+    !ip-private-2-local&dns dst-port="5000-5221,5224-5227,5229-5241,5243-5287,\
+    5551-5559,5601-5700,9000-9010,9443" jump-target=game-ml protocol=tcp \
+    src-address-list=ip-local-game
+add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
+    jump-target=game-ml protocol=tcp src-address-list=!ip-private-2-local&dns \
+    src-port="5000-5221,5224-5227,5229-5241,5243-5287,5551-5559,5601-5700,9000\
+    -9010,9443"
+add action=jump chain=forward disabled=yes dst-address-list=\
+    !ip-private-2-local&dns dst-port="4001-4009,5000-5221,5224-5241,5243-5509,\
+    5551-5559,5601-5700,8130,8443,9120" jump-target=game-ml protocol=udp \
+    src-address-list=ip-local-game
+add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
+    jump-target=game-ml protocol=udp src-address-list=!ip-private-2-local&dns \
+    src-port="4001-4009,5000-5221,5224-5241,5243-5509,5551-5559,5601-5700,8130\
+    ,8443,9120"
+add action=jump chain=forward disabled=yes dst-address-list=\
+    !ip-private-2-local&dns dst-port=\
     2702,3702,5517-5529,8001,9000-9010,9992,10003,30000-30900,5289-5352 \
     jump-target=game-ml protocol=udp src-address-list=ip-local-game
-add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
-    game-ml protocol=udp src-address-list=!ip-private-2-local&dns src-port=\
+add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
+    jump-target=game-ml protocol=udp src-address-list=!ip-private-2-local&dns \
+    src-port=\
     2702,3702,5517-5529,8001,9000-9010,9992,10003,30000-30900,5289-5352
-add action=mark-packet chain=game-ml new-packet-mark=game-ml passthrough=no
+add action=mark-packet chain=game-ml disabled=yes new-packet-mark=game-ml \
+    passthrough=no
 add action=mark-routing chain=prerouting comment=\
-    "                ROUTING bgp isp1 > isp1" dst-address-list=z-list-ip-isp1 \
-    new-routing-mark=ether1 passthrough=no src-address-list=\
+    "                ROUTING bgp isp1 > isp1" disabled=yes dst-address-list=\
+    z-list-ip-isp1 new-routing-mark=ether1 passthrough=no src-address-list=\
     ip-local-to-route-isp1
 add action=mark-routing chain=prerouting comment=\
-    "                ROUTING bgp isp2 > isp2" dst-address-list=z-list-ip-isp2 \
-    new-routing-mark=ether2 passthrough=no src-address-list=\
+    "                ROUTING bgp isp2 > isp2" disabled=yes dst-address-list=\
+    z-list-ip-isp2 new-routing-mark=ether2 passthrough=no src-address-list=\
     ip-local-to-route-isp1
 add action=mark-routing chain=prerouting comment=\
-    "                ROUTING Google" dst-address-list=z-list-ip-google \
-    new-routing-mark=ether1 passthrough=no src-address-list=\
+    "                ROUTING Google" disabled=yes dst-address-list=\
+    z-list-ip-google new-routing-mark=ether1 passthrough=no src-address-list=\
     ip-local-to-route-isp1
 add action=mark-routing chain=prerouting comment=\
-    "                ROUTING Tiktok" dst-address-list=zz-list-raw-ip-tiktok \
-    new-routing-mark=ether1 passthrough=no src-address-list=\
-    ip-local-to-route-isp1
+    "                ROUTING Tiktok" disabled=yes dst-address-list=\
+    zz-list-raw-ip-tiktok new-routing-mark=ether1 passthrough=no \
+    src-address-list=ip-local-to-route-isp1
 add action=mark-routing chain=prerouting comment=\
     "                ROUTING koneksi" dst-address-list=!ip-modem-isp \
     new-routing-mark=ether1 passthrough=no src-address-list=ip-local-to-isp1
@@ -3422,8 +2739,8 @@ add action=dst-nat chain=dstnat comment=\
     dst-port=14446 protocol=tcp src-address-list=ip-vpn-lokal to-addresses=\
     192.168.55.6 to-ports=8291
 add action=dst-nat chain=dstnat comment=\
-    "                REDIRECT vpn > pc mirza" protocol=tcp src-address-list=\
-    ip-vpn-lokal to-addresses=10.20.254.3
+    "                REDIRECT vpn > pc mirza" disabled=yes protocol=tcp \
+    src-address-list=ip-vpn-lokal to-addresses=10.20.254.3
 add action=dst-nat chain=dstnat comment=\
     "                REDIRECT vpn > router rumah" dst-port=80 protocol=tcp \
     src-address-list=ip-vpn-lokal to-addresses=10.20.254.2 to-ports=81
@@ -3451,15 +2768,16 @@ add action=masquerade chain=srcnat out-interface-list=ISP+VPN \
 /ip firewall raw
 add action=add-dst-to-address-list address-list=zz-list-raw-ip-tiktok \
     address-list-timeout=none-dynamic chain=prerouting comment=\
-    "                ROUTING Tiktok" content=.tiktokcdn.com dst-address-list=\
-    !ip-private-2-local&dns src-address-list=ip-local-to-route-isp1
-add action=add-dst-to-address-list address-list=zz-list-raw-ip-tiktok \
-    address-list-timeout=none-dynamic chain=prerouting content=.tiktokv.com \
+    "                ROUTING Tiktok" content=.tiktokcdn.com disabled=yes \
     dst-address-list=!ip-private-2-local&dns src-address-list=\
     ip-local-to-route-isp1
 add action=add-dst-to-address-list address-list=zz-list-raw-ip-tiktok \
+    address-list-timeout=none-dynamic chain=prerouting content=.tiktokv.com \
+    disabled=yes dst-address-list=!ip-private-2-local&dns src-address-list=\
+    ip-local-to-route-isp1
+add action=add-dst-to-address-list address-list=zz-list-raw-ip-tiktok \
     address-list-timeout=none-dynamic chain=prerouting content=.tiktok.com \
-    dst-address-list=!ip-private-2-local&dns src-address-list=\
+    disabled=yes dst-address-list=!ip-private-2-local&dns src-address-list=\
     ip-local-to-route-isp1
 add action=add-dst-to-address-list address-list=z-list-ip-google \
     address-list-timeout=none-dynamic chain=prerouting comment=\
@@ -3626,14 +2944,10 @@ add comment=vc-815-05.15.23-FREE limit-uptime=8h name=xtw986 password=xtw986 \
     profile=-default-1-hp
 add comment="aug/25/2023 02:16:09" limit-uptime=8h name=xgp985 password=\
     xgp985 profile=wati
-add comment="aug/22/2023 19:09:30" limit-uptime=8h name=zbz795 password=\
-    zbz795 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=dwp342 password=dwp342 \
     profile=-default-1-hp
 add comment="aug/23/2023 10:47:14" limit-uptime=8h name=hke494 password=\
     hke494 profile=wati
-add comment="aug/22/2023 21:13:14" limit-uptime=8h name=fbx565 password=\
-    fbx565 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=vus824 password=vus824 \
     profile=-default-1-hp
 add comment="aug/23/2023 18:10:40" limit-uptime=8h name=jfv569 password=\
@@ -3646,12 +2960,8 @@ add comment="aug/25/2023 19:27:42" limit-uptime=8h name=huf274 password=\
     huf274 profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=bai335 password=bai335 \
     profile=-default-1-hp
-add comment="aug/22/2023 13:10:26" limit-uptime=8h name=hmy367 password=\
-    hmy367 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=rwe695 password=rwe695 \
     profile=-default-1-hp
-add comment="aug/22/2023 13:13:48" limit-uptime=8h name=zbg344 password=\
-    zbg344 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=uye237 password=uye237 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=hca292 password=hca292 \
@@ -3662,12 +2972,8 @@ add comment=vc-815-05.15.23-FREE limit-uptime=8h name=nxh244 password=nxh244 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=yrh254 password=yrh254 \
     profile=-default-1-hp
-add comment="aug/22/2023 21:18:34" limit-uptime=8h name=rcv758 password=\
-    rcv758 profile=wati
 add comment="aug/24/2023 16:03:31" limit-uptime=8h name=nfv829 password=\
     nfv829 profile=wati
-add comment="aug/22/2023 15:23:53" limit-uptime=8h name=hmn478 password=\
-    hmn478 profile=wati
 add comment="aug/23/2023 21:35:13" limit-uptime=8h name=hku486 password=\
     hku486 profile=wati
 add comment="aug/23/2023 12:23:56" limit-uptime=8h name=xni934 password=\
@@ -3688,8 +2994,6 @@ add comment="aug/24/2023 18:05:11" limit-uptime=8h name=xgg977 password=\
     xgg977 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=rpr984 password=rpr984 \
     profile=-default-1-hp
-add comment="aug/22/2023 18:44:51" limit-uptime=8h name=edd627 password=\
-    edd627 profile=wati
 add comment="aug/23/2023 08:41:17" limit-uptime=8h name=ucb678 password=\
     ucb678 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=mcn246 password=mcn246 \
@@ -3728,8 +3032,6 @@ add comment="sep/09/2023 10:17:24" limit-uptime=12h mac-address=\
     B0:B5:C3:98:9F:53 name=xre694 password=xre694 profile=wawan
 add comment="sep/08/2023 06:01:53" limit-uptime=12h mac-address=\
     B0:B5:C3:98:9F:53 name=mep598 password=mep598 profile=wawan
-add comment="aug/22/2023 07:56:04" limit-uptime=12h mac-address=\
-    B0:B5:C3:98:9F:53 name=hnb745 password=hnb745 profile=wawan
 add comment=vc-226-06.18.23-wawan limit-uptime=12h name=sfc932 password=\
     sfc932 profile=wawan
 add comment=vc-226-06.18.23-wawan limit-uptime=12h name=pue698 password=\
@@ -3740,40 +3042,16 @@ add comment=vc-226-06.18.23-wawan limit-uptime=12h name=vgf287 password=\
     vgf287 profile=wawan
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=czv534 password=czv534 \
     profile=-default-1-hp
-add comment="aug/22/2023 12:20:24" limit-uptime=8h name=uhy668 password=\
-    uhy668 profile=dian
-add comment="aug/21/2023 23:30:20" limit-uptime=8h name=nep277 password=\
-    nep277 profile=dian
-add comment="aug/22/2023 19:41:58" limit-uptime=8h name=hne369 password=\
-    hne369 profile=dian
-add comment="aug/22/2023 19:49:34" limit-uptime=8h name=zws437 password=\
-    zws437 profile=dian
-add comment="aug/22/2023 20:58:26" limit-uptime=8h name=aba892 password=\
-    aba892 profile=dian
-add comment="aug/22/2023 22:36:24" limit-uptime=8h name=tyu555 password=\
-    tyu555 profile=dian
-add comment="aug/22/2023 14:06:04" limit-uptime=8h name=wzi728 password=\
-    wzi728 profile=dian
 add comment="aug/23/2023 08:43:36" limit-uptime=8h name=sdc756 password=\
     sdc756 profile=dian
 add comment="aug/24/2023 07:38:42" limit-uptime=8h name=vhz968 password=\
     vhz968 profile=dian
-add comment="aug/22/2023 13:38:33" limit-uptime=8h name=hku426 password=\
-    hku426 profile=dian
-add comment="aug/22/2023 20:56:53" limit-uptime=8h name=zzp768 password=\
-    zzp768 profile=dian
-add comment="aug/22/2023 12:59:41" limit-uptime=8h name=ffn694 password=\
-    ffn694 profile=dian
 add comment="aug/23/2023 06:18:36" limit-uptime=8h name=ekg652 password=\
     ekg652 profile=dian
 add comment="aug/23/2023 11:30:20" limit-uptime=8h name=rje757 password=\
     rje757 profile=dian
-add comment="aug/22/2023 13:30:22" limit-uptime=8h name=ebh936 password=\
-    ebh936 profile=dian
 add comment="aug/23/2023 10:04:16" limit-uptime=8h name=asw424 password=\
     asw424 profile=dian
-add comment="aug/22/2023 06:58:41" limit-uptime=8h name=hjk828 password=\
-    hjk828 profile=dian
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=kdu394 password=kdu394 \
     profile=agus
 add comment="sep/21/2023 20:35:14" limit-uptime=8h name=jwi433 password=\
@@ -3788,8 +3066,8 @@ add comment=vc-347-06.26.23-agus limit-uptime=8h name=giv529 password=giv529 \
     profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=yag544 password=yag544 \
     profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=gsy555 password=gsy555 \
-    profile=agus
+add comment="sep/22/2023 17:47:37" limit-uptime=8h name=gsy555 password=\
+    gsy555 profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=uuh795 password=uuh795 \
     profile=agus
 add comment="sep/21/2023 05:19:59" limit-uptime=8h name=mmd296 password=\
@@ -3800,14 +3078,14 @@ add comment=vc-347-06.26.23-agus limit-uptime=8h name=krw235 password=krw235 \
     profile=agus
 add comment="sep/20/2023 20:07:30" limit-uptime=8h name=utk795 password=\
     utk795 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=nid993 password=nid993 \
-    profile=agus
+add comment="sep/23/2023 01:23:08" limit-uptime=8h name=nid993 password=\
+    nid993 profile=agus
 add comment="sep/21/2023 04:51:49" limit-uptime=8h name=dui994 password=\
     dui994 profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=kbc298 password=kbc298 \
     profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=wbd855 password=wbd855 \
-    profile=agus
+add comment="sep/22/2023 22:27:31" limit-uptime=8h name=wbd855 password=\
+    wbd855 profile=agus
 add comment="sep/20/2023 18:57:14" limit-uptime=8h name=wmw973 password=\
     wmw973 profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=cap549 password=cap549 \
@@ -3834,14 +3112,14 @@ add comment=vc-347-06.26.23-agus limit-uptime=8h name=wpe795 password=wpe795 \
     profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=fyw587 password=fyw587 \
     profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=ucw769 password=ucw769 \
-    profile=agus
+add comment="sep/22/2023 04:04:47" limit-uptime=8h name=ucw769 password=\
+    ucw769 profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=jpv874 password=jpv874 \
     profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=uyk458 password=uyk458 \
     profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=inz762 password=inz762 \
-    profile=agus
+add comment="sep/22/2023 09:46:05" limit-uptime=8h name=inz762 password=\
+    inz762 profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=ize675 password=ize675 \
     profile=agus
 add comment="sep/21/2023 08:45:09" limit-uptime=8h name=rdm623 password=\
@@ -3850,8 +3128,8 @@ add comment="sep/19/2023 00:57:11" limit-uptime=8h name=wfr586 password=\
     wfr586 profile=agus
 add comment=vc-347-06.26.23-agus limit-uptime=8h name=iam434 password=iam434 \
     profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=byp259 password=byp259 \
-    profile=agus
+add comment="sep/22/2023 13:16:31" limit-uptime=8h name=byp259 password=\
+    byp259 profile=agus
 add comment="sep/19/2023 20:41:37" limit-uptime=8h name=rea733 password=\
     rea733 profile=agus
 add comment="sep/21/2023 15:39:27" limit-uptime=8h name=vgh668 password=\
@@ -3886,14 +3164,8 @@ add comment=vc-815-05.15.23-FREE limit-uptime=8h name=hrd997 password=hrd997 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=dks529 password=dks529 \
     profile=-default-1-hp
-add comment="aug/21/2023 23:10:39" limit-uptime=12h name=cjd878 password=\
-    cjd878 profile=witno-12jam
 add comment=vc-815-05.15.23-FREE limit-uptime=12h name=cib744 password=cib744 \
     profile=-default-1-hp
-add comment="aug/22/2023 08:26:00" limit-uptime=12h name=ykm744 password=\
-    ykm744 profile=witno-12jam
-add comment="aug/22/2023 18:29:10" limit-uptime=12h name=syn334 password=\
-    syn334 profile=witno-12jam
 add comment="aug/23/2023 12:31:55" limit-uptime=12h name=vuf859 password=\
     vuf859 profile=witno-12jam
 add comment="aug/23/2023 09:45:24" limit-uptime=12h name=trz642 password=\
@@ -3986,8 +3258,6 @@ add comment="aug/23/2023 22:04:33" limit-uptime=8h name=srn454 password=\
     srn454 profile=nazim
 add comment="aug/25/2023 12:34:07" limit-uptime=8h name=nvj258 password=\
     nvj258 profile=nazim
-add comment="aug/22/2023 14:42:33" limit-uptime=8h name=jvz392 password=\
-    jvz392 profile=nazim
 add comment="aug/26/2023 16:46:52" limit-uptime=8h name=bhz796 password=\
     bhz796 profile=-default-1-hp
 add comment="aug/25/2023 11:35:44" limit-uptime=8h name=jis735 password=\
@@ -3996,20 +3266,12 @@ add comment="aug/24/2023 13:54:22" limit-uptime=8h name=msu948 password=\
     msu948 profile=nazim
 add comment="aug/24/2023 22:30:35" limit-uptime=8h name=ymv526 password=\
     ymv526 profile=nazim
-add comment="aug/22/2023 14:54:10" limit-uptime=8h name=vsm957 password=\
-    vsm957 profile=nazim
-add comment="aug/21/2023 23:45:54" limit-uptime=8h name=aww737 password=\
-    aww737 profile=nazim
 add comment="aug/25/2023 14:39:59" limit-uptime=8h name=vij499 password=\
     vij499 profile=nazim
 add comment="aug/25/2023 14:57:14" limit-uptime=8h name=tek696 password=\
     tek696 profile=nazim
-add comment="aug/22/2023 13:35:44" limit-uptime=8h name=tak697 password=\
-    tak697 profile=nazim
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=atr753 password=atr753 \
     profile=-default-1-hp
-add comment="aug/22/2023 18:58:52" limit-uptime=8h name=rja929 password=\
-    rja929 profile=evi
 add comment="aug/24/2023 22:13:10" limit-uptime=8h name=kwm866 password=\
     kwm866 profile=evi
 add comment="aug/23/2023 12:08:28" limit-uptime=8h name=iip985 password=\
@@ -4028,22 +3290,8 @@ add comment="aug/24/2023 13:37:41" limit-uptime=8h name=psd248 password=\
     psd248 profile=evi
 add comment="aug/24/2023 21:13:11" limit-uptime=8h name=nvw966 password=\
     nvw966 profile=evi
-add comment="aug/22/2023 20:15:39" limit-uptime=8h name=tnw896 password=\
-    tnw896 profile=evi
-add comment="aug/22/2023 21:09:41" limit-uptime=8h name=fke448 password=\
-    fke448 profile=evi
-add comment="aug/22/2023 13:22:55" limit-uptime=8h name=mud782 password=\
-    mud782 profile=evi
-add comment="aug/22/2023 22:07:27" limit-uptime=8h name=iha326 password=\
-    iha326 profile=evi
 add comment="aug/23/2023 11:59:46" limit-uptime=8h name=asm534 password=\
     asm534 profile=evi
-add comment="aug/22/2023 19:42:15" limit-uptime=8h name=ecy892 password=\
-    ecy892 profile=evi
-add comment="aug/22/2023 14:10:01" limit-uptime=8h name=bjj528 password=\
-    bjj528 profile=evi
-add comment="aug/22/2023 11:58:48" limit-uptime=8h name=fvd969 password=\
-    fvd969 profile=evi
 add comment="aug/26/2023 16:55:12" limit-uptime=8h name=abf726 password=\
     abf726 profile=evi
 add comment="aug/26/2023 14:28:51" limit-uptime=8h name=vvg233 password=\
@@ -4142,10 +3390,10 @@ add comment="sep/19/2023 09:57:12" limit-uptime=8h name=pvh962 password=\
     pvh962 profile=evi
 add comment="sep/21/2023 19:56:35" limit-uptime=8h name=pfc967 password=\
     pfc967 profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=vvk286 password=vvk286 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=rtd745 password=rtd745 \
-    profile=evi
+add comment="sep/22/2023 12:58:58" limit-uptime=8h name=vvk286 password=\
+    vvk286 profile=evi
+add comment="sep/22/2023 20:03:38" limit-uptime=8h name=rtd745 password=\
+    rtd745 profile=evi
 add comment="sep/17/2023 11:48:05" limit-uptime=8h name=nyr397 password=\
     nyr397 profile=evi
 add comment="sep/18/2023 18:24:22" limit-uptime=8h name=bch699 password=\
@@ -4572,8 +3820,8 @@ add comment="sep/10/2023 14:42:38" limit-uptime=8h name=rsx886 password=\
     rsx886 profile=wati
 add comment=vc-521-07.10.23-wati limit-uptime=8h name=cnc875 password=cnc875 \
     profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=syr699 password=syr699 \
-    profile=wati
+add comment="sep/22/2023 03:25:05" limit-uptime=8h name=syr699 password=\
+    syr699 profile=wati
 add comment="sep/01/2023 19:39:54" limit-uptime=8h name=kxd943 password=\
     kxd943 profile=wati
 add comment=vc-521-07.10.23-wati limit-uptime=8h name=srp883 password=srp883 \
@@ -4616,8 +3864,8 @@ add comment="sep/08/2023 05:31:18" limit-uptime=8h name=ckn973 password=\
     ckn973 profile=wati
 add comment="sep/19/2023 21:40:16" limit-uptime=8h name=djp756 password=\
     djp756 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=zue492 password=zue492 \
-    profile=wati
+add comment="sep/22/2023 00:14:00" limit-uptime=8h name=zue492 password=\
+    zue492 profile=wati
 add comment="sep/03/2023 21:21:07" limit-uptime=8h name=kbc653 password=\
     kbc653 profile=wati
 add comment=vc-521-07.10.23-wati limit-uptime=8h name=ryp347 password=ryp347 \
@@ -4660,8 +3908,8 @@ add comment="sep/04/2023 14:25:38" limit-uptime=8h name=rfm942 password=\
     rfm942 profile=wati
 add comment="sep/16/2023 18:49:08" limit-uptime=8h name=erm764 password=\
     erm764 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=uag544 password=uag544 \
-    profile=wati
+add comment="sep/22/2023 11:12:30" limit-uptime=8h name=uag544 password=\
+    uag544 profile=wati
 add comment=vc-521-07.10.23-wati limit-uptime=8h name=byh248 password=byh248 \
     profile=wati
 add comment="sep/17/2023 17:05:48" limit-uptime=8h name=hcw976 password=\
@@ -4696,8 +3944,8 @@ add comment=vc-521-07.10.23-wati limit-uptime=8h name=efy589 password=efy589 \
     profile=wati
 add comment="sep/14/2023 15:21:00" limit-uptime=8h name=udf939 password=\
     udf939 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ymz598 password=ymz598 \
-    profile=wati
+add comment="sep/22/2023 19:36:42" limit-uptime=8h name=ymz598 password=\
+    ymz598 profile=wati
 add comment="sep/13/2023 18:06:46" limit-uptime=8h name=gii757 password=\
     gii757 profile=wati
 add comment="sep/19/2023 07:48:56" limit-uptime=8h name=kti294 password=\
@@ -4796,8 +4044,8 @@ add comment=vc-521-07.10.23-wati limit-uptime=8h name=cjg723 password=cjg723 \
     profile=wati
 add comment=vc-521-07.10.23-wati limit-uptime=8h name=ymb638 password=ymb638 \
     profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=jzc735 password=jzc735 \
-    profile=wati
+add comment="sep/22/2023 21:10:39" limit-uptime=8h name=jzc735 password=\
+    jzc735 profile=wati
 add comment=vc-521-07.10.23-wati limit-uptime=8h name=afa832 password=afa832 \
     profile=wati
 add comment=vc-521-07.10.23-wati limit-uptime=8h name=xyt366 password=xyt366 \
@@ -4838,22 +4086,14 @@ add comment="aug/24/2023 20:04:13" limit-uptime=8h name=kib628 password=\
     kib628 profile=agus
 add comment="aug/23/2023 19:52:37" limit-uptime=8h name=huy633 password=\
     huy633 profile=agus
-add comment="aug/22/2023 08:08:10" limit-uptime=8h name=dts229 password=\
-    dts229 profile=agus
 add comment="aug/23/2023 14:22:24" limit-uptime=8h name=epg788 password=\
     epg788 profile=agus
 add comment="aug/29/2023 19:13:37" limit-uptime=8h name=gbj243 password=\
     gbj243 profile=-default-1-hp
-add comment="aug/22/2023 20:04:19" limit-uptime=8h name=pud849 password=\
-    pud849 profile=agus
-add comment="aug/22/2023 22:19:05" limit-uptime=8h name=bhu435 password=\
-    bhu435 profile=agus
 add comment="aug/25/2023 18:33:25" limit-uptime=8h name=zpw956 password=\
     zpw956 profile=-default-1-hp
 add comment="aug/24/2023 11:27:25" limit-uptime=8h name=hne746 password=\
     hne746 profile=agus
-add comment="aug/22/2023 01:07:17" limit-uptime=8h name=hdy937 password=\
-    hdy937 profile=agus
 add comment="aug/26/2023 16:02:45" limit-uptime=8h name=txk748 password=\
     txk748 profile=-default-1-hp
 add comment="aug/23/2023 17:54:27" limit-uptime=8h name=bim924 password=\
@@ -4862,8 +4102,6 @@ add comment="aug/27/2023 05:44:40" limit-uptime=8h name=ndg665 password=\
     ndg665 profile=-default-1-hp
 add comment="aug/23/2023 19:56:50" limit-uptime=8h name=ipw667 password=\
     ipw667 profile=agus
-add comment="aug/22/2023 23:28:27" limit-uptime=8h name=fev376 password=\
-    fev376 profile=agus
 add comment="aug/23/2023 19:51:35" limit-uptime=8h name=sam463 password=\
     sam463 profile=agus
 add comment="aug/23/2023 19:09:55" limit-uptime=8h name=fvx549 password=\
@@ -5226,22 +4464,22 @@ add comment="sep/21/2023 19:10:10" limit-uptime=8h name=smr982 password=\
     smr982 profile=dian
 add comment="sep/21/2023 18:59:31" limit-uptime=8h name=jrm379 password=\
     jrm379 profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=uyp447 password=uyp447 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=nrm972 password=nrm972 \
-    profile=dian
+add comment="sep/22/2023 19:00:32" limit-uptime=8h name=uyp447 password=\
+    uyp447 profile=dian
+add comment="sep/22/2023 05:28:16" limit-uptime=8h name=nrm972 password=\
+    nrm972 profile=dian
 add comment="sep/21/2023 17:40:38" limit-uptime=8h name=xik927 password=\
     xik927 profile=dian
 add comment=vc-231-07.25.23-dian limit-uptime=8h name=sbe533 password=sbe533 \
     profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=bdn939 password=bdn939 \
-    profile=dian
+add comment="sep/22/2023 19:01:01" limit-uptime=8h name=bdn939 password=\
+    bdn939 profile=dian
 add comment=vc-231-07.25.23-dian limit-uptime=8h name=srm696 password=srm696 \
     profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=mri639 password=mri639 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=djx642 password=djx642 \
-    profile=dian
+add comment="sep/22/2023 18:37:43" limit-uptime=8h name=mri639 password=\
+    mri639 profile=dian
+add comment="sep/22/2023 01:47:29" limit-uptime=8h name=djx642 password=\
+    djx642 profile=dian
 add comment=vc-231-07.25.23-dian limit-uptime=8h name=zjv847 password=zjv847 \
     profile=dian
 add comment=vc-231-07.25.23-dian limit-uptime=8h name=nzm385 password=nzm385 \
@@ -6738,10 +5976,10 @@ add comment="sep/21/2023 13:55:05" limit-uptime=8h name=iis274 password=\
     iis274 profile=nazim
 add comment="sep/21/2023 17:17:05" limit-uptime=8h name=wsp556 password=\
     wsp556 profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=bby993 password=bby993 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=rna595 password=rna595 \
-    profile=nazim
+add comment="sep/22/2023 09:17:13" limit-uptime=8h name=bby993 password=\
+    bby993 profile=nazim
+add comment="sep/22/2023 16:05:20" limit-uptime=8h name=rna595 password=\
+    rna595 profile=nazim
 add comment=vc-854-08.17.23-nazim limit-uptime=8h name=fjd626 password=fjd626 \
     profile=nazim
 add comment=vc-854-08.17.23-nazim limit-uptime=8h name=kzy984 password=kzy984 \
@@ -7507,10 +6745,9 @@ add dont-require-permissions=no name=#ether1 owner=mm1rza policy=\
     \n"
 add dont-require-permissions=no name=~total-lan-DOWN owner=mm1rza policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    486
+    23
 add dont-require-permissions=no name=~total-lan-UP owner=mm1rza policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    50
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=1
 add dont-require-permissions=no name=#ether2 owner=mm1rza policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=":\
     local bot \"1353625910:AAGAPgQZzOh1JL2vN8jWriJs6XR-xInew04\";\r\
@@ -7609,16 +6846,16 @@ add dont-require-permissions=no name=#ether4 owner=mm1rza policy=\
     \n"
 add dont-require-permissions=no name=~total-ether1-isp1-DOWN owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=33
+    source=0
 add dont-require-permissions=no name=~total-ether1-isp1-UP owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=351
+    source=5
 add dont-require-permissions=no name=~total-ether2-isp2-DOWN owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=15
+    source=1
 add dont-require-permissions=no name=~total-ether2-isp2-UP owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=206
+    source=19
 add dont-require-permissions=no name=~total-ether3-isp3-DOWN owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     source=0
@@ -9853,6 +9090,51 @@ add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-20:54:54-|\
     .10.23-wati" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-00:14:02-|\
+    -zue492-|-1000-|-172.16.0.98-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-03:25:07-|\
+    -syr699-|-1000-|-172.16.0.108-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-09:17:15-|\
+    -bby993-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-11:12:32-|\
+    -uag544-|-1000-|-172.16.0.67-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-12:59:01-|\
+    -vvk286-|-1000-|-172.16.1.189-|-96:19:3C:8F:BB:31-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-16:05:22-|\
+    -rna595-|-1000-|-172.16.2.23-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-19:36:44-|\
+    -ymz598-|-1000-|-172.16.1.6-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-521-07.1\
+    0.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-20:03:41-|\
+    -rtd745-|-1000-|-172.16.2.44-|-0A:42:8F:C8:BE:9A-|-31d-|-evi-|-vc-929-07.1\
+    0.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
+add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-21:10:41-|\
+    -jzc735-|-1000-|-172.16.0.98-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/22/2023
 /tool bandwidth-server
 set enabled=no
 /tool e-mail
@@ -10494,16 +9776,20 @@ add comment="253 MIRZA PC RUMAH" down-script="/ip firewall nat disable [find c\
 add comment="      1 CEK MODEM" down-script="log error (\"ISP1 MODEM RTO\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=480176579&text=\\E2\\9D\\8C IS\
-    P1 MODEM restart modem\" keep-result=no;" host=192.168.18.1 interval=5s \
-    timeout=75ms up-script="log warning (\"ISP1 MODEM CEPET\")\r\
+    P1 MODEM restart modem vpn.mnet.my.id:14561\" keep-result=no;" host=\
+    192.168.18.1 interval=5s timeout=75ms up-script="log warning (\"ISP1 MODEM\
+    \_CEPET\")\r\
+    \n:delay 500ms;\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=480176579&text=\\E2\\9C\\85 IS\
     P1 MODEM CEPET\" keep-result=no;"
 add comment="      2 CEK MODEM" down-script="log error (\"ISP2 MODEM RTO\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=480176579&text=\\E2\\9D\\8C IS\
-    P2 MODEM restart modem\" keep-result=no;" host=192.168.23.1 interval=5s \
-    timeout=75ms up-script="log warning (\"ISP2 MODEM CEPET\")\r\
+    P2 MODEM restart modem vpn.mnet.my.id:14562\" keep-result=no;" host=\
+    192.168.23.1 interval=5s timeout=75ms up-script="log warning (\"ISP2 MODEM\
+    \_CEPET\")\r\
+    \n:delay 500ms;\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=480176579&text=\\E2\\9C\\85 IS\
     P2 MODEM CEPET\" keep-result=no;"

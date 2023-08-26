@@ -1,4 +1,4 @@
-# aug/18/2023 00:00:00 by RouterOS 6.47.10
+# aug/21/2023 12:00:01 by RouterOS 6.47.10
 # software id = G3V5-WUH4
 #
 # model = RB1100x4
@@ -205,208 +205,18 @@ add comment="sep/08/2023 18:21:37" mac-address=D6:E0:3B:02:6E:C5 name=852875 \
     password=852875 profile=PAKET-1BULAN
 add comment=vc-639-01.07.23- name=283369 password=283369 profile=PAKET-1BULAN
 add comment=vc-639-01.07.23- name=649583 password=649583 profile=PAKET-1BULAN
-add comment="aug/20/2023 18:24:19" mac-address=FE:E0:5B:4B:7B:CE name=529563 \
-    password=529563 profile=PAKET-1BULAN
 add comment=vc-639-01.07.23- name=374286 password=374286 profile=PAKET-1BULAN
 add comment=vc-147-04.04.23- name=42426858 password=42426858 profile=\
     PAKET-7HARI
 add comment=vc-147-04.04.23- name=39656638 password=39656638 profile=\
     PAKET-7HARI
-add comment=vc-765-06.04.23- name=GUYH5883 password=GUYH5883 profile=\
-    PAKET-12Jam
-add comment=vc-765-06.04.23- name=ZZAX4925 password=ZZAX4925 profile=\
-    PAKET-12Jam
-add comment=vc-908-06.04.23- name=ZRMM7358 password=ZRMM7358 profile=\
-    PAKET-12Jam
-add comment=vc-908-06.04.23- name=ALMK8975 password=ALMK8975 profile=\
-    PAKET-12Jam
-add comment=vc-908-06.04.23- name=MBZC4595 password=MBZC4595 profile=\
-    PAKET-12Jam
-add comment=vc-475-06.04.23- name=7RCY2NHK password=7RCY2NHK profile=\
-    PAKET-12Jam
-add comment=vc-475-06.04.23- name=WNDB79H6 password=WNDB79H6 profile=\
-    PAKET-12Jam
-add comment=vc-475-06.04.23- name=HSXUGYY7 password=HSXUGYY7 profile=\
-    PAKET-12Jam
-add comment=vc-194-06.04.23- name=FXC8V4XT password=FXC8V4XT profile=\
-    PAKET-12Jam
-add comment=vc-194-06.04.23- name=6ETEX7JR password=6ETEX7JR profile=\
-    PAKET-12Jam
-add comment=vc-194-06.04.23- name=GV8AHFS7 password=GV8AHFS7 profile=\
-    PAKET-12Jam
-add comment=vc-194-06.04.23- name=E4CBPCK6 password=E4CBPCK6 profile=\
-    PAKET-12Jam
-add comment=vc-194-06.04.23- name=67TJEBYV password=67TJEBYV profile=\
-    PAKET-12Jam
-add comment=vc-194-06.04.23- name=REZ4CAHR password=REZ4CAHR profile=\
-    PAKET-12Jam
-add comment=vc-194-06.04.23- name=C9S5U823 password=C9S5U823 profile=\
-    PAKET-12Jam
-add comment=vc-194-06.04.23- name=XBT4VNJZ password=XBT4VNJZ profile=\
-    PAKET-12Jam
-add comment=vc-147-06.04.23- name=XDDN2326 password=XDDN2326 profile=\
-    PAKET-12Jam
-add comment=vc-147-06.04.23- name=NBVB4933 password=NBVB4933 profile=\
-    PAKET-12Jam
-add comment=vc-147-06.04.23- name=HMXB8235 password=HMXB8235 profile=\
-    PAKET-12Jam
-add comment=vc-147-06.04.23- name=VJEF9862 password=VJEF9862 profile=\
-    PAKET-12Jam
-add comment=vc-147-06.04.23- name=CGAT5684 password=CGAT5684 profile=\
-    PAKET-12Jam
-add comment=vc-147-06.04.23- name=LUYK3494 password=LUYK3494 profile=\
-    PAKET-12Jam
-add comment=vc-147-06.04.23- name=RPDF3285 password=RPDF3285 profile=\
-    PAKET-12Jam
-add comment=vc-147-06.04.23- name=HCZH3944 password=HCZH3944 profile=\
-    PAKET-12Jam
-add comment=vc-255-06.04.23- name=YPHN2623 password=YPHN2623 profile=\
-    PAKET-12Jam
-add comment=vc-255-06.04.23- name=FDXC7248 password=FDXC7248 profile=\
-    PAKET-12Jam
-add comment=vc-255-06.04.23- name=UEZA3995 password=UEZA3995 profile=\
-    PAKET-12Jam
-add comment=vc-255-06.04.23- name=GCRA6492 password=GCRA6492 profile=\
-    PAKET-12Jam
-add comment=vc-255-06.04.23- name=MCUE3352 password=MCUE3352 profile=\
-    PAKET-12Jam
-add comment=vc-144-06.04.23- name=2DYXWHBX password=2DYXWHBX profile=\
-    PAKET-12Jam
-add comment=vc-144-06.04.23- name=DPSTCUNC password=DPSTCUNC profile=\
-    PAKET-12Jam
-add comment=vc-144-06.04.23- name=2WXM3N7X password=2WXM3N7X profile=\
-    PAKET-12Jam
-add comment=vc-935-06.04.23- name=KK4FSA8E password=KK4FSA8E profile=\
-    PAKET-12Jam
-add comment=vc-935-06.04.23- name=7W5U5N9F password=7W5U5N9F profile=\
-    PAKET-12Jam
-add comment=vc-158-06.19.23- name=KCWF2562 password=KCWF2562 profile=\
-    PAKET-12Jam
-add comment=vc-158-06.19.23- name=MHSE7395 password=MHSE7395 profile=\
-    PAKET-12Jam
-add comment=vc-605-06.19.23- name=ZPML8692 password=ZPML8692 profile=\
-    PAKET-12Jam
-add comment=vc-605-06.19.23- name=VDEG4329 password=VDEG4329 profile=\
-    PAKET-12Jam
-add comment=vc-605-06.19.23- name=ESEE4544 password=ESEE4544 profile=\
-    PAKET-12Jam
-add comment=vc-605-06.19.23- name=JUZG7229 password=JUZG7229 profile=\
-    PAKET-12Jam
-add comment=vc-605-06.19.23- name=WYUT6865 password=WYUT6865 profile=\
-    PAKET-12Jam
-add comment=vc-605-06.19.23- name=MXEJ5238 password=MXEJ5238 profile=\
-    PAKET-12Jam
-add comment=vc-605-06.19.23- name=WLRU4645 password=WLRU4645 profile=\
-    PAKET-12Jam
-add comment=vc-605-06.19.23- name=ASKY6564 password=ASKY6564 profile=\
-    PAKET-12Jam
-add comment=vc-953-06.19.23- name=6KZS89KB password=6KZS89KB profile=\
-    PAKET-12Jam
-add comment=vc-953-06.19.23- name=FJSP2EHJ password=FJSP2EHJ profile=\
-    PAKET-12Jam
-add comment=vc-953-06.19.23- name=XJP4FNXD password=XJP4FNXD profile=\
-    PAKET-12Jam
-add comment=vc-953-06.19.23- name=MPZPYNV9 password=MPZPYNV9 profile=\
-    PAKET-12Jam
-add comment=vc-953-06.19.23- name=E5NYPN6T password=E5NYPN6T profile=\
-    PAKET-12Jam
-add comment=vc-953-06.19.23- name=WMZY7X8N password=WMZY7X8N profile=\
-    PAKET-12Jam
-add comment=vc-960-06.19.23- name=EZLLGTSL password=EZLLGTSL profile=\
-    PAKET-12Jam
-add comment=vc-960-06.19.23- name=WYSHXBL4 password=WYSHXBL4 profile=\
-    PAKET-12Jam
-add comment=vc-960-06.19.23- name=V9E88YBH password=V9E88YBH profile=\
-    PAKET-12Jam
-add comment=vc-960-06.19.23- name=M4ZUE5KD password=M4ZUE5KD profile=\
-    PAKET-12Jam
-add comment=vc-960-06.19.23- name=ECZJVFT4 password=ECZJVFT4 profile=\
-    PAKET-12Jam
-add comment=vc-960-06.19.23- name=PTPZZBMZ password=PTPZZBMZ profile=\
-    PAKET-12Jam
-add comment=vc-973-06.19.23- name=RLUS3794 password=RLUS3794 profile=\
-    PAKET-12Jam
-add comment=vc-973-06.19.23- name=XZRY6597 password=XZRY6597 profile=\
-    PAKET-12Jam
-add comment=vc-973-06.19.23- name=SWRP5989 password=SWRP5989 profile=\
-    PAKET-12Jam
-add comment=vc-944-06.19.23- name=ZJY8B8ZM password=ZJY8B8ZM profile=\
-    PAKET-12Jam
-add comment=vc-944-06.19.23- name=YWATEMUK password=YWATEMUK profile=\
-    PAKET-12Jam
-add comment=vc-944-06.19.23- name=KVRGBXFY password=KVRGBXFY profile=\
-    PAKET-12Jam
-add comment=vc-944-06.19.23- name=RS7UZPNR password=RS7UZPNR profile=\
-    PAKET-12Jam
-add comment=vc-549-06.19.23- name=86663693 password=86663693 profile=\
-    PAKET-7HARI
-add comment="aug/18/2023 08:54:59" mac-address=18:01:F1:14:38:4A name=\
-    76879748 password=76879748 profile=PAKET-7HARI
-add comment="aug/20/2023 08:06:23" mac-address=82:CD:EB:9B:C1:54 name=\
-    55692697 password=55692697 profile=PAKET-7HARI
-add comment=vc-549-06.19.23- name=56228782 password=56228782 profile=\
-    PAKET-7HARI
+add comment="aug/27/2023 12:41:18" mac-address=72:33:EE:FC:37:03 name=\
+    86663693 password=86663693 profile=PAKET-7HARI
+add comment="aug/25/2023 07:15:14" mac-address=22:A6:CF:D1:AF:A4 name=\
+    56228782 password=56228782 profile=PAKET-7HARI
 add comment="aug/21/2023 19:24:42" mac-address=04:F1:28:39:C6:EF name=\
     44363647 password=44363647 profile=PAKET-7HARI
-add comment="aug/20/2023 07:44:48" mac-address=F0:6D:78:77:FF:C6 name=\
-    85266339 password=85266339 profile=PAKET-7HARI
-add comment="aug/20/2023 10:08:16" mac-address=72:33:EE:FC:37:03 name=\
-    72984583 password=72984583 profile=PAKET-7HARI
 add name=kudaile password=123
-add comment=vc-457-06.28.23- name=RAPY3YRD password=RAPY3YRD profile=\
-    PAKET-12Jam
-add comment=vc-457-06.28.23- name=GJFJ6LDD password=GJFJ6LDD profile=\
-    PAKET-12Jam
-add comment=vc-457-06.28.23- name=BGXL6MBH password=BGXL6MBH profile=\
-    PAKET-12Jam
-add comment=vc-457-06.28.23- name=RWX9Y8X5 password=RWX9Y8X5 profile=\
-    PAKET-12Jam
-add comment=vc-557-06.28.23- name=CP7XB8Z9 password=CP7XB8Z9 profile=\
-    PAKET-12Jam
-add comment=vc-557-06.28.23- name=CMASZ38S password=CMASZ38S profile=\
-    PAKET-12Jam
-add comment=vc-557-06.28.23- name=RJSAPCSR password=RJSAPCSR profile=\
-    PAKET-12Jam
-add comment=vc-557-06.28.23- name=6EDZFPRS password=6EDZFPRS profile=\
-    PAKET-12Jam
-add comment=vc-340-06.28.23- name=28N7XREW9E password=28N7XREW9E profile=\
-    PAKET-12Jam
-add comment=vc-340-06.28.23- name=28MUNYPAF2 password=28MUNYPAF2 profile=\
-    PAKET-12Jam
-add comment=vc-340-06.28.23- name=28CH7JXWWU password=28CH7JXWWU profile=\
-    PAKET-12Jam
-add comment=vc-340-06.28.23- name=28NXD3MKRV password=28NXD3MKRV profile=\
-    PAKET-12Jam
-add comment=vc-340-06.28.23- name=28AN5AFXCM password=28AN5AFXCM profile=\
-    PAKET-12Jam
-add comment=vc-340-06.28.23- name=28FPC447US password=28FPC447US profile=\
-    PAKET-12Jam
-add comment=vc-340-06.28.23- name=28ELBEKAXF password=28ELBEKAXF profile=\
-    PAKET-12Jam
-add comment=vc-638-06.28.23- name=11LLPZHVCD password=11LLPZHVCD profile=\
-    PAKET-12Jam
-add comment=vc-638-06.28.23- name=11F2ZZG625 password=11F2ZZG625 profile=\
-    PAKET-12Jam
-add comment=vc-638-06.28.23- name=11SNL8LJ93 password=11SNL8LJ93 profile=\
-    PAKET-12Jam
-add comment=vc-638-06.28.23- name=116ETEX7JR password=116ETEX7JR profile=\
-    PAKET-12Jam
-add comment=vc-638-06.28.23- name=11HJLFWMAB password=11HJLFWMAB profile=\
-    PAKET-12Jam
-add comment=vc-638-06.28.23- name=11MAL4B7VE password=11MAL4B7VE profile=\
-    PAKET-12Jam
-add comment=vc-555-06.28.23- name=313AP9RP22 password=313AP9RP22 profile=\
-    PAKET-12Jam
-add comment=vc-555-06.28.23- name=31ACYUCKMP password=31ACYUCKMP profile=\
-    PAKET-12Jam
-add comment=vc-555-06.28.23- name=31FGX543FG password=31FGX543FG profile=\
-    PAKET-12Jam
-add comment=vc-339-06.28.23- name=NKEB6YGY password=NKEB6YGY profile=\
-    PAKET-12Jam
-add comment=vc-339-06.28.23- name=ATP7D68D password=ATP7D68D profile=\
-    PAKET-12Jam
-add comment=vc-339-06.28.23- name=F7DCXZYS password=F7DCXZYS profile=\
-    PAKET-12Jam
 add comment=vc-530-06.29.23- name=22TLMLMPHM password=22TLMLMPHM profile=\
     PAKET-12Jam
 add comment=vc-530-06.29.23- name=22A74HHKR6 password=22A74HHKR6 profile=\
@@ -516,12 +326,6 @@ add comment=vc-775-07.18.23- name=34NSZA2UTE password=34NSZA2UTE profile=\
     PAKET-12Jam
 add comment=vc-775-07.18.23- name=34JHK5VFBR password=34JHK5VFBR profile=\
     PAKET-12Jam
-add comment="aug/18/2023 04:54:30" mac-address=8C:D9:D6:F9:E5:F6 name=\
-    34B4298BTN password=34B4298BTN profile=PAKET-12Jam
-add comment="aug/18/2023 06:46:59" mac-address=F6:4A:55:82:4C:74 name=\
-    34AVRKCZMM password=34AVRKCZMM profile=PAKET-12Jam
-add comment=vc-775-07.18.23- name=34ZYNVMU3F password=34ZYNVMU3F profile=\
-    PAKET-12Jam
 add comment=vc-775-07.18.23- name=34CP4Y8MSJ password=34CP4Y8MSJ profile=\
     PAKET-12Jam
 add comment=vc-775-07.18.23- name=349ZZ2WCX5 password=349ZZ2WCX5 profile=\
@@ -550,40 +354,12 @@ add comment=vc-307-07.18.23- name=76ND8R2DG3 password=76ND8R2DG3 profile=\
     PAKET-12Jam
 add comment=vc-307-07.18.23- name=764CUNSP5N password=764CUNSP5N profile=\
     PAKET-12Jam
-add comment=vc-307-07.18.23- name=765WVP9578 password=765WVP9578 profile=\
-    PAKET-12Jam
 add comment=vc-307-07.18.23- name=76LP8BWUSH password=76LP8BWUSH profile=\
-    PAKET-12Jam
-add comment=vc-307-07.18.23- name=76XJHY57Z4 password=76XJHY57Z4 profile=\
-    PAKET-12Jam
-add comment=vc-307-07.18.23- name=76DK2LZSDC password=76DK2LZSDC profile=\
     PAKET-12Jam
 add comment=vc-307-07.18.23- name=76DD2MB7T9 password=76DD2MB7T9 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 01:18:48" mac-address=72:4C:B2:AF:43:96 name=\
-    JB6V8WEYHD password=JB6V8WEYHD profile=PAKET-12Jam
-add comment="aug/18/2023 01:19:43" mac-address=FC:A5:D0:92:A0:9D name=\
-    JBH29H3GKN password=JBH29H3GKN profile=PAKET-12Jam
-add comment=vc-798-07.18.23- name=JBD99VMX2K password=JBD99VMX2K profile=\
-    PAKET-12Jam
-add comment=vc-798-07.18.23- name=JBHAZNV3HU password=JBHAZNV3HU profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:36:49" mac-address=B0:B5:C3:8D:92:15 name=\
-    JBEZH9NF3L password=JBEZH9NF3L profile=PAKET-12Jam
-add comment=vc-798-07.18.23- name=JB8JZUHATA password=JB8JZUHATA profile=\
-    PAKET-12Jam
-add comment=vc-798-07.18.23- name=JBY2UZLW8G password=JBY2UZLW8G profile=\
-    PAKET-12Jam
 add comment=vc-798-07.18.23- name=JBZL4BT6M7 password=JBZL4BT6M7 profile=\
     PAKET-12Jam
-add comment=vc-798-07.18.23- name=JB27YS4L9W password=JB27YS4L9W profile=\
-    PAKET-12Jam
-add comment=vc-182-07.18.23- name=TACMV7D9YW password=TACMV7D9YW profile=\
-    PAKET-12Jam
-add comment=vc-182-07.18.23- name=TAT9NFFBRF password=TAT9NFFBRF profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 07:17:36" mac-address=2C:D0:66:15:A2:F0 name=\
-    TACC2Y3CUV password=TACC2Y3CUV profile=PAKET-12Jam
 add comment=vc-182-07.18.23- name=TA6LLY939Z password=TA6LLY939Z profile=\
     PAKET-12Jam
 add comment=vc-182-07.18.23- name=TA7R8BP8BH password=TA7R8BP8BH profile=\
@@ -592,30 +368,14 @@ add comment=vc-182-07.18.23- name=TAG3HT9GFB password=TAG3HT9GFB profile=\
     PAKET-12Jam
 add comment=vc-484-07.18.23- name=WLNHA499V9 password=WLNHA499V9 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:05:13" mac-address=B2:E1:6C:D8:C9:9F name=\
-    WL9THEUUBN password=WL9THEUUBN profile=PAKET-12Jam
 add comment=vc-484-07.18.23- name=WLWUGSUWVH password=WLWUGSUWVH profile=\
     PAKET-12Jam
 add comment=vc-484-07.18.23- name=WLL2H2NT67 password=WLL2H2NT67 profile=\
     PAKET-12Jam
-add comment=vc-484-07.18.23- name=WL2WMNTB45 password=WL2WMNTB45 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:03:43" mac-address=6C:D7:1F:28:A4:63 name=\
-    WLAMMYCZVF password=WLAMMYCZVF profile=PAKET-12Jam
-add comment="aug/18/2023 06:35:46" mac-address=F2:D0:C1:00:E0:32 name=\
-    WLZM2NPTD3 password=WLZM2NPTD3 profile=PAKET-12Jam
 add comment=vc-484-07.18.23- name=WLSXBED478 password=WLSXBED478 profile=\
-    PAKET-12Jam
-add comment=vc-484-07.18.23- name=WLCXH5T868 password=WLCXH5T868 profile=\
-    PAKET-12Jam
-add comment=vc-484-07.18.23- name=WLXMSXJZU5 password=WLXMSXJZU5 profile=\
-    PAKET-12Jam
-add comment=vc-484-07.18.23- name=WLVBYNSLSV password=WLVBYNSLSV profile=\
     PAKET-12Jam
 add comment=vc-484-07.18.23- name=WLU9U6KWMZ password=WLU9U6KWMZ profile=\
     PAKET-12Jam
-add comment="aug/18/2023 09:12:46" mac-address=F6:36:02:9E:74:B8 name=\
-    WLKJV63EV8 password=WLKJV63EV8 profile=PAKET-12Jam
 add comment=vc-599-07.18.23- name=GHFJ3MATLC password=GHFJ3MATLC profile=\
     PAKET-12Jam
 add comment=vc-599-07.18.23- name=GHRAPY3YRD password=GHRAPY3YRD profile=\
@@ -626,726 +386,170 @@ add comment=vc-599-07.18.23- name=GHR4B4HKC9 password=GHR4B4HKC9 profile=\
     PAKET-12Jam
 add comment=vc-599-07.18.23- name=GH7W87X2YF password=GH7W87X2YF profile=\
     PAKET-12Jam
-add comment="aug/18/2023 05:57:30" mac-address=88:D5:0C:1D:1B:5D name=\
-    GH2S66NFYD password=GH2S66NFYD profile=PAKET-12Jam
 add comment=vc-599-07.18.23- name=GHSUN939KL password=GHSUN939KL profile=\
-    PAKET-12Jam
-add comment=vc-599-07.18.23- name=GH25XD5TTM password=GH25XD5TTM profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 09:32:08" mac-address=08:8C:2C:06:B9:8B name=\
-    95JNG9L5RD password=95JNG9L5RD profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95575BKDKR password=95575BKDKR profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 08:38:18" mac-address=AE:60:4B:3D:56:45 name=\
-    957F7Y3UA6 password=957F7Y3UA6 profile=PAKET-12Jam
-add comment="aug/18/2023 08:19:40" mac-address=F2:BA:1D:28:48:6D name=\
-    95KPC4W4HA password=95KPC4W4HA profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=958JBD3VDT password=958JBD3VDT profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95NR7ZMJ8E password=95NR7ZMJ8E profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YKLTKXN4 password=95YKLTKXN4 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=9552RCVA6D password=9552RCVA6D profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=9545E4GC9N password=9545E4GC9N profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 07:35:19" mac-address=6E:85:4C:59:FB:21 name=\
-    95ENFSNPKE password=95ENFSNPKE profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95L9HSRXRX password=95L9HSRXRX profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 04:33:34" mac-address=8E:F6:76:EC:A1:F5 name=\
-    95FGM7UPCP password=95FGM7UPCP profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95CXBHC8SF password=95CXBHC8SF profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=959MYRG2GB password=959MYRG2GB profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95UKB69UXD password=95UKB69UXD profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=9532635WYY password=9532635WYY profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95GSCXFCA4 password=95GSCXFCA4 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=953HHTCLN8 password=953HHTCLN8 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95XM3AH6E8 password=95XM3AH6E8 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95UJN6BCSM password=95UJN6BCSM profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95WCJ2XRXF password=95WCJ2XRXF profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95L7VWY6LE password=95L7VWY6LE profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95VWRJ6D7L password=95VWRJ6D7L profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95RWMAPUUB password=95RWMAPUUB profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YPW6YKXC password=95YPW6YKXC profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95TDE95LH6 password=95TDE95LH6 profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=95S76J99C4 password=95S76J99C4 profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=95TCWEV6KG password=95TCWEV6KG profile=\
     PAKET-12Jam
-add comment=vc-742-07.18.23- name=95XHTUYT5P password=95XHTUYT5P profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95X3GZKDD8 password=95X3GZKDD8 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95UZX97LAT password=95UZX97LAT profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=958USAB3P2 password=958USAB3P2 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95AJZEBDSH password=95AJZEBDSH profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95EU82FHUK password=95EU82FHUK profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YWS34TCL password=95YWS34TCL profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95D5WSR6JY password=95D5WSR6JY profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=955U5N9FC3 password=955U5N9FC3 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:10:15" mac-address=70:78:8B:CC:1A:8B name=\
+    95X3GZKDD8 password=95X3GZKDD8 profile=PAKET-12Jam
+add comment="aug/21/2023 22:19:31" mac-address=20:5E:F7:8A:38:60 name=\
+    95AJZEBDSH password=95AJZEBDSH profile=PAKET-12Jam
 add comment=vc-742-07.18.23- name=95VGJ8XPLZ password=95VGJ8XPLZ profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=95DR4MFGRX password=95DR4MFGRX profile=\
     PAKET-12Jam
-add comment=vc-742-07.18.23- name=958ZFULPRV password=958ZFULPRV profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95ABJ9RTDU password=95ABJ9RTDU profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95MMV7SYRD password=95MMV7SYRD profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:15:44" mac-address=AA:C5:5A:F5:C0:87 name=\
+    958ZFULPRV password=958ZFULPRV profile=PAKET-12Jam
 add comment=vc-742-07.18.23- name=95XGWPMLD9 password=95XGWPMLD9 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95ECND2MPW password=95ECND2MPW profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=95ME9MCUYB password=95ME9MCUYB profile=\
     PAKET-12Jam
-add comment=vc-742-07.18.23- name=95M2NB4LJF password=95M2NB4LJF profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 05:25:35" mac-address=84:6F:CE:0D:AC:57 name=\
-    95YWKJ3JXZ password=95YWKJ3JXZ profile=PAKET-12Jam
 add comment=vc-742-07.18.23- name=9589Y8BUAV password=9589Y8BUAV profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95CCBXBRXN password=95CCBXBRXN profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95TWGUYLMN password=95TWGUYLMN profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=95GSR5CD3N password=95GSR5CD3N profile=\
     PAKET-12Jam
-add comment=vc-742-07.18.23- name=95MEVCA46H password=95MEVCA46H profile=\
-    PAKET-12Jam
 add comment=vc-742-07.18.23- name=955RD7592F password=955RD7592F profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 01:07:03" mac-address=32:17:C4:75:47:5E name=\
-    959JDPD4KB password=959JDPD4KB profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95A9EURSA7 password=95A9EURSA7 profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=95XVL4E6ZZ password=95XVL4E6ZZ profile=\
     PAKET-12Jam
-add comment="aug/18/2023 01:09:05" mac-address=E0:1F:88:48:C7:50 name=\
-    95FMLYNS2G password=95FMLYNS2G profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95E5Y43DRH password=95E5Y43DRH profile=\
-    PAKET-12Jam
 add comment=vc-742-07.18.23- name=95LX6LZVMZ password=95LX6LZVMZ profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95UT8U3MA7 password=95UT8U3MA7 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YPSHL6RA password=95YPSHL6RA profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95A3XUGCMY password=95A3XUGCMY profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95HLUTZ9LM password=95HLUTZ9LM profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95RSGKNLR5 password=95RSGKNLR5 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=9598RHF3XX password=9598RHF3XX profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=956CNTBPEP password=956CNTBPEP profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 04:11:13" mac-address=C4:E1:A1:F6:DA:07 name=\
-    95CGEVVUTJ password=95CGEVVUTJ profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95JEMX5HK5 password=95JEMX5HK5 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95ALBRJKBJ password=95ALBRJKBJ profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95XCP5S4BA password=95XCP5S4BA profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:42:51" mac-address=CC:2D:83:A5:F7:35 name=\
-    95LZ3RB3DG password=95LZ3RB3DG profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95D5B3UVCS password=95D5B3UVCS profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95BKD72GHB password=95BKD72GHB profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95WHBBRJ6L password=95WHBBRJ6L profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=955UMMNLBY password=955UMMNLBY profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=954CBBMTMG password=954CBBMTMG profile=\
     PAKET-12Jam
-add comment="aug/18/2023 06:40:52" mac-address=70:78:8B:C4:ED:A9 name=\
-    95JMJ5AYYX password=95JMJ5AYYX profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95XKBN794D password=95XKBN794D profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95L7CUDAKA password=95L7CUDAKA profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 07:01:03" mac-address=EE:F2:43:86:5A:DD name=\
-    95PY7EYGSJ password=95PY7EYGSJ profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YS5UUCAB password=95YS5UUCAB profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95TV6DKP3E password=95TV6DKP3E profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=957SYCPW6M password=957SYCPW6M profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=952JVMXE99 password=952JVMXE99 profile=\
-    PAKET-12Jam
 add comment=vc-742-07.18.23- name=955TEXTUYZ password=955TEXTUYZ profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=959ZFEETR4 password=959ZFEETR4 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:29:01" mac-address=1A:9F:BD:2B:C0:4A name=\
-    959UM5L2GX password=959UM5L2GX profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=9595THAL7N password=9595THAL7N profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95G9DHADDM password=95G9DHADDM profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95DS2SSMGD password=95DS2SSMGD profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95MH5TUFFZ password=95MH5TUFFZ profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95WX9Y8X5H password=95WX9Y8X5H profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:57:41" mac-address=4A:A7:84:DF:33:DE name=\
-    95GYCW5XW7 password=95GYCW5XW7 profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95TJPKH9SE password=95TJPKH9SE profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95ZP92UDPD password=95ZP92UDPD profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95K4RX52HJ password=95K4RX52HJ profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95VGLZFUTB password=95VGLZFUTB profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=956LDY5ACW password=956LDY5ACW profile=\
     PAKET-12Jam
-add comment=vc-742-07.18.23- name=95L4MRFZAF password=95L4MRFZAF profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=959BKNXPEL password=959BKNXPEL profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95P6GM7FZK password=95P6GM7FZK profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 04:17:30" mac-address=8E:CF:A0:28:D9:2C name=\
-    958U9CWWR5 password=958U9CWWR5 profile=PAKET-12Jam
-add comment="aug/18/2023 00:04:33" mac-address=6C:D7:1F:27:3B:4B name=\
-    95ZBYY5KWF password=95ZBYY5KWF profile=PAKET-12Jam
 add comment=vc-742-07.18.23- name=95YDWDFYNF password=95YDWDFYNF profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95J7BX9YEJ password=95J7BX9YEJ profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=955JNSZA2U password=955JNSZA2U profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:24:16" mac-address=74:F2:FA:EF:4F:3D name=\
-    95PKG27Y6T password=95PKG27Y6T profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YLX9YT8C password=95YLX9YT8C profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95XDJHK5VF password=95XDJHK5VF profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:43:51" mac-address=C0:87:EB:8F:0F:13 name=\
-    959FRDYXGT password=959FRDYXGT profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95MMSFAUH4 password=95MMSFAUH4 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=955EXC2SSF password=955EXC2SSF profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=955S4XKVEH password=955S4XKVEH profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=956M8CXBW2 password=956M8CXBW2 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95ERKAUER9 password=95ERKAUER9 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95HM9ZW9D8 password=95HM9ZW9D8 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 07:23:15" mac-address=02:61:43:25:FB:4D name=\
-    95H4H4TJXD password=95H4H4TJXD profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95SG5EXKM8 password=95SG5EXKM8 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95CG4BA883 password=95CG4BA883 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:37:36" mac-address=46:77:41:3A:05:8F name=\
-    95MDX8YXE3 password=95MDX8YXE3 profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95NJT546TA password=95NJT546TA profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95LEAXD2YV password=95LEAXD2YV profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95Y2CY238C password=95Y2CY238C profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95EPGMGZJ7 password=95EPGMGZJ7 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95E9B7Y674 password=95E9B7Y674 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 02:04:01" mac-address=20:5E:F7:6C:0B:60 name=\
-    95CP7XB8Z9 password=95CP7XB8Z9 profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95SBXY8RLG password=95SBXY8RLG profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:30:04" mac-address=5C:D0:6E:06:68:B6 name=\
-    95HLNAZZ72 password=95HLNAZZ72 profile=PAKET-12Jam
-add comment="aug/18/2023 00:21:40" mac-address=DA:98:4B:23:96:2A name=\
-    95PZA3BXXM password=95PZA3BXXM profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95SKGLZ352 password=95SKGLZ352 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 01:43:06" mac-address=0C:A8:A7:EB:C2:E8 name=\
-    95HNAVRKCZ password=95HNAVRKCZ profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=958GZ3UNVR password=958GZ3UNVR profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95C9PKWJU5 password=95C9PKWJU5 profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=956AUEHNVK password=956AUEHNVK profile=\
     PAKET-12Jam
-add comment="aug/18/2023 02:53:10" mac-address=C6:77:A4:41:70:76 name=\
-    95JC482SNP password=95JC482SNP profile=PAKET-12Jam
 add comment=vc-742-07.18.23- name=95P7T3KCKU password=95P7T3KCKU profile=\
     PAKET-12Jam
-add comment=vc-742-07.18.23- name=95CJXKXKRY password=95CJXKXKRY profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 04:42:14" mac-address=AA:C5:5A:F5:C0:87 name=\
-    95YGSM4A7D password=95YGSM4A7D profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=955Z4CWTYL password=955Z4CWTYL profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:25:09" mac-address=C6:53:41:EE:0D:49 name=\
-    952ML63LKV password=952ML63LKV profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=958HGZ9UUM password=958HGZ9UUM profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 02:58:26" mac-address=20:5E:F7:8A:38:60 name=\
-    952ZKWJ9UR password=952ZKWJ9UR profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95PEPSD6WM password=95PEPSD6WM profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 05:30:42" mac-address=0A:CB:37:86:FE:43 name=\
-    95EGC2GZSZ password=95EGC2GZSZ profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95CJHD2JYD password=95CJHD2JYD profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95BRUW9P6Z password=95BRUW9P6Z profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=956JNCTC23 password=956JNCTC23 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YW6C6J6E password=95YW6C6J6E profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=953AW9WGW5 password=953AW9WGW5 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95Y9FJ32ZK password=95Y9FJ32ZK profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95NFYYLHBL password=95NFYYLHBL profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:38:10" mac-address=C0:87:EB:FC:6B:E5 name=\
-    954AS47FN2 password=954AS47FN2 profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95HAGRFWJX password=95HAGRFWJX profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=959N9VVR32 password=959N9VVR32 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95DSLKVMPT password=95DSLKVMPT profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=9522LTDJTH password=9522LTDJTH profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 01:05:59" mac-address=1A:5E:A4:9E:FB:78 name=\
-    95GK3P8E32 password=95GK3P8E32 profile=PAKET-12Jam
-add comment=vc-742-07.18.23- name=95Y855N6EA password=95Y855N6EA profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:43:03" mac-address=2C:D0:66:15:A2:F0 name=\
+    95DSLKVMPT password=95DSLKVMPT profile=PAKET-12Jam
 add comment=vc-742-07.18.23- name=954RWJRA25 password=954RWJRA25 profile=\
     PAKET-12Jam
 add comment=vc-742-07.18.23- name=95AYNDXZCG password=95AYNDXZCG profile=\
     PAKET-12Jam
-add comment=vc-742-07.18.23- name=95CMASZ38S password=95CMASZ38S profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YAVRY3S5 password=95YAVRY3S5 profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95YBK38S5E password=95YBK38S5E profile=\
-    PAKET-12Jam
-add comment=vc-742-07.18.23- name=95MCE9JSE6 password=95MCE9JSE6 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:03:55" mac-address=C2:FF:98:AF:25:D9 name=\
+    95YAVRY3S5 password=95YAVRY3S5 profile=PAKET-12Jam
 add comment=vc-742-07.18.23- name=95WVBX3GDA password=95WVBX3GDA profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48V3M3KU5K password=48V3M3KU5K profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 22:49:09" mac-address=2A:B9:6B:01:98:19 name=\
+    48V3M3KU5K password=48V3M3KU5K profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=48BWU78AA9 password=48BWU78AA9 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48BMEJZBYK password=48BMEJZBYK profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=488JBZC4WG password=488JBZC4WG profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48GUDBE7PB password=48GUDBE7PB profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48HMY2MWAE password=48HMY2MWAE profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=487S97HJAA password=487S97HJAA profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48PCD2F7WB password=48PCD2F7WB profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=483K28WA5K password=483K28WA5K profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48RYFVL8VD password=48RYFVL8VD profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48SMNHY5ZW password=48SMNHY5ZW profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48UWKMECAP password=48UWKMECAP profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48RZSAZ4FM password=48RZSAZ4FM profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=4855Y4NNY2 password=4855Y4NNY2 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48JKRCS5XG password=48JKRCS5XG profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48WLY9FXST password=48WLY9FXST profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48JJZLBJJE password=48JJZLBJJE profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48WC94NDUM password=48WC94NDUM profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 05:14:24" mac-address=20:64:CB:C9:B2:BB name=\
-    48RESPZLLV password=48RESPZLLV profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=48ZKSGPHKM password=48ZKSGPHKM profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48SPHSLGHU password=48SPHSLGHU profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48PXVKVUPY password=48PXVKVUPY profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48TLYSHJLU password=48TLYSHJLU profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 23:03:36" mac-address=A6:FD:DA:F8:99:DA name=\
+    48PXVKVUPY password=48PXVKVUPY profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=48CXP2H936 password=48CXP2H936 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48JBABC9KZ password=48JBABC9KZ profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48N5DL59B7 password=48N5DL59B7 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48ZG9TLSM7 password=48ZG9TLSM7 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:14:55" mac-address=4A:1B:0A:CC:59:AD name=\
-    48G4U8MC2K password=48G4U8MC2K profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=48J9JT839D password=48J9JT839D profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48L622AMHP password=48L622AMHP profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48LMHW7DF3 password=48LMHW7DF3 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48DXECTYEF password=48DXECTYEF profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=486DGC93GS password=486DGC93GS profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48SXJL5C4P password=48SXJL5C4P profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=4879Z8UYTC password=4879Z8UYTC profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48VKGR8PTP password=48VKGR8PTP profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48PR76SVPC password=48PR76SVPC profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48Y6AFB2E3 password=48Y6AFB2E3 profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48PFJVM5ZP password=48PFJVM5ZP profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=488NLBRR6S password=488NLBRR6S profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48PMB2A88M password=48PMB2A88M profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:02:46" mac-address=E0:1F:88:7C:DB:08 name=\
+    488NLBRR6S password=488NLBRR6S profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=48N8RT7RUZ password=48N8RT7RUZ profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=487ESHLS3H password=487ESHLS3H profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48EP3XPH93 password=48EP3XPH93 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=485CKM5TR4 password=485CKM5TR4 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=484DJ7MVHC password=484DJ7MVHC profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48ZKZARYYT password=48ZKZARYYT profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48J36UHYU2 password=48J36UHYU2 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48UPYZUHGD password=48UPYZUHGD profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48ABF8NKPF password=48ABF8NKPF profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48XZ826JK7 password=48XZ826JK7 profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48KT7FG2GW password=48KT7FG2GW profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48G2KNXAPU password=48G2KNXAPU profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48L3ZCSRMD password=48L3ZCSRMD profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48VWMZRKG8 password=48VWMZRKG8 profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=485LTWG8ND password=485LTWG8ND profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48ASA5NUG2 password=48ASA5NUG2 profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48HXEYW3LM password=48HXEYW3LM profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48YRWM44DU password=48YRWM44DU profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48R63H83NP password=48R63H83NP profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48JSAPCSR8 password=48JSAPCSR8 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48P8LMGPLX password=48P8LMGPLX profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48S23B84Z6 password=48S23B84Z6 profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48T73ZVFLP password=48T73ZVFLP profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=486TPNFR3E password=486TPNFR3E profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48444ADP74 password=48444ADP74 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48YYEJ7TZU password=48YYEJ7TZU profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=4828WHR2H2 password=4828WHR2H2 profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48G5U5GMZC password=48G5U5GMZC profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48TT643MLC password=48TT643MLC profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=4838YU39PK password=4838YU39PK profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=482JMF67DS password=482JMF67DS profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48E4JHGKFM password=48E4JHGKFM profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48HSRBFPJK password=48HSRBFPJK profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48PYP4VKAC password=48PYP4VKAC profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48GH2JV2L7 password=48GH2JV2L7 profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48WD3FGEDT password=48WD3FGEDT profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48S8VGU774 password=48S8VGU774 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48KW9H6UE2 password=48KW9H6UE2 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 08:35:51" mac-address=6C:F7:84:F6:05:B7 name=\
-    48Y4SM3LFE password=48Y4SM3LFE profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=4823WEVRVP password=4823WEVRVP profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=4888JLR2ZZ password=4888JLR2ZZ profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48XJX4LFTG password=48XJX4LFTG profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=485RA2WCCU password=485RA2WCCU profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48PBV88RXM password=48PBV88RXM profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=483UKZTANB password=483UKZTANB profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 08:39:45" mac-address=E2:64:0F:85:89:30 name=\
-    48PLLAULUK password=48PLLAULUK profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=48EKPUURSG password=48EKPUURSG profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48ZRAHYX7U password=48ZRAHYX7U profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=483JJAG66N password=483JJAG66N profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48W9PDKMW8 password=48W9PDKMW8 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 09:09:55" mac-address=D4:1A:3F:41:83:57 name=\
-    486GRXY5TH password=486GRXY5TH profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=48SDVKNFUE password=48SDVKNFUE profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48AAB669HK password=48AAB669HK profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48CD62LP2R password=48CD62LP2R profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48K4R49CZF password=48K4R49CZF profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48V2BM7YJA password=48V2BM7YJA profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48DDBZACDC password=48DDBZACDC profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48UGK9EU5G password=48UGK9EU5G profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48EDZFPRSV password=48EDZFPRSV profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48JDB42VHJ password=48JDB42VHJ profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=486AM8SFY4 password=486AM8SFY4 profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48WBEKPM8A password=48WBEKPM8A profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48CJPD7BUG password=48CJPD7BUG profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 03:41:04" mac-address=68:BF:C4:A8:F8:12 name=\
-    48WSMTRLTN password=48WSMTRLTN profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=48DVK46LWH password=48DVK46LWH profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48LVDP7WU4 password=48LVDP7WU4 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=489PZ4FVWJ password=489PZ4FVWJ profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 05:06:38" mac-address=DC:B7:2E:D3:FC:94 name=\
-    48A4JZH6BM password=48A4JZH6BM profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=48JNXHAA9E password=48JNXHAA9E profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48T26NJB7N password=48T26NJB7N profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48FP3HJL8A password=48FP3HJL8A profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48AF2PFXKE password=48AF2PFXKE profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=488TYEMJLC password=488TYEMJLC profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48U9M6F5SW password=48U9M6F5SW profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48R6V5CGAB password=48R6V5CGAB profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=483HHDMU7W password=483HHDMU7W profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48LBFE7LYV password=48LBFE7LYV profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=488EMCWRUE password=488EMCWRUE profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48JXG73LSY password=48JXG73LSY profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:32:20" mac-address=5C:D0:6E:24:74:7D name=\
-    48K3X2FHFV password=48K3X2FHFV profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=48P6DGYJAY password=48P6DGYJAY profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:03:53" mac-address=0A:8D:81:AB:94:14 name=\
-    48AELHJWSV password=48AELHJWSV profile=PAKET-12Jam
-add comment="aug/18/2023 00:03:20" mac-address=C2:4E:18:EE:AD:5A name=\
-    48MS65FUHC password=48MS65FUHC profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=48S6UP6KAJ password=48S6UP6KAJ profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=484RZWJMR5 password=484RZWJMR5 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48PX34W45L password=48PX34W45L profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48L2WRFBFB password=48L2WRFBFB profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48GVPRT3AL password=48GVPRT3AL profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48685DHZ2E password=48685DHZ2E profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48AY7XMDU3 password=48AY7XMDU3 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48TM3DVYSX password=48TM3DVYSX profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48ZU2245HF password=48ZU2245HF profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=489YWS9P9C password=489YWS9P9C profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48NGNT2S6C password=48NGNT2S6C profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=486VMPL8SM password=486VMPL8SM profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48S7CJE287 password=48S7CJE287 profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48F5FCSJ8J password=48F5FCSJ8J profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48ESWBJJT8 password=48ESWBJJT8 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48DWY93MN4 password=48DWY93MN4 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48YH7B5UEE password=48YH7B5UEE profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48JX73NW79 password=48JX73NW79 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 11:02:19" mac-address=6A:AE:2D:BD:14:C6 name=\
-    48T83VPRKG password=48T83VPRKG profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=48KN5W6ULT password=48KN5W6ULT profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48NRPMJLR9 password=48NRPMJLR9 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48ZSW4RHCU password=48ZSW4RHCU profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48DEYZ8UJ4 password=48DEYZ8UJ4 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48L8PW3EN9 password=48L8PW3EN9 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48LY9UMJBT password=48LY9UMJBT profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48W7YVFELL password=48W7YVFELL profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=484HDC4HZ2 password=484HDC4HZ2 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=4847XJ22P2 password=4847XJ22P2 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:11:33" mac-address=64:A2:00:F0:39:DA name=\
-    48UHSH5PGM password=48UHSH5PGM profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=48WC6B69LB password=48WC6B69LB profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=486XDBW55G password=486XDBW55G profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48LK4UF3PP password=48LK4UF3PP profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48BN4W92BV password=48BN4W92BV profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48RG528T6W password=48RG528T6W profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48C9WK3CR8 password=48C9WK3CR8 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48Z4UYDUMX password=48Z4UYDUMX profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48A7AHMCM9 password=48A7AHMCM9 profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=48LMA46W3W password=48LMA46W3W profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48EYA74X7C password=48EYA74X7C profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:54:12" mac-address=5C:AF:06:1F:59:9E name=\
-    487JF6355K password=487JF6355K profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=48W73GTVSN password=48W73GTVSN profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:55:07" mac-address=3C:B6:B7:36:05:43 name=\
+    48EYA74X7C password=48EYA74X7C profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=4856ZZHYXT password=4856ZZHYXT profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48S6CNKR9E password=48S6CNKR9E profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48MX8JMBB8 password=48MX8JMBB8 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48Y2Y99JW9 password=48Y2Y99JW9 profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48PLESTCEY password=48PLESTCEY profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48MUNYPAF2 password=48MUNYPAF2 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 06:47:08" mac-address=7E:48:A6:98:2E:35 name=\
-    48NT8CLCMN password=48NT8CLCMN profile=PAKET-12Jam
-add comment=vc-233-07.18.23- name=487GPHS8SR password=487GPHS8SR profile=\
-    PAKET-12Jam
 add comment=vc-233-07.18.23- name=484TC8SUA6 password=484TC8SUA6 profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48549SEYLR password=48549SEYLR profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48C9334L6V password=48C9334L6V profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=482FH26695 password=482FH26695 profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48WAR9EXVZ password=48WAR9EXVZ profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=488GN4KBSY password=488GN4KBSY profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48PG6FEP6N password=48PG6FEP6N profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:40:13" mac-address=5A:09:2C:1A:1B:A6 name=\
-    48D5Z5KH9Z password=48D5Z5KH9Z profile=PAKET-12Jam
 add comment=vc-233-07.18.23- name=48DFNBHJXD password=48DFNBHJXD profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48KP32G2DA password=48KP32G2DA profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48DA7K9BAP password=48DA7K9BAP profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=489Z2PMBEZ password=489Z2PMBEZ profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48K2LK3LVL password=48K2LK3LVL profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48GNEJK53J password=48GNEJK53J profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=485TEJ43GP password=485TEJ43GP profile=\
     PAKET-12Jam
 add comment=vc-233-07.18.23- name=48UW94VSN7 password=48UW94VSN7 profile=\
     PAKET-12Jam
-add comment=vc-233-07.18.23- name=48ZT7MA4XB password=48ZT7MA4XB profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48DPVJVYVN password=48DPVJVYVN profile=\
-    PAKET-12Jam
-add comment=vc-233-07.18.23- name=48WRRMEF27 password=48WRRMEF27 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 23:06:58" mac-address=6C:D7:1F:24:3A:8D name=\
+    48WRRMEF27 password=48WRRMEF27 profile=PAKET-12Jam
 add comment="aug/29/2023 12:09:39" mac-address=7E:6D:2B:C7:10:F0 name=583426 \
     password=583426 profile=PAKET-1BULAN
 add comment=vc-430-07.18.23- name=235622 password=235622 profile=PAKET-1BULAN
@@ -1365,9 +569,8 @@ add comment=vc-430-07.18.23- name=466968 password=466968 profile=PAKET-1BULAN
 add comment="aug/27/2023 06:48:35" mac-address=CA:8D:47:14:05:A1 name=287487 \
     password=287487 profile=PAKET-1BULAN
 add comment=vc-430-07.18.23- name=287384 password=287384 profile=PAKET-1BULAN
-add comment=vc-430-07.18.23- name=956583 password=956583 profile=PAKET-1BULAN
-add comment="aug/20/2023 19:39:16" mac-address=9A:11:6D:EC:FC:22 name=475634 \
-    password=475634 profile=PAKET-1BULAN
+add comment="sep/20/2023 08:23:55" mac-address=9A:11:6D:EC:FC:22 name=956583 \
+    password=956583 profile=PAKET-1BULAN
 add comment="aug/31/2023 19:40:36" mac-address=8E:9A:2D:FF:86:83 name=453284 \
     password=453284 profile=PAKET-1BULAN
 add comment=vc-430-07.18.23- name=464955 password=464955 profile=PAKET-1BULAN
@@ -1406,106 +609,82 @@ add comment="sep/13/2023 07:46:46" mac-address=2C:D0:66:0F:B6:30 name=546926 \
     password=546926 profile=PAKET-1BULAN
 add comment=vc-430-07.18.23- name=462265 password=462265 profile=PAKET-1BULAN
 add comment=vc-430-07.18.23- name=478448 password=478448 profile=PAKET-1BULAN
-add comment="aug/20/2023 19:27:21" mac-address=66:F2:F9:B2:51:76 name=\
-    78528336 password=78528336 profile=PAKET-7HARI
-add comment="aug/20/2023 10:49:20" mac-address=6C:F7:84:F3:C2:4B name=\
-    92682223 password=92682223 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=82866263 password=82866263 profile=\
-    PAKET-7HARI
+add comment="aug/27/2023 09:40:47" mac-address=82:CD:EB:9B:C1:54 name=\
+    82866263 password=82866263 profile=PAKET-7HARI
 add comment="aug/23/2023 16:18:26" mac-address=0C:98:38:ED:42:63 name=\
     23837865 password=23837865 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=56647976 password=56647976 profile=\
-    PAKET-7HARI
+add comment="aug/27/2023 10:51:48" mac-address=5E:52:69:0D:02:6A name=\
+    56647976 password=56647976 profile=PAKET-7HARI
 add comment=vc-458-07.18.23- name=38446454 password=38446454 profile=\
     PAKET-7HARI
-add comment=vc-458-07.18.23- name=42876534 password=42876534 profile=\
-    PAKET-7HARI
-add comment=vc-458-07.18.23- name=92572493 password=92572493 profile=\
-    PAKET-7HARI
+add comment="aug/26/2023 20:54:43" mac-address=10:BC:97:04:96:B3 name=\
+    42876534 password=42876534 profile=PAKET-7HARI
+add comment="aug/26/2023 12:44:23" mac-address=C0:47:54:BE:65:D5 name=\
+    92572493 password=92572493 profile=PAKET-7HARI
 add comment="aug/21/2023 17:49:29" mac-address=7C:2A:DB:97:30:86 name=\
     67259962 password=67259962 profile=PAKET-7HARI
 add comment="aug/23/2023 20:38:45" mac-address=CE:22:3D:8F:7A:C2 name=\
     25987847 password=25987847 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=22294536 password=22294536 profile=\
-    PAKET-7HARI
-add comment=vc-458-07.18.23- name=22256534 password=22256534 profile=\
-    PAKET-7HARI
+add comment="aug/25/2023 05:42:36" mac-address=4A:1B:0A:CC:59:AD name=\
+    22294536 password=22294536 profile=PAKET-7HARI
+add comment="aug/27/2023 06:19:35" mac-address=96:C5:BC:7A:37:B7 name=\
+    22256534 password=22256534 profile=PAKET-7HARI
 add comment=vc-458-07.18.23- name=74834378 password=74834378 profile=\
     PAKET-7HARI
-add comment="aug/19/2023 20:48:36" mac-address=10:BC:97:04:96:B3 name=\
-    42599828 password=42599828 profile=PAKET-7HARI
 add comment=vc-458-07.18.23- name=97622282 password=97622282 profile=\
     PAKET-7HARI
-add comment="aug/20/2023 10:31:55" mac-address=06:94:B0:11:F4:A3 name=\
-    52776269 password=52776269 profile=PAKET-7HARI
 add comment="aug/21/2023 23:55:03" mac-address=02:D1:7C:F4:32:3A name=\
     69345839 password=69345839 profile=PAKET-7HARI
 add comment="aug/22/2023 08:51:28" mac-address=D6:52:39:FF:A4:60 name=\
     76256389 password=76256389 profile=PAKET-7HARI
-add comment="aug/20/2023 06:17:07" mac-address=82:4E:C9:DD:01:F1 name=\
-    65269629 password=65269629 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=24439337 password=24439337 profile=\
-    PAKET-7HARI
+add comment="aug/28/2023 07:26:54" mac-address=18:01:F1:14:38:4A name=\
+    24439337 password=24439337 profile=PAKET-7HARI
 add comment="aug/21/2023 19:04:02" mac-address=7C:2A:DB:A4:96:70 name=\
     87332894 password=87332894 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=86622522 password=86622522 profile=\
-    PAKET-7HARI
-add comment=vc-458-07.18.23- name=86324957 password=86324957 profile=\
-    PAKET-7HARI
+add comment="aug/28/2023 09:38:20" mac-address=6C:F7:84:F3:C2:4B name=\
+    86622522 password=86622522 profile=PAKET-7HARI
+add comment="aug/28/2023 07:25:26" mac-address=2E:13:BC:25:22:36 name=\
+    86324957 password=86324957 profile=PAKET-7HARI
 add comment="aug/24/2023 05:40:21" mac-address=06:3A:14:AD:FC:E3 name=\
     68665335 password=68665335 profile=PAKET-7HARI
 add comment="aug/22/2023 20:15:49" mac-address=C0:87:EB:39:81:17 name=\
     48663376 password=48663376 profile=PAKET-7HARI
-add comment="aug/18/2023 10:52:15" mac-address=CE:22:3D:8F:7A:C2 name=\
-    79797832 password=79797832 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=84233553 password=84233553 profile=\
-    PAKET-7HARI
-add comment="aug/20/2023 14:42:24" mac-address=0C:A8:A7:11:53:C0 name=\
-    45439639 password=45439639 profile=PAKET-7HARI
+add comment="aug/27/2023 07:59:51" mac-address=F0:6D:78:77:FF:C6 name=\
+    84233553 password=84233553 profile=PAKET-7HARI
 add comment=vc-458-07.18.23- name=52622376 password=52622376 profile=\
     PAKET-7HARI
-add comment=vc-458-07.18.23- name=34736629 password=34736629 profile=\
-    PAKET-7HARI
-add comment="aug/20/2023 09:43:32" mac-address=A6:FD:DA:F8:99:DA name=\
-    27889463 password=27889463 profile=PAKET-7HARI
+add comment="aug/28/2023 10:33:27" mac-address=7C:2A:DB:B0:1D:FA name=\
+    34736629 password=34736629 profile=PAKET-7HARI
 add comment="aug/21/2023 20:28:26" mac-address=12:41:A6:49:B6:C8 name=\
     37378244 password=37378244 profile=PAKET-7HARI
-add comment="aug/19/2023 11:10:28" mac-address=52:21:81:EF:CC:ED name=\
-    62736689 password=62736689 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=27784736 password=27784736 profile=\
-    PAKET-7HARI
+add comment="aug/26/2023 22:58:31" mac-address=D6:29:9D:6C:9E:8F name=\
+    27784736 password=27784736 profile=PAKET-7HARI
 add comment="aug/22/2023 18:37:13" mac-address=0C:A8:A7:FA:F9:96 name=\
     92797344 password=92797344 profile=PAKET-7HARI
 add comment=vc-458-07.18.23- name=97972478 password=97972478 profile=\
     PAKET-7HARI
-add comment=vc-458-07.18.23- name=85394247 password=85394247 profile=\
-    PAKET-7HARI
-add comment=vc-458-07.18.23- name=42588226 password=42588226 profile=\
-    PAKET-7HARI
+add comment="aug/25/2023 10:12:46" mac-address=08:4A:CF:59:8C:AA name=\
+    85394247 password=85394247 profile=PAKET-7HARI
+add comment="aug/25/2023 06:04:12" mac-address=D8:63:75:DC:F3:1D name=\
+    42588226 password=42588226 profile=PAKET-7HARI
 add comment="aug/22/2023 07:26:55" mac-address=5C:D0:6E:06:CB:C2 name=\
     56326488 password=56326488 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=68746348 password=68746348 profile=\
-    PAKET-7HARI
-add comment="aug/21/2023 05:39:23" mac-address=08:7F:98:F3:CF:4D name=\
-    59272787 password=59272787 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=54263522 password=54263522 profile=\
-    PAKET-7HARI
-add comment="aug/20/2023 18:37:18" mac-address=0C:98:38:40:1F:7C name=\
-    77624964 password=77624964 profile=PAKET-7HARI
+add comment="aug/27/2023 06:34:06" mac-address=82:4E:C9:DD:01:F1 name=\
+    68746348 password=68746348 profile=PAKET-7HARI
+add comment="aug/26/2023 17:10:54" mac-address=0C:98:38:43:58:3A name=\
+    54263522 password=54263522 profile=PAKET-7HARI
 add comment="aug/21/2023 17:54:10" mac-address=B4:9D:02:11:48:5B name=\
     32338268 password=32338268 profile=PAKET-7HARI
 add comment=vc-458-07.18.23- name=83864724 password=83864724 profile=\
     PAKET-7HARI
-add comment=vc-458-07.18.23- name=47295742 password=47295742 profile=\
-    PAKET-7HARI
-add comment="aug/20/2023 09:53:17" mac-address=0C:A8:A7:AE:61:30 name=\
-    25847682 password=25847682 profile=PAKET-7HARI
+add comment="aug/27/2023 17:21:37" mac-address=0C:A8:A7:AE:61:30 name=\
+    47295742 password=47295742 profile=PAKET-7HARI
 add comment="aug/22/2023 13:16:41" mac-address=34:E9:11:3D:6E:C5 name=\
     45643575 password=45643575 profile=PAKET-7HARI
-add comment=vc-458-07.18.23- name=38229985 password=38229985 profile=\
-    PAKET-7HARI
-add comment=vc-458-07.18.23- name=33556587 password=33556587 profile=\
-    PAKET-7HARI
+add comment="aug/27/2023 10:50:19" mac-address=06:94:B0:11:F4:A3 name=\
+    38229985 password=38229985 profile=PAKET-7HARI
+add comment="aug/26/2023 12:34:52" mac-address=E0:1F:88:70:87:9C name=\
+    33556587 password=33556587 profile=PAKET-7HARI
 add comment="aug/23/2023 21:26:55" mac-address=6A:EC:12:DA:37:42 name=\
     53249844 password=53249844 profile=PAKET-7HARI
 add comment="aug/23/2023 21:30:44" mac-address=34:E9:11:3F:EE:71 name=\
@@ -1516,165 +695,53 @@ add name=laptop123 password=123
 add name=cobawifidisit password=cobawifidisit
 add comment=vc-199-08.03.23- name=3WAZ59JZL password=3WAZ59JZL profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=38KF8ZRK9 password=38KF8ZRK9 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3XT6X949G password=3XT6X949G profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3V46LB8L6 password=3V46LB8L6 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=395Z8XBLP password=395Z8XBLP profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3W2P5DZU2 password=3W2P5DZU2 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=33HT9GFBJ password=33HT9GFBJ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3KNBZGCJ5 password=3KNBZGCJ5 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=368AHUGYR password=368AHUGYR profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3BEAJAJN3 password=3BEAJAJN3 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3WYVVRNB4 password=3WYVVRNB4 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 19:02:18" mac-address=FE:A4:41:A9:EB:69 name=\
+    3BEAJAJN3 password=3BEAJAJN3 profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=37GGB2ZV9 password=37GGB2ZV9 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3259CE6WF password=3259CE6WF profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:32:19" mac-address=EE:F3:5C:D7:20:4A name=\
-    3MKMUNCE3 password=3MKMUNCE3 profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3TYP748X2 password=3TYP748X2 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3UYZBFWJR password=3UYZBFWJR profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3GRJM33P4 password=3GRJM33P4 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=33XU3MVGH password=33XU3MVGH profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3BPXZJZEX password=3BPXZJZEX profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 09:52:02" mac-address=FA:D0:54:96:ED:5C name=\
-    3JNCBHJHN password=3JNCBHJHN profile=PAKET-12Jam
-add comment="aug/18/2023 03:55:56" mac-address=04:E5:98:33:22:26 name=\
-    3J36FT7CR password=3J36FT7CR profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3JHVA85WF password=3JHVA85WF profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3E5G94YRS password=3E5G94YRS profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3CMK95WV4 password=3CMK95WV4 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3756NMJUB password=3756NMJUB profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=36BRFE4MV password=36BRFE4MV profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=34BDZR7WL password=34BDZR7WL profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=39TL6CYJZ password=39TL6CYJZ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3EWGDK56W password=3EWGDK56W profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:07:57" mac-address=02:61:43:25:FB:4D name=\
+    3EWGDK56W password=3EWGDK56W profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3VBFL7SSR password=3VBFL7SSR profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3D7M7FLWE password=3D7M7FLWE profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=396H26SKC password=396H26SKC profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=39E5KLWBF password=39E5KLWBF profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3NJ2PJ674 password=3NJ2PJ674 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=39T8VA9R7 password=39T8VA9R7 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3CS9WK9X7 password=3CS9WK9X7 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3NL59RWCX password=3NL59RWCX profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3J2ETHAZW password=3J2ETHAZW profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3R56Z74EX password=3R56Z74EX profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3HKUPKGMG password=3HKUPKGMG profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3PJGCX57E password=3PJGCX57E profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3HPNV3557 password=3HPNV3557 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3T6EL87YM password=3T6EL87YM profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3TL9H7FP9 password=3TL9H7FP9 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3B77Y9JWV password=3B77Y9JWV profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3LKSV7NLX password=3LKSV7NLX profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3FX2NBGBB password=3FX2NBGBB profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=37VH9D54G password=37VH9D54G profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3HK82M8FA password=3HK82M8FA profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3PDZ8HZJY password=3PDZ8HZJY profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3MBLY6GU7 password=3MBLY6GU7 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3BMLJ64UN password=3BMLJ64UN profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=322GUAYKU password=322GUAYKU profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3KLB8TRLK password=3KLB8TRLK profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:02:46" mac-address=8A:00:92:E2:10:37 name=\
-    372KNJLXC password=372KNJLXC profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3PGCJR74Z password=3PGCJR74Z profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3DK5S7N4Z password=3DK5S7N4Z profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ZHYP7PH6 password=3ZHYP7PH6 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3VXDCHECZ password=3VXDCHECZ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3PZEZEH6B password=3PZEZEH6B profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 09:19:05" mac-address=E2:DF:5C:01:BF:0B name=\
-    3UCKMP4YL password=3UCKMP4YL profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=326XNNV9R password=326XNNV9R profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3L32Y3Y54 password=3L32Y3Y54 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3A8UY724L password=3A8UY724L profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:18:07" mac-address=E2:DF:5C:01:BF:0B name=\
+    3A8UY724L password=3A8UY724L profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3DBWHU96P password=3DBWHU96P profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3NHA499V9 password=3NHA499V9 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3F7KC3TUV password=3F7KC3TUV profile=\
     PAKET-12Jam
-add comment="aug/18/2023 11:45:15" mac-address=08:7F:98:DE:07:E1 name=\
-    32J3CJ5N9 password=32J3CJ5N9 profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3WKYZXVAR password=3WKYZXVAR profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3DYU5Z7PP password=3DYU5Z7PP profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=38VN82SF4 password=38VN82SF4 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3RY36UPKA password=3RY36UPKA profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3PCZCNPK7 password=3PCZCNPK7 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ESZNCWH8 password=3ESZNCWH8 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3LA5K4YWA password=3LA5K4YWA profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3KLWXR2TT password=3KLWXR2TT profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=35VC6JSPM password=35VC6JSPM profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3HS27ABN8 password=3HS27ABN8 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3JEXD9C8F password=3JEXD9C8F profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3GGKN83CR password=3GGKN83CR profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3543FG2N2 password=3543FG2N2 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3RYVMTF6N password=3RYVMTF6N profile=\
     PAKET-12Jam
@@ -1684,165 +751,53 @@ add comment=vc-199-08.03.23- name=3HJ5DBTA7 password=3HJ5DBTA7 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3R358JHGD password=3R358JHGD profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=33EK4XBZK password=33EK4XBZK profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=39THEUUBN password=39THEUUBN profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3LUH3Z9J4 password=3LUH3Z9J4 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3XPHFN86R password=3XPHFN86R profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3F35HNV6Y password=3F35HNV6Y profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3Z3CLAW6R password=3Z3CLAW6R profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3TCPP9F6G password=3TCPP9F6G profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3P496W5M2 password=3P496W5M2 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3XYHWZ6PU password=3XYHWZ6PU profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3B3HBT7UT password=3B3HBT7UT profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=344SB5C4B password=344SB5C4B profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=348CB8AZA password=348CB8AZA profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3J3R9W7K6 password=3J3R9W7K6 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=39S2GENCT password=39S2GENCT profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3G3NWKYDL password=3G3NWKYDL profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=332SYMM7J password=332SYMM7J profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=38CUKEWSY password=38CUKEWSY profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3S8V45EPS password=3S8V45EPS profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3Y8FFMAZE password=3Y8FFMAZE profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3LKJ4688R password=3LKJ4688R profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ZWRUHCB8 password=3ZWRUHCB8 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3VC37XCWP password=3VC37XCWP profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3JL2ZACZM password=3JL2ZACZM profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3SUNMS24X password=3SUNMS24X profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3VMH47H8Y password=3VMH47H8Y profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3K8LRUHYM password=3K8LRUHYM profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=388GGH5BD password=388GGH5BD profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3JT5PF2T3 password=3JT5PF2T3 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3UL5BGEG6 password=3UL5BGEG6 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3WUGSUWVH password=3WUGSUWVH profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3Y3RXCLYJ password=3Y3RXCLYJ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3WHX89AC7 password=3WHX89AC7 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3WTKHC23U password=3WTKHC23U profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3S5PAXGKC password=3S5PAXGKC profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3U5VCSUZ8 password=3U5VCSUZ8 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3UX475RSA password=3UX475RSA profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=338VNUCZY password=338VNUCZY profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3A6A95A67 password=3A6A95A67 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3SDUSTSBB password=3SDUSTSBB profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3C3KM5E2B password=3C3KM5E2B profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3AU2TWD9K password=3AU2TWD9K profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3CW7NDBKY password=3CW7NDBKY profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3UVN5EE2X password=3UVN5EE2X profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3GXEK7A5C password=3GXEK7A5C profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3MPZXJ5VM password=3MPZXJ5VM profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=32CFKSKVR password=32CFKSKVR profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3YKBFLT3Z password=3YKBFLT3Z profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=38GLYCE3C password=38GLYCE3C profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=33SUZTLU7 password=33SUZTLU7 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3AJ3Y83YF password=3AJ3Y83YF profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 07:08:04" mac-address=70:BB:E9:1E:E3:AC name=\
-    37HTSEVFH password=37HTSEVFH profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3JS5TMRUA password=3JS5TMRUA profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3L2H2NT67 password=3L2H2NT67 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=36FZTTRX6 password=36FZTTRX6 profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3HM62TN7H password=3HM62TN7H profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3FTZ6ZAF8 password=3FTZ6ZAF8 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=38J224RTN password=38J224RTN profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3L3A4FMPT password=3L3A4FMPT profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3XZCAT89Z password=3XZCAT89Z profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 19:14:51" mac-address=EE:E9:65:41:EA:10 name=\
+    3XZCAT89Z password=3XZCAT89Z profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3YH7XF3X5 password=3YH7XF3X5 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3X9DZ5CTM password=3X9DZ5CTM profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3NEXW7SCF password=3NEXW7SCF profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3FKDGDFNX password=3FKDGDFNX profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=33YR7Y39Z password=33YR7Y39Z profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3R8KYSP53 password=3R8KYSP53 profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3BFW525U2 password=3BFW525U2 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=33D9NJEEB password=33D9NJEEB profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3R5MXL9EU password=3R5MXL9EU profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3MCMVZTTY password=3MCMVZTTY profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3J88VYN6L password=3J88VYN6L profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3SEYTB4H7 password=3SEYTB4H7 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=322W5CNEM password=322W5CNEM profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3MRHRTKUB password=3MRHRTKUB profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3DRW2ZGC6 password=3DRW2ZGC6 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3JMJXNHYJ password=3JMJXNHYJ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3WLGT6B9D password=3WLGT6B9D profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3RC9L8475 password=3RC9L8475 profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3TXWP5GCM password=3TXWP5GCM profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 07:42:05" mac-address=E0:99:71:C8:88:3B name=\
-    3F4XZMLSC password=3F4XZMLSC profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3DXEX47X5 password=3DXEX47X5 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3X6UE8BWE password=3X6UE8BWE profile=\
     PAKET-12Jam
@@ -1852,249 +807,107 @@ add comment=vc-199-08.03.23- name=3ES737FWM password=3ES737FWM profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3FZNJ49GU password=3FZNJ49GU profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=37797UAY7 password=37797UAY7 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3FHYEM5XK password=3FHYEM5XK profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3GNA4C2DD password=3GNA4C2DD profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=34RBM7KUH password=34RBM7KUH profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3KFHYZXCE password=3KFHYZXCE profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3MWZG2TGZ password=3MWZG2TGZ profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3NS834A7L password=3NS834A7L profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3C897E437 password=3C897E437 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=32WMNTB45 password=32WMNTB45 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3FZDZJNVC password=3FZDZJNVC profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 23:01:58" mac-address=76:DB:30:B4:8F:CF name=\
+    3C897E437 password=3C897E437 profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3X4Z2EACA password=3X4Z2EACA profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=38EK7PT5T password=38EK7PT5T profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3KLKD7E7A password=3KLKD7E7A profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3VT4Z5S4P password=3VT4Z5S4P profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3AMMYCZVF password=3AMMYCZVF profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3MC8N4S2D password=3MC8N4S2D profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:02:12" mac-address=5C:D0:6E:03:C0:F6 name=\
+    3AMMYCZVF password=3AMMYCZVF profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=39HD269LX password=39HD269LX profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3UB6GT472 password=3UB6GT472 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3RE4VVEP3 password=3RE4VVEP3 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3NY8LKYSX password=3NY8LKYSX profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ZM2NPTD3 password=3ZM2NPTD3 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3EKKEKL4B password=3EKKEKL4B profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:05:33" mac-address=18:F0:E4:49:CA:21 name=\
+    3ZM2NPTD3 password=3ZM2NPTD3 profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3AEERYKW6 password=3AEERYKW6 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3BBJ36CDF password=3BBJ36CDF profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3UZH9V3HL password=3UZH9V3HL profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3LHCTGDVK password=3LHCTGDVK profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3WLKJNFFP password=3WLKJNFFP profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3JE8XTYTX password=3JE8XTYTX profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3SJUUM2YN password=3SJUUM2YN profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3D8FNECGT password=3D8FNECGT profile=\
     PAKET-12Jam
-add comment="aug/18/2023 07:30:14" mac-address=FE:F0:3A:70:19:84 name=\
-    3M2KCZ2BR password=3M2KCZ2BR profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3C79AKS4E password=3C79AKS4E profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:29:13" mac-address=EA:65:F2:F8:0C:8B name=\
+    3C79AKS4E password=3C79AKS4E profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3TB2DZRS7 password=3TB2DZRS7 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3RLW2GJXZ password=3RLW2GJXZ profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3GNE5VCK9 password=3GNE5VCK9 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3SPL5EU8U password=3SPL5EU8U profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3PRNUMX86 password=3PRNUMX86 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3DJ4VCD58 password=3DJ4VCD58 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3SXBED478 password=3SXBED478 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:04:17" mac-address=7C:2A:DB:A1:C2:F6 name=\
+    3DJ4VCD58 password=3DJ4VCD58 profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=35JWCFAEL password=35JWCFAEL profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=39KT5WKCA password=39KT5WKCA profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3DLMKF53M password=3DLMKF53M profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3DVD7EKZK password=3DVD7EKZK profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3FZLTK59J password=3FZLTK59J profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3D5AV8ECD password=3D5AV8ECD profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3HXZ95KBJ password=3HXZ95KBJ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3JJSEJANX password=3JJSEJANX profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3UM58BPFX password=3UM58BPFX profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=35E54NG7F password=35E54NG7F profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:00:56" mac-address=18:F0:E4:6B:2D:AC name=\
+    3JJSEJANX password=3JJSEJANX profile=PAKET-12Jam
+add comment="aug/21/2023 18:52:00" mac-address=44:46:87:63:7E:FD name=\
+    35E54NG7F password=35E54NG7F profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3PF8WDSWX password=3PF8WDSWX profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3CXH5T868 password=3CXH5T868 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3CJJLMZYS password=3CJJLMZYS profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3FDAS7SUG password=3FDAS7SUG profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3Z7AH9NVS password=3Z7AH9NVS profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3R2LA5CHH password=3R2LA5CHH profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3XMSXJZU5 password=3XMSXJZU5 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3D4SXT9CH password=3D4SXT9CH profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3D575PA63 password=3D575PA63 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3PV2XJRPR password=3PV2XJRPR profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3LXU92R2W password=3LXU92R2W profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3WJMJHZRG password=3WJMJHZRG profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3VBYNSLSV password=3VBYNSLSV profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 19:55:35" mac-address=F2:BB:BB:03:12:3B name=\
+    3VBYNSLSV password=3VBYNSLSV profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=39ET23BRY password=39ET23BRY profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3DGSJ57L6 password=3DGSJ57L6 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=32PUMCXXE password=32PUMCXXE profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3FPJ7ENR4 password=3FPJ7ENR4 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ENXLM4L5 password=3ENXLM4L5 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=398JTUCGW password=398JTUCGW profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3RKD794YB password=3RKD794YB profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=34BZNMF3U password=34BZNMF3U profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=37MDMC5BA password=37MDMC5BA profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3876258R4 password=3876258R4 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=326988FV8 password=326988FV8 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3V695GYRZ password=3V695GYRZ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3HC766CVD password=3HC766CVD profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ADL8ZUBS password=3ADL8ZUBS profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3XFGRB3L3 password=3XFGRB3L3 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3R7DKW6RN password=3R7DKW6RN profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3GSC62TAG password=3GSC62TAG profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3FTWDG69W password=3FTWDG69W profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3EG3PHV7V password=3EG3PHV7V profile=\
     PAKET-12Jam
-add comment="aug/18/2023 03:06:27" mac-address=B6:7C:A0:19:2A:CD name=\
-    3NFCYX44S password=3NFCYX44S profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3ZWULZGJJ password=3ZWULZGJJ profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3NE2HJ7JH password=3NE2HJ7JH profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3G8Y5TWLN password=3G8Y5TWLN profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3PX6BJRTD password=3PX6BJRTD profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=35RNH4DMJ password=35RNH4DMJ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=32A2L7Y6L password=32A2L7Y6L profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=36P8266VE password=36P8266VE profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3VMUNR5UF password=3VMUNR5UF profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3VBVW9GKJ password=3VBVW9GKJ profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 01:24:44" mac-address=72:47:A9:8E:82:2B name=\
-    3FCUPFF46 password=3FCUPFF46 profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3FVUELMY6 password=3FVUELMY6 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=34KBYJ78Y password=34KBYJ78Y profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=37LDSHUCH password=37LDSHUCH profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ZLHRAME6 password=3ZLHRAME6 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3BSS97BXU password=3BSS97BXU profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3EPN8XZXY password=3EPN8XZXY profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=34L94VDYE password=34L94VDYE profile=\
     PAKET-12Jam
-add comment="aug/18/2023 10:25:17" mac-address=44:46:87:63:7E:FD name=\
-    3L52RRJ3M password=3L52RRJ3M profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3SD3JU8RH password=3SD3JU8RH profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3U4VGXJ2F password=3U4VGXJ2F profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3KCFWB5FB password=3KCFWB5FB profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3BUDPS73L password=3BUDPS73L profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3TRPCKCD5 password=3TRPCKCD5 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3CNWNHSED password=3CNWNHSED profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3NT26V5S7 password=3NT26V5S7 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=35SLMEJD2 password=35SLMEJD2 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3FTNKEPVR password=3FTNKEPVR profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 08:21:09" mac-address=C2:FF:98:AF:25:D9 name=\
-    3XFSVPR7S password=3XFSVPR7S profile=PAKET-12Jam
+add comment="aug/21/2023 23:56:33" mac-address=0E:04:72:54:34:F0 name=\
+    3FTNKEPVR password=3FTNKEPVR profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3DYXWHBX2 password=3DYXWHBX2 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=32XMKML3W password=32XMKML3W profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3PKZBC97B password=3PKZBC97B profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3MGGZGEAM password=3MGGZGEAM profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3NU648SXU password=3NU648SXU profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=32BJFFE49 password=32BJFFE49 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3J3NGD3CU password=3J3NGD3CU profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3FP35UURZ password=3FP35UURZ profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3JFRS3ESL password=3JFRS3ESL profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=35XAAVXF4 password=35XAAVXF4 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3YAN6H3DC password=3YAN6H3DC profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=32SNWY9FC password=32SNWY9FC profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3BRV5V67D password=3BRV5V67D profile=\
     PAKET-12Jam
@@ -2102,19 +915,11 @@ add comment=vc-199-08.03.23- name=3Y729RA8U password=3Y729RA8U profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3BUP9CSN4 password=3BUP9CSN4 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=34TYHZCZ3 password=34TYHZCZ3 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3KSAWF486 password=3KSAWF486 profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3KVPV2PXA password=3KVPV2PXA profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3RKKK4MCR password=3RKKK4MCR profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3Y2JNMSMD password=3Y2JNMSMD profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3T8SXFDGN password=3T8SXFDGN profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3JVRA8LY3 password=3JVRA8LY3 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3Z3J5A6KD password=3Z3J5A6KD profile=\
     PAKET-12Jam
@@ -2124,201 +929,87 @@ add comment=vc-199-08.03.23- name=3T7H8JL5R password=3T7H8JL5R profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3U9U6KWMZ password=3U9U6KWMZ profile=\
     PAKET-12Jam
-add comment="aug/18/2023 05:25:14" mac-address=18:F0:E4:6B:2D:AC name=\
-    3Z7L4T9F9 password=3Z7L4T9F9 profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3Z5VFHC5E password=3Z5VFHC5E profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3A6GMYVJK password=3A6GMYVJK profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3M4ERT4WW password=3M4ERT4WW profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ZMXX7N7R password=3ZMXX7N7R profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 02:39:58" mac-address=90:06:28:C1:20:1F name=\
-    3LHL3ZSGH password=3LHL3ZSGH profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3BTGKF2A5 password=3BTGKF2A5 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3D82DCLNZ password=3D82DCLNZ profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3KWCVZ752 password=3KWCVZ752 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=36GXX5WNL password=36GXX5WNL profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3Y6TZ2EWM password=3Y6TZ2EWM profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=38KJYHVSK password=38KJYHVSK profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3RV59VYVA password=3RV59VYVA profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3TP4SUS86 password=3TP4SUS86 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=378GWP2B6 password=378GWP2B6 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=365VJAV9L password=365VJAV9L profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3HJ85UXGH password=3HJ85UXGH profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3J54K5D47 password=3J54K5D47 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3Z2H9FVLL password=3Z2H9FVLL profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 04:09:34" mac-address=5A:A2:D3:19:D7:73 name=\
-    37W24LJ35 password=37W24LJ35 profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3VXNGV5XP password=3VXNGV5XP profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3CSXC2NBP password=3CSXC2NBP profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3EJW3BWR2 password=3EJW3BWR2 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3BW3KKY75 password=3BW3KKY75 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3U3FA2H9V password=3U3FA2H9V profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 00:40:29" mac-address=66:E9:05:00:B3:40 name=\
-    3ALL4HPWN password=3ALL4HPWN profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3ESLC97PE password=3ESLC97PE profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3H5W344NK password=3H5W344NK profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3DWKKA6DZ password=3DWKKA6DZ profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3AP6TKFT4 password=3AP6TKFT4 profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3ZPM5BNHT password=3ZPM5BNHT profile=\
     PAKET-12Jam
-add comment="aug/18/2023 01:26:45" mac-address=86:09:C7:D6:5E:6F name=\
-    3UKLH8YHG password=3UKLH8YHG profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3JF3BLZC4 password=3JF3BLZC4 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3DZHG9W3Z password=3DZHG9W3Z profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3886XYJPV password=3886XYJPV profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=39RVJ3376 password=39RVJ3376 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3ZST3NANF password=3ZST3NANF profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3R5JA9U8R password=3R5JA9U8R profile=\
     PAKET-12Jam
-add comment="aug/18/2023 02:27:00" mac-address=FE:A4:41:A9:EB:69 name=\
-    3LR28KCV7 password=3LR28KCV7 profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3W9TRDZL8 password=3W9TRDZL8 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3CVV8ZF2P password=3CVV8ZF2P profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3B8SM7U43 password=3B8SM7U43 profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3HFJD7UD7 password=3HFJD7UD7 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3A8PBVLWH password=3A8PBVLWH profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:25:49" mac-address=C8:AC:A3:D6:1C:10 name=\
-    3CNBVET8X password=3CNBVET8X profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3ZHVYNKBV password=3ZHVYNKBV profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=33VEZXKR7 password=33VEZXKR7 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3SDGVWYJB password=3SDGVWYJB profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3W84ZXD86 password=3W84ZXD86 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3S3S9S2V5 password=3S3S9S2V5 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3BS3DJZHJ password=3BS3DJZHJ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=33G7JJ75B password=33G7JJ75B profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3MTJHG7SV password=3MTJHG7SV profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3VW5MMNZ2 password=3VW5MMNZ2 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3ZDHVTSUA password=3ZDHVTSUA profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3LS6RS3Z3 password=3LS6RS3Z3 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=36G2NM2WX password=36G2NM2WX profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=366G52FDL password=366G52FDL profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3NYLXMNKR password=3NYLXMNKR profile=\
     PAKET-12Jam
-add comment="aug/18/2023 08:53:47" mac-address=70:B7:AA:AE:F8:B5 name=\
-    33S97PMLS password=33S97PMLS profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3LAWS3GH5 password=3LAWS3GH5 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=35KL4XWTN password=35KL4XWTN profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3UDW45ZHV password=3UDW45ZHV profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3JTU6WF7K password=3JTU6WF7K profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3KJV63EV8 password=3KJV63EV8 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=33Z3872TG password=33Z3872TG profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3MJRK7GLD password=3MJRK7GLD profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3L2NJN3JU password=3L2NJN3JU profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3SKXGYF6S password=3SKXGYF6S profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3EU2BUTEJ password=3EU2BUTEJ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3RRCVWFLW password=3RRCVWFLW profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3H65V6K4R password=3H65V6K4R profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3UXVD4AD4 password=3UXVD4AD4 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3K7LV28ZV password=3K7LV28ZV profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3YMU6PJZE password=3YMU6PJZE profile=\
     PAKET-12Jam
-add comment="aug/18/2023 03:29:15" mac-address=FA:E8:8B:11:C6:81 name=\
-    3TFMPEWVP password=3TFMPEWVP profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3D7JEXGN5 password=3D7JEXGN5 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3F4JPKWYJ password=3F4JPKWYJ profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3AT7F4CPE password=3AT7F4CPE profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3RFH3SFGM password=3RFH3SFGM profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:06:44" mac-address=0C:A8:A7:73:D2:BC name=\
+    3F4JPKWYJ password=3F4JPKWYJ profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=3ZP3FDDBL password=3ZP3FDDBL profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3WPU28TR8 password=3WPU28TR8 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3P6DN4VSW password=3P6DN4VSW profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=387RU88YJ password=387RU88YJ profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 05:01:34" mac-address=52:79:6C:64:62:DC name=\
-    3PEEEE2BJ password=3PEEEE2BJ profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3Y3FTYXDU password=3Y3FTYXDU profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:55:25" mac-address=AE:A5:A8:EA:87:0B name=\
+    387RU88YJ password=387RU88YJ profile=PAKET-12Jam
 add comment=vc-199-08.03.23- name=38REWN57U password=38REWN57U profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3HCLC3DMY password=3HCLC3DMY profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3L5F2TAVF password=3L5F2TAVF profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=3UJA3U3Y8 password=3UJA3U3Y8 profile=\
-    PAKET-12Jam
-add comment=vc-199-08.03.23- name=32T7UDEE8 password=32T7UDEE8 profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3EHN9AFCV password=3EHN9AFCV profile=\
     PAKET-12Jam
 add comment=vc-199-08.03.23- name=3JJZ8LS34 password=3JJZ8LS34 profile=\
     PAKET-12Jam
-add comment=vc-199-08.03.23- name=3BNE25UF2 password=3BNE25UF2 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 06:47:47" mac-address=16:2C:81:A2:1D:17 name=\
-    3EWJ649C8 password=3EWJ649C8 profile=PAKET-12Jam
-add comment=vc-199-08.03.23- name=3NDEXSMDJ password=3NDEXSMDJ profile=\
-    PAKET-12Jam
 add comment=vc-199-08.03.23- name=3BTKBY6HF password=3BTKBY6HF profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4GAZHRR2W password=4GAZHRR2W profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4LFLWMD3M password=4LFLWMD3M profile=\
     PAKET-12Jam
@@ -2328,19 +1019,11 @@ add comment=vc-189-08.03.23- name=4BVUHZFCV password=4BVUHZFCV profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JSR5V9J7 password=4JSR5V9J7 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4X8GG5EJV password=4X8GG5EJV profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4M8FVEG9N password=4M8FVEG9N profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4CAL4XG4W password=4CAL4XG4W profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=47GBEAYYB password=47GBEAYYB profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4TBGLNWA8 password=4TBGLNWA8 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4EUJZPVXC password=4EUJZPVXC profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4LJCALWB2 password=4LJCALWB2 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JHDUYHD3 password=4JHDUYHD3 profile=\
     PAKET-12Jam
@@ -2348,47 +1031,27 @@ add comment=vc-189-08.03.23- name=4X9GCXRHM password=4X9GCXRHM profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=43N44YM2A password=43N44YM2A profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4MWWBUWSC password=4MWWBUWSC profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=492FPXW77 password=492FPXW77 profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4444GY67G password=4444GY67G profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4SLSF4R7L password=4SLSF4R7L profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4FMWWX55A password=4FMWWX55A profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4TNDLMDCT password=4TNDLMDCT profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ZRKVX3SY password=4ZRKVX3SY profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4NEFEW6U2 password=4NEFEW6U2 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4YPDL97FS password=4YPDL97FS profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4K59549YH password=4K59549YH profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:08:07" mac-address=1A:2D:D3:77:74:65 name=\
-    4MRJC4TBZ password=4MRJC4TBZ profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4T33ZFXYJ password=4T33ZFXYJ profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=485BDS5RV password=485BDS5RV profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4KF599F3B password=4KF599F3B profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4Z4YXHEVM password=4Z4YXHEVM profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:42:44" mac-address=C0:87:EB:CC:6C:E9 name=\
+    485BDS5RV password=485BDS5RV profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=45JN6P3J5 password=45JN6P3J5 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:45:14" mac-address=92:EC:C8:23:CC:87 name=\
-    47VP9HWZK password=47VP9HWZK profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4SLYY4ZL8 password=4SLYY4ZL8 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=43SUK5UCW password=43SUK5UCW profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4PV9WNHKU password=4PV9WNHKU profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4VYK8HH7V password=4VYK8HH7V profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=47LS9PVM8 password=47LS9PVM8 profile=\
     PAKET-12Jam
@@ -2396,30 +1059,16 @@ add comment=vc-189-08.03.23- name=4US7CX5TP password=4US7CX5TP profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4G3S9DB4M password=4G3S9DB4M profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=49EX9NYER password=49EX9NYER profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4UFJ6Z46B password=4UFJ6Z46B profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4C628Z986 password=4C628Z986 profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4G3A7TF3H password=4G3A7TF3H profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4P5AM2N5G password=4P5AM2N5G profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4KVB698M6 password=4KVB698M6 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4PXSRXYHH password=4PXSRXYHH profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=48C2NRDPA password=48C2NRDPA profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4SNZRSKJS password=4SNZRSKJS profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=46L8VTTFK password=46L8VTTFK profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4SUSZKDTX password=4SUSZKDTX profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=442NE8UF6 password=442NE8UF6 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 22:59:34" mac-address=FE:F0:3A:70:19:84 name=\
+    4SUSZKDTX password=4SUSZKDTX profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=47BBCFNBZ password=47BBCFNBZ profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4T6LKCYUR password=4T6LKCYUR profile=\
@@ -2428,41 +1077,27 @@ add comment=vc-189-08.03.23- name=4L9BNEFUL password=4L9BNEFUL profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4K32KD7MT password=4K32KD7MT profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4NKZWMGPZ password=4NKZWMGPZ profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=43TNYXVW2 password=43TNYXVW2 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 23:05:19" mac-address=70:B7:AA:AE:F8:B5 name=\
+    43TNYXVW2 password=43TNYXVW2 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4BBXJBDN6 password=4BBXJBDN6 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4STCUNC2C password=4STCUNC2C profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4SBUKEDWG password=4SBUKEDWG profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4A8HZXNZU password=4A8HZXNZU profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4HKUBVP66 password=4HKUBVP66 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 19:59:35" mac-address=0C:98:38:03:25:D3 name=\
+    4HKUBVP66 password=4HKUBVP66 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=44VNBDKTT password=44VNBDKTT profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4GZ33ABSK password=4GZ33ABSK profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=43CXUFRCR password=43CXUFRCR profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4MTYEU53C password=4MTYEU53C profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4CCJ54YU6 password=4CCJ54YU6 profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4VKKPCAZE password=4VKKPCAZE profile=\
     PAKET-12Jam
-add comment="aug/18/2023 06:15:52" mac-address=9C:5F:5A:44:D3:1B name=\
-    4BGHF9MJX password=4BGHF9MJX profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DK85Z2TZ password=4DK85Z2TZ profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=48W429ZRC password=48W429ZRC profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4G24X5LRC password=4G24X5LRC profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4AXJ5ACNP password=4AXJ5ACNP profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4C7FDW9ZP password=4C7FDW9ZP profile=\
     PAKET-12Jam
@@ -2472,73 +1107,37 @@ add comment=vc-189-08.03.23- name=4ZR3XHWT3 password=4ZR3XHWT3 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JMMAHVNJ password=4JMMAHVNJ profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:08:10" mac-address=04:E5:98:33:B5:D2 name=\
-    452M48MGK password=452M48MGK profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4CEY7UAKG password=4CEY7UAKG profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4EV3TYBV2 password=4EV3TYBV2 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4YXTRUSUF password=4YXTRUSUF profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=45KLA28AL password=45KLA28AL profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4LDC8RMPP password=4LDC8RMPP profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4JDHTMKXK password=4JDHTMKXK profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:20:12" mac-address=20:34:FB:D4:47:C2 name=\
+    45KLA28AL password=45KLA28AL profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4K3XUV3EG password=4K3XUV3EG profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4WH2K3M37 password=4WH2K3M37 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=447RUEBA2 password=447RUEBA2 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4E8EVJNYP password=4E8EVJNYP profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4E32GLNHK password=4E32GLNHK profile=\
     PAKET-12Jam
-add comment="aug/18/2023 06:31:42" mac-address=F2:BB:BB:03:12:3B name=\
-    4CSXXBWUD password=4CSXXBWUD profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4TV32SCCE password=4TV32SCCE profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4YDT2MLYF password=4YDT2MLYF profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4GV4R4M3S password=4GV4R4M3S profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JCBETZJ6 password=4JCBETZJ6 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4RCDUVRVW password=4RCDUVRVW profile=\
     PAKET-12Jam
-add comment="aug/18/2023 05:32:43" mac-address=6C:F7:84:F6:9C:B7 name=\
-    49WNAYDWT password=49WNAYDWT profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4SJ5KAX33 password=4SJ5KAX33 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4EB6YGY9J password=4EB6YGY9J profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4VPM8NGVH password=4VPM8NGVH profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4ASZMJZUP password=4ASZMJZUP profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4A3528LJF password=4A3528LJF profile=\
     PAKET-12Jam
-add comment="aug/18/2023 06:36:25" mac-address=04:E5:98:29:59:B4 name=\
-    43LGLDSWH password=43LGLDSWH profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=49WV87JC7 password=49WV87JC7 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ZZT4AGR8 password=4ZZT4AGR8 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ZE53UKHX password=4ZE53UKHX profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4D89CHEJ4 password=4D89CHEJ4 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4UX4TFYAY password=4UX4TFYAY profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:18:48" mac-address=EA:8C:E1:AB:60:8A name=\
-    4FJ3MATLC password=4FJ3MATLC profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4XM3N7XXH password=4XM3N7XXH profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4F8G7VW69 password=4F8G7VW69 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4LT9YEPNU password=4LT9YEPNU profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4LFTAGXF3 password=4LFTAGXF3 profile=\
     PAKET-12Jam
@@ -2548,95 +1147,49 @@ add comment=vc-189-08.03.23- name=48H85E8PZ password=48H85E8PZ profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4MHER4UJT password=4MHER4UJT profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4HPZ2WX8C password=4HPZ2WX8C profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4GKVR3M6X password=4GKVR3M6X profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4P7D68D9C password=4P7D68D9C profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4V4J5G9WV password=4V4J5G9WV profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=44ANUJTZ9 password=44ANUJTZ9 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=43BP5KZZT password=43BP5KZZT profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4X73A8ESA password=4X73A8ESA profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4BGL3L3P2 password=4BGL3L3P2 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4E8TSEGRR password=4E8TSEGRR profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4WWH6TPAR password=4WWH6TPAR profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4VJ7HE98U password=4VJ7HE98U profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:03:20" mac-address=64:A2:00:F4:4F:04 name=\
+    4WWH6TPAR password=4WWH6TPAR profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4ZRNLF7Z9 password=4ZRNLF7Z9 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4GGESHZFU password=4GGESHZFU profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4XBBRSS3T password=4XBBRSS3T profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4H9STVYNY password=4H9STVYNY profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4WUPSZNRL password=4WUPSZNRL profile=\
     PAKET-12Jam
-add comment="aug/18/2023 07:29:40" mac-address=00:C3:0A:10:3B:3B name=\
-    484GVTD5H password=484GVTD5H profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=47K3XE6AX password=47K3XE6AX profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4VAU8JH4N password=4VAU8JH4N profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ZSNHAGY2 password=4ZSNHAGY2 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4P324BLSS password=4P324BLSS profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4MNTPTWZ6 password=4MNTPTWZ6 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 06:20:05" mac-address=0C:98:38:7E:2E:99 name=\
-    4YNCPEWGZ password=4YNCPEWGZ profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4CJMU9MMK password=4CJMU9MMK profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4WC3D3NEM password=4WC3D3NEM profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4CMG4WZ6G password=4CMG4WZ6G profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4SDCAH6UW password=4SDCAH6UW profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4W7KSZ6T7 password=4W7KSZ6T7 profile=\
     PAKET-12Jam
-add comment="aug/18/2023 03:38:06" mac-address=18:F0:E4:49:CA:21 name=\
-    4U2JSZKZ4 password=4U2JSZKZ4 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=49F63RETW password=49F63RETW profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4BGUZT85E password=4BGUZT85E profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4MMGAE2EW password=4MMGAE2EW profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:28:02" mac-address=FA:C4:74:74:3A:0B name=\
+    4BGUZT85E password=4BGUZT85E profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4FZG97BJ6 password=4FZG97BJ6 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4D3SMA7WE password=4D3SMA7WE profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:19:03" mac-address=1C:DD:EA:89:35:79 name=\
-    4JVSSC6EH password=4JVSSC6EH profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4MYBDK8HP password=4MYBDK8HP profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4TCWTKX3T password=4TCWTKX3T profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4PJDTJBG2 password=4PJDTJBG2 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4HM6M4WN8 password=4HM6M4WN8 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4U564FR3L password=4U564FR3L profile=\
     PAKET-12Jam
-add comment="aug/18/2023 00:34:51" mac-address=AC:73:52:60:9A:CF name=\
-    4W2TG7CJ2 password=4W2TG7CJ2 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4AWYJHSHR password=4AWYJHSHR profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=47R2L3HWG password=47R2L3HWG profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4A5YE2M4L password=4A5YE2M4L profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4N3692MZV password=4N3692MZV profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=433GW8K2H password=433GW8K2H profile=\
     PAKET-12Jam
@@ -2646,13 +1199,9 @@ add comment=vc-189-08.03.23- name=4XYRABVLP password=4XYRABVLP profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=47EY43SFA password=47EY43SFA profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=434ZUMR2E password=434ZUMR2E profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4PY7TN99U password=4PY7TN99U profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4SMGTCEKW password=4SMGTCEKW profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4E5A3CRUB password=4E5A3CRUB profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4AXGDS8GD password=4AXGDS8GD profile=\
     PAKET-12Jam
@@ -2664,31 +1213,23 @@ add comment=vc-189-08.03.23- name=4C724UJ7X password=4C724UJ7X profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4RMWHL3DF password=4RMWHL3DF profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=44K8E6DHK password=44K8E6DHK profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=46JVJKLWJ password=46JVJKLWJ profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=42KA8H7J5 password=42KA8H7J5 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4D7B878SM password=4D7B878SM profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 17:50:24" mac-address=5C:AF:06:1F:59:9E name=\
+    4D7B878SM password=4D7B878SM profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DEFU88KU password=4DEFU88KU profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4NSHTR7AZ password=4NSHTR7AZ profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4EBYFFPUX password=4EBYFFPUX profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=49KPJGSMW password=49KPJGSMW profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DK5CHWLN password=4DK5CHWLN profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4EU5NM65J password=4EU5NM65J profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4HE6SL35B password=4HE6SL35B profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4CT3FGMY9 password=4CT3FGMY9 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=444AZZEL5 password=444AZZEL5 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DRP59FF8 password=4DRP59FF8 profile=\
     PAKET-12Jam
@@ -2700,20 +1241,12 @@ add comment=vc-189-08.03.23- name=4HXWPPSK6 password=4HXWPPSK6 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JHA7L38Y password=4JHA7L38Y profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4WLWPJ9JW password=4WLWPJ9JW profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=48TN3ND29 password=48TN3ND29 profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4N5ZHNYHS password=4N5ZHNYHS profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4X4TUN3FT password=4X4TUN3FT profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=46RGBC6R3 password=46RGBC6R3 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4YKXSUASV password=4YKXSUASV profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4JNJET2FZ password=4JNJET2FZ profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:41:13" mac-address=FE:34:48:4B:75:F9 name=\
+    4YKXSUASV password=4YKXSUASV profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JJA3FD7R password=4JJA3FD7R profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=457H2CVWU password=457H2CVWU profile=\
@@ -2724,67 +1257,45 @@ add comment=vc-189-08.03.23- name=45JKE7WBU password=45JKE7WBU profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DTRWX2CS password=4DTRWX2CS profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4UZ2TKEZ7 password=4UZ2TKEZ7 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=45MCXB5MF password=45MCXB5MF profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 19:20:34" mac-address=10:BC:97:0D:D9:E1 name=\
+    45MCXB5MF password=45MCXB5MF profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4FS4HTM68 password=4FS4HTM68 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4EX6B622V password=4EX6B622V profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=496ZP3U46 password=496ZP3U46 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4JXHDM3SC password=4JXHDM3SC profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4GC3NL8Z8 password=4GC3NL8Z8 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4PWKC4D64 password=4PWKC4D64 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DMFNP45P password=4DMFNP45P profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=464MFPBDC password=464MFPBDC profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 23:14:47" mac-address=B2:1D:B5:7F:46:25 name=\
+    464MFPBDC password=464MFPBDC profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=489GYMMSU password=489GYMMSU profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=47PXYR4RE password=47PXYR4RE profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=48GDSL76V password=48GDSL76V profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4Z3R5FXFG password=4Z3R5FXFG profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4NHDBWXJ2 password=4NHDBWXJ2 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4WD9645TT password=4WD9645TT profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4TMSXR56L password=4TMSXR56L profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=43WTDXWZN password=43WTDXWZN profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4V5STC29T password=4V5STC29T profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4TVKY7HBB password=4TVKY7HBB profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=447M73W5X password=447M73W5X profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4CKU8582Y password=4CKU8582Y profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4S3LC3ZY7 password=4S3LC3ZY7 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4Y8UDZ9BW password=4Y8UDZ9BW profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=443YJLH2V password=443YJLH2V profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4V4UN2VHC password=4V4UN2VHC profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DCXZYSL6 password=4DCXZYSL6 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4BE4CHBTK password=4BE4CHBTK profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4U9RZDZXD password=4U9RZDZXD profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4KFUPNVFU password=4KFUPNVFU profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4PZPS4E9R password=4PZPS4E9R profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4WFAXSRRC password=4WFAXSRRC profile=\
     PAKET-12Jam
@@ -2796,61 +1307,41 @@ add comment=vc-189-08.03.23- name=4SYXLFWUW password=4SYXLFWUW profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4PBG5RG58 password=4PBG5RG58 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4FPR7KFM7 password=4FPR7KFM7 profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4NPNJ4VS3 password=4NPNJ4VS3 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JANJZ8EM password=4JANJZ8EM profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4P2LWEKZ7 password=4P2LWEKZ7 profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4BYYWZFFH password=4BYYWZFFH profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=43KJDWW5U password=43KJDWW5U profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=42YUJSEYZ password=42YUJSEYZ profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4YLR9T2C9 password=4YLR9T2C9 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4XJLRMB8D password=4XJLRMB8D profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4MBESE9XP password=4MBESE9XP profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=49YHNTEFX password=49YHNTEFX profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4EZU8XU6E password=4EZU8XU6E profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 22:13:23" mac-address=04:E5:98:3A:DB:46 name=\
+    4XJLRMB8D password=4XJLRMB8D profile=PAKET-12Jam
+add comment="aug/21/2023 19:23:34" mac-address=4C:1A:3D:87:0A:B2 name=\
+    4EZU8XU6E password=4EZU8XU6E profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=49GSMHZYV password=49GSMHZYV profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4GW8SMY9M password=4GW8SMY9M profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=47BMWZAXG password=47BMWZAXG profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=449VSSYFM password=449VSSYFM profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ARCNKHNY password=4ARCNKHNY profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:58:50" mac-address=92:EC:C8:23:CC:87 name=\
+    4ARCNKHNY password=4ARCNKHNY profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4HB2DK2ZN password=4HB2DK2ZN profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4U287FZDL password=4U287FZDL profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4YCWWBF7Z password=4YCWWBF7Z profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=43CFSVWCM password=43CFSVWCM profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4RKSK9E9U password=4RKSK9E9U profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=483AL4JTB password=483AL4JTB profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 23:44:50" mac-address=02:19:14:50:7B:2A name=\
+    43CFSVWCM password=43CFSVWCM profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=44AWML9EE password=44AWML9EE profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4JBZYD5ZW password=4JBZYD5ZW profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:09:17" mac-address=72:47:A9:8E:82:2B name=\
+    4JBZYD5ZW password=4JBZYD5ZW profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=48PGCM6X3 password=48PGCM6X3 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4AFT4ZX7M password=4AFT4ZX7M profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4E3UYLE4Y password=4E3UYLE4Y profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4RMZ957LS password=4RMZ957LS profile=\
     PAKET-12Jam
@@ -2858,29 +1349,21 @@ add comment=vc-189-08.03.23- name=4WM7RR95D password=4WM7RR95D profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=446TP46HJ password=446TP46HJ profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4YPSWBX9K password=4YPSWBX9K profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4MAGM4478 password=4MAGM4478 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4UFVPKNRT password=4UFVPKNRT profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4M8ADD8U3 password=4M8ADD8U3 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:42:30" mac-address=1A:9F:BD:2B:C0:4A name=\
+    4MAGM4478 password=4MAGM4478 profile=PAKET-12Jam
+add comment="aug/21/2023 19:38:36" mac-address=E4:33:AE:7B:DB:AD name=\
+    4M8ADD8U3 password=4M8ADD8U3 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4R6NERSVA password=4R6NERSVA profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4AAF59URA password=4AAF59URA profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4Y4GA4FVB password=4Y4GA4FVB profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4VM86X656 password=4VM86X656 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4PGJJWYY4 password=4PGJJWYY4 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4MLVPMF9X password=4MLVPMF9X profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:23:40" mac-address=74:F2:FA:EF:4F:3D name=\
+    4VM86X656 password=4VM86X656 profile=PAKET-12Jam
+add comment="aug/21/2023 19:08:43" mac-address=20:5E:F7:9B:07:D0 name=\
+    4MLVPMF9X password=4MLVPMF9X profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4AK4FCKFX password=4AK4FCKFX profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4UEL2NXDU password=4UEL2NXDU profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4XMD9SHHZ password=4XMD9SHHZ profile=\
     PAKET-12Jam
@@ -2888,27 +1371,19 @@ add comment=vc-189-08.03.23- name=4PARD9VR6 password=4PARD9VR6 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4VWM7C2GL password=4VWM7C2GL profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4HHGZMJL5 password=4HHGZMJL5 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:08:54" mac-address=1A:2D:D3:77:74:65 name=\
+    4HHGZMJL5 password=4HHGZMJL5 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4CM7JCDJZ password=4CM7JCDJZ profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4HB45468Z password=4HB45468Z profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4M37J2UZE password=4M37J2UZE profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4XYU3UZT2 password=4XYU3UZT2 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ZGXFNL34 password=4ZGXFNL34 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 07:03:57" mac-address=8C:AA:CE:43:3B:A0 name=\
-    42NXZ6AME password=42NXZ6AME profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4M4PGFZYA password=4M4PGFZYA profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=42RM79AYG password=42RM79AYG profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4V6NXN72A password=4V6NXN72A profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4VY62LGEA password=4VY62LGEA profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4XPDZE5FJ password=4XPDZE5FJ profile=\
     PAKET-12Jam
@@ -2916,31 +1391,15 @@ add comment=vc-189-08.03.23- name=47FZZW3E3 password=47FZZW3E3 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4BML6FBCC password=4BML6FBCC profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4FCNTRE78 password=4FCNTRE78 profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4833NWDCX password=4833NWDCX profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4VU85LPR9 password=4VU85LPR9 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4Y72V2HRH password=4Y72V2HRH profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4P7W8T99G password=4P7W8T99G profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4RAPY3YRD password=4RAPY3YRD profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=49KXCJ823 password=49KXCJ823 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ULE7B2LS password=4ULE7B2LS profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4PCKR3WBB password=4PCKR3WBB profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4GCCUYXKY password=4GCCUYXKY profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4CN4NNKBF password=4CN4NNKBF profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4XUS4BWX5 password=4XUS4BWX5 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4F9XAL7WL password=4F9XAL7WL profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=49W4L34PK password=49W4L34PK profile=\
     PAKET-12Jam
@@ -2948,40 +1407,22 @@ add comment=vc-189-08.03.23- name=4VPC4ATAT password=4VPC4ATAT profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4L2GBXUNC password=4L2GBXUNC profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4TUCPHNZ5 password=4TUCPHNZ5 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ZWFW9Z8E password=4ZWFW9Z8E profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=42LZYZTX7 password=42LZYZTX7 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4YZE8ENX8 password=4YZE8ENX8 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4JLLDNJPS password=4JLLDNJPS profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4VFZTD26M password=4VFZTD26M profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4L3G8S5M5 password=4L3G8S5M5 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4YFGWFD4Z password=4YFGWFD4Z profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4H8UNJTXH password=4H8UNJTXH profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4FB2TSX2F password=4FB2TSX2F profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4FBX39TU6 password=4FBX39TU6 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4PN2J6DKB password=4PN2J6DKB profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4HFDGGTGA password=4HFDGGTGA profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=43EYL5CAA password=43EYL5CAA profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=45Y72GBR9 password=45Y72GBR9 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4SESGE6LG password=4SESGE6LG profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 08:22:45" mac-address=92:61:54:33:16:22 name=\
-    47WEKTLCV password=47WEKTLCV profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4R4B4HKC9 password=4R4B4HKC9 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4J2XC8NGG password=4J2XC8NGG profile=\
@@ -2990,37 +1431,19 @@ add comment=vc-189-08.03.23- name=498543V7T password=498543V7T profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=43RBMPPCZ password=43RBMPPCZ profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4K4FSA8EC password=4K4FSA8EC profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4YWGBEW97 password=4YWGBEW97 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4MXRTTMCR password=4MXRTTMCR profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4MWH2S6YK password=4MWH2S6YK profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=47W87X2YF password=47W87X2YF profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4WDS5HASP password=4WDS5HASP profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4XFK45EB3 password=4XFK45EB3 profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4XKJVYGYV password=4XKJVYGYV profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=44U3RMZMU password=44U3RMZMU profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=42R3HBZSA password=42R3HBZSA profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4F4JBV5F9 password=4F4JBV5F9 profile=\
-    PAKET-12Jam
-add comment="aug/18/2023 09:26:37" mac-address=68:BF:C4:26:B5:BE name=\
-    4P5DDJTBT password=4P5DDJTBT profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DXAHU49Y password=4DXAHU49Y profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4NHPWFH5H password=4NHPWFH5H profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=46FHCH5ER password=46FHCH5ER profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4YYH44G7R password=4YYH44G7R profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=44NGYVFUA password=44NGYVFUA profile=\
     PAKET-12Jam
@@ -3028,92 +1451,56 @@ add comment=vc-189-08.03.23- name=44REZ2XJJ password=44REZ2XJJ profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4SUN939KL password=4SUN939KL profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=49PD7X5PY password=49PD7X5PY profile=\
-    PAKET-12Jam
 add comment=vc-189-08.03.23- name=4V35XK95A password=4V35XK95A profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4TJU2RCFK password=4TJU2RCFK profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=468WT3YMM password=468WT3YMM profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4ML9ZR63R password=4ML9ZR63R profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 19:44:42" mac-address=1A:E3:05:2A:6C:C2 name=\
+    4TJU2RCFK password=4TJU2RCFK profile=PAKET-12Jam
+add comment="aug/21/2023 23:35:24" mac-address=E6:50:17:B6:6A:DD name=\
+    4ML9ZR63R password=4ML9ZR63R profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4DRBYCENM password=4DRBYCENM profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=425XD5TTM password=425XD5TTM profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4STKLPUEJ password=4STKLPUEJ profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=48C5E8HWK password=48C5E8HWK profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:19:34" mac-address=48:79:4D:47:93:A1 name=\
+    48C5E8HWK password=48C5E8HWK profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4KRY3CF6K password=4KRY3CF6K profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4GH2C9KLT password=4GH2C9KLT profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=44RPJKH62 password=44RPJKH62 profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=43XXEG87J password=43XXEG87J profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4H44AKAM5 password=4H44AKAM5 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=46S3W4PW2 password=46S3W4PW2 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 22:02:32" mac-address=8C:AA:CE:49:F4:D0 name=\
+    46S3W4PW2 password=46S3W4PW2 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=452BJM2V4 password=452BJM2V4 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=44CP2EAYK password=44CP2EAYK profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=46SNL2Z49 password=46SNL2Z49 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=43V43M7MD password=43V43M7MD profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4WMDNYEJS password=4WMDNYEJS profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 23:38:52" mac-address=DA:98:4B:23:96:2A name=\
+    46SNL2Z49 password=46SNL2Z49 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4BLG84P7P password=4BLG84P7P profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JTRZNJGY password=4JTRZNJGY profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=46T4SX2VT password=46T4SX2VT profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4CKXVGM73 password=4CKXVGM73 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4TP7ZGFWX password=4TP7ZGFWX profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4M79GKXVA password=4M79GKXVA profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:40:25" mac-address=52:21:81:EF:CC:ED name=\
+    4CKXVGM73 password=4CKXVGM73 profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4GK35X7JC password=4GK35X7JC profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4KWY68PTW password=4KWY68PTW profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4GNWDKH39 password=4GNWDKH39 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4FX94N687 password=4FX94N687 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=428Y2MPPY password=428Y2MPPY profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4GJFJ6LDD password=4GJFJ6LDD profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4EGJCDYPN password=4EGJCDYPN profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4YZRSY9JP password=4YZRSY9JP profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4TNVK3JBN password=4TNVK3JBN profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=45JD2CCXE password=45JD2CCXE profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4H47XXRT7 password=4H47XXRT7 profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=47ENJH7UT password=47ENJH7UT profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4TZRN8REG password=4TZRN8REG profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:19:44" mac-address=46:77:41:3A:05:8F name=\
+    4FX94N687 password=4FX94N687 profile=PAKET-12Jam
+add comment="aug/21/2023 19:20:45" mac-address=DE:77:EF:11:EB:30 name=\
+    45JD2CCXE password=45JD2CCXE profile=PAKET-12Jam
+add comment="aug/21/2023 21:46:54" mac-address=A4:D9:90:23:E8:05 name=\
+    4TZRN8REG password=4TZRN8REG profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4GVTLRYG3 password=4GVTLRYG3 profile=\
     PAKET-12Jam
 add comment=vc-189-08.03.23- name=4VKS47UDT password=4VKS47UDT profile=\
     PAKET-12Jam
-add comment=vc-189-08.03.23- name=4663E9X4G password=4663E9X4G profile=\
-    PAKET-12Jam
-add comment=vc-189-08.03.23- name=4Z6KD4AYD password=4Z6KD4AYD profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 18:01:24" mac-address=4E:80:77:83:4F:B9 name=\
+    4663E9X4G password=4663E9X4G profile=PAKET-12Jam
 add comment=vc-189-08.03.23- name=4JJP9CDYB password=4JJP9CDYB profile=\
     PAKET-12Jam
 add comment=vc-976-08.03.23- name=5XCU6BFH6 password=5XCU6BFH6 profile=\
@@ -3540,8 +1927,8 @@ add comment=vc-976-08.03.23- name=5V4JPSGEJ password=5V4JPSGEJ profile=\
     PAKET-12Jam
 add comment=vc-976-08.03.23- name=5HLUTZ9LM password=5HLUTZ9LM profile=\
     PAKET-12Jam
-add comment=vc-976-08.03.23- name=5RSGKNLR5 password=5RSGKNLR5 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:15:29" mac-address=CE:41:E3:CF:07:5E name=\
+    5RSGKNLR5 password=5RSGKNLR5 profile=PAKET-12Jam
 add comment=vc-976-08.03.23- name=5K2PRAHK8 password=5K2PRAHK8 profile=\
     PAKET-12Jam
 add comment=vc-976-08.03.23- name=5K8BDWCCJ password=5K8BDWCCJ profile=\
@@ -3552,8 +1939,8 @@ add comment=vc-976-08.03.23- name=5MNADNYHY password=5MNADNYHY profile=\
     PAKET-12Jam
 add comment=vc-976-08.03.23- name=598RHF3XX password=598RHF3XX profile=\
     PAKET-12Jam
-add comment=vc-976-08.03.23- name=56CNTBPEP password=56CNTBPEP profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:49:48" mac-address=B6:9A:E0:00:B6:30 name=\
+    56CNTBPEP password=56CNTBPEP profile=PAKET-12Jam
 add comment=vc-976-08.03.23- name=5CGEVVUTJ password=5CGEVVUTJ profile=\
     PAKET-12Jam
 add comment=vc-976-08.03.23- name=5DHPW3TC2 password=5DHPW3TC2 profile=\
@@ -3634,8 +2021,8 @@ add comment=vc-976-08.03.23- name=5TV6DKP3E password=5TV6DKP3E profile=\
     PAKET-12Jam
 add comment=vc-976-08.03.23- name=57SYCPW6M password=57SYCPW6M profile=\
     PAKET-12Jam
-add comment=vc-976-08.03.23- name=55YTBPUE5 password=55YTBPUE5 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 22:26:32" mac-address=76:4B:9E:94:02:74 name=\
+    55YTBPUE5 password=55YTBPUE5 profile=PAKET-12Jam
 add comment=vc-976-08.03.23- name=55AGHMV4J password=55AGHMV4J profile=\
     PAKET-12Jam
 add comment=vc-976-08.03.23- name=5978K2WX2 password=5978K2WX2 profile=\
@@ -4186,8 +2573,8 @@ add comment=vc-658-08.03.23- name=667NBSNA3 password=667NBSNA3 profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6RNPTZCYF password=6RNPTZCYF profile=\
     PAKET-12Jam
-add comment=vc-658-08.03.23- name=6PTXT3S37 password=6PTXT3S37 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:54:21" mac-address=6C:F7:84:F6:05:B7 name=\
+    6PTXT3S37 password=6PTXT3S37 profile=PAKET-12Jam
 add comment=vc-658-08.03.23- name=6XDFCC86U password=6XDFCC86U profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6UPYZUHGD password=6UPYZUHGD profile=\
@@ -4198,8 +2585,8 @@ add comment=vc-658-08.03.23- name=6V536B6VW password=6V536B6VW profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6ABF8NKPF password=6ABF8NKPF profile=\
     PAKET-12Jam
-add comment=vc-658-08.03.23- name=6ZBGHUYE2 password=6ZBGHUYE2 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 20:34:56" mac-address=B6:4F:1A:70:A3:D5 name=\
+    6ZBGHUYE2 password=6ZBGHUYE2 profile=PAKET-12Jam
 add comment=vc-658-08.03.23- name=6XZ826JK7 password=6XZ826JK7 profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6HJEBK6DZ password=6HJEBK6DZ profile=\
@@ -4530,8 +2917,8 @@ add comment=vc-658-08.03.23- name=6XJE57AUL password=6XJE57AUL profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6ZYGVH26C password=6ZYGVH26C profile=\
     PAKET-12Jam
-add comment=vc-658-08.03.23- name=6AELHJWSV password=6AELHJWSV profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 21:19:53" mac-address=0A:8D:81:AB:94:14 name=\
+    6AELHJWSV password=6AELHJWSV profile=PAKET-12Jam
 add comment=vc-658-08.03.23- name=6SPX3P7BL password=6SPX3P7BL profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6S444VNXP password=6S444VNXP profile=\
@@ -4614,8 +3001,8 @@ add comment=vc-658-08.03.23- name=6N7XREW9E password=6N7XREW9E profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6EUF2LAPN password=6EUF2LAPN profile=\
     PAKET-12Jam
-add comment=vc-658-08.03.23- name=6ZU2245HF password=6ZU2245HF profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 22:56:22" mac-address=8A:00:92:E2:10:37 name=\
+    6ZU2245HF password=6ZU2245HF profile=PAKET-12Jam
 add comment=vc-658-08.03.23- name=69YWS9P9C password=69YWS9P9C profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6NGNT2S6C password=6NGNT2S6C profile=\
@@ -4788,8 +3175,8 @@ add comment=vc-658-08.03.23- name=674TMYERD password=674TMYERD profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=69BN2R35L password=69BN2R35L profile=\
     PAKET-12Jam
-add comment=vc-658-08.03.23- name=6FCRBM4D5 password=6FCRBM4D5 profile=\
-    PAKET-12Jam
+add comment="aug/21/2023 22:25:09" mac-address=00:56:CD:82:1D:1B name=\
+    6FCRBM4D5 password=6FCRBM4D5 profile=PAKET-12Jam
 add comment=vc-658-08.03.23- name=68GN4KBSY password=68GN4KBSY profile=\
     PAKET-12Jam
 add comment=vc-658-08.03.23- name=6GGLCY2UL password=6GGLCY2UL profile=\
@@ -8155,6 +6542,3702 @@ add comment=vc-289-08.03.23- name=107457H2CV password=107457H2CV profile=\
 add comment=vc-289-08.03.23- name=10HDX762PJ password=10HDX762PJ profile=\
     PAKET-12Jam
 add comment=vc-289-08.03.23- name=10PF5JKE7W password=10PF5JKE7W profile=\
+    PAKET-12Jam
+add comment=vc-129-08.21.23- name=88387369 password=88387369 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=87869929 password=87869929 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=58278628 password=58278628 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=36783975 password=36783975 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=97896355 password=97896355 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=25368478 password=25368478 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=46883492 password=46883492 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=56528344 password=56528344 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=22459479 password=22459479 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=73856392 password=73856392 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=32432393 password=32432393 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=27524385 password=27524385 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=39437523 password=39437523 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=83724727 password=83724727 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=22684333 password=22684333 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=39798799 password=39798799 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=36342775 password=36342775 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=53879786 password=53879786 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=87692372 password=87692372 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=83363888 password=83363888 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=37888964 password=37888964 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=64227538 password=64227538 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=68344457 password=68344457 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=86836649 password=86836649 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=35279563 password=35279563 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=25644755 password=25644755 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=46622643 password=46622643 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=52769975 password=52769975 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=37287998 password=37287998 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=28449644 password=28449644 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=29733966 password=29733966 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=57884874 password=57884874 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=27848655 password=27848655 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=63436997 password=63436997 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=79668487 password=79668487 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=85287456 password=85287456 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=93335437 password=93335437 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=67592244 password=67592244 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=46249857 password=46249857 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=83689582 password=83689582 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=84446229 password=84446229 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=93866744 password=93866744 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=97456536 password=97456536 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=32463292 password=32463292 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=79392239 password=79392239 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=89522926 password=89522926 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=55496244 password=55496244 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=29435594 password=29435594 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=54882269 password=54882269 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=37446864 password=37446864 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=28972969 password=28972969 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=52666458 password=52666458 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=43226236 password=43226236 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=95459384 password=95459384 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=67582894 password=67582894 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=33998788 password=33998788 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=27366423 password=27366423 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=45654376 password=45654376 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=94645876 password=94645876 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=55629882 password=55629882 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=78852626 password=78852626 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=25237854 password=25237854 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=55535867 password=55535867 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=38522567 password=38522567 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=55479949 password=55479949 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=46882284 password=46882284 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=83958276 password=83958276 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=53582727 password=53582727 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=27644589 password=27644589 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=98744887 password=98744887 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=35497494 password=35497494 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=38862649 password=38862649 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=76543959 password=76543959 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=33877375 password=33877375 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=64489769 password=64489769 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=45423236 password=45423236 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=32265647 password=32265647 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=86398336 password=86398336 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=98998245 password=98998245 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=92952286 password=92952286 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=82533465 password=82533465 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=92892859 password=92892859 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=39562748 password=39562748 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=29962739 password=29962739 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=47535389 password=47535389 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=57684957 password=57684957 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=57658459 password=57658459 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=68279946 password=68279946 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=89363353 password=89363353 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=65665728 password=65665728 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=79579299 password=79579299 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=68568726 password=68568726 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=48735335 password=48735335 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=23826254 password=23826254 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=88247868 password=88247868 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=29247369 password=29247369 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=73932435 password=73932435 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=22456262 password=22456262 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=24538755 password=24538755 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=22986387 password=22986387 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=23863554 password=23863554 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=52977653 password=52977653 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=34555859 password=34555859 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=64944777 password=64944777 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=58538889 password=58538889 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=53987897 password=53987897 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=32325884 password=32325884 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=57362953 password=57362953 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=82848366 password=82848366 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=84987545 password=84987545 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=44722246 password=44722246 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=83778789 password=83778789 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=28974759 password=28974759 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=76467847 password=76467847 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=42942427 password=42942427 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=77465299 password=77465299 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=44854453 password=44854453 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=99936793 password=99936793 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=46826796 password=46826796 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=95353275 password=95353275 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=64458983 password=64458983 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=85775452 password=85775452 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=46595334 password=46595334 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=73428743 password=73428743 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=88687843 password=88687843 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=29794563 password=29794563 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=43849869 password=43849869 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=99764864 password=99764864 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=92573629 password=92573629 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=86823257 password=86823257 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=35828534 password=35828534 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=79499668 password=79499668 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=38372626 password=38372626 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=94429526 password=94429526 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=24723327 password=24723327 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=89225936 password=89225936 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=43634749 password=43634749 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=73997448 password=73997448 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=97359228 password=97359228 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=62229867 password=62229867 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=42793874 password=42793874 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=82875845 password=82875845 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=77524247 password=77524247 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=74495483 password=74495483 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=57625245 password=57625245 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=52833824 password=52833824 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=64432286 password=64432286 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=36779562 password=36779562 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=58263535 password=58263535 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=53368666 password=53368666 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=45264363 password=45264363 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=42534333 password=42534333 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=56455833 password=56455833 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=24786873 password=24786873 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=24549557 password=24549557 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=85467657 password=85467657 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=48462459 password=48462459 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=27582773 password=27582773 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=77653862 password=77653862 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=82482556 password=82482556 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=48224995 password=48224995 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=62477345 password=62477345 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=46488393 password=46488393 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=48794938 password=48794938 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=34699778 password=34699778 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=56654362 password=56654362 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=23869764 password=23869764 profile=\
+    PAKET-7HARI
+add comment=vc-129-08.21.23- name=36387275 password=36387275 profile=\
+    PAKET-7HARI
+add comment=vc-115-08.21.23- name=8FN5ZHNYH password=8FN5ZHNYH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=85X4TUN3F password=85X4TUN3F profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8C6RGBC6R password=8C6RGBC6R profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8FYKXSUAS password=8FYKXSUAS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86JNJET2F password=86JNJET2F profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SJJA3FD7 password=8SJJA3FD7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8457H2CVW password=8457H2CVW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DX762PJY password=8DX762PJY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8F5JKE7WB password=8F5JKE7WB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JDTRWX2C password=8JDTRWX2C profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8FUZ2TKEZ password=8FUZ2TKEZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8F5MCXB5M password=8F5MCXB5M profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8CFS4HTM6 password=8CFS4HTM6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DEX6B622 password=8DEX6B622 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8D96ZP3U4 password=8D96ZP3U4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LJXHDM3S password=8LJXHDM3S profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UGC3NL8Z password=8UGC3NL8Z profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8CPWKC4D6 password=8CPWKC4D6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XDMFNP45 password=8XDMFNP45 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8V64MFPBD password=8V64MFPBD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8X89GYMMS password=8X89GYMMS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8D7PXYR4R password=8D7PXYR4R profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=838GDSL76 password=838GDSL76 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=87Z3R5FXF password=87Z3R5FXF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LNHDBWXJ password=8LNHDBWXJ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HWD9645T password=8HWD9645T profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8STMSXR56 password=8STMSXR56 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8M3WTDXWZ password=8M3WTDXWZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8VV5STC29 password=8VV5STC29 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8STVKY7HB password=8STVKY7HB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8447M73W5 password=8447M73W5 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86CKU8582 password=86CKU8582 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RS3LC3ZY password=8RS3LC3ZY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84Y8UDZ9B password=84Y8UDZ9B profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Z43YJLH2 password=8Z43YJLH2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SV4UN2VH password=8SV4UN2VH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=87DCXZYSL password=87DCXZYSL profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HBE4CHBT password=8HBE4CHBT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HU9RZDZX password=8HU9RZDZX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GKFUPNVF password=8GKFUPNVF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88PZPS4E9 password=88PZPS4E9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82WFAXSRR password=82WFAXSRR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LAT2JCBT password=8LAT2JCBT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BHMSB27V password=8BHMSB27V profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8VSYXLFWU password=8VSYXLFWU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LPBG5RG5 password=8LPBG5RG5 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AFPR7KFM password=8AFPR7KFM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88NPNJ4VS password=88NPNJ4VS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=85JANJZ8E password=85JANJZ8E profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BP2LWEKZ password=8BP2LWEKZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KBYYWZFF password=8KBYYWZFF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=873KJDWW5 password=873KJDWW5 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Y2YUJSEY password=8Y2YUJSEY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=85YLR9T2C password=85YLR9T2C profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GXJLRMB8 password=8GXJLRMB8 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AMBESE9X password=8AMBESE9X profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8D9YHNTEF password=8D9YHNTEF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZEZU8XU6 password=8ZEZU8XU6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8X9GSMHZY password=8X9GSMHZY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GGW8SMY9 password=8GGW8SMY9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8D7BMWZAX password=8D7BMWZAX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Z49VSSYF password=8Z49VSSYF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZARCNKHN password=8ZARCNKHN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SHB2DK2Z password=8SHB2DK2Z profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82U287FZD password=82U287FZD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83YCWWBF7 password=83YCWWBF7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8N3CFSVWC password=8N3CFSVWC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=85RKSK9E9 password=85RKSK9E9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8883AL4JT password=8883AL4JT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=884AWML9E password=884AWML9E profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XJBZYD5Z password=8XJBZYD5Z profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8L8PGCM6X password=8L8PGCM6X profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82AFT4ZX7 password=82AFT4ZX7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GE3UYLE4 password=8GE3UYLE4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SRMZ957L password=8SRMZ957L profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86WM7RR95 password=86WM7RR95 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8E46TP46H password=8E46TP46H profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UYPSWBX9 password=8UYPSWBX9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88MAGM447 password=88MAGM447 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8TUFVPKNR password=8TUFVPKNR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EM8ADD8U password=8EM8ADD8U profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AR6NERSV password=8AR6NERSV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89AAF59UR password=89AAF59UR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JY4GA4FV password=8JY4GA4FV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZVM86X65 password=8ZVM86X65 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UPGJJWYY password=8UPGJJWYY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8VMLVPMF9 password=8VMLVPMF9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DAK4FCKF password=8DAK4FCKF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86UEL2NXD password=86UEL2NXD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GXMD9SHH password=8GXMD9SHH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84PARD9VR password=84PARD9VR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BVWM7C2G password=8BVWM7C2G profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XHHGZMJL password=8XHHGZMJL profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=87CM7JCDJ password=87CM7JCDJ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XHB45468 password=8XHB45468 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8CM37J2UZ password=8CM37J2UZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AXYU3UZT password=8AXYU3UZT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82ZGXFNL3 password=82ZGXFNL3 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8B2NXZ6AM password=8B2NXZ6AM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GM4PGFZY password=8GM4PGFZY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=892RM79AY password=892RM79AY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XV6NXN72 password=8XV6NXN72 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8B9D8XE92 password=8B9D8XE92 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8PVY62LGE password=8PVY62LGE profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8TVVXFVE4 password=8TVVXFVE4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YXPDZE5F password=8YXPDZE5F profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8X7FZZW3E password=8X7FZZW3E profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZBML6FBC password=8ZBML6FBC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YFCNTRE7 password=8YFCNTRE7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83833NWDC password=83833NWDC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=85VU85LPR password=85VU85LPR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EY72V2HR password=8EY72V2HR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8PP7W8T99 password=8PP7W8T99 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89RAPY3YR password=89RAPY3YR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8W9KXCJ82 password=8W9KXCJ82 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8WULE7B2L password=8WULE7B2L profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82PCKR3WB password=82PCKR3WB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JGCCUYXK password=8JGCCUYXK profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ACN4NNKB password=8ACN4NNKB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GXUS4BWX password=8GXUS4BWX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YEURDKEB password=8YEURDKEB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XF9XAL7W password=8XF9XAL7W profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8964R42RJ password=8964R42RJ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=879W4L34P password=879W4L34P profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GVPC4ATA password=8GVPC4ATA profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EL2GBXUN password=8EL2GBXUN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UPVULLSS password=8UPVULLSS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YTUCPHNZ password=8YTUCPHNZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KZWFW9Z8 password=8KZWFW9Z8 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Z2LZYZTX password=8Z2LZYZTX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZYZE8ENX password=8ZYZE8ENX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UJLLDNJP password=8UJLLDNJP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AVFZTD26 password=8AVFZTD26 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8NL3G8S5M password=8NL3G8S5M profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RYFGWFD4 password=8RYFGWFD4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8TH8UNJTX password=8TH8UNJTX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KFB2TSX2 password=8KFB2TSX2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EFBX39TU password=8EFBX39TU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84M9YPNX7 password=84M9YPNX7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UPN2J6DK password=8UPN2J6DK profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GSJJWDNV password=8GSJJWDNV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AHFDGGTG password=8AHFDGGTG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=823EYL5CA password=823EYL5CA profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Z5Y72GBR password=8Z5Y72GBR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YT5H379P password=8YT5H379P profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88SESGE6L password=88SESGE6L profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8K7WEKTLC password=8K7WEKTLC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89R4B4HKC password=89R4B4HKC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83J2XC8NG password=83J2XC8NG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8A98543V7 password=8A98543V7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8P3RBMPPC password=8P3RBMPPC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KK4FSA8E password=8KK4FSA8E profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RZAUPGX9 password=8RZAUPGX9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EYWGBEW9 password=8EYWGBEW9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EMXRTTMC password=8EMXRTTMC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82MWH2S6Y password=82MWH2S6Y profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Z7W87X2Y password=8Z7W87X2Y profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8MWDS5HAS password=8MWDS5HAS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RXFK45EB password=8RXFK45EB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JXKJVYGY password=8JXKJVYGY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8V4U3RMZM password=8V4U3RMZM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Y2R3HBZS password=8Y2R3HBZS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8MXBWFN29 password=8MXBWFN29 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86F4JBV5F password=86F4JBV5F profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BP5DDJTB password=8BP5DDJTB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DDXAHU49 password=8DDXAHU49 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86NHPWFH5 password=86NHPWFH5 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8W6FHCH5E password=8W6FHCH5E profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8D2S66NFY password=8D2S66NFY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8WYYH44G7 password=8WYYH44G7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8944YEFUZ password=8944YEFUZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8P4NGYVFU password=8P4NGYVFU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=824REZ2XJ password=824REZ2XJ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HSUN939K password=8HSUN939K profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XAYP3MYU password=8XAYP3MYU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8L9PD7X5P password=8L9PD7X5P profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89V35XK95 password=89V35XK95 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88TJU2RCF password=88TJU2RCF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8868WT3YM password=8868WT3YM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LML9ZR63 password=8LML9ZR63 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84DRBYCEN password=84DRBYCEN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Z25XD5TT password=8Z25XD5TT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84STKLPUE password=84STKLPUE profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8N8C5E8HW password=8N8C5E8HW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HKRY3CF6 password=8HKRY3CF6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8WGH2C9KL password=8WGH2C9KL profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8K4RPJKH6 password=8K4RPJKH6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8V3XXEG87 password=8V3XXEG87 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JH44AKAM password=8JH44AKAM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8V6S3W4PW password=8V6S3W4PW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8M52BJM2V password=8M52BJM2V profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=864CP2EAY password=864CP2EAY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=866SNL2Z4 password=866SNL2Z4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8X3V43M7M password=8X3V43M7M profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BWMDNYEJ password=8BWMDNYEJ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HBLG84P7 password=8HBLG84P7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8CJTRZNJG password=8CJTRZNJG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=856T4SX2V password=856T4SX2V profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KCKXVGM7 password=8KCKXVGM7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZTP7ZGFW password=8ZTP7ZGFW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86M79GKXV password=86M79GKXV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DGK35X7J password=8DGK35X7J profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EKWY68PT password=8EKWY68PT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JGNWDKH3 password=8JGNWDKH3 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JFX94N68 password=8JFX94N68 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8R28Y2MPP password=8R28Y2MPP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8VGJFJ6LD password=8VGJFJ6LD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=87EGJCDYP password=87EGJCDYP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JYZRSY9J password=8JYZRSY9J profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=87TNVK3JB password=87TNVK3JB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8W5JD2CCX password=8W5JD2CCX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XH47XXRT password=8XH47XXRT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=857ENJH7U password=857ENJH7U profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RTZRN8RE password=8RTZRN8RE profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HGVTLRYG password=8HGVTLRYG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SVKS47UD password=8SVKS47UD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8B663E9X4 password=8B663E9X4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8CZ6KD4AY password=8CZ6KD4AY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RJJP9CDY password=8RJJP9CDY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8PFXCU6BF password=8PFXCU6BF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83UAXD8JB password=83UAXD8JB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84E6DNN6Z password=84E6DNN6Z profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JBK327NE password=8JBK327NE profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8R84W7V4X password=8R84W7V4X profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8F9PAFEZH password=8F9PAFEZH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8X3Z6KZDH password=8X3Z6KZDH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YUXWV8TU password=8YUXWV8TU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8V84D5A9X password=8V84D5A9X profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DDH4LUAN password=8DDH4LUAN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UXNW32YG password=8UXNW32YG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Y3N7UGS9 password=8Y3N7UGS9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84FYVNERD password=84FYVNERD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8X8MDUFFT password=8X8MDUFFT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8U28L6SVW password=8U28L6SVW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8K2PXVYKL password=8K2PXVYKL profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DWNBTAKB password=8DWNBTAKB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84S557BEW password=84S557BEW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YBKAU85T password=8YBKAU85T profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SN57ZN8X password=8SN57ZN8X profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8TJ8RHUSP password=8TJ8RHUSP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8U2XCLD9Y password=8U2XCLD9Y profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86UTX4ER7 password=86UTX4ER7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8J3VV9LR9 password=8J3VV9LR9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AEL5U5AJ password=8AEL5U5AJ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=862426MXZ password=862426MXZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8FKVJYBN2 password=8FKVJYBN2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8X7X3KR4H password=8X7X3KR4H profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8VHUFR66V password=8VHUFR66V profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84RL7S6F2 password=84RL7S6F2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UHS5EXYC password=8UHS5EXYC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8WZDNZ59S password=8WZDNZ59S profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KUXS9VDN password=8KUXS9VDN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8L7GTGVTZ password=8L7GTGVTZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BPJNG9L5 password=8BPJNG9L5 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GJ6THPAY password=8GJ6THPAY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8CDU3CBXX password=8CDU3CBXX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RBNWATZX password=8RBNWATZX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8W4575BKD password=8W4575BKD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8MT9D4G76 password=8MT9D4G76 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=885LB2GUN password=885LB2GUN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8E77F7Y3U password=8E77F7Y3U profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JPKPC4W4 password=8JPKPC4W4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DSRETHWA password=8DSRETHWA profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8748JBD3V password=8748JBD3V profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RT4G7CXR password=8RT4G7CXR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BJU67KKA password=8BJU67KKA profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RGJXLRFE password=8RGJXLRFE profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89ANR7ZMJ password=89ANR7ZMJ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8M4BZAYNK password=8M4BZAYNK profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=87KYKLTKX password=87KYKLTKX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8NWNWG7VG password=8NWNWG7VG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DPYWNBKN password=8DPYWNBKN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=855VYFS9D password=855VYFS9D profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=85VXYMRX3 password=85VXYMRX3 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8826CGV5J password=8826CGV5J profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8MB52RCVA password=8MB52RCVA profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=87VTDRTN7 password=87VTDRTN7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86CRC9DLM password=86CRC9DLM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8CWZAJS8K password=8CWZAJS8K profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Y645E4GC password=8Y645E4GC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8VB3A53YX password=8VB3A53YX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8B2ENFSNP password=8B2ENFSNP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83F7NPV6J password=83F7NPV6J profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8E8X8MKFW password=8E8X8MKFW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86HMNKH3N password=86HMNKH3N profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JYWY9U38 password=8JYWY9U38 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DRPJY8XH password=8DRPJY8XH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XHL9HSRX password=8XHL9HSRX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZELH58ZC password=8ZELH58ZC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8V599MMS8 password=8V599MMS8 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ASKVBSJF password=8ASKVBSJF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8K259XPDE password=8K259XPDE profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8G2WUT5T2 password=8G2WUT5T2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AGFGM7UP password=8AGFGM7UP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8TGTMSJ2C password=8TGTMSJ2C profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ARG8ZCDC password=8ARG8ZCDC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HDHLJ9FM password=8HDHLJ9FM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8T3GP8E9M password=8T3GP8E9M profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8WXCXBHC8 password=8WXCXBHC8 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84NN6LNPS password=84NN6LNPS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86EHVDLX9 password=86EHVDLX9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EVCVDD22 password=8EVCVDD22 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8K49MYRG2 password=8K49MYRG2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZUR4USDN password=8ZUR4USDN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8E7UKB69U password=8E7UKB69U profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84V32635W password=84V32635W profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8VZGVN6GU password=8VZGVN6GU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Z8LYMJE2 password=8Z8LYMJE2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88PGSCXFC password=88PGSCXFC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8W4M6JGK9 password=8W4M6JGK9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RK3HHTCL password=8RK3HHTCL profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83TCT33TV password=83TCT33TV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8NWHEFXFV password=8NWHEFXFV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SK28GKC3 password=8SK28GKC3 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88WZNEM2C password=88WZNEM2C profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89LXM3AH6 password=89LXM3AH6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8NUUJN6BC password=8NUUJN6BC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8S8AA2EGC password=8S8AA2EGC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AYAAFRJ3 password=8AYAAFRJ3 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JMCEN9JW password=8JMCEN9JW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AGJ5ZL2S password=8AGJ5ZL2S profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8U5DA7ZY4 password=8U5DA7ZY4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YPWCJ2XR password=8YPWCJ2XR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8WWL7VWY6 password=8WWL7VWY6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HVK7D9K7 password=8HVK7D9K7 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8Z9BAX9SB password=8Z9BAX9SB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=877VWRJ6D password=877VWRJ6D profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DDRWMAPU password=8DDRWMAPU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AYYPW6YK password=8AYYPW6YK profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89K4999YZ password=89K4999YZ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83D6W2A8Z password=83D6W2A8Z profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8X3NL2DS2 password=8X3NL2DS2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8PSPPG87X password=8PSPPG87X profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8L5R77YF6 password=8L5R77YF6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8GBTDE95L password=8GBTDE95L profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KYG9Z88M password=8KYG9Z88M profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8NAS76J99 password=8NAS76J99 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83W74PEBS password=83W74PEBS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8HXTCWEV6 password=8HXTCWEV6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8B45WKSZS password=8B45WKSZS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89J75X47J password=89J75X47J profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LVHXTJHV password=8LVHXTJHV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86A5SGTGN password=86A5SGTGN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86FLGP24C password=86FLGP24C profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8FGXHTUYT password=8FGXHTUYT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=894NSHE3E password=894NSHE3E profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DDUM6EW6 password=8DDUM6EW6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=842X3GZKD password=842X3GZKD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8872DSTK2 password=8872DSTK2 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8ZHNKUZXF password=8ZHNKUZXF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=876UZX97L password=876UZX97L profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=85T4LUPDW password=85T4LUPDW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KKGRUZ28 password=8KKGRUZ28 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8T6HCPB6Y password=8T6HCPB6Y profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LN8USAB3 password=8LN8USAB3 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89T54S5HW password=89T54S5HW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JPAJZEBD password=8JPAJZEBD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RZ748CRX password=8RZ748CRX profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LWX5PKAF password=8LWX5PKAF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8G2ZKA92C password=8G2ZKA92C profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84JEU82FH password=84JEU82FH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8R4RTA4MC password=8R4RTA4MC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88UYWS34T password=88UYWS34T profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SGN2E4V9 password=8SGN2E4V9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=884WKKVFL password=884WKKVFL profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UD4GYJW9 password=8UD4GYJW9 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8EHD5WSR6 password=8EHD5WSR6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8758F6N2M password=8758F6N2M profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YDPTZXAN password=8YDPTZXAN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83WB59RHM password=83WB59RHM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=87W5U5N9F password=87W5U5N9F profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8NZMTGYJH password=8NZMTGYJH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BCVGJ8XP password=8BCVGJ8XP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8CMDR4MFG password=8CMDR4MFG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KZ8ZFULP password=8KZ8ZFULP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8A4V6DYEU password=8A4V6DYEU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=884DM6RFP password=884DM6RFP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RLABJ9RT password=8RLABJ9RT profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8JUMMV7SY password=8JUMMV7SY profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YEXGWPML password=8YEXGWPML profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RH89VFUP password=8RH89VFUP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88S3VLKDK password=88S3VLKDK profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=84DERDST6 password=84DERDST6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8RXVSZ67W password=8RXVSZ67W profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8VNECND2M password=8VNECND2M profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8S6ME9MCU password=8S6ME9MCU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89MJBZKPC password=89MJBZKPC profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8LPM2NB4L password=8LPM2NB4L profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KJYWKJ3J password=8KJYWKJ3J profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8FS4WGENJ password=8FS4WGENJ profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82LZDPKEG password=82LZDPKEG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8KN89Y8BU password=8KN89Y8BU profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8V5UXKXYF password=8V5UXKXYF profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=88LCCBXBR password=88LCCBXBR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DBTWGUYL password=8DBTWGUYL profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8MVPFUTXG password=8MVPFUTXG profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8SE4FNHPA password=8SE4FNHPA profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83NGSR5CD password=83NGSR5CD profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8BRXVDADP password=8BRXVDADP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8S9ZLB5UM password=8S9ZLB5UM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=89FMEVCA4 password=89FMEVCA4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82XF7S3PH password=82XF7S3PH profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8UVFBCYMR password=8UVFBCYMR profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82W5RD759 password=82W5RD759 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8C7KU5DPW password=8C7KU5DPW profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=83E9JDPD4 password=83E9JDPD4 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YPA9EURS password=8YPA9EURS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8DR5U2XRB password=8DR5U2XRB profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82NURHMYM password=82NURHMYM profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=875XVL4E6 password=875XVL4E6 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8PAFMLYNS password=8PAFMLYNS profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8TTXWAEPV password=8TTXWAEPV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8AUE5Y43D password=8AUE5Y43D profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8E3E7D6TN password=8E3E7D6TN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=82KYGVAFP password=82KYGVAFP profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8B4LX6LZV password=8B4LX6LZV profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=86RDYHT23 password=86RDYHT23 profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8S7SFTYJN password=8S7SFTYJN profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8XKUT8U3M password=8XKUT8U3M profile=\
+    PAKET-12Jam
+add comment=vc-115-08.21.23- name=8YK5YKHMC password=8YK5YKHMC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CNA7PUR4 password=8CNA7PUR4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JYPSHL6R password=8JYPSHL6R profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8B3LNLJJT password=8B3LNLJJT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BGXL6MBH password=8BGXL6MBH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8PA3XUGCM password=8PA3XUGCM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85ZWCR24J password=85ZWCR24J profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SLV8LVEW password=8SLV8LVEW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89PV9HZR4 password=89PV9HZR4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8S9BS6YYT password=8S9BS6YYT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8XV4JPSGE password=8XV4JPSGE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8XHLUTZ9L password=8XHLUTZ9L profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ERSGKNLR password=8ERSGKNLR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JK2PRAHK password=8JK2PRAHK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YK8BDWCC password=8YK8BDWCC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TRTK8Z3X password=8TRTK8Z3X profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TMNADNYH password=8TMNADNYH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8298RHF3X password=8298RHF3X profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=876CNTBPE password=876CNTBPE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ECGEVVUT password=8ECGEVVUT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DDHPW3TC password=8DDHPW3TC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=899VUHGKV password=899VUHGKV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MJEMX5HK password=8MJEMX5HK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RALBRJKB password=8RALBRJKB profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87XCP5S4B password=87XCP5S4B profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86LZ3RB3D password=86LZ3RB3D profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BTG7S9TU password=8BTG7S9TU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SJ8BT3AD password=8SJ8BT3AD profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88D5B3UVC password=88D5B3UVC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UBKD72GH password=8UBKD72GH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88WHBBRJ6 password=88WHBBRJ6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8J6AF5FY3 password=8J6AF5FY3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GMVHR84G password=8GMVHR84G profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87CMSUKW9 password=87CMSUKW9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BUG3KJSL password=8BUG3KJSL profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=825UMMNLB password=825UMMNLB profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YRLA5YTR password=8YRLA5YTR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8AR6APYAK password=8AR6APYAK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MLFDKPF5 password=8MLFDKPF5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88EVXCR87 password=88EVXCR87 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MPAN83Y3 password=8MPAN83Y3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=84F6VT7MG password=84F6VT7MG profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=879DBA8LR password=879DBA8LR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=854CBBMTM password=854CBBMTM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JHYM3GLG password=8JHYM3GLG profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LJMJ5AYY password=8LJMJ5AYY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YPAUR38G password=8YPAUR38G profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8S3ATGDCP password=8S3ATGDCP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8N5K7K9PZ password=8N5K7K9PZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VXKBN794 password=8VXKBN794 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8Y26YVABA password=8Y26YVABA profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85EPDWZVC password=85EPDWZVC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82L7CUDAK password=82L7CUDAK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UPY7EYGS password=8UPY7EYGS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=867ZNRTW7 password=867ZNRTW7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=874L2HECK password=874L2HECK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LYS5UUCA password=8LYS5UUCA profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HTV6DKP3 password=8HTV6DKP3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8K7SYCPW6 password=8K7SYCPW6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8Z5YTBPUE password=8Z5YTBPUE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8D5AGHMV4 password=8D5AGHMV4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8W978K2WX password=8W978K2WX profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=882JVMXE9 password=882JVMXE9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HGTNDU9U password=8HGTNDU9U profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8D5TEXTUY password=8D5TEXTUY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=822ZDZB4E password=822ZDZB4E profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=84PACNGDF password=84PACNGDF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8R74LMTMV password=8R74LMTMV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LZAX4AAY password=8LZAX4AAY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8V7ALLG8G password=8V7ALLG8G profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=869ZFEETR password=869ZFEETR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8N9UM5L2G password=8N9UM5L2G profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82PR3X582 password=82PR3X582 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8EM2YFFB5 password=8EM2YFFB5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GLN5VNP4 password=8GLN5VNP4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CM4TU9CN password=8CM4TU9CN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8P95THAL7 password=8P95THAL7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8PG9DHADD password=8PG9DHADD profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZUBD394K password=8ZUBD394K profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RDS2SSMG password=8RDS2SSMG profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8KMH5TUFF password=8KMH5TUFF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8PMXXTYE9 password=8PMXXTYE9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RWX9Y8X5 password=8RWX9Y8X5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UGYCW5XW password=8UGYCW5XW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NVV2TNST password=8NVV2TNST profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8E64JBGEN password=8E64JBGEN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NTJPKH9S password=8NTJPKH9S profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MWLS9A6V password=8MWLS9A6V profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZY7HJWK9 password=8ZY7HJWK9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UZP92UDP password=8UZP92UDP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VK4RX52H password=8VK4RX52H profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87NPAUBDF password=87NPAUBDF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HVGLZFUT password=8HVGLZFUT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8Z7T3Y2CC password=8Z7T3Y2CC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=896LDY5AC password=896LDY5AC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8FTAWM8JM password=8FTAWM8JM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8AMRB6CKF password=8AMRB6CKF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VRDY549K password=8VRDY549K profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VL4MRFZA password=8VL4MRFZA profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8F9BKNXPE password=8F9BKNXPE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=899YL2LS6 password=899YL2LS6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8FLDYHY5D password=8FLDYHY5D profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8PVJG947B password=8PVJG947B profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=853UDWGTS password=853UDWGTS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8FP6GM7FZ password=8FP6GM7FZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RUW34PZT password=8RUW34PZT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RZZWF4UF password=8RZZWF4UF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8J8U9CWWR password=8J8U9CWWR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UZBYY5KW password=8UZBYY5KW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SEV9XATT password=8SEV9XATT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZYDWDFYN password=8ZYDWDFYN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NPA926YA password=8NPA926YA profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8G6F2ZD7X password=8G6F2ZD7X profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HBAHYPKD password=8HBAHYPKD profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GSRH26JY password=8GSRH26JY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JJ7BX9YE password=8JJ7BX9YE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8B5JNSZA2 password=8B5JNSZA2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZK7W8YCK password=8ZK7W8YCK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87F4RE7LD password=87F4RE7LD profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85PKG27Y6 password=85PKG27Y6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DYLX9YT8 password=8DYLX9YT8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=867KCN43D password=867KCN43D profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85XDJHK5V password=85XDJHK5V profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8E9FRDYXG password=8E9FRDYXG profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NMMSFAUH password=8NMMSFAUH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=835EXC2SS password=835EXC2SS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89AMXBB5F password=89AMXBB5F profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8E5S4XKVE password=8E5S4XKVE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=866M8CXBW password=866M8CXBW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8PERKAUER password=8PERKAUER profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MGWXUDL6 password=8MGWXUDL6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86BKJN3RX password=86BKJN3RX profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8WHM9ZW9D password=8WHM9ZW9D profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=823HBEG3A password=823HBEG3A profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88H4H4TJX password=88H4H4TJX profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8KVU4NDL3 password=8KVU4NDL3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UPKWC9NY password=8UPKWC9NY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=842S6RYNF password=842S6RYNF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZDAN2JXT password=8ZDAN2JXT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SSJRVHFS password=8SSJRVHFS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZSG5EXKM password=8ZSG5EXKM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VCG4BA88 password=8VCG4BA88 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=824FFRMUS password=824FFRMUS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8M2SGBH93 password=8M2SGBH93 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DMDX8YXE password=8DMDX8YXE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8C2N54GSJ password=8C2N54GSJ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89NJT546T password=89NJT546T profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89LEAXD2Y password=89LEAXD2Y profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YD8CPBS9 password=8YD8CPBS9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8K2B94GAH password=8K2B94GAH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8P3MS9WYY password=8P3MS9WYY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8KJK8T3SF password=8KJK8T3SF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SY2CY238 password=8SY2CY238 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HDFFBCR2 password=8HDFFBCR2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DBNB4298 password=8DBNB4298 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LT78WKGH password=8LT78WKGH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TDUXW4U9 password=8TDUXW4U9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8632SS376 password=8632SS376 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8AEPGMGZJ password=8AEPGMGZJ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DE9B7Y67 password=8DE9B7Y67 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=83MK5KG3D password=83MK5KG3D profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8H546ELLW password=8H546ELLW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DCP7XB8Z password=8DCP7XB8Z profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VDTJP7TG password=8VDTJP7TG profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JSBXY8RL password=8JSBXY8RL profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LHLNAZZ7 password=8LHLNAZZ7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8R5NJWGWH password=8R5NJWGWH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=83PTUF9EC password=83PTUF9EC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88PZA3BXX password=88PZA3BXX profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8E8L9D8C5 password=8E8L9D8C5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ASKGLZ35 password=8ASKGLZ35 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YCA8D6ZT password=8YCA8D6ZT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85HNAVRKC password=85HNAVRKC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8XA4XPAML password=8XA4XPAML profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=838GZ3UNV password=838GZ3UNV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LC9PKWJU password=8LC9PKWJU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=896AUEHNV password=896AUEHNV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87P2P98XP password=87P2P98XP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82JC482SN password=82JC482SN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YNN9YH3G password=8YNN9YH3G profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LMWZNM9G password=8LMWZNM9G profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86GEKZZ7E password=86GEKZZ7E profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89P7T3KCK password=89P7T3KCK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82CJXKXKR password=82CJXKXKR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87YGSM4A7 password=87YGSM4A7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UKBJYLEP password=8UKBJYLEP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NPZ4NFCK password=8NPZ4NFCK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UDXPE82K password=8UDXPE82K profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8Y5Z4CWTY password=8Y5Z4CWTY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=882ML63LK password=882ML63LK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BJSZYNVM password=8BJSZYNVM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BRRJFCFZ password=8BRRJFCFZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8Y6H3S3TV password=8Y6H3S3TV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CTFSKCS3 password=8CTFSKCS3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=868HGZ9UU password=868HGZ9UU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JF2HRBUZ password=8JF2HRBUZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=872ZKWJ9U password=872ZKWJ9U profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87XR27GW5 password=87XR27GW5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89S8KR695 password=89S8KR695 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HHTJ858L password=8HHTJ858L profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LPEPSD6W password=8LPEPSD6W profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8REGC2GZS password=8REGC2GZS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8J5W98E6G password=8J5W98E6G profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86W2NXSJU password=86W2NXSJU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8A9UFBKJ4 password=8A9UFBKJ4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=828PT4B42 password=828PT4B42 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=83CJHD2JY password=83CJHD2JY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JMRWUAVM password=8JMRWUAVM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86M8RL4EC password=86M8RL4EC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82EDBDY5V password=82EDBDY5V profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TE6DAYDH password=8TE6DAYDH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NRW9ZM52 password=8NRW9ZM52 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89WKNMYRP password=89WKNMYRP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RWJXWG5B password=8RWJXWG5B profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SBRUW9P6 password=8SBRUW9P6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8G6JNCTC2 password=8G6JNCTC2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8KYW6C6J6 password=8KYW6C6J6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86S6MLV4C password=86S6MLV4C profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8X3AW9WGW password=8X3AW9WGW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82XM6XUKL password=82XM6XUKL profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=84W79TPTP password=84W79TPTP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BY9FJ32Z password=8BY9FJ32Z profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BNTJBVRR password=8BNTJBVRR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8A38SRRRS password=8A38SRRRS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VNFYYLHB password=8VNFYYLHB profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87HUCP4Y8 password=87HUCP4Y8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8X4AS47FN password=8X4AS47FN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89HAGRFWJ password=89HAGRFWJ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8U9N9VVR3 password=8U9N9VVR3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SDUC4ZU2 password=8SDUC4ZU2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SDSLKVMP password=8SDSLKVMP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YBT9ZZ2W password=8YBT9ZZ2W profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82RV5GFEW password=82RV5GFEW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=84LCFNRNF password=84LCFNRNF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TH72TVAU password=8TH72TVAU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DGS6FE4V password=8DGS6FE4V profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8E22LTDJT password=8E22LTDJT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=847BMHBHF password=847BMHBHF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=84GK3P8E3 password=84GK3P8E3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HY855N6E password=8HY855N6E profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8366NUM6T password=8366NUM6T profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8V4RWJRA2 password=8V4RWJRA2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8KAYNDXZC password=8KAYNDXZC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DT68ZS7K password=8DT68ZS7K profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8W69BKA8X password=8W69BKA8X profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BCMASZ38 password=8BCMASZ38 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8AYAVRY3S password=8AYAVRY3S profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8XZJD5P6A password=8XZJD5P6A profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YYBK38S5 password=8YYBK38S5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HY2R94S2 password=8HY2R94S2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87FKNUCL9 password=87FKNUCL9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88HDMFG5M password=88HDMFG5M profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89MCE9JSE password=89MCE9JSE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DWVBX3GD password=8DWVBX3GD profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CTV3M3KU password=8CTV3M3KU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89DPZZ43J password=89DPZZ43J profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8R6CV779T password=8R6CV779T profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8277YVV5D password=8277YVV5D profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8PZ43653J password=8PZ43653J profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YKHFSKY4 password=8YKHFSKY4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GHBWU78A password=8GHBWU78A profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CUYPZHSX password=8CUYPZHSX profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8A2BMEJZB password=8A2BMEJZB profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8E6SZRWT7 password=8E6SZRWT7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ERAJ6HMV password=8ERAJ6HMV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ET8JBZC4 password=8ET8JBZC4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=84WGUDBE7 password=84WGUDBE7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8K2HMY2MW password=8K2HMY2MW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8KS7S97HJ password=8KS7S97HJ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=875XGWBXV password=875XGWBXV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=84LMK3EA6 password=84LMK3EA6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GAPCD2F7 password=8GAPCD2F7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8XN3K28WA password=8XN3K28WA profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NS5HNGG7 password=8NS5HNGG7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8C7RYFVL8 password=8C7RYFVL8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=83VD72W84 password=83VD72W84 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JEXZJKP6 password=8JEXZJKP6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8WTSMNHY5 password=8WTSMNHY5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TKUWKMEC password=8TKUWKMEC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DTH4WKYK password=8DTH4WKYK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CYRZSAZ4 password=8CYRZSAZ4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8U6WUWCFN password=8U6WUWCFN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GUWFESPL password=8GUWFESPL profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8F355Y4NN password=8F355Y4NN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DEJKRCS5 password=8DEJKRCS5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GUG6C3WT password=8GUG6C3WT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CXWLY9FX password=8CXWLY9FX profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87P889GCC password=87P889GCC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MNASDRZA password=8MNASDRZA profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UVJJZLBJ password=8UVJJZLBJ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GVWC94ND password=8GVWC94ND profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NMRESPZL password=8NMRESPZL profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85SZKSGPH password=85SZKSGPH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8X943VZNU password=8X943VZNU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TMVN99CW password=8TMVN99CW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VYSPHSLG password=8VYSPHSLG profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TRPXVKVU password=8TRPXVKVU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RZ3MY82S password=8RZ3MY82S profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CATLYSHJ password=8CATLYSHJ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TL94GN7X password=8TL94GN7X profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8PHCXP2H9 password=8PHCXP2H9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8A3JBABC9 password=8A3JBABC9 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85RN5DL59 password=85RN5DL59 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8EL7KMESZ password=8EL7KMESZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8U6ZG9TLS password=8U6ZG9TLS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HGG4U8MC password=8HGG4U8MC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=853J9JT83 password=853J9JT83 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SXL622AM password=8SXL622AM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87MLMHW7D password=87MLMHW7D profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8G8WYKZW3 password=8G8WYKZW3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8B8DXECTY password=8B8DXECTY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VLHUMFSV password=8VLHUMFSV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RZ6DGC93 password=8RZ6DGC93 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86CSXJL5C password=86CSXJL5C profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8R879Z8UY password=8R879Z8UY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MMVKGR8P password=8MMVKGR8P profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8J6PR76SV password=8J6PR76SV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8KS4ZR3B8 password=8KS4ZR3B8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8D3Y6AFB2 password=8D3Y6AFB2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86ZPFJVM5 password=86ZPFJVM5 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8J68NLBRR password=8J68NLBRR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NKW66CGN password=8NKW66CGN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89RPMB2A8 password=89RPMB2A8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DPZDTU36 password=8DPZDTU36 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8S2N8RT7R password=8S2N8RT7R profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HP7ESHLS password=8HP7ESHLS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BAEP3XPH password=8BAEP3XPH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BSSFAMES password=8BSSFAMES profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87R5CKM5T password=87R5CKM5T profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=847XRLGPE password=847XRLGPE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MM4DJ7MV password=8MM4DJ7MV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8Z7ZKZARY password=8Z7ZKZARY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VAJ36UHY password=8VAJ36UHY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CZ67NBSN password=8CZ67NBSN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86VRNPTZC password=86VRNPTZC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8DXPTXT3S password=8DXPTXT3S profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RNXDFCC8 password=8RNXDFCC8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8C6UPYZUH password=8C6UPYZUH profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8VXCHLRUW password=8VXCHLRUW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GZV536B6 password=8GZV536B6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UWABF8NK password=8UWABF8NK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=83NZBGHUY password=83NZBGHUY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UUXZ826J password=8UUXZ826J profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8BFHJEBK6 password=8BFHJEBK6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86ZKT7FG2 password=86ZKT7FG2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8GJL27VTZ password=8GJL27VTZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZKG2KNXA password=8ZKG2KNXA profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8V8L3ZCSR password=8V8L3ZCSR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NWVWMZRK password=8NWVWMZRK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MRPV53RM password=8MRPV53RM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8E72NMM76 password=8E72NMM76 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85B7NT9YW password=85B7NT9YW profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8FN5LTWG8 password=8FN5LTWG8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8H9ASA5NU password=8H9ASA5NU profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82LHXEYW3 password=82LHXEYW3 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=84T8CUY4N password=84T8CUY4N profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8EACWP5NY password=8EACWP5NY profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=846BRNZJN password=846BRNZJN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UWYRWM44 password=8UWYRWM44 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TKR63H83 password=8TKR63H83 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8LRJSAPCS password=8LRJSAPCS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8EDTU9RD4 password=8EDTU9RD4 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8W2D75MR8 password=8W2D75MR8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88RR3HXBZ password=88RR3HXBZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8Z2P8LMGP password=8Z2P8LMGP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8FXS23B84 password=8FXS23B84 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86ZT73ZVF password=86ZT73ZVF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8C87277CJ password=8C87277CJ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8M7UBNX4P password=8M7UBNX4P profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87V7B5RZN password=87V7B5RZN profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8MT6TPNFR password=8MT6TPNFR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=873444ADP password=873444ADP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8G6YYEJ7T password=8G6YYEJ7T profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8M55NCZRV password=8M55NCZRV profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CGG23RH6 password=8CGG23RH6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8S9GA78DF password=8S9GA78DF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JZ28WHR2 password=8JZ28WHR2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UPG5U5GM password=8UPG5U5GM profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8AYTT643M password=8AYTT643M profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=83SCJHZBS password=83SCJHZBS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8UN334TRB password=8UN334TRB profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RNBPH362 password=8RNBPH362 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8EB38YU39 password=8EB38YU39 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=83MNW3L9P password=83MNW3L9P profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8B73H2F8P password=8B73H2F8P profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CYMCFVUZ password=8CYMCFVUZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8SHB7GWHX password=8SHB7GWHX profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TVGCU468 password=8TVGCU468 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=83J2JMF67 password=83J2JMF67 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8NKE4JHGK password=8NKE4JHGK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8CJHSRBFP password=8CJHSRBFP profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89ERVUE2B password=89ERVUE2B profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZRZ6ZSKR password=8ZRZ6ZSKR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8RKNXWZ3R password=8RKNXWZ3R profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86EPYP4VK password=86EPYP4VK profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8EBGH2JV2 password=8EBGH2JV2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86TWD3FGE password=86TWD3FGE profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HWDVGBMG password=8HWDVGBMG profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=875URD7RJ password=875URD7RJ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8AJN9FJNC password=8AJN9FJNC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HNS8VGU7 password=8HNS8VGU7 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8ZJKW9H6U password=8ZJKW9H6U profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8EPY4SM3L password=8EPY4SM3L profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8W5C34EE8 password=8W5C34EE8 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=85EMLDVN2 password=85EMLDVN2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88J829HNS password=88J829HNS profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8V423WEVR password=8V423WEVR profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=883GZY46R password=883GZY46R profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8XZFMLKYZ password=8XZFMLKYZ profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=86WC8GD6B password=86WC8GD6B profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JC4LRJ6Z password=8JC4LRJ6Z profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=89C4Z3LVT password=89C4Z3LVT profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8YE88JLR2 password=8YE88JLR2 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8TLXJX4LF password=8TLXJX4LF profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8FF5RA2WC password=8FF5RA2WC profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=82Y65CZJG password=82Y65CZJG profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=88NZE82Y6 password=88NZE82Y6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=87MZYKMZ6 password=87MZYKMZ6 profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8JD4GKU5S password=8JD4GKU5S profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8HXPBV88R password=8HXPBV88R profile=\
+    PAKET-12Jam
+add comment=vc-109-08.21.23- name=8PTP7LSND password=8PTP7LSND profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96HV92JFF password=25573488 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=963UKZTAN password=44673766 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AULUKTHD password=75678878 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GT93SJ2J password=37572735 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TZRAHYX7 password=84268396 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97E3FV56A password=62664533 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9N29LUZPV password=42954563 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99W9PDKMW password=34238357 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XY5THWWE password=37222677 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9P9UU9XHD password=34988733 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9KSDVKNFU password=53763622 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JGSVG6RS password=74443336 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9KEZTZCD6 password=26727585 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RK4R49CZ password=52978577 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YYZMTVNB password=98246396 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AKSG48C5 password=68999768 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RDDBZACD password=49759856 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99EU5G3P5 password=35495778 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VN5WJJDB password=22866445 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9K6AM8SFY password=28394746 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DV9CGPU5 password=39456773 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AS4ZCCJP password=43485544 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99WSMTRLT password=77339948 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9C9A9UU2C password=25862369 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HUMUGMTC password=64588245 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TLVDP7WU password=25832744 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96LWXJECS password=78959278 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LUTEYD57 password=55274357 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96AJVY494 password=43985952 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TY5AKGRF password=43792589 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JUJNSLK9 password=45424763 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DXT2KFRJ password=59733779 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9B9WDY29B password=76246423 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CTVNXA4J password=96347799 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FJNXHAA9 password=57244823 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NJB7N2UE password=99945758 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YRTDFFP3 password=66634349 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9C55KTLX6 password=34237555 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9USAPRGHR password=94527596 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ELBUA3FS password=85784382 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=94P6WFDPA password=89775692 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VZVY6EA9 password=96653756 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RGEYG69P password=25436645 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9P8TYEMJL password=46896368 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9R63XXU6Z password=78363527 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9WB5U2R6V password=24544522 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95P3RRCG7 password=72692339 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GBUL2P5Z password=42665683 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9W5FEWS69 password=23424889 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9E6W8DJGY password=87968723 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92E7ZG276 password=73529478 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RWBR598U password=72767669 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JLBFE7LY password=83829796 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FH659UCK password=25859567 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FMUSP8EM password=49785963 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HZCDSBU7 password=76535294 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9PKPYD5K8 password=36953268 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YCWHLNPN password=77485767 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BCY2FW5M password=52624293 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TKUHVVX3 password=37638272 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9C2KYWK3X password=25558975 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ZP6DGYJA password=95466534 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RKKTP4C5 password=97878796 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JNU6GXJE password=23486694 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GZYGVH26 password=48692456 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HJWSVSWE password=77792734 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LAP3ES44 password=28797845 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9U9CALHM9 password=63599683 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95FUHCXHW password=38387364 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JV6NP4RZ password=86772578 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92HCTNYBK password=76962539 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LCCX8J8M password=67357225 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AE82CVG5 password=63349635 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93PX34W45 password=68227789 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9W8G4EM2K password=77882678 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VYV3B5BG password=28462283 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XW42UBYV password=42836552 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9337YY8XR password=86297545 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BF4UMU93 password=44265363 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9M2VPX7XU password=94228636 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93VGJU9X4 password=75877824 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LWXCB2AU password=68534745 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98685DHZ2 password=55975493 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XMDU3R2P password=54432694 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9PBCJBNEU password=64575739 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9L9787B5F password=77524582 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LDVVMP8H password=93458986 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NRDGNTM3 password=58989236 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VAR3BLD3 password=88526292 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=954YLJ6GJ password=59848792 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9H4Z5DDXG password=24267246 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YBWLTCRW password=88383295 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HSL4T3VT password=77224928 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96E7HEFC6 password=77839556 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9WBMWLK6Y password=79543739 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9REW9EEBA password=85852647 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NRZLTZU2 password=22255479 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9N9YWS9P9 password=49365757 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9T2S6C9WY password=72362868 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ZZEEHZE5 password=45254626 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9B7WLAEBS password=89753386 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9PL8SMKJV password=68346523 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=979DXLF5F password=48636564 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9S4E2522G password=39722248 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9F695ACAZ password=35894668 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98FY6ZDWY password=42772724 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=94YH7B5UE password=59455693 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93NW79L5C password=79935236 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=94M65STSR password=24489575 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99T83VPRK password=58653568 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9G76YKB3W password=26739386 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TSXTVNRP password=76673659 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99LJMSRRY password=47543847 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9SMZF9H4P password=32287778 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DWA8BZSW password=27548446 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=94DEYZ8UJ password=26886637 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9W3EN968P password=36938764 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TY9C4TXA password=59977535 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9S4WZJ7ZD password=74823939 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VFELLAEW password=22554259 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=922T7847X password=62272235 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BTZRGMAE password=23594735 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NU29AVRC password=86633268 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=953XRPUHS password=62757248 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NHN7RJNN password=49677943 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9B69LBX52 password=49484579 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=932NZJ3YU password=43996754 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9W6XDBW55 password=57525662 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9UF3PPGMW password=74728424 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VZZZPRG5 password=23839782 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YSTAARNU password=54836893 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97RFHFG8Z password=97627648 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GXXP8W4L password=63326339 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VC9WK3CR password=39799546 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CYF2HXWA password=29289587 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XUF63HUC password=93476273 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LWB87U4V password=87457683 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9D72AXVNU password=94346746 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99PKA9LMA password=23929636 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98EYA74X7 password=43588259 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99C79NAJK password=76855598 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EHA6T7JF password=32226593 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MW73GTVS password=78374239 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ZHYXT6HJ password=48347673 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EBKSN8JU password=29996779 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XD2J6ZWJ password=84652793 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JMBB8GKR password=89293369 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=994G3WPLE password=88459662 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93TFS6MZJ password=88684687 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YPAF2AR6 password=22643557 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YUY4GNT8 password=46477854 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=927GPHS8S password=74298284 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98SUA6KZS password=33645958 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GJ2UD549 password=85967768 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9UJ4C8CJ8 password=58386983 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BSZUMBBM password=34322263 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9V8PAM2FH password=23342876 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HWAR9EXV password=93958524 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99SP5FJSP password=25562687 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93VZG9DXZ password=38978685 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9Z74TMYER password=46374347 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92R35L8AZ password=75474725 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95GVD78GN password=26479736 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CGGLCY2U password=69273673 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MNZU5DWG password=35879254 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=934BZGJ5K password=93465569 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JPG6FEP6 password=73654429 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95KH9ZZL7 password=65849296 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TMCC5BVP password=68823536 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9KX3DVCGP password=66799779 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EELE74E6 password=85574569 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9D6ZD4KP3 password=25244274 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9F49CLSCF password=48528443 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9K9BAPNBB password=84779436 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9UM97EAMM password=42847254 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=969Z2PMBE password=99792626 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9K3LVLPBN password=73562794 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9544N4GNE password=66226636 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RCDF6YDL password=53667383 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FUH7U7EA password=52924685 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98JHV45TE password=62257622 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95FBJXSJ2 password=74286482 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95KZ7D6L4 password=28932887 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97XHTF92M password=56663227 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DHWD43SM password=85298983 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MA4XBLV5 password=57533683 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92A5G5UB3 password=29752936 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GH2YJT5G password=86875295 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92YSEKH9D password=75786898 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NMCU7WRR password=75523447 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EHS8D2JJ password=77235622 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99L2K6VPU password=82534638 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97X6XKF8L password=28847362 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97G48JP4U password=47947647 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9B8WG5PAJ password=88844759 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9H7JRAFTP password=43746696 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9UD2X3VPC password=87445287 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98TC5E2XF password=65838494 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9PFJ9CWH2 password=45328454 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AAJDWGE3 password=37495238 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YCEF2TNK password=32576558 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RM5HSUAJ password=47464694 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9L6NH4K8Z password=56947584 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9KW3H23HX password=77697227 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LUAFJ96B password=29973466 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9SZDDM656 password=56345459 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ZDAACSFG password=24493277 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BY36M55A password=73365649 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9STNYH75J password=45225737 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AU5SZYG9 password=38779669 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9W4EJ4F7G password=25332336 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LKKARN85 password=24578628 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9E9JZ2LLA password=34622655 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9A7DNV9BV password=56652425 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AB3BBMEY password=72586822 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DNKXCRTG password=28336252 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9J8XHZJKH password=67764926 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9U25384NZ password=28286626 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9727K3B5X password=83425959 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9M933GAXC password=68449238 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97PTHGZ38 password=46359833 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9UCDX4DHK password=47976472 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9K9TCAHCE password=49688654 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EC4P4CHP password=54287653 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CN72GX2G password=72493395 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9C76BG7VP password=29593672 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GYXL273D password=52598784 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9PXKU8XLK password=94392649 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9Z533YCH7 password=69898222 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DJE8BHRB password=37483437 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9V7KCADAV password=27773477 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9F2LGUZ8X password=99968263 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=954FJYAGF password=94949573 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9WD6LPB3E password=99828637 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9SWPM232V password=28683527 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RL4LXJBS password=49262242 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9SKCKFRY6 password=73647499 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XREHKMX2 password=38898483 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=965CD999C password=75866222 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HP49JLW5 password=45839664 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XJP4FNXD password=27678762 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FK6WXFA5 password=82345684 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93UGMZXYB password=87785359 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9SBLDN62Z password=85933652 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9KZL4X4D5 password=96376677 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GWESTS5R password=28325448 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9G34E957T password=44959845 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JDL2A8LC password=72782275 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RYYLX2DC password=39337949 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ZS766KGU password=82659658 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CS8NZTXT password=55878984 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9UZ56ESP8 password=32894253 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DFVMEGU4 password=28825866 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=924F32VBF password=98632495 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9SYVF8Z6A password=22344677 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9K45T2UBK password=36652686 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HE96EEUB password=54866337 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JX7FDNNJ password=73966695 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MPZPYNV9 password=24963727 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VNMY5EEE password=66865664 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96V56WUA3 password=33553245 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JAFB9ZH6 password=99957462 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93WLG7V4R password=79447492 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MSMKRGZS password=63523286 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BUHNWSAA password=66595526 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9458PLTVA password=63473662 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XMSRXJUR password=82256559 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9WC6RV25M password=23736265 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YADND8R2 password=55292434 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=94GFLG5RV password=89463426 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CUDH7R37 password=47539245 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NF6CG4PZ password=97484697 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=949S7C6P9 password=78244785 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LB8ZUX3Z password=64788627 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99KHSXES7 password=59359374 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9Y2NHKMTV password=57687675 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RRM8VK7Z password=68749622 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MMGWP9XL password=72778473 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MS6J6LZN password=26624877 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9P5N68PE8 password=54355298 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9WP2RUH68 password=93873974 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96G8A43AP password=54325673 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JHATWAPM password=27444927 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ZR6AB9H3 password=84567286 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9J6WRCYMY password=72478889 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97UG6XC5B password=72285438 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XPWJ6GX5 password=74797692 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ST7XXB4E password=88226628 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9P5A9BWL7 password=25539352 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9PN9JB6GE password=45632648 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9UE2UW6N5 password=86537752 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92EN33W8A password=48438687 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CL69TB4X password=95927278 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9R2HF7GB2 password=63522484 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98MNK5CWL password=43892445 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9THNPNYTM password=34277239 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GKJST936 password=38268549 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99V9UJAN5 password=45946685 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95CTUV2LK password=54729574 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9447USHWH password=75389297 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=952ETAPJW password=27656456 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9A7HPELHR password=53837459 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HKFL48U3 password=29985268 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9U77GEKHV password=79958532 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AZTBAMH5 password=52797738 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9T294SEVU password=36453652 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EAKVUWK3 password=22894327 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95SPLH5LP password=29252598 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XGPBS3ZU password=32394645 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TDHZMRPF password=54344496 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TH7M44TJ password=78278892 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9WVP95783 password=25828943 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93F3USZY4 password=65446997 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9C8ADZJ3K password=26778696 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9P8BWUSHH password=89997942 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96F8D9RBX password=66923929 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9PWYU9FFT password=54843824 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CKJAVUX6 password=44759463 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=94FYN3YRZ password=46363645 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XJ82VTWA password=52779543 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VVBC9DE3 password=77985385 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VEAN8M9A password=26285663 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9Z64XTMGY password=57282774 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=976R6YDZ6 password=92884532 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HC8DRTWS password=67672293 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9WRJJ4Y5W password=35265427 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DDPP3UNF password=25455468 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9Y8RTKFLH password=96642954 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MBLWRRV2 password=92634564 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EKAXFSGZ password=97592638 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9A4UYTHEF password=26375527 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99U9XPZPC password=57755932 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ASGW87CR password=79329489 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FXJUB4BL password=35582474 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NBGP2PMX password=73558292 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92X9KB3BP password=43593565 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FRVE85BY password=24362753 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9YSB8PWNP password=97827674 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9K2LZSDCW password=84468342 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9AHRRFLEK password=83725543 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=947REPJTP password=93868668 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9Z5K4J8HB password=26897439 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9Y99RZKKD password=42743835 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93LSC3NZX password=87474965 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9965XPGSX password=37899949 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HYBGX2VE password=88333649 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VYDZR9BD password=53552975 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9B79H684T password=37676944 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9WMZY7X8N password=26597857 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JAKDTBP2 password=26324485 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9A7ZSZFJV password=28836668 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=94A95SAP6 password=34345576 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92LDG6V8W password=59548328 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=936CS6535 password=78658686 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96W52R59U password=29655797 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DVSAWVTZ password=74547555 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9N39GNANM password=38246235 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93GKN2FWR password=97639452 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9K5STYBGB password=77929493 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96YSXHXEC password=68295977 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9U2MZM8NV password=64387597 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LBC3D99V password=79265653 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FUW3PZ8A password=88748542 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EJA3MGH8 password=28428965 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9GHHZ5N5L password=53774424 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LNLX9K5F password=87946497 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9V3HUY7FS password=55224235 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97MAP9J4K password=25966588 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LGWH5L5U password=76836776 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=95HCBLDFK password=69572627 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9SSM4NV6S password=56833375 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9F9TUC47F password=55379566 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=99XSJL2KK password=65423693 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96VL8GPB7 password=88462464 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=96ZAVX3D9 password=23396868 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98BTGY6TT password=59847988 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9EW63LYJT password=99565964 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NPDLUHNA password=52887664 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93PE5NR58 password=35926997 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HXBL4PWM password=99242977 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=93D334E2J password=78962872 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9P2MGPTHW password=78777428 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FX3WWXBP password=72489683 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9A2B9PSHZ password=86898599 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=97CEK4CZS password=23293353 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98VDV3LVZ password=52324639 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CM76ML3P password=83329742 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9JLUDUCLV password=46992577 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VTBKKSGH password=92699268 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=998MSXXPL password=68284475 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9RUTWWTA7 password=58574436 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BPU2FE78 password=42769922 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9ZSN4KPFR password=36742532 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9S3D6BR3P password=43639675 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MKX7MGZ6 password=52494565 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9KAB6JYA4 password=72873988 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9M9K536XF password=25348447 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9TEM363WB password=69599442 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=92SKXVN8M password=27667968 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9CDCT62WF password=77632522 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9T7YM34WP password=58489628 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9B9EFJV9E password=33945642 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9XHP7LCYL password=38586298 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9MYUXAKZA password=37744599 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FNUMJHDE password=37977536 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BKNBE752 password=59936486 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9BPBYVJ74 password=75762783 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9E3VKWMLM password=23583933 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9KM86JFCN password=62938887 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VEEPSZF5 password=34452697 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=98FG8K8W4 password=87679832 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9NNCPZ7PH password=63695992 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=984472WUD password=52635725 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9VSNLMABR password=42443453 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9LM4ZUE5K password=54855536 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9FRCCM9AV password=67463534 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9D3GN2UTM password=75667276 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9DLEZZ4NV password=24767654 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9HD89K4VJ password=55764665 profile=\
+    PAKET-12Jam
+add comment=up-664-08.21.23- name=9PCVGRUDR password=98566522 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99ACKC6JC password=99ACKC6JC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YNVVEHFA password=9YNVVEHFA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99ZTWKV2T password=99ZTWKV2T profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=94ZBS9GVG password=94ZBS9GVG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WZ4XB77C password=9WZ4XB77C profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HR8G79KX password=9HR8G79KX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DHDXTF98 password=9DHDXTF98 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9D5SBH2VT password=9D5SBH2VT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YT269UJN password=9YT269UJN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=92DAGF4XE password=92DAGF4XE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9Y57TYL8Z password=9Y57TYL8Z profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MTX89N3Y password=9MTX89N3Y profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JP7773LD password=9JP7773LD profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HL3T62HR password=9HL3T62HR profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ZU8J5DW4 password=9ZU8J5DW4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9V4UFFEGY password=9V4UFFEGY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KPJ43VDD password=9KPJ43VDD profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YFJFC3AW password=9YFJFC3AW profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HLF48RBJ password=9HLF48RBJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93YF2585T password=93YF2585T profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93T6UWAWS password=93T6UWAWS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9EVSGZ7AX password=9EVSGZ7AX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GHWHBPFB password=9GHWHBPFB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98FSY96ZG password=98FSY96ZG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=92YYERA5G password=92YYERA5G profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TWNT5DHS password=9TWNT5DHS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XGKSD9AF password=9XGKSD9AF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CHT9V632 password=9CHT9V632 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9G9ZUHV4H password=9G9ZUHV4H profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96HCHPPYG password=96HCHPPYG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9VJGUDEUX password=9VJGUDEUX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9G6JVX9DE password=9G6JVX9DE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DM9493RX password=9DM9493RX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HPPJS4L2 password=9HPPJS4L2 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99RKTD64R password=99RKTD64R profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JE2UGGWL password=9JE2UGGWL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9R4R7ZV5N password=9R4R7ZV5N profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9THTXBLGE password=9THTXBLGE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95ZXKCG4X password=95ZXKCG4X profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9K985HSMN password=9K985HSMN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KME6N99S password=9KME6N99S profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=94XLNB7KN password=94XLNB7KN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9FCG7AETE password=9FCG7AETE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KP6SZ6KK password=9KP6SZ6KK profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WBBYC837 password=9WBBYC837 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BW5RSVWR password=9BW5RSVWR profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98T8N6X9A password=98T8N6X9A profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JRTSXMSC password=9JRTSXMSC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9N3FKZSLY password=9N3FKZSLY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JGD6PMEN password=9JGD6PMEN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HC8Y22DG password=9HC8Y22DG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HD65C76X password=9HD65C76X profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XWT3KXV3 password=9XWT3KXV3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PNCW5H7E password=9PNCW5H7E profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98YE5VR92 password=98YE5VR92 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9EL8T9VSD password=9EL8T9VSD profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MUCE6PUJ password=9MUCE6PUJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9VF2ZZG62 password=9VF2ZZG62 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9FPU5N3VW password=9FPU5N3VW profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9AEZTLMLM password=9AEZTLMLM profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UV6KN2JC password=9UV6KN2JC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YTEFBJCG password=9YTEFBJCG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=94HGYFX65 password=94HGYFX65 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95UH7EGMS password=95UH7EGMS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GY6K7ZYG password=9GY6K7ZYG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93SJ96PRS password=93SJ96PRS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99FCN7E7P password=99FCN7E7P profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YURWRFWR password=9YURWRFWR profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9L7DFNH4Z password=9L7DFNH4Z profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=94BDDEYDX password=94BDDEYDX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UFF7WHXL password=9UFF7WHXL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9REPYGGEK password=9REPYGGEK profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97HT65MXU password=97HT65MXU profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95FXV6A8W password=95FXV6A8W profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XKRKK7DV password=9XKRKK7DV profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HLCCRL48 password=9HLCCRL48 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99WGPHDHZ password=99WGPHDHZ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9578NDRAR password=9578NDRAR profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GS9T8FKG password=9GS9T8FKG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98ER4EV2P password=98ER4EV2P profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TEC4WPTH password=9TEC4WPTH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=94H8U49KE password=94H8U49KE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9G3ZVUBGE password=9G3ZVUBGE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XTU7L763 password=9XTU7L763 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TZFB9LUD password=9TZFB9LUD profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ZFXC8V4X password=9ZFXC8V4X profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YFXSES4P password=9YFXSES4P profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KSNL8LJ9 password=9KSNL8LJ9 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99NSEK4JL password=99NSEK4JL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WYC7VKTA password=9WYC7VKTA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XX5HYUFC password=9XX5HYUFC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98B8DC45A password=98B8DC45A profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97FABV7Z6 password=97FABV7Z6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9S4HDXDRG password=9S4HDXDRG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CHH4HGGB password=9CHH4HGGB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TGGHXPW6 password=9TGGHXPW6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9LB245W63 password=9LB245W63 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9LTDXHAWJ password=9LTDXHAWJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9865JZP9M password=9865JZP9M profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9D9FYYEXV password=9D9FYYEXV profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GA2PC73A password=9GA2PC73A profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9E4YUJAAE password=9E4YUJAAE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KXYUFJSA password=9KXYUFJSA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XK6SG86F password=9XK6SG86F profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TC76J3MW password=9TC76J3MW profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97Z932DV6 password=97Z932DV6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ETZYVYYB password=9ETZYVYYB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9EJKWF4MU password=9EJKWF4MU profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MHLFPJYT password=9MHLFPJYT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XGALZKNR password=9XGALZKNR profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PRAXAZWN password=9PRAXAZWN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9W3PEW3A4 password=9W3PEW3A4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WR9LUL24 password=9WR9LUL24 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MJ2JFUP6 password=9MJ2JFUP6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GSSRMLJC password=9GSSRMLJC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9C7J9U677 password=9C7J9U677 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9N44KX9SP password=9N44KX9SP profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9B8HTC8YF password=9B8HTC8YF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PXGDYTXD password=9PXGDYTXD profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9SX5E8BB5 password=9SX5E8BB5 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9VH6EZH9N password=9VH6EZH9N profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YHNDPNFJ password=9YHNDPNFJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9E6DWAL2S password=9E6DWAL2S profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=968EX4KMW password=968EX4KMW profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9K3F42CFY password=9K3F42CFY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KDKCK95G password=9KDKCK95G profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KGJ8JZUH password=9KGJ8JZUH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9G6ETEX7J password=9G6ETEX7J profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PNXL3TDL password=9PNXL3TDL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96U7MVW2A password=96U7MVW2A profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98WWETZCK password=98WWETZCK profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TM627DYZ password=9TM627DYZ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CDNY2UZL password=9CDNY2UZL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PVJ9MM6X password=9PVJ9MM6X profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BEGFZKLZ password=9BEGFZKLZ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=94RLKGXXB password=94RLKGXXB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9F7L6YGCY password=9F7L6YGCY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98HL8WGHE password=98HL8WGHE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WZAB7SJR password=9WZAB7SJR profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CFSG7K6G password=9CFSG7K6G profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9Z4S8VPFM password=9Z4S8VPFM profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9RSDJLE4R password=9RSDJLE4R profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YPA3BH9V password=9YPA3BH9V profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KRNREAKG password=9KRNREAKG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=92454SH8N password=92454SH8N profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97LV8TFVX password=97LV8TFVX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9FHJLFWMA password=9FHJLFWMA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9SL9B358B password=9SL9B358B profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9H7RULXR2 password=9H7RULXR2 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9L248FKVX password=9L248FKVX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9FDZ2HUS4 password=9FDZ2HUS4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9X4K9823Z password=9X4K9823Z profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GDJEEXYR password=9GDJEEXYR profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9Z22KKS4T password=9Z22KKS4T profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WDNAKEL8 password=9WDNAKEL8 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=936MHU36J password=936MHU36J profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XMKU8HWT password=9XMKU8HWT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DMNA74HH password=9DMNA74HH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TFJCLJ6P password=9TFJCLJ6P profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96TD5W6FX password=96TD5W6FX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9U2U4YPK7 password=9U2U4YPK7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PV2B8H73 password=9PV2B8H73 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98LNBKAEH password=98LNBKAEH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=983V4FCY5 password=983V4FCY5 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97GA8PHYX password=97GA8PHYX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ZN5PSZ3F password=9ZN5PSZ3F profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93VZ4JLEN password=93VZ4JLEN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9AW3DFMP7 password=9AW3DFMP7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=932Z6DV32 password=932Z6DV32 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9A3XESK6N password=9A3XESK6N profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9D8JPGJ57 password=9D8JPGJ57 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ACZ3X2N4 password=9ACZ3X2N4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CPWY3VWF password=9CPWY3VWF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9H3FH89GR password=9H3FH89GR profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97NB7D3K2 password=97NB7D3K2 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99DL2WHUV password=99DL2WHUV profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95F2LNEF8 password=95F2LNEF8 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9RMPW63ZN password=9RMPW63ZN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9F8AG97R9 password=9F8AG97R9 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=972YDB48F password=972YDB48F profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DAD4AKPC password=9DAD4AKPC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WTNNKXSF password=9WTNNKXSF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97VHM3WKS password=97VHM3WKS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=959237SUW password=959237SUW profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=948XEVCNT password=948XEVCNT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93KCSFVR3 password=93KCSFVR3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DLXMV77N password=9DLXMV77N profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9Z3U4JHN6 password=9Z3U4JHN6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9A9RKDNDL password=9A9RKDNDL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96XR8TXXH password=96XR8TXXH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93EKGM4GW password=93EKGM4GW profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UGCFDDRA password=9UGCFDDRA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XCRLWMSS password=9XCRLWMSS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99WVZL4BT password=99WVZL4BT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97CF7DKHF password=97CF7DKHF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9NGK6NBZ9 password=9NGK6NBZ9 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93KXGD6X9 password=93KXGD6X9 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BFP6VCYX password=9BFP6VCYX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TCHP4M9D password=9TCHP4M9D profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9F3H8FDG4 password=9F3H8FDG4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9NWD6TAS4 password=9NWD6TAS4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BK9LMNTX password=9BK9LMNTX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9VFT4SBPM password=9VFT4SBPM profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9897LNH7R password=9897LNH7R profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PA3P82C9 password=9PA3P82C9 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BBJFU5VS password=9BBJFU5VS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9EMBBELW8 password=9EMBBELW8 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9X3KCDR48 password=9X3KCDR48 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99TX5LBMT password=99TX5LBMT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ANJLJM6E password=9ANJLJM6E profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9FY3D2FT7 password=9FY3D2FT7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MENFJ39K password=9MENFJ39K profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99D2CY9MN password=99D2CY9MN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98K95N9MX password=98K95N9MX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XC2ALXEG password=9XC2ALXEG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9AEHV7GLS password=9AEHV7GLS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9P3BEARDV password=9P3BEARDV profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=945NYBZDB password=945NYBZDB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9VT727YS4 password=9VT727YS4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XY2MAZ7T password=9XY2MAZ7T profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MUVCKUUE password=9MUVCKUUE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9Y8U6ETBH password=9Y8U6ETBH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ADKLPLU4 password=9ADKLPLU4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9H5ASVLZN password=9H5ASVLZN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93PL5UJZB password=93PL5UJZB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TXPPYPGJ password=9TXPPYPGJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=973737VLE password=973737VLE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=94VA8XBZD password=94VA8XBZD profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XNKR3UVK password=9XNKR3UVK profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9L8AKZNVF password=9L8AKZNVF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JU2CMN43 password=9JU2CMN43 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9M8Y2F49Y password=9M8Y2F49Y profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ARS79PG6 password=9ARS79PG6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9D5LTGSF7 password=9D5LTGSF7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DN4G45B3 password=9DN4G45B3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=956D7EZPC password=956D7EZPC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=94W7GE7T4 password=94W7GE7T4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95LLDFY9S password=95LLDFY9S profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9NMCFG58E password=9NMCFG58E profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9LPJNVYDL password=9LPJNVYDL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9C5TLJ9UC password=9C5TLJ9UC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UPDAW9A7 password=9UPDAW9A7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ENU9URW5 password=9ENU9URW5 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=93UDHT2AP password=93UDHT2AP profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95GNLMWLY password=95GNLMWLY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HDUJTLJF password=9HDUJTLJF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9NTJW7Y96 password=9NTJW7Y96 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GJYN78DM password=9GJYN78DM profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BWREP64X password=9BWREP64X profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96M26642J password=96M26642J profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9C2GEGSCJ password=9C2GEGSCJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UV982GPE password=9UV982GPE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=92FZ4RZA9 password=92FZ4RZA9 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9SHW42MPH password=9SHW42MPH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JCLRR66A password=9JCLRR66A profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97T94CU93 password=97T94CU93 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=963HLRF7W password=963HLRF7W profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CYJDBALB password=9CYJDBALB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96SYXZ5NC password=96SYXZ5NC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HAZA6A2H password=9HAZA6A2H profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TS8YRGUV password=9TS8YRGUV profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9W2V242RY password=9W2V242RY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9AAJY7PXS password=9AAJY7PXS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TDFUEU2U password=9TDFUEU2U profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WK77N578 password=9WK77N578 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9FNXZCV4F password=9FNXZCV4F profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9VWCUDWWH password=9VWCUDWWH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=934LR6F8Z password=934LR6F8Z profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9FGB8KB9W password=9FGB8KB9W profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XWPB3TNS password=9XWPB3TNS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WLDKHNKL password=9WLDKHNKL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ADGZC7MZ password=9ADGZC7MZ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GGP5F63X password=9GGP5F63X profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DR7Z9UFX password=9DR7Z9UFX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9EDL5M2Y3 password=9EDL5M2Y3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9G94K22AU password=9G94K22AU profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YKBVBKKA password=9YKBVBKKA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9T6EZWYFY password=9T6EZWYFY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DA3JRZ4V password=9DA3JRZ4V profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MPEH6X6H password=9MPEH6X6H profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XS5F5KTZ password=9XS5F5KTZ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=987CC27NT password=987CC27NT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9V9RTSJXZ password=9V9RTSJXZ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9STFSSX83 password=9STFSSX83 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9D26VX6R3 password=9D26VX6R3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KTZ3MG4H password=9KTZ3MG4H profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9SCMVTNGG password=9SCMVTNGG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9VF8DU3JF password=9VF8DU3JF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9AEE5NCEF password=9AEE5NCEF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WZC4NWS3 password=9WZC4NWS3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96HRUTESA password=96HRUTESA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XPPCD93M password=9XPPCD93M profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MVV8E6T7 password=9MVV8E6T7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98TFG8DMF password=98TFG8DMF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=92S3LRSSF password=92S3LRSSF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YJWNEJTP password=9YJWNEJTP profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HFK74HWA password=9HFK74HWA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9G7978YRN password=9G7978YRN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9C5L8NNGY password=9C5L8NNGY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ZZTBWXRL password=9ZZTBWXRL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9T4GZSGPP password=9T4GZSGPP profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9R7T9NN3S password=9R7T9NN3S profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95KDPK7WT password=95KDPK7WT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9Y2FBUEXD password=9Y2FBUEXD profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KULLD39G password=9KULLD39G profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XS2NLFKP password=9XS2NLFKP profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9E5DZFB3Z password=9E5DZFB3Z profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WNTM9ZBY password=9WNTM9ZBY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UNY4Z8HL password=9UNY4Z8HL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95XZF2BCF password=95XZF2BCF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95RK6A2XJ password=95RK6A2XJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TVVB6MXE password=9TVVB6MXE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JLHFJYH3 password=9JLHFJYH3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99PNJWAB3 password=99PNJWAB3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CGZ64BHE password=9CGZ64BHE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PPNCHERN password=9PPNCHERN profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9RMAL4B7V password=9RMAL4B7V profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9D44Z9BHH password=9D44Z9BHH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ZBMZV8TM password=9ZBMZV8TM profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9J46PCATT password=9J46PCATT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DSBLL9L2 password=9DSBLL9L2 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9F27S3GWT password=9F27S3GWT profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=968HPLPU8 password=968HPLPU8 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9C5EEM83S password=9C5EEM83S profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HYHG3TRH password=9HYHG3TRH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HK2WBRJY password=9HK2WBRJY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9S9K8ATK5 password=9S9K8ATK5 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96PCGD9JL password=96PCGD9JL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95AY7HXLC password=95AY7HXLC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JRLD43DX password=9JRLD43DX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UCWLZG3D password=9UCWLZG3D profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WW2VME99 password=9WW2VME99 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96NLRXM7J password=96NLRXM7J profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9HGV8AHFS password=9HGV8AHFS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DJEUMR8Z password=9DJEUMR8Z profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MNELBM7R password=9MNELBM7R profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9P7H5BYG3 password=9P7H5BYG3 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GTVDZ2RF password=9GTVDZ2RF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DU6W9L5X password=9DU6W9L5X profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9B3HPHYB4 password=9B3HPHYB4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PSLCNVGX password=9PSLCNVGX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ERKV5M8Y password=9ERKV5M8Y profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9V84TU3R8 password=9V84TU3R8 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9Z2B55DPA password=9Z2B55DPA profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=96FWFZD85 password=96FWFZD85 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9B9ZRSDYB password=9B9ZRSDYB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UPAJD54V password=9UPAJD54V profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9LLVW9WAB password=9LLVW9WAB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=948FCAGMP password=948FCAGMP profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97C6XV7WH password=97C6XV7WH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=99AN5WS6U password=99AN5WS6U profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98S52UG37 password=98S52UG37 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9H475H7UK password=9H475H7UK profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9Z32GE43K password=9Z32GE43K profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95YAKDZX6 password=95YAKDZX6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TH5GV74W password=9TH5GV74W profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9D36RRFPU password=9D36RRFPU profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TDLCF4EF password=9TDLCF4EF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GP5VVUEU password=9GP5VVUEU profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BVTADZBG password=9BVTADZBG profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9R5C7XCBE password=9R5C7XCBE profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9K9XKX627 password=9K9XKX627 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BK6ZA9MU password=9BK6ZA9MU profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UT8FDVSV password=9UT8FDVSV profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JASG4TMC password=9JASG4TMC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BSY6WCUS password=9BSY6WCUS profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9LHEYNAK7 password=9LHEYNAK7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BCCXUVF5 password=9BCCXUVF5 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9THDM9VNL password=9THDM9VNL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=92UP3CMV7 password=92UP3CMV7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DKXS2W8W password=9DKXS2W8W profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9SG8SRXC8 password=9SG8SRXC8 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KV9LCJF9 password=9KV9LCJF9 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9PH6B9Z5F password=9PH6B9Z5F profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9LPLED4KX password=9LPLED4KX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=967SY54F6 password=967SY54F6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9SBBFETW7 password=9SBBFETW7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CSCXLGLK password=9CSCXLGLK profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9BXJXNWNB password=9BXJXNWNB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9JH4GZCTX password=9JH4GZCTX profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GUK5FM5H password=9GUK5FM5H profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9YM9VG2AH password=9YM9VG2AH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9G9N9YAG2 password=9G9N9YAG2 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WE4CBPCK password=9WE4CBPCK profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9LF4MF426 password=9LF4MF426 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9K4V6SN7B password=9K4V6SN7B profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95N3F7AZ4 password=95N3F7AZ4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=98XTJ5642 password=98XTJ5642 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=996TZE5N6 password=996TZE5N6 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9567TJEBY password=9567TJEBY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=987MGEV9H password=987MGEV9H profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9H295DP4C password=9H295DP4C profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CYR7DR2G password=9CYR7DR2G profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MT9ST9NF password=9MT9ST9NF profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9TTECK28A password=9TTECK28A profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9SREZ4CAH password=9SREZ4CAH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9WVW9AY46 password=9WVW9AY46 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95224H78S password=95224H78S profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9VGF4RTWD password=9VGF4RTWD profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9ZZB9B4RH password=9ZZB9B4RH profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9XVA56TV7 password=9XVA56TV7 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9KVHRP82Y password=9KVHRP82Y profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9DANMU6AU password=9DANMU6AU profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=97WXUYWDC password=97WXUYWDC profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9EYWV27DJ password=9EYWV27DJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=92ARSCC2Y password=92ARSCC2Y profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9C653X5EL password=9C653X5EL profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9CC9S5U82 password=9CC9S5U82 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9D6PFU8L9 password=9D6PFU8L9 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9EBN5GK9U password=9EBN5GK9U profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9T6TBZN9R password=9T6TBZN9R profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9GEA2RUBK password=9GEA2RUBK profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9UERVLTKB password=9UERVLTKB profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9SXBT4VNJ password=9SXBT4VNJ profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9R8PDZUT8 password=9R8PDZUT8 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9K42NTXLY password=9K42NTXLY profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9RTZ5DZ8R password=9RTZ5DZ8R profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=956PU5AC4 password=956PU5AC4 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=95DUCZK43 password=95DUCZK43 profile=\
+    PAKET-12Jam
+add comment=vc-110-08.21.23- name=9MCHLC556 password=9MCHLC556 profile=\
     PAKET-12Jam
 /ppp secret
 add local-address=192.168.10.1 name=ALAMGIR270614 password=ALAMGIR270614 \
@@ -24335,6 +26418,3446 @@ add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-23:45:18-|\
     vc-199-08.03.23-" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/17/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-00:01:11-|\
+    -95M2NB4LJF-|-2000-|-172.16.0.57-|-52:A9:A6:60:7D:CF-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-03:58:55-|\
+    -4JDHTMKXK-|-2000-|-172.16.0.81-|-1A:E3:05:2A:6C:C2-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-04:19:44-|\
+    -48549SEYLR-|-2000-|-172.16.3.28-|-20:34:FB:EB:7C:96-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-05:41:43-|\
+    -3D4SXT9CH-|-2000-|-172.16.0.143-|-7C:2A:DB:A1:C2:F6-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-05:42:38-|\
+    -22294536-|-20000-|-172.16.1.197-|-4A:1B:0A:CC:59:AD-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-05:47:18-|\
+    -486XDBW55G-|-2000-|-172.16.1.16-|-DC:B7:2E:D3:FC:94-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-05:55:22-|\
+    -95CMASZ38S-|-2000-|-172.16.3.233-|-E4:46:DA:F7:5A:1A-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:04:15-|\
+    -42588226-|-20000-|-172.16.1.199-|-D8:63:75:DC:F3:1D-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:05:49-|\
+    -GH25XD5TTM-|-2000-|-172.16.0.74-|-C0:87:EB:DE:32:4B-|-12h-|-PAKET-12Jam-|\
+    -vc-599-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:16:24-|\
+    -JB8JZUHATA-|-2000-|-172.16.0.100-|-00:0A:F5:67:6B:2C-|-12h-|-PAKET-12Jam-\
+    |-vc-798-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:24:42-|\
+    -48EDZFPRSV-|-2000-|-172.16.3.110-|-68:BF:C4:A8:F8:12-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:29:47-|\
+    -3CXH5T868-|-2000-|-172.16.1.106-|-6C:D7:1F:27:3B:4B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:30:37-|\
+    -3Y3RXCLYJ-|-2000-|-172.16.3.91-|-FE:A4:41:A9:EB:69-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:40:01-|\
+    -958USAB3P2-|-2000-|-172.16.0.113-|-62:29:2F:4F:0E:BC-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:42:18-|\
+    -3D82DCLNZ-|-2000-|-172.16.3.127-|-5A:A2:D3:19:D7:73-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:48:51-|\
+    -3B8SM7U43-|-2000-|-172.16.0.119-|-C0:FB:C1:00:90:76-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-06:51:33-|\
+    -3ESZNCWH8-|-2000-|-172.16.0.120-|-6E:97:DD:C4:BD:13-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-07:11:28-|\
+    -95Y855N6EA-|-2000-|-172.16.2.8-|-2E:13:BC:25:22:36-|-12h-|-PAKET-12Jam-|-\
+    vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-07:15:16-|\
+    -56228782-|-20000-|-172.16.0.96-|-22:A6:CF:D1:AF:A4-|-7d-|-PAKET-7HARI-|-v\
+    c-549-06.19.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-07:16:28-|\
+    -WLVBYNSLSV-|-2000-|-172.16.2.99-|-F2:D0:C1:00:E0:32-|-12h-|-PAKET-12Jam-|\
+    -vc-484-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-07:28:49-|\
+    -3FZDZJNVC-|-2000-|-172.16.0.133-|-6A:D8:3B:D5:6E:13-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-07:30:59-|\
+    -44ANUJTZ9-|-2000-|-172.16.0.144-|-8C:AA:CE:49:F4:D0-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-07:34:26-|\
+    -3JE8XTYTX-|-2000-|-172.16.0.84-|-7C:2A:DB:B0:1D:FA-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-07:59:51-|\
+    -48RZSAZ4FM-|-2000-|-172.16.0.60-|-AA:C5:5A:F5:C0:87-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:00:12-|\
+    -48WLY9FXST-|-2000-|-172.16.0.125-|-C0:87:EB:FC:6B:E5-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:00:12-|\
+    -47GBEAYYB-|-2000-|-172.16.0.71-|-E4:33:AE:7B:DB:AD-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:01:18-|\
+    -95D5B3UVCS-|-2000-|-172.16.2.222-|-10:BC:97:0D:D9:E1-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:10:34-|\
+    -3RKD794YB-|-2000-|-172.16.0.154-|-16:30:BA:1F:30:19-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:27:35-|\
+    -95L9HSRXRX-|-2000-|-172.16.0.156-|-0C:A8:A7:37:31:F6-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:29:54-|\
+    -4FCNTRE78-|-2000-|-172.16.3.128-|-F2:BB:BB:03:12:3B-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:31:31-|\
+    -49KXCJ823-|-2000-|-172.16.0.158-|-48:79:4D:47:93:A1-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:31:38-|\
+    -95MCE9JSE6-|-2000-|-172.16.0.157-|-A4:C9:39:E3:F3:13-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:38:09-|\
+    -95BKD72GHB-|-2000-|-172.16.0.161-|-B6:9A:E0:00:B6:30-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-08:52:15-|\
+    -48L2WRFBFB-|-2000-|-172.16.0.166-|-76:4B:9E:94:02:74-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:00:39-|\
+    -95XM3AH6E8-|-2000-|-172.16.0.168-|-20:5E:F7:52:7B:76-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:01:29-|\
+    -3XT6X949G-|-2000-|-172.16.1.223-|-6C:F7:84:F6:05:B7-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:08:42-|\
+    -4VJ7HE98U-|-2000-|-172.16.1.78-|-4C:1A:3D:87:0A:B2-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:12:23-|\
+    -95YLX9YT8C-|-2000-|-172.16.3.54-|-46:77:41:3A:05:8F-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:14:29-|\
+    -3HC766CVD-|-2000-|-172.16.0.175-|-AE:CA:21:41:2F:38-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:14:41-|\
+    -4PXSRXYHH-|-2000-|-172.16.0.173-|-0A:64:CB:91:32:2E-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:14:58-|\
+    -4UFJ6Z46B-|-2000-|-172.16.1.174-|-A4:D9:90:23:E8:05-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:15:33-|\
+    -3EKKEKL4B-|-2000-|-172.16.2.161-|-02:19:14:50:7B:2A-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:32:36-|\
+    -34RBM7KUH-|-2000-|-172.16.3.50-|-DA:98:4B:23:96:2A-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:35:52-|\
+    -3AT7F4CPE-|-2000-|-172.16.3.34-|-72:47:A9:8E:82:2B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:39:32-|\
+    -485RA2WCCU-|-2000-|-172.16.0.181-|-00:56:CD:82:1D:1B-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:42:32-|\
+    -4FMWWX55A-|-2000-|-172.16.0.122-|-E8:50:8B:A0:6D:04-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:47:00-|\
+    -95E5Y43DRH-|-2000-|-172.16.0.184-|-F8:E7:A0:12:2B:6D-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-09:47:19-|\
+    -TAT9NFFBRF-|-2000-|-172.16.0.185-|-C0:47:54:BE:65:D5-|-12h-|-PAKET-12Jam-\
+    |-vc-182-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:01:03-|\
+    -442NE8UF6-|-2000-|-172.16.0.187-|-1C:DD:EA:89:35:79-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:01:20-|\
+    -95CJXKXKRY-|-2000-|-172.16.0.186-|-0A:CB:37:86:FE:43-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:02:25-|\
+    -3P496W5M2-|-2000-|-172.16.2.126-|-E2:64:0F:85:89:30-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:03:15-|\
+    -395Z8XBLP-|-2000-|-172.16.3.63-|-FA:E8:8B:11:C6:81-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:12:49-|\
+    -85394247-|-20000-|-172.16.1.135-|-08:4A:CF:59:8C:AA-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:12:49-|\
+    -4PCKR3WBB-|-2000-|-172.16.1.57-|-92:61:54:33:16:22-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:29:27-|\
+    -3DK5S7N4Z-|-2000-|-172.16.0.190-|-18:D0:C5:60:72:9D-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:29:28-|\
+    -32A2L7Y6L-|-2000-|-172.16.0.191-|-D6:6E:6E:A7:05:53-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:29:51-|\
+    -3DGSJ57L6-|-2000-|-172.16.0.76-|-44:46:87:63:7E:FD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:30:24-|\
+    -48GNEJK53J-|-2000-|-172.16.0.192-|-B2:1D:B5:7F:46:25-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:34:35-|\
+    -TACMV7D9YW-|-2000-|-172.16.2.137-|-20:5E:F7:D7:BF:E8-|-12h-|-PAKET-12Jam-\
+    |-vc-182-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:37:36-|\
+    -95SKGLZ352-|-2000-|-172.16.0.195-|-04:E5:98:0E:D2:BE-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:37:36-|\
+    -95MH5TUFFZ-|-2000-|-172.16.0.202-|-E6:50:17:B6:6A:DD-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:43:47-|\
+    -95G9DHADDM-|-2000-|-172.16.0.205-|-6C:D7:1F:28:A4:63-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:45:43-|\
+    -48ZKSGPHKM-|-2000-|-172.16.1.29-|-20:5E:F7:8A:38:60-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:49:06-|\
+    -3SDGVWYJB-|-2000-|-172.16.0.207-|-04:B1:67:B6:CC:41-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:50:30-|\
+    -95ABJ9RTDU-|-2000-|-172.16.0.209-|-CE:18:25:BF:5F:F6-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:51:22-|\
+    -48G5U5GMZC-|-2000-|-172.16.3.159-|-02:70:7C:3F:76:25-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-10:59:28-|\
+    -3X9DZ5CTM-|-2000-|-172.16.1.61-|-58:85:A2:E6:4B:11-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:01:10-|\
+    -3NDEXSMDJ-|-2000-|-172.16.2.114-|-70:B7:AA:AE:F8:B5-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:01:41-|\
+    -WL2WMNTB45-|-2000-|-172.16.0.212-|-70:78:8B:D6:EA:C1-|-12h-|-PAKET-12Jam-\
+    |-vc-484-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:02:31-|\
+    -425XD5TTM-|-2000-|-172.16.0.213-|-0C:A8:A7:73:D2:BC-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:02:46-|\
+    -3J2ETHAZW-|-2000-|-172.16.0.124-|-FE:34:48:4B:75:F9-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:02:48-|\
+    -4X8GG5EJV-|-2000-|-172.16.3.58-|-AC:EE:9E:54:D7:2A-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:07:31-|\
+    -959N9VVR32-|-2000-|-172.16.0.180-|-0C:98:38:BC:D5:EF-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:12:02-|\
+    -4GAZHRR2W-|-2000-|-172.16.0.139-|-D2:6E:0C:03:CF:59-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:14:37-|\
+    -3UJA3U3Y8-|-2000-|-172.16.3.203-|-4A:A7:84:DF:33:DE-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:16:37-|\
+    -3SXBED478-|-2000-|-172.16.1.30-|-C0:87:EB:8F:0F:13-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:21:04-|\
+    -WLXMSXJZU5-|-2000-|-172.16.0.229-|-44:66:FC:52:72:01-|-12h-|-PAKET-12Jam-\
+    |-vc-484-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:26:19-|\
+    -3RLW2GJXZ-|-2000-|-172.16.3.86-|-74:F2:FA:EF:4F:3D-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:26:22-|\
+    -36BRFE4MV-|-2000-|-172.16.1.39-|-FA:D0:54:96:ED:5C-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:30:48-|\
+    -4MBESE9XP-|-2000-|-172.16.0.230-|-78:02:F8:6A:D3:7C-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:34:00-|\
+    -95LEAXD2YV-|-2000-|-172.16.0.232-|-BE:8D:05:16:57:AF-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:34:08-|\
+    -3HKUPKGMG-|-2000-|-172.16.2.212-|-0C:98:38:03:25:D3-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:34:19-|\
+    -48LK4UF3PP-|-2000-|-172.16.0.233-|-CC:2D:83:A6:1D:1F-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:37:54-|\
+    -3XPHFN86R-|-2000-|-172.16.1.235-|-7E:D4:B3:77:27:B6-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:39:32-|\
+    -43XXEG87J-|-2000-|-172.16.3.214-|-66:E9:05:00:B3:40-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:44:58-|\
+    -3L3A4FMPT-|-2000-|-172.16.0.15-|-92:EC:C8:23:CC:87-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:46:39-|\
+    -48DWY93MN4-|-2000-|-172.16.3.6-|-0A:8D:81:AB:94:14-|-12h-|-PAKET-12Jam-|-\
+    vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:50:44-|\
+    -48FP3HJL8A-|-2000-|-172.16.3.131-|-8E:CF:A0:28:D9:2C-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:50:50-|\
+    -95TV6DKP3E-|-2000-|-172.16.3.191-|-70:78:8B:C4:ED:A9-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:51:46-|\
+    -95UJN6BCSM-|-2000-|-172.16.0.235-|-E0:1F:88:7C:DB:08-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:52:26-|\
+    -95YBK38S5E-|-2000-|-172.16.0.45-|-C2:AC:A3:FE:16:69-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:54:20-|\
+    -95TWGUYLMN-|-2000-|-172.16.3.158-|-84:6F:CE:0D:AC:57-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:03:46-|\
+    -3HS27ABN8-|-2000-|-172.16.2.248-|-8A:00:92:E2:10:37-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:07:30-|\
+    -95CCBXBRXN-|-2000-|-172.16.0.239-|-E0:1F:88:70:87:9C-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:09:27-|\
+    -3TP4SUS86-|-2000-|-172.16.0.240-|-B4:A5:AC:B4:6F:AD-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:11:29-|\
+    -3MTJHG7SV-|-2000-|-172.16.0.241-|-D8:63:75:A1:3C:9D-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:24:44-|\
+    -3FTWDG69W-|-2000-|-172.16.1.124-|-C2:FF:98:AF:25:D9-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:25:51-|\
+    -48WAR9EXVZ-|-2000-|-172.16.0.146-|-3C:B6:B7:36:05:43-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:26:30-|\
+    -39E5KLWBF-|-2000-|-172.16.3.117-|-04:E5:98:33:22:26-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:28:48-|\
+    -489Z2PMBEZ-|-2000-|-172.16.0.20-|-70:78:8B:CC:1A:8B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:30:04-|\
+    -338VNUCZY-|-2000-|-172.16.3.17-|-08:7F:98:DE:07:E1-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:30:15-|\
+    -95NR7ZMJ8E-|-2000-|-172.16.0.243-|-04:E5:98:3A:D7:70-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:31:29-|\
+    -3RY36UPKA-|-2000-|-172.16.2.153-|-18:D7:17:6F:10:13-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:32:03-|\
+    -48PBV88RXM-|-2000-|-172.16.3.180-|-5C:D0:6E:06:68:B6-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:33:22-|\
+    -49PD7X5PY-|-2000-|-172.16.0.244-|-BE:17:A5:B8:00:F4-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:34:30-|\
+    -38KJYHVSK-|-2000-|-172.16.0.206-|-30:56:96:BE:05:6F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:41:01-|\
+    -48K2LK3LVL-|-2000-|-172.16.3.55-|-5A:09:2C:1A:1B:A6-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:44:21-|\
+    -3KSAWF486-|-2000-|-172.16.0.163-|-52:79:6C:64:62:DC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:48:27-|\
+    -489PZ4FVWJ-|-2000-|-172.16.0.245-|-58:85:A2:E9:05:79-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-12:56:38-|\
+    -4SESGE6LG-|-2000-|-172.16.1.80-|-20:5E:F7:6C:0B:60-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:03:34-|\
+    -48EKPUURSG-|-2000-|-172.16.0.251-|-8C:BE:BE:10:B8:65-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:10:47-|\
+    -48AY7XMDU3-|-2000-|-172.16.0.67-|-E2:DF:5C:01:BF:0B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:18:58-|\
+    -4LJCALWB2-|-2000-|-172.16.1.4-|-90:06:28:C1:20:1F-|-12h-|-PAKET-12Jam-|-v\
+    c-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:19:14-|\
+    -449VSSYFM-|-2000-|-172.16.1.5-|-FA:C1:EB:7E:23:4E-|-12h-|-PAKET-12Jam-|-v\
+    c-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:20:09-|\
+    -4NKZWMGPZ-|-2000-|-172.16.0.254-|-7A:AC:F6:28:94:B9-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:21:02-|\
+    -95YPW6YKXC-|-2000-|-172.16.1.225-|-F6:36:02:9E:74:B8-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:21:16-|\
+    -48T26NJB7N-|-2000-|-172.16.1.6-|-0A:EF:39:E9:67:2A-|-12h-|-PAKET-12Jam-|-\
+    vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:52:51-|\
+    -48CD62LP2R-|-2000-|-172.16.1.41-|-3C:B6:B7:1F:A9:F1-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-14:16:42-|\
+    -95UT8U3MA7-|-2000-|-172.16.1.24-|-64:A2:00:F4:4F:04-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-14:21:11-|\
+    -48DA7K9BAP-|-2000-|-172.16.0.183-|-9C:2E:A1:9D:FA:FD-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-14:33:47-|\
+    -48CJPD7BUG-|-2000-|-172.16.1.26-|-B2:E1:6C:D8:C9:9F-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-14:42:36-|\
+    -48MX8JMBB8-|-2000-|-172.16.1.2-|-AE:A5:A8:EA:87:0B-|-12h-|-PAKET-12Jam-|-\
+    vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-14:48:17-|\
+    -3CJJLMZYS-|-2000-|-172.16.1.28-|-F4:D6:20:C4:59:B2-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-14:52:24-|\
+    -3L32Y3Y54-|-2000-|-172.16.0.160-|-20:5E:F7:0D:0C:BC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-14:56:07-|\
+    -48XJX4LFTG-|-2000-|-172.16.1.32-|-D8:1E:DD:5B:EB:5B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:18:48-|\
+    -3VMH47H8Y-|-2000-|-172.16.1.40-|-8E:DD:43:1B:F0:B7-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:22:28-|\
+    -95575BKDKR-|-2000-|-172.16.1.14-|-6E:85:4C:59:FB:21-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:25:44-|\
+    -955EXC2SSF-|-2000-|-172.16.1.43-|-AC:73:52:60:9A:CF-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:27:33-|\
+    -3MRHRTKUB-|-2000-|-172.16.1.44-|-86:0E:34:01:98:8B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:29:05-|\
+    -9552RCVA6D-|-2000-|-172.16.1.46-|-20:64:CB:C2:19:D3-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:33:21-|\
+    -95CJHD2JYD-|-2000-|-172.16.3.212-|-2C:D0:66:15:A2:F0-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:36:57-|\
+    -3Y8FFMAZE-|-2000-|-172.16.0.138-|-5C:AF:06:1F:59:9E-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:40:19-|\
+    -95A3XUGCMY-|-2000-|-172.16.3.51-|-02:61:43:25:FB:4D-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:41:33-|\
+    -48WC94NDUM-|-2000-|-172.16.1.49-|-F0:67:28:72:77:2B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:54:33-|\
+    -955U5N9FC3-|-2000-|-172.16.1.239-|-C0:87:EB:CC:6C:E9-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:57:49-|\
+    -48RYFVL8VD-|-2000-|-172.16.1.51-|-B4:A5:AC:BB:ED:D7-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-16:41:14-|\
+    -95YKLTKXN4-|-2000-|-172.16.1.68-|-62:67:E5:0D:E3:9C-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-16:42:28-|\
+    -3SDUSTSBB-|-2000-|-172.16.3.194-|-04:E5:98:29:59:B4-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-16:44:48-|\
+    -48BMEJZBYK-|-2000-|-172.16.1.71-|-34:E9:11:30:12:97-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-16:56:02-|\
+    -95ERKAUER9-|-2000-|-172.16.3.28-|-20:34:FB:EB:7C:96-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-16:56:54-|\
+    -48ESWBJJT8-|-2000-|-172.16.3.182-|-6A:AE:2D:BD:14:C6-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:04:39-|\
+    -3BUDPS73L-|-2000-|-172.16.1.76-|-68:BF:C4:26:B5:BE-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:10:03-|\
+    -368AHUGYR-|-2000-|-172.16.1.220-|-70:BB:E9:1E:E3:AC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:10:27-|\
+    -9522LTDJTH-|-2000-|-172.16.1.79-|-0C:A8:A7:AF:54:38-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:11:46-|\
+    -JB27YS4L9W-|-2000-|-172.16.1.86-|-0C:A8:A7:F6:28:80-|-12h-|-PAKET-12Jam-|\
+    -vc-798-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:16:05-|\
+    -JBD99VMX2K-|-2000-|-172.16.1.82-|-DA:05:4A:76:E4:BD-|-12h-|-PAKET-12Jam-|\
+    -vc-798-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:26:36-|\
+    -956JNCTC23-|-2000-|-172.16.1.92-|-4A:FD:30:65:30:9F-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:27:35-|\
+    -9595THAL7N-|-2000-|-172.16.1.90-|-A6:11:E4:0F:F1:8F-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:29:28-|\
+    -95HLUTZ9LM-|-2000-|-172.16.1.93-|-0C:A8:A7:BA:AE:A8-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:47:20-|\
+    -48W7YVFELL-|-2000-|-172.16.1.102-|-EE:F3:5C:D7:20:4A-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:48:45-|\
+    -3MC8N4S2D-|-2000-|-172.16.0.143-|-7C:2A:DB:A1:C2:F6-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:52:35-|\
+    -95ZP92UDPD-|-2000-|-172.16.1.107-|-88:D5:0C:1D:1B:5D-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:04:37-|\
+    -95A9EURSA7-|-2000-|-172.16.0.102-|-D4:1A:3F:41:83:57-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:20:30-|\
+    -4ZGXFNL34-|-2000-|-172.16.1.113-|-DE:77:EF:11:EB:30-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:21:31-|\
+    -95Y9FJ32ZK-|-2000-|-172.16.1.115-|-CE:41:E3:CF:07:5E-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:22:15-|\
+    -4VY62LGEA-|-2000-|-172.16.1.101-|-1A:9F:BD:2B:C0:4A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:30:01-|\
+    -95YW6C6J6E-|-2000-|-172.16.3.110-|-68:BF:C4:A8:F8:12-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:33:18-|\
+    -JBHAZNV3HU-|-2000-|-172.16.0.100-|-00:0A:F5:67:6B:2C-|-12h-|-PAKET-12Jam-\
+    |-vc-798-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:33:50-|\
+    -4VU85LPR9-|-2000-|-172.16.1.119-|-8C:AA:CE:43:3B:A0-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:34:25-|\
+    -48S23B84Z6-|-2000-|-172.16.1.206-|-6C:D7:1F:32:2E:45-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:35:29-|\
+    -492FPXW77-|-2000-|-172.16.1.120-|-18:F0:E4:49:CA:21-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:36:00-|\
+    -4A8HZXNZU-|-2000-|-172.16.1.121-|-EA:8C:E1:AB:60:8A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:37:46-|\
+    -95XKBN794D-|-2000-|-172.16.1.122-|-E0:1F:88:53:55:E8-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:37:52-|\
+    -4YFGWFD4Z-|-2000-|-172.16.1.123-|-C8:AC:A3:D6:1C:10-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:48:45-|\
+    -4E3UYLE4Y-|-2000-|-172.16.3.127-|-5A:A2:D3:19:D7:73-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:54:05-|\
+    -95C9PKWJU5-|-2000-|-172.16.1.139-|-C2:F0:74:B6:ED:8A-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:55:35-|\
+    -3WPU28TR8-|-2000-|-172.16.3.91-|-FE:A4:41:A9:EB:69-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:00:26-|\
+    -4K4FSA8EC-|-2000-|-172.16.1.141-|-82:0A:84:38:4E:E5-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:05:01-|\
+    -4F9XAL7WL-|-2000-|-172.16.1.146-|-A4:D9:90:DA:38:59-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:07:26-|\
+    -4F4JBV5F9-|-2000-|-172.16.2.35-|-A0:B4:A5:60:01:3F-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:10:26-|\
+    -487S97HJAA-|-2000-|-172.16.1.149-|-12:2D:81:DE:B7:5A-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:14:02-|\
+    -48UGK9EU5G-|-2000-|-172.16.1.151-|-62:B4:85:8D:70:44-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:17:15-|\
+    -9598RHF3XX-|-2000-|-172.16.2.8-|-2E:13:BC:25:22:36-|-12h-|-PAKET-12Jam-|-\
+    vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:42:28-|\
+    -3CNWNHSED-|-2000-|-172.16.1.165-|-76:DB:30:B4:8F:CF-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:43:31-|\
+    -3JMJXNHYJ-|-2000-|-172.16.1.170-|-12:70:BB:30:21:30-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:44:42-|\
+    -4NEFEW6U2-|-2000-|-172.16.1.171-|-32:17:C4:75:47:5E-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:45:14-|\
+    -4TUCPHNZ5-|-2000-|-172.16.1.168-|-0A:A5:6E:49:BB:1D-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:46:01-|\
+    -34ZYNVMU3F-|-2000-|-172.16.1.169-|-F6:4A:55:82:4C:74-|-12h-|-PAKET-12Jam-\
+    |-vc-775-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-19:59:43-|\
+    -48KT7FG2GW-|-2000-|-172.16.1.16-|-DC:B7:2E:D3:FC:94-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-20:01:51-|\
+    -428Y2MPPY-|-2000-|-172.16.1.183-|-E4:46:DA:E0:A1:F6-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-20:04:46-|\
+    -3JS5TMRUA-|-2000-|-172.16.0.71-|-E4:33:AE:7B:DB:AD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-20:06:10-|\
+    -48ZSW4RHCU-|-2000-|-172.16.1.181-|-64:A2:00:F0:39:DA-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-20:19:09-|\
+    -95GSCXFCA4-|-2000-|-172.16.1.198-|-A6:FC:EA:D7:74:A8-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-20:22:46-|\
+    -3UVN5EE2X-|-2000-|-172.16.0.196-|-E0:99:71:C8:88:3B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-20:41:56-|\
+    -3HXZ95KBJ-|-2000-|-172.16.1.167-|-72:DD:C8:9A:DE:24-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-21:46:00-|\
+    -959MYRG2GB-|-2000-|-172.16.1.232-|-86:AB:BB:9C:D9:8C-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-22:09:00-|\
+    -32T7UDEE8-|-2000-|-172.16.3.63-|-FA:E8:8B:11:C6:81-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-22:17:33-|\
+    -488JBZC4WG-|-2000-|-172.16.0.60-|-AA:C5:5A:F5:C0:87-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-22:29:51-|\
+    -4MTYEU53C-|-2000-|-172.16.1.238-|-1A:E3:05:2A:6C:C2-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-22:33:25-|\
+    -3ADL8ZUBS-|-2000-|-172.16.0.76-|-44:46:87:63:7E:FD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-23:11:44-|\
+    -4G24X5LRC-|-2000-|-172.16.1.234-|-6C:F7:84:F6:9C:B7-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-23:49:06-|\
+    -95MMSFAUH4-|-2000-|-172.16.1.39-|-FA:D0:54:96:ED:5C-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-23:53:53-|\
+    -95PEPSD6WM-|-2000-|-172.16.0.185-|-C0:47:54:BE:65:D5-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/18/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-00:07:43-|\
+    -396H26SKC-|-2000-|-172.16.2.248-|-8A:00:92:E2:10:37-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-01:29:29-|\
+    -9545E4GC9N-|-2000-|-172.16.1.184-|-9A:11:1F:1C:4D:B0-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-01:53:40-|\
+    -4KF599F3B-|-2000-|-172.16.3.34-|-72:47:A9:8E:82:2B-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-02:48:54-|\
+    -95CG4BA883-|-2000-|-172.16.2.10-|-B0:B5:C3:26:50:6B-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-05:02:33-|\
+    -4ZWFW9Z8E-|-2000-|-172.16.1.57-|-92:61:54:33:16:22-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-05:28:08-|\
+    -48ZU2245HF-|-2000-|-172.16.0.67-|-E2:DF:5C:01:BF:0B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-06:01:05-|\
+    -3K8LRUHYM-|-2000-|-172.16.2.36-|-6E:97:DD:C4:BD:13-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-06:09:13-|\
+    -48Y2Y99JW9-|-2000-|-172.16.0.102-|-D4:1A:3F:41:83:57-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-06:10:21-|\
+    -4YYH44G7R-|-2000-|-172.16.0.143-|-7C:2A:DB:A1:C2:F6-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-06:12:36-|\
+    -48ZRAHYX7U-|-2000-|-172.16.1.223-|-6C:F7:84:F6:05:B7-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-06:29:27-|\
+    -95MEVCA46H-|-2000-|-172.16.3.158-|-84:6F:CE:0D:AC:57-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-06:38:19-|\
+    -3HJ85UXGH-|-2000-|-172.16.1.106-|-6C:D7:1F:27:3B:4B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-06:44:17-|\
+    -959ZFEETR4-|-2000-|-172.16.1.225-|-F6:36:02:9E:74:B8-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-06:53:14-|\
+    -3MCMVZTTY-|-2000-|-172.16.1.124-|-C2:FF:98:AF:25:D9-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:04:26-|\
+    -95EU82FHUK-|-2000-|-172.16.2.51-|-6C:D7:1F:24:3A:8D-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:05:52-|\
+    -3NJ2PJ674-|-2000-|-172.16.3.91-|-FE:A4:41:A9:EB:69-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:13:22-|\
+    -3BSS97BXU-|-2000-|-172.16.3.86-|-74:F2:FA:EF:4F:3D-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:22:10-|\
+    -95ALBRJKBJ-|-2000-|-172.16.2.8-|-2E:13:BC:25:22:36-|-12h-|-PAKET-12Jam-|-\
+    vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:29:14-|\
+    -48K4R49CZF-|-2000-|-172.16.3.110-|-68:BF:C4:A8:F8:12-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:38:35-|\
+    -95VWRJ6D7L-|-2000-|-172.16.2.58-|-20:3B:69:C5:7F:F3-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:52:23-|\
+    -4888JLR2ZZ-|-2000-|-172.16.2.61-|-4C:1A:3D:87:0A:B2-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:54:32-|\
+    -4UFVPKNRT-|-2000-|-172.16.0.123-|-0C:A8:A7:55:DC:70-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-07:56:07-|\
+    -95WX9Y8X5H-|-2000-|-172.16.2.62-|-08:4A:CF:55:5B:15-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:02:56-|\
+    -3KLKD7E7A-|-2000-|-172.16.3.221-|-FE:F0:3A:70:19:84-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:04:22-|\
+    -33Z3872TG-|-2000-|-172.16.0.144-|-8C:AA:CE:49:F4:D0-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:13:12-|\
+    -3BW3KKY75-|-2000-|-172.16.2.67-|-48:79:4D:47:93:A1-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:13:33-|\
+    -3Y6TZ2EWM-|-2000-|-172.16.2.68-|-EA:73:3C:B9:2E:95-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:28:02-|\
+    -3YAN6H3DC-|-2000-|-172.16.2.71-|-0E:04:72:54:34:F0-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:31:27-|\
+    -32CFKSKVR-|-2000-|-172.16.0.71-|-E4:33:AE:7B:DB:AD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:31:53-|\
+    -3C3KM5E2B-|-2000-|-172.16.0.15-|-92:EC:C8:23:CC:87-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:31:58-|\
+    -4TP7ZGFWX-|-2000-|-172.16.2.72-|-C0:FB:C1:00:90:76-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:32:49-|\
+    -95YS5UUCAB-|-2000-|-172.16.2.74-|-18:D0:C5:60:72:9D-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:33:39-|\
+    -48KW9H6UE2-|-2000-|-172.16.1.206-|-6C:D7:1F:32:2E:45-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:40:24-|\
+    -3TCPP9F6G-|-2000-|-172.16.3.17-|-08:7F:98:DE:07:E1-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:42:55-|\
+    -48JBABC9KZ-|-2000-|-172.16.0.60-|-AA:C5:5A:F5:C0:87-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:44:12-|\
+    -3AP6TKFT4-|-2000-|-172.16.2.77-|-04:E5:98:33:B5:D2-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:49:17-|\
+    -3VMUNR5UF-|-2000-|-172.16.1.102-|-EE:F3:5C:D7:20:4A-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:49:31-|\
+    -95RWMAPUUB-|-2000-|-172.16.2.79-|-10:BC:97:0D:D9:E1-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:54:04-|\
+    -3LAWS3GH5-|-2000-|-172.16.2.82-|-D2:6E:0C:03:CF:59-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-08:57:22-|\
+    -3FP35UURZ-|-2000-|-172.16.0.191-|-D6:6E:6E:A7:05:53-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:02:54-|\
+    -3RRCVWFLW-|-2000-|-172.16.1.174-|-A4:D9:90:23:E8:05-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:10:25-|\
+    -48KP32G2DA-|-2000-|-172.16.2.86-|-62:29:2F:4F:0E:BC-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:24:46-|\
+    -48UPYZUHGD-|-2000-|-172.16.2.90-|-BC:69:19:E5:F5:27-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:25:24-|\
+    -48TM3DVYSX-|-2000-|-172.16.3.6-|-0A:8D:81:AB:94:14-|-12h-|-PAKET-12Jam-|-\
+    vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:30:57-|\
+    -48SPHSLGHU-|-2000-|-172.16.1.29-|-20:5E:F7:8A:38:60-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:32:26-|\
+    -48685DHZ2E-|-2000-|-172.16.3.182-|-6A:AE:2D:BD:14:C6-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:32:38-|\
+    -3886XYJPV-|-2000-|-172.16.2.91-|-0A:64:CB:91:32:2E-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:41:12-|\
+    -3W9TRDZL8-|-2000-|-172.16.3.128-|-F2:BB:BB:03:12:3B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:42:48-|\
+    -48HSRBFPJK-|-2000-|-172.16.2.97-|-00:56:CD:82:1D:1B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:53:09-|\
+    -3D5AV8ECD-|-2000-|-172.16.2.63-|-7C:2A:DB:B0:1D:FA-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-09:53:29-|\
+    -WLCXH5T868-|-2000-|-172.16.2.101-|-4E:A3:BD:F6:3E:24-|-12h-|-PAKET-12Jam-\
+    |-vc-484-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:05:22-|\
+    -48PX34W45L-|-2000-|-172.16.2.111-|-76:4B:9E:94:02:74-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:05:40-|\
+    -95WCJ2XRXF-|-2000-|-172.16.2.109-|-2A:B9:6B:01:98:19-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:10:19-|\
+    -34BZNMF3U-|-2000-|-172.16.2.113-|-F4:D6:20:C4:59:B2-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:13:57-|\
+    -95HAGRFWJX-|-2000-|-172.16.2.117-|-B6:9A:E0:00:B6:30-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:14:05-|\
+    -95CXBHC8SF-|-2000-|-172.16.0.157-|-A4:C9:39:E3:F3:13-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:14:26-|\
+    -JBY2UZLW8G-|-2000-|-172.16.2.118-|-56:3F:6B:F8:00:E2-|-12h-|-PAKET-12Jam-\
+    |-vc-798-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:25:59-|\
+    -953HHTCLN8-|-2000-|-172.16.2.121-|-E0:1F:88:7C:DB:08-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:35:52-|\
+    -3LUH3Z9J4-|-2000-|-172.16.2.125-|-30:56:96:BE:05:6F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:36:11-|\
+    -3R56Z74EX-|-2000-|-172.16.2.112-|-52:79:6C:64:62:DC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:37:03-|\
+    -3NU648SXU-|-2000-|-172.16.1.16-|-DC:B7:2E:D3:FC:94-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:37:46-|\
+    -95BRUW9P6Z-|-2000-|-172.16.3.159-|-02:70:7C:3F:76:25-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:37:49-|\
+    -3WTKHC23U-|-2000-|-172.16.1.170-|-12:70:BB:30:21:30-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:38:08-|\
+    -3VBVW9GKJ-|-2000-|-172.16.1.239-|-C0:87:EB:CC:6C:E9-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:39:00-|\
+    -958HGZ9UUM-|-2000-|-172.16.2.128-|-20:5E:F7:D7:BF:E8-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:39:57-|\
+    -4WDS5HASP-|-2000-|-172.16.1.30-|-C0:87:EB:8F:0F:13-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:41:26-|\
+    -3J88VYN6L-|-2000-|-172.16.2.127-|-1A:2D:D3:77:74:65-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:41:37-|\
+    -34BDZR7WL-|-2000-|-172.16.0.164-|-8E:49:54:E9:95:BE-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:43:26-|\
+    -4P2LWEKZ7-|-2000-|-172.16.0.192-|-B2:1D:B5:7F:46:25-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:44:13-|\
+    -48DPVJVYVN-|-2000-|-172.16.0.20-|-70:78:8B:CC:1A:8B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:47:57-|\
+    -4RKSK9E9U-|-2000-|-172.16.2.132-|-D8:63:75:A1:3C:9D-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:52:53-|\
+    -48PG6FEP6N-|-2000-|-172.16.2.137-|-3C:B6:B7:36:05:43-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-10:58:08-|\
+    -33D9NJEEB-|-2000-|-172.16.1.61-|-58:85:A2:E6:4B:11-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:02:51-|\
+    -35VC6JSPM-|-2000-|-172.16.2.142-|-70:78:8B:D6:EA:C1-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:03:26-|\
+    -3T6EL87YM-|-2000-|-172.16.2.141-|-6C:D7:1F:28:A4:63-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:06:41-|\
+    -3GXEK7A5C-|-2000-|-172.16.2.143-|-44:66:FC:52:72:01-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:09:13-|\
+    -3S5PAXGKC-|-2000-|-172.16.1.93-|-0C:A8:A7:BA:AE:A8-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:09:38-|\
+    -3KCFWB5FB-|-2000-|-172.16.2.145-|-46:77:41:3A:05:8F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:19:38-|\
+    -3B3HBT7UT-|-2000-|-172.16.2.148-|-92:74:00:57:8B:8D-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:19:49-|\
+    -482JMF67DS-|-2000-|-172.16.0.245-|-58:85:A2:E9:05:79-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:23:29-|\
+    -48AAB669HK-|-2000-|-172.16.0.251-|-8C:BE:BE:10:B8:65-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:23:41-|\
+    -43V43M7MD-|-2000-|-172.16.2.151-|-04:B1:67:B6:CC:41-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:24:30-|\
+    -4Z6KD4AYD-|-2000-|-172.16.3.214-|-66:E9:05:00:B3:40-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:24:56-|\
+    -3UDW45ZHV-|-2000-|-172.16.2.152-|-CC:2D:83:A6:1D:1F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:29:18-|\
+    -4X4TUN3FT-|-2000-|-172.16.1.115-|-CE:41:E3:CF:07:5E-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:30:24-|\
+    -4XFK45EB3-|-2000-|-172.16.2.155-|-68:BF:C4:26:B5:BE-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:31:00-|\
+    -4ULE7B2LS-|-2000-|-172.16.2.156-|-AE:CA:21:41:2F:38-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:35:07-|\
+    -48444ADP74-|-2000-|-172.16.3.180-|-5C:D0:6E:06:68:B6-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:38:08-|\
+    -48ZKZARYYT-|-2000-|-172.16.2.158-|-E0:62:67:3B:42:62-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:38:50-|\
+    -48JJZLBJJE-|-2000-|-172.16.2.160-|-26:41:1C:19:1F:F2-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:40:09-|\
+    -3D7JEXGN5-|-2000-|-172.16.3.58-|-AC:EE:9E:54:D7:2A-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:46:31-|\
+    -485TEJ43GP-|-2000-|-172.16.2.165-|-5A:09:2C:1A:1B:A6-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:48:53-|\
+    -4EX6B622V-|-2000-|-172.16.2.166-|-AE:A5:A8:EA:87:0B-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:53:09-|\
+    -95NFYYLHBL-|-2000-|-172.16.2.30-|-2C:D0:66:15:A2:F0-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:56:22-|\
+    -3DXEX47X5-|-2000-|-172.16.2.168-|-BE:17:A5:B8:00:F4-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:57:00-|\
+    -48DEYZ8UJ4-|-2000-|-172.16.1.24-|-64:A2:00:F4:4F:04-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:11:28-|\
+    -3ZHVYNKBV-|-2000-|-172.16.1.4-|-90:06:28:C1:20:1F-|-12h-|-PAKET-12Jam-|-v\
+    c-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:13:23-|\
+    -3LS6RS3Z3-|-2000-|-172.16.2.174-|-4A:A7:84:DF:33:DE-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:17:37-|\
+    -3DLMKF53M-|-2000-|-172.16.2.248-|-8A:00:92:E2:10:37-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:23:13-|\
+    -3WLGT6B9D-|-2000-|-172.16.1.235-|-7E:D4:B3:77:27:B6-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:26:34-|\
+    -3FTZ6ZAF8-|-2000-|-172.16.2.149-|-0C:A8:A7:5B:46:48-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:27:26-|\
+    -95K4RX52HJ-|-2000-|-172.16.2.180-|-0C:98:38:6E:80:D3-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:28:31-|\
+    -48DDBZACDC-|-2000-|-172.16.2.181-|-F6:83:42:52:AB:CE-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:29:17-|\
+    -3T8SXFDGN-|-2000-|-172.16.2.161-|-02:19:14:50:7B:2A-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:31:40-|\
+    -48PYP4VKAC-|-2000-|-172.16.2.182-|-04:E5:98:3A:D7:70-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:32:53-|\
+    -48R63H83NP-|-2000-|-172.16.0.186-|-0A:CB:37:86:FE:43-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:34:54-|\
+    -33556587-|-20000-|-172.16.0.239-|-E0:1F:88:70:87:9C-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:44:25-|\
+    -92572493-|-20000-|-172.16.0.185-|-C0:47:54:BE:65:D5-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-13:02:52-|\
+    -39TL6CYJZ-|-2000-|-172.16.2.114-|-70:B7:AA:AE:F8:B5-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-13:21:37-|\
+    -3AJ3Y83YF-|-2000-|-172.16.2.192-|-E2:70:9C:30:A8:6E-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-13:25:05-|\
+    -48A7AHMCM9-|-2000-|-172.16.1.41-|-3C:B6:B7:1F:A9:F1-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-13:29:11-|\
+    -48WBEKPM8A-|-2000-|-172.16.2.197-|-DA:52:87:87:17:3B-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-13:31:49-|\
+    -3J3R9W7K6-|-2000-|-172.16.2.198-|-E4:46:DA:F7:5A:1A-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-13:50:40-|\
+    -38KF8ZRK9-|-2000-|-172.16.2.189-|-00:EC:0A:D2:A3:AB-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-13:51:13-|\
+    -4YLR9T2C9-|-2000-|-172.16.2.207-|-E6:50:17:B6:6A:DD-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:11:20-|\
+    -95YPSHL6RA-|-2000-|-172.16.2.216-|-20:34:FB:EB:7C:96-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:12:47-|\
+    -48PFJVM5ZP-|-2000-|-172.16.2.204-|-B6:C8:13:D0:A2:83-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:14:03-|\
+    -3HK82M8FA-|-2000-|-172.16.1.42-|-20:5E:F7:8F:8D:B4-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:16:05-|\
+    -48R6V5CGAB-|-2000-|-172.16.2.217-|-8E:CF:A0:28:D9:2C-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:18:46-|\
+    -956CNTBPEP-|-2000-|-172.16.2.221-|-0E:03:D4:7A:E4:17-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:18:46-|\
+    -48E4JHGKFM-|-2000-|-172.16.2.220-|-D8:1E:DD:5B:EB:5B-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:22:57-|\
+    -3P6DN4VSW-|-2000-|-172.16.2.223-|-7A:AC:F6:28:94:B9-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:27:14-|\
+    -3UM58BPFX-|-2000-|-172.16.2.225-|-FA:D0:54:96:ED:5C-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:48:25-|\
+    -3R5MXL9EU-|-2000-|-172.16.0.74-|-C0:87:EB:DE:32:4B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:50:31-|\
+    -3WHX89AC7-|-2000-|-172.16.2.134-|-96:C5:BC:7A:37:B7-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:55:37-|\
+    -3RE4VVEP3-|-2000-|-172.16.2.230-|-C4:E1:A1:E6:46:17-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-14:59:01-|\
+    -4PGJJWYY4-|-2000-|-172.16.2.232-|-B4:A5:AC:B4:6F:AD-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-15:00:27-|\
+    -3D575PA63-|-2000-|-172.16.2.231-|-04:C8:07:AF:0D:BE-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-15:02:41-|\
+    -76DK2LZSDC-|-2000-|-172.16.2.211-|-04:C8:07:9B:BC:A0-|-12h-|-PAKET-12Jam-\
+    |-vc-307-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-15:14:20-|\
+    -39S2GENCT-|-2000-|-172.16.2.215-|-DA:98:4B:23:96:2A-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-15:35:58-|\
+    -3VC37XCWP-|-2000-|-172.16.2.247-|-E8:50:8B:A0:6D:04-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-15:53:22-|\
+    -48YH7B5UEE-|-2000-|-172.16.2.254-|-0C:A8:A7:97:1A:96-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-15:54:23-|\
+    -3JHVA85WF-|-2000-|-172.16.2.255-|-58:85:A2:69:55:83-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-16:23:49-|\
+    -956M8CXBW2-|-2000-|-172.16.3.14-|-C2:F0:74:B6:ED:8A-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-16:41:49-|\
+    -3KNBZGCJ5-|-2000-|-172.16.3.25-|-72:A0:20:78:F4:C7-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-16:49:32-|\
+    -959BKNXPEL-|-2000-|-172.16.3.13-|-70:78:8B:C4:ED:A9-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-16:57:16-|\
+    -3FHYEM5XK-|-2000-|-172.16.3.18-|-EA:65:F2:F8:0C:8B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-16:58:37-|\
+    -95VGLZFUTB-|-2000-|-172.16.3.34-|-06:8B:D0:DE:68:95-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:00:51-|\
+    -3PRNUMX86-|-2000-|-172.16.0.76-|-44:46:87:63:7E:FD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:04:39-|\
+    -48U9M6F5SW-|-2000-|-172.16.1.220-|-70:BB:E9:1E:E3:AC-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:07:05-|\
+    -48SXJL5C4P-|-2000-|-172.16.2.115-|-36:F5:75:0A:19:F6-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:07:51-|\
+    -3G3NWKYDL-|-2000-|-172.16.3.38-|-72:47:A9:8E:82:2B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:10:57-|\
+    -54263522-|-20000-|-172.16.3.40-|-0C:98:38:43:58:3A-|-7d-|-PAKET-7HARI-|-v\
+    c-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:34:28-|\
+    -4A5YE2M4L-|-2000-|-172.16.3.147-|-52:21:81:EF:CC:ED-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:38:00-|\
+    -4H47XXRT7-|-2000-|-172.16.3.53-|-CC:2D:83:BE:38:1F-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:40:51-|\
+    -488GN4KBSY-|-2000-|-172.16.3.54-|-04:E5:98:27:A3:8E-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:41:11-|\
+    -3DRW2ZGC6-|-2000-|-172.16.3.51-|-A6:11:E4:0F:F1:8F-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:48:07-|\
+    -4EUJZPVXC-|-2000-|-172.16.3.7-|-F0:67:28:72:77:2B-|-12h-|-PAKET-12Jam-|-v\
+    c-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:00:49-|\
+    -332SYMM7J-|-2000-|-172.16.1.230-|-20:5E:F7:9B:07:D0-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:01:33-|\
+    -4JNJET2FZ-|-2000-|-172.16.3.65-|-EA:8C:E1:AB:60:8A-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:12:49-|\
+    -3ZWRUHCB8-|-2000-|-172.16.2.120-|-20:F7:7C:2B:74:2F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:16:34-|\
+    -4BE4CHBTK-|-2000-|-172.16.3.68-|-7E:48:A6:98:2E:35-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:18:03-|\
+    -4VAU8JH4N-|-2000-|-172.16.0.143-|-7C:2A:DB:A1:C2:F6-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:21:00-|\
+    -4FPR7KFM7-|-2000-|-172.16.3.72-|-0C:98:38:7E:2E:99-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:22:03-|\
+    -958GZ3UNVR-|-2000-|-172.16.3.74-|-88:D5:0C:1D:1B:5D-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:23:51-|\
+    -48W73GTVSN-|-2000-|-172.16.3.75-|-62:B4:85:8D:70:44-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:26:31-|\
+    -33YR7Y39Z-|-2000-|-172.16.3.76-|-9C:5F:5A:44:D3:1B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:26:56-|\
+    -4EV3TYBV2-|-2000-|-172.16.3.55-|-1A:9F:BD:2B:C0:4A-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:27:06-|\
+    -3NY8LKYSX-|-2000-|-172.16.3.77-|-76:DB:30:B4:8F:CF-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:31:49-|\
+    -3XYHWZ6PU-|-2000-|-172.16.3.16-|-04:E5:98:33:22:26-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:33:06-|\
+    -34TYHZCZ3-|-2000-|-172.16.3.83-|-C2:4E:18:EE:AD:5A-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:34:04-|\
+    -3MBLY6GU7-|-2000-|-172.16.3.84-|-8C:AA:CE:43:3B:A0-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:38:38-|\
+    -3MJRK7GLD-|-2000-|-172.16.3.50-|-9C:2E:A1:9D:FA:FD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:44:10-|\
+    -48PCD2F7WB-|-2000-|-172.16.3.88-|-12:2D:81:DE:B7:5A-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:49:54-|\
+    -4823WEVRVP-|-2000-|-172.16.1.120-|-18:F0:E4:49:CA:21-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:52:40-|\
+    -48WD3FGEDT-|-2000-|-172.16.1.223-|-6C:F7:84:F6:05:B7-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:53:28-|\
+    -3EJW3BWR2-|-2000-|-172.16.3.90-|-0A:A5:6E:49:BB:1D-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:58:07-|\
+    -95WHBBRJ6L-|-2000-|-172.16.3.98-|-9A:60:2C:BA:50:F8-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:05:45-|\
+    -95E9B7Y674-|-2000-|-172.16.3.99-|-00:EC:0A:C2:2F:66-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:05:59-|\
+    -48SMNHY5ZW-|-2000-|-172.16.3.101-|-44:46:87:63:79:CD-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:09:53-|\
+    -48C9WK3CR8-|-2000-|-172.16.0.102-|-D4:1A:3F:41:83:57-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:14:52-|\
+    -3MGGZGEAM-|-2000-|-172.16.1.181-|-64:A2:00:F0:39:DA-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:15:04-|\
+    -4BGL3L3P2-|-2000-|-172.16.1.106-|-6C:D7:1F:27:3B:4B-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:19:55-|\
+    -4HPZ2WX8C-|-2000-|-172.16.3.86-|-74:F2:FA:EF:4F:3D-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:30:04-|\
+    -35XAAVXF4-|-2000-|-172.16.0.67-|-E2:DF:5C:01:BF:0B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:34:46-|\
+    -95SBXY8RLG-|-2000-|-172.16.3.110-|-68:BF:C4:A8:F8:12-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:36:03-|\
+    -3Y3FTYXDU-|-2000-|-172.16.3.116-|-00:C3:0A:0F:C8:E9-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:39:18-|\
+    -95L4MRFZAF-|-2000-|-172.16.3.118-|-FE:86:AA:F8:B5:BD-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:48:13-|\
+    -4PN2J6DKB-|-2000-|-172.16.3.124-|-20:5E:F7:6C:0B:60-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:48:14-|\
+    -95TJPKH9SE-|-2000-|-172.16.3.69-|-02:61:43:25:FB:4D-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:54:59-|\
+    -95L7VWY6LE-|-2000-|-172.16.2.8-|-2E:13:BC:25:22:36-|-12h-|-PAKET-12Jam-|-\
+    vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:55:35-|\
+    -3CVV8ZF2P-|-2000-|-172.16.3.129-|-0C:A8:A7:73:D2:BC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:55:48-|\
+    -3H65V6K4R-|-2000-|-172.16.3.131-|-E4:46:DA:E0:A1:F6-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:58:23-|\
+    -3KLB8TRLK-|-2000-|-172.16.3.135-|-92:A5:65:EF:64:A4-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:01:25-|\
+    -4E5A3CRUB-|-2000-|-172.16.3.66-|-32:17:C4:75:47:5E-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:06:42-|\
+    -95SG5EXKM8-|-2000-|-172.16.3.144-|-A4:D9:90:F7:03:A9-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:07:26-|\
+    -4PZPS4E9R-|-2000-|-172.16.2.61-|-4C:1A:3D:87:0A:B2-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:18:48-|\
+    -48L3ZCSRMD-|-2000-|-172.16.3.156-|-20:64:CB:C9:A9:93-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:30:00-|\
+    -4JXHDM3SC-|-2000-|-172.16.3.62-|-FE:34:48:4B:75:F9-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:36:10-|\
+    -48N5DL59B7-|-2000-|-172.16.1.225-|-F6:36:02:9E:74:B8-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:37:21-|\
+    -3JT5PF2T3-|-2000-|-172.16.3.176-|-E4:33:AE:7B:DB:AD-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:43:04-|\
+    -4JLLDNJPS-|-2000-|-172.16.0.82-|-F4:0E:22:1A:CE:34-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:43:48-|\
+    -3LKSV7NLX-|-2000-|-172.16.3.17-|-08:7F:98:DE:07:E1-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:46:16-|\
+    -4GGESHZFU-|-2000-|-172.16.3.179-|-A4:D9:90:DA:38:59-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:51:11-|\
+    -48BN4W92BV-|-2000-|-172.16.3.181-|-B2:E1:6C:D8:C9:9F-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:54:45-|\
+    -42876534-|-20000-|-172.16.0.91-|-10:BC:97:04:96:B3-|-7d-|-PAKET-7HARI-|-v\
+    c-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-20:54:50-|\
+    -3BS3DJZHJ-|-2000-|-172.16.3.188-|-A4:D9:90:E1:BB:F9-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:13:51-|\
+    -3EPN8XZXY-|-2000-|-172.16.3.161-|-18:F0:E4:6B:2D:AC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:19:35-|\
+    -4PJDTJBG2-|-2000-|-172.16.3.47-|-26:15:D8:96:BD:EF-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:22:20-|\
+    -95RSGKNLR5-|-2000-|-172.16.2.74-|-18:D0:C5:60:72:9D-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:28:59-|\
+    -486VMPL8SM-|-2000-|-172.16.3.6-|-0A:8D:81:AB:94:14-|-12h-|-PAKET-12Jam-|-\
+    vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:30:14-|\
+    -3SKXGYF6S-|-2000-|-172.16.3.208-|-52:D9:67:8A:1F:43-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:36:51-|\
+    -4XUS4BWX5-|-2000-|-172.16.0.15-|-92:EC:C8:23:CC:87-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:42:37-|\
+    -4AXJ5ACNP-|-2000-|-172.16.3.91-|-FE:A4:41:A9:EB:69-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:46:29-|\
+    -95NJT546TA-|-2000-|-172.16.3.15-|-A6:72:9C:02:6E:81-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:46:49-|\
+    -95P6GM7FZK-|-2000-|-172.16.3.193-|-E0:1F:88:53:55:E8-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:53:30-|\
+    -48S6UP6KAJ-|-2000-|-172.16.3.182-|-6A:AE:2D:BD:14:C6-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:58:07-|\
+    -3LXU92R2W-|-2000-|-172.16.3.216-|-18:D7:17:6F:10:13-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-22:05:53-|\
+    -3RFH3SFGM-|-2000-|-172.16.3.194-|-04:E5:98:29:59:B4-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-22:53:35-|\
+    -3FKDGDFNX-|-2000-|-172.16.0.164-|-8E:49:54:E9:95:BE-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-22:58:33-|\
+    -27784736-|-20000-|-172.16.3.82-|-D6:29:9D:6C:9E:8F-|-7d-|-PAKET-7HARI-|-v\
+    c-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-22:58:42-|\
+    -3CW7NDBKY-|-2000-|-172.16.3.213-|-08:8C:2C:06:B9:8B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-23:24:56-|\
+    -958JBD3VDT-|-2000-|-172.16.0.60-|-AA:C5:5A:F5:C0:87-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-23:55:52-|\
+    -47W87X2YF-|-2000-|-172.16.3.245-|-0C:98:38:C7:FB:D3-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/19/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-00:04:13-|\
+    -48ASA5NUG2-|-2000-|-172.16.3.247-|-06:07:E5:68:9B:87-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-02:33:05-|\
+    -4WH2K3M37-|-2000-|-172.16.0.19-|-5C:D0:6E:03:C0:F6-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-05:06:21-|\
+    -48S7CJE287-|-2000-|-172.16.0.34-|-32:72:E6:52:6A:5F-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-05:24:25-|\
+    -3GSC62TAG-|-2000-|-172.16.0.76-|-44:46:87:63:7E:FD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-05:33:02-|\
+    -4EBYFFPUX-|-2000-|-172.16.3.128-|-F2:BB:BB:03:12:3B-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-05:56:27-|\
+    -3259CE6WF-|-2000-|-172.16.1.42-|-20:5E:F7:8F:8D:B4-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:03:26-|\
+    -4MMGAE2EW-|-2000-|-172.16.0.46-|-4E:80:77:83:4F:B9-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:17:50-|\
+    -955JNSZA2U-|-2000-|-172.16.2.216-|-20:34:FB:EB:7C:96-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:19:37-|\
+    -22256534-|-20000-|-172.16.0.55-|-96:C5:BC:7A:37:B7-|-7d-|-PAKET-7HARI-|-v\
+    c-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:23:36-|\
+    -3Z2H9FVLL-|-2000-|-172.16.3.239-|-00:0A:F5:67:6B:2C-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:30:17-|\
+    -4WD9645TT-|-2000-|-172.16.0.68-|-5C:AF:06:1F:59:9E-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:32:52-|\
+    -3J3NGD3CU-|-2000-|-172.16.0.75-|-56:3F:6B:F8:00:E2-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:32:58-|\
+    -388GGH5BD-|-2000-|-172.16.0.73-|-4A:A7:84:DF:33:DE-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:34:08-|\
+    -68746348-|-20000-|-172.16.0.2-|-82:4E:C9:DD:01:F1-|-7d-|-PAKET-7HARI-|-vc\
+    -458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:35:06-|\
+    -48VKGR8PTP-|-2000-|-172.16.1.30-|-C0:87:EB:8F:0F:13-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:39:48-|\
+    -3LKJ4688R-|-2000-|-172.16.0.77-|-0C:A8:A7:01:8F:D0-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:41:44-|\
+    -4EU5NM65J-|-2000-|-172.16.0.84-|-6E:97:DD:C4:BD:13-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:44:00-|\
+    -32SNWY9FC-|-2000-|-172.16.2.149-|-0C:A8:A7:5B:46:48-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:46:34-|\
+    -3NS834A7L-|-2000-|-172.16.0.87-|-B0:B5:C3:26:50:6B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-06:58:18-|\
+    -34KBYJ78Y-|-2000-|-172.16.3.218-|-04:C8:07:AF:0D:BE-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:03:07-|\
+    -3UZH9V3HL-|-2000-|-172.16.0.43-|-C4:E1:A1:E6:46:17-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:04:58-|\
+    -48LVDP7WU4-|-2000-|-172.16.0.30-|-8C:BE:BE:10:B8:65-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:14:08-|\
+    -4838YU39PK-|-2000-|-172.16.1.29-|-20:5E:F7:8A:38:60-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:18:06-|\
+    -3876258R4-|-2000-|-172.16.0.95-|-CC:2D:83:A5:F7:35-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:18:22-|\
+    -47ENJH7UT-|-2000-|-172.16.0.59-|-92:74:00:57:8B:8D-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:20:49-|\
+    -3PX6BJRTD-|-2000-|-172.16.0.99-|-04:E5:98:33:22:26-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:25:32-|\
+    -4ZE53UKHX-|-2000-|-172.16.3.86-|-74:F2:FA:EF:4F:3D-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:27:25-|\
+    -487ESHLS3H-|-2000-|-172.16.0.106-|-5E:A7:83:6C:0C:CF-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:29:28-|\
+    -42R3HBZSA-|-2000-|-172.16.0.109-|-6C:D7:1F:32:2E:45-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:31:05-|\
+    -3VT4Z5S4P-|-2000-|-172.16.0.110-|-D6:6E:6E:A7:05:53-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:31:23-|\
+    -3U3FA2H9V-|-2000-|-172.16.3.214-|-66:E9:05:00:B3:40-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:32:54-|\
+    -48GUDBE7PB-|-2000-|-172.16.0.74-|-C0:87:EB:DE:32:4B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:37:22-|\
+    -95DS2SSMGD-|-2000-|-172.16.3.54-|-04:E5:98:27:A3:8E-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:37:51-|\
+    -95EPGMGZJ7-|-2000-|-172.16.0.33-|-68:BF:C4:A8:F8:12-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:38:04-|\
+    -4855Y4NNY2-|-2000-|-172.16.0.70-|-62:67:E5:0D:E3:9C-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:38:10-|\
+    -48L622AMHP-|-2000-|-172.16.3.3-|-44:46:87:63:79:CD-|-12h-|-PAKET-12Jam-|-\
+    vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:39:25-|\
+    -952JVMXE99-|-2000-|-172.16.0.116-|-20:3B:69:C5:7F:F3-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:41:57-|\
+    -48JNXHAA9E-|-2000-|-172.16.0.114-|-A4:D9:90:BC:93:75-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:46:11-|\
+    -35KL4XWTN-|-2000-|-172.16.2.166-|-AE:A5:A8:EA:87:0B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:47:32-|\
+    -4GC3NL8Z8-|-2000-|-172.16.3.58-|-AC:EE:9E:54:D7:2A-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:47:35-|\
+    -489YWS9P9C-|-2000-|-172.16.0.102-|-D4:1A:3F:41:83:57-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:47:50-|\
+    -3L5F2TAVF-|-2000-|-172.16.0.118-|-04:B1:67:B6:CC:41-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:49:49-|\
+    -33SUZTLU7-|-2000-|-172.16.3.221-|-FE:F0:3A:70:19:84-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:55:24-|\
+    -4VYK8HH7V-|-2000-|-172.16.0.119-|-70:B7:AA:AE:F8:B5-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:59:16-|\
+    -3MPZXJ5VM-|-2000-|-172.16.0.104-|-52:79:6C:64:62:DC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-07:59:54-|\
+    -84233553-|-20000-|-172.16.2.244-|-F0:6D:78:77:FF:C6-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:00:17-|\
+    -3FPJ7ENR4-|-2000-|-172.16.1.223-|-6C:F7:84:F6:05:B7-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:09:48-|\
+    -3PZEZEH6B-|-2000-|-172.16.0.129-|-20:F7:7C:45:9E:5F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:09:57-|\
+    -955S4XKVEH-|-2000-|-172.16.1.220-|-70:BB:E9:1E:E3:AC-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:10:15-|\
+    -48J36UHYU2-|-2000-|-172.16.0.131-|-82:0E:91:6E:13:EE-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:13:01-|\
+    -36G2NM2WX-|-2000-|-172.16.0.133-|-B4:A5:AC:B4:6F:AD-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:13:02-|\
+    -48KN5W6ULT-|-2000-|-172.16.0.135-|-0C:A8:A7:97:1A:96-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:14:44-|\
+    -955Z4CWTYL-|-2000-|-172.16.0.136-|-20:5E:F7:D7:BF:E8-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:17:18-|\
+    -3WJMJHZRG-|-2000-|-172.16.3.18-|-EA:65:F2:F8:0C:8B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:25:43-|\
+    -48JXG73LSY-|-2000-|-172.16.2.204-|-B6:C8:13:D0:A2:83-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:37:30-|\
+    -483HHDMU7W-|-2000-|-172.16.0.141-|-D6:26:8A:7A:63:05-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:38:31-|\
+    -4N3692MZV-|-2000-|-172.16.0.125-|-DC:B7:2E:D3:FC:94-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:38:47-|\
+    -488TYEMJLC-|-2000-|-172.16.0.144-|-DE:9B:A4:EC:46:D5-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:41:08-|\
+    -95J7BX9YEJ-|-2000-|-172.16.2.120-|-20:F7:7C:2B:74:2F-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:47:25-|\
+    -3UXVD4AD4-|-2000-|-172.16.3.116-|-00:C3:0A:0F:C8:E9-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:49:16-|\
+    -37797UAY7-|-2000-|-172.16.1.61-|-58:85:A2:E6:4B:11-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:50:11-|\
+    -3BNE25UF2-|-2000-|-172.16.0.154-|-D8:63:75:A1:3C:9D-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:50:33-|\
+    -48S6CNKR9E-|-2000-|-172.16.0.21-|-70:78:8B:CC:1A:8B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:59:06-|\
+    -3TYP748X2-|-2000-|-172.16.2.152-|-CC:2D:83:A6:1D:1F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:59:15-|\
+    -4M79GKXVA-|-2000-|-172.16.1.235-|-7E:D4:B3:77:27:B6-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:59:22-|\
+    -4H44AKAM5-|-2000-|-172.16.0.158-|-1A:2D:D3:77:74:65-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-08:59:33-|\
+    -95JEMX5HK5-|-2000-|-172.16.2.79-|-10:BC:97:0D:D9:E1-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:03:34-|\
+    -4LT9YEPNU-|-2000-|-172.16.0.163-|-AE:CA:21:41:2F:38-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:11:44-|\
+    -4YXTRUSUF-|-2000-|-172.16.3.90-|-0A:A5:6E:49:BB:1D-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:12:20-|\
+    -4CMG4WZ6G-|-2000-|-172.16.2.161-|-02:19:14:50:7B:2A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:24:56-|\
+    -48LBFE7LYV-|-2000-|-172.16.3.142-|-0C:A8:A7:EB:C2:E8-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:25:13-|\
+    -4TNVK3JBN-|-2000-|-172.16.2.74-|-18:D0:C5:60:72:9D-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:27:12-|\
+    -48S8VGU774-|-2000-|-172.16.0.176-|-F6:83:42:52:AB:CE-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:30:06-|\
+    -4879Z8UYTC-|-2000-|-172.16.0.177-|-2A:B9:6B:01:98:19-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:31:52-|\
+    -443YJLH2V-|-2000-|-172.16.0.178-|-1A:E3:05:2A:6C:C2-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:32:26-|\
+    -3ZLHRAME6-|-2000-|-172.16.2.225-|-FA:D0:54:96:ED:5C-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:33:59-|\
+    -444AZZEL5-|-2000-|-172.16.0.167-|-0A:64:CB:91:32:2E-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:38:31-|\
+    -4GV4R4M3S-|-2000-|-172.16.0.183-|-7C:2A:DB:B0:1D:FA-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:39:03-|\
+    -4UZ2TKEZ7-|-2000-|-172.16.0.184-|-A4:D9:90:23:E8:05-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:40:49-|\
+    -82866263-|-20000-|-172.16.3.10-|-82:CD:EB:9B:C1:54-|-7d-|-PAKET-7HARI-|-v\
+    c-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:41:27-|\
+    -4WLWPJ9JW-|-2000-|-172.16.0.187-|-04:E5:98:26:34:52-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:51:09-|\
+    -326988FV8-|-2000-|-172.16.3.77-|-76:DB:30:B4:8F:CF-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:52:14-|\
+    -4ZSNHAGY2-|-2000-|-172.16.0.195-|-D8:A3:15:73:AD:A1-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:53:08-|\
+    -3NHA499V9-|-2000-|-172.16.0.196-|-44:66:FC:52:72:01-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:54:37-|\
+    -3756NMJUB-|-2000-|-172.16.0.197-|-70:78:8B:D6:EA:C1-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:54:56-|\
+    -48GDSL76V-|-2000-|-172.16.3.38-|-72:47:A9:8E:82:2B-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:55:28-|\
+    -4GNWDKH39-|-2000-|-172.16.0.199-|-E6:50:17:B6:6A:DD-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:56:06-|\
+    -48C2NRDPA-|-2000-|-172.16.0.200-|-C8:AC:A3:D6:1C:10-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:58:46-|\
+    -3WKYZXVAR-|-2000-|-172.16.3.15-|-A6:72:9C:02:6E:81-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:03:08-|\
+    -485LTWG8ND-|-2000-|-172.16.3.66-|-32:17:C4:75:47:5E-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:05:37-|\
+    -95XCP5S4BA-|-2000-|-172.16.2.8-|-2E:13:BC:25:22:36-|-12h-|-PAKET-12Jam-|-\
+    vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:07:48-|\
+    -46FHCH5ER-|-2000-|-172.16.0.208-|-DE:77:EF:11:EB:30-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:08:59-|\
+    -9532635WYY-|-2000-|-172.16.0.210-|-B6:9A:E0:00:B6:30-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:12:28-|\
+    -4V5STC29T-|-2000-|-172.16.0.213-|-8C:AA:CE:49:F4:D0-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:15:37-|\
+    -953AW9WGW5-|-2000-|-172.16.0.212-|-2C:D0:66:15:A2:F0-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:16:37-|\
+    -95UZX97LAT-|-2000-|-172.16.0.215-|-0C:A8:A7:24:75:F4-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:20:58-|\
+    -95XHTUYT5P-|-2000-|-172.16.0.216-|-BC:69:19:E5:F5:27-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:23:56-|\
+    -48Z4UYDUMX-|-2000-|-172.16.0.63-|-3C:B6:B7:36:05:43-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:26:59-|\
+    -33XU3MVGH-|-2000-|-172.16.0.181-|-30:56:96:BE:05:6F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:27:42-|\
+    -39RVJ3376-|-2000-|-172.16.0.123-|-0C:A8:A7:55:DC:70-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:28:12-|\
+    -44K8E6DHK-|-2000-|-172.16.0.219-|-32:4F:30:87:65:E0-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:30:02-|\
+    -4VPM8NGVH-|-2000-|-172.16.1.106-|-6C:D7:1F:27:3B:4B-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:30:35-|\
+    -765WVP9578-|-2000-|-172.16.0.226-|-F6:4A:55:82:4C:74-|-12h-|-PAKET-12Jam-\
+    |-vc-307-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:31:06-|\
+    -3543FG2N2-|-2000-|-172.16.3.182-|-6A:AE:2D:BD:14:C6-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:31:37-|\
+    -49EX9NYER-|-2000-|-172.16.0.191-|-0A:EF:39:E9:67:2A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:32:06-|\
+    -95XDJHK5VF-|-2000-|-172.16.3.202-|-00:56:CD:82:1D:1B-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:33:47-|\
+    -3J54K5D47-|-2000-|-172.16.0.230-|-12:70:BB:30:21:30-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:40:37-|\
+    -4GJFJ6LDD-|-2000-|-172.16.2.247-|-E8:50:8B:A0:6D:04-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:41:58-|\
+    -434ZUMR2E-|-2000-|-172.16.0.192-|-B2:1D:B5:7F:46:25-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:41:59-|\
+    -3PJGCX57E-|-2000-|-172.16.0.234-|-76:4B:9E:94:02:74-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:50:21-|\
+    -38229985-|-20000-|-172.16.0.66-|-06:94:B0:11:F4:A3-|-7d-|-PAKET-7HARI-|-v\
+    c-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:51:50-|\
+    -56647976-|-20000-|-172.16.0.238-|-5E:52:69:0D:02:6A-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:55:59-|\
+    -43BP5KZZT-|-2000-|-172.16.0.164-|-8E:49:54:E9:95:BE-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-10:57:37-|\
+    -4XBBRSS3T-|-2000-|-172.16.2.215-|-DA:98:4B:23:96:2A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:00:17-|\
+    -3BPXZJZEX-|-2000-|-172.16.3.25-|-72:A0:20:78:F4:C7-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:02:17-|\
+    -3VXDCHECZ-|-2000-|-172.16.0.246-|-68:BF:C4:26:B5:BE-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:11:41-|\
+    -4CKU8582Y-|-2000-|-172.16.0.254-|-AC:73:52:60:9A:CF-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:14:13-|\
+    -447RUEBA2-|-2000-|-172.16.0.143-|-7C:2A:DB:A1:C2:F6-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:14:25-|\
+    -95HM9ZW9D8-|-2000-|-172.16.1.2-|-0C:98:38:6E:80:D3-|-12h-|-PAKET-12Jam-|-\
+    vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:15:13-|\
+    -957SYCPW6M-|-2000-|-172.16.1.3-|-A4:C9:39:E3:F3:13-|-12h-|-PAKET-12Jam-|-\
+    vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:17:18-|\
+    -48JKRCS5XG-|-2000-|-172.16.0.228-|-E0:1F:88:7C:DB:08-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:24:02-|\
+    -48EP3XPH93-|-2000-|-172.16.3.61-|-A6:FD:DA:F8:99:DA-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:26:54-|\
+    -4WC3D3NEM-|-2000-|-172.16.1.10-|-10:BC:97:05:AC:E3-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:40:31-|\
+    -35SLMEJD2-|-2000-|-172.16.1.18-|-CE:54:1F:9F:09:3D-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:44:56-|\
+    -4C628Z986-|-2000-|-172.16.1.41-|-3C:B6:B7:1F:A9:F1-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:48:52-|\
+    -3LA5K4YWA-|-2000-|-172.16.3.12-|-6C:F7:84:F3:C2:4B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-11:51:49-|\
+    -37VH9D54G-|-2000-|-172.16.1.23-|-D2:6E:0C:03:CF:59-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:18:28-|\
+    -48UWKMECAP-|-2000-|-172.16.0.236-|-18:01:F1:14:38:4A-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:20:55-|\
+    -33G7JJ75B-|-2000-|-172.16.1.9-|-E8:93:09:5C:BA:F6-|-12h-|-PAKET-12Jam-|-v\
+    c-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:21:10-|\
+    -95D5WSR6JY-|-2000-|-172.16.1.50-|-5A:09:2C:1A:1B:A6-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:21:17-|\
+    -3AU2TWD9K-|-2000-|-172.16.1.44-|-0A:CB:37:86:FE:43-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:25:25-|\
+    -48DXECTYEF-|-2000-|-172.16.1.55-|-DA:52:87:87:17:3B-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:27:02-|\
+    -33EK4XBZK-|-2000-|-172.16.1.57-|-8C:AA:CE:43:3B:A0-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:28:34-|\
+    -3L2H2NT67-|-2000-|-172.16.3.99-|-00:EC:0A:C2:2F:66-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:29:42-|\
+    -4CCJ54YU6-|-2000-|-172.16.1.65-|-9C:2E:A1:9D:FA:FD-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:38:43-|\
+    -4YZRSY9JP-|-2000-|-172.16.1.69-|-EA:8C:E1:AB:60:8A-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:41:21-|\
+    -86663693-|-20000-|-172.16.0.120-|-72:33:EE:FC:37:03-|-7d-|-PAKET-7HARI-|-\
+    vc-549-06.19.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:42:11-|\
+    -3ZMXX7N7R-|-2000-|-172.16.1.72-|-46:77:41:3A:05:8F-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-12:50:12-|\
+    -48W9PDKMW8-|-2000-|-172.16.1.79-|-6E:85:4C:59:FB:21-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-13:10:47-|\
+    -4ZRKVX3SY-|-2000-|-172.16.1.94-|-F0:67:28:72:77:2B-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-13:16:13-|\
+    -3RC9L8475-|-2000-|-172.16.1.101-|-5C:D0:6E:06:68:B6-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-13:19:10-|\
+    -4RAPY3YRD-|-2000-|-172.16.0.249-|-94:D0:29:49:11:D1-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-13:26:40-|\
+    -48TLYSHJLU-|-2000-|-172.16.1.116-|-96:18:08:DA:08:0B-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-13:39:06-|\
+    -48LMHW7DF3-|-2000-|-172.16.1.133-|-F6:36:02:9E:74:B8-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-13:55:08-|\
+    -4XYU3UZT2-|-2000-|-172.16.3.245-|-0C:98:38:C7:FB:D3-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-14:04:22-|\
+    -3JVRA8LY3-|-2000-|-172.16.3.161-|-18:F0:E4:6B:2D:AC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-14:10:45-|\
+    -48G2KNXAPU-|-2000-|-172.16.0.241-|-B6:E3:A2:BE:FD:F8-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-14:11:41-|\
+    -45Y72GBR9-|-2000-|-172.16.1.150-|-A0:B4:A5:60:01:3F-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-15:08:17-|\
+    -484RZWJMR5-|-2000-|-172.16.3.6-|-0A:8D:81:AB:94:14-|-12h-|-PAKET-12Jam-|-\
+    vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-15:24:49-|\
+    -4FBX39TU6-|-2000-|-172.16.1.171-|-58:85:A2:E9:05:79-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-15:37:18-|\
+    -3V695GYRZ-|-2000-|-172.16.1.177-|-C6:52:55:6C:33:6C-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:02:56-|\
+    -38VN82SF4-|-2000-|-172.16.1.189-|-6C:D7:1F:28:A4:63-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:18:14-|\
+    -4MWWBUWSC-|-2000-|-172.16.1.194-|-C2:4E:18:EE:AD:5A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:25:53-|\
+    -39KT5WKCA-|-2000-|-172.16.1.198-|-04:E5:98:29:59:B4-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:44:37-|\
+    -48PMB2A88M-|-2000-|-172.16.3.252-|-DC:B7:2E:D4:05:38-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:48:49-|\
+    -3UYZBFWJR-|-2000-|-172.16.1.205-|-FE:A4:41:A9:EB:69-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:49:48-|\
+    -48P6DGYJAY-|-2000-|-172.16.0.60-|-AA:C5:5A:F5:C0:87-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:56:34-|\
+    -3WYVVRNB4-|-2000-|-172.16.1.207-|-EE:F3:5C:D7:20:4A-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:59:43-|\
+    -483AL4JTB-|-2000-|-172.16.1.210-|-92:EC:C8:23:CC:87-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:04:20-|\
+    -32PUMCXXE-|-2000-|-172.16.1.4-|-90:06:28:C1:20:1F-|-12h-|-PAKET-12Jam-|-v\
+    c-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:09:38-|\
+    -4YDT2MLYF-|-2000-|-172.16.1.91-|-CA:D6:04:AE:7C:7E-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:13:11-|\
+    -48YRWM44DU-|-2000-|-172.16.1.216-|-7A:AC:F6:28:94:B9-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:14:25-|\
+    -3GRJM33P4-|-2000-|-172.16.1.218-|-72:D6:49:D4:ED:6F-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:14:48-|\
+    -3ZHYP7PH6-|-2000-|-172.16.1.219-|-E2:DF:5C:01:BF:0B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:19:17-|\
+    -95L7CUDAKA-|-2000-|-172.16.1.226-|-12:2B:8C:CE:41:8E-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:19:43-|\
+    -95UKB69UXD-|-2000-|-172.16.1.231-|-BE:98:3B:A0:B4:F1-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:20:09-|\
+    -95TDE95LH6-|-2000-|-172.16.1.228-|-36:FF:8A:3A:55:0A-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:20:47-|\
+    -4KVB698M6-|-2000-|-172.16.1.232-|-08:7F:98:DE:07:E1-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:21:39-|\
+    -47295742-|-20000-|-172.16.0.53-|-0C:A8:A7:AE:61:30-|-7d-|-PAKET-7HARI-|-v\
+    c-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:31:56-|\
+    -4EB6YGY9J-|-2000-|-172.16.1.217-|-1A:9F:BD:2B:C0:4A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:38:10-|\
+    -76XJHY57Z4-|-2000-|-172.16.1.243-|-8C:D9:D6:F9:E5:F6-|-12h-|-PAKET-12Jam-\
+    |-vc-307-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-17:49:09-|\
+    -32WMNTB45-|-2000-|-172.16.0.19-|-5C:D0:6E:03:C0:F6-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:00:20-|\
+    -3ENXLM4L5-|-2000-|-172.16.0.76-|-44:46:87:63:7E:FD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:04:14-|\
+    -95MMV7SYRD-|-2000-|-172.16.1.255-|-62:29:2F:4F:0E:BC-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:07:05-|\
+    -4UEL2NXDU-|-2000-|-172.16.1.84-|-4C:1A:3D:87:0A:B2-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:15:10-|\
+    -3Z7AH9NVS-|-2000-|-172.16.1.206-|-8A:00:92:E2:10:37-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:21:01-|\
+    -95Y2CY238C-|-2000-|-172.16.2.1-|-88:D5:0C:1D:1B:5D-|-12h-|-PAKET-12Jam-|-\
+    vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:21:59-|\
+    -3R8KYSP53-|-2000-|-172.16.2.3-|-C6:53:41:EE:0D:49-|-12h-|-PAKET-12Jam-|-v\
+    c-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:27:40-|\
+    -32XMKML3W-|-2000-|-172.16.2.5-|-CA:1B:6E:52:CA:DC-|-12h-|-PAKET-12Jam-|-v\
+    c-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:29:48-|\
+    -36FZTTRX6-|-2000-|-172.16.3.213-|-08:8C:2C:06:B9:8B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:38:56-|\
+    -39T8VA9R7-|-2000-|-172.16.2.14-|-C4:E1:A1:F6:DA:07-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:43:57-|\
+    -48HMY2MWAE-|-2000-|-172.16.1.30-|-C0:87:EB:8F:0F:13-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:44:05-|\
+    -4V4J5G9WV-|-2000-|-172.16.2.19-|-64:A2:00:F4:4F:04-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:46:56-|\
+    -4LDC8RMPP-|-2000-|-172.16.2.23-|-B2:E1:6C:D8:C9:9F-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:49:47-|\
+    -4Z4YXHEVM-|-2000-|-172.16.2.24-|-FA:E8:8B:11:C6:81-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:55:20-|\
+    -4EGJCDYPN-|-2000-|-172.16.3.128-|-F2:BB:BB:03:12:3B-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:55:53-|\
+    -49YHNTEFX-|-2000-|-172.16.2.29-|-86:E8:05:EF:66:1D-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:56:03-|\
+    -3WLKJNFFP-|-2000-|-172.16.0.178-|-1A:E3:05:2A:6C:C2-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:02:15-|\
+    -955UMMNLBY-|-2000-|-172.16.2.34-|-9A:60:2C:BA:50:F8-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:07:00-|\
+    -4TCWTKX3T-|-2000-|-172.16.2.37-|-92:61:54:33:16:22-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:08:09-|\
+    -48TN3ND29-|-2000-|-172.16.2.33-|-4A:56:1F:45:F1:EF-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:20:59-|\
+    -4YPSWBX9K-|-2000-|-172.16.2.41-|-62:12:D1:37:8E:7E-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:27:24-|\
+    -488EMCWRUE-|-2000-|-172.16.2.44-|-8E:CF:A0:28:D9:2C-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:27:24-|\
+    -3KLWXR2TT-|-2000-|-172.16.0.99-|-04:E5:98:33:22:26-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:29:21-|\
+    -4WMDNYEJS-|-2000-|-172.16.2.0-|-92:74:00:57:8B:8D-|-12h-|-PAKET-12Jam-|-v\
+    c-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:29:37-|\
+    -48ZT7MA4XB-|-2000-|-172.16.2.27-|-5A:09:2C:1A:1B:A6-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:31:49-|\
+    -3E5G94YRS-|-2000-|-172.16.2.47-|-FA:CB:71:49:DB:19-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:32:32-|\
+    -3D7M7FLWE-|-2000-|-172.16.2.49-|-F2:D0:C1:00:E0:32-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:42:49-|\
+    -47R2L3HWG-|-2000-|-172.16.2.58-|-52:21:81:EF:CC:ED-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:10:11-|\
+    -33VEZXKR7-|-2000-|-172.16.2.71-|-E4:46:DA:E0:A1:F6-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:11:10-|\
+    -3R7DKW6RN-|-2000-|-172.16.1.181-|-64:A2:00:F0:39:DA-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:21:49-|\
+    -95ECND2MPW-|-2000-|-172.16.1.220-|-70:BB:E9:1E:E3:AC-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:24:38-|\
+    -468WT3YMM-|-2000-|-172.16.3.54-|-04:E5:98:27:A3:8E-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:37:48-|\
+    -43KJDWW5U-|-2000-|-172.16.2.67-|-18:F0:E4:49:CA:21-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:45:05-|\
+    -95YWS34TCL-|-2000-|-172.16.1.29-|-20:5E:F7:8A:38:60-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:47:04-|\
+    -33HT9GFBJ-|-2000-|-172.16.2.82-|-00:C3:0A:10:3B:3B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:49:15-|\
+    -4ZZT4AGR8-|-2000-|-172.16.2.84-|-FA:C4:74:74:3A:0B-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-21:16:35-|\
+    -3BMLJ64UN-|-2000-|-172.16.2.216-|-20:34:FB:EB:7C:96-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-21:47:57-|\
+    -487GPHS8SR-|-2000-|-172.16.0.102-|-D4:1A:3F:41:83:57-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-21:52:44-|\
+    -3U4VGXJ2F-|-2000-|-172.16.1.203-|-FA:D0:54:96:ED:5C-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-22:05:57-|\
+    -3A6A95A67-|-2000-|-172.16.0.163-|-AE:CA:21:41:2F:38-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-22:14:02-|\
+    -3XMSXJZU5-|-2000-|-172.16.2.40-|-32:17:C4:75:47:5E-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/20/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-05:50:26-|\
+    -4D7B878SM-|-2000-|-172.16.2.121-|-5C:AF:06:1F:59:9E-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:01:26-|\
+    -4663E9X4G-|-2000-|-172.16.2.122-|-4E:80:77:83:4F:B9-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:02:14-|\
+    -3AMMYCZVF-|-2000-|-172.16.0.19-|-5C:D0:6E:03:C0:F6-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:04:19-|\
+    -3DJ4VCD58-|-2000-|-172.16.0.143-|-7C:2A:DB:A1:C2:F6-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:06:46-|\
+    -3F4JPKWYJ-|-2000-|-172.16.2.126-|-0C:A8:A7:73:D2:BC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:07:59-|\
+    -3EWGDK56W-|-2000-|-172.16.2.117-|-02:61:43:25:FB:4D-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:08:56-|\
+    -4HHGZMJL5-|-2000-|-172.16.0.158-|-1A:2D:D3:77:74:65-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:23:42-|\
+    -4VM86X656-|-2000-|-172.16.1.186-|-74:F2:FA:EF:4F:3D-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:29:15-|\
+    -3C79AKS4E-|-2000-|-172.16.3.18-|-EA:65:F2:F8:0C:8B-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:42:46-|\
+    -485BDS5RV-|-2000-|-172.16.1.239-|-C0:87:EB:CC:6C:E9-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:52:02-|\
+    -35E54NG7F-|-2000-|-172.16.0.76-|-44:46:87:63:7E:FD-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:55:09-|\
+    -48EYA74X7C-|-2000-|-172.16.0.63-|-3C:B6:B7:36:05:43-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:55:27-|\
+    -387RU88YJ-|-2000-|-172.16.2.166-|-AE:A5:A8:EA:87:0B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-06:58:53-|\
+    -4ARCNKHNY-|-2000-|-172.16.1.210-|-92:EC:C8:23:CC:87-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:02:20-|\
+    -3BEAJAJN3-|-2000-|-172.16.1.205-|-FE:A4:41:A9:EB:69-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:08:45-|\
+    -4MLVPMF9X-|-2000-|-172.16.1.230-|-20:5E:F7:9B:07:D0-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:14:54-|\
+    -3XZCAT89Z-|-2000-|-172.16.2.142-|-EE:E9:65:41:EA:10-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:20:36-|\
+    -45MCXB5MF-|-2000-|-172.16.2.79-|-10:BC:97:0D:D9:E1-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:20:48-|\
+    -45JD2CCXE-|-2000-|-172.16.0.208-|-DE:77:EF:11:EB:30-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:23:37-|\
+    -4EZU8XU6E-|-2000-|-172.16.1.84-|-4C:1A:3D:87:0A:B2-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:25:28-|\
+    -86324957-|-20000-|-172.16.2.8-|-2E:13:BC:25:22:36-|-7d-|-PAKET-7HARI-|-vc\
+    -458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:26:56-|\
+    -24439337-|-20000-|-172.16.0.236-|-18:01:F1:14:38:4A-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:38:39-|\
+    -4M8ADD8U3-|-2000-|-172.16.1.251-|-E4:33:AE:7B:DB:AD-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:44:44-|\
+    -4TJU2RCFK-|-2000-|-172.16.0.178-|-1A:E3:05:2A:6C:C2-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:55:37-|\
+    -3VBYNSLSV-|-2000-|-172.16.3.128-|-F2:BB:BB:03:12:3B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-07:59:38-|\
+    -4HKUBVP66-|-2000-|-172.16.1.45-|-0C:98:38:03:25:D3-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:00:58-|\
+    -3JJSEJANX-|-2000-|-172.16.3.161-|-18:F0:E4:6B:2D:AC-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:02:48-|\
+    -488NLBRR6S-|-2000-|-172.16.2.153-|-E0:1F:88:7C:DB:08-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:03:22-|\
+    -4WWH6TPAR-|-2000-|-172.16.2.19-|-64:A2:00:F4:4F:04-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:09:20-|\
+    -4JBZYD5ZW-|-2000-|-172.16.3.38-|-72:47:A9:8E:82:2B-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:15:31-|\
+    -5RSGKNLR5-|-2000-|-172.16.2.157-|-CE:41:E3:CF:07:5E-|-12h-|-PAKET-12Jam-|\
+    -vc-976-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:15:46-|\
+    -958ZFULPRV-|-2000-|-172.16.0.60-|-AA:C5:5A:F5:C0:87-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:18:09-|\
+    -3A8UY724L-|-2000-|-172.16.1.219-|-E2:DF:5C:01:BF:0B-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:23:57-|\
+    -956583-|-50000-|-172.16.1.103-|-9A:11:6D:EC:FC:22-|-30d-|-PAKET-1BULAN-|-\
+    vc-430-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:34:58-|\
+    -6ZBGHUYE2-|-2000-|-172.16.2.163-|-B6:4F:1A:70:A3:D5-|-12h-|-PAKET-12Jam-|\
+    -vc-658-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:42:33-|\
+    -4MAGM4478-|-2000-|-172.16.1.217-|-1A:9F:BD:2B:C0:4A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-08:49:50-|\
+    -56CNTBPEP-|-2000-|-172.16.0.209-|-B6:9A:E0:00:B6:30-|-12h-|-PAKET-12Jam-|\
+    -vc-976-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:03:57-|\
+    -95YAVRY3S5-|-2000-|-172.16.2.169-|-C2:FF:98:AF:25:D9-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:05:35-|\
+    -3ZM2NPTD3-|-2000-|-172.16.2.67-|-18:F0:E4:49:CA:21-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:10:17-|\
+    -95X3GZKDD8-|-2000-|-172.16.1.122-|-70:78:8B:CC:1A:8B-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:19:37-|\
+    -48C5E8HWK-|-2000-|-172.16.2.171-|-48:79:4D:47:93:A1-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:19:47-|\
+    -4FX94N687-|-2000-|-172.16.1.72-|-46:77:41:3A:05:8F-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:19:55-|\
+    -6AELHJWSV-|-2000-|-172.16.3.6-|-0A:8D:81:AB:94:14-|-12h-|-PAKET-12Jam-|-v\
+    c-658-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:20:15-|\
+    -45KLA28AL-|-2000-|-172.16.2.172-|-20:34:FB:D4:47:C2-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:28:05-|\
+    -4BGUZT85E-|-2000-|-172.16.2.84-|-FA:C4:74:74:3A:0B-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:38:22-|\
+    -86622522-|-20000-|-172.16.3.12-|-6C:F7:84:F3:C2:4B-|-7d-|-PAKET-7HARI-|-v\
+    c-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:40:27-|\
+    -4CKXVGM73-|-2000-|-172.16.2.58-|-52:21:81:EF:CC:ED-|-12h-|-PAKET-12Jam-|-\
+    vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:41:15-|\
+    -4YKXSUASV-|-2000-|-172.16.2.178-|-FE:34:48:4B:75:F9-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:43:05-|\
+    -95DSLKVMPT-|-2000-|-172.16.2.180-|-2C:D0:66:15:A2:F0-|-12h-|-PAKET-12Jam-\
+    |-vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:46:57-|\
+    -4TZRN8REG-|-2000-|-172.16.2.182-|-A4:D9:90:23:E8:05-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:54:23-|\
+    -6PTXT3S37-|-2000-|-172.16.1.223-|-6C:F7:84:F6:05:B7-|-12h-|-PAKET-12Jam-|\
+    -vc-658-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:02:34-|\
+    -46S3W4PW2-|-2000-|-172.16.0.213-|-8C:AA:CE:49:F4:D0-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:13:25-|\
+    -4XJLRMB8D-|-2000-|-172.16.2.188-|-04:E5:98:3A:DB:46-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:19:33-|\
+    -95AJZEBDSH-|-2000-|-172.16.1.29-|-20:5E:F7:8A:38:60-|-12h-|-PAKET-12Jam-|\
+    -vc-742-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:25:11-|\
+    -6FCRBM4D5-|-2000-|-172.16.2.194-|-00:56:CD:82:1D:1B-|-12h-|-PAKET-12Jam-|\
+    -vc-658-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:26:34-|\
+    -55YTBPUE5-|-2000-|-172.16.0.234-|-76:4B:9E:94:02:74-|-12h-|-PAKET-12Jam-|\
+    -vc-976-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:33:29-|\
+    -34736629-|-20000-|-172.16.0.183-|-7C:2A:DB:B0:1D:FA-|-7d-|-PAKET-7HARI-|-\
+    vc-458-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:49:12-|\
+    -48V3M3KU5K-|-2000-|-172.16.2.203-|-2A:B9:6B:01:98:19-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:56:24-|\
+    -6ZU2245HF-|-2000-|-172.16.1.206-|-8A:00:92:E2:10:37-|-12h-|-PAKET-12Jam-|\
+    -vc-658-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-10:59:36-|\
+    -4SUSZKDTX-|-2000-|-172.16.2.146-|-FE:F0:3A:70:19:84-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:02:01-|\
+    -3C897E437-|-2000-|-172.16.3.77-|-76:DB:30:B4:8F:CF-|-12h-|-PAKET-12Jam-|-\
+    vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:03:38-|\
+    -48PXVKVUPY-|-2000-|-172.16.3.61-|-A6:FD:DA:F8:99:DA-|-12h-|-PAKET-12Jam-|\
+    -vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:05:21-|\
+    -43TNYXVW2-|-2000-|-172.16.2.213-|-70:B7:AA:AE:F8:B5-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:07:01-|\
+    -48WRRMEF27-|-2000-|-172.16.2.214-|-6C:D7:1F:24:3A:8D-|-12h-|-PAKET-12Jam-\
+    |-vc-233-07.18.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:14:49-|\
+    -464MFPBDC-|-2000-|-172.16.0.192-|-B2:1D:B5:7F:46:25-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:35:26-|\
+    -4ML9ZR63R-|-2000-|-172.16.0.199-|-E6:50:17:B6:6A:DD-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:38:54-|\
+    -46SNL2Z49-|-2000-|-172.16.2.222-|-DA:98:4B:23:96:2A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:44:53-|\
+    -43CFSVWCM-|-2000-|-172.16.2.226-|-02:19:14:50:7B:2A-|-12h-|-PAKET-12Jam-|\
+    -vc-189-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
+add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:56:35-|\
+    -3FTNKEPVR-|-2000-|-172.16.2.231-|-0E:04:72:54:34:F0-|-12h-|-PAKET-12Jam-|\
+    -vc-199-08.03.23-" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/21/2023
 /tool netwatch
 add comment="MNET VPN" disabled=yes down-script="/ip firewall nat disable [fin\
     d comment=\"vpn1\"]\r\

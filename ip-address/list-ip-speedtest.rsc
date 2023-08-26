@@ -6,7 +6,6 @@ add address=103.197.188.181 list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=151.101.86.219 list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=202.3.78.3 list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=203.6.148.212 list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
-add address= list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=account.hotspotshield.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=alleasyseo.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=ambon.speedtest.telkom.net.id list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
@@ -432,5 +431,36 @@ add address=xmyip.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=yougetsignal.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=zd.map.fastly.net list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
 add address=zenmate.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=api.whatismyip.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=pro.ip-api.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=iptools-4.top10vpn.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=www.showmyip.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=showmyip.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=ip-info.ff.avast.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=myip.veepn.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=zoogvpn.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=whatismyip.uno list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=www.whatismyip-address.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=iplocation.io list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=app.uptrends.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=api.ipify.org list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=api64.ipify.org list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=www.name.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=mylocationnow.io list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=proxylist.geonode.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=brightvpn.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=check.privadovpn.com list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+add address=ifconfig.me list=z-list-ip-speedtest comment="MNET-SPEEDTEST"
+
+
+
+
+
+
+
+
+
+
+
 
 

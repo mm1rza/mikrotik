@@ -1,4 +1,4 @@
-# aug/21/2023 00:00:01 by RouterOS 6.47.9
+# aug/23/2023 12:00:01 by RouterOS 6.47.9
 # software id = R43D-018Z
 #
 # model = RBLHGG-5acD

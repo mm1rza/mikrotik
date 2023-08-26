@@ -1,4 +1,4 @@
-# aug/21/2023 21:05:35 by RouterOS 6.48.6
+# aug/23/2023 02:28:01 by RouterOS 6.49.8
 # software id = LZAU-D6NR
 #
 # model = 951G-2HnD
@@ -90,37 +90,34 @@ add add-arp=yes address-pool=pool disabled=no insert-queue-before=aty \
     interface=lan-rumah lease-script=":local queueName \"\$leaseActIP\";\r\
     \n:if (\$leaseBound = \"1\") do={\r\
     \n/queue simple add name=\$queueName target=(\$leaseActIP . \"/32\") limit\
-    -at=1000k/1000k max-limit=10000k/10000k burst-limit=11000k/11000k burst-th\
-    reshold=10000k/10000k burst-time=5/5 parent=\"RUMAHAN\" place-before=\"RUM\
+    -at=1000k/1000k max-limit=15000k/15000k burst-limit=21000k/21000k burst-th\
+    reshold=15000k/15000k burst-time=5/5 parent=\"RUMAHAN\" place-before=\"RUM\
     AHAN\";\r\
     \n} else={\r\
     \n/queue simple remove \$queueName\r\
     \n}\r\
     \n" lease-time=1m30s name=dhcp1 parent-queue="--------ALL TRAFIK--------"
 /queue simple
-add burst-limit=11M/11M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
-    1M/1M max-limit=10M/10M name=192.168.99.26 parent=RUMAHAN target=\
-    192.168.99.26/32
-add burst-limit=11M/11M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
-    1M/1M max-limit=10M/10M name=192.168.99.21 parent=RUMAHAN target=\
-    192.168.99.21/32
-add burst-limit=11M/11M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
-    1M/1M max-limit=10M/10M name=192.168.99.2 parent=RUMAHAN target=\
+add burst-limit=21M/21M burst-threshold=15M/15M burst-time=5s/5s limit-at=\
+    1M/1M max-limit=15M/15M name=192.168.99.2 parent=RUMAHAN target=\
     192.168.99.2/32
-add burst-limit=11M/11M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
-    1M/1M max-limit=10M/10M name=192.168.99.9 parent=RUMAHAN target=\
+add burst-limit=21M/21M burst-threshold=15M/15M burst-time=5s/5s limit-at=\
+    1M/1M max-limit=15M/15M name=192.168.99.9 parent=RUMAHAN target=\
     192.168.99.9/32
-add burst-limit=11M/11M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
-    1M/1M max-limit=10M/10M name=192.168.99.3 parent=RUMAHAN target=\
+add burst-limit=21M/21M burst-threshold=15M/15M burst-time=5s/5s limit-at=\
+    1M/1M max-limit=15M/15M name=192.168.99.21 parent=RUMAHAN target=\
+    192.168.99.21/32
+add burst-limit=21M/21M burst-threshold=15M/15M burst-time=5s/5s limit-at=\
+    1M/1M max-limit=15M/15M name=192.168.99.26 parent=RUMAHAN target=\
+    192.168.99.26/32
+add burst-limit=21M/21M burst-threshold=15M/15M burst-time=5s/5s limit-at=\
+    1M/1M max-limit=15M/15M name=192.168.99.3 parent=RUMAHAN target=\
     192.168.99.3/32
-add burst-limit=11M/11M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
-    1M/1M max-limit=10M/10M name=192.168.99.23 parent=RUMAHAN target=\
-    192.168.99.23/32
-add burst-limit=11M/11M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
-    1M/1M max-limit=10M/10M name=192.168.99.32 parent=RUMAHAN target=\
+add burst-limit=21M/21M burst-threshold=15M/15M burst-time=5s/5s limit-at=\
+    1M/1M max-limit=15M/15M name=192.168.99.32 parent=RUMAHAN target=\
     192.168.99.32/32
-add burst-limit=11M/11M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
-    1M/1M max-limit=10M/10M name=192.168.99.31 parent=RUMAHAN target=\
+add burst-limit=21M/21M burst-threshold=15M/15M burst-time=5s/5s limit-at=\
+    1M/1M max-limit=15M/15M name=192.168.99.31 parent=RUMAHAN target=\
     192.168.99.31/32
 /user group
 add name=bacasaja policy="read,winbox,romon,!local,!telnet,!ssh,!ftp,!reboot,!\

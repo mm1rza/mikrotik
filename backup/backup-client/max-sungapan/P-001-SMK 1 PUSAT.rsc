@@ -1,4 +1,4 @@
-# aug/18/2023 00:00:00 by RouterOS 6.48.6
+# aug/23/2023 00:00:00 by RouterOS 6.48.6
 # software id = FFZN-PEUK
 #
 # model = RB750Gr3
@@ -7,7 +7,8 @@
 add name=bridge-lan
 /interface ethernet
 set [ find default-name=ether1 ] name=ether1-IDPLAY1
-set [ find default-name=ether2 ] name=ether2-BIZ
+set [ find default-name=ether2 ] mac-address=C4:AD:34:35:B9:58 name=\
+    ether2-BIZ
 set [ find default-name=ether3 ] disabled=yes name=ether3-IDPLAY2
 set [ find default-name=ether4 ] name=ether4-KALIGELANG
 set [ find default-name=ether5 ] name=ether5-BALE
@@ -16,8 +17,8 @@ add comment=MNET-VPN connect-to=103.143.170.11 keepalive-timeout=10 name=\
     MNET-VPN-SSTP password=awazadawewe123 user=maxtkjsmk
 /interface ovpn-client
 add certificate=mnet.crt_0 cipher=aes256 comment=MNET-VPN connect-to=\
-    103.143.170.11 disabled=yes mac-address=FE:0A:4B:9D:B0:30 name=\
-    MNET-VPN-OVPN password=awazadawewe123 use-peer-dns=no user=maxtkjsmk
+    103.143.170.11 mac-address=FE:0A:4B:9D:B0:30 name=MNET-VPN-OVPN password=\
+    awazadawewe123 use-peer-dns=no user=maxtkjsmk
 /interface list
 add name=LAN
 add comment=MNET-VPN name=MNET-VPN
@@ -27,9 +28,9 @@ set [ find default=yes ] supplicant-identity=MikroTik
 /ppp profile
 add dns-server=172.16.0.1 local-address=172.16.0.1 name=PPPOE only-one=yes
 /interface l2tp-client
-add comment=MNET-VPN connect-to=103.143.170.11 disabled=no ipsec-secret=\
-    vpn.mnet.my.id keepalive-timeout=10 name=MNET-VPN-L2TP password=\
-    awazadawewe123 profile=default user=maxtkjsmk
+add comment=MNET-VPN connect-to=103.143.170.11 ipsec-secret=vpn.mnet.my.id \
+    keepalive-timeout=10 name=MNET-VPN-L2TP password=awazadawewe123 profile=\
+    default user=maxtkjsmk
 /interface pptp-client
 add comment=MNET-VPN connect-to=103.143.170.11 keepalive-timeout=10 name=\
     MNET-VPN-PPTP password=awazadawewe123 profile=default user=maxtkjsmk
@@ -37,8 +38,10 @@ add comment=MNET-VPN connect-to=103.143.170.11 keepalive-timeout=10 name=\
 add max-limit=300M/300M name=GLOBAL-ALL-TRAFFIC target=""
 add max-limit=300M/300M name=GLOBAL-KALIGELANG parent=GLOBAL-ALL-TRAFFIC \
     target=172.16.0.0/24
-add max-limit=240M/80M name="[BTS] Kaligelang" parent=GLOBAL-KALIGELANG \
+add max-limit=240M/280M name="[BTS] Kaligelang" parent=GLOBAL-KALIGELANG \
     target=172.16.0.4/32
+add max-limit=240M/240M name=TEST parent=GLOBAL-KALIGELANG target=\
+    172.16.0.99/32
 add max-limit=20M/20M name="Paung H3" parent=GLOBAL-KALIGELANG priority=1/1 \
     target=172.16.0.19/32
 /queue type
@@ -106,6 +109,8 @@ add max-limit=4M/10M name="Ari G20" parent=GLOBAL-KALIGELANG priority=1/1 \
     queue=default-small/PCQ-BRUST-10M-3Minutes target=172.16.0.18/32
 add max-limit=4M/15M name=Ipin parent=GLOBAL-KALIGELANG priority=5/5 queue=\
     default/PCQ-BRUST-15M-1Minutes target=172.16.0.12/32
+add max-limit=4M/10M name=Ricemill parent=GLOBAL-KALIGELANG priority=1/1 \
+    queue=default-small/PCQ-BRUST-10M-1Minutes target=172.16.0.20/32
 /tool user-manager customer
 set admin access=\
     own-routers,own-users,own-profiles,own-limits,config-payment-gw
@@ -340,7 +345,7 @@ add address=account.hotspotshield.com comment=MNET-SPEEDTEST list=\
 add address=www.namecheap.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=browserleaks.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=151.101.86.219 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=172.16.0.4 disabled=yes list=ip-local-dns-to-vpn
+add address=172.16.0.99 disabled=yes list=ip-local-dns-to-biznet
 /ip firewall mangle
 add action=mark-routing chain=prerouting comment=MNET-VPN dst-address-list=\
     z-list-ip-speedtest dst-port=80,443 new-routing-mark=MNET passthrough=no \
@@ -349,6 +354,9 @@ add action=mark-routing chain=prerouting comment=MNET-VPN dst-address-list=\
 add action=dst-nat chain=dstnat comment=MNET-VPN dst-port=53,5353,853 \
     protocol=udp src-address-list=ip-local-dns-to-vpn to-addresses=\
     10.123.223.1 to-ports=53
+add action=dst-nat chain=dstnat comment=BIZNET dst-port=53,5353,853 protocol=\
+    udp src-address-list=ip-local-dns-to-biznet to-addresses=10.10.10.1 \
+    to-ports=53
 add action=dst-nat chain=dstnat comment=MNET-VPN dst-port=53,5353,853 \
     protocol=tcp src-address-list=ip-local-dns-to-vpn to-addresses=\
     10.123.223.1
@@ -375,20 +383,21 @@ add comment=MNET-VPN distance=1 gateway=10.123.223.1 routing-mark=MNET
 add distance=1 gateway=10.10.10.1 routing-mark=isp2
 add distance=1 gateway=192.168.45.1 routing-mark=isp1
 add comment=isp1 distance=1 gateway=192.168.45.1
-add comment=isp2 distance=3 gateway=10.10.10.1
+add comment=isp2 disabled=yes distance=3 gateway=10.10.10.1
 add comment="CEK ISP1" distance=1 dst-address=94.140.14.15/32 gateway=\
     192.168.45.1
 add comment="CEK ISP2" distance=1 dst-address=94.140.15.16/32 gateway=\
     10.10.10.1
 add comment=iisp1 distance=2 dst-address=103.143.170.11/32 gateway=\
     192.168.45.1
-add comment=iisp2 distance=3 dst-address=103.143.170.11/32 gateway=10.10.10.1
+add comment=iisp2 disabled=yes distance=3 dst-address=103.143.170.11/32 \
+    gateway=10.10.10.1
 add comment="CEK ISP2" distance=1 dst-address=149.112.112.11/32 gateway=\
     10.10.10.1
 add comment="CEK ISP1" distance=1 dst-address=149.112.112.112/32 gateway=\
     192.168.45.1
 /ip route rule
-add comment=isp3 disabled=yes src-address=172.16.0.4/32 table=isp2
+add comment=isp3 disabled=yes src-address=172.16.0.99/32 table=isp2
 add comment=isp1 src-address=172.16.0.2/32 table=isp1
 /ppp secret
 add comment="[MITRA] Firman" name=02000 password=02000 profile=PPPOE \
@@ -429,6 +438,8 @@ add comment=Cinane name=011020 password=011020 profile=PPPOE remote-address=\
     172.16.0.18 service=pppoe
 add comment=Paung name=01803 password=01803 profile=PPPOE remote-address=\
     172.16.0.19 service=pppoe
+add comment="Ripin Ricemill" name=02008 password=02008 profile=PPPOE \
+    remote-address=172.16.0.20 service=pppoe
 /system clock
 set time-zone-name=Asia/Jakarta
 /system identity

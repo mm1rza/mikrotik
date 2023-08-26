@@ -1,4 +1,4 @@
-# aug/17/2023 04:23:15 by RouterOS 6.48.6
+# aug/23/2023 04:23:14 by RouterOS 6.48.6
 # software id = 9ZXD-FC8L
 #
 # model = RouterBOARD 750G r3
@@ -45,7 +45,7 @@ add connect-to=vpn.mnet.my.id disabled=no name=vpn-merpati-1 password=\
 /queue simple
 add max-limit=1G/1G name="0           VIP" packet-marks=\
     game-ml,game-ff,lokal,vip priority=1/1 target=10.30.0.0/24,192.168.0.0/16
-add max-limit=100M/100M name="1     ALL TRAFIK" target=\
+add max-limit=1G/1G name="1     ALL TRAFIK" target=\
     10.30.0.0/24,192.168.0.0/16
 add max-limit=40M/40M name=VOUCHER parent="1     ALL TRAFIK" priority=1/1 \
     target=192.168.221.0/24
@@ -161,19 +161,15 @@ add address=192.168.221.0/24 list=ip-ke-isp2
 add address=192.168.170.0/24 list=ip-ke-isp2
 add address=192.168.150.0/24 list=ip-ke-isp2
 add address=192.168.180.0/24 list=ip-ke-isp2
-add address=74.125.68.91 list=z-ip-list-youtube
 add address=111.94.253.49 list=z-ip-list-tiktok
 add address=71.18.1.224 list=z-ip-list-tiktok
-add address=142.251.85.72 list=z-ip-list-youtube
 add address=23.209.46.18 list=z-ip-list-tiktok
 add address=23.63.84.154 list=z-ip-list-tiktok
-add address=142.251.91.10 list=z-ip-list-youtube
 add address=156.59.107.81 list=z-ip-list-tiktok
 add address=184.87.193.158 list=z-ip-list-tiktok
 add address=23.215.7.11 list=z-ip-list-tiktok
 add address=184.87.193.88 list=z-ip-list-tiktok
 add address=184.87.193.87 list=z-ip-list-tiktok
-add address=74.125.200.93 list=z-ip-list-youtube
 add address=129.227.42.124 list=z-ip-list-tiktok
 add address=163.181.81.226 list=z-ip-list-tiktok
 add address=130.44.212.232 list=z-ip-list-tiktok
@@ -182,42 +178,31 @@ add address=34.120.183.73 list=z-ip-list-tiktok
 add address=23.63.84.155 list=z-ip-list-tiktok
 add address=23.209.46.13 list=z-ip-list-tiktok
 add address=163.181.100.238 list=z-ip-list-tiktok
-add address=142.251.10.101 list=z-ip-list-youtube
 add address=71.18.36.225 list=z-ip-list-tiktok
 add address=34.107.140.103 list=z-ip-list-tiktok
 add address=103.181.245.10 list=z-ip-list-tiktok
 add address=130.44.212.236 list=z-ip-list-tiktok
 add address=111.94.254.83 list=z-ip-list-tiktok
 add address=111.94.254.60 list=z-ip-list-tiktok
-add address=74.125.24.136 list=z-ip-list-youtube
-add address=142.251.10.190 list=z-ip-list-youtube
 add address=103.181.245.9 list=z-ip-list-tiktok
-add address=142.251.10.91 list=z-ip-list-youtube
 add address=111.94.254.102 list=z-ip-list-tiktok
 add address=34.110.200.237 list=z-ip-list-tiktok
-add address=111.94.249.174 list=z-ip-list-youtube
 add address=23.63.84.147 list=z-ip-list-tiktok
 add address=130.44.212.235 list=z-ip-list-tiktok
-add address=64.233.170.93 list=z-ip-list-youtube
-add address=142.251.12.136 list=z-ip-list-youtube
 add address=139.193.253.132 list=z-ip-list-tiktok
 add address=111.94.253.42 list=z-ip-list-tiktok
 add address=23.215.7.8 list=z-ip-list-tiktok
-add address=142.251.12.190 list=z-ip-list-youtube
 add address=111.94.254.2 list=z-ip-list-tiktok
 add address=34.117.152.38 list=z-ip-list-tiktok
 add address=111.94.254.108 list=z-ip-list-tiktok
 add address=184.87.193.77 list=z-ip-list-tiktok
 add address=111.94.254.22 list=z-ip-list-tiktok
-add address=142.251.12.93 list=z-ip-list-youtube
 add address=18.64.37.117 list=z-ip-list-tiktok
-add address=111.95.240.141 list=z-ip-list-youtube
 add address=111.94.254.101 list=z-ip-list-tiktok
 add address=111.94.253.56 list=z-ip-list-tiktok
 add address=54.192.116.106 list=z-ip-list-tiktok
 add address=34.107.176.231 list=z-ip-list-tiktok
 add address=34.98.103.214 list=z-ip-list-tiktok
-add address=142.250.4.100 list=z-ip-list-youtube
 add address=23.215.7.30 list=z-ip-list-tiktok
 add address=129.227.42.60 list=z-ip-list-tiktok
 add address=111.94.254.68 list=z-ip-list-tiktok
@@ -232,26 +217,21 @@ add address=23.199.69.209 list=z-ip-list-tiktok
 add address=23.199.69.184 list=z-ip-list-tiktok
 add address=23.215.7.31 list=z-ip-list-tiktok
 add address=129.227.42.54 list=z-ip-list-tiktok
-add address=64.233.170.136 list=z-ip-list-youtube
 add address=23.221.50.137 list=z-ip-list-tiktok
 add address=163.181.27.230 list=z-ip-list-tiktok
 add address=139.193.253.35 list=z-ip-list-tiktok
 add address=23.62.212.88 list=z-ip-list-tiktok
 add address=34.120.163.4 list=z-ip-list-tiktok
-add address=142.251.10.119 list=z-ip-list-youtube
 add address=23.50.117.152 list=z-ip-list-tiktok
 add address=130.44.212.77 list=z-ip-list-tiktok
 add address=130.44.212.75 list=z-ip-list-tiktok
-add address=88.80.147.200 list=z-ip-list-youtube
 add address=23.221.50.176 list=z-ip-list-tiktok
-add address=74.125.68.138 list=z-ip-list-youtube
 add address=184.87.193.74 list=z-ip-list-tiktok
 add address=129.227.42.57 list=z-ip-list-tiktok
 add address=202.70.57.114 list=z-ip-list-tiktok
 add address=184.87.193.153 list=z-ip-list-tiktok
 add address=103.87.187.210 list=z-ip-list-tiktok
 add address=111.94.254.64 list=z-ip-list-tiktok
-add address=111.95.243.78 list=z-ip-list-youtube
 add address=23.215.7.14 list=z-ip-list-tiktok
 add address=139.193.253.33 list=z-ip-list-tiktok
 add address=167.82.86.73 list=z-ip-list-tiktok
@@ -274,7 +254,6 @@ add address=184.87.193.93 list=z-ip-list-tiktok
 add address=129.227.42.125 list=z-ip-list-tiktok
 add address=23.221.50.201 list=z-ip-list-tiktok
 add address=23.48.173.8 list=z-ip-list-tiktok
-add address=111.95.240.140 list=z-ip-list-youtube
 add address=139.193.253.49 list=z-ip-list-tiktok
 add address=23.63.84.145 list=z-ip-list-tiktok
 add address=184.87.193.149 list=z-ip-list-tiktok
@@ -283,12 +262,8 @@ add address=111.94.253.98 list=z-ip-list-tiktok
 add address=184.87.193.134 list=z-ip-list-tiktok
 add address=35.190.85.69 list=z-ip-list-tiktok
 add address=23.59.168.153 list=z-ip-list-tiktok
-add address=111.95.240.112 list=z-ip-list-youtube
-add address=74.125.130.119 list=z-ip-list-youtube
-add address=111.94.249.173 list=z-ip-list-youtube
 add address=199.103.24.2 list=z-ip-list-tiktok
 add address=13.224.249.78 list=z-ip-list-tiktok
-add address=64.233.170.91 list=z-ip-list-youtube
 add address=18.161.49.119 list=z-ip-list-tiktok
 add address=23.199.69.224 list=z-ip-list-tiktok
 add address=23.215.35.153 list=z-ip-list-tiktok
@@ -300,7 +275,6 @@ add address=23.59.168.179 list=z-ip-list-tiktok
 add address=23.215.7.10 list=z-ip-list-tiktok
 add address=184.87.193.92 list=z-ip-list-tiktok
 add address=23.63.84.146 list=z-ip-list-tiktok
-add address=142.251.10.138 list=z-ip-list-youtube
 add address=23.59.168.152 list=z-ip-list-tiktok
 add address=23.215.7.32 list=z-ip-list-tiktok
 add address=18.64.18.15 list=z-ip-list-tiktok
@@ -319,21 +293,17 @@ add address=23.215.7.6 list=z-ip-list-tiktok
 add address=184.87.193.155 list=z-ip-list-tiktok
 add address=111.94.253.106 list=z-ip-list-tiktok
 add address=139.193.253.10 list=z-ip-list-tiktok
-add address=74.125.24.119 list=z-ip-list-youtube
 add address=111.94.254.31 list=z-ip-list-tiktok
 add address=212.102.54.203 list=z-ip-list-tiktok
 add address=206.84.112.23 list=z-ip-list-tiktok
 add address=184.87.193.86 list=z-ip-list-tiktok
 add address=184.87.193.73 list=z-ip-list-tiktok
-add address=111.95.240.78 list=z-ip-list-youtube
 add address=129.227.47.232 list=z-ip-list-tiktok
 add address=199.232.234.73 list=z-ip-list-tiktok
 add address=199.103.24.4 list=z-ip-list-tiktok
 add address=13.224.249.37 list=z-ip-list-tiktok
 add address=111.94.254.9 list=z-ip-list-tiktok
 add address=111.94.254.19 list=z-ip-list-tiktok
-add address=172.217.194.119 list=z-ip-list-youtube
-add address=111.94.249.172 list=z-ip-list-youtube
 add address=206.84.112.26 list=z-ip-list-tiktok
 add address=139.193.253.145 list=z-ip-list-tiktok
 add address=104.97.76.217 list=z-ip-list-tiktok
@@ -342,67 +312,44 @@ add address=23.215.7.4 list=z-ip-list-tiktok
 add address=139.193.253.26 list=z-ip-list-tiktok
 add address=163.181.81.227 list=z-ip-list-tiktok
 add address=104.97.76.211 list=z-ip-list-tiktok
-add address=111.94.249.238 list=z-ip-list-youtube
-add address=74.125.200.119 list=z-ip-list-youtube
-add address=111.95.243.79 list=z-ip-list-youtube
 add address=104.97.76.216 list=z-ip-list-tiktok
 add address=13.224.249.30 list=z-ip-list-tiktok
 add address=104.97.76.179 list=z-ip-list-tiktok
 add address=104.97.76.184 list=z-ip-list-tiktok
-add address=111.95.240.115 list=z-ip-list-youtube
 add address=104.97.76.192 list=z-ip-list-tiktok
 add address=199.232.46.73 list=z-ip-list-tiktok
 add address=104.97.76.210 list=z-ip-list-tiktok
-add address=111.95.240.79 list=z-ip-list-youtube
-add address=64.233.170.119 list=z-ip-list-youtube
 add address=104.97.76.185 list=z-ip-list-tiktok
 add address=163.181.100.242 list=z-ip-list-tiktok
 add address=104.97.76.187 list=z-ip-list-tiktok
 add address=184.87.193.83 list=z-ip-list-tiktok
 add address=104.97.76.186 list=z-ip-list-tiktok
-add address=74.125.68.139 list=z-ip-list-youtube
 add address=104.97.76.218 list=z-ip-list-tiktok
-add address=74.125.68.119 list=z-ip-list-youtube
 add address=23.199.69.192 list=z-ip-list-tiktok
 add address=23.199.69.185 list=z-ip-list-tiktok
 add address=111.94.254.109 list=z-ip-list-tiktok
-add address=111.95.240.239 list=z-ip-list-youtube
-add address=111.94.249.239 list=z-ip-list-youtube
 add address=23.199.69.152 list=z-ip-list-tiktok
 add address=206.84.112.21 list=z-ip-list-tiktok
 add address=104.97.76.208 list=z-ip-list-tiktok
 add address=184.87.193.75 list=z-ip-list-tiktok
 add address=34.101.113.106 list=z-ip-list-tiktok
-add address=142.251.12.119 list=z-ip-list-youtube
 add address=184.87.193.157 list=z-ip-list-tiktok
 add address=23.215.7.7 list=z-ip-list-tiktok
 add address=184.87.193.148 list=z-ip-list-tiktok
 add address=206.84.112.22 list=z-ip-list-tiktok
-add address=172.217.194.102 list=z-ip-list-youtube
 add address=139.193.253.48 list=z-ip-list-tiktok
 add address=111.94.253.105 list=z-ip-list-tiktok
-add address=111.95.240.110 list=z-ip-list-youtube
-add address=172.253.118.119 list=z-ip-list-youtube
-add address=111.94.249.236 list=z-ip-list-youtube
 add address=130.44.212.234 list=z-ip-list-tiktok
-add address=111.95.243.76 list=z-ip-list-youtube
 add address=111.94.253.74 list=z-ip-list-tiktok
 add address=23.215.7.15 list=z-ip-list-tiktok
 add address=119.13.160.159 list=z-ip-list-tiktok
-add address=111.94.249.175 list=z-ip-list-youtube
 add address=119.13.160.161 list=z-ip-list-tiktok
 add address=108.138.141.14 list=z-ip-list-tiktok
 add address=163.181.81.230 list=z-ip-list-tiktok
 add address=111.94.253.73 list=z-ip-list-tiktok
-add address=74.125.200.102 list=z-ip-list-youtube
-add address=74.125.68.101 list=z-ip-list-youtube
-add address=74.125.68.113 list=z-ip-list-youtube
-add address=74.125.68.102 list=z-ip-list-youtube
 add address=23.52.171.202 list=z-ip-list-tiktok
 add address=87.119.3.87 list=z-ip-list-tiktok
 add address=163.181.100.237 list=z-ip-list-tiktok
-add address=142.251.175.119 list=z-ip-list-youtube
-add address=172.217.194.93 list=z-ip-list-youtube
 add address=202.70.57.97 list=z-ip-list-tiktok
 add address=139.193.253.57 list=z-ip-list-tiktok
 add address=103.234.121.121 list=z-ip-list-tiktok
@@ -410,8 +357,6 @@ add address=23.215.7.17 list=z-ip-list-tiktok
 add address=87.119.3.90 list=z-ip-list-tiktok
 add address=163.181.27.225 list=z-ip-list-tiktok
 add address=111.94.254.103 list=z-ip-list-tiktok
-add address=111.95.241.87 list=z-ip-list-youtube
-add address=111.95.241.78 list=z-ip-list-youtube
 add address=139.193.253.138 list=z-ip-list-tiktok
 add address=184.87.193.91 list=z-ip-list-tiktok
 add address=163.181.81.229 list=z-ip-list-tiktok
@@ -420,15 +365,12 @@ add address=139.193.253.152 list=z-ip-list-tiktok
 add address=130.44.212.76 list=z-ip-list-tiktok
 add address=130.44.212.78 list=z-ip-list-tiktok
 add address=139.193.253.51 list=z-ip-list-tiktok
-add address=111.95.240.113 list=z-ip-list-youtube
-add address=142.251.10.136 list=z-ip-list-youtube
 add address=129.227.42.119 list=z-ip-list-tiktok
 add address=104.97.76.202 list=z-ip-list-tiktok
 add address=206.84.112.20 list=z-ip-list-tiktok
 add address=103.181.245.16 list=z-ip-list-tiktok
 add address=111.94.253.51 list=z-ip-list-tiktok
 add address=18.64.37.80 list=z-ip-list-tiktok
-add address=111.95.240.207 list=z-ip-list-youtube
 add address=23.215.7.12 list=z-ip-list-tiktok
 add address=43.152.161.241 list=z-ip-list-tiktok
 add address=104.97.76.193 list=z-ip-list-tiktok
@@ -441,8 +383,6 @@ add address=23.215.7.21 list=z-ip-list-tiktok
 add address=139.193.253.50 list=z-ip-list-tiktok
 add address=23.215.7.9 list=z-ip-list-tiktok
 add address=184.87.193.137 list=z-ip-list-tiktok
-add address=111.95.240.143 list=z-ip-list-youtube
-add address=172.217.194.91 list=z-ip-list-youtube
 add address=23.52.171.208 list=z-ip-list-tiktok
 add address=18.64.18.124 list=z-ip-list-tiktok
 add address=23.59.168.160 list=z-ip-list-tiktok
@@ -451,16 +391,11 @@ add address=184.87.193.76 list=z-ip-list-tiktok
 add address=23.59.168.171 list=z-ip-list-tiktok
 add address=23.215.7.28 list=z-ip-list-tiktok
 add address=23.215.7.26 list=z-ip-list-tiktok
-add address=111.94.249.237 list=z-ip-list-youtube
-add address=74.125.24.93 list=z-ip-list-youtube
 add address=47.89.121.9 list=z-ip-list-tiktok
 add address=23.199.69.219 list=z-ip-list-tiktok
-add address=111.95.240.82 list=z-ip-list-youtube
-add address=74.125.101.41 list=z-ip-list-youtube
 add address=156.59.248.2 list=z-ip-list-tiktok
 add address=143.244.57.43 list=z-ip-list-tiktok
 add address=18.64.37.65 list=z-ip-list-tiktok
-add address=74.125.164.70 list=z-ip-list-youtube
 add address=129.227.42.126 list=z-ip-list-tiktok
 add address=23.215.7.22 list=z-ip-list-tiktok
 add address=43.152.160.232 list=z-ip-list-tiktok
@@ -468,21 +403,17 @@ add address=23.215.7.20 list=z-ip-list-tiktok
 add address=103.181.245.18 list=z-ip-list-tiktok
 add address=23.52.171.66 list=z-ip-list-tiktok
 add address=23.59.168.169 list=z-ip-list-tiktok
-add address=74.125.24.138 list=z-ip-list-youtube
 add address=101.33.4.185 list=z-ip-list-tiktok
 add address=23.199.69.162 list=z-ip-list-tiktok
 add address=23.199.69.216 list=z-ip-list-tiktok
-add address=142.251.10.113 list=z-ip-list-youtube
 add address=18.64.18.85 list=z-ip-list-tiktok
 add address=184.87.193.159 list=z-ip-list-tiktok
-add address=142.251.88.6 list=z-ip-list-youtube
 add address=43.152.161.242 list=z-ip-list-tiktok
 add address=23.59.168.168 list=z-ip-list-tiktok
 add address=23.59.168.177 list=z-ip-list-tiktok
 add address=139.193.253.16 list=z-ip-list-tiktok
 add address=13.224.249.104 list=z-ip-list-tiktok
 add address=13.224.249.58 list=z-ip-list-tiktok
-add address=111.95.240.83 list=z-ip-list-youtube
 add address=163.171.210.189 list=z-ip-list-tiktok
 add address=54.192.116.37 list=z-ip-list-tiktok
 add address=111.94.254.88 list=z-ip-list-tiktok
@@ -508,11 +439,9 @@ add address=23.215.7.5 list=z-ip-list-tiktok
 add address=52.84.251.25 list=z-ip-list-tiktok
 add address=23.199.69.225 list=z-ip-list-tiktok
 add address=71.18.1.248 list=z-ip-list-tiktok
-add address=111.95.240.108 list=z-ip-list-youtube
 add address=104.18.21.106 list=z-ip-list-tiktok
 add address=23.199.69.211 list=z-ip-list-tiktok
 add address=54.192.116.68 list=z-ip-list-tiktok
-add address=111.95.240.114 list=z-ip-list-youtube
 add address=184.29.140.207 list=z-ip-list-tiktok
 add address=23.63.84.160 list=z-ip-list-tiktok
 add address=184.87.193.80 list=z-ip-list-tiktok
@@ -530,7 +459,6 @@ add address=202.180.17.36 list=z-ip-list-tiktok
 add address=129.227.42.58 list=z-ip-list-tiktok
 add address=146.75.114.73 list=z-ip-list-tiktok
 add address=23.199.69.169 list=z-ip-list-tiktok
-add address=172.217.194.101 list=z-ip-list-youtube
 add address=163.171.220.232 list=z-ip-list-tiktok
 add address=103.172.25.122 list=z-ip-list-tiktok
 add address=156.59.107.149 list=z-ip-list-tiktok
@@ -549,10 +477,7 @@ add address=156.59.248.13 list=z-ip-list-tiktok
 add address=163.181.100.239 list=z-ip-list-tiktok
 add address=163.171.223.122 list=z-ip-list-tiktok
 add address=34.36.80.120 list=z-ip-list-tiktok
-add address=172.253.118.113 list=z-ip-list-youtube
 add address=89.187.162.149 list=z-ip-list-tiktok
-add address=74.125.12.135 list=z-ip-list-youtube
-add address=173.194.28.39 list=z-ip-list-youtube
 add address=58.27.5.114 list=z-ip-list-tiktok
 add address=156.59.248.72 list=z-ip-list-tiktok
 add address=156.59.248.71 list=z-ip-list-tiktok
@@ -563,20 +488,16 @@ add address=184.87.193.68 list=z-ip-list-tiktok
 add address=206.84.112.16 list=z-ip-list-tiktok
 add address=139.193.253.43 list=z-ip-list-tiktok
 add address=139.193.253.18 list=z-ip-list-tiktok
-add address=74.125.130.93 list=z-ip-list-youtube
-add address=142.251.175.190 list=z-ip-list-youtube
 add address=111.94.253.48 list=z-ip-list-tiktok
 add address=23.61.252.40 list=z-ip-list-tiktok
 add address=23.248.171.112 list=z-ip-list-tiktok
 add address=23.215.7.29 list=z-ip-list-tiktok
-add address=74.125.130.190 list=z-ip-list-youtube
 add address=18.64.18.90 list=z-ip-list-tiktok
 add address=13.224.249.93 list=z-ip-list-tiktok
 add address=13.33.33.66 list=z-ip-list-tiktok
 add address=111.95.250.100 list=z-ip-list-tiktok
 add address=138.113.223.41 list=z-ip-list-tiktok
 add address=211.152.128.31 list=z-ip-list-tiktok
-add address=142.250.4.93 list=z-ip-list-youtube
 add address=58.27.5.116 list=z-ip-list-tiktok
 add address=111.94.253.35 list=z-ip-list-tiktok
 add address=43.152.160.234 list=z-ip-list-tiktok
@@ -596,21 +517,16 @@ add address=111.94.254.91 list=z-ip-list-tiktok
 add address=23.52.171.136 list=z-ip-list-tiktok
 add address=23.215.7.16 list=z-ip-list-tiktok
 add address=23.209.46.9 list=z-ip-list-tiktok
-add address=142.251.10.100 list=z-ip-list-youtube
 add address=69.192.1.162 list=z-ip-list-tiktok
-add address=111.95.240.237 list=z-ip-list-youtube
 add address=23.62.212.3 list=z-ip-list-tiktok
 add address=23.62.212.14 list=z-ip-list-tiktok
 add address=23.62.212.13 list=z-ip-list-tiktok
 add address=23.62.212.2 list=z-ip-list-tiktok
 add address=23.62.212.5 list=z-ip-list-tiktok
-add address=142.251.84.103 list=z-ip-list-youtube
 add address=23.62.212.4 list=z-ip-list-tiktok
 add address=23.62.212.9 list=z-ip-list-tiktok
 add address=23.62.212.12 list=z-ip-list-tiktok
 add address=23.62.212.10 list=z-ip-list-tiktok
-add address=142.250.4.190 list=z-ip-list-youtube
-add address=74.125.68.190 list=z-ip-list-youtube
 add address=23.59.168.178 list=z-ip-list-tiktok
 add address=129.227.40.226 list=z-ip-list-tiktok
 add address=23.59.168.145 list=z-ip-list-tiktok
@@ -624,30 +540,20 @@ add address=108.138.141.47 list=z-ip-list-tiktok
 add address=23.32.29.97 list=z-ip-list-tiktok
 add address=23.209.46.32 list=z-ip-list-tiktok
 add address=18.155.68.93 list=z-ip-list-tiktok
-add address=74.125.68.100 list=z-ip-list-youtube
 add address=129.227.42.49 list=z-ip-list-tiktok
 add address=139.193.253.59 list=z-ip-list-tiktok
 add address=111.94.253.115 list=z-ip-list-tiktok
 add address=23.32.29.91 list=z-ip-list-tiktok
-add address=74.125.130.91 list=z-ip-list-youtube
 add address=108.138.141.37 list=z-ip-list-tiktok
 add address=101.33.4.9 list=z-ip-list-tiktok
 add address=23.62.106.82 list=z-ip-list-tiktok
 add address=23.199.69.186 list=z-ip-list-tiktok
 add address=111.95.250.104 list=z-ip-list-tiktok
 add address=23.62.106.99 list=z-ip-list-tiktok
-add address=172.253.118.190 list=z-ip-list-youtube
-add address=172.253.118.93 list=z-ip-list-youtube
 add address=156.59.162.117 list=z-ip-list-tiktok
-add address=172.253.118.136 list=z-ip-list-youtube
 add address=163.171.223.121 list=z-ip-list-tiktok
 add address=184.87.193.82 list=z-ip-list-tiktok
-add address=142.251.10.93 list=z-ip-list-youtube
-add address=172.253.118.91 list=z-ip-list-youtube
 add address=34.117.139.101 list=z-ip-list-tiktok
-add address=74.125.24.91 list=z-ip-list-youtube
-add address=74.125.24.190 list=z-ip-list-youtube
-add address=142.250.4.119 list=z-ip-list-youtube
 add address=129.227.40.224 list=z-ip-list-tiktok
 add address=23.32.29.106 list=z-ip-list-tiktok
 add address=23.49.60.208 list=z-ip-list-tiktok
@@ -659,13 +565,10 @@ add address=139.193.253.24 list=z-ip-list-tiktok
 add address=104.97.76.195 list=z-ip-list-tiktok
 add address=101.33.26.196 list=z-ip-list-tiktok
 add address=54.192.116.113 list=z-ip-list-tiktok
-add address=172.217.194.100 list=z-ip-list-youtube
-add address=172.217.194.139 list=z-ip-list-youtube
 add address=52.84.251.109 list=z-ip-list-tiktok
 add address=54.192.116.91 list=z-ip-list-tiktok
 add address=104.97.76.200 list=z-ip-list-tiktok
 add address=101.33.26.137 list=z-ip-list-tiktok
-add address=74.125.200.136 list=z-ip-list-youtube
 add address=23.62.212.83 list=z-ip-list-tiktok
 add address=184.87.193.71 list=z-ip-list-tiktok
 add address=23.48.5.20 list=z-ip-list-tiktok
@@ -673,21 +576,13 @@ add address=23.199.69.200 list=z-ip-list-tiktok
 add address=111.94.253.90 list=z-ip-list-tiktok
 add address=58.27.5.228 list=z-ip-list-tiktok
 add address=58.27.5.229 list=z-ip-list-tiktok
-add address=111.95.240.80 list=z-ip-list-youtube
 add address=163.181.128.241 list=z-ip-list-tiktok
 add address=23.199.69.194 list=z-ip-list-tiktok
 add address=163.181.128.234 list=z-ip-list-tiktok
 add address=111.95.250.105 list=z-ip-list-tiktok
 add address=13.224.249.112 list=z-ip-list-tiktok
 add address=163.181.128.239 list=z-ip-list-tiktok
-add address=114.10.0.12 list=z-ip-list-youtube
-add address=114.10.0.14 list=z-ip-list-youtube
-add address=142.251.88.136 list=z-ip-list-youtube
-add address=142.251.90.202 list=z-ip-list-youtube
 add address=23.32.29.107 list=z-ip-list-tiktok
-add address=142.251.12.101 list=z-ip-list-youtube
-add address=142.251.10.102 list=z-ip-list-youtube
-add address=111.95.240.206 list=z-ip-list-youtube
 add address=23.199.69.178 list=z-ip-list-tiktok
 add address=139.193.253.146 list=z-ip-list-tiktok
 add address=129.227.42.50 list=z-ip-list-tiktok
@@ -698,7 +593,6 @@ add address=129.227.47.172 list=z-ip-list-tiktok
 add address=184.87.193.132 list=z-ip-list-tiktok
 add address=13.33.33.12 list=z-ip-list-tiktok
 add address=139.193.253.11 list=z-ip-list-tiktok
-add address=74.125.68.93 list=z-ip-list-youtube
 add address=13.33.33.22 list=z-ip-list-tiktok
 add address=43.152.160.231 list=z-ip-list-tiktok
 add address=69.192.1.146 list=z-ip-list-tiktok
@@ -708,15 +602,12 @@ add address=103.234.121.169 list=z-ip-list-tiktok
 add address=202.70.57.121 list=z-ip-list-tiktok
 add address=111.94.253.57 list=z-ip-list-tiktok
 add address=23.199.69.171 list=z-ip-list-tiktok
-add address=74.125.200.91 list=z-ip-list-youtube
 add address=23.61.252.56 list=z-ip-list-tiktok
 add address=163.181.128.235 list=z-ip-list-tiktok
 add address=139.193.253.41 list=z-ip-list-tiktok
 add address=18.161.49.77 list=z-ip-list-tiktok
 add address=23.33.32.153 list=z-ip-list-tiktok
 add address=156.59.76.169 list=z-ip-list-tiktok
-add address=64.233.170.102 list=z-ip-list-youtube
-add address=173.194.49.170 list=z-ip-list-youtube
 add address=43.152.160.233 list=z-ip-list-tiktok
 add address=54.192.116.99 list=z-ip-list-tiktok
 add address=139.193.253.155 list=z-ip-list-tiktok
@@ -724,16 +615,13 @@ add address=23.59.168.176 list=z-ip-list-tiktok
 add address=129.227.42.122 list=z-ip-list-tiktok
 add address=23.206.250.106 list=z-ip-list-tiktok
 add address=111.94.253.99 list=z-ip-list-tiktok
-add address=142.250.4.136 list=z-ip-list-youtube
 add address=156.59.104.26 list=z-ip-list-tiktok
-add address=111.95.241.86 list=z-ip-list-youtube
 add address=23.209.46.11 list=z-ip-list-tiktok
 add address=23.199.69.195 list=z-ip-list-tiktok
 add address=163.181.18.227 list=z-ip-list-tiktok
 add address=13.33.33.127 list=z-ip-list-tiktok
 add address=23.209.46.19 list=z-ip-list-tiktok
 add address=18.64.37.89 list=z-ip-list-tiktok
-add address=74.125.130.139 list=z-ip-list-youtube
 add address=199.103.24.8 list=z-ip-list-tiktok
 add address=111.95.250.99 list=z-ip-list-tiktok
 add address=163.181.18.223 list=z-ip-list-tiktok
@@ -771,7 +659,6 @@ add address=111.94.254.30 list=z-ip-list-tiktok
 add address=23.47.190.99 list=z-ip-list-tiktok
 add address=23.47.190.105 list=z-ip-list-tiktok
 add address=125.56.219.2 list=z-ip-list-tiktok
-add address=142.251.12.91 list=z-ip-list-youtube
 add address=114.10.2.179 list=z-ip-list-tiktok
 add address=114.10.2.178 list=z-ip-list-tiktok
 add address=23.52.171.234 list=z-ip-list-tiktok
@@ -779,23 +666,13 @@ add address=206.84.107.46 list=z-ip-list-tiktok
 add address=114.10.2.211 list=z-ip-list-tiktok
 add address=156.59.248.70 list=z-ip-list-tiktok
 add address=61.247.0.75 list=z-ip-list-tiktok
-add address=74.125.130.113 list=z-ip-list-youtube
-add address=142.251.175.101 list=z-ip-list-youtube
-add address=142.250.4.139 list=z-ip-list-youtube
-add address=142.251.10.139 list=z-ip-list-youtube
 add address=23.248.171.105 list=z-ip-list-tiktok
-add address=111.95.240.236 list=z-ip-list-youtube
-add address=111.95.240.238 list=z-ip-list-youtube
-add address=111.95.241.80 list=z-ip-list-youtube
 add address=34.149.103.212 list=z-ip-list-tiktok
 add address=34.36.71.42 list=z-ip-list-tiktok
 add address=184.87.193.69 list=z-ip-list-tiktok
 add address=139.193.253.32 list=z-ip-list-tiktok
 add address=34.36.214.156 list=z-ip-list-tiktok
 add address=111.94.253.121 list=z-ip-list-tiktok
-add address=172.217.194.138 list=z-ip-list-youtube
-add address=111.95.243.77 list=z-ip-list-youtube
-add address=142.250.4.113 list=z-ip-list-youtube
 add address=129.227.47.234 list=z-ip-list-tiktok
 add address=151.101.110.73 list=z-ip-list-tiktok
 add address=139.193.253.8 list=z-ip-list-tiktok
@@ -806,20 +683,14 @@ add address=23.62.212.91 list=z-ip-list-tiktok
 add address=23.199.69.168 list=z-ip-list-tiktok
 add address=23.199.69.161 list=z-ip-list-tiktok
 add address=23.62.212.96 list=z-ip-list-tiktok
-add address=88.80.147.205 list=z-ip-list-youtube
-add address=74.125.12.199 list=z-ip-list-youtube
 add address=23.32.29.88 list=z-ip-list-tiktok
 add address=129.227.40.223 list=z-ip-list-tiktok
 add address=129.227.47.233 list=z-ip-list-tiktok
 add address=125.56.219.18 list=z-ip-list-tiktok
 add address=23.32.29.99 list=z-ip-list-tiktok
 add address=111.94.253.91 list=z-ip-list-tiktok
-add address=142.250.4.91 list=z-ip-list-youtube
-add address=111.95.240.109 list=z-ip-list-youtube
 add address=23.32.29.104 list=z-ip-list-tiktok
 add address=101.33.26.138 list=z-ip-list-tiktok
-add address=74.125.68.136 list=z-ip-list-youtube
-add address=111.95.241.84 list=z-ip-list-youtube
 add address=111.94.253.75 list=z-ip-list-tiktok
 add address=163.181.18.226 list=z-ip-list-tiktok
 add address=23.50.117.211 list=z-ip-list-tiktok
@@ -831,9 +702,7 @@ add address=129.227.42.121 list=z-ip-list-tiktok
 add address=139.193.253.40 list=z-ip-list-tiktok
 add address=129.227.47.235 list=z-ip-list-tiktok
 add address=23.209.46.7 list=z-ip-list-tiktok
-add address=111.95.240.205 list=z-ip-list-youtube
 add address=163.181.100.240 list=z-ip-list-tiktok
-add address=111.95.240.76 list=z-ip-list-youtube
 add address=52.84.251.63 list=z-ip-list-tiktok
 add address=23.209.46.17 list=z-ip-list-tiktok
 add address=23.199.69.210 list=z-ip-list-tiktok
@@ -841,10 +710,7 @@ add address=23.209.46.4 list=z-ip-list-tiktok
 add address=98.98.121.36 list=z-ip-list-tiktok
 add address=23.209.46.23 list=z-ip-list-tiktok
 add address=23.199.69.226 list=z-ip-list-tiktok
-add address=111.95.241.83 list=z-ip-list-youtube
-add address=111.95.241.85 list=z-ip-list-youtube
 add address=163.181.100.241 list=z-ip-list-tiktok
-add address=74.125.12.138 list=z-ip-list-youtube
 add address=129.227.40.230 list=z-ip-list-tiktok
 add address=163.181.18.225 list=z-ip-list-tiktok
 add address=129.227.42.55 list=z-ip-list-tiktok
@@ -852,44 +718,29 @@ add address=23.199.69.154 list=z-ip-list-tiktok
 add address=156.59.162.116 list=z-ip-list-tiktok
 add address=69.192.1.139 list=z-ip-list-tiktok
 add address=111.94.253.114 list=z-ip-list-tiktok
-add address=111.95.241.79 list=z-ip-list-youtube
-add address=74.125.130.138 list=z-ip-list-youtube
-add address=111.95.240.77 list=z-ip-list-youtube
-add address=142.251.91.41 list=z-ip-list-youtube
 add address=163.181.18.228 list=z-ip-list-tiktok
 add address=23.209.46.29 list=z-ip-list-tiktok
 add address=101.33.4.140 list=z-ip-list-tiktok
-add address=172.217.194.190 list=z-ip-list-youtube
 add address=139.193.253.19 list=z-ip-list-tiktok
 add address=23.199.69.193 list=z-ip-list-tiktok
-add address=142.250.4.102 list=z-ip-list-youtube
-add address=111.95.240.204 list=z-ip-list-youtube
-add address=74.125.171.10 list=z-ip-list-youtube
 add address=34.101.199.227 list=z-ip-list-tiktok
 add address=23.209.46.68 list=z-ip-list-tiktok
 add address=111.94.254.8 list=z-ip-list-tiktok
 add address=111.94.253.97 list=z-ip-list-tiktok
-add address=142.251.84.169 list=z-ip-list-youtube
-add address=173.194.49.169 list=z-ip-list-youtube
 add address=111.94.253.43 list=z-ip-list-tiktok
 add address=104.91.69.96 list=z-ip-list-tiktok
-add address=111.95.240.142 list=z-ip-list-youtube
 add address=101.33.26.118 list=z-ip-list-tiktok
 add address=156.59.76.168 list=z-ip-list-tiktok
 add address=104.91.69.24 list=z-ip-list-tiktok
 add address=104.91.69.64 list=z-ip-list-tiktok
 add address=104.91.69.73 list=z-ip-list-tiktok
 add address=156.59.107.146 list=z-ip-list-tiktok
-add address=142.251.84.166 list=z-ip-list-youtube
 add address=23.62.212.78 list=z-ip-list-tiktok
-add address=111.95.241.82 list=z-ip-list-youtube
 add address=52.84.251.69 list=z-ip-list-tiktok
 add address=52.84.251.119 list=z-ip-list-tiktok
 add address=23.32.29.98 list=z-ip-list-tiktok
 add address=129.227.42.62 list=z-ip-list-tiktok
 add address=139.193.253.25 list=z-ip-list-tiktok
-add address=111.95.240.81 list=z-ip-list-youtube
-add address=142.251.84.168 list=z-ip-list-youtube
 add address=108.138.141.62 list=z-ip-list-tiktok
 add address=108.138.141.69 list=z-ip-list-tiktok
 add address=23.32.29.105 list=z-ip-list-tiktok
@@ -900,13 +751,11 @@ add address=103.147.212.54 list=z-ip-list-tiktok
 add address=103.147.212.40 list=z-ip-list-tiktok
 add address=98.98.121.30 list=z-ip-list-tiktok
 add address=101.33.27.61 list=z-ip-list-tiktok
-add address=142.251.85.73 list=z-ip-list-youtube
 add address=13.33.88.75 list=z-ip-list-tiktok
 add address=13.33.88.55 list=z-ip-list-tiktok
 add address=13.33.88.89 list=z-ip-list-tiktok
 add address=23.199.69.179 list=z-ip-list-tiktok
 add address=13.33.33.76 list=z-ip-list-tiktok
-add address=74.125.130.102 list=z-ip-list-youtube
 add address=47.89.121.10 list=z-ip-list-tiktok
 add address=103.160.155.55 list=z-ip-list-tiktok
 add address=18.155.68.50 list=z-ip-list-tiktok
@@ -914,7 +763,6 @@ add address=156.59.76.170 list=z-ip-list-tiktok
 add address=23.199.69.218 list=z-ip-list-tiktok
 add address=156.59.107.147 list=z-ip-list-tiktok
 add address=156.59.248.68 list=z-ip-list-tiktok
-add address=142.251.175.93 list=z-ip-list-youtube
 add address=156.59.107.148 list=z-ip-list-tiktok
 add address=111.94.254.18 list=z-ip-list-tiktok
 add address=13.33.33.10 list=z-ip-list-tiktok
@@ -926,12 +774,10 @@ add address=69.192.1.131 list=z-ip-list-tiktok
 add address=23.67.57.243 list=z-ip-list-tiktok
 add address=23.67.57.185 list=z-ip-list-tiktok
 add address=23.67.57.233 list=z-ip-list-tiktok
-add address=173.194.22.168 list=z-ip-list-youtube
 add address=23.209.46.10 list=z-ip-list-tiktok
 add address=163.181.18.230 list=z-ip-list-tiktok
 add address=69.192.1.160 list=z-ip-list-tiktok
 add address=23.209.46.22 list=z-ip-list-tiktok
-add address=64.233.170.113 list=z-ip-list-youtube
 add address=54.192.116.36 list=z-ip-list-tiktok
 add address=69.192.1.144 list=z-ip-list-tiktok
 add address=138.113.103.44 list=z-ip-list-tiktok
@@ -942,7 +788,6 @@ add address=23.67.57.240 list=z-ip-list-tiktok
 add address=138.113.219.87 list=z-ip-list-tiktok
 add address=18.161.49.127 list=z-ip-list-tiktok
 add address=69.192.1.147 list=z-ip-list-tiktok
-add address=111.95.241.81 list=z-ip-list-youtube
 add address=18.161.49.8 list=z-ip-list-tiktok
 add address=23.248.171.106 list=z-ip-list-tiktok
 add address=18.155.68.20 list=z-ip-list-tiktok
@@ -951,7 +796,6 @@ add address=23.46.155.202 list=z-ip-list-tiktok
 add address=23.46.155.198 list=z-ip-list-tiktok
 add address=101.33.4.196 list=z-ip-list-tiktok
 add address=23.61.252.26 list=z-ip-list-tiktok
-add address=109.236.81.104 list=z-ip-list-youtube
 add address=23.46.155.212 list=z-ip-list-tiktok
 add address=156.59.107.80 list=z-ip-list-tiktok
 add address=104.91.69.27 list=z-ip-list-tiktok
@@ -989,11 +833,8 @@ add address=23.46.155.199 list=z-ip-list-tiktok
 add address=18.155.68.114 list=z-ip-list-tiktok
 add address=23.46.155.217 list=z-ip-list-tiktok
 add address=34.111.85.169 list=z-ip-list-tiktok
-add address=74.125.200.100 list=z-ip-list-youtube
 add address=34.102.230.137 list=z-ip-list-tiktok
-add address=74.125.200.101 list=z-ip-list-youtube
 add address=95.101.110.207 list=z-ip-list-tiktok
-add address=142.250.4.101 list=z-ip-list-youtube
 add address=23.46.155.195 list=z-ip-list-tiktok
 add address=111.94.253.54 list=z-ip-list-tiktok
 add address=184.25.50.155 list=z-ip-list-tiktok
@@ -1029,22 +870,18 @@ add address=211.152.128.124 list=z-ip-list-tiktok
 add address=23.48.5.17 list=z-ip-list-tiktok
 add address=54.192.116.108 list=z-ip-list-tiktok
 add address=108.138.141.30 list=z-ip-list-tiktok
-add address=172.253.118.102 list=z-ip-list-youtube
 add address=23.52.171.201 list=z-ip-list-tiktok
 add address=101.33.27.58 list=z-ip-list-tiktok
 add address=23.48.5.12 list=z-ip-list-tiktok
 add address=138.113.114.203 list=z-ip-list-tiktok
-add address=74.125.130.101 list=z-ip-list-youtube
 add address=34.107.238.235 list=z-ip-list-tiktok
 add address=111.94.253.122 list=z-ip-list-tiktok
 add address=65.8.11.36 list=z-ip-list-tiktok
-add address=74.125.200.138 list=z-ip-list-youtube
 add address=23.209.46.12 list=z-ip-list-tiktok
 add address=111.95.250.103 list=z-ip-list-tiktok
 add address=23.209.46.25 list=z-ip-list-tiktok
 add address=23.209.46.74 list=z-ip-list-tiktok
 add address=129.227.40.228 list=z-ip-list-tiktok
-add address=111.95.240.111 list=z-ip-list-youtube
 add address=18.64.18.49 list=z-ip-list-tiktok
 add address=69.192.1.129 list=z-ip-list-tiktok
 add address=69.192.1.168 list=z-ip-list-tiktok
@@ -1083,7 +920,6 @@ add address=35.241.60.212 list=z-ip-list-tiktok
 add address=54.192.116.52 list=z-ip-list-tiktok
 add address=111.94.253.96 list=z-ip-list-tiktok
 add address=54.192.116.72 list=z-ip-list-tiktok
-add address=172.217.194.113 list=z-ip-list-youtube
 add address=156.59.76.174 list=z-ip-list-tiktok
 add address=23.209.46.82 list=z-ip-list-tiktok
 add address=23.62.212.82 list=z-ip-list-tiktok
@@ -1095,7 +931,6 @@ add address=23.62.212.87 list=z-ip-list-tiktok
 add address=163.181.18.224 list=z-ip-list-tiktok
 add address=23.67.57.194 list=z-ip-list-tiktok
 add address=23.209.46.27 list=z-ip-list-tiktok
-add address=64.233.170.190 list=z-ip-list-youtube
 add address=138.113.112.221 list=z-ip-list-tiktok
 add address=23.62.212.11 list=z-ip-list-tiktok
 add address=103.134.189.138 list=z-ip-list-tiktok
@@ -1104,14 +939,12 @@ add address=23.61.252.82 list=z-ip-list-tiktok
 add address=23.61.252.41 list=z-ip-list-tiktok
 add address=23.61.252.24 list=z-ip-list-tiktok
 add address=184.27.122.187 list=z-ip-list-tiktok
-add address=74.125.130.136 list=z-ip-list-youtube
 add address=129.227.42.53 list=z-ip-list-tiktok
 add address=23.248.171.113 list=z-ip-list-tiktok
 add address=184.30.30.43 list=z-ip-list-tiktok
 add address=43.132.81.17 list=z-ip-list-tiktok
 add address=156.225.99.9 list=z-ip-list-tiktok
 add address=69.192.1.163 list=z-ip-list-tiktok
-add address=142.251.175.91 list=z-ip-list-youtube
 add address=103.172.25.121 list=z-ip-list-tiktok
 add address=89.187.162.131 list=z-ip-list-tiktok
 add address=69.192.1.152 list=z-ip-list-tiktok
@@ -1122,14 +955,10 @@ add address=163.181.27.231 list=z-ip-list-tiktok
 add address=202.70.57.16 list=z-ip-list-tiktok
 add address=23.61.252.59 list=z-ip-list-tiktok
 add address=69.192.1.145 list=z-ip-list-tiktok
-add address=172.217.194.136 list=z-ip-list-youtube
 add address=184.30.30.65 list=z-ip-list-tiktok
 add address=184.30.30.17 list=z-ip-list-tiktok
 add address=129.227.42.51 list=z-ip-list-tiktok
 add address=23.199.69.203 list=z-ip-list-tiktok
-add address=142.251.90.233 list=z-ip-list-youtube
-add address=74.125.10.106 list=z-ip-list-youtube
-add address=142.251.12.102 list=z-ip-list-youtube
 add address=52.84.251.82 list=z-ip-list-tiktok
 add address=23.61.252.80 list=z-ip-list-tiktok
 add address=23.46.155.197 list=z-ip-list-tiktok
@@ -1145,7 +974,6 @@ add address=114.10.2.50 list=z-ip-list-tiktok
 add address=114.10.2.57 list=z-ip-list-tiktok
 add address=23.62.212.97 list=z-ip-list-tiktok
 add address=23.52.171.216 list=z-ip-list-tiktok
-add address=142.251.12.100 list=z-ip-list-youtube
 add address=23.50.117.216 list=z-ip-list-tiktok
 add address=180.250.169.40 list=z-ip-list-tiktok
 add address=13.227.254.101 list=z-ip-list-tiktok
@@ -1172,14 +1000,12 @@ add address=23.211.140.131 list=z-ip-list-tiktok
 add address=138.113.121.71 list=z-ip-list-tiktok
 add address=128.1.176.225 list=z-ip-list-tiktok
 add address=13.33.33.69 list=z-ip-list-tiktok
-add address=74.125.24.139 list=z-ip-list-youtube
 add address=23.211.140.152 list=z-ip-list-tiktok
 add address=23.211.140.154 list=z-ip-list-tiktok
 add address=184.87.193.97 list=z-ip-list-tiktok
 add address=43.152.142.241 list=z-ip-list-tiktok
 add address=156.251.75.210 list=z-ip-list-tiktok
 add address=23.211.140.146 list=z-ip-list-tiktok
-add address=74.125.106.104 list=z-ip-list-youtube
 add address=23.215.7.87 list=z-ip-list-tiktok
 add address=23.215.7.79 list=z-ip-list-tiktok
 add address=23.211.140.56 list=z-ip-list-tiktok
@@ -1187,8 +1013,6 @@ add address=23.215.7.90 list=z-ip-list-tiktok
 add address=23.215.7.68 list=z-ip-list-tiktok
 add address=23.215.7.77 list=z-ip-list-tiktok
 add address=23.33.32.89 list=z-ip-list-tiktok
-add address=74.125.200.139 list=z-ip-list-youtube
-add address=74.125.10.102 list=z-ip-list-youtube
 add address=23.209.46.14 list=z-ip-list-tiktok
 add address=23.58.120.42 list=z-ip-list-tiktok
 add address=23.58.120.18 list=z-ip-list-tiktok
@@ -1199,7 +1023,6 @@ add address=23.215.7.76 list=z-ip-list-tiktok
 add address=23.211.140.83 list=z-ip-list-tiktok
 add address=23.215.7.84 list=z-ip-list-tiktok
 add address=180.250.169.26 list=z-ip-list-tiktok
-add address=172.253.118.139 list=z-ip-list-youtube
 add address=23.215.7.81 list=z-ip-list-tiktok
 add address=23.211.140.144 list=z-ip-list-tiktok
 add address=23.215.7.85 list=z-ip-list-tiktok
@@ -1211,7 +1034,6 @@ add address=23.47.190.9 list=z-ip-list-tiktok
 add address=23.47.190.65 list=z-ip-list-tiktok
 add address=89.187.162.148 list=z-ip-list-tiktok
 add address=184.87.193.162 list=z-ip-list-tiktok
-add address=142.251.12.139 list=z-ip-list-youtube
 add address=23.49.60.168 list=z-ip-list-tiktok
 add address=23.52.171.219 list=z-ip-list-tiktok
 add address=23.52.171.58 list=z-ip-list-tiktok
@@ -1248,7 +1070,6 @@ add address=156.59.248.5 list=z-ip-list-tiktok
 add address=23.45.232.17 list=z-ip-list-tiktok
 add address=23.52.171.57 list=z-ip-list-tiktok
 add address=23.45.232.57 list=z-ip-list-tiktok
-add address=74.125.200.190 list=z-ip-list-youtube
 add address=23.59.168.161 list=z-ip-list-tiktok
 add address=13.224.249.53 list=z-ip-list-tiktok
 add address=184.28.235.176 list=z-ip-list-tiktok
@@ -1258,7 +1079,6 @@ add address=184.87.193.81 list=z-ip-list-tiktok
 add address=23.52.171.203 list=z-ip-list-tiktok
 add address=143.244.57.36 list=z-ip-list-tiktok
 add address=13.33.33.68 list=z-ip-list-tiktok
-add address=142.251.12.138 list=z-ip-list-youtube
 add address=156.59.104.28 list=z-ip-list-tiktok
 add address=23.59.168.185 list=z-ip-list-tiktok
 add address=156.59.248.52 list=z-ip-list-tiktok
@@ -1268,7 +1088,6 @@ add address=96.17.180.131 list=z-ip-list-tiktok
 add address=96.17.180.18 list=z-ip-list-tiktok
 add address=96.17.180.17 list=z-ip-list-tiktok
 add address=96.17.180.33 list=z-ip-list-tiktok
-add address=173.194.49.166 list=z-ip-list-youtube
 add address=184.50.85.139 list=z-ip-list-tiktok
 add address=23.32.29.11 list=z-ip-list-tiktok
 add address=96.17.180.49 list=z-ip-list-tiktok
@@ -1291,7 +1110,6 @@ add address=96.17.180.163 list=z-ip-list-tiktok
 add address=96.17.180.179 list=z-ip-list-tiktok
 add address=23.32.29.9 list=z-ip-list-tiktok
 add address=184.50.85.153 list=z-ip-list-tiktok
-add address=74.125.130.100 list=z-ip-list-youtube
 add address=43.132.89.34 list=z-ip-list-tiktok
 add address=96.17.180.27 list=z-ip-list-tiktok
 add address=184.50.85.140 list=z-ip-list-tiktok
@@ -1302,7 +1120,6 @@ add address=96.17.180.48 list=z-ip-list-tiktok
 add address=96.17.180.42 list=z-ip-list-tiktok
 add address=96.17.180.51 list=z-ip-list-tiktok
 add address=65.8.11.123 list=z-ip-list-tiktok
-add address=3.223.239.12 list=z-ip-list-youtube
 add address=23.49.60.50 list=z-ip-list-tiktok
 add address=184.50.85.179 list=z-ip-list-tiktok
 add address=103.147.212.56 list=z-ip-list-tiktok
@@ -1315,10 +1132,6 @@ add address=45.121.219.240 list=z-ip-list-tiktok
 add address=23.49.60.58 list=z-ip-list-tiktok
 add address=173.222.148.49 list=z-ip-list-tiktok
 add address=184.50.85.155 list=z-ip-list-tiktok
-add address=64.233.170.139 list=z-ip-list-youtube
-add address=64.233.170.100 list=z-ip-list-youtube
-add address=64.233.170.101 list=z-ip-list-youtube
-add address=64.233.170.138 list=z-ip-list-youtube
 add address=184.50.85.129 list=z-ip-list-tiktok
 add address=184.50.85.156 list=z-ip-list-tiktok
 add address=184.50.85.147 list=z-ip-list-tiktok
@@ -1328,7 +1141,6 @@ add address=23.52.171.225 list=z-ip-list-tiktok
 add address=184.50.85.145 list=z-ip-list-tiktok
 add address=23.49.60.40 list=z-ip-list-tiktok
 add address=184.50.85.164 list=z-ip-list-tiktok
-add address=142.251.91.134 list=z-ip-list-youtube
 add address=96.17.180.2 list=z-ip-list-tiktok
 add address=138.113.112.208 list=z-ip-list-tiktok
 add address=184.50.85.180 list=z-ip-list-tiktok
@@ -1345,7 +1157,6 @@ add address=45.121.219.248 list=z-ip-list-tiktok
 add address=184.50.85.170 list=z-ip-list-tiktok
 add address=23.32.29.17 list=z-ip-list-tiktok
 add address=45.121.219.251 list=z-ip-list-tiktok
-add address=142.251.91.6 list=z-ip-list-youtube
 add address=45.121.219.241 list=z-ip-list-tiktok
 add address=96.17.180.171 list=z-ip-list-tiktok
 add address=173.222.148.34 list=z-ip-list-tiktok
@@ -1356,13 +1167,10 @@ add address=184.50.85.163 list=z-ip-list-tiktok
 add address=96.17.180.43 list=z-ip-list-tiktok
 add address=194.107.19.17 list=z-ip-list-tiktok
 add address=184.50.85.172 list=z-ip-list-tiktok
-add address=209.85.228.9 list=z-ip-list-youtube
 add address=173.222.148.42 list=z-ip-list-tiktok
-add address=142.251.175.113 list=z-ip-list-youtube
 add address=173.222.148.41 list=z-ip-list-tiktok
 add address=184.50.85.154 list=z-ip-list-tiktok
 add address=96.17.180.187 list=z-ip-list-tiktok
-add address=173.194.22.170 list=z-ip-list-youtube
 add address=96.17.180.19 list=z-ip-list-tiktok
 add address=184.50.85.146 list=z-ip-list-tiktok
 add address=96.17.180.180 list=z-ip-list-tiktok
@@ -1375,8 +1183,6 @@ add address=184.50.85.162 list=z-ip-list-tiktok
 add address=156.251.75.22 list=z-ip-list-tiktok
 add address=156.59.248.51 list=z-ip-list-tiktok
 add address=156.59.162.111 list=z-ip-list-tiktok
-add address=173.194.51.104 list=z-ip-list-youtube
-add address=74.125.101.200 list=z-ip-list-youtube
 add address=96.17.180.172 list=z-ip-list-tiktok
 add address=45.121.219.224 list=z-ip-list-tiktok
 add address=104.70.235.16 list=z-ip-list-tiktok
@@ -1402,7 +1208,6 @@ add address=45.121.219.216 list=z-ip-list-tiktok
 add address=23.223.47.72 list=z-ip-list-tiktok
 add address=23.223.47.74 list=z-ip-list-tiktok
 add address=104.70.235.34 list=z-ip-list-tiktok
-add address=74.125.171.74 list=z-ip-list-youtube
 add address=23.200.142.137 list=z-ip-list-tiktok
 add address=45.121.219.232 list=z-ip-list-tiktok
 add address=23.223.47.40 list=z-ip-list-tiktok
@@ -1414,7 +1219,6 @@ add address=23.200.142.169 list=z-ip-list-tiktok
 add address=23.67.57.227 list=z-ip-list-tiktok
 add address=23.223.47.56 list=z-ip-list-tiktok
 add address=23.223.47.51 list=z-ip-list-tiktok
-add address=74.125.24.101 list=z-ip-list-youtube
 add address=23.200.74.10 list=z-ip-list-tiktok
 add address=23.223.47.80 list=z-ip-list-tiktok
 add address=184.28.235.171 list=z-ip-list-tiktok
@@ -1487,7 +1291,6 @@ add address=23.59.80.241 list=z-ip-list-tiktok
 add address=23.200.74.49 list=z-ip-list-tiktok
 add address=23.43.49.73 list=z-ip-list-tiktok
 add address=23.43.49.50 list=z-ip-list-tiktok
-add address=74.125.24.102 list=z-ip-list-youtube
 add address=184.27.122.114 list=z-ip-list-tiktok
 add address=23.200.74.40 list=z-ip-list-tiktok
 add address=184.27.122.152 list=z-ip-list-tiktok
@@ -1497,9 +1300,7 @@ add address=184.27.122.90 list=z-ip-list-tiktok
 add address=23.43.49.18 list=z-ip-list-tiktok
 add address=23.43.49.40 list=z-ip-list-tiktok
 add address=23.43.49.43 list=z-ip-list-tiktok
-add address=173.194.51.105 list=z-ip-list-youtube
 add address=111.94.253.32 list=z-ip-list-tiktok
-add address=188.165.192.18 list=z-ip-list-youtube
 add address=34.110.231.18 list=z-ip-list-tiktok
 add address=184.28.235.11 list=z-ip-list-tiktok
 add address=184.28.235.17 list=z-ip-list-tiktok
@@ -1509,7 +1310,6 @@ add address=184.27.123.176 list=z-ip-list-tiktok
 add address=184.28.235.33 list=z-ip-list-tiktok
 add address=184.27.123.208 list=z-ip-list-tiktok
 add address=184.27.123.226 list=z-ip-list-tiktok
-add address=142.251.12.113 list=z-ip-list-youtube
 add address=184.27.123.240 list=z-ip-list-tiktok
 add address=184.28.235.19 list=z-ip-list-tiktok
 add address=184.28.235.8 list=z-ip-list-tiktok
@@ -1521,7 +1321,6 @@ add address=23.59.80.226 list=z-ip-list-tiktok
 add address=184.27.123.234 list=z-ip-list-tiktok
 add address=23.59.80.227 list=z-ip-list-tiktok
 add address=184.27.123.232 list=z-ip-list-tiktok
-add address=142.251.88.38 list=z-ip-list-youtube
 add address=23.59.80.225 list=z-ip-list-tiktok
 add address=184.27.123.243 list=z-ip-list-tiktok
 add address=23.49.60.160 list=z-ip-list-tiktok
@@ -1568,7 +1367,6 @@ add address=163.181.128.237 list=z-ip-list-tiktok
 add address=184.27.123.235 list=z-ip-list-tiktok
 add address=184.27.123.170 list=z-ip-list-tiktok
 add address=184.27.123.184 list=z-ip-list-tiktok
-add address=142.251.91.70 list=z-ip-list-youtube
 add address=101.33.5.62 list=z-ip-list-tiktok
 add address=184.27.123.200 list=z-ip-list-tiktok
 add address=103.160.155.111 list=z-ip-list-tiktok
@@ -1576,14 +1374,11 @@ add address=184.27.123.192 list=z-ip-list-tiktok
 add address=184.27.123.210 list=z-ip-list-tiktok
 add address=23.248.171.114 list=z-ip-list-tiktok
 add address=184.28.235.10 list=z-ip-list-tiktok
-add address=142.251.85.42 list=z-ip-list-youtube
 add address=184.27.123.195 list=z-ip-list-tiktok
 add address=23.211.140.129 list=z-ip-list-tiktok
 add address=23.211.140.136 list=z-ip-list-tiktok
 add address=23.211.140.66 list=z-ip-list-tiktok
 add address=23.211.140.89 list=z-ip-list-tiktok
-add address=140.213.23.105 list=z-ip-list-youtube
-add address=140.213.23.104 list=z-ip-list-youtube
 add address=23.49.60.51 list=z-ip-list-tiktok
 add address=23.211.140.128 list=z-ip-list-tiktok
 add address=23.211.140.113 list=z-ip-list-tiktok
@@ -1599,7 +1394,6 @@ add address=23.211.140.67 list=z-ip-list-tiktok
 add address=23.211.140.72 list=z-ip-list-tiktok
 add address=23.52.171.139 list=z-ip-list-tiktok
 add address=23.211.140.138 list=z-ip-list-tiktok
-add address=142.251.175.136 list=z-ip-list-youtube
 add address=98.98.121.43 list=z-ip-list-tiktok
 add address=23.52.171.131 list=z-ip-list-tiktok
 add address=23.52.171.154 list=z-ip-list-tiktok
@@ -1608,11 +1402,9 @@ add address=23.211.140.81 list=z-ip-list-tiktok
 add address=23.211.140.58 list=z-ip-list-tiktok
 add address=23.211.140.161 list=z-ip-list-tiktok
 add address=23.211.140.145 list=z-ip-list-tiktok
-add address=74.125.24.100 list=z-ip-list-youtube
 add address=23.52.171.129 list=z-ip-list-tiktok
 add address=23.52.171.75 list=z-ip-list-tiktok
 add address=23.211.140.162 list=z-ip-list-tiktok
-add address=176.31.254.229 list=z-ip-list-youtube
 add address=23.52.171.144 list=z-ip-list-tiktok
 add address=23.52.171.98 list=z-ip-list-tiktok
 add address=23.52.171.137 list=z-ip-list-tiktok
@@ -1630,19 +1422,13 @@ add address=23.52.171.145 list=z-ip-list-tiktok
 add address=23.211.140.49 list=z-ip-list-tiktok
 add address=23.211.140.115 list=z-ip-list-tiktok
 add address=71.18.255.146 list=z-ip-list-tiktok
-add address=142.251.91.105 list=z-ip-list-youtube
-add address=74.125.101.71 list=z-ip-list-youtube
-add address=142.251.85.234 list=z-ip-list-youtube
-add address=142.251.88.7 list=z-ip-list-youtube
 add address=23.211.140.139 list=z-ip-list-tiktok
 add address=23.211.140.74 list=z-ip-list-tiktok
 add address=23.211.140.98 list=z-ip-list-tiktok
 add address=23.211.140.99 list=z-ip-list-tiktok
-add address=142.251.85.70 list=z-ip-list-youtube
 add address=23.52.171.123 list=z-ip-list-tiktok
 add address=23.52.171.90 list=z-ip-list-tiktok
 add address=23.52.171.91 list=z-ip-list-tiktok
-add address=142.251.85.138 list=z-ip-list-youtube
 add address=23.52.171.97 list=z-ip-list-tiktok
 add address=23.52.171.107 list=z-ip-list-tiktok
 add address=23.52.171.162 list=z-ip-list-tiktok
@@ -1653,42 +1439,21 @@ add address=23.52.171.88 list=z-ip-list-tiktok
 add address=184.50.85.138 list=z-ip-list-tiktok
 add address=23.52.171.96 list=z-ip-list-tiktok
 add address=23.52.171.155 list=z-ip-list-tiktok
-add address=74.125.12.168 list=z-ip-list-youtube
-add address=142.251.88.71 list=z-ip-list-youtube
-add address=142.251.85.106 list=z-ip-list-youtube
-add address=142.251.91.106 list=z-ip-list-youtube
-add address=142.251.91.138 list=z-ip-list-youtube
-add address=74.125.101.199 list=z-ip-list-youtube
-add address=74.125.12.170 list=z-ip-list-youtube
-add address=142.251.85.8 list=z-ip-list-youtube
-add address=142.251.85.104 list=z-ip-list-youtube
-add address=142.251.91.103 list=z-ip-list-youtube
 add address=184.50.85.130 list=z-ip-list-tiktok
-add address=142.251.88.10 list=z-ip-list-youtube
-add address=142.251.84.167 list=z-ip-list-youtube
 add address=184.50.85.169 list=z-ip-list-tiktok
 add address=23.211.140.75 list=z-ip-list-tiktok
 add address=23.211.140.112 list=z-ip-list-tiktok
-add address=74.125.101.74 list=z-ip-list-youtube
 add address=23.211.140.51 list=z-ip-list-tiktok
 add address=23.211.140.65 list=z-ip-list-tiktok
-add address=142.251.91.102 list=z-ip-list-youtube
 add address=23.49.60.35 list=z-ip-list-tiktok
 add address=23.49.60.43 list=z-ip-list-tiktok
-add address=172.253.118.100 list=z-ip-list-youtube
 add address=23.211.140.88 list=z-ip-list-tiktok
-add address=74.125.12.169 list=z-ip-list-youtube
 add address=23.52.171.106 list=z-ip-list-tiktok
 add address=156.59.76.166 list=z-ip-list-tiktok
 add address=23.52.171.122 list=z-ip-list-tiktok
 add address=23.211.140.147 list=z-ip-list-tiktok
 add address=23.52.171.73 list=z-ip-list-tiktok
-add address=173.194.11.231 list=z-ip-list-youtube
-add address=173.194.7.234 list=z-ip-list-youtube
-add address=173.194.134.9 list=z-ip-list-youtube
-add address=195.154.251.21 list=z-ip-list-youtube
 add address=23.52.171.74 list=z-ip-list-tiktok
-add address=74.125.96.10 list=z-ip-list-youtube
 add address=71.18.36.224 list=z-ip-list-tiktok
 add address=139.177.239.129 list=z-ip-list-tiktok
 add address=98.98.121.42 list=z-ip-list-tiktok
@@ -1697,12 +1462,10 @@ add address=101.33.4.114 list=z-ip-list-tiktok
 add address=156.59.248.4 list=z-ip-list-tiktok
 add address=114.125.82.112 list=z-ip-list-tiktok
 add address=163.181.82.230 list=z-ip-list-tiktok
-add address=142.251.84.102 list=z-ip-list-youtube
 add address=163.181.82.229 list=z-ip-list-tiktok
 add address=23.52.171.114 list=z-ip-list-tiktok
 add address=163.181.82.233 list=z-ip-list-tiktok
 add address=101.33.6.93 list=z-ip-list-tiktok
-add address=173.194.0.134 list=z-ip-list-youtube
 add address=163.181.82.231 list=z-ip-list-tiktok
 add address=163.181.82.232 list=z-ip-list-tiktok
 add address=54.192.116.110 list=z-ip-list-tiktok
@@ -1712,12 +1475,10 @@ add address=101.33.26.69 list=z-ip-list-tiktok
 add address=163.181.82.228 list=z-ip-list-tiktok
 add address=163.171.220.237 list=z-ip-list-tiktok
 add address=163.181.82.227 list=z-ip-list-tiktok
-add address=142.251.90.231 list=z-ip-list-youtube
 add address=52.84.251.89 list=z-ip-list-tiktok
 add address=23.45.232.16 list=z-ip-list-tiktok
 add address=101.33.26.115 list=z-ip-list-tiktok
 add address=23.211.140.50 list=z-ip-list-tiktok
-add address=142.251.85.102 list=z-ip-list-youtube
 add address=69.192.1.153 list=z-ip-list-tiktok
 add address=23.45.232.50 list=z-ip-list-tiktok
 add address=23.45.232.58 list=z-ip-list-tiktok
@@ -1734,61 +1495,28 @@ add address=52.84.251.112 list=z-ip-list-tiktok
 add address=23.206.238.227 list=z-ip-list-tiktok
 add address=23.45.232.40 list=z-ip-list-tiktok
 add address=163.171.129.134 list=z-ip-list-tiktok
-add address=195.154.242.37 list=z-ip-list-youtube
 add address=23.206.238.224 list=z-ip-list-tiktok
 add address=23.213.185.80 list=z-ip-list-tiktok
 add address=23.206.238.219 list=z-ip-list-tiktok
 add address=23.45.232.66 list=z-ip-list-tiktok
 add address=23.45.232.67 list=z-ip-list-tiktok
-add address=142.251.175.102 list=z-ip-list-youtube
 add address=143.244.33.150 list=z-ip-list-tiktok
-add address=74.125.164.135 list=z-ip-list-youtube
-add address=142.251.90.200 list=z-ip-list-youtube
-add address=74.125.12.137 list=z-ip-list-youtube
-add address=173.194.22.74 list=z-ip-list-youtube
-add address=173.194.59.9 list=z-ip-list-youtube
-add address=142.251.88.40 list=z-ip-list-youtube
-add address=74.125.96.9 list=z-ip-list-youtube
 add address=43.152.148.231 list=z-ip-list-tiktok
-add address=74.125.101.234 list=z-ip-list-youtube
-add address=172.253.118.101 list=z-ip-list-youtube
-add address=142.251.85.135 list=z-ip-list-youtube
-add address=74.125.24.113 list=z-ip-list-youtube
-add address=74.125.12.234 list=z-ip-list-youtube
 add address=45.121.219.250 list=z-ip-list-tiktok
 add address=23.45.232.51 list=z-ip-list-tiktok
 add address=23.45.232.34 list=z-ip-list-tiktok
 add address=45.136.152.27 list=z-ip-list-tiktok
 add address=143.244.32.100 list=z-ip-list-tiktok
-add address=142.251.91.137 list=z-ip-list-youtube
-add address=142.251.84.105 list=z-ip-list-youtube
 add address=13.33.88.90 list=z-ip-list-tiktok
-add address=74.125.101.102 list=z-ip-list-youtube
-add address=74.125.164.38 list=z-ip-list-youtube
-add address=142.251.88.103 list=z-ip-list-youtube
-add address=142.251.85.136 list=z-ip-list-youtube
-add address=142.251.84.135 list=z-ip-list-youtube
-add address=74.125.12.198 list=z-ip-list-youtube
-add address=142.251.85.6 list=z-ip-list-youtube
 add address=111.94.253.88 list=z-ip-list-tiktok
 add address=138.113.112.20 list=z-ip-list-tiktok
 add address=43.132.81.144 list=z-ip-list-tiktok
-add address=74.125.10.103 list=z-ip-list-youtube
 add address=163.181.128.240 list=z-ip-list-tiktok
-add address=142.251.88.73 list=z-ip-list-youtube
-add address=142.251.84.137 list=z-ip-list-youtube
 add address=98.98.121.35 list=z-ip-list-tiktok
 add address=156.59.248.73 list=z-ip-list-tiktok
-add address=74.125.105.201 list=z-ip-list-youtube
-add address=74.125.175.135 list=z-ip-list-youtube
-add address=173.194.0.202 list=z-ip-list-youtube
-add address=173.194.22.40 list=z-ip-list-youtube
-add address=142.251.91.7 list=z-ip-list-youtube
 add address=23.193.96.80 list=z-ip-list-tiktok
 add address=114.10.2.201 list=z-ip-list-tiktok
 add address=128.1.176.138 list=z-ip-list-tiktok
-add address=74.125.101.39 list=z-ip-list-youtube
-add address=173.194.59.10 list=z-ip-list-youtube
 add address=23.211.140.160 list=z-ip-list-tiktok
 add address=202.70.57.106 list=z-ip-list-tiktok
 add address=202.70.57.120 list=z-ip-list-tiktok
@@ -1797,11 +1525,8 @@ add address=23.45.232.11 list=z-ip-list-tiktok
 add address=23.223.199.169 list=z-ip-list-tiktok
 add address=23.45.232.18 list=z-ip-list-tiktok
 add address=69.192.1.136 list=z-ip-list-tiktok
-add address=142.251.84.134 list=z-ip-list-youtube
 add address=34.36.65.236 list=z-ip-list-tiktok
 add address=23.206.238.216 list=z-ip-list-tiktok
-add address=142.251.88.9 list=z-ip-list-youtube
-add address=142.250.4.138 list=z-ip-list-youtube
 add address=69.192.1.161 list=z-ip-list-tiktok
 add address=23.45.232.19 list=z-ip-list-tiktok
 add address=23.206.238.242 list=z-ip-list-tiktok
@@ -1815,20 +1540,13 @@ add address=23.209.46.24 list=z-ip-list-tiktok
 add address=23.45.232.59 list=z-ip-list-tiktok
 add address=23.193.96.40 list=z-ip-list-tiktok
 add address=23.193.96.41 list=z-ip-list-tiktok
-add address=185.141.63.84 list=z-ip-list-youtube
 add address=23.45.232.27 list=z-ip-list-tiktok
 add address=23.45.232.48 list=z-ip-list-tiktok
 add address=23.62.212.76 list=z-ip-list-tiktok
 add address=184.85.232.33 list=z-ip-list-tiktok
-add address=173.194.59.38 list=z-ip-list-youtube
 add address=23.211.140.121 list=z-ip-list-tiktok
 add address=69.192.1.170 list=z-ip-list-tiktok
 add address=23.211.140.82 list=z-ip-list-tiktok
-add address=142.251.85.232 list=z-ip-list-youtube
-add address=173.194.49.167 list=z-ip-list-youtube
-add address=173.194.22.167 list=z-ip-list-youtube
-add address=74.125.12.232 list=z-ip-list-youtube
-add address=173.194.4.104 list=z-ip-list-youtube
 add address=111.94.254.11 list=z-ip-list-tiktok
 add address=156.59.151.18 list=z-ip-list-tiktok
 add address=143.244.57.35 list=z-ip-list-tiktok
@@ -1836,9 +1554,7 @@ add address=23.209.46.16 list=z-ip-list-tiktok
 add address=13.33.33.40 list=z-ip-list-tiktok
 add address=23.62.212.107 list=z-ip-list-tiktok
 add address=65.9.17.32 list=z-ip-list-tiktok
-add address=142.251.175.139 list=z-ip-list-youtube
 add address=101.33.5.79 list=z-ip-list-tiktok
-add address=142.251.85.39 list=z-ip-list-youtube
 add address=23.200.74.26 list=z-ip-list-tiktok
 add address=96.17.96.6 list=z-ip-list-tiktok
 add address=96.17.96.26 list=z-ip-list-tiktok
@@ -1856,7 +1572,6 @@ add address=96.17.96.5 list=z-ip-list-tiktok
 add address=23.200.74.48 list=z-ip-list-tiktok
 add address=96.17.96.32 list=z-ip-list-tiktok
 add address=96.17.96.19 list=z-ip-list-tiktok
-add address=173.194.22.166 list=z-ip-list-youtube
 add address=184.27.122.122 list=z-ip-list-tiktok
 add address=184.51.6.214 list=z-ip-list-tiktok
 add address=96.17.96.14 list=z-ip-list-tiktok
@@ -1880,9 +1595,7 @@ add address=23.49.60.161 list=z-ip-list-tiktok
 add address=111.94.253.82 list=z-ip-list-tiktok
 add address=101.33.26.119 list=z-ip-list-tiktok
 add address=23.49.60.210 list=z-ip-list-tiktok
-add address=142.251.90.198 list=z-ip-list-youtube
 add address=23.209.46.96 list=z-ip-list-tiktok
-add address=185.141.63.85 list=z-ip-list-youtube
 add address=23.209.46.15 list=z-ip-list-tiktok
 add address=23.62.212.70 list=z-ip-list-tiktok
 add address=34.117.4.5 list=z-ip-list-tiktok
@@ -1899,8 +1612,6 @@ add address=114.10.2.58 list=z-ip-list-tiktok
 add address=114.10.2.51 list=z-ip-list-tiktok
 add address=114.10.2.48 list=z-ip-list-tiktok
 add address=23.209.46.6 list=z-ip-list-tiktok
-add address=142.251.175.138 list=z-ip-list-youtube
-add address=173.194.59.105 list=z-ip-list-youtube
 add address=184.29.140.205 list=z-ip-list-tiktok
 add address=184.29.140.210 list=z-ip-list-tiktok
 add address=23.206.250.74 list=z-ip-list-tiktok
@@ -1910,11 +1621,9 @@ add address=13.33.88.46 list=z-ip-list-tiktok
 add address=13.33.88.127 list=z-ip-list-tiktok
 add address=13.227.254.114 list=z-ip-list-tiktok
 add address=13.227.254.65 list=z-ip-list-tiktok
-add address=74.125.4.134 list=z-ip-list-youtube
 add address=23.49.104.212 list=z-ip-list-tiktok
 add address=23.49.104.211 list=z-ip-list-tiktok
 add address=23.209.46.95 list=z-ip-list-tiktok
-add address=74.125.4.138 list=z-ip-list-youtube
 add address=23.2.16.27 list=z-ip-list-tiktok
 add address=23.2.16.35 list=z-ip-list-tiktok
 add address=23.202.35.33 list=z-ip-list-tiktok
@@ -1926,7 +1635,6 @@ add address=156.59.162.109 list=z-ip-list-tiktok
 add address=23.202.35.43 list=z-ip-list-tiktok
 add address=23.62.212.94 list=z-ip-list-tiktok
 add address=23.2.16.32 list=z-ip-list-tiktok
-add address=173.194.0.102 list=z-ip-list-youtube
 add address=23.62.212.80 list=z-ip-list-tiktok
 add address=111.94.253.120 list=z-ip-list-tiktok
 add address=96.17.96.13 list=z-ip-list-tiktok
@@ -1945,7 +1653,6 @@ add address=96.17.96.29 list=z-ip-list-tiktok
 add address=96.17.96.22 list=z-ip-list-tiktok
 add address=184.51.6.215 list=z-ip-list-tiktok
 add address=184.51.6.223 list=z-ip-list-tiktok
-add address=37.187.142.187 list=z-ip-list-youtube
 add address=23.49.104.210 list=z-ip-list-tiktok
 add address=23.49.104.208 list=z-ip-list-tiktok
 add address=184.51.6.196 list=z-ip-list-tiktok
@@ -2065,7 +1772,6 @@ add address=23.215.7.72 list=z-ip-list-tiktok
 add address=23.49.104.207 list=z-ip-list-tiktok
 add address=23.49.104.206 list=z-ip-list-tiktok
 add address=23.67.57.210 list=z-ip-list-tiktok
-add address=142.251.85.41 list=z-ip-list-youtube
 add address=23.67.57.242 list=z-ip-list-tiktok
 add address=23.67.57.248 list=z-ip-list-tiktok
 add address=23.40.40.10 list=z-ip-list-tiktok
@@ -2079,7 +1785,6 @@ add address=23.40.40.41 list=z-ip-list-tiktok
 add address=23.40.40.40 list=z-ip-list-tiktok
 add address=23.59.80.218 list=z-ip-list-tiktok
 add address=23.64.122.105 list=z-ip-list-tiktok
-add address=142.251.88.72 list=z-ip-list-youtube
 add address=23.40.40.114 list=z-ip-list-tiktok
 add address=111.94.253.107 list=z-ip-list-tiktok
 add address=23.64.122.107 list=z-ip-list-tiktok
@@ -2090,7 +1795,6 @@ add address=23.40.40.112 list=z-ip-list-tiktok
 add address=52.84.251.91 list=z-ip-list-tiktok
 add address=52.84.251.49 list=z-ip-list-tiktok
 add address=23.206.238.249 list=z-ip-list-tiktok
-add address=142.251.85.103 list=z-ip-list-youtube
 add address=23.45.232.49 list=z-ip-list-tiktok
 add address=23.49.60.184 list=z-ip-list-tiktok
 add address=23.45.232.42 list=z-ip-list-tiktok
@@ -2102,13 +1806,10 @@ add address=104.88.70.208 list=z-ip-list-tiktok
 add address=23.40.40.203 list=z-ip-list-tiktok
 add address=104.88.70.210 list=z-ip-list-tiktok
 add address=23.40.40.226 list=z-ip-list-tiktok
-add address=172.253.118.138 list=z-ip-list-youtube
 add address=156.59.162.106 list=z-ip-list-tiktok
-add address=142.251.91.136 list=z-ip-list-youtube
 add address=104.88.70.241 list=z-ip-list-tiktok
 add address=23.40.40.208 list=z-ip-list-tiktok
 add address=23.40.40.224 list=z-ip-list-tiktok
-add address=173.194.12.166 list=z-ip-list-youtube
 add address=104.88.70.179 list=z-ip-list-tiktok
 add address=23.40.40.123 list=z-ip-list-tiktok
 add address=111.94.253.81 list=z-ip-list-tiktok
@@ -2124,8 +1825,6 @@ add address=23.206.238.128 list=z-ip-list-tiktok
 add address=23.64.122.83 list=z-ip-list-tiktok
 add address=23.206.238.121 list=z-ip-list-tiktok
 add address=23.206.238.217 list=z-ip-list-tiktok
-add address=142.251.88.138 list=z-ip-list-youtube
-add address=195.154.174.130 list=z-ip-list-youtube
 add address=184.28.235.210 list=z-ip-list-tiktok
 add address=23.40.40.19 list=z-ip-list-tiktok
 add address=184.28.235.225 list=z-ip-list-tiktok
@@ -2198,7 +1897,6 @@ add address=156.251.75.29 list=z-ip-list-tiktok
 add address=23.59.80.195 list=z-ip-list-tiktok
 add address=23.202.35.26 list=z-ip-list-tiktok
 add address=199.232.46.113 list=z-ip-list-tiktok
-add address=142.251.175.100 list=z-ip-list-youtube
 add address=23.202.35.16 list=z-ip-list-tiktok
 add address=23.59.80.193 list=z-ip-list-tiktok
 add address=18.155.68.75 list=z-ip-list-tiktok
@@ -2219,31 +1917,18 @@ add address=114.10.2.249 list=z-ip-list-tiktok
 add address=156.251.75.213 list=z-ip-list-tiktok
 add address=23.45.232.43 list=z-ip-list-tiktok
 add address=13.33.88.27 list=z-ip-list-tiktok
-add address=74.125.10.105 list=z-ip-list-youtube
 add address=13.33.33.39 list=z-ip-list-tiktok
 add address=23.45.232.35 list=z-ip-list-tiktok
 add address=23.213.185.81 list=z-ip-list-tiktok
 add address=156.59.106.226 list=z-ip-list-tiktok
-add address=74.125.200.113 list=z-ip-list-youtube
-add address=74.125.101.38 list=z-ip-list-youtube
-add address=142.251.84.136 list=z-ip-list-youtube
 add address=23.49.60.128 list=z-ip-list-tiktok
-add address=142.251.88.135 list=z-ip-list-youtube
 add address=143.244.57.37 list=z-ip-list-tiktok
-add address=195.154.251.99 list=z-ip-list-youtube
-add address=103.234.122.174 list=z-ip-list-youtube
-add address=103.234.122.178 list=z-ip-list-youtube
 add address=23.45.232.26 list=z-ip-list-tiktok
-add address=142.251.91.40 list=z-ip-list-youtube
 add address=99.86.178.19 list=z-ip-list-tiktok
 add address=23.62.212.73 list=z-ip-list-tiktok
 add address=34.117.26.217 list=z-ip-list-tiktok
-add address=74.125.101.233 list=z-ip-list-youtube
-add address=91.92.111.133 list=z-ip-list-youtube
 add address=138.113.121.244 list=z-ip-list-tiktok
-add address=142.251.85.233 list=z-ip-list-youtube
 add address=96.17.96.8 list=z-ip-list-tiktok
-add address=173.194.4.103 list=z-ip-list-youtube
 add address=23.215.7.82 list=z-ip-list-tiktok
 add address=23.215.7.96 list=z-ip-list-tiktok
 add address=23.209.46.143 list=z-ip-list-tiktok
@@ -2311,13 +1996,10 @@ add address=23.215.7.73 list=z-ip-list-tiktok
 add address=23.59.80.208 list=z-ip-list-tiktok
 add address=103.160.155.95 list=z-ip-list-tiktok
 add address=23.193.96.66 list=z-ip-list-tiktok
-add address=74.125.12.134 list=z-ip-list-youtube
-add address=173.194.59.42 list=z-ip-list-youtube
 add address=23.211.60.108 list=z-ip-list-tiktok
 add address=23.200.142.200 list=z-ip-list-tiktok
 add address=101.33.4.8 list=z-ip-list-tiktok
 add address=23.52.171.121 list=z-ip-list-tiktok
-add address=37.187.143.172 list=z-ip-list-youtube
 add address=184.27.123.59 list=z-ip-list-tiktok
 add address=119.28.164.13 list=z-ip-list-tiktok
 add address=156.59.151.16 list=z-ip-list-tiktok
@@ -2328,7 +2010,6 @@ add address=23.209.46.160 list=z-ip-list-tiktok
 add address=23.49.60.176 list=z-ip-list-tiktok
 add address=45.136.152.26 list=z-ip-list-tiktok
 add address=143.244.32.98 list=z-ip-list-tiktok
-add address=142.251.91.42 list=z-ip-list-youtube
 add address=184.27.122.83 list=z-ip-list-tiktok
 add address=23.215.7.93 list=z-ip-list-tiktok
 add address=184.28.235.163 list=z-ip-list-tiktok
@@ -2390,7 +2071,6 @@ add address=23.223.18.200 list=z-ip-list-tiktok
 add address=23.49.60.159 list=z-ip-list-tiktok
 add address=23.223.18.153 list=z-ip-list-tiktok
 add address=23.223.18.176 list=z-ip-list-tiktok
-add address=142.251.90.199 list=z-ip-list-youtube
 add address=184.51.102.72 list=z-ip-list-tiktok
 add address=23.223.18.139 list=z-ip-list-tiktok
 add address=23.223.18.147 list=z-ip-list-tiktok
@@ -2440,7 +2120,6 @@ add address=23.200.74.194 list=z-ip-list-tiktok
 add address=23.49.60.201 list=z-ip-list-tiktok
 add address=184.51.102.43 list=z-ip-list-tiktok
 add address=23.209.46.76 list=z-ip-list-tiktok
-add address=142.251.88.134 list=z-ip-list-youtube
 add address=156.225.96.23 list=z-ip-list-tiktok
 add address=23.62.212.99 list=z-ip-list-tiktok
 add address=23.209.46.69 list=z-ip-list-tiktok
@@ -2455,7 +2134,6 @@ add address=180.250.81.20 list=z-ip-list-tiktok
 add address=156.245.9.44 list=z-ip-list-tiktok
 add address=184.51.102.122 list=z-ip-list-tiktok
 add address=23.193.97.114 list=z-ip-list-tiktok
-add address=185.141.63.2 list=z-ip-list-youtube
 add address=23.200.74.129 list=z-ip-list-tiktok
 add address=23.200.74.115 list=z-ip-list-tiktok
 add address=23.200.74.216 list=z-ip-list-tiktok
@@ -2464,24 +2142,17 @@ add address=98.98.121.31 list=z-ip-list-tiktok
 add address=114.125.112.82 list=z-ip-list-tiktok
 add address=23.59.80.179 list=z-ip-list-tiktok
 add address=13.224.249.95 list=z-ip-list-tiktok
-add address=114.10.0.18 list=z-ip-list-youtube
-add address=114.10.0.17 list=z-ip-list-youtube
 add address=23.248.171.111 list=z-ip-list-tiktok
 add address=54.192.150.105 list=z-ip-list-tiktok
-add address=112.215.183.143 list=z-ip-list-youtube
 add address=103.234.122.102 list=z-ip-list-tiktok
 add address=23.48.173.24 list=z-ip-list-tiktok
 add address=202.70.57.11 list=z-ip-list-tiktok
-add address=94.23.58.173 list=z-ip-list-youtube
 add address=103.234.122.103 list=z-ip-list-tiktok
 add address=163.181.27.224 list=z-ip-list-tiktok
 add address=180.250.169.37 list=z-ip-list-tiktok
 add address=119.28.164.11 list=z-ip-list-tiktok
-add address=142.251.91.8 list=z-ip-list-youtube
-add address=142.251.91.9 list=z-ip-list-youtube
 add address=23.62.212.131 list=z-ip-list-tiktok
 add address=23.62.212.133 list=z-ip-list-tiktok
-add address=195.154.235.51 list=z-ip-list-youtube
 add address=54.192.150.59 list=z-ip-list-tiktok
 add address=23.49.104.171 list=z-ip-list-tiktok
 add address=119.28.164.76 list=z-ip-list-tiktok
@@ -2493,7 +2164,6 @@ add address=13.226.120.129 list=z-ip-list-tiktok
 add address=13.226.120.56 list=z-ip-list-tiktok
 add address=23.66.3.140 list=z-ip-list-tiktok
 add address=23.66.3.134 list=z-ip-list-tiktok
-add address=142.251.85.105 list=z-ip-list-youtube
 add address=54.192.18.35 list=z-ip-list-tiktok
 add address=54.192.18.94 list=z-ip-list-tiktok
 add address=54.192.18.58 list=z-ip-list-tiktok
@@ -2511,13 +2181,11 @@ add address=163.171.220.236 list=z-ip-list-tiktok
 add address=54.192.150.63 list=z-ip-list-tiktok
 add address=23.209.46.133 list=z-ip-list-tiktok
 add address=101.33.26.8 list=z-ip-list-tiktok
-add address=74.125.171.7 list=z-ip-list-youtube
 add address=111.94.254.24 list=z-ip-list-tiktok
 add address=23.209.46.147 list=z-ip-list-tiktok
 add address=23.61.252.81 list=z-ip-list-tiktok
 add address=65.9.17.127 list=z-ip-list-tiktok
 add address=92.122.188.174 list=z-ip-list-tiktok
-add address=74.125.12.201 list=z-ip-list-youtube
 add address=92.122.188.200 list=z-ip-list-tiktok
 add address=156.225.99.8 list=z-ip-list-tiktok
 add address=163.181.27.226 list=z-ip-list-tiktok
@@ -2525,9 +2193,7 @@ add address=23.72.90.69 list=z-ip-list-tiktok
 add address=163.181.27.228 list=z-ip-list-tiktok
 add address=54.192.18.79 list=z-ip-list-tiktok
 add address=96.17.96.30 list=z-ip-list-tiktok
-add address=142.251.90.201 list=z-ip-list-youtube
 add address=23.248.171.115 list=z-ip-list-tiktok
-add address=185.141.63.4 list=z-ip-list-youtube
 add address=13.33.88.107 list=z-ip-list-tiktok
 add address=13.33.88.125 list=z-ip-list-tiktok
 add address=13.33.88.14 list=z-ip-list-tiktok
@@ -2546,10 +2212,6 @@ add address=104.91.69.25 list=z-ip-list-tiktok
 add address=23.49.104.167 list=z-ip-list-tiktok
 add address=23.49.104.178 list=z-ip-list-tiktok
 add address=23.49.104.175 list=z-ip-list-tiktok
-add address=112.215.101.140 list=z-ip-list-youtube
-add address=140.213.63.80 list=z-ip-list-youtube
-add address=112.215.184.13 list=z-ip-list-youtube
-add address=74.125.12.70 list=z-ip-list-youtube
 add address=23.49.104.169 list=z-ip-list-tiktok
 add address=104.91.69.57 list=z-ip-list-tiktok
 add address=23.49.104.170 list=z-ip-list-tiktok
@@ -2558,7 +2220,6 @@ add address=138.113.114.195 list=z-ip-list-tiktok
 add address=23.49.104.177 list=z-ip-list-tiktok
 add address=23.206.238.233 list=z-ip-list-tiktok
 add address=104.91.69.33 list=z-ip-list-tiktok
-add address=74.125.164.40 list=z-ip-list-youtube
 add address=104.91.69.26 list=z-ip-list-tiktok
 add address=202.70.50.48 list=z-ip-list-tiktok
 add address=202.70.57.115 list=z-ip-list-tiktok
@@ -2569,8 +2230,6 @@ add address=92.122.188.205 list=z-ip-list-tiktok
 add address=104.91.69.11 list=z-ip-list-tiktok
 add address=23.49.60.209 list=z-ip-list-tiktok
 add address=35.157.240.29 list=z-ip-list-tiktok
-add address=112.215.88.12 list=z-ip-list-youtube
-add address=74.125.171.71 list=z-ip-list-youtube
 add address=23.49.60.153 list=z-ip-list-tiktok
 add address=104.91.69.59 list=z-ip-list-tiktok
 add address=104.91.69.56 list=z-ip-list-tiktok
@@ -2594,14 +2253,12 @@ add address=103.134.189.136 list=z-ip-list-tiktok
 add address=23.32.61.143 list=z-ip-list-tiktok
 add address=180.250.169.46 list=z-ip-list-tiktok
 add address=23.49.60.199 list=z-ip-list-tiktok
-add address=142.251.91.73 list=z-ip-list-youtube
 add address=23.209.46.218 list=z-ip-list-tiktok
 add address=23.209.46.199 list=z-ip-list-tiktok
 add address=104.88.71.57 list=z-ip-list-tiktok
 add address=104.88.71.114 list=z-ip-list-tiktok
 add address=23.52.40.152 list=z-ip-list-tiktok
 add address=23.52.40.169 list=z-ip-list-tiktok
-add address=112.215.212.12 list=z-ip-list-youtube
 add address=23.52.40.168 list=z-ip-list-tiktok
 add address=23.52.40.178 list=z-ip-list-tiktok
 add address=23.52.40.184 list=z-ip-list-tiktok
@@ -2622,12 +2279,10 @@ add address=23.52.40.56 list=z-ip-list-tiktok
 add address=23.52.40.59 list=z-ip-list-tiktok
 add address=23.52.40.74 list=z-ip-list-tiktok
 add address=23.52.40.171 list=z-ip-list-tiktok
-add address=74.125.12.74 list=z-ip-list-youtube
 add address=23.52.40.185 list=z-ip-list-tiktok
 add address=23.52.40.162 list=z-ip-list-tiktok
 add address=23.52.40.163 list=z-ip-list-tiktok
 add address=23.48.5.13 list=z-ip-list-tiktok
-add address=142.251.90.234 list=z-ip-list-youtube
 add address=23.48.107.43 list=z-ip-list-tiktok
 add address=23.48.107.11 list=z-ip-list-tiktok
 add address=23.48.107.16 list=z-ip-list-tiktok
@@ -2670,7 +2325,6 @@ add address=104.88.70.90 list=z-ip-list-tiktok
 add address=104.88.70.75 list=z-ip-list-tiktok
 add address=23.52.40.115 list=z-ip-list-tiktok
 add address=23.52.40.145 list=z-ip-list-tiktok
-add address=195.154.241.165 list=z-ip-list-youtube
 add address=23.52.40.139 list=z-ip-list-tiktok
 add address=104.88.70.81 list=z-ip-list-tiktok
 add address=104.88.70.82 list=z-ip-list-tiktok
@@ -2694,13 +2348,11 @@ add address=23.52.40.80 list=z-ip-list-tiktok
 add address=23.52.40.99 list=z-ip-list-tiktok
 add address=23.52.40.105 list=z-ip-list-tiktok
 add address=23.59.80.235 list=z-ip-list-tiktok
-add address=74.125.96.6 list=z-ip-list-youtube
 add address=23.52.40.50 list=z-ip-list-tiktok
 add address=104.88.71.58 list=z-ip-list-tiktok
 add address=18.172.21.114 list=z-ip-list-tiktok
 add address=23.52.40.107 list=z-ip-list-tiktok
 add address=184.28.235.227 list=z-ip-list-tiktok
-add address=142.251.84.138 list=z-ip-list-youtube
 add address=23.44.11.240 list=z-ip-list-tiktok
 add address=184.27.122.155 list=z-ip-list-tiktok
 add address=23.44.11.251 list=z-ip-list-tiktok
@@ -2712,9 +2364,7 @@ add address=23.209.46.80 list=z-ip-list-tiktok
 add address=23.63.111.65 list=z-ip-list-tiktok
 add address=23.61.252.17 list=z-ip-list-tiktok
 add address=23.44.11.226 list=z-ip-list-tiktok
-add address=142.251.85.202 list=z-ip-list-youtube
 add address=23.44.11.243 list=z-ip-list-tiktok
-add address=142.251.88.106 list=z-ip-list-youtube
 add address=23.44.11.217 list=z-ip-list-tiktok
 add address=156.59.8.166 list=z-ip-list-tiktok
 add address=23.211.60.116 list=z-ip-list-tiktok
@@ -2726,7 +2376,6 @@ add address=61.247.0.85 list=z-ip-list-tiktok
 add address=202.70.57.104 list=z-ip-list-tiktok
 add address=23.209.46.161 list=z-ip-list-tiktok
 add address=23.61.252.74 list=z-ip-list-tiktok
-add address=173.194.4.106 list=z-ip-list-youtube
 add address=61.247.0.67 list=z-ip-list-tiktok
 add address=61.247.0.101 list=z-ip-list-tiktok
 add address=104.100.168.112 list=z-ip-list-tiktok
@@ -2736,7 +2385,6 @@ add address=23.214.85.89 list=z-ip-list-tiktok
 add address=23.214.85.99 list=z-ip-list-tiktok
 add address=184.26.127.17 list=z-ip-list-tiktok
 add address=184.26.127.10 list=z-ip-list-tiktok
-add address=88.80.145.142 list=z-ip-list-youtube
 add address=184.26.127.16 list=z-ip-list-tiktok
 add address=103.234.121.152 list=z-ip-list-tiktok
 add address=61.247.0.104 list=z-ip-list-tiktok
@@ -2755,9 +2403,6 @@ add address=143.244.33.152 list=z-ip-list-tiktok
 add address=202.122.146.109 list=z-ip-list-tiktok
 add address=23.44.10.210 list=z-ip-list-tiktok
 add address=23.44.11.202 list=z-ip-list-tiktok
-add address=173.194.3.7 list=z-ip-list-youtube
-add address=74.125.168.72 list=z-ip-list-youtube
-add address=74.125.171.9 list=z-ip-list-youtube
 add address=156.245.9.49 list=z-ip-list-tiktok
 add address=23.44.11.201 list=z-ip-list-tiktok
 add address=156.251.75.24 list=z-ip-list-tiktok
@@ -2770,10 +2415,8 @@ add address=104.88.70.24 list=z-ip-list-tiktok
 add address=104.88.70.43 list=z-ip-list-tiktok
 add address=104.88.70.65 list=z-ip-list-tiktok
 add address=104.88.70.59 list=z-ip-list-tiktok
-add address=142.251.91.38 list=z-ip-list-youtube
 add address=185.180.14.179 list=z-ip-list-tiktok
 add address=23.248.171.110 list=z-ip-list-tiktok
-add address=142.251.91.39 list=z-ip-list-youtube
 add address=143.244.33.172 list=z-ip-list-tiktok
 add address=23.48.107.66 list=z-ip-list-tiktok
 add address=182.0.128.113 list=z-ip-list-tiktok
@@ -2788,18 +2431,13 @@ add address=101.33.4.7 list=z-ip-list-tiktok
 add address=163.171.135.104 list=z-ip-list-tiktok
 add address=43.132.80.195 list=z-ip-list-tiktok
 add address=96.17.180.188 list=z-ip-list-tiktok
-add address=182.253.108.205 list=z-ip-list-youtube
 add address=23.52.40.10 list=z-ip-list-tiktok
 add address=156.245.9.42 list=z-ip-list-tiktok
 add address=23.59.168.154 list=z-ip-list-tiktok
-add address=209.85.228.10 list=z-ip-list-youtube
-add address=74.125.10.104 list=z-ip-list-youtube
 add address=156.245.9.48 list=z-ip-list-tiktok
 add address=23.52.171.235 list=z-ip-list-tiktok
 add address=185.93.3.17 list=z-ip-list-tiktok
 add address=185.76.11.71 list=z-ip-list-tiktok
-add address=173.194.59.106 list=z-ip-list-youtube
-add address=142.251.91.74 list=z-ip-list-youtube
 add address=23.49.60.65 list=z-ip-list-tiktok
 add address=96.17.180.3 list=z-ip-list-tiktok
 add address=184.87.193.151 list=z-ip-list-tiktok
@@ -2834,7 +2472,6 @@ add address=23.47.190.192 list=z-ip-list-tiktok
 add address=23.47.190.171 list=z-ip-list-tiktok
 add address=23.47.190.216 list=z-ip-list-tiktok
 add address=23.47.190.155 list=z-ip-list-tiktok
-add address=142.251.90.232 list=z-ip-list-youtube
 add address=96.17.72.25 list=z-ip-list-tiktok
 add address=140.213.50.219 list=z-ip-list-tiktok
 add address=96.17.72.57 list=z-ip-list-tiktok
@@ -2872,9 +2509,7 @@ add address=23.52.171.152 list=z-ip-list-tiktok
 add address=184.28.235.208 list=z-ip-list-tiktok
 add address=23.47.190.146 list=z-ip-list-tiktok
 add address=23.47.190.114 list=z-ip-list-tiktok
-add address=88.80.148.8 list=z-ip-list-youtube
 add address=34.36.75.57 list=z-ip-list-tiktok
-add address=74.125.164.42 list=z-ip-list-youtube
 add address=23.52.171.99 list=z-ip-list-tiktok
 add address=184.27.122.195 list=z-ip-list-tiktok
 add address=23.59.80.217 list=z-ip-list-tiktok
@@ -2895,7 +2530,6 @@ add address=138.113.114.206 list=z-ip-list-tiktok
 add address=138.113.125.45 list=z-ip-list-tiktok
 add address=184.27.123.153 list=z-ip-list-tiktok
 add address=23.59.80.232 list=z-ip-list-tiktok
-add address=88.80.148.33 list=z-ip-list-youtube
 add address=23.59.80.67 list=z-ip-list-tiktok
 add address=45.121.219.184 list=z-ip-list-tiktok
 add address=184.27.122.73 list=z-ip-list-tiktok
@@ -2999,16 +2633,12 @@ add address=23.193.96.98 list=z-ip-list-tiktok
 add address=23.47.190.72 list=z-ip-list-tiktok
 add address=23.47.190.41 list=z-ip-list-tiktok
 add address=23.47.190.42 list=z-ip-list-tiktok
-add address=74.125.101.42 list=z-ip-list-youtube
 add address=23.47.190.56 list=z-ip-list-tiktok
 add address=23.47.190.48 list=z-ip-list-tiktok
 add address=156.250.3.41 list=z-ip-list-tiktok
 add address=202.56.174.56 list=z-ip-list-tiktok
 add address=163.171.220.235 list=z-ip-list-tiktok
-add address=173.194.51.103 list=z-ip-list-youtube
-add address=74.125.164.136 list=z-ip-list-youtube
 add address=65.9.17.101 list=z-ip-list-tiktok
-add address=173.194.22.72 list=z-ip-list-youtube
 add address=23.47.190.49 list=z-ip-list-tiktok
 add address=23.47.190.66 list=z-ip-list-tiktok
 add address=23.47.190.73 list=z-ip-list-tiktok
@@ -3017,11 +2647,8 @@ add address=23.47.190.64 list=z-ip-list-tiktok
 add address=23.47.190.160 list=z-ip-list-tiktok
 add address=23.200.218.114 list=z-ip-list-tiktok
 add address=23.47.190.170 list=z-ip-list-tiktok
-add address=173.194.51.102 list=z-ip-list-youtube
 add address=23.59.80.233 list=z-ip-list-tiktok
-add address=74.125.101.73 list=z-ip-list-youtube
 add address=23.209.46.146 list=z-ip-list-tiktok
-add address=74.125.101.72 list=z-ip-list-youtube
 add address=156.251.75.21 list=z-ip-list-tiktok
 add address=23.47.190.115 list=z-ip-list-tiktok
 add address=23.47.190.121 list=z-ip-list-tiktok
@@ -3047,7 +2674,6 @@ add address=23.48.107.75 list=z-ip-list-tiktok
 add address=23.48.107.9 list=z-ip-list-tiktok
 add address=23.59.80.112 list=z-ip-list-tiktok
 add address=23.44.5.122 list=z-ip-list-tiktok
-add address=173.194.49.168 list=z-ip-list-youtube
 add address=23.44.4.186 list=z-ip-list-tiktok
 add address=23.44.4.147 list=z-ip-list-tiktok
 add address=23.59.80.138 list=z-ip-list-tiktok
@@ -3056,27 +2682,18 @@ add address=23.59.80.155 list=z-ip-list-tiktok
 add address=23.59.80.163 list=z-ip-list-tiktok
 add address=23.59.80.106 list=z-ip-list-tiktok
 add address=23.59.80.99 list=z-ip-list-tiktok
-add address=74.125.164.71 list=z-ip-list-youtube
 add address=23.47.190.32 list=z-ip-list-tiktok
 add address=23.47.190.58 list=z-ip-list-tiktok
 add address=23.47.190.16 list=z-ip-list-tiktok
 add address=23.47.190.43 list=z-ip-list-tiktok
-add address=173.194.59.7 list=z-ip-list-youtube
-add address=142.251.85.201 list=z-ip-list-youtube
-add address=74.125.101.40 list=z-ip-list-youtube
 add address=23.210.250.49 list=z-ip-list-tiktok
 add address=23.62.212.69 list=z-ip-list-tiktok
-add address=173.194.59.102 list=z-ip-list-youtube
-add address=142.251.85.231 list=z-ip-list-youtube
 add address=23.211.140.153 list=z-ip-list-tiktok
-add address=142.251.88.105 list=z-ip-list-youtube
 add address=140.213.23.152 list=z-ip-list-tiktok
 add address=13.224.167.37 list=z-ip-list-tiktok
-add address=173.194.59.6 list=z-ip-list-youtube
 add address=138.113.125.12 list=z-ip-list-tiktok
 add address=114.10.2.33 list=z-ip-list-tiktok
 add address=185.180.15.74 list=z-ip-list-tiktok
-add address=182.2.34.76 list=z-ip-list-youtube
 add address=156.225.110.7 list=z-ip-list-tiktok
 add address=54.254.173.234 list=z-ip-list-tiktok
 add address=35.201.119.36 list=z-ip-list-tiktok
@@ -3087,7 +2704,6 @@ add address=184.27.123.162 list=z-ip-list-tiktok
 add address=23.59.80.128 list=z-ip-list-tiktok
 add address=23.59.80.153 list=z-ip-list-tiktok
 add address=23.59.80.121 list=z-ip-list-tiktok
-add address=74.125.101.201 list=z-ip-list-youtube
 add address=23.223.47.33 list=z-ip-list-tiktok
 add address=23.223.47.82 list=z-ip-list-tiktok
 add address=23.223.47.25 list=z-ip-list-tiktok
@@ -3142,8 +2758,6 @@ add address=13.225.103.44 list=z-ip-list-tiktok
 add address=23.213.43.207 list=z-ip-list-tiktok
 add address=23.213.43.223 list=z-ip-list-tiktok
 add address=23.213.43.210 list=z-ip-list-tiktok
-add address=173.194.51.106 list=z-ip-list-youtube
-add address=142.251.91.72 list=z-ip-list-youtube
 add address=138.113.219.71 list=z-ip-list-tiktok
 add address=23.198.11.70 list=z-ip-list-tiktok
 add address=104.115.38.179 list=z-ip-list-tiktok
@@ -3154,10 +2768,8 @@ add address=23.213.43.217 list=z-ip-list-tiktok
 add address=23.198.11.86 list=z-ip-list-tiktok
 add address=23.198.11.60 list=z-ip-list-tiktok
 add address=104.115.38.177 list=z-ip-list-tiktok
-add address=74.125.101.106 list=z-ip-list-youtube
 add address=23.213.43.215 list=z-ip-list-tiktok
 add address=138.113.121.89 list=z-ip-list-tiktok
-add address=142.251.88.70 list=z-ip-list-youtube
 add address=54.192.18.76 list=z-ip-list-tiktok
 add address=104.115.38.187 list=z-ip-list-tiktok
 add address=104.115.38.163 list=z-ip-list-tiktok
@@ -3217,7 +2829,6 @@ add address=114.10.3.90 list=z-ip-list-tiktok
 add address=125.56.219.49 list=z-ip-list-tiktok
 add address=96.17.72.18 list=z-ip-list-tiktok
 add address=96.17.72.73 list=z-ip-list-tiktok
-add address=173.194.59.8 list=z-ip-list-youtube
 add address=96.17.72.42 list=z-ip-list-tiktok
 add address=96.17.72.59 list=z-ip-list-tiktok
 add address=96.17.72.49 list=z-ip-list-tiktok
@@ -3234,19 +2845,15 @@ add address=92.223.116.253 list=z-ip-list-tiktok
 add address=23.210.250.112 list=z-ip-list-tiktok
 add address=23.210.250.64 list=z-ip-list-tiktok
 add address=23.47.190.152 list=z-ip-list-tiktok
-add address=195.154.252.221 list=z-ip-list-youtube
 add address=23.59.80.130 list=z-ip-list-tiktok
 add address=23.47.190.179 list=z-ip-list-tiktok
-add address=202.70.58.17 list=z-ip-list-youtube
 add address=23.59.80.129 list=z-ip-list-tiktok
 add address=23.47.190.201 list=z-ip-list-tiktok
 add address=96.17.72.26 list=z-ip-list-tiktok
 add address=23.248.171.107 list=z-ip-list-tiktok
 add address=184.28.235.202 list=z-ip-list-tiktok
 add address=156.240.94.47 list=z-ip-list-tiktok
-add address=202.70.58.16 list=z-ip-list-youtube
 add address=180.250.81.73 list=z-ip-list-tiktok
-add address=142.251.88.137 list=z-ip-list-youtube
 add address=184.28.235.226 list=z-ip-list-tiktok
 add address=184.28.235.211 list=z-ip-list-tiktok
 add address=184.28.235.195 list=z-ip-list-tiktok
@@ -3263,7 +2870,6 @@ add address=23.211.140.155 list=z-ip-list-tiktok
 add address=184.28.235.219 list=z-ip-list-tiktok
 add address=184.27.122.203 list=z-ip-list-tiktok
 add address=184.28.235.179 list=z-ip-list-tiktok
-add address=173.194.4.102 list=z-ip-list-youtube
 add address=184.27.122.75 list=z-ip-list-tiktok
 add address=184.27.122.74 list=z-ip-list-tiktok
 add address=184.27.122.153 list=z-ip-list-tiktok
@@ -3334,21 +2940,14 @@ add address=23.47.190.184 list=z-ip-list-tiktok
 add address=23.47.190.176 list=z-ip-list-tiktok
 add address=23.47.190.195 list=z-ip-list-tiktok
 add address=23.47.190.208 list=z-ip-list-tiktok
-add address=188.165.192.126 list=z-ip-list-youtube
-add address=142.251.90.230 list=z-ip-list-youtube
 add address=163.181.42.230 list=z-ip-list-tiktok
 add address=143.244.57.42 list=z-ip-list-tiktok
 add address=163.181.42.229 list=z-ip-list-tiktok
-add address=114.10.0.16 list=z-ip-list-youtube
-add address=173.194.59.71 list=z-ip-list-youtube
-add address=203.118.0.109 list=z-ip-list-youtube
 add address=138.113.125.46 list=z-ip-list-tiktok
-add address=142.251.91.71 list=z-ip-list-youtube
 add address=114.10.2.59 list=z-ip-list-tiktok
 add address=114.10.2.40 list=z-ip-list-tiktok
 add address=114.10.2.34 list=z-ip-list-tiktok
 add address=156.59.106.227 list=z-ip-list-tiktok
-add address=74.125.7.167 list=z-ip-list-youtube
 add address=202.169.45.209 list=z-ip-list-tiktok
 add address=202.169.45.224 list=z-ip-list-tiktok
 add address=202.169.45.226 list=z-ip-list-tiktok
@@ -3359,8 +2958,6 @@ add address=43.152.53.242 list=z-ip-list-tiktok
 add address=114.5.9.145 list=z-ip-list-tiktok
 add address=114.4.168.74 list=z-ip-list-tiktok
 add address=206.84.107.45 list=z-ip-list-tiktok
-add address=74.125.6.169 list=z-ip-list-youtube
-add address=188.165.195.130 list=z-ip-list-youtube
 add address=180.250.81.12 list=z-ip-list-tiktok
 add address=114.10.2.168 list=z-ip-list-tiktok
 add address=128.1.176.226 list=z-ip-list-tiktok
@@ -3369,7 +2966,6 @@ add address=114.10.2.224 list=z-ip-list-tiktok
 add address=23.221.50.178 list=z-ip-list-tiktok
 add address=23.221.50.234 list=z-ip-list-tiktok
 add address=23.221.50.219 list=z-ip-list-tiktok
-add address=142.251.91.233 list=z-ip-list-youtube
 add address=114.5.1.216 list=z-ip-list-tiktok
 add address=114.10.2.169 list=z-ip-list-tiktok
 add address=3.162.58.55 list=z-ip-list-tiktok
@@ -3396,20 +2992,17 @@ add address=184.27.123.139 list=z-ip-list-tiktok
 add address=156.251.71.121 list=z-ip-list-tiktok
 add address=23.59.168.96 list=z-ip-list-tiktok
 add address=23.47.190.169 list=z-ip-list-tiktok
-add address=34.204.221.81 list=z-ip-list-youtube
 add address=23.210.250.81 list=z-ip-list-tiktok
 add address=156.59.248.3 list=z-ip-list-tiktok
 add address=23.210.250.67 list=z-ip-list-tiktok
 add address=82.156.94.48 list=z-ip-list-tiktok
 add address=184.27.122.145 list=z-ip-list-tiktok
 add address=114.10.3.73 list=z-ip-list-tiktok
-add address=195.154.253.49 list=z-ip-list-youtube
 add address=23.59.168.130 list=z-ip-list-tiktok
 add address=23.59.168.113 list=z-ip-list-tiktok
 add address=23.52.171.81 list=z-ip-list-tiktok
 add address=23.52.171.72 list=z-ip-list-tiktok
 add address=119.28.164.16 list=z-ip-list-tiktok
-add address=142.251.85.40 list=z-ip-list-youtube
 add address=18.64.37.119 list=z-ip-list-tiktok
 add address=114.125.83.251 list=z-ip-list-tiktok
 add address=182.2.81.9 list=z-ip-list-tiktok
@@ -3426,23 +3019,8 @@ add address=101.33.26.120 list=z-ip-list-tiktok
 add address=23.47.190.154 list=z-ip-list-tiktok
 add address=101.33.26.249 list=z-ip-list-tiktok
 add address=23.202.33.64 list=z-ip-list-tiktok
-add address=74.125.12.167 list=z-ip-list-youtube
-add address=182.2.64.140 list=z-ip-list-youtube
-add address=142.251.88.42 list=z-ip-list-youtube
-add address=172.217.145.39 list=z-ip-list-youtube
-add address=172.217.145.38 list=z-ip-list-youtube
-add address=142.251.85.7 list=z-ip-list-youtube
-add address=140.213.209.109 list=z-ip-list-youtube
-add address=112.215.184.17 list=z-ip-list-youtube
-add address=112.215.184.15 list=z-ip-list-youtube
-add address=142.251.91.135 list=z-ip-list-youtube
 add address=65.8.11.93 list=z-ip-list-tiktok
-add address=74.125.164.39 list=z-ip-list-youtube
-add address=74.125.102.40 list=z-ip-list-youtube
 add address=23.62.212.100 list=z-ip-list-tiktok
-add address=74.125.12.233 list=z-ip-list-youtube
-add address=142.251.85.9 list=z-ip-list-youtube
-add address=74.125.12.166 list=z-ip-list-youtube
 add address=114.5.7.155 list=z-ip-list-tiktok
 add address=45.136.152.17 list=z-ip-list-tiktok
 add address=206.84.107.49 list=z-ip-list-tiktok
@@ -3451,11 +3029,9 @@ add address=23.62.212.98 list=z-ip-list-tiktok
 add address=128.1.176.227 list=z-ip-list-tiktok
 add address=114.4.168.219 list=z-ip-list-tiktok
 add address=114.125.36.113 list=z-ip-list-tiktok
-add address=172.217.145.41 list=z-ip-list-youtube
 add address=23.209.46.89 list=z-ip-list-tiktok
 add address=98.98.148.92 list=z-ip-list-tiktok
 add address=23.221.50.184 list=z-ip-list-tiktok
-add address=74.125.101.202 list=z-ip-list-youtube
 add address=23.50.117.147 list=z-ip-list-tiktok
 add address=36.66.3.171 list=z-ip-list-tiktok
 add address=23.221.50.168 list=z-ip-list-tiktok
@@ -3463,8 +3039,6 @@ add address=54.192.18.60 list=z-ip-list-tiktok
 add address=54.192.18.52 list=z-ip-list-tiktok
 add address=54.192.18.82 list=z-ip-list-tiktok
 add address=54.192.18.108 list=z-ip-list-tiktok
-add address=142.251.85.168 list=z-ip-list-youtube
-add address=88.80.148.219 list=z-ip-list-youtube
 add address=184.27.123.179 list=z-ip-list-tiktok
 add address=114.10.3.83 list=z-ip-list-tiktok
 add address=156.251.76.11 list=z-ip-list-tiktok
@@ -3473,34 +3047,19 @@ add address=23.50.117.97 list=z-ip-list-tiktok
 add address=163.181.27.229 list=z-ip-list-tiktok
 add address=202.70.57.98 list=z-ip-list-tiktok
 add address=23.50.117.144 list=z-ip-list-tiktok
-add address=142.251.88.102 list=z-ip-list-youtube
 add address=13.225.103.39 list=z-ip-list-tiktok
 add address=23.200.142.208 list=z-ip-list-tiktok
-add address=142.251.85.198 list=z-ip-list-youtube
-add address=74.125.12.202 list=z-ip-list-youtube
-add address=74.125.164.74 list=z-ip-list-youtube
 add address=138.113.21.250 list=z-ip-list-tiktok
 add address=23.63.108.168 list=z-ip-list-tiktok
-add address=172.217.145.137 list=z-ip-list-youtube
-add address=74.125.102.39 list=z-ip-list-youtube
-add address=172.217.145.104 list=z-ip-list-youtube
 add address=114.125.82.113 list=z-ip-list-tiktok
 add address=114.125.115.48 list=z-ip-list-tiktok
 add address=114.125.83.217 list=z-ip-list-tiktok
-add address=182.2.34.77 list=z-ip-list-youtube
-add address=182.2.32.143 list=z-ip-list-youtube
 add address=151.101.110.113 list=z-ip-list-tiktok
-add address=172.253.118.116 list=z-ip-list-youtube
-add address=173.194.12.41 list=z-ip-list-youtube
 add address=182.2.81.88 list=z-ip-list-tiktok
-add address=172.217.145.138 list=z-ip-list-youtube
 add address=114.125.115.49 list=z-ip-list-tiktok
 add address=128.1.178.229 list=z-ip-list-tiktok
 add address=128.1.178.226 list=z-ip-list-tiktok
 add address=128.1.178.231 list=z-ip-list-tiktok
-add address=74.125.101.230 list=z-ip-list-youtube
-add address=173.194.59.72 list=z-ip-list-youtube
-add address=173.194.59.40 list=z-ip-list-youtube
 add address=23.59.168.121 list=z-ip-list-tiktok
 add address=23.48.5.24 list=z-ip-list-tiktok
 add address=23.50.117.208 list=z-ip-list-tiktok
@@ -3524,7 +3083,6 @@ add address=23.63.108.115 list=z-ip-list-tiktok
 add address=23.63.108.105 list=z-ip-list-tiktok
 add address=23.44.5.178 list=z-ip-list-tiktok
 add address=23.44.4.216 list=z-ip-list-tiktok
-add address=173.194.4.105 list=z-ip-list-youtube
 add address=23.33.184.241 list=z-ip-list-tiktok
 add address=23.33.184.233 list=z-ip-list-tiktok
 add address=23.47.190.35 list=z-ip-list-tiktok
@@ -3535,7 +3093,6 @@ add address=23.57.75.35 list=z-ip-list-tiktok
 add address=23.57.75.40 list=z-ip-list-tiktok
 add address=23.210.250.88 list=z-ip-list-tiktok
 add address=23.210.250.75 list=z-ip-list-tiktok
-add address=142.251.85.10 list=z-ip-list-youtube
 add address=34.102.235.236 list=z-ip-list-tiktok
 add address=23.210.250.74 list=z-ip-list-tiktok
 add address=23.202.33.82 list=z-ip-list-tiktok
@@ -3554,7 +3111,6 @@ add address=23.44.11.17 list=z-ip-list-tiktok
 add address=23.57.75.42 list=z-ip-list-tiktok
 add address=23.57.75.220 list=z-ip-list-tiktok
 add address=163.171.211.249 list=z-ip-list-tiktok
-add address=172.217.145.105 list=z-ip-list-youtube
 add address=23.210.250.50 list=z-ip-list-tiktok
 add address=23.210.250.105 list=z-ip-list-tiktok
 add address=23.210.250.59 list=z-ip-list-tiktok
@@ -3564,7 +3120,6 @@ add address=23.210.250.66 list=z-ip-list-tiktok
 add address=23.210.250.97 list=z-ip-list-tiktok
 add address=138.113.125.11 list=z-ip-list-tiktok
 add address=23.210.250.90 list=z-ip-list-tiktok
-add address=74.125.102.41 list=z-ip-list-youtube
 add address=104.88.70.51 list=z-ip-list-tiktok
 add address=23.210.250.91 list=z-ip-list-tiktok
 add address=104.88.70.34 list=z-ip-list-tiktok
@@ -3586,7 +3141,6 @@ add address=96.17.72.65 list=z-ip-list-tiktok
 add address=96.17.72.48 list=z-ip-list-tiktok
 add address=96.17.72.58 list=z-ip-list-tiktok
 add address=163.171.128.244 list=z-ip-list-tiktok
-add address=74.125.101.103 list=z-ip-list-youtube
 add address=23.210.250.104 list=z-ip-list-tiktok
 add address=23.210.250.106 list=z-ip-list-tiktok
 add address=23.210.250.56 list=z-ip-list-tiktok
@@ -3599,7 +3153,6 @@ add address=23.52.40.11 list=z-ip-list-tiktok
 add address=202.169.45.241 list=z-ip-list-tiktok
 add address=23.44.4.122 list=z-ip-list-tiktok
 add address=129.227.71.26 list=z-ip-list-tiktok
-add address=182.253.220.208 list=z-ip-list-youtube
 add address=23.59.80.139 list=z-ip-list-tiktok
 add address=104.88.70.91 list=z-ip-list-tiktok
 add address=104.88.70.42 list=z-ip-list-tiktok
@@ -3613,7 +3166,6 @@ add address=104.88.70.33 list=z-ip-list-tiktok
 add address=104.88.70.57 list=z-ip-list-tiktok
 add address=104.88.70.97 list=z-ip-list-tiktok
 add address=104.88.70.72 list=z-ip-list-tiktok
-add address=182.253.220.205 list=z-ip-list-youtube
 add address=23.44.4.202 list=z-ip-list-tiktok
 add address=96.17.72.17 list=z-ip-list-tiktok
 add address=23.47.190.74 list=z-ip-list-tiktok
@@ -3623,20 +3175,15 @@ add address=61.247.0.82 list=z-ip-list-tiktok
 add address=61.247.0.72 list=z-ip-list-tiktok
 add address=23.47.190.10 list=z-ip-list-tiktok
 add address=103.147.212.61 list=z-ip-list-tiktok
-add address=91.92.111.131 list=z-ip-list-youtube
 add address=114.10.2.208 list=z-ip-list-tiktok
 add address=114.10.2.216 list=z-ip-list-tiktok
 add address=114.10.2.243 list=z-ip-list-tiktok
 add address=23.251.120.82 list=z-ip-list-tiktok
-add address=142.251.91.104 list=z-ip-list-youtube
-add address=142.251.88.41 list=z-ip-list-youtube
-add address=142.251.91.232 list=z-ip-list-youtube
 add address=184.27.123.242 list=z-ip-list-tiktok
 add address=184.27.123.193 list=z-ip-list-tiktok
 add address=99.86.178.94 list=z-ip-list-tiktok
 add address=99.86.178.36 list=z-ip-list-tiktok
 add address=13.228.132.34 list=z-ip-list-tiktok
-add address=54.165.167.71 list=z-ip-list-youtube
 add address=23.52.171.89 list=z-ip-list-tiktok
 add address=23.47.190.11 list=z-ip-list-tiktok
 add address=23.47.190.34 list=z-ip-list-tiktok
@@ -3644,10 +3191,7 @@ add address=23.47.190.57 list=z-ip-list-tiktok
 add address=23.47.190.50 list=z-ip-list-tiktok
 add address=23.47.190.75 list=z-ip-list-tiktok
 add address=23.47.190.67 list=z-ip-list-tiktok
-add address=74.125.12.231 list=z-ip-list-youtube
-add address=62.210.204.131 list=z-ip-list-youtube
 add address=23.47.190.122 list=z-ip-list-tiktok
-add address=209.85.228.7 list=z-ip-list-youtube
 add address=23.47.190.129 list=z-ip-list-tiktok
 add address=101.33.4.113 list=z-ip-list-tiktok
 add address=114.10.2.19 list=z-ip-list-tiktok
@@ -3667,20 +3211,11 @@ add address=104.88.70.67 list=z-ip-list-tiktok
 add address=52.221.142.208 list=z-ip-list-tiktok
 add address=23.39.173.120 list=z-ip-list-tiktok
 add address=13.224.167.77 list=z-ip-list-tiktok
-add address=142.251.91.166 list=z-ip-list-youtube
-add address=173.194.166.41 list=z-ip-list-youtube
-add address=142.251.90.102 list=z-ip-list-youtube
-add address=112.215.88.15 list=z-ip-list-youtube
-add address=209.85.228.6 list=z-ip-list-youtube
 add address=23.48.173.225 list=z-ip-list-tiktok
-add address=74.125.12.73 list=z-ip-list-youtube
-add address=91.121.171.208 list=z-ip-list-youtube
 add address=184.27.122.144 list=z-ip-list-tiktok
 add address=23.47.190.209 list=z-ip-list-tiktok
 add address=23.251.120.80 list=z-ip-list-tiktok
-add address=173.194.59.41 list=z-ip-list-youtube
 add address=65.9.181.54 list=z-ip-list-tiktok
-add address=37.187.148.204 list=z-ip-list-youtube
 add address=23.52.171.104 list=z-ip-list-tiktok
 add address=156.59.106.228 list=z-ip-list-tiktok
 add address=114.4.168.34 list=z-ip-list-tiktok
@@ -3688,7 +3223,6 @@ add address=114.4.168.9 list=z-ip-list-tiktok
 add address=114.5.9.139 list=z-ip-list-tiktok
 add address=184.27.122.96 list=z-ip-list-tiktok
 add address=61.247.0.74 list=z-ip-list-tiktok
-add address=88.80.145.110 list=z-ip-list-youtube
 add address=61.247.0.113 list=z-ip-list-tiktok
 add address=61.247.0.120 list=z-ip-list-tiktok
 add address=45.136.152.16 list=z-ip-list-tiktok
@@ -3701,11 +3235,9 @@ add address=23.66.3.148 list=z-ip-list-tiktok
 add address=23.32.20.57 list=z-ip-list-tiktok
 add address=23.32.20.18 list=z-ip-list-tiktok
 add address=23.215.35.167 list=z-ip-list-tiktok
-add address=74.125.171.70 list=z-ip-list-youtube
 add address=23.193.97.144 list=z-ip-list-tiktok
 add address=23.193.97.153 list=z-ip-list-tiktok
 add address=23.193.97.91 list=z-ip-list-tiktok
-add address=74.125.101.105 list=z-ip-list-youtube
 add address=23.193.97.138 list=z-ip-list-tiktok
 add address=23.62.212.86 list=z-ip-list-tiktok
 add address=52.74.96.21 list=z-ip-list-tiktok
@@ -3714,15 +3246,11 @@ add address=23.251.120.84 list=z-ip-list-tiktok
 add address=18.161.49.70 list=z-ip-list-tiktok
 add address=163.171.191.14 list=z-ip-list-tiktok
 add address=156.225.96.20 list=z-ip-list-tiktok
-add address=112.215.101.142 list=z-ip-list-youtube
-add address=173.194.22.169 list=z-ip-list-youtube
 add address=119.28.164.77 list=z-ip-list-tiktok
 add address=140.213.62.34 list=z-ip-list-tiktok
 add address=140.213.62.26 list=z-ip-list-tiktok
 add address=140.213.62.42 list=z-ip-list-tiktok
 add address=140.213.62.105 list=z-ip-list-tiktok
-add address=74.125.164.73 list=z-ip-list-youtube
-add address=74.125.171.72 list=z-ip-list-youtube
 add address=163.171.135.112 list=z-ip-list-tiktok
 add address=101.33.4.5 list=z-ip-list-tiktok
 add address=13.226.120.75 list=z-ip-list-tiktok
@@ -3759,16 +3287,12 @@ add address=13.227.254.120 list=z-ip-list-tiktok
 add address=13.227.254.99 list=z-ip-list-tiktok
 add address=23.48.5.18 list=z-ip-list-tiktok
 add address=13.227.254.51 list=z-ip-list-tiktok
-add address=142.251.88.8 list=z-ip-list-youtube
 add address=13.225.103.33 list=z-ip-list-tiktok
 add address=13.225.103.36 list=z-ip-list-tiktok
-add address=91.121.30.185 list=z-ip-list-youtube
-add address=142.251.85.38 list=z-ip-list-youtube
 add address=13.32.127.9 list=z-ip-list-tiktok
 add address=13.32.127.30 list=z-ip-list-tiktok
 add address=13.32.127.98 list=z-ip-list-tiktok
 add address=13.32.127.119 list=z-ip-list-tiktok
-add address=95.168.222.205 list=z-ip-list-youtube
 add address=35.201.85.233 list=z-ip-list-tiktok
 add address=23.206.250.73 list=z-ip-list-tiktok
 add address=23.206.250.72 list=z-ip-list-tiktok
@@ -3797,18 +3321,12 @@ add address=23.48.173.18 list=z-ip-list-tiktok
 add address=23.48.173.17 list=z-ip-list-tiktok
 add address=202.70.57.43 list=z-ip-list-tiktok
 add address=23.47.190.51 list=z-ip-list-tiktok
-add address=173.194.59.104 list=z-ip-list-youtube
 add address=184.27.122.88 list=z-ip-list-tiktok
-add address=74.125.106.6 list=z-ip-list-youtube
 add address=104.88.70.41 list=z-ip-list-tiktok
 add address=156.59.116.230 list=z-ip-list-tiktok
 add address=23.219.184.224 list=z-ip-list-tiktok
 add address=140.213.23.139 list=z-ip-list-tiktok
-add address=142.250.66.86 list=z-ip-list-youtube
-add address=172.217.27.46 list=z-ip-list-youtube
 add address=82.156.94.17 list=z-ip-list-tiktok
-add address=172.217.31.14 list=z-ip-list-youtube
-add address=142.251.85.74 list=z-ip-list-youtube
 add address=72.247.127.234 list=z-ip-list-tiktok
 add address=72.247.127.250 list=z-ip-list-tiktok
 add address=72.247.127.211 list=z-ip-list-tiktok
@@ -3826,17 +3344,8 @@ add address=23.63.243.91 list=z-ip-list-tiktok
 add address=98.98.121.39 list=z-ip-list-tiktok
 add address=52.74.104.132 list=z-ip-list-tiktok
 add address=114.4.168.56 list=z-ip-list-tiktok
-add address=202.70.58.12 list=z-ip-list-youtube
-add address=74.125.68.117 list=z-ip-list-youtube
-add address=91.92.111.132 list=z-ip-list-youtube
 add address=114.4.39.208 list=z-ip-list-tiktok
-add address=172.217.194.116 list=z-ip-list-youtube
 add address=114.10.2.161 list=z-ip-list-tiktok
-add address=182.2.64.141 list=z-ip-list-youtube
-add address=182.2.64.142 list=z-ip-list-youtube
-add address=142.251.85.137 list=z-ip-list-youtube
-add address=142.251.88.104 list=z-ip-list-youtube
-add address=142.251.85.134 list=z-ip-list-youtube
 add address=43.152.14.32 list=z-ip-list-tiktok
 add address=104.81.138.65 list=z-ip-list-tiktok
 add address=104.81.138.50 list=z-ip-list-tiktok
@@ -3849,7 +3358,6 @@ add address=23.202.33.137 list=z-ip-list-tiktok
 add address=23.53.33.136 list=z-ip-list-tiktok
 add address=23.53.33.192 list=z-ip-list-tiktok
 add address=23.48.107.74 list=z-ip-list-tiktok
-add address=114.4.169.237 list=z-ip-list-youtube
 add address=61.247.0.81 list=z-ip-list-tiktok
 add address=23.211.140.73 list=z-ip-list-tiktok
 add address=23.32.61.148 list=z-ip-list-tiktok
@@ -3860,7 +3368,6 @@ add address=23.33.92.177 list=z-ip-list-tiktok
 add address=23.33.92.169 list=z-ip-list-tiktok
 add address=18.67.65.110 list=z-ip-list-tiktok
 add address=18.67.65.124 list=z-ip-list-tiktok
-add address=173.194.22.42 list=z-ip-list-youtube
 add address=23.32.61.183 list=z-ip-list-tiktok
 add address=23.32.61.151 list=z-ip-list-tiktok
 add address=23.32.61.160 list=z-ip-list-tiktok
@@ -3888,7 +3395,6 @@ add address=104.70.235.186 list=z-ip-list-tiktok
 add address=184.28.218.50 list=z-ip-list-tiktok
 add address=23.200.142.138 list=z-ip-list-tiktok
 add address=23.193.96.73 list=z-ip-list-tiktok
-add address=114.10.0.110 list=z-ip-list-youtube
 add address=23.55.47.163 list=z-ip-list-tiktok
 add address=23.211.60.149 list=z-ip-list-tiktok
 add address=23.220.245.56 list=z-ip-list-tiktok
@@ -3926,11 +3432,9 @@ add address=23.47.190.177 list=z-ip-list-tiktok
 add address=23.200.74.248 list=z-ip-list-tiktok
 add address=184.27.122.162 list=z-ip-list-tiktok
 add address=156.238.132.6 list=z-ip-list-tiktok
-add address=74.125.101.198 list=z-ip-list-youtube
 add address=104.88.70.160 list=z-ip-list-tiktok
 add address=23.40.40.225 list=z-ip-list-tiktok
 add address=104.88.70.232 list=z-ip-list-tiktok
-add address=142.251.88.74 list=z-ip-list-youtube
 add address=61.213.168.83 list=z-ip-list-tiktok
 add address=104.88.70.131 list=z-ip-list-tiktok
 add address=104.88.70.176 list=z-ip-list-tiktok
@@ -4051,21 +3555,12 @@ add address=23.40.241.169 list=z-ip-list-tiktok
 add address=23.40.241.162 list=z-ip-list-tiktok
 add address=23.40.241.224 list=z-ip-list-tiktok
 add address=96.7.39.70 list=z-ip-list-tiktok
-add address=142.251.91.230 list=z-ip-list-youtube
-add address=173.194.59.70 list=z-ip-list-youtube
-add address=209.85.228.8 list=z-ip-list-youtube
 add address=104.70.235.106 list=z-ip-list-tiktok
-add address=173.194.22.41 list=z-ip-list-youtube
-add address=142.251.85.230 list=z-ip-list-youtube
-add address=74.125.101.232 list=z-ip-list-youtube
 add address=104.70.235.169 list=z-ip-list-tiktok
 add address=52.76.16.93 list=z-ip-list-tiktok
 add address=104.70.235.98 list=z-ip-list-tiktok
-add address=74.125.12.230 list=z-ip-list-youtube
-add address=74.125.164.138 list=z-ip-list-youtube
 add address=23.32.61.187 list=z-ip-list-tiktok
 add address=23.33.92.164 list=z-ip-list-tiktok
-add address=74.125.96.8 list=z-ip-list-youtube
 add address=23.33.92.138 list=z-ip-list-tiktok
 add address=23.33.92.188 list=z-ip-list-tiktok
 add address=23.32.61.163 list=z-ip-list-tiktok
@@ -4094,20 +3589,13 @@ add address=43.152.23.72 list=z-ip-list-tiktok
 add address=23.33.92.178 list=z-ip-list-tiktok
 add address=104.71.60.24 list=z-ip-list-tiktok
 add address=104.71.60.75 list=z-ip-list-tiktok
-add address=74.125.164.134 list=z-ip-list-youtube
-add address=173.194.59.39 list=z-ip-list-youtube
-add address=74.125.12.71 list=z-ip-list-youtube
-add address=74.125.12.200 list=z-ip-list-youtube
 add address=184.26.43.155 list=z-ip-list-tiktok
 add address=184.26.43.136 list=z-ip-list-tiktok
 add address=184.26.43.153 list=z-ip-list-tiktok
 add address=104.88.70.96 list=z-ip-list-tiktok
-add address=142.251.91.234 list=z-ip-list-youtube
 add address=184.26.43.144 list=z-ip-list-tiktok
 add address=104.88.70.66 list=z-ip-list-tiktok
-add address=142.251.84.170 list=z-ip-list-youtube
 add address=23.216.153.5 list=z-ip-list-tiktok
-add address=74.125.12.136 list=z-ip-list-youtube
 add address=23.216.153.26 list=z-ip-list-tiktok
 add address=23.48.201.40 list=z-ip-list-tiktok
 add address=184.26.43.148 list=z-ip-list-tiktok
@@ -4150,7 +3638,6 @@ add address=114.10.2.26 list=z-ip-list-tiktok
 add address=23.50.232.240 list=z-ip-list-tiktok
 add address=34.95.101.116 list=z-ip-list-tiktok
 add address=104.88.70.139 list=z-ip-list-tiktok
-add address=140.213.209.76 list=z-ip-list-youtube
 add address=23.210.250.48 list=z-ip-list-tiktok
 add address=23.223.18.9 list=z-ip-list-tiktok
 add address=23.223.18.43 list=z-ip-list-tiktok
@@ -4212,7 +3699,6 @@ add address=104.71.60.57 list=z-ip-list-tiktok
 add address=104.70.235.26 list=z-ip-list-tiktok
 add address=104.70.235.137 list=z-ip-list-tiktok
 add address=104.70.235.128 list=z-ip-list-tiktok
-add address=173.194.22.38 list=z-ip-list-youtube
 add address=23.200.142.145 list=z-ip-list-tiktok
 add address=104.70.235.75 list=z-ip-list-tiktok
 add address=104.70.235.19 list=z-ip-list-tiktok
@@ -4336,7 +3822,6 @@ add address=65.8.178.108 list=z-ip-list-tiktok
 add address=23.195.88.240 list=z-ip-list-tiktok
 add address=163.171.133.150 list=z-ip-list-tiktok
 add address=23.195.88.144 list=z-ip-list-tiktok
-add address=74.125.101.70 list=z-ip-list-youtube
 add address=23.58.120.9 list=z-ip-list-tiktok
 add address=23.33.32.121 list=z-ip-list-tiktok
 add address=23.33.32.136 list=z-ip-list-tiktok
@@ -4348,14 +3833,12 @@ add address=23.192.46.219 list=z-ip-list-tiktok
 add address=23.40.40.201 list=z-ip-list-tiktok
 add address=23.211.60.104 list=z-ip-list-tiktok
 add address=156.251.75.28 list=z-ip-list-tiktok
-add address=142.251.91.170 list=z-ip-list-youtube
 add address=217.198.191.57 list=z-ip-list-tiktok
 add address=114.10.2.10 list=z-ip-list-tiktok
 add address=114.10.2.27 list=z-ip-list-tiktok
 add address=150.109.90.124 list=z-ip-list-tiktok
 add address=138.113.121.87 list=z-ip-list-tiktok
 add address=182.2.81.18 list=z-ip-list-tiktok
-add address=173.194.22.71 list=z-ip-list-youtube
 add address=156.59.106.229 list=z-ip-list-tiktok
 add address=114.10.3.144 list=z-ip-list-tiktok
 add address=138.113.113.83 list=z-ip-list-tiktok
@@ -4379,21 +3862,15 @@ add address=23.45.50.169 list=z-ip-list-tiktok
 add address=23.45.50.185 list=z-ip-list-tiktok
 add address=23.45.50.160 list=z-ip-list-tiktok
 add address=23.45.50.195 list=z-ip-list-tiktok
-add address=142.251.91.231 list=z-ip-list-youtube
-add address=114.10.0.108 list=z-ip-list-youtube
-add address=173.194.59.73 list=z-ip-list-youtube
 add address=23.45.50.211 list=z-ip-list-tiktok
 add address=217.198.191.59 list=z-ip-list-tiktok
 add address=138.113.223.6 list=z-ip-list-tiktok
 add address=156.59.189.178 list=z-ip-list-tiktok
 add address=156.59.189.181 list=z-ip-list-tiktok
 add address=217.198.191.56 list=z-ip-list-tiktok
-add address=142.251.88.39 list=z-ip-list-youtube
-add address=74.125.171.6 list=z-ip-list-youtube
 add address=23.67.75.66 list=z-ip-list-tiktok
 add address=23.67.73.200 list=z-ip-list-tiktok
 add address=23.33.92.176 list=z-ip-list-tiktok
-add address=74.125.164.72 list=z-ip-list-youtube
 add address=23.67.75.49 list=z-ip-list-tiktok
 add address=23.67.73.145 list=z-ip-list-tiktok
 add address=156.59.188.231 list=z-ip-list-tiktok
@@ -4446,7 +3923,6 @@ add address=156.59.189.186 list=z-ip-list-tiktok
 add address=23.45.232.104 list=z-ip-list-tiktok
 add address=23.209.46.81 list=z-ip-list-tiktok
 add address=156.59.189.187 list=z-ip-list-tiktok
-add address=112.215.88.13 list=z-ip-list-youtube
 add address=180.250.81.50 list=z-ip-list-tiktok
 add address=23.209.46.97 list=z-ip-list-tiktok
 add address=156.59.188.195 list=z-ip-list-tiktok
@@ -4454,7 +3930,6 @@ add address=23.209.46.86 list=z-ip-list-tiktok
 add address=23.47.190.123 list=z-ip-list-tiktok
 add address=23.47.190.83 list=z-ip-list-tiktok
 add address=23.47.190.91 list=z-ip-list-tiktok
-add address=112.215.183.140 list=z-ip-list-youtube
 add address=184.27.122.66 list=z-ip-list-tiktok
 add address=104.88.70.88 list=z-ip-list-tiktok
 add address=23.213.185.191 list=z-ip-list-tiktok
@@ -4471,7 +3946,6 @@ add address=23.48.107.48 list=z-ip-list-tiktok
 add address=23.48.107.26 list=z-ip-list-tiktok
 add address=23.48.107.56 list=z-ip-list-tiktok
 add address=23.48.107.17 list=z-ip-list-tiktok
-add address=142.251.84.106 list=z-ip-list-youtube
 add address=23.52.40.9 list=z-ip-list-tiktok
 add address=23.40.40.73 list=z-ip-list-tiktok
 add address=23.40.40.9 list=z-ip-list-tiktok
@@ -4514,7 +3988,6 @@ add address=23.64.122.42 list=z-ip-list-tiktok
 add address=104.81.138.80 list=z-ip-list-tiktok
 add address=104.81.138.41 list=z-ip-list-tiktok
 add address=23.49.60.59 list=z-ip-list-tiktok
-add address=74.125.171.73 list=z-ip-list-youtube
 add address=104.81.138.17 list=z-ip-list-tiktok
 add address=23.64.122.75 list=z-ip-list-tiktok
 add address=104.81.138.74 list=z-ip-list-tiktok
@@ -4536,7 +4009,6 @@ add address=23.52.40.89 list=z-ip-list-tiktok
 add address=23.52.40.18 list=z-ip-list-tiktok
 add address=23.52.40.27 list=z-ip-list-tiktok
 add address=23.52.40.83 list=z-ip-list-tiktok
-add address=114.10.0.15 list=z-ip-list-youtube
 add address=23.219.184.195 list=z-ip-list-tiktok
 add address=112.215.101.89 list=z-ip-list-tiktok
 add address=156.59.116.225 list=z-ip-list-tiktok
@@ -4544,8 +4016,6 @@ add address=23.211.140.130 list=z-ip-list-tiktok
 add address=114.4.168.170 list=z-ip-list-tiktok
 add address=114.4.39.236 list=z-ip-list-tiktok
 add address=156.251.75.211 list=z-ip-list-tiktok
-add address=173.194.59.74 list=z-ip-list-youtube
-add address=88.80.147.36 list=z-ip-list-youtube
 add address=114.10.2.3 list=z-ip-list-tiktok
 add address=114.125.83.234 list=z-ip-list-tiktok
 add address=129.227.71.27 list=z-ip-list-tiktok
@@ -4555,7 +4025,6 @@ add address=114.124.132.32 list=z-ip-list-tiktok
 add address=23.223.198.219 list=z-ip-list-tiktok
 add address=23.223.198.217 list=z-ip-list-tiktok
 add address=138.199.37.201 list=z-ip-list-tiktok
-add address=195.154.176.206 list=z-ip-list-youtube
 add address=23.40.40.8 list=z-ip-list-tiktok
 add address=23.40.40.48 list=z-ip-list-tiktok
 add address=23.52.40.33 list=z-ip-list-tiktok
@@ -4596,7 +4065,6 @@ add address=23.52.40.49 list=z-ip-list-tiktok
 add address=23.200.218.43 list=z-ip-list-tiktok
 add address=23.200.218.17 list=z-ip-list-tiktok
 add address=23.44.5.19 list=z-ip-list-tiktok
-add address=114.10.0.109 list=z-ip-list-youtube
 add address=23.44.5.89 list=z-ip-list-tiktok
 add address=23.200.218.56 list=z-ip-list-tiktok
 add address=23.200.218.104 list=z-ip-list-tiktok
@@ -4607,14 +4075,11 @@ add address=23.44.5.66 list=z-ip-list-tiktok
 add address=23.44.5.82 list=z-ip-list-tiktok
 add address=23.50.232.251 list=z-ip-list-tiktok
 add address=23.44.5.80 list=z-ip-list-tiktok
-add address=173.194.8.135 list=z-ip-list-youtube
 add address=140.213.50.225 list=z-ip-list-tiktok
 add address=140.213.50.200 list=z-ip-list-tiktok
 add address=23.61.252.19 list=z-ip-list-tiktok
-add address=142.251.85.71 list=z-ip-list-youtube
 add address=23.210.250.89 list=z-ip-list-tiktok
 add address=23.210.250.72 list=z-ip-list-tiktok
-add address=74.125.164.166 list=z-ip-list-youtube
 add address=23.66.3.139 list=z-ip-list-tiktok
 add address=23.33.32.122 list=z-ip-list-tiktok
 add address=23.33.32.123 list=z-ip-list-tiktok
@@ -4632,7 +4097,6 @@ add address=114.125.115.58 list=z-ip-list-tiktok
 add address=114.125.115.96 list=z-ip-list-tiktok
 add address=114.125.115.104 list=z-ip-list-tiktok
 add address=114.125.115.57 list=z-ip-list-tiktok
-add address=114.10.0.112 list=z-ip-list-youtube
 add address=116.206.136.78 list=z-ip-list-tiktok
 add address=23.33.33.75 list=z-ip-list-tiktok
 add address=23.33.33.72 list=z-ip-list-tiktok
@@ -4642,7 +4106,6 @@ add address=150.109.90.119 list=z-ip-list-tiktok
 add address=114.10.3.74 list=z-ip-list-tiktok
 add address=202.70.57.89 list=z-ip-list-tiktok
 add address=61.247.0.73 list=z-ip-list-tiktok
-add address=140.213.63.45 list=z-ip-list-youtube
 add address=23.221.50.177 list=z-ip-list-tiktok
 add address=23.210.250.80 list=z-ip-list-tiktok
 add address=23.210.250.73 list=z-ip-list-tiktok
@@ -4720,10 +4183,6 @@ add address=112.215.103.238 list=z-ip-list-tiktok
 add address=140.213.224.123 list=z-ip-list-tiktok
 add address=23.219.184.177 list=z-ip-list-tiktok
 add address=23.210.250.168 list=z-ip-list-tiktok
-add address=112.215.88.14 list=z-ip-list-youtube
-add address=112.215.212.13 list=z-ip-list-youtube
-add address=173.194.22.73 list=z-ip-list-youtube
-add address=74.125.101.231 list=z-ip-list-youtube
 add address=72.247.127.224 list=z-ip-list-tiktok
 add address=72.247.127.251 list=z-ip-list-tiktok
 add address=72.247.127.202 list=z-ip-list-tiktok
@@ -4736,12 +4195,10 @@ add address=72.247.127.200 list=z-ip-list-tiktok
 add address=125.56.219.74 list=z-ip-list-tiktok
 add address=112.215.26.10 list=z-ip-list-tiktok
 add address=140.213.23.154 list=z-ip-list-tiktok
-add address=112.215.184.80 list=z-ip-list-youtube
 add address=112.215.101.90 list=z-ip-list-tiktok
 add address=156.59.240.243 list=z-ip-list-tiktok
 add address=156.251.71.123 list=z-ip-list-tiktok
 add address=34.117.67.69 list=z-ip-list-tiktok
-add address=74.125.12.72 list=z-ip-list-youtube
 add address=108.138.141.12 list=z-ip-list-tiktok
 add address=108.138.141.124 list=z-ip-list-tiktok
 add address=108.138.141.36 list=z-ip-list-tiktok
@@ -4758,9 +4215,6 @@ add address=23.219.184.218 list=z-ip-list-tiktok
 add address=61.247.0.107 list=z-ip-list-tiktok
 add address=23.50.117.201 list=z-ip-list-tiktok
 add address=202.169.45.219 list=z-ip-list-tiktok
-add address=117.102.80.200 list=z-ip-list-youtube
-add address=117.102.80.201 list=z-ip-list-youtube
-add address=117.102.125.143 list=z-ip-list-youtube
 add address=23.48.173.211 list=z-ip-list-tiktok
 add address=23.48.173.232 list=z-ip-list-tiktok
 add address=23.50.117.218 list=z-ip-list-tiktok
@@ -4792,7 +4246,6 @@ add address=23.61.205.51 list=z-ip-list-tiktok
 add address=23.61.205.75 list=z-ip-list-tiktok
 add address=23.61.205.32 list=z-ip-list-tiktok
 add address=23.61.205.18 list=z-ip-list-tiktok
-add address=74.125.130.121 list=z-ip-list-youtube
 add address=23.61.205.89 list=z-ip-list-tiktok
 add address=23.50.232.248 list=z-ip-list-tiktok
 add address=104.88.70.136 list=z-ip-list-tiktok
@@ -4805,20 +4258,14 @@ add address=23.210.250.51 list=z-ip-list-tiktok
 add address=23.61.205.57 list=z-ip-list-tiktok
 add address=23.61.205.25 list=z-ip-list-tiktok
 add address=23.61.205.74 list=z-ip-list-tiktok
-add address=74.125.157.137 list=z-ip-list-youtube
 add address=184.85.232.43 list=z-ip-list-tiktok
 add address=184.85.232.17 list=z-ip-list-tiktok
-add address=142.251.84.104 list=z-ip-list-youtube
 add address=23.61.205.90 list=z-ip-list-tiktok
-add address=74.125.164.137 list=z-ip-list-youtube
 add address=23.63.243.90 list=z-ip-list-tiktok
 add address=156.59.8.164 list=z-ip-list-tiktok
-add address=173.194.167.234 list=z-ip-list-youtube
 add address=129.227.36.6 list=z-ip-list-tiktok
-add address=74.125.101.104 list=z-ip-list-youtube
 add address=23.52.171.160 list=z-ip-list-tiktok
 add address=23.210.250.114 list=z-ip-list-tiktok
-add address=209.85.229.38 list=z-ip-list-youtube
 add address=23.210.250.82 list=z-ip-list-tiktok
 add address=23.223.47.26 list=z-ip-list-tiktok
 add address=23.213.1.72 list=z-ip-list-tiktok
@@ -4899,23 +4346,18 @@ add address=114.10.2.16 list=z-ip-list-tiktok
 add address=23.200.142.201 list=z-ip-list-tiktok
 add address=23.206.250.96 list=z-ip-list-tiktok
 add address=23.193.96.121 list=z-ip-list-tiktok
-add address=74.125.24.92 list=z-ip-list-youtube
 add address=43.132.80.131 list=z-ip-list-tiktok
 add address=72.247.127.203 list=z-ip-list-tiktok
 add address=72.247.127.201 list=z-ip-list-tiktok
 add address=125.56.219.51 list=z-ip-list-tiktok
 add address=72.247.127.240 list=z-ip-list-tiktok
-add address=103.146.188.76 list=z-ip-list-youtube
 add address=114.10.3.80 list=z-ip-list-tiktok
 add address=23.211.140.137 list=z-ip-list-tiktok
 add address=112.215.103.237 list=z-ip-list-tiktok
 add address=23.48.173.16 list=z-ip-list-tiktok
 add address=23.219.184.203 list=z-ip-list-tiktok
 add address=140.213.23.131 list=z-ip-list-tiktok
-add address=104.16.53.48 list=z-ip-list-youtube
-add address=104.16.54.48 list=z-ip-list-youtube
 add address=163.171.130.139 list=z-ip-list-tiktok
-add address=74.125.157.38 list=z-ip-list-youtube
 add address=23.210.250.170 list=z-ip-list-tiktok
 add address=23.210.250.160 list=z-ip-list-tiktok
 add address=156.59.240.238 list=z-ip-list-tiktok
@@ -4923,25 +4365,18 @@ add address=140.213.23.147 list=z-ip-list-tiktok
 add address=23.219.184.186 list=z-ip-list-tiktok
 add address=23.219.184.171 list=z-ip-list-tiktok
 add address=45.40.48.210 list=z-ip-list-tiktok
-add address=142.251.85.200 list=z-ip-list-youtube
-add address=142.251.85.170 list=z-ip-list-youtube
 add address=103.136.220.84 list=z-ip-list-tiktok
-add address=112.215.184.14 list=z-ip-list-youtube
 add address=13.249.221.10 list=z-ip-list-tiktok
 add address=23.210.250.153 list=z-ip-list-tiktok
 add address=23.210.250.154 list=z-ip-list-tiktok
 add address=23.210.250.138 list=z-ip-list-tiktok
 add address=23.52.171.128 list=z-ip-list-tiktok
 add address=23.213.1.41 list=z-ip-list-tiktok
-add address=195.154.176.209 list=z-ip-list-youtube
-add address=173.194.167.39 list=z-ip-list-youtube
 add address=150.109.91.103 list=z-ip-list-tiktok
 add address=140.213.50.202 list=z-ip-list-tiktok
-add address=114.4.169.238 list=z-ip-list-youtube
 add address=23.213.1.11 list=z-ip-list-tiktok
 add address=34.101.206.34 list=z-ip-list-tiktok
 add address=23.209.46.84 list=z-ip-list-tiktok
-add address=173.194.22.70 list=z-ip-list-youtube
 add address=23.213.1.24 list=z-ip-list-tiktok
 add address=23.213.1.83 list=z-ip-list-tiktok
 add address=23.202.33.218 list=z-ip-list-tiktok
@@ -4952,7 +4387,6 @@ add address=23.54.80.160 list=z-ip-list-tiktok
 add address=23.54.80.146 list=z-ip-list-tiktok
 add address=23.214.85.147 list=z-ip-list-tiktok
 add address=23.214.85.152 list=z-ip-list-tiktok
-add address=112.215.183.17 list=z-ip-list-youtube
 add address=156.59.189.184 list=z-ip-list-tiktok
 add address=199.232.234.113 list=z-ip-list-tiktok
 add address=167.82.86.113 list=z-ip-list-tiktok
@@ -4973,9 +4407,7 @@ add address=38.60.187.22 list=z-ip-list-tiktok
 add address=35.246.1.32 list=z-ip-list-tiktok
 add address=35.189.107.187 list=z-ip-list-tiktok
 add address=184.87.193.79 list=z-ip-list-tiktok
-add address=172.217.145.106 list=z-ip-list-youtube
 add address=156.59.8.167 list=z-ip-list-tiktok
-add address=142.251.85.166 list=z-ip-list-youtube
 add address=129.227.42.102 list=z-ip-list-tiktok
 add address=103.147.212.51 list=z-ip-list-tiktok
 add address=52.84.251.23 list=z-ip-list-tiktok
@@ -4985,7 +4417,6 @@ add address=114.10.2.240 list=z-ip-list-tiktok
 add address=114.4.168.32 list=z-ip-list-tiktok
 add address=129.227.42.46 list=z-ip-list-tiktok
 add address=163.171.144.40 list=z-ip-list-tiktok
-add address=195.154.243.38 list=z-ip-list-youtube
 add address=140.213.23.144 list=z-ip-list-tiktok
 add address=114.10.52.226 list=z-ip-list-tiktok
 add address=114.5.9.115 list=z-ip-list-tiktok
@@ -4994,9 +4425,7 @@ add address=114.10.2.153 list=z-ip-list-tiktok
 add address=114.10.2.146 list=z-ip-list-tiktok
 add address=114.10.52.146 list=z-ip-list-tiktok
 add address=114.4.39.229 list=z-ip-list-tiktok
-add address=117.102.125.140 list=z-ip-list-youtube
 add address=23.39.173.91 list=z-ip-list-tiktok
-add address=173.194.49.70 list=z-ip-list-youtube
 add address=34.101.83.5 list=z-ip-list-tiktok
 add address=114.4.39.224 list=z-ip-list-tiktok
 add address=114.10.2.233 list=z-ip-list-tiktok
@@ -5083,7 +4512,6 @@ add address=23.33.32.144 list=z-ip-list-tiktok
 add address=23.33.32.128 list=z-ip-list-tiktok
 add address=23.33.32.120 list=z-ip-list-tiktok
 add address=23.33.32.130 list=z-ip-list-tiktok
-add address=173.194.51.42 list=z-ip-list-youtube
 add address=71.18.253.89 list=z-ip-list-tiktok
 add address=23.52.171.113 list=z-ip-list-tiktok
 add address=103.147.212.45 list=z-ip-list-tiktok
@@ -5165,12 +4593,10 @@ add address=114.10.3.163 list=z-ip-list-tiktok
 add address=13.33.33.28 list=z-ip-list-tiktok
 add address=13.33.33.121 list=z-ip-list-tiktok
 add address=18.64.37.75 list=z-ip-list-tiktok
-add address=195.154.178.238 list=z-ip-list-youtube
 add address=185.180.15.75 list=z-ip-list-tiktok
 add address=156.59.192.176 list=z-ip-list-tiktok
 add address=156.250.3.50 list=z-ip-list-tiktok
 add address=23.210.250.145 list=z-ip-list-tiktok
-add address=173.194.22.39 list=z-ip-list-youtube
 add address=23.49.60.79 list=z-ip-list-tiktok
 add address=23.49.60.88 list=z-ip-list-tiktok
 add address=156.225.110.9 list=z-ip-list-tiktok
@@ -5182,20 +4608,14 @@ add address=23.32.20.48 list=z-ip-list-tiktok
 add address=23.0.162.62 list=z-ip-list-tiktok
 add address=138.199.37.203 list=z-ip-list-tiktok
 add address=65.8.11.128 list=z-ip-list-tiktok
-add address=161.202.208.104 list=z-ip-list-youtube
 add address=23.62.106.81 list=z-ip-list-tiktok
-add address=172.217.145.73 list=z-ip-list-youtube
 add address=23.62.106.130 list=z-ip-list-tiktok
 add address=23.193.97.121 list=z-ip-list-tiktok
 add address=23.66.3.152 list=z-ip-list-tiktok
-add address=195.154.188.211 list=z-ip-list-youtube
-add address=161.202.213.14 list=z-ip-list-youtube
-add address=161.202.217.162 list=z-ip-list-youtube
 add address=23.223.47.24 list=z-ip-list-tiktok
 add address=23.192.150.17 list=z-ip-list-tiktok
 add address=23.192.150.6 list=z-ip-list-tiktok
 add address=122.10.154.52 list=z-ip-list-tiktok
-add address=140.213.63.79 list=z-ip-list-youtube
 add address=23.213.43.213 list=z-ip-list-tiktok
 add address=23.213.43.198 list=z-ip-list-tiktok
 add address=23.213.43.224 list=z-ip-list-tiktok
@@ -5212,7 +4632,6 @@ add address=217.198.191.62 list=z-ip-list-tiktok
 add address=156.59.229.26 list=z-ip-list-tiktok
 add address=217.198.191.67 list=z-ip-list-tiktok
 add address=13.33.33.71 list=z-ip-list-tiktok
-add address=140.213.63.13 list=z-ip-list-youtube
 add address=23.49.104.205 list=z-ip-list-tiktok
 add address=129.227.94.199 list=z-ip-list-tiktok
 add address=217.198.191.60 list=z-ip-list-tiktok
@@ -5248,7 +4667,6 @@ add address=23.0.162.57 list=z-ip-list-tiktok
 add address=156.251.75.25 list=z-ip-list-tiktok
 add address=54.192.116.63 list=z-ip-list-tiktok
 add address=54.192.116.92 list=z-ip-list-tiktok
-add address=103.234.122.76 list=z-ip-list-youtube
 add address=163.171.133.148 list=z-ip-list-tiktok
 add address=139.193.253.58 list=z-ip-list-tiktok
 add address=96.17.72.74 list=z-ip-list-tiktok
@@ -5260,9 +4678,6 @@ add address=202.67.41.73 list=z-ip-list-tiktok
 add address=128.14.182.239 list=z-ip-list-tiktok
 add address=116.206.41.201 list=z-ip-list-tiktok
 add address=128.14.182.241 list=z-ip-list-tiktok
-add address=161.202.222.184 list=z-ip-list-youtube
-add address=161.202.212.220 list=z-ip-list-youtube
-add address=173.194.59.103 list=z-ip-list-youtube
 add address=23.55.244.34 list=z-ip-list-tiktok
 add address=23.55.244.43 list=z-ip-list-tiktok
 add address=23.55.244.35 list=z-ip-list-tiktok
@@ -5278,7 +4693,6 @@ add address=23.55.244.16 list=z-ip-list-tiktok
 add address=23.55.244.25 list=z-ip-list-tiktok
 add address=23.55.244.51 list=z-ip-list-tiktok
 add address=23.55.244.40 list=z-ip-list-tiktok
-add address=173.194.12.234 list=z-ip-list-youtube
 add address=156.59.192.177 list=z-ip-list-tiktok
 add address=18.161.49.37 list=z-ip-list-tiktok
 add address=23.55.244.24 list=z-ip-list-tiktok
@@ -5302,7 +4716,6 @@ add address=156.250.3.44 list=z-ip-list-tiktok
 add address=156.250.3.46 list=z-ip-list-tiktok
 add address=13.227.254.47 list=z-ip-list-tiktok
 add address=18.64.37.78 list=z-ip-list-tiktok
-add address=161.202.212.22 list=z-ip-list-youtube
 add address=8.252.96.252 list=z-ip-list-tiktok
 add address=8.252.27.252 list=z-ip-list-tiktok
 add address=156.250.3.49 list=z-ip-list-tiktok
@@ -5322,7 +4735,6 @@ add address=23.209.46.205 list=z-ip-list-tiktok
 add address=23.209.46.209 list=z-ip-list-tiktok
 add address=23.209.46.210 list=z-ip-list-tiktok
 add address=23.209.46.202 list=z-ip-list-tiktok
-add address=182.2.64.206 list=z-ip-list-youtube
 add address=156.59.189.169 list=z-ip-list-tiktok
 add address=156.250.3.48 list=z-ip-list-tiktok
 add address=156.59.189.166 list=z-ip-list-tiktok
@@ -5345,7 +4757,6 @@ add address=112.215.103.230 list=z-ip-list-tiktok
 add address=125.56.219.65 list=z-ip-list-tiktok
 add address=52.84.251.81 list=z-ip-list-tiktok
 add address=23.66.3.153 list=z-ip-list-tiktok
-add address=182.2.32.142 list=z-ip-list-youtube
 add address=125.56.219.16 list=z-ip-list-tiktok
 add address=96.17.72.72 list=z-ip-list-tiktok
 add address=125.56.219.8 list=z-ip-list-tiktok
@@ -5366,11 +4777,8 @@ add address=125.56.219.34 list=z-ip-list-tiktok
 add address=125.56.219.9 list=z-ip-list-tiktok
 add address=125.56.219.35 list=z-ip-list-tiktok
 add address=125.56.219.33 list=z-ip-list-tiktok
-add address=142.251.39.78 list=z-ip-list-youtube
-add address=182.253.108.204 list=z-ip-list-youtube
 add address=156.59.192.178 list=z-ip-list-tiktok
 add address=138.199.37.212 list=z-ip-list-tiktok
-add address=173.194.12.168 list=z-ip-list-youtube
 add address=23.63.243.89 list=z-ip-list-tiktok
 add address=23.63.243.83 list=z-ip-list-tiktok
 add address=23.63.242.99 list=z-ip-list-tiktok
@@ -5390,7 +4798,6 @@ add address=112.215.103.232 list=z-ip-list-tiktok
 add address=112.215.103.236 list=z-ip-list-tiktok
 add address=43.152.25.122 list=z-ip-list-tiktok
 add address=65.9.181.42 list=z-ip-list-tiktok
-add address=114.4.169.243 list=z-ip-list-youtube
 add address=23.210.250.83 list=z-ip-list-tiktok
 add address=114.5.7.139 list=z-ip-list-tiktok
 add address=18.64.37.38 list=z-ip-list-tiktok
@@ -5415,8 +4822,6 @@ add address=217.198.191.37 list=z-ip-list-tiktok
 add address=65.8.11.37 list=z-ip-list-tiktok
 add address=65.8.11.72 list=z-ip-list-tiktok
 add address=156.240.94.46 list=z-ip-list-tiktok
-add address=112.215.183.80 list=z-ip-list-youtube
-add address=112.215.183.141 list=z-ip-list-youtube
 add address=156.59.189.168 list=z-ip-list-tiktok
 add address=156.59.229.27 list=z-ip-list-tiktok
 add address=23.59.168.131 list=z-ip-list-tiktok
@@ -5425,12 +4830,9 @@ add address=23.219.184.208 list=z-ip-list-tiktok
 add address=8.240.229.124 list=z-ip-list-tiktok
 add address=72.247.127.192 list=z-ip-list-tiktok
 add address=52.84.251.3 list=z-ip-list-tiktok
-add address=74.125.164.41 list=z-ip-list-youtube
 add address=156.59.173.238 list=z-ip-list-tiktok
 add address=202.169.45.242 list=z-ip-list-tiktok
-add address=114.4.169.242 list=z-ip-list-youtube
 add address=156.240.94.50 list=z-ip-list-tiktok
-add address=173.194.54.201 list=z-ip-list-youtube
 add address=18.161.49.111 list=z-ip-list-tiktok
 add address=87.119.3.85 list=z-ip-list-tiktok
 add address=202.169.45.233 list=z-ip-list-tiktok
@@ -5439,13 +4841,10 @@ add address=163.171.220.15 list=z-ip-list-tiktok
 add address=38.60.187.23 list=z-ip-list-tiktok
 add address=23.50.117.209 list=z-ip-list-tiktok
 add address=23.50.117.203 list=z-ip-list-tiktok
-add address=140.213.63.76 list=z-ip-list-youtube
-add address=112.215.101.141 list=z-ip-list-youtube
 add address=3.160.212.23 list=z-ip-list-tiktok
 add address=140.213.224.105 list=z-ip-list-tiktok
 add address=140.213.224.107 list=z-ip-list-tiktok
 add address=114.5.7.162 list=z-ip-list-tiktok
-add address=161.202.212.202 list=z-ip-list-youtube
 add address=52.84.251.70 list=z-ip-list-tiktok
 add address=52.84.251.48 list=z-ip-list-tiktok
 add address=114.125.83.219 list=z-ip-list-tiktok
@@ -5454,7 +4853,6 @@ add address=128.1.178.228 list=z-ip-list-tiktok
 add address=114.4.168.67 list=z-ip-list-tiktok
 add address=114.5.7.137 list=z-ip-list-tiktok
 add address=114.5.7.147 list=z-ip-list-tiktok
-add address=161.202.210.139 list=z-ip-list-youtube
 add address=23.50.117.66 list=z-ip-list-tiktok
 add address=163.171.131.248 list=z-ip-list-tiktok
 add address=156.59.188.234 list=z-ip-list-tiktok
@@ -5537,18 +4935,10 @@ add address=23.39.173.216 list=z-ip-list-tiktok
 add address=23.33.32.147 list=z-ip-list-tiktok
 add address=23.33.32.90 list=z-ip-list-tiktok
 add address=23.33.32.162 list=z-ip-list-tiktok
-add address=74.125.8.73 list=z-ip-list-youtube
-add address=173.194.28.7 list=z-ip-list-youtube
 add address=65.9.181.24 list=z-ip-list-tiktok
 add address=163.171.129.138 list=z-ip-list-tiktok
 add address=23.66.3.78 list=z-ip-list-tiktok
 add address=23.66.3.77 list=z-ip-list-tiktok
-add address=173.194.183.72 list=z-ip-list-youtube
-add address=74.125.108.138 list=z-ip-list-youtube
-add address=172.217.132.41 list=z-ip-list-youtube
-add address=103.105.27.236 list=z-ip-list-youtube
-add address=103.105.27.172 list=z-ip-list-youtube
-add address=103.105.27.174 list=z-ip-list-youtube
 add address=156.240.94.48 list=z-ip-list-tiktok
 add address=185.93.3.13 list=z-ip-list-tiktok
 add address=140.213.62.75 list=z-ip-list-tiktok
@@ -5573,7 +4963,6 @@ add address=114.5.9.112 list=z-ip-list-tiktok
 add address=114.4.168.58 list=z-ip-list-tiktok
 add address=23.193.97.96 list=z-ip-list-tiktok
 add address=23.193.97.115 list=z-ip-list-tiktok
-add address=74.125.171.8 list=z-ip-list-youtube
 add address=23.39.173.113 list=z-ip-list-tiktok
 add address=138.113.152.50 list=z-ip-list-tiktok
 add address=163.171.135.102 list=z-ip-list-tiktok
@@ -5596,10 +4985,7 @@ add address=23.63.108.185 list=z-ip-list-tiktok
 add address=150.109.90.123 list=z-ip-list-tiktok
 add address=43.152.15.152 list=z-ip-list-tiktok
 add address=23.48.173.217 list=z-ip-list-tiktok
-add address=114.124.224.13 list=z-ip-list-youtube
 add address=138.113.121.149 list=z-ip-list-tiktok
-add address=161.202.208.129 list=z-ip-list-youtube
-add address=142.251.90.137 list=z-ip-list-youtube
 add address=36.91.254.40 list=z-ip-list-tiktok
 add address=104.70.235.123 list=z-ip-list-tiktok
 add address=18.64.18.119 list=z-ip-list-tiktok
@@ -5612,9 +4998,7 @@ add address=23.33.33.41 list=z-ip-list-tiktok
 add address=23.33.33.56 list=z-ip-list-tiktok
 add address=23.33.33.48 list=z-ip-list-tiktok
 add address=23.61.0.159 list=z-ip-list-tiktok
-add address=142.251.90.72 list=z-ip-list-youtube
 add address=18.67.161.16 list=z-ip-list-tiktok
-add address=74.125.157.72 list=z-ip-list-youtube
 add address=23.0.162.9 list=z-ip-list-tiktok
 add address=140.213.224.120 list=z-ip-list-tiktok
 add address=18.161.49.74 list=z-ip-list-tiktok
@@ -5624,7 +5008,6 @@ add address=163.171.195.72 list=z-ip-list-tiktok
 add address=114.5.7.152 list=z-ip-list-tiktok
 add address=52.84.251.9 list=z-ip-list-tiktok
 add address=18.64.37.3 list=z-ip-list-tiktok
-add address=161.202.210.215 list=z-ip-list-youtube
 add address=18.64.18.116 list=z-ip-list-tiktok
 add address=122.10.253.45 list=z-ip-list-tiktok
 add address=116.206.41.203 list=z-ip-list-tiktok
@@ -5652,8 +5035,6 @@ add address=23.40.40.136 list=z-ip-list-tiktok
 add address=112.78.159.17 list=z-ip-list-tiktok
 add address=23.50.232.241 list=z-ip-list-tiktok
 add address=23.40.40.185 list=z-ip-list-tiktok
-add address=117.102.125.141 list=z-ip-list-youtube
-add address=182.253.220.206 list=z-ip-list-youtube
 add address=23.40.40.154 list=z-ip-list-tiktok
 add address=118.99.66.104 list=z-ip-list-tiktok
 add address=23.39.173.66 list=z-ip-list-tiktok
@@ -5668,7 +5049,6 @@ add address=23.40.40.115 list=z-ip-list-tiktok
 add address=112.78.159.8 list=z-ip-list-tiktok
 add address=112.78.159.10 list=z-ip-list-tiktok
 add address=23.221.50.138 list=z-ip-list-tiktok
-add address=117.102.125.142 list=z-ip-list-youtube
 add address=202.169.45.251 list=z-ip-list-tiktok
 add address=202.169.45.208 list=z-ip-list-tiktok
 add address=23.40.40.122 list=z-ip-list-tiktok
@@ -5728,7 +5108,6 @@ add address=202.169.45.249 list=z-ip-list-tiktok
 add address=23.210.250.129 list=z-ip-list-tiktok
 add address=23.210.250.128 list=z-ip-list-tiktok
 add address=114.5.9.113 list=z-ip-list-tiktok
-add address=173.194.166.234 list=z-ip-list-youtube
 add address=140.213.224.35 list=z-ip-list-tiktok
 add address=140.213.224.42 list=z-ip-list-tiktok
 add address=202.169.45.234 list=z-ip-list-tiktok
@@ -5749,7 +5128,6 @@ add address=104.88.70.163 list=z-ip-list-tiktok
 add address=104.88.70.219 list=z-ip-list-tiktok
 add address=23.206.238.163 list=z-ip-list-tiktok
 add address=104.84.150.26 list=z-ip-list-tiktok
-add address=104.18.14.47 list=z-ip-list-youtube
 add address=104.88.70.192 list=z-ip-list-tiktok
 add address=104.84.150.35 list=z-ip-list-tiktok
 add address=23.206.238.171 list=z-ip-list-tiktok
@@ -5832,7 +5210,6 @@ add address=13.227.254.68 list=z-ip-list-tiktok
 add address=23.32.61.43 list=z-ip-list-tiktok
 add address=23.32.61.26 list=z-ip-list-tiktok
 add address=23.32.61.61 list=z-ip-list-tiktok
-add address=103.146.188.80 list=z-ip-list-youtube
 add address=84.17.50.58 list=z-ip-list-tiktok
 add address=23.40.40.186 list=z-ip-list-tiktok
 add address=23.40.40.179 list=z-ip-list-tiktok
@@ -5906,7 +5283,6 @@ add address=23.192.46.250 list=z-ip-list-tiktok
 add address=23.192.46.216 list=z-ip-list-tiktok
 add address=23.192.46.227 list=z-ip-list-tiktok
 add address=184.51.102.171 list=z-ip-list-tiktok
-add address=103.146.188.12 list=z-ip-list-youtube
 add address=23.44.5.201 list=z-ip-list-tiktok
 add address=23.192.46.235 list=z-ip-list-tiktok
 add address=23.192.47.10 list=z-ip-list-tiktok
@@ -5987,7 +5363,6 @@ add address=23.221.50.152 list=z-ip-list-tiktok
 add address=23.50.117.115 list=z-ip-list-tiktok
 add address=23.50.117.96 list=z-ip-list-tiktok
 add address=184.51.102.209 list=z-ip-list-tiktok
-add address=74.125.96.7 list=z-ip-list-youtube
 add address=23.221.50.136 list=z-ip-list-tiktok
 add address=23.215.35.89 list=z-ip-list-tiktok
 add address=184.86.250.172 list=z-ip-list-tiktok
@@ -6052,7 +5427,6 @@ add address=23.50.232.161 list=z-ip-list-tiktok
 add address=23.61.0.80 list=z-ip-list-tiktok
 add address=184.86.250.165 list=z-ip-list-tiktok
 add address=18.64.18.61 list=z-ip-list-tiktok
-add address=74.125.103.72 list=z-ip-list-youtube
 add address=140.213.62.59 list=z-ip-list-tiktok
 add address=140.213.62.48 list=z-ip-list-tiktok
 add address=140.213.62.64 list=z-ip-list-tiktok
@@ -6062,7 +5436,6 @@ add address=140.213.62.176 list=z-ip-list-tiktok
 add address=140.213.62.49 list=z-ip-list-tiktok
 add address=140.213.62.122 list=z-ip-list-tiktok
 add address=184.28.235.218 list=z-ip-list-tiktok
-add address=103.146.188.77 list=z-ip-list-youtube
 add address=140.213.62.168 list=z-ip-list-tiktok
 add address=140.213.62.203 list=z-ip-list-tiktok
 add address=140.213.62.170 list=z-ip-list-tiktok
@@ -6596,7 +5969,6 @@ add address=23.206.238.122 list=z-ip-list-tiktok
 add address=23.33.126.159 list=z-ip-list-tiktok
 add address=23.33.92.171 list=z-ip-list-tiktok
 add address=23.202.35.226 list=z-ip-list-tiktok
-add address=173.194.8.201 list=z-ip-list-youtube
 add address=104.84.150.75 list=z-ip-list-tiktok
 add address=23.202.35.211 list=z-ip-list-tiktok
 add address=23.32.61.161 list=z-ip-list-tiktok
@@ -6855,7 +6227,6 @@ add address=104.91.68.25 list=z-ip-list-tiktok
 add address=23.210.93.146 list=z-ip-list-tiktok
 add address=23.210.93.56 list=z-ip-list-tiktok
 add address=23.210.93.128 list=z-ip-list-tiktok
-add address=74.125.103.234 list=z-ip-list-youtube
 add address=23.210.93.75 list=z-ip-list-tiktok
 add address=23.210.93.122 list=z-ip-list-tiktok
 add address=104.91.68.32 list=z-ip-list-tiktok
@@ -6943,7 +6314,6 @@ add address=96.17.72.80 list=z-ip-list-tiktok
 add address=23.61.0.201 list=z-ip-list-tiktok
 add address=23.61.0.97 list=z-ip-list-tiktok
 add address=184.27.122.201 list=z-ip-list-tiktok
-add address=161.202.222.81 list=z-ip-list-youtube
 add address=23.44.4.26 list=z-ip-list-tiktok
 add address=23.202.33.171 list=z-ip-list-tiktok
 add address=23.44.4.107 list=z-ip-list-tiktok
@@ -7014,7 +6384,6 @@ add address=23.44.4.83 list=z-ip-list-tiktok
 add address=23.44.4.114 list=z-ip-list-tiktok
 add address=184.51.102.48 list=z-ip-list-tiktok
 add address=23.202.35.17 list=z-ip-list-tiktok
-add address=119.81.6.157 list=z-ip-list-youtube
 add address=184.26.91.31 list=z-ip-list-tiktok
 add address=114.10.52.10 list=z-ip-list-tiktok
 add address=184.51.102.123 list=z-ip-list-tiktok
@@ -7030,7 +6399,6 @@ add address=114.10.52.26 list=z-ip-list-tiktok
 add address=23.46.16.174 list=z-ip-list-tiktok
 add address=23.202.33.130 list=z-ip-list-tiktok
 add address=23.61.0.161 list=z-ip-list-tiktok
-add address=23.248.169.94 list=z-ip-list-youtube
 add address=23.193.97.120 list=z-ip-list-tiktok
 add address=23.193.97.99 list=z-ip-list-tiktok
 add address=23.193.97.112 list=z-ip-list-tiktok
@@ -7075,7 +6443,6 @@ add address=23.40.241.185 list=z-ip-list-tiktok
 add address=23.40.241.203 list=z-ip-list-tiktok
 add address=23.39.173.107 list=z-ip-list-tiktok
 add address=23.40.242.16 list=z-ip-list-tiktok
-add address=161.202.213.137 list=z-ip-list-youtube
 add address=23.40.241.210 list=z-ip-list-tiktok
 add address=23.40.241.187 list=z-ip-list-tiktok
 add address=23.192.45.49 list=z-ip-list-tiktok
@@ -7273,7 +6640,6 @@ add address=23.40.40.98 list=z-ip-list-tiktok
 add address=23.40.40.65 list=z-ip-list-tiktok
 add address=104.79.0.40 list=z-ip-list-tiktok
 add address=23.48.107.42 list=z-ip-list-tiktok
-add address=74.125.157.70 list=z-ip-list-youtube
 add address=23.39.173.83 list=z-ip-list-tiktok
 add address=23.39.173.106 list=z-ip-list-tiktok
 add address=23.39.173.90 list=z-ip-list-tiktok
@@ -7290,13 +6656,11 @@ add address=23.52.40.19 list=z-ip-list-tiktok
 add address=23.48.173.26 list=z-ip-list-tiktok
 add address=23.39.173.99 list=z-ip-list-tiktok
 add address=23.215.35.71 list=z-ip-list-tiktok
-add address=103.234.122.77 list=z-ip-list-youtube
 add address=23.39.173.75 list=z-ip-list-tiktok
 add address=23.39.173.121 list=z-ip-list-tiktok
 add address=23.39.173.144 list=z-ip-list-tiktok
 add address=23.48.173.210 list=z-ip-list-tiktok
 add address=23.48.173.243 list=z-ip-list-tiktok
-add address=103.167.171.104 list=z-ip-list-youtube
 add address=114.4.168.25 list=z-ip-list-tiktok
 add address=184.28.235.59 list=z-ip-list-tiktok
 add address=184.28.235.42 list=z-ip-list-tiktok
@@ -7395,15 +6759,10 @@ add address=23.56.239.195 list=z-ip-list-tiktok
 add address=23.56.239.88 list=z-ip-list-tiktok
 add address=23.50.117.139 list=z-ip-list-tiktok
 add address=23.50.117.106 list=z-ip-list-tiktok
-add address=74.125.68.116 list=z-ip-list-youtube
 add address=23.56.239.147 list=z-ip-list-tiktok
 add address=23.56.239.170 list=z-ip-list-tiktok
 add address=23.56.239.146 list=z-ip-list-tiktok
-add address=161.202.208.103 list=z-ip-list-youtube
 add address=114.4.39.201 list=z-ip-list-tiktok
-add address=142.251.211.238 list=z-ip-list-youtube
-add address=173.194.56.138 list=z-ip-list-youtube
-add address=173.194.152.8 list=z-ip-list-youtube
 add address=23.40.240.203 list=z-ip-list-tiktok
 add address=23.40.240.241 list=z-ip-list-tiktok
 add address=23.40.240.192 list=z-ip-list-tiktok
@@ -7414,7 +6773,6 @@ add address=23.40.240.217 list=z-ip-list-tiktok
 add address=23.40.240.225 list=z-ip-list-tiktok
 add address=23.40.240.161 list=z-ip-list-tiktok
 add address=23.40.240.176 list=z-ip-list-tiktok
-add address=140.213.63.47 list=z-ip-list-youtube
 add address=23.39.173.145 list=z-ip-list-tiktok
 add address=23.50.232.177 list=z-ip-list-tiktok
 add address=23.56.239.176 list=z-ip-list-tiktok
@@ -7460,7 +6818,6 @@ add address=104.91.69.201 list=z-ip-list-tiktok
 add address=23.56.239.89 list=z-ip-list-tiktok
 add address=23.48.173.216 list=z-ip-list-tiktok
 add address=23.13.219.245 list=z-ip-list-tiktok
-add address=31.13.95.60 list=z-ip-list-youtube
 add address=184.28.218.224 list=z-ip-list-tiktok
 add address=23.13.219.248 list=z-ip-list-tiktok
 add address=23.13.219.239 list=z-ip-list-tiktok
@@ -7492,7 +6849,6 @@ add address=23.199.67.80 list=z-ip-list-tiktok
 add address=114.10.2.24 list=z-ip-list-tiktok
 add address=104.91.69.218 list=z-ip-list-tiktok
 add address=23.213.43.200 list=z-ip-list-tiktok
-add address=23.248.168.167 list=z-ip-list-youtube
 add address=23.248.168.167 list=z-ip-list-tiktok
 add address=23.56.239.131 list=z-ip-list-tiktok
 add address=23.56.239.179 list=z-ip-list-tiktok
@@ -7508,7 +6864,6 @@ add address=114.10.52.144 list=z-ip-list-tiktok
 add address=114.10.2.248 list=z-ip-list-tiktok
 add address=18.155.49.26 list=z-ip-list-tiktok
 add address=161.202.212.22 list=z-ip-list-tiktok
-add address=74.125.101.170 list=z-ip-list-youtube
 add address=184.29.140.211 list=z-ip-list-tiktok
 add address=23.192.46.233 list=z-ip-list-tiktok
 add address=161.202.210.204 list=z-ip-list-tiktok
@@ -7523,7 +6878,6 @@ add address=23.48.173.218 list=z-ip-list-tiktok
 add address=184.86.250.159 list=z-ip-list-tiktok
 add address=23.215.35.84 list=z-ip-list-tiktok
 add address=114.125.115.59 list=z-ip-list-tiktok
-add address=173.194.12.202 list=z-ip-list-youtube
 add address=23.221.50.9 list=z-ip-list-tiktok
 add address=23.221.50.43 list=z-ip-list-tiktok
 add address=23.221.50.32 list=z-ip-list-tiktok
@@ -7533,7 +6887,6 @@ add address=23.215.35.132 list=z-ip-list-tiktok
 add address=23.215.35.134 list=z-ip-list-tiktok
 add address=23.215.35.142 list=z-ip-list-tiktok
 add address=161.202.222.81 list=z-ip-list-tiktok
-add address=161.202.221.187 list=z-ip-list-youtube
 add address=161.202.208.228 list=z-ip-list-tiktok
 add address=156.59.151.19 list=z-ip-list-tiktok
 add address=34.117.36.110 list=z-ip-list-tiktok
@@ -7549,7 +6902,6 @@ add address=23.215.35.93 list=z-ip-list-tiktok
 add address=23.215.35.94 list=z-ip-list-tiktok
 add address=114.10.52.33 list=z-ip-list-tiktok
 add address=114.10.52.41 list=z-ip-list-tiktok
-add address=161.202.212.225 list=z-ip-list-youtube
 add address=23.50.232.129 list=z-ip-list-tiktok
 add address=23.40.242.17 list=z-ip-list-tiktok
 add address=23.40.242.9 list=z-ip-list-tiktok
@@ -7557,14 +6909,12 @@ add address=23.40.241.241 list=z-ip-list-tiktok
 add address=23.40.241.216 list=z-ip-list-tiktok
 add address=112.215.103.231 list=z-ip-list-tiktok
 add address=23.223.18.48 list=z-ip-list-tiktok
-add address=142.251.90.167 list=z-ip-list-youtube
 add address=140.213.62.35 list=z-ip-list-tiktok
 add address=18.155.49.100 list=z-ip-list-tiktok
 add address=23.44.5.104 list=z-ip-list-tiktok
 add address=23.44.5.107 list=z-ip-list-tiktok
 add address=23.39.173.73 list=z-ip-list-tiktok
 add address=23.40.40.81 list=z-ip-list-tiktok
-add address=140.213.63.46 list=z-ip-list-youtube
 add address=23.215.35.67 list=z-ip-list-tiktok
 add address=23.39.173.112 list=z-ip-list-tiktok
 add address=23.33.92.134 list=z-ip-list-tiktok
@@ -7574,26 +6924,19 @@ add address=161.202.213.14 list=z-ip-list-tiktok
 add address=23.44.4.25 list=z-ip-list-tiktok
 add address=211.152.128.120 list=z-ip-list-tiktok
 add address=143.244.42.48 list=z-ip-list-tiktok
-add address=173.194.12.201 list=z-ip-list-youtube
 add address=23.50.232.143 list=z-ip-list-tiktok
 add address=184.84.150.24 list=z-ip-list-tiktok
-add address=140.213.63.108 list=z-ip-list-youtube
-add address=112.215.183.12 list=z-ip-list-youtube
-add address=140.213.63.109 list=z-ip-list-youtube
 add address=23.46.16.199 list=z-ip-list-tiktok
 add address=184.28.218.187 list=z-ip-list-tiktok
 add address=23.33.92.187 list=z-ip-list-tiktok
 add address=184.28.218.163 list=z-ip-list-tiktok
 add address=23.50.117.171 list=z-ip-list-tiktok
 add address=23.193.96.209 list=z-ip-list-tiktok
-add address=142.251.85.167 list=z-ip-list-youtube
 add address=184.25.236.81 list=z-ip-list-tiktok
 add address=143.244.42.47 list=z-ip-list-tiktok
-add address=172.217.145.136 list=z-ip-list-youtube
 add address=23.64.122.122 list=z-ip-list-tiktok
 add address=114.10.2.227 list=z-ip-list-tiktok
 add address=184.28.229.194 list=z-ip-list-tiktok
-add address=142.251.85.199 list=z-ip-list-youtube
 add address=184.28.218.154 list=z-ip-list-tiktok
 add address=156.59.192.182 list=z-ip-list-tiktok
 add address=104.91.69.202 list=z-ip-list-tiktok
@@ -7613,16 +6956,11 @@ add address=184.51.102.50 list=z-ip-list-tiktok
 add address=184.51.102.128 list=z-ip-list-tiktok
 add address=148.153.241.24 list=z-ip-list-tiktok
 add address=184.28.218.185 list=z-ip-list-tiktok
-add address=173.194.166.199 list=z-ip-list-youtube
 add address=184.51.102.83 list=z-ip-list-tiktok
 add address=184.27.122.8 list=z-ip-list-tiktok
 add address=114.4.168.64 list=z-ip-list-tiktok
 add address=114.4.168.73 list=z-ip-list-tiktok
-add address=172.217.145.135 list=z-ip-list-youtube
 add address=23.192.150.7 list=z-ip-list-tiktok
-add address=74.125.102.38 list=z-ip-list-youtube
-add address=142.251.85.169 list=z-ip-list-youtube
-add address=74.125.103.199 list=z-ip-list-youtube
 add address=148.153.241.23 list=z-ip-list-tiktok
 add address=217.198.191.41 list=z-ip-list-tiktok
 add address=184.27.122.34 list=z-ip-list-tiktok
@@ -7703,7 +7041,6 @@ add address=23.215.35.80 list=z-ip-list-tiktok
 add address=38.54.65.218 list=z-ip-list-tiktok
 add address=140.213.224.34 list=z-ip-list-tiktok
 add address=18.161.49.21 list=z-ip-list-tiktok
-add address=112.215.101.173 list=z-ip-list-youtube
 add address=140.213.50.208 list=z-ip-list-tiktok
 add address=23.45.232.179 list=z-ip-list-tiktok
 add address=184.51.102.81 list=z-ip-list-tiktok
@@ -7713,7 +7050,6 @@ add address=23.45.232.170 list=z-ip-list-tiktok
 add address=23.45.232.121 list=z-ip-list-tiktok
 add address=23.45.232.107 list=z-ip-list-tiktok
 add address=114.10.2.193 list=z-ip-list-tiktok
-add address=209.85.228.202 list=z-ip-list-youtube
 add address=23.45.232.98 list=z-ip-list-tiktok
 add address=108.138.141.98 list=z-ip-list-tiktok
 add address=23.66.3.141 list=z-ip-list-tiktok
@@ -7729,7 +7065,6 @@ add address=23.61.0.143 list=z-ip-list-tiktok
 add address=23.61.0.185 list=z-ip-list-tiktok
 add address=104.98.3.27 list=z-ip-list-tiktok
 add address=104.98.3.26 list=z-ip-list-tiktok
-add address=114.124.160.77 list=z-ip-list-youtube
 add address=23.40.240.171 list=z-ip-list-tiktok
 add address=104.79.0.26 list=z-ip-list-tiktok
 add address=23.67.57.235 list=z-ip-list-tiktok
@@ -7782,12 +7117,10 @@ add address=23.193.96.153 list=z-ip-list-tiktok
 add address=23.193.96.138 list=z-ip-list-tiktok
 add address=23.193.96.168 list=z-ip-list-tiktok
 add address=36.91.254.43 list=z-ip-list-tiktok
-add address=67.199.248.11 list=z-ip-list-youtube
 add address=23.11.200.69 list=z-ip-list-tiktok
 add address=23.33.126.153 list=z-ip-list-tiktok
 add address=23.61.252.72 list=z-ip-list-tiktok
 add address=23.195.119.12 list=z-ip-list-tiktok
-add address=114.10.0.111 list=z-ip-list-youtube
 add address=23.49.104.43 list=z-ip-list-tiktok
 add address=23.195.119.15 list=z-ip-list-tiktok
 add address=23.193.186.16 list=z-ip-list-tiktok
@@ -7796,9 +7129,7 @@ add address=103.147.212.62 list=z-ip-list-tiktok
 add address=23.200.218.57 list=z-ip-list-tiktok
 add address=23.195.119.11 list=z-ip-list-tiktok
 add address=104.91.69.16 list=z-ip-list-tiktok
-add address=202.70.58.19 list=z-ip-list-youtube
 add address=23.43.48.11 list=z-ip-list-tiktok
-add address=173.194.28.104 list=z-ip-list-youtube
 add address=104.79.0.41 list=z-ip-list-tiktok
 add address=184.51.102.59 list=z-ip-list-tiktok
 add address=184.51.102.26 list=z-ip-list-tiktok
@@ -7832,14 +7163,9 @@ add address=184.86.250.174 list=z-ip-list-tiktok
 add address=23.50.232.120 list=z-ip-list-tiktok
 add address=184.86.250.175 list=z-ip-list-tiktok
 add address=23.61.0.110 list=z-ip-list-tiktok
-add address=161.202.212.24 list=z-ip-list-youtube
 add address=114.10.52.35 list=z-ip-list-tiktok
 add address=23.53.33.232 list=z-ip-list-tiktok
-add address=112.215.183.76 list=z-ip-list-youtube
-add address=182.2.64.205 list=z-ip-list-youtube
-add address=114.124.192.211 list=z-ip-list-youtube
 add address=23.44.4.155 list=z-ip-list-tiktok
-add address=173.194.167.137 list=z-ip-list-youtube
 add address=23.73.4.225 list=z-ip-list-tiktok
 add address=23.46.16.216 list=z-ip-list-tiktok
 add address=23.73.4.216 list=z-ip-list-tiktok
@@ -7853,7 +7179,6 @@ add address=140.213.224.125 list=z-ip-list-tiktok
 add address=140.213.224.98 list=z-ip-list-tiktok
 add address=138.113.144.139 list=z-ip-list-tiktok
 add address=3.162.58.126 list=z-ip-list-tiktok
-add address=173.194.167.6 list=z-ip-list-youtube
 add address=23.33.92.41 list=z-ip-list-tiktok
 add address=184.28.235.137 list=z-ip-list-tiktok
 add address=184.28.235.114 list=z-ip-list-tiktok
@@ -8015,23 +7340,16 @@ add address=23.33.92.21 list=z-ip-list-tiktok
 add address=104.90.7.235 list=z-ip-list-tiktok
 add address=148.153.241.22 list=z-ip-list-tiktok
 add address=101.33.5.31 list=z-ip-list-tiktok
-add address=23.248.168.169 list=z-ip-list-youtube
 add address=23.248.168.169 list=z-ip-list-tiktok
-add address=161.202.218.180 list=z-ip-list-youtube
-add address=74.125.100.70 list=z-ip-list-youtube
-add address=74.125.103.233 list=z-ip-list-youtube
 add address=23.32.20.245 list=z-ip-list-tiktok
 add address=114.5.7.160 list=z-ip-list-tiktok
 add address=114.4.168.10 list=z-ip-list-tiktok
-add address=142.251.90.70 list=z-ip-list-youtube
 add address=71.18.1.238 list=z-ip-list-tiktok
 add address=71.18.1.244 list=z-ip-list-tiktok
 add address=71.18.1.240 list=z-ip-list-tiktok
 add address=125.56.219.26 list=z-ip-list-tiktok
 add address=163.171.131.88 list=z-ip-list-tiktok
 add address=114.10.52.24 list=z-ip-list-tiktok
-add address=74.125.103.74 list=z-ip-list-youtube
-add address=74.125.103.169 list=z-ip-list-youtube
 add address=23.73.4.202 list=z-ip-list-tiktok
 add address=61.247.0.114 list=z-ip-list-tiktok
 add address=23.73.4.210 list=z-ip-list-tiktok
@@ -8041,11 +7359,8 @@ add address=23.73.4.215 list=z-ip-list-tiktok
 add address=23.73.4.220 list=z-ip-list-tiktok
 add address=23.73.4.211 list=z-ip-list-tiktok
 add address=61.247.0.80 list=z-ip-list-tiktok
-add address=173.194.12.200 list=z-ip-list-youtube
 add address=23.48.173.226 list=z-ip-list-tiktok
-add address=74.125.162.136 list=z-ip-list-youtube
 add address=23.50.232.136 list=z-ip-list-tiktok
-add address=74.125.173.170 list=z-ip-list-youtube
 add address=23.215.35.91 list=z-ip-list-tiktok
 add address=23.200.142.72 list=z-ip-list-tiktok
 add address=23.67.57.176 list=z-ip-list-tiktok
@@ -8064,10 +7379,6 @@ add address=23.200.142.80 list=z-ip-list-tiktok
 add address=23.67.57.147 list=z-ip-list-tiktok
 add address=96.17.70.130 list=z-ip-list-tiktok
 add address=96.17.70.219 list=z-ip-list-tiktok
-add address=140.213.63.77 list=z-ip-list-youtube
-add address=112.215.184.16 list=z-ip-list-youtube
-add address=140.213.63.78 list=z-ip-list-youtube
-add address=172.217.145.103 list=z-ip-list-youtube
 add address=96.17.70.129 list=z-ip-list-tiktok
 add address=96.17.70.168 list=z-ip-list-tiktok
 add address=23.200.142.56 list=z-ip-list-tiktok
@@ -8120,7 +7431,6 @@ add address=23.40.241.233 list=z-ip-list-tiktok
 add address=23.40.241.219 list=z-ip-list-tiktok
 add address=23.40.40.34 list=z-ip-list-tiktok
 add address=114.10.3.88 list=z-ip-list-tiktok
-add address=112.215.184.77 list=z-ip-list-youtube
 add address=23.199.67.66 list=z-ip-list-tiktok
 add address=23.199.67.89 list=z-ip-list-tiktok
 add address=184.84.150.42 list=z-ip-list-tiktok
@@ -8138,7 +7448,6 @@ add address=23.49.98.207 list=z-ip-list-tiktok
 add address=23.49.98.211 list=z-ip-list-tiktok
 add address=88.221.213.146 list=z-ip-list-tiktok
 add address=23.49.98.205 list=z-ip-list-tiktok
-add address=209.85.229.39 list=z-ip-list-youtube
 add address=23.49.98.220 list=z-ip-list-tiktok
 add address=23.49.98.216 list=z-ip-list-tiktok
 add address=23.49.98.208 list=z-ip-list-tiktok
@@ -8247,7 +7556,6 @@ add address=23.45.232.139 list=z-ip-list-tiktok
 add address=23.45.232.105 list=z-ip-list-tiktok
 add address=104.84.150.134 list=z-ip-list-tiktok
 add address=101.33.5.46 list=z-ip-list-tiktok
-add address=23.248.169.98 list=z-ip-list-youtube
 add address=23.33.92.57 list=z-ip-list-tiktok
 add address=104.90.7.170 list=z-ip-list-tiktok
 add address=104.90.7.162 list=z-ip-list-tiktok
@@ -8285,7 +7593,6 @@ add address=23.44.4.32 list=z-ip-list-tiktok
 add address=43.153.232.152 list=z-ip-list-tiktok
 add address=43.152.64.193 list=z-ip-list-tiktok
 add address=23.44.5.49 list=z-ip-list-tiktok
-add address=36.92.234.206 list=z-ip-list-youtube
 add address=23.53.33.146 list=z-ip-list-tiktok
 add address=104.90.7.25 list=z-ip-list-tiktok
 add address=23.215.35.69 list=z-ip-list-tiktok
@@ -8294,7 +7601,6 @@ add address=104.90.7.27 list=z-ip-list-tiktok
 add address=23.213.185.199 list=z-ip-list-tiktok
 add address=163.171.147.6 list=z-ip-list-tiktok
 add address=23.192.150.26 list=z-ip-list-tiktok
-add address=172.217.132.201 list=z-ip-list-youtube
 add address=23.215.35.140 list=z-ip-list-tiktok
 add address=104.90.7.48 list=z-ip-list-tiktok
 add address=23.248.169.94 list=z-ip-list-tiktok
@@ -8308,7 +7614,6 @@ add address=184.28.229.240 list=z-ip-list-tiktok
 add address=34.111.101.25 list=z-ip-list-tiktok
 add address=23.61.0.113 list=z-ip-list-tiktok
 add address=23.40.241.80 list=z-ip-list-tiktok
-add address=74.125.168.74 list=z-ip-list-youtube
 add address=23.40.241.88 list=z-ip-list-tiktok
 add address=34.117.97.41 list=z-ip-list-tiktok
 add address=140.213.224.96 list=z-ip-list-tiktok
@@ -8364,7 +7669,6 @@ add address=104.70.235.162 list=z-ip-list-tiktok
 add address=104.91.69.51 list=z-ip-list-tiktok
 add address=92.122.166.177 list=z-ip-list-tiktok
 add address=104.70.235.185 list=z-ip-list-tiktok
-add address=161.202.217.217 list=z-ip-list-youtube
 add address=23.45.232.115 list=z-ip-list-tiktok
 add address=87.245.213.42 list=z-ip-list-tiktok
 add address=87.245.213.41 list=z-ip-list-tiktok
@@ -8480,12 +7784,10 @@ add address=114.125.80.209 list=z-ip-list-tiktok
 add address=23.53.33.161 list=z-ip-list-tiktok
 add address=23.53.33.128 list=z-ip-list-tiktok
 add address=161.202.208.7 list=z-ip-list-tiktok
-add address=161.117.111.120 list=z-ip-list-youtube
 add address=52.84.251.57 list=z-ip-list-tiktok
 add address=23.73.4.224 list=z-ip-list-tiktok
 add address=52.84.251.64 list=z-ip-list-tiktok
 add address=52.84.251.45 list=z-ip-list-tiktok
-add address=74.125.103.170 list=z-ip-list-youtube
 add address=23.204.147.211 list=z-ip-list-tiktok
 add address=23.73.4.205 list=z-ip-list-tiktok
 add address=156.59.192.184 list=z-ip-list-tiktok
@@ -8584,38 +7886,27 @@ add address=23.211.136.17 list=z-ip-list-tiktok
 add address=23.65.124.27 list=z-ip-list-tiktok
 add address=23.65.124.11 list=z-ip-list-tiktok
 add address=23.63.84.105 list=z-ip-list-tiktok
-add address=173.194.8.106 list=z-ip-list-youtube
 add address=114.5.7.145 list=z-ip-list-tiktok
 add address=114.4.39.209 list=z-ip-list-tiktok
 add address=23.73.4.209 list=z-ip-list-tiktok
 add address=23.216.158.89 list=z-ip-list-tiktok
-add address=161.202.210.204 list=z-ip-list-youtube
 add address=34.149.219.180 list=z-ip-list-tiktok
 add address=150.109.90.4 list=z-ip-list-tiktok
-add address=74.125.109.8 list=z-ip-list-youtube
-add address=209.85.229.9 list=z-ip-list-youtube
 add address=23.13.219.229 list=z-ip-list-tiktok
 add address=184.28.218.211 list=z-ip-list-tiktok
-add address=173.194.167.8 list=z-ip-list-youtube
 add address=184.28.218.219 list=z-ip-list-tiktok
 add address=184.28.218.161 list=z-ip-list-tiktok
-add address=142.251.208.174 list=z-ip-list-youtube
 add address=23.13.219.247 list=z-ip-list-tiktok
 add address=184.28.218.169 list=z-ip-list-tiktok
 add address=23.13.219.238 list=z-ip-list-tiktok
 add address=23.13.219.230 list=z-ip-list-tiktok
 add address=23.215.35.95 list=z-ip-list-tiktok
 add address=180.250.169.100 list=z-ip-list-tiktok
-add address=173.194.12.167 list=z-ip-list-youtube
 add address=23.215.35.144 list=z-ip-list-tiktok
 add address=65.9.17.57 list=z-ip-list-tiktok
 add address=23.215.35.87 list=z-ip-list-tiktok
-add address=103.146.188.81 list=z-ip-list-youtube
-add address=103.134.189.168 list=z-ip-list-youtube
-add address=103.134.189.169 list=z-ip-list-youtube
 add address=114.10.52.11 list=z-ip-list-tiktok
 add address=114.10.52.18 list=z-ip-list-tiktok
-add address=172.217.174.174 list=z-ip-list-youtube
 add address=184.84.150.18 list=z-ip-list-tiktok
 add address=156.59.229.21 list=z-ip-list-tiktok
 add address=88.221.111.25 list=z-ip-list-tiktok
@@ -8631,13 +7922,10 @@ add address=23.52.70.23 list=z-ip-list-tiktok
 add address=23.52.70.160 list=z-ip-list-tiktok
 add address=23.52.70.47 list=z-ip-list-tiktok
 add address=173.222.108.203 list=z-ip-list-tiktok
-add address=161.202.212.46 list=z-ip-list-youtube
 add address=23.52.70.154 list=z-ip-list-tiktok
-add address=161.202.212.39 list=z-ip-list-youtube
 add address=108.138.141.28 list=z-ip-list-tiktok
 add address=108.138.141.45 list=z-ip-list-tiktok
 add address=108.138.141.80 list=z-ip-list-tiktok
-add address=161.202.208.7 list=z-ip-list-youtube
 add address=23.52.70.48 list=z-ip-list-tiktok
 add address=92.122.166.172 list=z-ip-list-tiktok
 add address=92.122.166.164 list=z-ip-list-tiktok
@@ -8658,17 +7946,13 @@ add address=114.4.168.11 list=z-ip-list-tiktok
 add address=104.91.69.227 list=z-ip-list-tiktok
 add address=104.98.3.34 list=z-ip-list-tiktok
 add address=184.27.123.123 list=z-ip-list-tiktok
-add address=103.234.122.143 list=z-ip-list-youtube
 add address=104.98.3.33 list=z-ip-list-tiktok
 add address=184.27.123.64 list=z-ip-list-tiktok
-add address=172.217.194.117 list=z-ip-list-youtube
 add address=112.198.9.48 list=z-ip-list-tiktok
 add address=184.26.91.224 list=z-ip-list-tiktok
-add address=74.125.8.134 list=z-ip-list-youtube
 add address=23.200.156.138 list=z-ip-list-tiktok
 add address=23.73.4.197 list=z-ip-list-tiktok
 add address=114.10.3.89 list=z-ip-list-tiktok
-add address=161.202.213.211 list=z-ip-list-youtube
 add address=23.73.4.213 list=z-ip-list-tiktok
 add address=184.28.218.155 list=z-ip-list-tiktok
 add address=23.50.232.174 list=z-ip-list-tiktok
@@ -8679,10 +7963,6 @@ add address=184.28.218.162 list=z-ip-list-tiktok
 add address=23.198.11.33 list=z-ip-list-tiktok
 add address=23.198.11.27 list=z-ip-list-tiktok
 add address=184.28.218.192 list=z-ip-list-tiktok
-add address=161.202.213.124 list=z-ip-list-youtube
-add address=173.194.22.104 list=z-ip-list-youtube
-add address=173.194.167.70 list=z-ip-list-youtube
-add address=161.202.218.168 list=z-ip-list-youtube
 add address=23.33.92.45 list=z-ip-list-tiktok
 add address=156.59.188.233 list=z-ip-list-tiktok
 add address=184.30.30.57 list=z-ip-list-tiktok
@@ -8715,10 +7995,8 @@ add address=96.17.207.135 list=z-ip-list-tiktok
 add address=96.17.207.132 list=z-ip-list-tiktok
 add address=96.17.207.136 list=z-ip-list-tiktok
 add address=217.198.191.54 list=z-ip-list-tiktok
-add address=74.125.200.117 list=z-ip-list-youtube
 add address=13.225.142.116 list=z-ip-list-tiktok
 add address=23.200.218.27 list=z-ip-list-tiktok
-add address=172.217.145.42 list=z-ip-list-youtube
 add address=104.79.0.17 list=z-ip-list-tiktok
 add address=23.64.122.34 list=z-ip-list-tiktok
 add address=23.64.122.33 list=z-ip-list-tiktok
@@ -8726,18 +8004,14 @@ add address=23.64.122.41 list=z-ip-list-tiktok
 add address=23.44.4.144 list=z-ip-list-tiktok
 add address=23.44.4.177 list=z-ip-list-tiktok
 add address=23.44.4.171 list=z-ip-list-tiktok
-add address=209.85.226.103 list=z-ip-list-youtube
 add address=23.44.4.152 list=z-ip-list-tiktok
 add address=114.10.2.11 list=z-ip-list-tiktok
-add address=74.125.162.71 list=z-ip-list-youtube
 add address=23.200.218.96 list=z-ip-list-tiktok
 add address=43.156.36.106 list=z-ip-list-tiktok
 add address=202.70.57.122 list=z-ip-list-tiktok
 add address=185.93.3.12 list=z-ip-list-tiktok
 add address=23.73.4.222 list=z-ip-list-tiktok
 add address=23.73.4.218 list=z-ip-list-tiktok
-add address=104.18.15.47 list=z-ip-list-youtube
-add address=74.125.170.73 list=z-ip-list-youtube
 add address=23.192.239.103 list=z-ip-list-tiktok
 add address=184.28.218.193 list=z-ip-list-tiktok
 add address=184.28.218.217 list=z-ip-list-tiktok
@@ -8745,7 +8019,6 @@ add address=184.28.218.218 list=z-ip-list-tiktok
 add address=184.28.218.195 list=z-ip-list-tiktok
 add address=23.219.172.246 list=z-ip-list-tiktok
 add address=23.46.229.18 list=z-ip-list-tiktok
-add address=161.202.221.60 list=z-ip-list-youtube
 add address=184.30.30.19 list=z-ip-list-tiktok
 add address=184.30.30.25 list=z-ip-list-tiktok
 add address=23.219.184.226 list=z-ip-list-tiktok
@@ -8765,7 +8038,6 @@ add address=184.28.218.160 list=z-ip-list-tiktok
 add address=23.193.97.16 list=z-ip-list-tiktok
 add address=23.44.4.163 list=z-ip-list-tiktok
 add address=140.213.224.112 list=z-ip-list-tiktok
-add address=112.215.183.142 list=z-ip-list-youtube
 add address=116.206.41.179 list=z-ip-list-tiktok
 add address=104.79.0.43 list=z-ip-list-tiktok
 add address=23.66.3.138 list=z-ip-list-tiktok
@@ -8779,7 +8051,6 @@ add address=111.95.250.95 list=z-ip-list-tiktok
 add address=111.95.250.32 list=z-ip-list-tiktok
 add address=111.95.250.94 list=z-ip-list-tiktok
 add address=111.95.250.33 list=z-ip-list-tiktok
-add address=74.125.157.8 list=z-ip-list-youtube
 add address=104.79.0.35 list=z-ip-list-tiktok
 add address=108.157.30.93 list=z-ip-list-tiktok
 add address=3.162.58.106 list=z-ip-list-tiktok
@@ -8795,10 +8066,8 @@ add address=23.67.57.161 list=z-ip-list-tiktok
 add address=23.67.57.154 list=z-ip-list-tiktok
 add address=23.200.142.81 list=z-ip-list-tiktok
 add address=104.70.235.89 list=z-ip-list-tiktok
-add address=117.102.111.248 list=z-ip-list-youtube
 add address=23.43.48.49 list=z-ip-list-tiktok
 add address=104.70.235.91 list=z-ip-list-tiktok
-add address=117.102.111.249 list=z-ip-list-youtube
 add address=104.70.235.178 list=z-ip-list-tiktok
 add address=23.200.142.105 list=z-ip-list-tiktok
 add address=23.200.142.65 list=z-ip-list-tiktok
@@ -8853,7 +8122,6 @@ add address=156.225.96.18 list=z-ip-list-tiktok
 add address=23.33.92.5 list=z-ip-list-tiktok
 add address=18.172.21.16 list=z-ip-list-tiktok
 add address=23.48.23.179 list=z-ip-list-tiktok
-add address=74.125.102.135 list=z-ip-list-youtube
 add address=18.161.229.21 list=z-ip-list-tiktok
 add address=104.79.0.56 list=z-ip-list-tiktok
 add address=104.79.0.51 list=z-ip-list-tiktok
@@ -8868,7 +8136,6 @@ add address=13.33.33.100 list=z-ip-list-tiktok
 add address=114.125.80.193 list=z-ip-list-tiktok
 add address=114.125.80.136 list=z-ip-list-tiktok
 add address=128.1.178.230 list=z-ip-list-tiktok
-add address=173.194.167.105 list=z-ip-list-youtube
 add address=23.73.4.212 list=z-ip-list-tiktok
 add address=202.67.46.106 list=z-ip-list-tiktok
 add address=116.206.41.216 list=z-ip-list-tiktok
@@ -8890,7 +8157,6 @@ add address=211.152.128.125 list=z-ip-list-tiktok
 add address=23.63.84.106 list=z-ip-list-tiktok
 add address=23.48.214.67 list=z-ip-list-tiktok
 add address=23.63.84.139 list=z-ip-list-tiktok
-add address=103.105.52.44 list=z-ip-list-youtube
 add address=23.73.4.200 list=z-ip-list-tiktok
 add address=23.50.117.43 list=z-ip-list-tiktok
 add address=23.48.214.104 list=z-ip-list-tiktok
@@ -9003,8 +8269,6 @@ add address=23.52.40.75 list=z-ip-list-tiktok
 add address=23.52.40.128 list=z-ip-list-tiktok
 add address=23.215.35.82 list=z-ip-list-tiktok
 add address=23.53.33.154 list=z-ip-list-tiktok
-add address=202.70.58.13 list=z-ip-list-youtube
-add address=173.194.31.138 list=z-ip-list-youtube
 add address=104.79.0.50 list=z-ip-list-tiktok
 add address=23.44.4.138 list=z-ip-list-tiktok
 add address=87.119.9.41 list=z-ip-list-tiktok
@@ -9015,7 +8279,6 @@ add address=23.44.4.185 list=z-ip-list-tiktok
 add address=23.44.5.74 list=z-ip-list-tiktok
 add address=23.44.5.8 list=z-ip-list-tiktok
 add address=23.44.5.120 list=z-ip-list-tiktok
-add address=74.125.166.199 list=z-ip-list-youtube
 add address=49.229.68.48 list=z-ip-list-tiktok
 add address=114.125.83.163 list=z-ip-list-tiktok
 add address=128.1.67.224 list=z-ip-list-tiktok
@@ -9054,7 +8317,6 @@ add address=184.27.123.50 list=z-ip-list-tiktok
 add address=2.18.121.72 list=z-ip-list-tiktok
 add address=2.18.121.71 list=z-ip-list-tiktok
 add address=2.18.121.82 list=z-ip-list-tiktok
-add address=173.194.167.138 list=z-ip-list-youtube
 add address=23.219.184.67 list=z-ip-list-tiktok
 add address=112.215.161.19 list=z-ip-list-tiktok
 add address=23.219.184.98 list=z-ip-list-tiktok
@@ -9066,9 +8328,6 @@ add address=23.219.184.56 list=z-ip-list-tiktok
 add address=23.33.32.152 list=z-ip-list-tiktok
 add address=23.33.32.145 list=z-ip-list-tiktok
 add address=23.50.117.48 list=z-ip-list-tiktok
-add address=103.105.27.237 list=z-ip-list-youtube
-add address=103.105.27.173 list=z-ip-list-youtube
-add address=103.105.27.140 list=z-ip-list-youtube
 add address=23.33.92.12 list=z-ip-list-tiktok
 add address=23.33.92.13 list=z-ip-list-tiktok
 add address=65.8.11.89 list=z-ip-list-tiktok
@@ -9077,12 +8336,624 @@ add address=88.221.213.187 list=z-ip-list-tiktok
 add address=88.221.213.176 list=z-ip-list-tiktok
 add address=104.90.205.136 list=z-ip-list-tiktok
 add address=104.123.71.160 list=z-ip-list-tiktok
-add address=36.92.234.204 list=z-ip-list-youtube
-add address=36.92.234.207 list=z-ip-list-youtube
 add address=112.215.161.11 list=z-ip-list-tiktok
 add address=84.53.175.43 list=z-ip-list-tiktok
 add address=2.17.196.251 list=z-ip-list-tiktok
 add address=2.17.196.250 list=z-ip-list-tiktok
+add address=112.198.43.112 list=z-ip-list-tiktok
+add address=219.93.26.39 list=z-ip-list-tiktok
+add address=108.138.141.88 list=z-ip-list-tiktok
+add address=108.138.141.125 list=z-ip-list-tiktok
+add address=116.206.41.232 list=z-ip-list-tiktok
+add address=23.64.122.10 list=z-ip-list-tiktok
+add address=23.64.122.35 list=z-ip-list-tiktok
+add address=96.16.55.159 list=z-ip-list-tiktok
+add address=143.244.42.49 list=z-ip-list-tiktok
+add address=23.53.33.139 list=z-ip-list-tiktok
+add address=23.44.4.179 list=z-ip-list-tiktok
+add address=156.59.192.183 list=z-ip-list-tiktok
+add address=138.113.121.92 list=z-ip-list-tiktok
+add address=23.53.33.200 list=z-ip-list-tiktok
+add address=138.113.125.42 list=z-ip-list-tiktok
+add address=138.113.114.184 list=z-ip-list-tiktok
+add address=156.59.192.187 list=z-ip-list-tiktok
+add address=96.16.55.175 list=z-ip-list-tiktok
+add address=23.223.199.170 list=z-ip-list-tiktok
+add address=23.53.33.155 list=z-ip-list-tiktok
+add address=23.53.33.216 list=z-ip-list-tiktok
+add address=23.53.33.201 list=z-ip-list-tiktok
+add address=23.53.33.168 list=z-ip-list-tiktok
+add address=43.152.15.142 list=z-ip-list-tiktok
+add address=104.81.138.42 list=z-ip-list-tiktok
+add address=104.81.138.123 list=z-ip-list-tiktok
+add address=104.81.138.18 list=z-ip-list-tiktok
+add address=104.81.138.27 list=z-ip-list-tiktok
+add address=104.81.138.58 list=z-ip-list-tiktok
+add address=104.81.138.73 list=z-ip-list-tiktok
+add address=104.81.138.25 list=z-ip-list-tiktok
+add address=104.81.138.113 list=z-ip-list-tiktok
+add address=104.81.138.16 list=z-ip-list-tiktok
+add address=104.81.138.48 list=z-ip-list-tiktok
+add address=104.81.138.64 list=z-ip-list-tiktok
+add address=104.81.138.88 list=z-ip-list-tiktok
+add address=71.18.255.172 list=z-ip-list-tiktok
+add address=120.29.153.196 list=z-ip-list-tiktok
+add address=104.81.138.104 list=z-ip-list-tiktok
+add address=104.81.138.115 list=z-ip-list-tiktok
+add address=156.59.104.58 list=z-ip-list-tiktok
+add address=156.59.104.46 list=z-ip-list-tiktok
+add address=128.1.61.68 list=z-ip-list-tiktok
+add address=202.180.17.39 list=z-ip-list-tiktok
+add address=184.28.229.233 list=z-ip-list-tiktok
+add address=184.28.229.219 list=z-ip-list-tiktok
+add address=104.81.138.81 list=z-ip-list-tiktok
+add address=184.28.229.128 list=z-ip-list-tiktok
+add address=104.81.138.24 list=z-ip-list-tiktok
+add address=128.1.61.70 list=z-ip-list-tiktok
+add address=184.28.229.154 list=z-ip-list-tiktok
+add address=184.28.229.146 list=z-ip-list-tiktok
+add address=184.28.229.122 list=z-ip-list-tiktok
+add address=184.28.229.160 list=z-ip-list-tiktok
+add address=128.1.61.71 list=z-ip-list-tiktok
+add address=184.28.229.202 list=z-ip-list-tiktok
+add address=184.28.229.153 list=z-ip-list-tiktok
+add address=23.219.184.82 list=z-ip-list-tiktok
+add address=140.213.224.97 list=z-ip-list-tiktok
+add address=103.149.176.70 list=z-ip-list-tiktok
+add address=184.28.229.144 list=z-ip-list-tiktok
+add address=184.28.229.179 list=z-ip-list-tiktok
+add address=184.28.229.56 list=z-ip-list-tiktok
+add address=184.28.229.129 list=z-ip-list-tiktok
+add address=184.28.229.139 list=z-ip-list-tiktok
+add address=23.61.0.145 list=z-ip-list-tiktok
+add address=184.28.229.170 list=z-ip-list-tiktok
+add address=184.28.229.169 list=z-ip-list-tiktok
+add address=128.1.61.67 list=z-ip-list-tiktok
+add address=71.18.255.171 list=z-ip-list-tiktok
+add address=18.172.21.4 list=z-ip-list-tiktok
+add address=156.59.104.50 list=z-ip-list-tiktok
+add address=52.59.97.192 list=z-ip-list-tiktok
+add address=38.54.65.45 list=z-ip-list-tiktok
+add address=38.54.65.51 list=z-ip-list-tiktok
+add address=129.227.71.28 list=z-ip-list-tiktok
+add address=103.84.193.146 list=z-ip-list-tiktok
+add address=103.52.144.58 list=z-ip-list-tiktok
+add address=23.61.0.160 list=z-ip-list-tiktok
+add address=23.40.40.74 list=z-ip-list-tiktok
+add address=156.59.104.42 list=z-ip-list-tiktok
+add address=184.28.229.226 list=z-ip-list-tiktok
+add address=156.59.104.38 list=z-ip-list-tiktok
+add address=129.227.71.29 list=z-ip-list-tiktok
+add address=184.28.229.138 list=z-ip-list-tiktok
+add address=88.221.213.168 list=z-ip-list-tiktok
+add address=88.221.213.163 list=z-ip-list-tiktok
+add address=13.33.65.105 list=z-ip-list-tiktok
+add address=13.33.65.98 list=z-ip-list-tiktok
+add address=138.113.112.220 list=z-ip-list-tiktok
+add address=104.77.160.74 list=z-ip-list-tiktok
+add address=156.251.75.16 list=z-ip-list-tiktok
+add address=34.117.69.137 list=z-ip-list-tiktok
+add address=114.10.2.242 list=z-ip-list-tiktok
+add address=140.213.224.59 list=z-ip-list-tiktok
+add address=140.213.50.227 list=z-ip-list-tiktok
+add address=23.64.122.25 list=z-ip-list-tiktok
+add address=202.67.46.104 list=z-ip-list-tiktok
+add address=128.14.182.237 list=z-ip-list-tiktok
+add address=116.206.41.161 list=z-ip-list-tiktok
+add address=202.67.41.91 list=z-ip-list-tiktok
+add address=23.61.205.73 list=z-ip-list-tiktok
+add address=23.61.205.8 list=z-ip-list-tiktok
+add address=96.16.55.142 list=z-ip-list-tiktok
+add address=184.28.229.177 list=z-ip-list-tiktok
+add address=103.84.192.22 list=z-ip-list-tiktok
+add address=38.54.65.183 list=z-ip-list-tiktok
+add address=104.70.235.65 list=z-ip-list-tiktok
+add address=184.84.150.73 list=z-ip-list-tiktok
+add address=184.84.150.105 list=z-ip-list-tiktok
+add address=23.33.92.181 list=z-ip-list-tiktok
+add address=104.115.38.128 list=z-ip-list-tiktok
+add address=104.115.38.33 list=z-ip-list-tiktok
+add address=114.10.2.96 list=z-ip-list-tiktok
+add address=114.10.2.89 list=z-ip-list-tiktok
+add address=114.4.168.187 list=z-ip-list-tiktok
+add address=114.5.1.217 list=z-ip-list-tiktok
+add address=104.115.38.16 list=z-ip-list-tiktok
+add address=23.48.214.168 list=z-ip-list-tiktok
+add address=23.32.61.11 list=z-ip-list-tiktok
+add address=23.32.61.54 list=z-ip-list-tiktok
+add address=23.32.61.29 list=z-ip-list-tiktok
+add address=23.32.61.27 list=z-ip-list-tiktok
+add address=23.32.61.58 list=z-ip-list-tiktok
+add address=23.32.61.165 list=z-ip-list-tiktok
+add address=23.32.61.4 list=z-ip-list-tiktok
+add address=23.32.61.38 list=z-ip-list-tiktok
+add address=23.32.61.5 list=z-ip-list-tiktok
+add address=23.32.61.19 list=z-ip-list-tiktok
+add address=23.32.61.52 list=z-ip-list-tiktok
+add address=23.32.61.35 list=z-ip-list-tiktok
+add address=2.16.8.176 list=z-ip-list-tiktok
+add address=2.16.8.169 list=z-ip-list-tiktok
+add address=23.209.125.207 list=z-ip-list-tiktok
+add address=23.209.125.194 list=z-ip-list-tiktok
+add address=23.209.125.211 list=z-ip-list-tiktok
+add address=23.209.125.182 list=z-ip-list-tiktok
+add address=156.59.240.241 list=z-ip-list-tiktok
+add address=23.219.184.97 list=z-ip-list-tiktok
+add address=23.219.184.185 list=z-ip-list-tiktok
+add address=23.211.60.211 list=z-ip-list-tiktok
+add address=156.59.192.181 list=z-ip-list-tiktok
+add address=38.54.65.202 list=z-ip-list-tiktok
+add address=38.54.65.246 list=z-ip-list-tiktok
+add address=38.54.65.173 list=z-ip-list-tiktok
+add address=23.33.92.8 list=z-ip-list-tiktok
+add address=23.33.92.30 list=z-ip-list-tiktok
+add address=103.167.26.19 list=z-ip-list-tiktok
+add address=184.28.229.131 list=z-ip-list-tiktok
+add address=116.206.41.248 list=z-ip-list-tiktok
+add address=116.206.41.145 list=z-ip-list-tiktok
+add address=116.206.41.243 list=z-ip-list-tiktok
+add address=116.206.41.250 list=z-ip-list-tiktok
+add address=184.28.229.155 list=z-ip-list-tiktok
+add address=184.28.229.123 list=z-ip-list-tiktok
+add address=114.10.2.91 list=z-ip-list-tiktok
+add address=114.4.168.115 list=z-ip-list-tiktok
+add address=114.4.168.146 list=z-ip-list-tiktok
+add address=114.4.168.8 list=z-ip-list-tiktok
+add address=114.4.168.211 list=z-ip-list-tiktok
+add address=114.4.168.195 list=z-ip-list-tiktok
+add address=114.4.168.186 list=z-ip-list-tiktok
+add address=114.10.2.105 list=z-ip-list-tiktok
+add address=114.10.2.123 list=z-ip-list-tiktok
+add address=23.32.61.48 list=z-ip-list-tiktok
+add address=116.206.41.235 list=z-ip-list-tiktok
+add address=114.4.168.141 list=z-ip-list-tiktok
+add address=114.4.168.17 list=z-ip-list-tiktok
+add address=114.4.168.125 list=z-ip-list-tiktok
+add address=114.5.9.137 list=z-ip-list-tiktok
+add address=38.54.65.166 list=z-ip-list-tiktok
+add address=163.181.100.194 list=z-ip-list-tiktok
+add address=163.181.100.223 list=z-ip-list-tiktok
+add address=163.181.100.193 list=z-ip-list-tiktok
+add address=163.181.100.191 list=z-ip-list-tiktok
+add address=38.54.65.136 list=z-ip-list-tiktok
+add address=23.219.184.80 list=z-ip-list-tiktok
+add address=23.219.184.112 list=z-ip-list-tiktok
+add address=140.213.50.211 list=z-ip-list-tiktok
+add address=23.219.184.225 list=z-ip-list-tiktok
+add address=163.181.100.222 list=z-ip-list-tiktok
+add address=184.86.250.167 list=z-ip-list-tiktok
+add address=23.61.0.207 list=z-ip-list-tiktok
+add address=23.61.0.127 list=z-ip-list-tiktok
+add address=114.10.3.176 list=z-ip-list-tiktok
+add address=23.32.61.12 list=z-ip-list-tiktok
+add address=23.66.3.137 list=z-ip-list-tiktok
+add address=138.113.115.36 list=z-ip-list-tiktok
+add address=184.84.150.19 list=z-ip-list-tiktok
+add address=23.32.61.46 list=z-ip-list-tiktok
+add address=23.32.61.41 list=z-ip-list-tiktok
+add address=147.50.207.16 list=z-ip-list-tiktok
+add address=103.167.27.36 list=z-ip-list-tiktok
+add address=119.46.80.177 list=z-ip-list-tiktok
+add address=96.17.70.187 list=z-ip-list-tiktok
+add address=23.193.97.19 list=z-ip-list-tiktok
+add address=23.193.96.161 list=z-ip-list-tiktok
+add address=23.33.32.99 list=z-ip-list-tiktok
+add address=43.152.161.189 list=z-ip-list-tiktok
+add address=114.4.168.210 list=z-ip-list-tiktok
+add address=23.33.32.106 list=z-ip-list-tiktok
+add address=104.81.138.96 list=z-ip-list-tiktok
+add address=104.81.138.112 list=z-ip-list-tiktok
+add address=163.181.100.190 list=z-ip-list-tiktok
+add address=163.181.100.197 list=z-ip-list-tiktok
+add address=163.181.100.192 list=z-ip-list-tiktok
+add address=104.79.0.19 list=z-ip-list-tiktok
+add address=104.88.71.48 list=z-ip-list-tiktok
+add address=104.88.71.16 list=z-ip-list-tiktok
+add address=114.4.168.108 list=z-ip-list-tiktok
+add address=114.4.168.59 list=z-ip-list-tiktok
+add address=114.4.168.208 list=z-ip-list-tiktok
+add address=114.4.168.72 list=z-ip-list-tiktok
+add address=23.52.40.137 list=z-ip-list-tiktok
+add address=23.52.40.121 list=z-ip-list-tiktok
+add address=23.44.4.161 list=z-ip-list-tiktok
+add address=23.53.33.210 list=z-ip-list-tiktok
+add address=211.152.129.27 list=z-ip-list-tiktok
+add address=184.26.127.50 list=z-ip-list-tiktok
+add address=184.26.127.49 list=z-ip-list-tiktok
+add address=184.26.127.19 list=z-ip-list-tiktok
+add address=211.152.129.60 list=z-ip-list-tiktok
+add address=23.193.97.27 list=z-ip-list-tiktok
+add address=23.193.97.89 list=z-ip-list-tiktok
+add address=23.193.97.64 list=z-ip-list-tiktok
+add address=211.152.129.29 list=z-ip-list-tiktok
+add address=23.193.97.50 list=z-ip-list-tiktok
+add address=23.193.97.80 list=z-ip-list-tiktok
+add address=23.193.97.9 list=z-ip-list-tiktok
+add address=23.53.33.211 list=z-ip-list-tiktok
+add address=96.17.70.185 list=z-ip-list-tiktok
+add address=96.17.70.171 list=z-ip-list-tiktok
+add address=96.17.70.155 list=z-ip-list-tiktok
+add address=23.53.33.178 list=z-ip-list-tiktok
+add address=140.213.62.145 list=z-ip-list-tiktok
+add address=23.52.40.131 list=z-ip-list-tiktok
+add address=23.52.40.138 list=z-ip-list-tiktok
+add address=23.193.97.34 list=z-ip-list-tiktok
+add address=96.17.70.193 list=z-ip-list-tiktok
+add address=23.202.35.59 list=z-ip-list-tiktok
+add address=140.213.62.81 list=z-ip-list-tiktok
+add address=140.213.62.73 list=z-ip-list-tiktok
+add address=96.17.70.208 list=z-ip-list-tiktok
+add address=104.70.235.73 list=z-ip-list-tiktok
+add address=23.200.142.136 list=z-ip-list-tiktok
+add address=23.200.142.186 list=z-ip-list-tiktok
+add address=96.17.70.177 list=z-ip-list-tiktok
+add address=96.17.70.153 list=z-ip-list-tiktok
+add address=23.193.97.8 list=z-ip-list-tiktok
+add address=96.17.70.186 list=z-ip-list-tiktok
+add address=96.17.70.217 list=z-ip-list-tiktok
+add address=96.17.70.128 list=z-ip-list-tiktok
+add address=96.17.70.131 list=z-ip-list-tiktok
+add address=184.86.250.162 list=z-ip-list-tiktok
+add address=23.193.97.74 list=z-ip-list-tiktok
+add address=96.17.70.202 list=z-ip-list-tiktok
+add address=23.193.97.41 list=z-ip-list-tiktok
+add address=23.33.92.31 list=z-ip-list-tiktok
+add address=23.33.92.66 list=z-ip-list-tiktok
+add address=23.32.61.18 list=z-ip-list-tiktok
+add address=23.32.61.44 list=z-ip-list-tiktok
+add address=23.32.61.13 list=z-ip-list-tiktok
+add address=23.50.232.167 list=z-ip-list-tiktok
+add address=36.66.49.253 list=z-ip-list-tiktok
+add address=36.66.49.236 list=z-ip-list-tiktok
+add address=103.234.121.188 list=z-ip-list-tiktok
+add address=184.28.229.210 list=z-ip-list-tiktok
+add address=114.10.2.121 list=z-ip-list-tiktok
+add address=23.33.92.192 list=z-ip-list-tiktok
+add address=184.28.229.217 list=z-ip-list-tiktok
+add address=184.28.229.225 list=z-ip-list-tiktok
+add address=23.33.92.132 list=z-ip-list-tiktok
+add address=96.17.70.162 list=z-ip-list-tiktok
+add address=96.17.70.210 list=z-ip-list-tiktok
+add address=96.17.70.137 list=z-ip-list-tiktok
+add address=23.219.184.88 list=z-ip-list-tiktok
+add address=140.213.224.41 list=z-ip-list-tiktok
+add address=23.219.184.81 list=z-ip-list-tiktok
+add address=96.17.70.139 list=z-ip-list-tiktok
+add address=96.17.70.216 list=z-ip-list-tiktok
+add address=184.28.229.178 list=z-ip-list-tiktok
+add address=96.17.70.179 list=z-ip-list-tiktok
+add address=23.32.61.60 list=z-ip-list-tiktok
+add address=23.32.61.55 list=z-ip-list-tiktok
+add address=96.17.70.192 list=z-ip-list-tiktok
+add address=96.17.70.201 list=z-ip-list-tiktok
+add address=23.32.61.15 list=z-ip-list-tiktok
+add address=96.17.70.178 list=z-ip-list-tiktok
+add address=43.152.160.122 list=z-ip-list-tiktok
+add address=8.34.208.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=8.35.192.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=23.236.48.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=23.251.128.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.0.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.2.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.0.0/23 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.3.0/24 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.4.0/24 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.8.0/21 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.16.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.32.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.64.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.128.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.4.0.0/14 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.8.0.0/13 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.16.0.0/12 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.32.0.0/11 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.64.0.0/10 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.128.0.0/10 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.184.0.0/13 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.192.0.0/14 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.196.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.198.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.199.0.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.199.128.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.200.0.0/13 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.208.0.0/12 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.224.0.0/12 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.240.0.0/13 comment=MNET-GOOGLE list=z-list-ip-google
+add address=64.15.112.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=64.233.160.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=66.22.228.0/23 comment=MNET-GOOGLE list=z-list-ip-google
+add address=66.102.0.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=66.249.64.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=70.32.128.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=72.14.192.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=74.125.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=104.154.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=104.196.0.0/14 comment=MNET-GOOGLE list=z-list-ip-google
+add address=104.237.160.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=107.167.160.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=107.178.192.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=108.59.80.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=108.170.192.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=108.177.0.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=130.211.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=142.250.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=146.148.0.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=162.216.148.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=162.222.176.0/21 comment=MNET-GOOGLE list=z-list-ip-google
+add address=172.110.32.0/21 comment=MNET-GOOGLE list=z-list-ip-google
+add address=172.217.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=172.253.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=173.194.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=173.255.112.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=192.158.28.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=192.178.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=193.186.4.0/24 comment=MNET-GOOGLE list=z-list-ip-google
+add address=199.36.154.0/23 comment=MNET-GOOGLE list=z-list-ip-google
+add address=199.36.156.0/24 comment=MNET-GOOGLE list=z-list-ip-google
+add address=199.192.112.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=199.223.232.0/21 comment=MNET-GOOGLE list=z-list-ip-google
+add address=207.223.160.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=208.65.152.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=208.68.108.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=208.81.188.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=208.117.224.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=209.85.128.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=216.58.192.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=216.73.80.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=216.239.32.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=202.70.50.62 list=z-ip-list-tiktok
+add address=103.234.121.160 list=z-ip-list-tiktok
+add address=140.213.62.80 list=z-ip-list-tiktok
+add address=23.32.61.45 list=z-ip-list-tiktok
+add address=23.32.61.62 list=z-ip-list-tiktok
+add address=96.17.70.138 list=z-ip-list-tiktok
+add address=96.17.70.195 list=z-ip-list-tiktok
+add address=96.17.70.194 list=z-ip-list-tiktok
+add address=96.17.70.211 list=z-ip-list-tiktok
+add address=23.33.92.40 list=z-ip-list-tiktok
+add address=23.33.92.48 list=z-ip-list-tiktok
+add address=96.17.70.161 list=z-ip-list-tiktok
+add address=23.33.92.10 list=z-ip-list-tiktok
+add address=23.33.92.55 list=z-ip-list-tiktok
+add address=23.33.92.32 list=z-ip-list-tiktok
+add address=23.193.97.75 list=z-ip-list-tiktok
+add address=96.17.70.136 list=z-ip-list-tiktok
+add address=96.17.70.200 list=z-ip-list-tiktok
+add address=23.32.61.30 list=z-ip-list-tiktok
+add address=96.17.70.170 list=z-ip-list-tiktok
+add address=96.17.70.218 list=z-ip-list-tiktok
+add address=23.32.61.7 list=z-ip-list-tiktok
+add address=23.32.61.65 list=z-ip-list-tiktok
+add address=23.32.61.6 list=z-ip-list-tiktok
+add address=23.32.61.21 list=z-ip-list-tiktok
+add address=23.32.61.40 list=z-ip-list-tiktok
+add address=23.32.61.36 list=z-ip-list-tiktok
+add address=23.32.61.17 list=z-ip-list-tiktok
+add address=23.32.61.66 list=z-ip-list-tiktok
+add address=23.32.61.67 list=z-ip-list-tiktok
+add address=23.32.61.37 list=z-ip-list-tiktok
+add address=23.32.61.59 list=z-ip-list-tiktok
+add address=23.32.61.16 list=z-ip-list-tiktok
+add address=23.32.61.32 list=z-ip-list-tiktok
+add address=23.32.61.50 list=z-ip-list-tiktok
+add address=23.32.61.57 list=z-ip-list-tiktok
+add address=23.32.61.42 list=z-ip-list-tiktok
+add address=23.32.61.28 list=z-ip-list-tiktok
+add address=23.32.61.23 list=z-ip-list-tiktok
+add address=104.115.38.43 list=z-ip-list-tiktok
+add address=104.115.38.81 list=z-ip-list-tiktok
+add address=104.115.38.146 list=z-ip-list-tiktok
+add address=104.115.38.49 list=z-ip-list-tiktok
+add address=104.115.38.34 list=z-ip-list-tiktok
+add address=104.115.38.115 list=z-ip-list-tiktok
+add address=104.115.38.105 list=z-ip-list-tiktok
+add address=104.115.38.122 list=z-ip-list-tiktok
+add address=104.115.38.57 list=z-ip-list-tiktok
+add address=23.32.61.142 list=z-ip-list-tiktok
+add address=104.115.38.82 list=z-ip-list-tiktok
+add address=104.115.38.56 list=z-ip-list-tiktok
+add address=23.32.61.182 list=z-ip-list-tiktok
+add address=23.32.61.132 list=z-ip-list-tiktok
+add address=23.32.61.173 list=z-ip-list-tiktok
+add address=23.32.61.20 list=z-ip-list-tiktok
+add address=23.32.61.168 list=z-ip-list-tiktok
+add address=23.32.61.162 list=z-ip-list-tiktok
+add address=23.32.61.177 list=z-ip-list-tiktok
+add address=23.32.61.171 list=z-ip-list-tiktok
+add address=104.115.38.74 list=z-ip-list-tiktok
+add address=104.79.0.10 list=z-ip-list-tiktok
+add address=104.115.38.40 list=z-ip-list-tiktok
+add address=104.115.38.64 list=z-ip-list-tiktok
+add address=23.33.126.193 list=z-ip-list-tiktok
+add address=23.32.61.49 list=z-ip-list-tiktok
+add address=23.48.214.211 list=z-ip-list-tiktok
+add address=23.48.214.235 list=z-ip-list-tiktok
+add address=23.67.57.163 list=z-ip-list-tiktok
+add address=23.32.61.22 list=z-ip-list-tiktok
+add address=23.32.61.9 list=z-ip-list-tiktok
+add address=23.48.214.232 list=z-ip-list-tiktok
+add address=23.200.142.59 list=z-ip-list-tiktok
+add address=23.32.61.185 list=z-ip-list-tiktok
+add address=23.33.126.173 list=z-ip-list-tiktok
+add address=23.48.214.219 list=z-ip-list-tiktok
+add address=23.32.61.149 list=z-ip-list-tiktok
+add address=23.48.214.242 list=z-ip-list-tiktok
+add address=23.33.126.174 list=z-ip-list-tiktok
+add address=23.33.126.150 list=z-ip-list-tiktok
+add address=23.200.142.74 list=z-ip-list-tiktok
+add address=23.32.61.138 list=z-ip-list-tiktok
+add address=23.32.61.157 list=z-ip-list-tiktok
+add address=23.32.61.153 list=z-ip-list-tiktok
+add address=23.32.61.195 list=z-ip-list-tiktok
+add address=23.200.142.97 list=z-ip-list-tiktok
+add address=23.32.61.159 list=z-ip-list-tiktok
+add address=104.79.0.18 list=z-ip-list-tiktok
+add address=96.17.70.160 list=z-ip-list-tiktok
+add address=108.157.30.32 list=z-ip-list-tiktok
+add address=96.17.70.145 list=z-ip-list-tiktok
+add address=96.17.70.226 list=z-ip-list-tiktok
+add address=96.17.70.225 list=z-ip-list-tiktok
+add address=96.17.70.147 list=z-ip-list-tiktok
+add address=96.17.70.233 list=z-ip-list-tiktok
+add address=96.17.70.184 list=z-ip-list-tiktok
+add address=13.225.63.64 list=z-ip-list-tiktok
+add address=114.4.39.235 list=z-ip-list-tiktok
+add address=23.44.4.168 list=z-ip-list-tiktok
+add address=23.44.4.184 list=z-ip-list-tiktok
+add address=23.53.33.179 list=z-ip-list-tiktok
+add address=23.53.33.202 list=z-ip-list-tiktok
+add address=23.44.4.160 list=z-ip-list-tiktok
+add address=23.53.33.145 list=z-ip-list-tiktok
+add address=23.53.33.169 list=z-ip-list-tiktok
+add address=23.53.33.187 list=z-ip-list-tiktok
+add address=23.53.33.137 list=z-ip-list-tiktok
+add address=104.79.0.32 list=z-ip-list-tiktok
+add address=140.213.50.232 list=z-ip-list-tiktok
+add address=45.194.24.230 list=z-ip-list-tiktok
+add address=114.125.83.210 list=z-ip-list-tiktok
+add address=114.5.1.210 list=z-ip-list-tiktok
+add address=114.10.2.81 list=z-ip-list-tiktok
+add address=156.59.192.186 list=z-ip-list-tiktok
+add address=23.193.98.216 list=z-ip-list-tiktok
+add address=98.98.148.89 list=z-ip-list-tiktok
+add address=114.10.2.209 list=z-ip-list-tiktok
+add address=114.4.168.234 list=z-ip-list-tiktok
+add address=114.4.168.209 list=z-ip-list-tiktok
+add address=23.33.126.178 list=z-ip-list-tiktok
+add address=23.193.98.219 list=z-ip-list-tiktok
+add address=23.193.98.235 list=z-ip-list-tiktok
+add address=23.193.98.234 list=z-ip-list-tiktok
+add address=23.193.98.233 list=z-ip-list-tiktok
+add address=184.30.30.11 list=z-ip-list-tiktok
+add address=23.193.98.227 list=z-ip-list-tiktok
+add address=23.193.98.232 list=z-ip-list-tiktok
+add address=23.193.98.240 list=z-ip-list-tiktok
+add address=23.193.98.225 list=z-ip-list-tiktok
+add address=23.193.98.217 list=z-ip-list-tiktok
+add address=23.193.98.218 list=z-ip-list-tiktok
+add address=23.193.98.226 list=z-ip-list-tiktok
+add address=2.16.8.177 list=z-ip-list-tiktok
+add address=23.46.229.17 list=z-ip-list-tiktok
+add address=23.46.229.10 list=z-ip-list-tiktok
+add address=23.46.229.11 list=z-ip-list-tiktok
+add address=23.46.229.25 list=z-ip-list-tiktok
+add address=104.90.205.160 list=z-ip-list-tiktok
+add address=23.46.229.26 list=z-ip-list-tiktok
+add address=88.221.213.152 list=z-ip-list-tiktok
+add address=114.125.80.144 list=z-ip-list-tiktok
+add address=182.2.81.17 list=z-ip-list-tiktok
+add address=23.46.229.27 list=z-ip-list-tiktok
+add address=23.193.98.224 list=z-ip-list-tiktok
+add address=23.78.141.211 list=z-ip-list-tiktok
+add address=45.194.25.232 list=z-ip-list-tiktok
+add address=23.33.126.195 list=z-ip-list-tiktok
+add address=184.26.127.42 list=z-ip-list-tiktok
+add address=23.33.126.163 list=z-ip-list-tiktok
+add address=23.33.126.161 list=z-ip-list-tiktok
+add address=95.100.111.129 list=z-ip-list-tiktok
+add address=95.100.111.178 list=z-ip-list-tiktok
+add address=23.46.229.16 list=z-ip-list-tiktok
+add address=23.78.141.185 list=z-ip-list-tiktok
+add address=23.78.141.176 list=z-ip-list-tiktok
+add address=104.100.168.8 list=z-ip-list-tiktok
+add address=23.78.141.192 list=z-ip-list-tiktok
+add address=23.78.141.194 list=z-ip-list-tiktok
+add address=23.46.229.19 list=z-ip-list-tiktok
+add address=23.46.229.8 list=z-ip-list-tiktok
+add address=84.53.132.160 list=z-ip-list-tiktok
+add address=84.53.132.152 list=z-ip-list-tiktok
+add address=23.46.229.9 list=z-ip-list-tiktok
+add address=139.193.253.9 list=z-ip-list-tiktok
+add address=104.98.3.72 list=z-ip-list-tiktok
+add address=104.98.3.75 list=z-ip-list-tiktok
+add address=104.98.3.74 list=z-ip-list-tiktok
+add address=23.33.126.191 list=z-ip-list-tiktok
+add address=23.33.126.188 list=z-ip-list-tiktok
+add address=104.98.3.83 list=z-ip-list-tiktok
+add address=104.71.60.17 list=z-ip-list-tiktok
+add address=184.28.229.224 list=z-ip-list-tiktok
+add address=36.89.220.40 list=z-ip-list-tiktok
+add address=43.152.148.232 list=z-ip-list-tiktok
+add address=23.39.173.186 list=z-ip-list-tiktok
+add address=23.39.173.179 list=z-ip-list-tiktok
+add address=23.39.173.193 list=z-ip-list-tiktok
+add address=23.39.173.235 list=z-ip-list-tiktok
+add address=23.39.173.203 list=z-ip-list-tiktok
+add address=23.39.173.241 list=z-ip-list-tiktok
+add address=23.200.218.32 list=z-ip-list-tiktok
+add address=23.200.218.107 list=z-ip-list-tiktok
+add address=23.202.33.106 list=z-ip-list-tiktok
+add address=23.44.5.129 list=z-ip-list-tiktok
+add address=23.44.5.97 list=z-ip-list-tiktok
+add address=23.44.5.96 list=z-ip-list-tiktok
+add address=23.44.5.130 list=z-ip-list-tiktok
+add address=23.44.5.98 list=z-ip-list-tiktok
+add address=23.48.214.9 list=z-ip-list-tiktok
+add address=34.90.189.28 list=z-ip-list-tiktok
+add address=104.70.235.113 list=z-ip-list-tiktok
+add address=23.32.61.34 list=z-ip-list-tiktok
+add address=23.44.5.112 list=z-ip-list-tiktok
+add address=23.44.5.43 list=z-ip-list-tiktok
+add address=23.44.4.145 list=z-ip-list-tiktok
+add address=23.44.5.25 list=z-ip-list-tiktok
+add address=23.44.5.59 list=z-ip-list-tiktok
+add address=23.78.141.200 list=z-ip-list-tiktok
+add address=150.109.0.191 list=z-ip-list-tiktok
+add address=23.78.141.178 list=z-ip-list-tiktok
+add address=23.78.141.224 list=z-ip-list-tiktok
+add address=156.59.162.227 list=z-ip-list-tiktok
+add address=96.16.84.28 list=z-ip-list-tiktok
+add address=96.16.84.29 list=z-ip-list-tiktok
+add address=96.16.84.16 list=z-ip-list-tiktok
+add address=23.52.70.161 list=z-ip-list-tiktok
+add address=156.59.162.226 list=z-ip-list-tiktok
+add address=156.59.192.179 list=z-ip-list-tiktok
+add address=104.115.38.91 list=z-ip-list-tiktok
+add address=96.16.84.15 list=z-ip-list-tiktok
+add address=96.16.84.24 list=z-ip-list-tiktok
+add address=2.19.117.153 list=z-ip-list-tiktok
+add address=2.19.117.151 list=z-ip-list-tiktok
+add address=23.200.145.146 list=z-ip-list-tiktok
+add address=23.48.214.178 list=z-ip-list-tiktok
+add address=184.51.102.186 list=z-ip-list-tiktok
+add address=23.48.214.192 list=z-ip-list-tiktok
+add address=96.16.84.27 list=z-ip-list-tiktok
+add address=96.16.84.8 list=z-ip-list-tiktok
+add address=23.15.241.99 list=z-ip-list-tiktok
+add address=96.16.84.12 list=z-ip-list-tiktok
+add address=96.16.84.7 list=z-ip-list-tiktok
+add address=23.32.20.220 list=z-ip-list-tiktok
+add address=138.113.153.194 list=z-ip-list-tiktok
+add address=23.32.20.215 list=z-ip-list-tiktok
+add address=23.32.20.196 list=z-ip-list-tiktok
+add address=23.32.20.189 list=z-ip-list-tiktok
+add address=23.33.32.97 list=z-ip-list-tiktok
+add address=23.32.20.199 list=z-ip-list-tiktok
+add address=2.18.121.78 list=z-ip-list-tiktok
+add address=23.32.20.88 list=z-ip-list-tiktok
+add address=104.84.150.83 list=z-ip-list-tiktok
+add address=184.51.102.235 list=z-ip-list-tiktok
+add address=23.32.20.221 list=z-ip-list-tiktok
+add address=23.32.20.191 list=z-ip-list-tiktok
+add address=2.19.117.167 list=z-ip-list-tiktok
+add address=156.59.162.234 list=z-ip-list-tiktok
+add address=115.166.117.55 list=z-ip-list-tiktok
+add address=23.32.20.41 list=z-ip-list-tiktok
+add address=115.166.117.57 list=z-ip-list-tiktok
+add address=104.84.150.40 list=z-ip-list-tiktok
+add address=115.166.117.60 list=z-ip-list-tiktok
+add address=115.166.117.59 list=z-ip-list-tiktok
+add address=104.84.150.49 list=z-ip-list-tiktok
+add address=115.166.117.61 list=z-ip-list-tiktok
+add address=103.147.212.121 list=z-ip-list-tiktok
+add address=103.147.212.115 list=z-ip-list-tiktok
+add address=156.59.162.219 list=z-ip-list-tiktok
+add address=156.59.162.232 list=z-ip-list-tiktok
+add address=156.59.162.222 list=z-ip-list-tiktok
+add address=58.27.5.100 list=z-ip-list-tiktok
+add address=156.59.162.236 list=z-ip-list-tiktok
+add address=156.59.162.230 list=z-ip-list-tiktok
+add address=156.59.162.220 list=z-ip-list-tiktok
 /ip firewall filter
 add action=passthrough chain=unused-hs-chain comment=\
     "place hotspot rules here" disabled=yes
@@ -9096,57 +8967,63 @@ add action=mark-routing chain=prerouting comment=isp2 dst-address-list=\
     ip-ke-isp2
 add action=passthrough chain="TRAFIK BERAT" comment="TRAFIK BERAT"
 add action=mark-routing chain=prerouting comment=isp2 dst-address-list=\
-    z-ip-list-youtube new-routing-mark=isp2 passthrough=no src-address-list=\
+    z-list-ip-google new-routing-mark=isp2 passthrough=no src-address-list=\
     ip-local
 add action=mark-routing chain=prerouting comment=isp2 dst-address-list=\
     z-ip-list-tiktok new-routing-mark=isp2 passthrough=no src-address-list=\
     ip-local
 add action=passthrough chain=GAME comment=GAME
-add action=mark-routing chain=prerouting comment=@@@@@ disabled=yes \
-    dst-address-list=!ip-local-private dst-port=\
-    5001-5180,5501-5680,9443,30000-30220,9001 new-routing-mark=isp2 \
-    passthrough=no protocol=tcp src-address-list=ip-local
-add action=mark-routing chain=prerouting comment=@@@@@ disabled=yes \
-    dst-address-list=!ip-local-private dst-port=\
-    5001-5180,5501-5680,9992,30020-30220,9001 new-routing-mark=isp2 \
-    passthrough=no protocol=udp src-address-list=ip-local
+add action=jump chain=forward comment="                BYPASS game" \
+    dst-address-list=!ip-local-private dst-port="6006,6008,6674,7000-7999,8001\
+    -8012,9006,9137,10000-10015,11000-11019,12006,12008" jump-target=game-ff \
+    protocol=tcp src-address-list=ip-local
+add action=jump chain=forward dst-address-list=ip-local jump-target=game-ff \
+    protocol=tcp src-address-list=!ip-local-private src-port="6006,6008,6674,7\
+    000-7999,8001-8012,9006,9137,10000-10015,11000-11019,12006,12008"
 add action=jump chain=forward dst-address-list=!ip-local-private dst-port=\
-    5001-5180,5501-5680,9443,30000-30220,9001 jump-target=game-ml protocol=\
-    tcp src-address-list=ip-local
-add action=jump chain=forward dst-address-list=ip-local jump-target=game-ml \
+    13006,15006,20561,39003,39006,39698,39779,39800 jump-target=game-ff \
+    protocol=tcp src-address-list=ip-local
+add action=jump chain=forward dst-address-list=ip-local jump-target=game-ff \
     protocol=tcp src-address-list=!ip-local-private src-port=\
-    5001-5180,5501-5680,9443,30000-30220,9001
+    13006,15006,20561,39003,39006,39698,39779,39800
+add action=jump chain=forward dst-address-list=!ip-local-private dst-port="600\
+    6,6008,6674,7000-7999,8001-8012,8130,8443,9008,9120,10000-10015,10100,1200\
+    8" jump-target=game-ff protocol=udp src-address-list=ip-local
+add action=jump chain=forward dst-address-list=ip-local jump-target=game-ff \
+    protocol=udp src-address-list=!ip-local-private src-port="6006,6008,6674,7\
+    000-7999,8001-8012,8130,8443,9008,9120,10000-10015,10100,12008"
 add action=jump chain=forward dst-address-list=!ip-local-private dst-port=\
-    5001-5180,5501-5680,9992,30020-30220,9001 jump-target=game-ml protocol=\
-    udp src-address-list=ip-local
-add action=jump chain=forward dst-address-list=ip-local jump-target=game-ml \
-    protocol=udp src-address-list=!ip-local-private src-port=\
-    5001-5180,5501-5680,9992,30020-30220,9001
-add action=mark-packet chain=game-ml new-packet-mark=game-ml passthrough=no
-add action=mark-routing chain=prerouting comment=@@@@@ disabled=yes \
-    dst-address-list=!ip-local-private dst-port=\
-    6006,7006,8006,9006,11000-11019,39003,39006,39698,39779,10000-10007 \
-    new-routing-mark=isp2 passthrough=no protocol=tcp src-address-list=\
+    11000-11019,13008 jump-target=game-ff protocol=udp src-address-list=\
     ip-local
-add action=mark-routing chain=prerouting comment=@@@@@ disabled=yes \
-    dst-address-list=!ip-local-private dst-port=\
-    6008,7008,8008,9008,10000-10009,11000-11019 new-routing-mark=isp2 \
-    passthrough=no protocol=udp src-address-list=ip-local
-add action=jump chain=forward dst-address-list=!ip-local-private dst-port=\
-    6006,7006,8006,9006,11000-11019,39003,39006,39698,39779,10000-10007 \
-    jump-target=game-ff protocol=tcp src-address-list=ip-local
-add action=jump chain=forward dst-address-list=ip-local jump-target=game-ff \
-    protocol=tcp src-address-list=!ip-local-private src-port=\
-    6006,7006,8006,9006,11000-11019,39003,39006,39698,39779,10000-10007
-add action=jump chain=forward dst-address-list=!ip-local-private dst-port=\
-    6008,7008,8008,9008,10000-10009,11000-11019 jump-target=game-ff protocol=\
-    udp src-address-list=ip-local
 add action=jump chain=forward dst-address-list=ip-local jump-target=game-ff \
     protocol=udp src-address-list=!ip-local-private src-port=\
-    6008,7008,8008,9008,10000-10009,11000-11019
+    11000-11019,13008
 add action=mark-packet chain=game-ff new-packet-mark=game-ff passthrough=no
-add action=passthrough chain="NGISOR AJA DI HAPUS" comment=\
-    "NGISOR AJA DI HAPUS"
+add action=jump chain=forward dst-address-list=!ip-local-private dst-port=\
+    5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517 jump-target=\
+    game-ml protocol=tcp src-address-list=ip-local
+add action=jump chain=forward dst-address-list=ip-local jump-target=game-ml \
+    protocol=tcp src-address-list=!ip-local-private src-port=\
+    5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517
+add action=jump chain=forward dst-address-list=!ip-local-private dst-port="500\
+    0-5221,5224-5227,5229-5241,5243-5287,5551-5559,5601-5700,9000-9010,9443" \
+    jump-target=game-ml protocol=tcp src-address-list=ip-local
+add action=jump chain=forward dst-address-list=ip-local jump-target=game-ml \
+    protocol=tcp src-address-list=!ip-local-private src-port="5000-5221,5224-5\
+    227,5229-5241,5243-5287,5551-5559,5601-5700,9000-9010,9443"
+add action=jump chain=forward dst-address-list=!ip-local-private dst-port="400\
+    1-4009,5000-5221,5224-5241,5243-5509,5551-5559,5601-5700,8130,8443,9120" \
+    jump-target=game-ml protocol=udp src-address-list=ip-local
+add action=jump chain=forward dst-address-list=ip-local jump-target=game-ml \
+    protocol=udp src-address-list=!ip-local-private src-port="4001-4009,5000-5\
+    221,5224-5241,5243-5509,5551-5559,5601-5700,8130,8443,9120"
+add action=jump chain=forward dst-address-list=!ip-local-private dst-port=\
+    2702,3702,5517-5529,8001,9000-9010,9992,10003,30000-30900,5289-5352 \
+    jump-target=game-ml protocol=udp src-address-list=ip-local
+add action=jump chain=forward dst-address-list=ip-local jump-target=game-ml \
+    protocol=udp src-address-list=!ip-local-private src-port=\
+    2702,3702,5517-5529,8001,9000-9010,9992,10003,30000-30900,5289-5352
+add action=mark-packet chain=game-ml new-packet-mark=game-ml passthrough=no
 add action=jump chain=prerouting comment=\
     "                BYPASS bbrp koneksi" dst-address-list=ip-local-private \
     jump-target=lokal src-address-list=ip-local-private
@@ -9185,16 +9062,16 @@ add action=masquerade chain=srcnat comment="masquerade hotspot network" \
     src-address=192.168.170.0/24
 add action=masquerade chain=srcnat
 /ip firewall raw
-add action=add-dst-to-address-list address-list=z-ip-list-youtube \
-    address-list-timeout=none-static chain=prerouting comment=youtube \
-    content=.googlevideo.com dst-address-list=!ip-local-private \
+add action=add-dst-to-address-list address-list=z-list-ip-google \
+    address-list-timeout=none-dynamic chain=prerouting comment=youtube \
+    content=.googlevideo.com disabled=yes dst-address-list=!ip-local-private \
     src-address-list=ip-local
-add action=add-dst-to-address-list address-list=z-ip-list-youtube \
+add action=add-dst-to-address-list address-list=z-list-ip-google \
     address-list-timeout=none-static chain=prerouting content=.ytimg.com \
-    dst-address-list=!ip-local-private src-address-list=ip-local
-add action=add-dst-to-address-list address-list=z-ip-list-youtube \
+    disabled=yes dst-address-list=!ip-local-private src-address-list=ip-local
+add action=add-dst-to-address-list address-list=z-list-ip-google \
     address-list-timeout=none-static chain=prerouting content=.youtube.com \
-    dst-address-list=!ip-local-private src-address-list=ip-local
+    disabled=yes dst-address-list=!ip-local-private src-address-list=ip-local
 add action=add-dst-to-address-list address-list=z-ip-list-tiktok \
     address-list-timeout=none-static chain=prerouting comment=tiktok content=\
     .tiktokcdn.com dst-address-list=!ip-local-private src-address-list=\
@@ -9220,7 +9097,8 @@ add comment=isp2 distance=1 gateway=192.168.77.1 routing-mark=isp2
 add comment=isp1 distance=1 gateway=10.10.12.1 routing-mark=isp1
 add comment=isp1 distance=1 gateway=10.10.12.1
 add comment=isp2 distance=2 gateway=192.168.77.1
-add comment="cek isp1" distance=1 dst-address=1.1.1.2/32 gateway=10.10.12.1
+add comment="cek isp1 backup" distance=1 dst-address=1.1.1.2/32 gateway=\
+    10.10.12.1
 add comment="cek isp1" distance=1 dst-address=142.251.241.3/32 gateway=\
     10.10.12.1
 add comment="cek isp2" distance=1 dst-address=149.112.112.112/32 gateway=\
@@ -9317,6 +9195,9 @@ add interval=1d name=#wajib on-event="/system script run ##pemakaian-bw\r\
     \n/system script run ##clear-dns&log" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     start-date=sep/03/2021 start-time=04:23:00
+add interval=12h name=#wajib2 on-event="/system script run ##clear-dns&log" \
+    policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    start-date=sep/03/2021 start-time=04:23:00
 /system script
 add dont-require-permissions=no name=#ether1 owner=mm1rza policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=":\
@@ -9382,16 +9263,16 @@ add dont-require-permissions=no name=#ether2 owner=mm1rza policy=\
     \_GB\" keep-result=no;"
 add dont-require-permissions=no name=~total-ether1-ISP-1-DOWN owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=15
+    source=4
 add dont-require-permissions=no name=~total-ether2-ISP-2-DOWN owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=10
+    source=3
 add dont-require-permissions=no name=~total-ether2-ISP-2-UP owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=197
+    source=56
 add dont-require-permissions=no name=~total-ether1-ISP-1-UP owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=84
+    source=70
 add dont-require-permissions=no name=##pemakaian-bw owner=mm1rza policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/\
     system script run #ether1\r\
@@ -9438,11 +9319,9 @@ add dont-require-permissions=no name=#lan owner=mm1rza policy=\
     \_GB %0A UPLOAD          : \$totalDOWN GB %0A TOTAL              : \$total\
     \_GB\" keep-result=no;"
 add dont-require-permissions=no name=~total-lan-DOWN owner=mm1rza policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    241
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=0
 add dont-require-permissions=no name=~total-lan-UP owner=mm1rza policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    27
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=0
 add dont-require-permissions=no name=####cek-kabel owner=mm1rza policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=":\
     local server ([/system identity get name])\r\
@@ -9482,7 +9361,14 @@ add dont-require-permissions=no name=##clear-dns&log owner=mm1rza policy=\
     ip dns cache flush\r\
     \n/system logging action set memory memory-lines=1\r\
     \n/system logging action set memory memory-lines=1000\r\
-    \n/queue simple remove [ find name ~\"hs-<\" ]"
+    \n/queue simple remove [ find name ~\"hs-<\" ]\r\
+    \n\r\
+    \n:delay 5s;\r\
+    \n/interface reset-counters ether1-ISP-1\r\
+    \n/interface reset-counters ether2-ISP-2\r\
+    \n/interface reset-counters lan\r\
+    \n/queue simple reset-counters-all\r\
+    \n/queue tree reset-counters-all"
 /tool graphing interface
 add interface=ether1-ISP-1
 add interface=ether2-ISP-2

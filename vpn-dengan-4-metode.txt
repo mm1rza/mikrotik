@@ -21,8 +21,8 @@
 
 ##########################################
 # replace variabel sesuaikan dengan vpn
-# user			= akubisarouter23
-# password		= akubisarouter23445
+# user			= keryn123
+# password		= 12das213
 # ip host vpn 	= 10.123.223.1
 ##########################################
 
@@ -30,9 +30,9 @@
 
 :delay 100ms;
 # mulai pasang vpn ( pilih salah satu mau SSTP, L2TP, atau PPTP )
-/interface sstp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no keepalive-timeout=10 name=MNET-VPN-SSTP user=akubisarouter23 password=akubisarouter23445
-/interface l2tp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no ipsec-secret=vpn.mnet.my.id keepalive-timeout=10 name=MNET-VPN-L2TP user=akubisarouter23 password=akubisarouter23445 profile=default use-ipsec=no
-/interface pptp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no keepalive-timeout=10 name=MNET-VPN-PPTP user=akubisarouter23 password=akubisarouter23445 profile=default
+/interface sstp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no keepalive-timeout=10 name=MNET-VPN-SSTP user=keryn123 password=12das213
+/interface l2tp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no ipsec-secret=vpn.mnet.my.id keepalive-timeout=10 name=MNET-VPN-L2TP user=keryn123 password=12das213 profile=default use-ipsec=no
+/interface pptp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no keepalive-timeout=10 name=MNET-VPN-PPTP user=keryn123 password=12das213 profile=default
 
 # pasang nat agar koneksi lokal dapat ke vpn
 /interface list add comment=MNET-VPN name=MNET-VPN
@@ -84,7 +84,7 @@ import file-name=mnet-openvpn/mnet-key.key passphrase=12345678
 /file remove mnet-openvpn 
 /system script remove [find comment="MNET-VPN"]
 
-/interface ovpn-client add certificate=mnet cipher=aes256 comment=MNET-VPN connect-to=vpn.mnet.my.id name=MNET-VPN-OVPN use-peer-dns=no user=akubisarouter23 password=akubisarouter23445 disabled=no
+/interface ovpn-client add certificate=mnet cipher=aes256 comment=MNET-VPN connect-to=vpn.mnet.my.id name=MNET-VPN-OVPN use-peer-dns=no user=keryn123 password=12das213 disabled=no
 
 /interface list member add comment=MNET-VPN interface=MNET-VPN-OVPN list=MNET-VPN
 
