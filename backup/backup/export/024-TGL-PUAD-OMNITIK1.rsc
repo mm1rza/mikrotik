@@ -1,4 +1,4 @@
-# aug/23/2023 12:00:00 by RouterOS 6.47.10
+# sep/02/2023 00:05:03 by RouterOS 6.47.10
 # software id = 47HK-2YAS
 #
 # model = RBSXTsq5nD

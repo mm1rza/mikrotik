@@ -1,4 +1,4 @@
-# aug/23/2023 12:00:00 by RouterOS 6.47.10
+# sep/02/2023 00:00:00 by RouterOS 6.47.10
 # software id = HSX6-MZ9V
 #
 # model = RBLHG-5HPnD

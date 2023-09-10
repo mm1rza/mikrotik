@@ -1,4 +1,4 @@
-# aug/23/2023 12:00:00 by RouterOS 6.48.4
+# sep/02/2023 00:00:00 by RouterOS 6.48.4
 # software id = WIU9-32SU
 #
 # model = RB1100x4
@@ -101,122 +101,20 @@ add disabled=yes max-limit=25M/25M name=bridge13 parent="~~~GLOBAL TRAFIK" \
 add disabled=yes max-limit=25M/25M name=ether10 parent="~~~GLOBAL TRAFIK" \
     queue=pcq-upload-default/pcq-download-default target=192.168.100.0/24
 add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_B0:95:75:C8:05:8E parent=bridge2 target=\
-    192.168.2.131/32
+    max-limit=7M/7M name=bridge2_74:AC:B9:66:44:BB parent=bridge2 target=\
+    192.168.2.86/32
 add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
     max-limit=7M/7M name=bridge2_74:AC:B9:66:46:15 parent=bridge2 target=\
     192.168.2.32/32
 add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
+    max-limit=7M/7M name=bridge2_B0:95:75:C8:05:8E parent=bridge2 target=\
+    192.168.2.131/32
+add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
     max-limit=7M/7M name=bridge2_98:DA:C4:32:9A:19 parent=bridge2 target=\
     192.168.2.210/32
 add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_74:AC:B9:66:44:BB parent=bridge2 target=\
-    192.168.2.86/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
     max-limit=7M/7M name=bridge2_1C:77:F6:E4:FA:9F parent=bridge2 target=\
     192.168.2.120/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_98:EE:CB:82:DB:32 parent=bridge2 target=\
-    192.168.2.109/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_82:CB:C3:8D:C9:CF parent=bridge2 target=\
-    192.168.2.39/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_94:C6:91:6E:00:D6 parent=bridge2 target=\
-    192.168.2.163/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_94:C6:91:57:7C:AD parent=bridge2 target=\
-    192.168.2.162/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_52:02:C0:0D:50:DE parent=bridge2 target=\
-    192.168.2.65/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_94:C6:91:9C:DD:67 parent=bridge2 target=\
-    192.168.2.192/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_FE:FB:DB:CC:12:BA parent=bridge2 target=\
-    192.168.2.182/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_8A:6B:33:B7:EA:79 parent=bridge2 target=\
-    192.168.2.188/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_5C:BA:EF:0E:8A:37 parent=bridge2 target=\
-    192.168.2.78/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_7C:2A:DB:90:0A:70 parent=bridge2 target=\
-    192.168.2.191/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_22:C5:E0:68:3E:F5 parent=bridge2 target=\
-    192.168.2.246/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_52:CF:01:46:A6:69 parent=bridge2 target=\
-    192.168.2.25/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_62:88:69:A3:21:8F parent=bridge2 target=\
-    192.168.2.183/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_D8:CE:3A:59:70:B7 parent=bridge2 target=\
-    192.168.2.203/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_08:ED:B9:C4:29:B7 parent=bridge2 target=\
-    192.168.2.169/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_88:D5:0C:05:64:E8 parent=bridge2 target=\
-    192.168.2.208/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_12:E1:8B:BC:20:4B parent=bridge2 target=\
-    192.168.2.71/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_16:C5:1D:1C:37:8C parent=bridge2 target=\
-    192.168.2.213/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_46:23:22:18:45:D2 parent=bridge2 target=\
-    192.168.2.215/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_20:74:54:9D:99:B1 parent=bridge2 target=\
-    192.168.2.216/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_C4:E1:A1:E8:09:33 parent=bridge2 target=\
-    192.168.2.166/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_0A:4E:48:22:A8:A5 parent=bridge2 target=\
-    192.168.2.217/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_D8:CE:3A:50:D1:95 parent=bridge2 target=\
-    192.168.2.209/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_0C:98:38:DF:15:E7 parent=bridge2 target=\
-    192.168.2.147/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_56:0C:DF:A1:0B:3E parent=bridge2 target=\
-    192.168.2.187/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_6E:6F:02:34:68:27 parent=bridge2 target=\
-    192.168.2.164/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_E2:3D:77:F3:29:A7 parent=bridge2 target=\
-    192.168.2.100/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_5C:D0:6E:0B:47:D1 parent=bridge2 target=\
-    192.168.2.201/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_3E:D3:2A:76:FC:1E parent=bridge2 target=\
-    192.168.2.221/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_8C:AA:CE:3A:13:06 parent=bridge2 target=\
-    192.168.2.222/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_1A:1C:7A:E6:25:87 parent=bridge2 target=\
-    192.168.2.180/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_44:46:87:69:0A:19 parent=bridge2 target=\
-    192.168.2.19/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_2E:16:9B:E8:C4:67 parent=bridge2 target=\
-    192.168.2.136/32
-add burst-limit=11M/11M burst-threshold=7M/7M burst-time=7s/7s limit-at=1M/1M \
-    max-limit=7M/7M name=bridge2_44:46:87:8B:AD:5B parent=bridge2 target=\
-    192.168.2.223/32
 /user group
 set full policy="local,telnet,ssh,ftp,reboot,read,write,policy,test,winbox,pas\
     sword,web,sniff,sensitive,api,romon,dude,tikapp"

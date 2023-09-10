@@ -1,4 +1,4 @@
-# aug/23/2023 00:00:00 by RouterOS 6.48.6
+# sep/02/2023 00:00:00 by RouterOS 6.48.6
 # software id = FFZN-PEUK
 #
 # model = RB750Gr3
@@ -7,18 +7,17 @@
 add name=bridge-lan
 /interface ethernet
 set [ find default-name=ether1 ] name=ether1-IDPLAY1
-set [ find default-name=ether2 ] mac-address=C4:AD:34:35:B9:58 name=\
-    ether2-BIZ
+set [ find default-name=ether2 ] name=ether2-BIZ
 set [ find default-name=ether3 ] disabled=yes name=ether3-IDPLAY2
 set [ find default-name=ether4 ] name=ether4-KALIGELANG
 set [ find default-name=ether5 ] name=ether5-BALE
 /interface sstp-client
-add comment=MNET-VPN connect-to=103.143.170.11 keepalive-timeout=10 name=\
-    MNET-VPN-SSTP password=awazadawewe123 user=maxtkjsmk
+add comment=MNET-VPN connect-to=103.143.170.11 disabled=no keepalive-timeout=\
+    10 name=MNET-VPN-SSTP password=awazadawewe123 user=maxtkjsmk
 /interface ovpn-client
 add certificate=mnet.crt_0 cipher=aes256 comment=MNET-VPN connect-to=\
-    103.143.170.11 mac-address=FE:0A:4B:9D:B0:30 name=MNET-VPN-OVPN password=\
-    awazadawewe123 use-peer-dns=no user=maxtkjsmk
+    103.143.170.11 disabled=yes mac-address=FE:0A:4B:9D:B0:30 name=\
+    MNET-VPN-OVPN password=awazadawewe123 use-peer-dns=no user=maxtkjsmk
 /interface list
 add name=LAN
 add comment=MNET-VPN name=MNET-VPN
@@ -42,6 +41,8 @@ add max-limit=240M/280M name="[BTS] Kaligelang" parent=GLOBAL-KALIGELANG \
     target=172.16.0.4/32
 add max-limit=240M/240M name=TEST parent=GLOBAL-KALIGELANG target=\
     172.16.0.99/32
+add max-limit=4M/15M name="[MITRA] Firman" parent=GLOBAL-KALIGELANG priority=\
+    1/1 target=172.16.0.2/32,172.16.0.15/32
 add max-limit=20M/20M name="Paung H3" parent=GLOBAL-KALIGELANG priority=1/1 \
     target=172.16.0.19/32
 /queue type
@@ -76,13 +77,14 @@ add kind=pcq name=PCQ-BRUST-10M-3Minutes pcq-burst-rate=10M \
 add kind=pcq name=PCQ-BRUST-15M-3Minutes pcq-burst-rate=15M \
     pcq-burst-threshold=6M pcq-burst-time=7m30s pcq-classifier=dst-address \
     pcq-rate=8M
+add kind=pcq name=PCQ-BRUST-4M-7M-1Minutes pcq-burst-rate=7M \
+    pcq-burst-threshold=3M pcq-burst-time=2m20s pcq-classifier=dst-address \
+    pcq-rate=4M
 /queue simple
 add max-limit=3M/10M name="Agus Supriyono" parent=GLOBAL-KALIGELANG priority=\
     1/1 queue=default-small/PCQ-BRUST-10M target=172.16.0.3/32
-add max-limit=4M/10M name="[MITRA] Firman" parent=GLOBAL-KALIGELANG queue=\
-    default-small/PCQ-BRUST-10M-1Minutes target=172.16.0.2/32,172.16.0.15/32
-add max-limit=4M/5M name="Voucher Firman" parent="[MITRA] Firman" priority=\
-    1/1 target=172.16.0.15/32
+add max-limit=4M/10M name="Voucher Firman" parent="[MITRA] Firman" priority=\
+    1/1 queue=default-small/PCQ-BRUST-10M-1Minutes target=172.16.0.15/32
 add max-limit=4M/15M name=Hendrik parent=GLOBAL-KALIGELANG priority=1/1 \
     queue=default/PCQ-BRUST-15M-3Minutes target=172.16.0.5/32
 add max-limit=4M/10M name=Tasroni parent=GLOBAL-KALIGELANG priority=5/5 \
@@ -94,7 +96,7 @@ add max-limit=4M/10M name=Kristo parent=GLOBAL-KALIGELANG priority=5/5 queue=\
 add max-limit=4M/10M name=Cokro parent=GLOBAL-KALIGELANG priority=5/5 queue=\
     default/PCQ-BRUST-10M-1Minutes target=172.16.0.9/32
 add max-limit=80M/80M name=PC parent=GLOBAL-KALIGELANG priority=1/1 queue=\
-    default/default-smallest target=172.16.0.10/32
+    default-smallest/default-smallest target=172.16.0.10/32
 add max-limit=4M/10M name=Anton parent=GLOBAL-KALIGELANG priority=5/5 queue=\
     default/PCQ-BRUST-10M-1Minutes target=172.16.0.11/32
 add max-limit=4M/10M name=Puji parent=GLOBAL-KALIGELANG priority=5/5 queue=\
@@ -103,14 +105,20 @@ add max-limit=4M/10M name=Rini parent=GLOBAL-KALIGELANG priority=2/2 queue=\
     default-small/PCQ-BRUST-10M-1Minutes target=172.16.0.14/32
 add max-limit=4M/10M name=G26 parent=GLOBAL-KALIGELANG priority=1/1 queue=\
     default-small/PCQ-BRUST-10M-3Minutes target=172.16.0.16/32
-add max-limit=4M/10M name=Banjaran parent=GLOBAL-KALIGELANG priority=1/1 \
-    queue=default-small/PCQ-BRUST-10M-3Minutes target=172.16.0.17/32
+add max-limit=4M/7M name=Banjaran parent=GLOBAL-KALIGELANG priority=1/1 \
+    queue=default-small/PCQ-BRUST-4M-7M-1Minutes target=172.16.0.17/32
 add max-limit=4M/10M name="Ari G20" parent=GLOBAL-KALIGELANG priority=1/1 \
     queue=default-small/PCQ-BRUST-10M-3Minutes target=172.16.0.18/32
 add max-limit=4M/15M name=Ipin parent=GLOBAL-KALIGELANG priority=5/5 queue=\
     default/PCQ-BRUST-15M-1Minutes target=172.16.0.12/32
-add max-limit=4M/10M name=Ricemill parent=GLOBAL-KALIGELANG priority=1/1 \
-    queue=default-small/PCQ-BRUST-10M-1Minutes target=172.16.0.20/32
+add max-limit=4M/7M name=Ricemill parent=GLOBAL-KALIGELANG priority=1/1 \
+    queue=default-small/PCQ-BRUST-4M-7M-1Minutes target=172.16.0.20/32
+add max-limit=4M/7M name=Yasin parent=GLOBAL-KALIGELANG priority=1/1 queue=\
+    default-small/PCQ-BRUST-4M-7M-1Minutes target=172.16.0.21/32
+add max-limit=4M/7M name=Yeni parent=GLOBAL-KALIGELANG priority=1/1 queue=\
+    default-small/PCQ-BRUST-4M-7M-1Minutes target=172.16.0.22/32
+add max-limit=4M/7M name=Kluweng parent=GLOBAL-KALIGELANG priority=1/1 queue=\
+    default-small/PCQ-BRUST-4M-7M-1Minutes target=172.16.0.23/32
 /tool user-manager customer
 set admin access=\
     own-routers,own-users,own-profiles,own-limits,config-payment-gw
@@ -383,15 +391,14 @@ add comment=MNET-VPN distance=1 gateway=10.123.223.1 routing-mark=MNET
 add distance=1 gateway=10.10.10.1 routing-mark=isp2
 add distance=1 gateway=192.168.45.1 routing-mark=isp1
 add comment=isp1 distance=1 gateway=192.168.45.1
-add comment=isp2 disabled=yes distance=3 gateway=10.10.10.1
+add comment=isp2 distance=3 gateway=10.10.10.1
 add comment="CEK ISP1" distance=1 dst-address=94.140.14.15/32 gateway=\
     192.168.45.1
 add comment="CEK ISP2" distance=1 dst-address=94.140.15.16/32 gateway=\
     10.10.10.1
 add comment=iisp1 distance=2 dst-address=103.143.170.11/32 gateway=\
     192.168.45.1
-add comment=iisp2 disabled=yes distance=3 dst-address=103.143.170.11/32 \
-    gateway=10.10.10.1
+add comment=iisp2 distance=3 dst-address=103.143.170.11/32 gateway=10.10.10.1
 add comment="CEK ISP2" distance=1 dst-address=149.112.112.11/32 gateway=\
     10.10.10.1
 add comment="CEK ISP1" distance=1 dst-address=149.112.112.112/32 gateway=\
@@ -440,6 +447,12 @@ add comment=Paung name=01803 password=01803 profile=PPPOE remote-address=\
     172.16.0.19 service=pppoe
 add comment="Ripin Ricemill" name=02008 password=02008 profile=PPPOE \
     remote-address=172.16.0.20 service=pppoe
+add comment=Yasin name=02009 password=02009 profile=PPPOE remote-address=\
+    172.16.0.21 service=pppoe
+add comment=Yeni name=03001 password=03001 profile=PPPOE remote-address=\
+    172.16.0.22 service=pppoe
+add comment=Yasin name=02010 password=02010 profile=PPPOE remote-address=\
+    172.16.0.23 service=pppoe
 /system clock
 set time-zone-name=Asia/Jakarta
 /system identity

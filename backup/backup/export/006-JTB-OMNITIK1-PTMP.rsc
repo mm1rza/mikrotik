@@ -1,4 +1,4 @@
-# aug/23/2023 12:00:00 by RouterOS 6.48.5
+# sep/02/2023 00:00:00 by RouterOS 6.48.5
 # software id = KTQ8-84PC
 #
 # model = RBOmniTikPG-5HacD

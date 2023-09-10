@@ -40,6 +40,10 @@ add address=94.140.15.16 comment="DNS AdGuard Family protection" list=ip-private
 add address=77.88.8.1 comment="DNS Yandex" list=ip-private-dns
 add address=77.88.8.8 comment="DNS Yandex" list=ip-private-dns
 
+add address=103.87.68.195 comment="DNS BebasID NO VIRUS" list=ip-private-dns
+add address=103.87.68.194 comment="DNS BebasID BLOKIR IKLAN" list=ip-private-dns
+add address=103.87.68.196 comment="DNS BebasID BLOKIR VIRUS, KONTEN DEWASA & JUDI" list=ip-private-dns
+
 
 
 add address=211.233.84.186 comment="SNTP" list=ip-private-dns

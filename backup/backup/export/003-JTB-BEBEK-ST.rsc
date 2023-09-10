@@ -1,4 +1,4 @@
-# aug/22/2023 12:00:00 by RouterOS 6.48.6
+# sep/02/2023 00:00:00 by RouterOS 6.48.6
 # software id = 449S-VW9I
 #
 # model = RBLHG-5HPnD

@@ -1,0 +1,19 @@
+
+
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("mnet tidak bisa di ping")
+} else={
+log warning ("mnet aktif mulai mengunduh config list-ip-speedtest.rsc")
+	/ip firewall address-list remove [find comment="MNET-SPEEDTEST"]
+	/ip dns cache flush
+	log warning ("berhasil menghapus list-ip-speedtest.rsc lama")
+	:delay 1s
+	:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file remove list-ip-speedtest.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-speedtest.rsc" mode=http;
+	log warning ("berhasil mendownload list-ip-speedtest.rsc baru")
+	/import list-ip-speedtest.rsc
+	:delay 5s
+	/file remove list-ip-speedtest.rsc
+	:log warning message="berhasil import list-ip-speedtest.rsc";
+};

@@ -1,4 +1,4 @@
-# aug/23/2023 12:00:00 by RouterOS 6.49.8
+# sep/02/2023 00:00:00 by RouterOS 6.49.8
 # software id = UPAY-PFAJ
 #
 # model = RB450Gx4
@@ -9,6 +9,8 @@ add name=bridge-mahasiswa
 /interface ethernet
 set [ find default-name=ether1 ] name=ether1-isp1
 set [ find default-name=ether2 ] name=ether2-isp2
+set [ find default-name=ether4 ] name=ether4-atas
+set [ find default-name=ether5 ] name=ether5-kelas
 /interface sstp-client
 add comment=MNET-VPN connect-to=vpn.mnet.my.id keepalive-timeout=10 name=\
     MNET-VPN-SSTP password=akubisarouter23445 user=akubisarouter23
@@ -68,6 +70,9 @@ add max-limit=1G/1G name=dosen parent="------ALL TRAFIK" priority=6/6 target=\
 add burst-limit=15M/15M burst-threshold=10M/10M burst-time=5s/5s limit-at=\
     1M/1M max-limit=10M/10M name=172.16.7.253 parent=mahasiswa target=\
     172.16.7.253/32
+/queue type
+add kind=pfifo name="default-small ORIGINAL" pfifo-limit=10
+set 10 kind=sfq
 /user group
 add name=bacasaja policy="read,winbox,romon,!local,!telnet,!ssh,!ftp,!reboot,!\
     write,!policy,!test,!password,!web,!sniff,!sensitive,!api,!dude,!tikapp"
@@ -75,16 +80,16 @@ add name=bwtest policy="local,test,winbox,!telnet,!ssh,!ftp,!reboot,!read,!wri\
     te,!policy,!password,!web,!sniff,!sensitive,!api,!romon,!dude,!tikapp"
 /interface bridge port
 add bridge=bridge-dosen interface=ether3
-add bridge=bridge-mahasiswa interface=ether4
-add bridge=bridge-mahasiswa interface=ether5
+add bridge=bridge-mahasiswa interface=ether4-atas
+add bridge=bridge-mahasiswa interface=ether5-kelas
 /ip neighbor discovery-settings
 set discover-interface-list=all
 /interface list member
 add interface=ether1-isp1 list=ISP
 add interface=ether2-isp2 list=ISP
 add interface=ether3 list=LAN
-add interface=ether4 list=LAN
-add interface=ether5 list=LAN
+add interface=ether4-atas list=LAN
+add interface=ether5-kelas list=LAN
 add comment=MNET-VPN interface=MNET-VPN-SSTP list=MNET-VPN
 add comment=MNET-VPN interface=MNET-VPN-L2TP list=MNET-VPN
 add comment=MNET-VPN interface=MNET-VPN-PPTP list=MNET-VPN

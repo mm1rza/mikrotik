@@ -21,8 +21,8 @@
 
 ##########################################
 # replace variabel sesuaikan dengan vpn
-# user			= keryn123
-# password		= 12das213
+# user			= USERNAMEVPNNYA
+# password		= PASSWORDVPNNYA
 # ip host vpn 	= 10.123.223.1
 ##########################################
 
@@ -30,9 +30,9 @@
 
 :delay 100ms;
 # mulai pasang vpn ( pilih salah satu mau SSTP, L2TP, atau PPTP )
-/interface sstp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no keepalive-timeout=10 name=MNET-VPN-SSTP user=keryn123 password=12das213
-/interface l2tp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no ipsec-secret=vpn.mnet.my.id keepalive-timeout=10 name=MNET-VPN-L2TP user=keryn123 password=12das213 profile=default use-ipsec=no
-/interface pptp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no keepalive-timeout=10 name=MNET-VPN-PPTP user=keryn123 password=12das213 profile=default
+/interface sstp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no keepalive-timeout=10 name=MNET-VPN-SSTP user=USERNAMEVPNNYA password=PASSWORDVPNNYA
+/interface l2tp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no ipsec-secret=vpn.mnet.my.id keepalive-timeout=10 name=MNET-VPN-L2TP user=USERNAMEVPNNYA password=PASSWORDVPNNYA profile=default use-ipsec=no
+/interface pptp-client add comment=MNET-VPN connect-to=vpn.mnet.my.id disabled=no keepalive-timeout=10 name=MNET-VPN-PPTP user=USERNAMEVPNNYA password=PASSWORDVPNNYA profile=default
 
 # pasang nat agar koneksi lokal dapat ke vpn
 /interface list add comment=MNET-VPN name=MNET-VPN
@@ -84,7 +84,7 @@ import file-name=mnet-openvpn/mnet-key.key passphrase=12345678
 /file remove mnet-openvpn 
 /system script remove [find comment="MNET-VPN"]
 
-/interface ovpn-client add certificate=mnet cipher=aes256 comment=MNET-VPN connect-to=vpn.mnet.my.id name=MNET-VPN-OVPN use-peer-dns=no user=keryn123 password=12das213 disabled=no
+/interface ovpn-client add certificate=mnet cipher=aes256 comment=MNET-VPN connect-to=vpn.mnet.my.id name=MNET-VPN-OVPN use-peer-dns=no user=USERNAMEVPNNYA password=PASSWORDVPNNYA disabled=no
 
 /interface list member add comment=MNET-VPN interface=MNET-VPN-OVPN list=MNET-VPN
 
@@ -93,31 +93,24 @@ import file-name=mnet-openvpn/mnet-key.key passphrase=12345678
 
 ################################ SELESAI TANPA SCHEDULER CEK VPN NYALA TIDAK
 
-/system script
-add dont-require-permissions=no name=MNET-VPN-CEK owner=mm1rza policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=":\
-    if ([/ping address=10.123.223.1 count=3 ] = 0) do={\r\
+/system script add dont-require-permissions=no name=MNET-VPN-CEK owner=mm1rza policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=":if ([/ping address=10.123.223.1 count=3 ] = 0) do={\r\
     \n#log error (\"VPN ga konek\")\r\
-    \n\t/interface set MNET-VPN-SSTP disabled=no\r\
-    \n\tdelay 2s;\r\
-    \n\t/interface set MNET-VPN-L2TP disabled=no\r\
-    \n\tdelay 2s;\r\
     \n\t/interface set MNET-VPN-PPTP disabled=no\r\
-    \n\tdelay 2s;\r\
+    \n\tdelay 1s;\r\
+    \n\t/interface set MNET-VPN-L2TP disabled=no\r\
+    \n\tdelay 1s;\r\
+    \n\t/interface set MNET-VPN-SSTP disabled=no\r\
+    \n\tdelay 1s;\r\
     \n\t/interface set MNET-VPN-OVPN disabled=no\r\
-    \n\tdelay 2s;\r\
+    \n\tdelay 1s;\r\
     \n\t\r\
-    \n\t:if ([/ping interface=\"MNET-VPN-SSTP\" address=10.123.223.1 count=5 ]\
-    \_= 0) do={\r\
+    \n\t:if ([/ping interface=\"MNET-VPN-SSTP\" address=10.123.223.1 count=3 ] = 0) do={\r\
     \n\t/interface set MNET-VPN-SSTP disabled=yes\r\
-    \n\t\t:if ([/ping interface=\"MNET-VPN-L2TP\" address=10.123.223.1 count=5\
-    \_] = 0) do={\r\
+    \n\t\t:if ([/ping interface=\"MNET-VPN-L2TP\" address=10.123.223.1 count=3 ] = 0) do={\r\
     \n\t\t/interface set MNET-VPN-L2TP disabled=yes\r\
-    \n\t\t\t:if ([/ping interface=\"MNET-VPN-PPTP\" address=10.123.223.1 count\
-    =5 ] = 0) do={\r\
+    \n\t\t\t:if ([/ping interface=\"MNET-VPN-PPTP\" address=10.123.223.1 count=3 ] = 0) do={\r\
     \n\t\t\t/interface set MNET-VPN-PPTP disabled=yes\r\
-    \n\t\t\t\t:if ([/ping interface=\"MNET-VPN-OVPN\" address=10.123.223.1 cou\
-    nt=5 ] = 0) do={\r\
+    \n\t\t\t\t:if ([/ping interface=\"MNET-VPN-OVPN\" address=10.123.223.1 count=3 ] = 0) do={\r\
     \n\t\t\t\t\t/interface set MNET-VPN-OVPN disabled=yes\r\
     \n\t\t\t\t\t\tdelay 5s;\r\
     \n\t\t\t\t\t\t/system script run MNET-VPN-CEK\r\
@@ -143,14 +136,43 @@ add dont-require-permissions=no name=MNET-VPN-CEK owner=mm1rza policy=\
     \n\t/interface set MNET-VPN-OVPN disabled=yes\r\
     \n\t};\r\
     \n} else={\r\
+    \n:if ([/ping interface=\"MNET-VPN-PPTP\" address=10.123.223.1 count=3 ] = 0) do={\r\
+    \n} else={\r\
+    \n/interface set MNET-VPN-SSTP disabled=yes\r\
+    \n/interface set MNET-VPN-L2TP disabled=yes\r\
+    \n/interface set MNET-VPN-OVPN disabled=yes\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping interface=\"MNET-VPN-L2TP\" address=10.123.223.1 count=3 ] = 0) do={\r\
+    \n} else={\r\
+    \n/interface set MNET-VPN-SSTP disabled=yes\r\
+    \n/interface set MNET-VPN-OVPN disabled=yes\r\
+    \n/interface set MNET-VPN-PPTP disabled=yes\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping interface=\"MNET-VPN-SSTP\" address=10.123.223.1 count=3 ] = 0) do={\r\
+    \n} else={\r\
+    \n/interface set MNET-VPN-OVPN disabled=yes\r\
+    \n/interface set MNET-VPN-L2TP disabled=yes\r\
+    \n/interface set MNET-VPN-PPTP disabled=yes\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping interface=\"MNET-VPN-OVPN\" address=10.123.223.1 count=3 ] = 0) do={\r\
+    \n} else={\r\
+    \n/interface set MNET-VPN-SSTP disabled=yes\r\
+    \n/interface set MNET-VPN-L2TP disabled=yes\r\
+    \n/interface set MNET-VPN-PPTP disabled=yes\r\
+    \n};\r\
     \n#log warning (\"VPN konek\")\r\
     \n};"
 
 /system scheduler
-add interval=5m name="~ping vpn mnet" on-event=\
+add interval=15m name="~ping vpn mnet" on-event=\
     "/system script run MNET-VPN-CEK" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     start-time=startup
+
+/system script run MNET-VPN-CEK
 
 
 ################################ SELESAI
@@ -241,17 +263,33 @@ add address=255.255.255.255 comment=MNET-VPN list=ip-local-private-mnet
 add address=240.0.0.0/4 comment=MNET-VPN list=ip-local-private-mnet
 
 
-/system script add dont-require-permissions=no name=#update-speedtest owner=mm1rza policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/ip firewall address-list remove [find comment=\"MNET-SPEEDTEST\"]\r\
-    \n:delay 1s\r\
-    \n:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file remove list-ip-speedtest.rsc }; \r\
-    \n:delay 1s\r\
-    \n/tool fetch url=\"https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-speedtest.rsc\" mode=http;\r\
-    \n/import list-ip-speedtest.rsc\r\
-    \n:delay 5s\r\
-    \n/file remove list-ip-speedtest.rsc\r\
-    \n:log info message=\"berhasil import list-ip-speedtest.rsc\";"
+/system script 
+add dont-require-permissions=no name=#update-speedtest owner=mm1rza policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="\
+    \r\
+    \n\r\
+    \n:if ([/ping address=mnet.my.id count=3 ] = 0) do={\r\
+    \nlog error (\"mnet tidak bisa di ping\")\r\
+    \n} else={\r\
+    \nlog warning (\"mnet aktif mulai mengunduh config list-ip-speedtest.rsc\"\
+    )\r\
+    \n\t/ip firewall address-list remove [find comment=\"MNET-SPEEDTEST\"]\r\
+    \n\t/ip dns cache flush\r\
+    \n\tlog warning (\"berhasil menghapus list-ip-speedtest.rsc lama\")\r\
+    \n\t:delay 1s\r\
+    \n\t:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file rem\
+    ove list-ip-speedtest.rsc }; \r\
+    \n\t:delay 1s\r\
+    \n\t/tool fetch url=\"https://mnet.my.id/file/uploads/settingan-mikrotik/i\
+    p-address/list-ip-speedtest.rsc\" mode=http;\r\
+    \n\tlog warning (\"berhasil mendownload list-ip-speedtest.rsc baru\")\r\
+    \n\t/import list-ip-speedtest.rsc\r\
+    \n\t:delay 5s\r\
+    \n\t/file remove list-ip-speedtest.rsc\r\
+    \n\t:log warning message=\"berhasil import list-ip-speedtest.rsc\";\r\
+    \n};"
 
-
+/system script run #update-speedtest
 
 
 

@@ -1,4 +1,4 @@
-# aug/23/2023 04:23:18 by RouterOS 6.49.8
+# sep/02/2023 04:23:17 by RouterOS 6.49.8
 # software id = 1ULD-5FDY
 #
 # model = RouterBOARD 3011UiAS
@@ -8,12 +8,12 @@ add name=lan
 /interface ethernet
 set [ find default-name=ether1 ] comment=b-valen mac-address=\
     74:DF:BF:88:37:11 name=ether1-isp1
-set [ find default-name=ether2 ] comment=o-mirza mac-address=\
+set [ find default-name=ether2 ] comment=i-mirza mac-address=\
     74:DF:BF:88:37:22 name=ether2-isp2
-set [ find default-name=ether3 ] disabled=yes mac-address=74:DF:BF:88:37:33 \
-    name=ether3-isp3
-set [ find default-name=ether4 ] disabled=yes mac-address=74:DF:BF:88:37:44 \
-    name=ether4-isp4
+set [ find default-name=ether3 ] comment=192.168.18.1 disabled=yes \
+    mac-address=74:DF:BF:88:37:33 name=ether3-isp3
+set [ find default-name=ether4 ] comment=192.168.23.1 disabled=yes \
+    mac-address=74:DF:BF:88:37:44 name=ether4-isp4
 set [ find default-name=ether5 ] disabled=yes mac-address=74:DF:BF:88:37:55 \
     name=ether5-isp5
 set [ find default-name=ether6 ] name=ether6-tower
@@ -95,47 +95,23 @@ add address-list=ip-local local-address=10.10.2.1 name=area-tegal-NON-NOTIF \
     only-one=yes
 /interface l2tp-client
 add connect-to=103.143.170.11 disabled=no ipsec-secret=vpn.mnet.my.id \
-    keepalive-timeout=20 name=vpn1 password=456awasadawewe456 profile=default \
+    keepalive-timeout=10 name=vpn1 password=456awasadawewe456 profile=default \
     user=mnet-router-dns
 /interface pptp-client
 add connect-to=103.143.170.11 keepalive-timeout=10 name=vpn1123213213213 \
     password=456awasadawewe456 profile=default user=mnet-router-dns
 /queue simple
-add disabled=yes max-limit=100M/100M name="~~~    BYPASS     ~~~" priority=\
-    1/1 target=192.168.55.0/24
-add max-limit=100M/100M name="~~~ VIP & LOKAL ~~~" packet-marks=vip,lokal \
-    priority=1/1 target=10.0.0.0/8,172.16.0.0/12
-add max-limit=100M/100M name="~~~       GAME      ~~~" packet-marks=\
-    game-ml,game-ff priority=2/2 target=10.0.0.0/8,172.16.0.0/12
-/queue type
-add kind=pcq name=pcq-download pcq-classifier=dst-address \
-    pcq-dst-address6-mask=64 pcq-src-address6-mask=64
-add kind=pcq name=pcq-upload pcq-classifier=src-address \
-    pcq-dst-address6-mask=64 pcq-src-address6-mask=64
-add kind=pfifo name=default-100 pfifo-limit=100
-add kind=sfq name=FULL-SPEED
-/queue simple
-add max-limit=21M/21M name="~~~ SPEEDTEST ~~~" packet-marks=speedtest \
-    priority=1/1 queue=FULL-SPEED/FULL-SPEED target=\
-    10.10.0.0/21,10.10.12.3/32
-add name="--------ALL TRAFIK--------" queue=default/default target=\
-    10.0.0.0/8,172.16.0.0/12
+add name="--------ALL TRAFIK--------" target=10.0.0.0/8,172.16.0.0/12
 add max-limit=30M/30M name="~~MIRZA WIFI BELAKANG" parent=\
     "--------ALL TRAFIK--------" target=10.10.2.254/32
 add max-limit=35M/35M name="~~MIRZA TV KAMAR" parent=\
     "--------ALL TRAFIK--------" target=\
     10.20.254.4/32,10.20.254.5/32,10.20.254.6/32
-add disabled=yes max-limit=100M/100M name=~rtrw-muksin-LOSS parent=\
-    "--------ALL TRAFIK--------" target=10.10.12.2/32
-add max-limit=80M/80M name=~rtrw-muksin parent="--------ALL TRAFIK--------" \
+add max-limit=100M/100M name=~rtrw-muksin parent="--------ALL TRAFIK--------" \
     target=10.10.12.2/32
 add name=rumahan parent="--------ALL TRAFIK--------" target=\
     10.10.0.0/21,10.10.12.3/32
 add name=hotspotan parent="--------ALL TRAFIK--------" target=172.16.0.0/12
-add disabled=yes max-limit=30M/60M name="~Merpati PCQ" parent=rumahan queue=\
-    pcq-upload/pcq-download target=10.10.2.0/24
-add disabled=yes max-limit=30M/60M name="~Bebek PCQ" parent=rumahan queue=\
-    pcq-upload/pcq-download target=10.10.1.0/24,10.10.12.3/32
 add burst-limit=0/7M burst-threshold=0/5M burst-time=0s/7s limit-at=1M/2M \
     max-limit=3M/5M name="==warung-evi" parent=hotspotan target=\
     172.16.3.251/32,172.16.3.252/32,172.16.3.253/32
@@ -185,8 +161,8 @@ set [ find default=yes ] add-mac-cookie=no address-list=ip-local-to-isp1 \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -243,8 +219,8 @@ add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -305,8 +281,8 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=wawan \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -366,8 +342,8 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=witno-12jam \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -427,8 +403,8 @@ add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -486,8 +462,8 @@ add address-list=ip-local-to-isp1 insert-queue-before="==warung-evi" \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -547,8 +523,8 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=wati \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -608,8 +584,8 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=nazim \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -667,8 +643,8 @@ add insert-queue-before="==warung-evi" keepalive-timeout=4m name=dian \
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -712,8 +688,8 @@ add add-mac-cookie=no address-list=ip-local-to-isp1 insert-queue-before=\
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -771,8 +747,8 @@ add add-mac-cookie=no address-list=ip-local-to-isp1 insert-queue-before=\
     \n:local totq [((\$limit)/1048576)];\r\
     \n:local useraktif [/ip hotspot active print count-only];\r\
     \n:local avgRtt;\r\
-    \n/tool flood-ping \$ips count=5 do={\r\
-    \n  :if (\$sent = 5) do={\r\
+    \n/tool flood-ping \$ips count=3 do={\r\
+    \n  :if (\$sent = 3) do={\r\
     \n    :set avgRtt \$\"avg-rtt\"\r\
     \n}}\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -785,8 +761,7 @@ add add-mac-cookie=no address-list=ip-local-to-isp1 insert-queue-before=\
     \n};" parent-queue=hotspotan rate-limit="1M/2M 0/0 0/0 0/0 8 0/0"
 /queue simple
 add burst-limit=0/9M burst-threshold=0/7M burst-time=0s/7s limit-at=1M/2M \
-    max-limit=7M/7M name=l-topik parent=merpati queue=\
-    pcq-upload-default/pcq-download-default target=10.10.2.11/32
+    max-limit=7M/7M name=l-topik parent=merpati target=10.10.2.11/32
 add burst-limit=0/8M burst-threshold=0/7M burst-time=0s/7s limit-at=1M/2M \
     max-limit=6M/7M name=l-bunasir parent=merpati target=10.10.2.13/32
 add burst-limit=0/10M burst-threshold=0/9M burst-time=0s/7s limit-at=1M/2M \
@@ -831,14 +806,14 @@ add burst-limit=0/10M burst-threshold=0/8M burst-time=0s/7s limit-at=1M/2M \
     max-limit=3M/8M name=wawan-cafe parent=bebek target=10.10.1.17/32
 add burst-limit=0/10M burst-threshold=0/8M burst-time=0s/7s limit-at=1M/2M \
     max-limit=5M/8M name=bayu-kantor parent=bebek target=10.10.1.18/32
-add limit-at=1M/2M max-limit=3M/7M name=sd-suro1 parent=bebek target=\
+add limit-at=1M/2M max-limit=3M/7M name=k-sd-suro1 parent=bebek target=\
     10.10.1.19/32
-add limit-at=1M/2M max-limit=5M/10M name=sd-pager3 parent=bebek target=\
+add limit-at=1M/2M max-limit=5M/10M name=k-sd-pager3 parent=bebek target=\
     10.10.1.28/32
 add burst-limit=0/8M burst-threshold=0/7M burst-time=0s/7s limit-at=1M/2M \
     max-limit=3M/7M name=bayu-rumah parent=bebek target=10.10.1.20/32
 add burst-limit=0/8M burst-threshold=0/7M burst-time=0s/7s limit-at=1M/2M \
-    max-limit=4M/7M name=witno parent=bebek target=10.10.1.21/32
+    max-limit=4M/7M name=k-witno parent=bebek target=10.10.1.21/32
 add burst-limit=0/8M burst-threshold=0/7M burst-time=0s/7s limit-at=1M/2M \
     max-limit=3M/7M name=sri parent=bebek target=10.10.1.22/32
 add burst-limit=0/8M burst-threshold=0/7M burst-time=0s/7s limit-at=1M/2M \
@@ -849,6 +824,37 @@ add burst-limit=0/8M burst-threshold=0/7M burst-time=0s/7s limit-at=1M/2M \
     max-limit=3M/7M name=dikrom parent=bebek target=10.10.1.25/32
 add limit-at=1M/2M max-limit=3M/7M name=nazim parent=bebek target=\
     10.10.1.26/32
+/queue type
+add kind=pcq name=pcq-download pcq-classifier=dst-address \
+    pcq-dst-address6-mask=64 pcq-src-address6-mask=64
+add kind=pcq name=pcq-upload pcq-classifier=src-address \
+    pcq-dst-address6-mask=64 pcq-src-address6-mask=64
+add kind=pfifo name=default-100 pfifo-limit=100
+add kind=sfq name=FULL-SPEED
+add kind=pfifo name=default-500 pfifo-limit=500
+add kind=pfifo name="default-small ORIGINAL" pfifo-limit=10
+set 15 kind=sfq
+/queue simple
+add disabled=yes max-limit=10M/10M name="~~~~PC MIRZA TEST" queue=\
+    FULL-SPEED/FULL-SPEED target=10.20.254.3/32
+add disabled=yes max-limit=100M/100M name="~~~~  BYPASS  ~~~~" priority=1/1 \
+    queue=FULL-SPEED/FULL-SPEED target=192.168.55.0/24
+add max-limit=100M/100M name="-            LOKAL           -" packet-marks=\
+    lokal priority=1/1 queue=FULL-SPEED/FULL-SPEED target=\
+    10.0.0.0/8,172.16.0.0/12
+add max-limit=100M/100M name="--             VIP              --" \
+    packet-marks=vip priority=1/1 queue=FULL-SPEED/FULL-SPEED target=\
+    10.0.0.0/8,172.16.0.0/12
+add max-limit=100M/100M name="---          GAME          ---" packet-marks=\
+    game-ml,game-ff priority=2/2 queue=FULL-SPEED/FULL-SPEED target=\
+    10.0.0.0/8,172.16.0.0/12
+add max-limit=21M/21M name="----   SPEEDTEST    ----" packet-marks=speedtest \
+    priority=1/1 queue=default-500/default-500 target=\
+    10.10.0.0/21,10.10.12.3/32
+add disabled=yes max-limit=30M/60M name="~Merpati PCQ" parent=rumahan queue=\
+    pcq-upload/pcq-download target=10.10.2.0/24
+add disabled=yes max-limit=30M/60M name="~Bebek PCQ" parent=rumahan queue=\
+    pcq-upload/pcq-download target=10.10.1.0/24,10.10.12.3/32
 /user group
 set full policy="local,telnet,ssh,ftp,reboot,read,write,policy,test,winbox,pas\
     sword,web,sniff,sensitive,api,romon,dude,tikapp"
@@ -927,8 +933,8 @@ add address=172.16.3.253 address-lists=ip-local-to-isp1 client-id=\
 /ip dhcp-server network
 add address=172.16.0.0/22 gateway=172.16.0.1
 /ip dns
-set allow-remote-requests=yes cache-max-ttl=3m cache-size=51200KiB servers=\
-    192.168.18.1,192.168.23.1
+set allow-remote-requests=yes cache-max-ttl=5m cache-size=51200KiB servers=\
+    10.123.22.7
 /ip dns static
 add address=172.16.0.1 name=hotspot.com ttl=5m
 /ip firewall address-list
@@ -1027,7 +1033,8 @@ add address=10.10.12.3 comment=bebek-slamet-STATIK list=ip-local-speedtest
 add address=10.10.12.3 comment=bebek-slamet-STATIK list=ip-local
 add address=10.10.12.3 comment=bebek-slamet-STATIK list=ip-local-to-isp1
 add address=10.10.12.3 comment=bebek-slamet-STATIK list=ip-local-to-isp2
-add address=10.10.12.3 comment=bebek-slamet-STATIK list=ip-local-game
+add address=10.10.12.3 comment=bebek-slamet-STATIK disabled=yes list=\
+    ip-local-game
 add address=jsc.mgid.com list=z-list-ip-web-blokir
 add address=10.10.2.24 comment=tegal-rohkim list=ip-local-to-route-isp1
 add address=10.10.2.26 comment=tegal-laeli list=ip-local-to-route-isp1
@@ -1224,7 +1231,7 @@ add address=vpn.mnet.my.id comment=LAINNYA list=ip-private-2-local&dns
 add address=mnet.my.id comment=LAINNYA list=ip-private-2-local&dns
 add address=10.10.12.2 comment=rtrw-muksin disabled=yes list=ip-local-to-isp1
 add address=10.10.2.28 comment=tegal-sekar disabled=yes list=ip-local-game
-add address=10.10.2.29 comment=tegal-agus disabled=yes list=ip-local-game
+add address=10.10.2.29 comment=tegal-agus list=ip-local-game
 add address=10.10.2.30 comment=tegal-anis disabled=yes list=ip-local-game
 add address=10.10.2.31 comment=tegal-rini list=ip-local-game
 add address=10.10.2.32 comment=tegal-andi list=ip-local-game
@@ -2519,6 +2526,32 @@ add address=xmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=yougetsignal.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=zd.map.fastly.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=zenmate.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=api.whatismyip.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=pro.ip-api.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=iptools-4.top10vpn.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.showmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=showmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ip-info.ff.avast.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=myip.veepn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=zoogvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyip.uno comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.whatismyip-address.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=iplocation.io comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=app.uptrends.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=api.ipify.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=api64.ipify.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.name.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=mylocationnow.io comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=proxylist.geonode.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=brightvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=check.privadovpn.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=ifconfig.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 /ip firewall filter
 add action=passthrough chain=unused-hs-chain comment=\
     "place hotspot rules here" disabled=yes
@@ -2529,6 +2562,15 @@ add action=fasttrack-connection chain=forward dst-address-list=\
     !z-list-ip-speedtest src-address-list=ip-local-mirza
 add action=fasttrack-connection chain=forward dst-address-list=ip-local-mirza \
     src-address-list=!z-list-ip-speedtest
+add action=accept chain=forward comment="*****MIRZA ACCEPT**********MIRZA ACCE\
+    PT**********MIRZA ACCEPT**********MIRZA ACCEPT**********MIRZA ACCEPT******\
+    ****MIRZA ACCEPT**********MIRZA ACCEPT**********MIRZA ACCEPT**********MIRZ\
+    A ACCEPT**********" src-address-list=ip-local-mirza
+add action=drop chain=forward comment=\
+    "                DROP ping ke modem isp" dst-address-list=ip-modem-isp \
+    protocol=icmp src-address-list=ip-local
+add action=accept chain=input comment="                ACCEPT  ping" limit=\
+    5,6:packet protocol=icmp src-address=172.16.0.0/12
 add action=drop chain=forward comment="                DROP ping" \
     dst-address-list=z-list-ip-redirect packet-size=!0-800 protocol=icmp
 add action=drop chain=forward dst-address-list=z-list-ip-redirect fragment=\
@@ -2561,8 +2603,6 @@ add action=accept chain=SYN-input connection-state=new disabled=yes limit=\
     400,5:packet protocol=tcp tcp-flags=syn
 add action=drop chain=SYN-input connection-state=new disabled=yes protocol=\
     tcp tcp-flags=syn
-add action=drop chain=forward comment=DROP disabled=yes src-address=\
-    10.10.12.3
 /ip firewall mangle
 add action=mark-routing chain=prerouting comment=\
     "                Routing IP VPN > ISP 2" dst-address-list=ip-vpn-publik \
@@ -2571,8 +2611,10 @@ add action=mark-routing chain=prerouting comment=\
     "                BYPASS speedtest" dst-address-list=z-list-ip-speedtest \
     dst-port=80,443,5060 new-routing-mark=vpn passthrough=no protocol=tcp \
     src-address-list=ip-local
-add action=accept chain=prerouting comment="MIRZA ACCEPT" src-address-list=\
-    ip-local-mirza
+add action=accept chain=prerouting comment="*****MIRZA ACCEPT**********MIRZA A\
+    CCEPT**********MIRZA ACCEPT**********MIRZA ACCEPT**********MIRZA ACCEPT***\
+    *******MIRZA ACCEPT**********MIRZA ACCEPT**********MIRZA ACCEPT**********M\
+    IRZA ACCEPT**********" src-address-list=ip-local-mirza
 add action=jump chain=forward dst-address-list=z-list-ip-speedtest dst-port=\
     80,443,5060 jump-target=vip protocol=tcp src-address-list=ip-local
 add action=jump chain=forward dst-address-list=ip-local jump-target=vip \
@@ -2605,70 +2647,63 @@ add action=jump chain=prerouting jump-target=vip port=53,5353,853 protocol=\
 add action=jump chain=prerouting jump-target=vip port=53,5353,853 protocol=\
     tcp
 add action=mark-packet chain=vip new-packet-mark=vip passthrough=no
-add action=jump chain=forward comment="                BYPASS game" disabled=\
-    yes dst-address-list=!ip-private-2-local&dns dst-port="6006,6008,6674,7000\
-    -7999,8001-8012,9006,9137,10000-10015,11000-11019,12006,12008" \
-    jump-target=game-ff protocol=tcp src-address-list=ip-local-game
-add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
-    jump-target=game-ff protocol=tcp src-address-list=!ip-private-2-local&dns \
-    src-port="6006,6008,6674,7000-7999,8001-8012,9006,9137,10000-10015,11000-1\
-    1019,12006,12008"
-add action=jump chain=forward disabled=yes dst-address-list=\
-    !ip-private-2-local&dns dst-port=\
-    13006,15006,20561,39003,39006,39698,39779,39800 jump-target=game-ff \
-    protocol=tcp src-address-list=ip-local-game
-add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
-    jump-target=game-ff protocol=tcp src-address-list=!ip-private-2-local&dns \
-    src-port=13006,15006,20561,39003,39006,39698,39779,39800
-add action=jump chain=forward disabled=yes dst-address-list=\
-    !ip-private-2-local&dns dst-port="6006,6008,6674,7000-7999,8001-8012,8130,\
-    8443,9008,9120,10000-10015,10100,12008" jump-target=game-ff protocol=udp \
+add action=jump chain=forward comment="                BYPASS game" \
+    dst-address-list=!ip-private-2-local&dns dst-port="6006,6008,6674,7000-799\
+    9,8001-8012,9006,9137,10000-10015,11000-11019,12006,12008" jump-target=\
+    game-ff protocol=tcp src-address-list=ip-local-game
+add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
+    game-ff protocol=tcp src-address-list=!ip-private-2-local&dns src-port="60\
+    06,6008,6674,7000-7999,8001-8012,9006,9137,10000-10015,11000-11019,12006,1\
+    2008"
+add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
+    dst-port=13006,15006,20561,39003,39006,39698,39779,39800 jump-target=\
+    game-ff protocol=tcp src-address-list=ip-local-game
+add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
+    game-ff protocol=tcp src-address-list=!ip-private-2-local&dns src-port=\
+    13006,15006,20561,39003,39006,39698,39779,39800
+add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
+    dst-port="6006,6008,6674,7000-7999,8001-8012,8130,8443,9008,9120,10000-100\
+    15,10100,12008" jump-target=game-ff protocol=udp src-address-list=\
+    ip-local-game
+add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
+    game-ff protocol=udp src-address-list=!ip-private-2-local&dns src-port="60\
+    06,6008,6674,7000-7999,8001-8012,8130,8443,9008,9120,10000-10015,10100,120\
+    08"
+add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
+    dst-port=11000-11019,13008 jump-target=game-ff protocol=udp \
     src-address-list=ip-local-game
-add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
-    jump-target=game-ff protocol=udp src-address-list=!ip-private-2-local&dns \
-    src-port="6006,6008,6674,7000-7999,8001-8012,8130,8443,9008,9120,10000-100\
-    15,10100,12008"
-add action=jump chain=forward disabled=yes dst-address-list=\
-    !ip-private-2-local&dns dst-port=11000-11019,13008 jump-target=game-ff \
-    protocol=udp src-address-list=ip-local-game
-add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
-    jump-target=game-ff protocol=udp src-address-list=!ip-private-2-local&dns \
-    src-port=11000-11019,13008
-add action=mark-packet chain=game-ff disabled=yes new-packet-mark=game-ff \
-    passthrough=no
-add action=jump chain=forward disabled=yes dst-address-list=\
-    !ip-private-2-local&dns dst-port=\
-    5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517 jump-target=\
-    game-ml protocol=tcp src-address-list=ip-local-game
-add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
-    jump-target=game-ml protocol=tcp src-address-list=!ip-private-2-local&dns \
-    src-port=5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517
-add action=jump chain=forward disabled=yes dst-address-list=\
-    !ip-private-2-local&dns dst-port="5000-5221,5224-5227,5229-5241,5243-5287,\
-    5551-5559,5601-5700,9000-9010,9443" jump-target=game-ml protocol=tcp \
-    src-address-list=ip-local-game
-add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
-    jump-target=game-ml protocol=tcp src-address-list=!ip-private-2-local&dns \
-    src-port="5000-5221,5224-5227,5229-5241,5243-5287,5551-5559,5601-5700,9000\
-    -9010,9443"
-add action=jump chain=forward disabled=yes dst-address-list=\
-    !ip-private-2-local&dns dst-port="4001-4009,5000-5221,5224-5241,5243-5509,\
-    5551-5559,5601-5700,8130,8443,9120" jump-target=game-ml protocol=udp \
-    src-address-list=ip-local-game
-add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
-    jump-target=game-ml protocol=udp src-address-list=!ip-private-2-local&dns \
-    src-port="4001-4009,5000-5221,5224-5241,5243-5509,5551-5559,5601-5700,8130\
-    ,8443,9120"
-add action=jump chain=forward disabled=yes dst-address-list=\
-    !ip-private-2-local&dns dst-port=\
+add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
+    game-ff protocol=udp src-address-list=!ip-private-2-local&dns src-port=\
+    11000-11019,13008
+add action=mark-packet chain=game-ff new-packet-mark=game-ff passthrough=no
+add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
+    dst-port=5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517 \
+    jump-target=game-ml protocol=tcp src-address-list=ip-local-game
+add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
+    game-ml protocol=tcp src-address-list=!ip-private-2-local&dns src-port=\
+    5520-5529,10003,30000-30900,8443,5289-5352,5354-5509,5517
+add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
+    dst-port="5000-5221,5224-5227,5229-5241,5243-5287,5551-5559,5601-5700,9000\
+    -9010,9443" jump-target=game-ml protocol=tcp src-address-list=\
+    ip-local-game
+add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
+    game-ml protocol=tcp src-address-list=!ip-private-2-local&dns src-port="50\
+    00-5221,5224-5227,5229-5241,5243-5287,5551-5559,5601-5700,9000-9010,9443"
+add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
+    dst-port="4001-4009,5000-5221,5224-5241,5243-5509,5551-5559,5601-5700,8130\
+    ,8443,9120" jump-target=game-ml protocol=udp src-address-list=\
+    ip-local-game
+add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
+    game-ml protocol=udp src-address-list=!ip-private-2-local&dns src-port="40\
+    01-4009,5000-5221,5224-5241,5243-5509,5551-5559,5601-5700,8130,8443,9120"
+add action=jump chain=forward dst-address-list=!ip-private-2-local&dns \
+    dst-port=\
     2702,3702,5517-5529,8001,9000-9010,9992,10003,30000-30900,5289-5352 \
     jump-target=game-ml protocol=udp src-address-list=ip-local-game
-add action=jump chain=forward disabled=yes dst-address-list=ip-local-game \
-    jump-target=game-ml protocol=udp src-address-list=!ip-private-2-local&dns \
-    src-port=\
+add action=jump chain=forward dst-address-list=ip-local-game jump-target=\
+    game-ml protocol=udp src-address-list=!ip-private-2-local&dns src-port=\
     2702,3702,5517-5529,8001,9000-9010,9992,10003,30000-30900,5289-5352
-add action=mark-packet chain=game-ml disabled=yes new-packet-mark=game-ml \
-    passthrough=no
+add action=mark-packet chain=game-ml new-packet-mark=game-ml passthrough=no
 add action=mark-routing chain=prerouting comment=\
     "                ROUTING bgp isp1 > isp1" disabled=yes dst-address-list=\
     z-list-ip-isp1 new-routing-mark=ether1 passthrough=no src-address-list=\
@@ -2702,12 +2737,10 @@ add action=dst-nat chain=dstnat comment=vpn1 dst-port=53,5353,853 protocol=\
 add action=dst-nat chain=dstnat comment=vpn1 dst-port=53,5353,853 protocol=\
     tcp src-address-list=ip-local-dns-khusus to-addresses=10.123.22.7 \
     to-ports=53
-add action=dst-nat chain=dstnat comment=vpn2 dst-port=53,5353,853 protocol=\
-    udp src-address-list=ip-local-dns-khusus to-addresses=10.123.22.1 \
+add action=redirect chain=dstnat comment=\
+    "                REDIRECT dns > router ini" dst-port=53 protocol=udp \
     to-ports=53
-add action=dst-nat chain=dstnat comment=vpn2 dst-port=53,5353,853 protocol=\
-    tcp src-address-list=ip-local-dns-khusus to-addresses=10.123.22.1 \
-    to-ports=53
+add action=redirect chain=dstnat dst-port=53 protocol=tcp to-ports=53
 add action=dst-nat chain=dstnat comment=\
     "                REDIRECT port vpn > lokal / router ini" dst-address=\
     103.143.170.11 dst-port=8299 protocol=tcp to-addresses=10.20.254.1 \
@@ -2902,8 +2935,8 @@ add comment=vc-815-05.15.23-FREE limit-uptime=8h name=ubc547 password=ubc547 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=ddf254 password=ddf254 \
     profile=-default-1-hp
-add comment=vc-815-05.15.23-FREE limit-uptime=8h name=kdg427 password=kdg427 \
-    profile=-default-1-hp
+add comment="sep/26/2023 07:03:01" limit-uptime=8h name=kdg427 password=\
+    kdg427 profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=zmw545 password=zmw545 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=ade745 password=ade745 \
@@ -2942,22 +2975,10 @@ add comment=vc-815-05.15.23-FREE limit-uptime=8h name=gpc934 password=gpc934 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=xtw986 password=xtw986 \
     profile=-default-1-hp
-add comment="aug/25/2023 02:16:09" limit-uptime=8h name=xgp985 password=\
-    xgp985 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=dwp342 password=dwp342 \
     profile=-default-1-hp
-add comment="aug/23/2023 10:47:14" limit-uptime=8h name=hke494 password=\
-    hke494 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=vus824 password=vus824 \
     profile=-default-1-hp
-add comment="aug/23/2023 18:10:40" limit-uptime=8h name=jfv569 password=\
-    jfv569 profile=wati
-add comment="aug/23/2023 09:12:05" limit-uptime=8h name=chc235 password=\
-    chc235 profile=wati
-add comment="aug/25/2023 21:17:52" limit-uptime=8h name=vxr752 password=\
-    vxr752 profile=-default-1-hp
-add comment="aug/25/2023 19:27:42" limit-uptime=8h name=huf274 password=\
-    huf274 profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=bai335 password=bai335 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=rwe695 password=rwe695 \
@@ -2966,36 +2987,14 @@ add comment=vc-815-05.15.23-FREE limit-uptime=8h name=uye237 password=uye237 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=hca292 password=hca292 \
     profile=-default-1-hp
-add comment="aug/24/2023 17:36:55" limit-uptime=8h name=wpt294 password=\
-    wpt294 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=nxh244 password=nxh244 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=yrh254 password=yrh254 \
     profile=-default-1-hp
-add comment="aug/24/2023 16:03:31" limit-uptime=8h name=nfv829 password=\
-    nfv829 profile=wati
-add comment="aug/23/2023 21:35:13" limit-uptime=8h name=hku486 password=\
-    hku486 profile=wati
-add comment="aug/23/2023 12:23:56" limit-uptime=8h name=xni934 password=\
-    xni934 profile=wati
-add comment="aug/23/2023 12:12:32" limit-uptime=8h name=hyb595 password=\
-    hyb595 profile=wati
-add comment="aug/25/2023 01:48:00" limit-uptime=8h name=byg464 password=\
-    byg464 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=jzf455 password=jzf455 \
     profile=-default-1-hp
-add comment="aug/25/2023 15:04:52" limit-uptime=8h name=uch854 password=\
-    uch854 profile=wati
-add comment="aug/23/2023 18:23:59" limit-uptime=8h name=wdm647 password=\
-    wdm647 profile=wati
-add comment="aug/25/2023 18:39:14" limit-uptime=8h name=ztf422 password=\
-    ztf422 profile=wati
-add comment="aug/24/2023 18:05:11" limit-uptime=8h name=xgg977 password=\
-    xgg977 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=rpr984 password=rpr984 \
     profile=-default-1-hp
-add comment="aug/23/2023 08:41:17" limit-uptime=8h name=ucb678 password=\
-    ucb678 profile=wati
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=mcn246 password=mcn246 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=kry554 password=kry554 \
@@ -3014,14 +3013,12 @@ add comment="sep/18/2023 15:17:56" limit-uptime=12h mac-address=\
     B0:B5:C3:98:9F:53 name=npp953 password=npp953 profile=wawan
 add comment="sep/21/2023 09:52:47" limit-uptime=12h mac-address=\
     0C:C6:FD:01:01:89 name=ekw788 password=ekw788 profile=wawan
-add comment=vc-226-06.18.23-wawan limit-uptime=12h name=vta792 password=\
-    vta792 profile=wawan
-add comment=vc-226-06.18.23-wawan limit-uptime=12h name=gah997 password=\
-    gah997 profile=wawan
-add comment="aug/31/2023 20:57:11" limit-uptime=12h mac-address=\
-    7E:5C:B0:99:7D:9D name=bee672 password=bee672 profile=wawan
-add comment=vc-226-06.18.23-wawan limit-uptime=12h name=ggx525 password=\
-    ggx525 profile=wawan
+add comment="sep/24/2023 10:00:13" limit-uptime=12h mac-address=\
+    B0:B5:C3:98:9F:53 name=vta792 password=vta792 profile=wawan
+add comment="sep/25/2023 08:48:38" limit-uptime=12h mac-address=\
+    B0:B5:C3:98:9F:53 name=gah997 password=gah997 profile=wawan
+add comment="sep/25/2023 22:20:13" limit-uptime=12h mac-address=\
+    DE:E4:4B:BE:63:ED name=ggx525 password=ggx525 profile=wawan
 add comment="sep/14/2023 17:46:30" limit-uptime=12h mac-address=\
     20:74:54:C2:01:A9 name=tyj485 password=tyj485 profile=wawan
 add comment="sep/14/2023 16:55:59" limit-uptime=12h mac-address=\
@@ -3032,124 +3029,114 @@ add comment="sep/09/2023 10:17:24" limit-uptime=12h mac-address=\
     B0:B5:C3:98:9F:53 name=xre694 password=xre694 profile=wawan
 add comment="sep/08/2023 06:01:53" limit-uptime=12h mac-address=\
     B0:B5:C3:98:9F:53 name=mep598 password=mep598 profile=wawan
-add comment=vc-226-06.18.23-wawan limit-uptime=12h name=sfc932 password=\
-    sfc932 profile=wawan
-add comment=vc-226-06.18.23-wawan limit-uptime=12h name=pue698 password=\
-    pue698 profile=wawan
-add comment=vc-226-06.18.23-wawan limit-uptime=12h name=bpr768 password=\
-    bpr768 profile=wawan
-add comment=vc-226-06.18.23-wawan limit-uptime=12h name=vgf287 password=\
-    vgf287 profile=wawan
+add comment="sep/26/2023 10:58:34" limit-uptime=12h mac-address=\
+    B0:B5:C3:98:9F:53 name=sfc932 password=sfc932 profile=wawan
+add comment="sep/26/2023 10:59:07" limit-uptime=12h mac-address=\
+    DA:AC:07:3A:6D:7A name=pue698 password=pue698 profile=wawan
+add comment="sep/26/2023 11:57:28" limit-uptime=12h mac-address=\
+    D8:55:75:CF:9F:CD name=bpr768 password=bpr768 profile=wawan
+add comment="sep/26/2023 19:25:54" limit-uptime=12h mac-address=\
+    0C:98:38:3C:BF:9F name=vgf287 password=vgf287 profile=wawan
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=czv534 password=czv534 \
     profile=-default-1-hp
-add comment="aug/23/2023 08:43:36" limit-uptime=8h name=sdc756 password=\
-    sdc756 profile=dian
-add comment="aug/24/2023 07:38:42" limit-uptime=8h name=vhz968 password=\
-    vhz968 profile=dian
-add comment="aug/23/2023 06:18:36" limit-uptime=8h name=ekg652 password=\
-    ekg652 profile=dian
-add comment="aug/23/2023 11:30:20" limit-uptime=8h name=rje757 password=\
-    rje757 profile=dian
-add comment="aug/23/2023 10:04:16" limit-uptime=8h name=asw424 password=\
-    asw424 profile=dian
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=kdu394 password=kdu394 \
-    profile=agus
+add comment="sep/23/2023 08:17:46" limit-uptime=8h name=kdu394 password=\
+    kdu394 profile=agus
 add comment="sep/21/2023 20:35:14" limit-uptime=8h name=jwi433 password=\
     jwi433 profile=agus
 add comment="sep/18/2023 03:38:57" limit-uptime=8h name=zmt689 password=\
     zmt689 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=hcr554 password=hcr554 \
-    profile=agus
+add comment="sep/24/2023 18:24:54" limit-uptime=8h name=hcr554 password=\
+    hcr554 profile=agus
 add comment="sep/18/2023 18:25:23" limit-uptime=8h name=dst673 password=\
     dst673 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=giv529 password=giv529 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=yag544 password=yag544 \
-    profile=agus
+add comment="sep/23/2023 16:40:25" limit-uptime=8h name=giv529 password=\
+    giv529 profile=agus
+add comment="sep/25/2023 16:59:31" limit-uptime=8h name=yag544 password=\
+    yag544 profile=agus
 add comment="sep/22/2023 17:47:37" limit-uptime=8h name=gsy555 password=\
     gsy555 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=uuh795 password=uuh795 \
-    profile=agus
+add comment="sep/23/2023 09:49:39" limit-uptime=8h name=uuh795 password=\
+    uuh795 profile=agus
 add comment="sep/21/2023 05:19:59" limit-uptime=8h name=mmd296 password=\
     mmd296 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=sjd859 password=sjd859 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=krw235 password=krw235 \
-    profile=agus
+add comment="sep/23/2023 08:06:05" limit-uptime=8h name=sjd859 password=\
+    sjd859 profile=agus
+add comment="sep/26/2023 09:47:21" limit-uptime=8h name=krw235 password=\
+    krw235 profile=-default-1-hp
 add comment="sep/20/2023 20:07:30" limit-uptime=8h name=utk795 password=\
     utk795 profile=agus
 add comment="sep/23/2023 01:23:08" limit-uptime=8h name=nid993 password=\
     nid993 profile=agus
 add comment="sep/21/2023 04:51:49" limit-uptime=8h name=dui994 password=\
     dui994 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=kbc298 password=kbc298 \
-    profile=agus
+add comment="oct/01/2023 15:33:46" limit-uptime=8h name=kbc298 password=\
+    kbc298 profile=-default-1-hp
 add comment="sep/22/2023 22:27:31" limit-uptime=8h name=wbd855 password=\
     wbd855 profile=agus
 add comment="sep/20/2023 18:57:14" limit-uptime=8h name=wmw973 password=\
     wmw973 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=cap549 password=cap549 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=jsi475 password=jsi475 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=suc857 password=suc857 \
-    profile=agus
+add comment="sep/23/2023 22:27:11" limit-uptime=8h name=cap549 password=\
+    cap549 profile=agus
+add comment="sep/23/2023 08:34:20" limit-uptime=8h name=jsi475 password=\
+    jsi475 profile=agus
+add comment="sep/28/2023 16:12:39" limit-uptime=8h name=suc857 password=\
+    suc857 profile=-default-1-hp
 add comment="sep/20/2023 22:40:57" limit-uptime=8h name=bcn322 password=\
     bcn322 profile=agus
 add comment="sep/19/2023 21:20:42" limit-uptime=8h name=wdj655 password=\
     wdj655 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=vfw758 password=vfw758 \
-    profile=agus
+add comment="sep/26/2023 22:42:05" limit-uptime=8h name=vfw758 password=\
+    vfw758 profile=-default-1-hp
 add comment="sep/20/2023 23:46:39" limit-uptime=8h name=rtr463 password=\
     rtr463 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=zfg777 password=zfg777 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=bft252 password=bft252 \
-    profile=agus
+add comment="sep/23/2023 17:17:54" limit-uptime=8h name=zfg777 password=\
+    zfg777 profile=agus
+add comment="sep/24/2023 16:09:30" limit-uptime=8h name=bft252 password=\
+    bft252 profile=agus
 add comment="sep/20/2023 00:05:24" limit-uptime=8h name=hmh865 password=\
     hmh865 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=wpe795 password=wpe795 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=fyw587 password=fyw587 \
-    profile=agus
+add comment="sep/24/2023 17:17:27" limit-uptime=8h name=wpe795 password=\
+    wpe795 profile=agus
+add comment="sep/24/2023 16:57:08" limit-uptime=8h name=fyw587 password=\
+    fyw587 profile=agus
 add comment="sep/22/2023 04:04:47" limit-uptime=8h name=ucw769 password=\
     ucw769 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=jpv874 password=jpv874 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=uyk458 password=uyk458 \
-    profile=agus
+add comment="sep/26/2023 13:29:11" limit-uptime=8h name=jpv874 password=\
+    jpv874 profile=-default-1-hp
+add comment="sep/24/2023 20:07:34" limit-uptime=8h name=uyk458 password=\
+    uyk458 profile=agus
 add comment="sep/22/2023 09:46:05" limit-uptime=8h name=inz762 password=\
     inz762 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=ize675 password=ize675 \
-    profile=agus
+add comment="sep/25/2023 20:42:41" limit-uptime=8h name=ize675 password=\
+    ize675 profile=-default-1-hp
 add comment="sep/21/2023 08:45:09" limit-uptime=8h name=rdm623 password=\
     rdm623 profile=agus
 add comment="sep/19/2023 00:57:11" limit-uptime=8h name=wfr586 password=\
     wfr586 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=iam434 password=iam434 \
-    profile=agus
+add comment="sep/25/2023 10:08:12" limit-uptime=8h name=iam434 password=\
+    iam434 profile=agus
 add comment="sep/22/2023 13:16:31" limit-uptime=8h name=byp259 password=\
     byp259 profile=agus
 add comment="sep/19/2023 20:41:37" limit-uptime=8h name=rea733 password=\
     rea733 profile=agus
 add comment="sep/21/2023 15:39:27" limit-uptime=8h name=vgh668 password=\
     vgh668 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=jgr892 password=jgr892 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=eya983 password=eya983 \
-    profile=agus
+add comment="sep/25/2023 10:04:00" limit-uptime=8h name=jgr892 password=\
+    jgr892 profile=agus
+add comment="sep/25/2023 00:04:58" limit-uptime=8h name=eya983 password=\
+    eya983 profile=agus
 add comment="sep/20/2023 17:48:52" limit-uptime=8h name=crh376 password=\
     crh376 profile=agus
 add comment="sep/21/2023 02:35:40" limit-uptime=8h name=cfx696 password=\
     cfx696 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=uat638 password=uat638 \
-    profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=cbx462 password=cbx462 \
-    profile=agus
+add comment="sep/24/2023 11:55:43" limit-uptime=8h name=uat638 password=\
+    uat638 profile=agus
+add comment="sep/24/2023 20:07:15" limit-uptime=8h name=cbx462 password=\
+    cbx462 profile=agus
 add comment="sep/21/2023 18:31:56" limit-uptime=8h name=iht935 password=\
     iht935 profile=agus
-add comment=vc-347-06.26.23-agus limit-uptime=8h name=bmy695 password=bmy695 \
-    profile=agus
+add comment=vc-815-05.15.23-FREE limit-uptime=8h name=bmy695 password=bmy695 \
+    profile=-default-1-hp
 add comment="sep/19/2023 18:51:41" limit-uptime=8h name=uht382 password=\
     uht382 profile=agus
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=aah359 password=aah359 \
@@ -3166,78 +3153,8 @@ add comment=vc-815-05.15.23-FREE limit-uptime=8h name=dks529 password=dks529 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=12h name=cib744 password=cib744 \
     profile=-default-1-hp
-add comment="aug/23/2023 12:31:55" limit-uptime=12h name=vuf859 password=\
-    vuf859 profile=witno-12jam
-add comment="aug/23/2023 09:45:24" limit-uptime=12h name=trz642 password=\
-    trz642 profile=witno-12jam
-add comment="aug/23/2023 09:43:05" limit-uptime=12h name=enb933 password=\
-    enb933 profile=witno-12jam
-add comment="aug/27/2023 18:07:04" limit-uptime=12h name=rwm874 password=\
-    rwm874 profile=witno-12jam
-add comment="aug/24/2023 12:25:18" limit-uptime=12h name=xjx996 password=\
-    xjx996 profile=witno-12jam
-add comment="aug/24/2023 18:30:21" limit-uptime=12h name=chm789 password=\
-    chm789 profile=witno-12jam
-add comment="aug/25/2023 09:17:31" limit-uptime=12h name=chn776 password=\
-    chn776 profile=witno-12jam
-add comment="aug/25/2023 09:20:30" limit-uptime=12h name=ccy672 password=\
-    ccy672 profile=witno-12jam
-add comment="aug/25/2023 09:55:55" limit-uptime=12h name=uji473 password=\
-    uji473 profile=witno-12jam
-add comment="aug/27/2023 20:48:39" limit-uptime=12h name=wam565 password=\
-    wam565 profile=witno-12jam
-add comment="aug/25/2023 12:23:28" limit-uptime=12h name=znx674 password=\
-    znx674 profile=witno-12jam
-add comment="aug/25/2023 20:47:23" limit-uptime=12h name=fbf439 password=\
-    fbf439 profile=witno-12jam
-add comment="aug/25/2023 18:13:35" limit-uptime=12h name=vyy268 password=\
-    vyy268 profile=witno-12jam
-add comment="aug/26/2023 13:53:14" limit-uptime=12h name=ccp597 password=\
-    ccp597 profile=witno-12jam
-add comment="aug/26/2023 11:13:33" limit-uptime=12h name=pia553 password=\
-    pia553 profile=witno-12jam
-add comment="aug/26/2023 20:20:26" limit-uptime=12h name=gck976 password=\
-    gck976 profile=witno-12jam
-add comment="aug/27/2023 17:20:43" limit-uptime=12h name=pna648 password=\
-    pna648 profile=witno-12jam
-add comment="aug/27/2023 20:20:55" limit-uptime=12h name=zdv352 password=\
-    zdv352 profile=witno-12jam
-add comment="aug/28/2023 10:29:46" limit-uptime=12h name=mad479 password=\
-    mad479 profile=witno-12jam
-add comment="aug/28/2023 11:04:37" limit-uptime=12h name=gxz464 password=\
-    gxz464 profile=witno-12jam
-add comment="aug/29/2023 20:13:34" limit-uptime=12h name=hpv848 password=\
-    hpv848 profile=witno-12jam
-add comment="aug/29/2023 16:16:46" limit-uptime=12h name=xuw849 password=\
-    xuw849 profile=witno-12jam
-add comment="aug/29/2023 18:15:42" limit-uptime=12h name=nsz565 password=\
-    nsz565 profile=witno-12jam
-add comment="aug/29/2023 18:25:54" limit-uptime=12h name=uwg589 password=\
-    uwg589 profile=witno-12jam
-add comment="aug/29/2023 18:55:35" limit-uptime=12h name=ing749 password=\
-    ing749 profile=witno-12jam
-add comment="aug/30/2023 10:44:29" limit-uptime=12h name=dfp556 password=\
-    dfp556 profile=witno-12jam
-add comment="aug/29/2023 20:42:26" limit-uptime=12h name=dgp669 password=\
-    dgp669 profile=witno-12jam
-add comment="aug/31/2023 21:32:46" limit-uptime=12h name=cth858 password=\
-    cth858 profile=witno-12jam
-add comment="aug/30/2023 09:16:41" limit-uptime=12h name=why863 password=\
-    why863 profile=witno-12jam
 add comment="sep/02/2023 17:08:21" limit-uptime=12h name=wcs298 password=\
     wcs298 profile=witno-12jam
-add comment="aug/31/2023 14:43:55" limit-uptime=12h name=htk352 password=\
-    htk352 profile=witno-12jam
-add comment="aug/30/2023 18:29:09" limit-uptime=12h name=jyp875 password=\
-    jyp875 profile=witno-12jam
-add comment="aug/30/2023 23:27:57" limit-uptime=12h name=gge395 password=\
-    gge395 profile=witno-12jam
-add comment="aug/31/2023 12:27:47" limit-uptime=12h name=iuk965 password=\
-    iuk965 profile=witno-12jam
-add comment="aug/31/2023 18:15:14" limit-uptime=12h name=rpd539 password=\
-    rpd539 profile=witno-12jam
-add comment="aug/29/2023 14:06:25" limit-uptime=12h name=dcr473 password=\
-    dcr473 profile=witno-12jam
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=ebe796 password=ebe796 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=zfr285 password=zfr285 \
@@ -3246,102 +3163,8 @@ add comment=vc-815-05.15.23-FREE limit-uptime=8h name=zva499 password=zva499 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=bus566 password=bus566 \
     profile=-default-1-hp
-add comment="aug/23/2023 18:36:10" limit-uptime=8h name=mrc329 password=\
-    mrc329 profile=nazim
-add comment="aug/23/2023 17:34:15" limit-uptime=8h name=ddu839 password=\
-    ddu839 profile=nazim
-add comment="aug/23/2023 19:25:24" limit-uptime=8h name=usk423 password=\
-    usk423 profile=nazim
-add comment="aug/24/2023 11:22:04" limit-uptime=8h name=svy293 password=\
-    svy293 profile=nazim
-add comment="aug/23/2023 22:04:33" limit-uptime=8h name=srn454 password=\
-    srn454 profile=nazim
-add comment="aug/25/2023 12:34:07" limit-uptime=8h name=nvj258 password=\
-    nvj258 profile=nazim
-add comment="aug/26/2023 16:46:52" limit-uptime=8h name=bhz796 password=\
-    bhz796 profile=-default-1-hp
-add comment="aug/25/2023 11:35:44" limit-uptime=8h name=jis735 password=\
-    jis735 profile=nazim
-add comment="aug/24/2023 13:54:22" limit-uptime=8h name=msu948 password=\
-    msu948 profile=nazim
-add comment="aug/24/2023 22:30:35" limit-uptime=8h name=ymv526 password=\
-    ymv526 profile=nazim
-add comment="aug/25/2023 14:39:59" limit-uptime=8h name=vij499 password=\
-    vij499 profile=nazim
-add comment="aug/25/2023 14:57:14" limit-uptime=8h name=tek696 password=\
-    tek696 profile=nazim
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=atr753 password=atr753 \
     profile=-default-1-hp
-add comment="aug/24/2023 22:13:10" limit-uptime=8h name=kwm866 password=\
-    kwm866 profile=evi
-add comment="aug/23/2023 12:08:28" limit-uptime=8h name=iip985 password=\
-    iip985 profile=evi
-add comment="aug/25/2023 12:53:15" limit-uptime=8h name=nbi926 password=\
-    nbi926 profile=evi
-add comment="aug/25/2023 12:54:43" limit-uptime=8h name=ust363 password=\
-    ust363 profile=evi
-add comment="aug/23/2023 18:51:12" limit-uptime=8h name=ksx966 password=\
-    ksx966 profile=evi
-add comment="aug/23/2023 19:00:01" limit-uptime=8h name=ezz638 password=\
-    ezz638 profile=evi
-add comment="aug/23/2023 14:06:29" limit-uptime=8h name=age264 password=\
-    age264 profile=evi
-add comment="aug/24/2023 13:37:41" limit-uptime=8h name=psd248 password=\
-    psd248 profile=evi
-add comment="aug/24/2023 21:13:11" limit-uptime=8h name=nvw966 password=\
-    nvw966 profile=evi
-add comment="aug/23/2023 11:59:46" limit-uptime=8h name=asm534 password=\
-    asm534 profile=evi
-add comment="aug/26/2023 16:55:12" limit-uptime=8h name=abf726 password=\
-    abf726 profile=evi
-add comment="aug/26/2023 14:28:51" limit-uptime=8h name=vvg233 password=\
-    vvg233 profile=evi
-add comment="aug/25/2023 20:00:44" limit-uptime=8h name=ccp328 password=\
-    ccp328 profile=evi
-add comment="aug/27/2023 11:18:49" limit-uptime=8h name=ppt576 password=\
-    ppt576 profile=evi
-add comment="aug/26/2023 19:27:54" limit-uptime=8h name=nph223 password=\
-    nph223 profile=evi
-add comment="aug/30/2023 16:48:56" limit-uptime=8h name=wsa949 password=\
-    wsa949 profile=evi
-add comment="aug/30/2023 16:49:19" limit-uptime=8h name=mzb687 password=\
-    mzb687 profile=evi
-add comment="aug/30/2023 19:40:23" limit-uptime=8h name=zvu365 password=\
-    zvu365 profile=evi
-add comment="aug/26/2023 18:38:19" limit-uptime=8h name=axi725 password=\
-    axi725 profile=evi
-add comment="aug/26/2023 19:02:13" limit-uptime=8h name=hbm684 password=\
-    hbm684 profile=evi
-add comment="aug/30/2023 08:34:29" limit-uptime=8h name=xkf464 password=\
-    xkf464 profile=evi
-add comment="aug/29/2023 20:23:26" limit-uptime=8h name=jrg863 password=\
-    jrg863 profile=evi
-add comment="aug/29/2023 18:31:00" limit-uptime=8h name=hxp546 password=\
-    hxp546 profile=evi
-add comment="aug/31/2023 19:53:59" limit-uptime=8h name=kbj592 password=\
-    kbj592 profile=evi
-add comment="aug/29/2023 14:01:23" limit-uptime=8h name=unt482 password=\
-    unt482 profile=evi
-add comment="aug/28/2023 12:45:50" limit-uptime=8h name=sjf879 password=\
-    sjf879 profile=evi
-add comment="aug/28/2023 13:11:48" limit-uptime=8h name=ycp244 password=\
-    ycp244 profile=evi
-add comment="aug/28/2023 15:45:05" limit-uptime=8h name=dtx373 password=\
-    dtx373 profile=evi
-add comment="aug/28/2023 18:21:11" limit-uptime=8h name=kby496 password=\
-    kby496 profile=evi
-add comment="aug/29/2023 14:01:31" limit-uptime=8h name=unu845 password=\
-    unu845 profile=evi
-add comment="aug/27/2023 18:46:58" limit-uptime=8h name=ekm957 password=\
-    ekm957 profile=evi
-add comment="aug/27/2023 18:53:31" limit-uptime=8h name=csf667 password=\
-    csf667 profile=evi
-add comment="aug/27/2023 18:57:05" limit-uptime=8h name=dfv358 password=\
-    dfv358 profile=evi
-add comment="aug/27/2023 19:32:26" limit-uptime=8h name=fsf772 password=\
-    fsf772 profile=evi
-add comment="aug/28/2023 20:16:33" limit-uptime=8h name=zag997 password=\
-    zag997 profile=evi
 add comment="sep/02/2023 14:16:32" limit-uptime=8h name=kfw698 password=\
     kfw698 profile=evi
 add comment="sep/02/2023 17:49:11" limit-uptime=8h name=xkf682 password=\
@@ -3352,26 +3175,12 @@ add comment="sep/02/2023 19:01:00" limit-uptime=8h name=pnm288 password=\
     pnm288 profile=evi
 add comment="sep/03/2023 11:08:36" limit-uptime=8h name=tnr934 password=\
     tnr934 profile=evi
-add comment="sep/01/2023 11:11:12" limit-uptime=8h name=avt876 password=\
-    avt876 profile=evi
-add comment="sep/01/2023 11:58:20" limit-uptime=8h name=nzi436 password=\
-    nzi436 profile=evi
-add comment="sep/01/2023 13:36:55" limit-uptime=8h name=nca344 password=\
-    nca344 profile=evi
-add comment="sep/01/2023 14:09:51" limit-uptime=8h name=hpy982 password=\
-    hpy982 profile=evi
 add comment="sep/02/2023 10:54:44" limit-uptime=8h name=yhv343 password=\
     yhv343 profile=evi
-add comment="aug/31/2023 13:02:35" limit-uptime=8h name=uxt667 password=\
-    uxt667 profile=evi
-add comment="aug/31/2023 18:57:45" limit-uptime=8h name=dgs574 password=\
-    dgs574 profile=evi
 add comment="sep/05/2023 19:57:00" limit-uptime=8h name=vrx667 password=\
     vrx667 profile=evi
 add comment="sep/03/2023 20:47:40" limit-uptime=8h name=wnj729 password=\
     wnj729 profile=evi
-add comment="sep/01/2023 17:29:52" limit-uptime=8h name=pvg665 password=\
-    pvg665 profile=evi
 add comment="sep/19/2023 09:56:55" limit-uptime=8h name=mzx326 password=\
     mzx326 profile=evi
 add comment="sep/10/2023 17:12:16" limit-uptime=8h name=wgu648 password=\
@@ -3408,8 +3217,6 @@ add comment="sep/07/2023 09:18:57" limit-uptime=8h name=pjy347 password=\
     pjy347 profile=evi
 add comment="sep/07/2023 12:21:28" limit-uptime=8h name=rty624 password=\
     rty624 profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=hxp993 password=hxp993 \
-    profile=evi
 add comment="sep/08/2023 14:35:47" limit-uptime=8h name=zge364 password=\
     zge364 profile=evi
 add comment="sep/03/2023 18:41:34" limit-uptime=8h name=avw286 password=\
@@ -3422,52 +3229,46 @@ add comment="sep/10/2023 11:36:30" limit-uptime=8h name=nvu936 password=\
     nvu936 profile=evi
 add comment="sep/09/2023 11:34:44" limit-uptime=8h name=yds486 password=\
     yds486 profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=yjh974 password=yjh974 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=jfz738 password=jfz738 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=nsf454 password=nsf454 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=ezj458 password=ezj458 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=xfb429 password=xfb429 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=cdb937 password=cdb937 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=pez525 password=pez525 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=ukt326 password=ukt326 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=uui924 password=uui924 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=mbg429 password=mbg429 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=fbp296 password=fbp296 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=wks223 password=wks223 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=abh839 password=abh839 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=zfi438 password=zfi438 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=ymy652 password=ymy652 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=psh958 password=psh958 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=bny348 password=bny348 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=ttj422 password=ttj422 \
-    profile=evi
+add comment="sep/27/2023 13:39:24" limit-uptime=8h name=yjh974 password=\
+    yjh974 profile=evi
+add comment="sep/27/2023 14:59:03" limit-uptime=8h name=nsf454 password=\
+    nsf454 profile=evi
+add comment="sep/27/2023 16:15:36" limit-uptime=8h name=ezj458 password=\
+    ezj458 profile=evi
+add comment="sep/26/2023 11:59:59" limit-uptime=8h name=cdb937 password=\
+    cdb937 profile=evi
+add comment="sep/26/2023 16:26:04" limit-uptime=8h name=pez525 password=\
+    pez525 profile=evi
+add comment="sep/26/2023 18:25:37" limit-uptime=8h name=ukt326 password=\
+    ukt326 profile=evi
+add comment="sep/26/2023 18:34:07" limit-uptime=8h name=uui924 password=\
+    uui924 profile=evi
+add comment="sep/26/2023 18:35:17" limit-uptime=8h name=mbg429 password=\
+    mbg429 profile=evi
+add comment="sep/24/2023 16:14:24" limit-uptime=8h name=fbp296 password=\
+    fbp296 profile=evi
+add comment="sep/24/2023 18:39:55" limit-uptime=8h name=wks223 password=\
+    wks223 profile=evi
+add comment="sep/24/2023 18:40:26" limit-uptime=8h name=abh839 password=\
+    abh839 profile=evi
+add comment="sep/25/2023 12:41:54" limit-uptime=8h name=zfi438 password=\
+    zfi438 profile=evi
+add comment="sep/23/2023 14:59:49" limit-uptime=8h name=psh958 password=\
+    psh958 profile=evi
+add comment="sep/23/2023 13:41:34" limit-uptime=8h name=bny348 password=\
+    bny348 profile=evi
+add comment="sep/24/2023 13:11:21" limit-uptime=8h name=ttj422 password=\
+    ttj422 profile=evi
 add comment="sep/03/2023 15:31:53" limit-uptime=8h name=yce227 password=\
     yce227 profile=evi
 add comment="sep/03/2023 13:22:32" limit-uptime=8h name=hyg689 password=\
     hyg689 profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=yuf745 password=yuf745 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=icd884 password=icd884 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=rgf285 password=rgf285 \
-    profile=evi
+add comment="sep/23/2023 15:45:51" limit-uptime=8h name=yuf745 password=\
+    yuf745 profile=evi
+add comment="sep/24/2023 13:10:46" limit-uptime=8h name=icd884 password=\
+    icd884 profile=evi
+add comment="sep/24/2023 13:11:49" limit-uptime=8h name=rgf285 password=\
+    rgf285 profile=evi
 add comment="sep/13/2023 20:49:59" limit-uptime=8h name=dte679 password=\
     dte679 profile=evi
 add comment="sep/14/2023 17:06:12" limit-uptime=8h name=xtp468 password=\
@@ -3512,104 +3313,22 @@ add comment="sep/10/2023 17:08:30" limit-uptime=8h name=ifx359 password=\
     ifx359 profile=evi
 add comment="sep/08/2023 16:43:45" limit-uptime=8h name=zhk524 password=\
     zhk524 profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=yjp622 password=yjp622 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=jzp376 password=jzp376 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=xfp837 password=xfp837 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=hzn398 password=hzn398 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=bpv588 password=bpv588 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=kii736 password=kii736 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=aia962 password=aia962 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=iaj545 password=iaj545 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=pbm547 password=pbm547 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=tgs829 password=tgs829 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=xwc557 password=xwc557 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=apf839 password=apf839 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=npd559 password=npd559 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=jgy264 password=jgy264 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=asw547 password=asw547 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=yjf638 password=yjf638 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=pdn878 password=pdn878 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=afm473 password=afm473 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=hkx855 password=hkx855 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=fbw979 password=fbw979 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=ces673 password=ces673 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=rmg459 password=rmg459 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=cgu469 password=cgu469 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=ejx326 password=ejx326 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=bbe956 password=bbe956 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=gjp973 password=gjp973 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=skj565 password=skj565 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=gfz796 password=gfz796 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=kwr658 password=kwr658 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=yus599 password=yus599 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=pfe547 password=pfe547 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=hnp698 password=hnp698 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=hzd372 password=hzd372 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=zyi879 password=zyi879 \
-    profile=evi
-add comment=vc-929-07.10.23-evi limit-uptime=8h name=gyh486 password=gyh486 \
-    profile=evi
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=wdr722 password=wdr722 \
-    profile=wati
-add comment="aug/28/2023 13:43:09" limit-uptime=8h name=bhh529 password=\
-    bhh529 profile=wati
+add comment="sep/28/2023 15:17:32" limit-uptime=8h name=kii736 password=\
+    kii736 profile=evi
+add comment="sep/27/2023 11:30:32" limit-uptime=8h name=wdr722 password=\
+    wdr722 profile=wati
 add comment="sep/04/2023 11:15:02" limit-uptime=8h name=yep498 password=\
     yep498 profile=wati
-add comment="aug/30/2023 07:55:41" limit-uptime=8h name=aee759 password=\
-    aee759 profile=wati
 add comment="sep/20/2023 16:28:17" limit-uptime=8h name=ttg237 password=\
     ttg237 profile=wati
-add comment="sep/01/2023 01:40:40" limit-uptime=8h name=dce945 password=\
-    dce945 profile=wati
-add comment="aug/30/2023 19:39:06" limit-uptime=8h name=jzv922 password=\
-    jzv922 profile=wati
-add comment="aug/29/2023 19:29:41" limit-uptime=8h name=afc229 password=\
-    afc229 profile=wati
-add comment="aug/28/2023 23:47:14" limit-uptime=8h name=hgi937 password=\
-    hgi937 profile=wati
-add comment="aug/28/2023 15:16:13" limit-uptime=8h name=whz778 password=\
-    whz778 profile=wati
 add comment="sep/19/2023 18:16:55" limit-uptime=8h name=ifp546 password=\
     ifp546 profile=wati
 add comment="sep/09/2023 19:46:55" limit-uptime=8h name=jfx734 password=\
     jfx734 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=gkp592 password=gkp592 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=vvw632 password=vvw632 \
-    profile=wati
+add comment="sep/25/2023 23:47:04" limit-uptime=8h name=gkp592 password=\
+    gkp592 profile=wati
+add comment="sep/26/2023 12:49:24" limit-uptime=8h name=vvw632 password=\
+    vvw632 profile=wati
 add comment="sep/19/2023 18:54:57" limit-uptime=8h name=uys465 password=\
     uys465 profile=wati
 add comment="sep/17/2023 18:56:47" limit-uptime=8h name=yru638 password=\
@@ -3620,34 +3339,22 @@ add comment="sep/05/2023 12:41:23" limit-uptime=8h name=rvw264 password=\
     rvw264 profile=wati
 add comment="sep/03/2023 18:29:24" limit-uptime=8h name=ubc489 password=\
     ubc489 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=gxe559 password=gxe559 \
-    profile=wati
 add comment="sep/17/2023 08:36:56" limit-uptime=8h name=bib828 password=\
     bib828 profile=wati
 add comment="sep/02/2023 19:02:07" limit-uptime=8h name=vnu966 password=\
     vnu966 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=dmn437 password=dmn437 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ibd458 password=ibd458 \
-    profile=wati
 add comment="sep/03/2023 12:47:51" limit-uptime=8h name=tzv526 password=\
     tzv526 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=hck877 password=hck877 \
-    profile=wati
 add comment="sep/04/2023 11:38:35" limit-uptime=8h name=xxk475 password=\
     xxk475 profile=wati
 add comment="sep/03/2023 18:32:28" limit-uptime=8h name=jzx892 password=\
     jzx892 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=hzj999 password=hzj999 \
-    profile=wati
-add comment="sep/01/2023 12:36:27" limit-uptime=8h name=dfh539 password=\
-    dfh539 profile=wati
+add comment="sep/25/2023 19:51:20" limit-uptime=8h name=hzj999 password=\
+    hzj999 profile=wati
 add comment="sep/09/2023 23:18:25" limit-uptime=8h name=smb879 password=\
     smb879 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ivg358 password=ivg358 \
-    profile=wati
-add comment="aug/29/2023 18:45:03" limit-uptime=8h name=vkf945 password=\
-    vkf945 profile=wati
+add comment="sep/23/2023 18:50:02" limit-uptime=8h name=ivg358 password=\
+    ivg358 profile=wati
 add comment="sep/06/2023 23:49:17" limit-uptime=8h name=ecj256 password=\
     ecj256 profile=wati
 add comment="sep/05/2023 19:22:14" limit-uptime=8h name=ukn524 password=\
@@ -3656,56 +3363,30 @@ add comment="sep/20/2023 14:04:50" limit-uptime=8h name=fcg894 password=\
     fcg894 profile=wati
 add comment="sep/10/2023 19:15:35" limit-uptime=8h name=nzv658 password=\
     nzv658 profile=wati
-add comment="aug/29/2023 11:45:46" limit-uptime=8h name=bys798 password=\
-    bys798 profile=wati
 add comment="sep/18/2023 23:44:09" limit-uptime=8h name=jyg333 password=\
     jyg333 profile=wati
-add comment="aug/29/2023 13:13:29" limit-uptime=8h name=ebd242 password=\
-    ebd242 profile=wati
 add comment="sep/18/2023 18:23:12" limit-uptime=8h name=ski969 password=\
     ski969 profile=wati
 add comment="sep/05/2023 10:31:20" limit-uptime=8h name=feg497 password=\
     feg497 profile=wati
-add comment="sep/01/2023 11:09:25" limit-uptime=8h name=atw288 password=\
-    atw288 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=mvv762 password=mvv762 \
-    profile=wati
+add comment="sep/28/2023 13:34:20" limit-uptime=8h name=mvv762 password=\
+    mvv762 profile=wati
 add comment="sep/12/2023 16:38:20" limit-uptime=8h name=ikf336 password=\
     ikf336 profile=wati
 add comment="sep/08/2023 14:54:03" limit-uptime=8h name=cxs997 password=\
     cxs997 profile=wati
-add comment="aug/30/2023 11:49:28" limit-uptime=8h name=yyn967 password=\
-    yyn967 profile=wati
 add comment="sep/06/2023 00:14:05" limit-uptime=8h name=tbj865 password=\
     tbj865 profile=wati
 add comment="sep/20/2023 14:19:12" limit-uptime=8h name=ckb864 password=\
     ckb864 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=vsg545 password=vsg545 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ifp946 password=ifp946 \
-    profile=wati
 add comment="sep/08/2023 21:31:20" limit-uptime=8h name=twx983 password=\
     twx983 profile=wati
-add comment="aug/30/2023 09:39:58" limit-uptime=8h name=rue943 password=\
-    rue943 profile=wati
 add comment="sep/17/2023 23:32:41" limit-uptime=8h name=pyj799 password=\
     pyj799 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=htu934 password=htu934 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=nts824 password=nts824 \
-    profile=wati
-add comment="aug/29/2023 10:46:49" limit-uptime=8h name=esk364 password=\
-    esk364 profile=wati
-add comment="aug/29/2023 20:27:41" limit-uptime=8h name=kmb875 password=\
-    kmb875 profile=wati
+add comment="sep/26/2023 12:29:18" limit-uptime=8h name=nts824 password=\
+    nts824 profile=wati
 add comment="sep/02/2023 11:45:00" limit-uptime=8h name=pat945 password=\
     pat945 profile=wati
-add comment="sep/01/2023 16:21:29" limit-uptime=8h name=fsb398 password=\
-    fsb398 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=rcc777 password=rcc777 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=tua454 password=tua454 \
-    profile=wati
 add comment="sep/10/2023 21:57:34" limit-uptime=8h name=svw328 password=\
     svw328 profile=wati
 add comment="sep/09/2023 15:27:41" limit-uptime=8h name=cxw422 password=\
@@ -3714,62 +3395,24 @@ add comment="sep/09/2023 07:10:36" limit-uptime=8h name=tke788 password=\
     tke788 profile=wati
 add comment="sep/07/2023 09:13:25" limit-uptime=8h name=uzm857 password=\
     uzm857 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=pcs777 password=pcs777 \
-    profile=wati
 add comment="sep/17/2023 20:24:35" limit-uptime=8h name=wcf633 password=\
     wcf633 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=xbe847 password=xbe847 \
-    profile=wati
 add comment="sep/06/2023 00:02:35" limit-uptime=8h name=eei559 password=\
     eei559 profile=wati
-add comment="aug/27/2023 18:11:35" limit-uptime=8h name=rgs978 password=\
-    rgs978 profile=wati
-add comment="aug/27/2023 19:20:53" limit-uptime=8h name=bvx677 password=\
-    bvx677 profile=wati
-add comment="aug/30/2023 14:27:53" limit-uptime=8h name=bhh994 password=\
-    bhh994 profile=wati
-add comment="aug/27/2023 19:43:27" limit-uptime=8h name=ujm567 password=\
-    ujm567 profile=wati
-add comment="aug/29/2023 10:33:22" limit-uptime=8h name=pbv348 password=\
-    pbv348 profile=wati
 add comment="sep/15/2023 18:35:10" limit-uptime=8h name=gyw366 password=\
     gyw366 profile=wati
-add comment="sep/01/2023 16:00:53" limit-uptime=8h name=dsr992 password=\
-    dsr992 profile=wati
-add comment="aug/30/2023 09:28:56" limit-uptime=8h name=suk895 password=\
-    suk895 profile=wati
-add comment="aug/31/2023 10:58:00" limit-uptime=8h name=pjb867 password=\
-    pjb867 profile=wati
 add comment="sep/11/2023 12:40:13" limit-uptime=8h name=ran282 password=\
     ran282 profile=wati
-add comment="aug/31/2023 23:12:47" limit-uptime=8h name=kun599 password=\
-    kun599 profile=wati
-add comment="aug/29/2023 18:29:29" limit-uptime=8h name=hdz276 password=\
-    hdz276 profile=wati
 add comment="sep/12/2023 10:50:50" limit-uptime=8h name=rce263 password=\
     rce263 profile=wati
-add comment="aug/27/2023 19:04:39" limit-uptime=8h name=dnu638 password=\
-    dnu638 profile=wati
-add comment="aug/27/2023 20:04:32" limit-uptime=8h name=thb783 password=\
-    thb783 profile=wati
-add comment="aug/29/2023 00:19:30" limit-uptime=8h name=swa949 password=\
-    swa949 profile=wati
 add comment="sep/20/2023 09:37:00" limit-uptime=8h name=bib295 password=\
     bib295 profile=wati
-add comment="sep/01/2023 00:34:50" limit-uptime=8h name=pwr582 password=\
-    pwr582 profile=wati
-add comment="aug/27/2023 13:43:08" limit-uptime=8h name=vjh522 password=\
-    vjh522 profile=wati
 add comment="sep/02/2023 18:25:41" limit-uptime=8h name=wdt938 password=\
     wdt938 profile=wati
 add comment="sep/08/2023 08:07:48" limit-uptime=8h name=fdx565 password=\
     fdx565 profile=wati
 add comment="sep/14/2023 23:15:51" limit-uptime=8h name=xfz778 password=\
     xfz778 profile=wati
-add comment="aug/26/2023 11:35:43" limit-uptime=8h name=pxt924 password=\
-    pxt924 profile=wati
-add comment="aug/27/2023 16:33:17" limit-uptime=8h name=yjw297 password=\
-    yjw297 profile=wati
 add comment="sep/04/2023 08:46:39" limit-uptime=8h name=bft933 password=\
     bft933 profile=wati
 add comment="sep/10/2023 08:10:23" limit-uptime=8h name=dmp269 password=\
@@ -3784,78 +3427,42 @@ add comment="sep/11/2023 23:28:11" limit-uptime=8h name=unt952 password=\
     unt952 profile=wati
 add comment="sep/11/2023 10:21:18" limit-uptime=8h name=asd252 password=\
     asd252 profile=wati
-add comment="aug/26/2023 12:01:52" limit-uptime=8h name=uni947 password=\
-    uni947 profile=wati
 add comment="sep/14/2023 09:49:15" limit-uptime=8h name=uvz529 password=\
     uvz529 profile=wati
-add comment="aug/28/2023 20:45:36" limit-uptime=8h name=mts299 password=\
-    mts299 profile=wati
 add comment="sep/03/2023 21:46:42" limit-uptime=8h name=zbf925 password=\
     zbf925 profile=wati
 add comment="sep/05/2023 09:00:23" limit-uptime=8h name=htd446 password=\
     htd446 profile=wati
-add comment="aug/26/2023 12:37:22" limit-uptime=8h name=kfp568 password=\
-    kfp568 profile=wati
 add comment="sep/02/2023 16:01:53" limit-uptime=8h name=fdv269 password=\
     fdv269 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=nee853 password=nee853 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=rmc966 password=rmc966 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=tnz339 password=tnz339 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=mwi634 password=mwi634 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=zws274 password=zws274 \
-    profile=wati
 add comment="sep/20/2023 10:29:29" limit-uptime=8h name=rys352 password=\
     rys352 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=rku838 password=rku838 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=sxu863 password=sxu863 \
-    profile=wati
 add comment="sep/16/2023 14:07:52" limit-uptime=8h name=ptb827 password=\
     ptb827 profile=wati
 add comment="sep/10/2023 14:42:38" limit-uptime=8h name=rsx886 password=\
     rsx886 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=cnc875 password=cnc875 \
-    profile=wati
 add comment="sep/22/2023 03:25:05" limit-uptime=8h name=syr699 password=\
     syr699 profile=wati
-add comment="sep/01/2023 19:39:54" limit-uptime=8h name=kxd943 password=\
-    kxd943 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=srp883 password=srp883 \
-    profile=wati
 add comment="sep/11/2023 22:27:48" limit-uptime=8h name=jbk722 password=\
     jbk722 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ijz762 password=ijz762 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=txe836 password=txe836 \
-    profile=wati
-add comment="sep/02/2023 00:36:19" limit-uptime=8h name=vpt489 password=\
-    vpt489 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=xbr832 password=xbr832 \
-    profile=wati
+add comment="sep/26/2023 11:26:27" limit-uptime=8h name=ijz762 password=\
+    ijz762 profile=wati
+add comment="sep/26/2023 10:55:30" limit-uptime=8h name=txe836 password=\
+    txe836 profile=wati
+add comment="sep/28/2023 03:50:32" limit-uptime=8h name=xbr832 password=\
+    xbr832 profile=wati
 add comment="sep/13/2023 00:44:16" limit-uptime=8h name=vhp355 password=\
     vhp355 profile=wati
 add comment="sep/04/2023 11:07:41" limit-uptime=8h name=tdn768 password=\
     tdn768 profile=wati
 add comment="sep/14/2023 13:33:14" limit-uptime=8h name=rtp798 password=\
     rtp798 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=vej546 password=vej546 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=mti779 password=mti779 \
-    profile=wati
+add comment="sep/27/2023 21:31:43" limit-uptime=8h name=vej546 password=\
+    vej546 profile=wati
 add comment="sep/17/2023 11:06:34" limit-uptime=8h name=xwc896 password=\
     xwc896 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=hef743 password=hef743 \
-    profile=wati
 add comment="sep/20/2023 03:15:00" limit-uptime=8h name=kya475 password=\
     kya475 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=huc996 password=huc996 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ddh496 password=ddh496 \
-    profile=wati
 add comment="sep/21/2023 15:40:15" limit-uptime=8h name=ijh559 password=\
     ijh559 profile=wati
 add comment="sep/03/2023 16:10:16" limit-uptime=8h name=fkp337 password=\
@@ -3868,12 +3475,10 @@ add comment="sep/22/2023 00:14:00" limit-uptime=8h name=zue492 password=\
     zue492 profile=wati
 add comment="sep/03/2023 21:21:07" limit-uptime=8h name=kbc653 password=\
     kbc653 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ryp347 password=ryp347 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=zkv472 password=zkv472 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=rtn294 password=rtn294 \
-    profile=wati
+add comment="sep/25/2023 23:29:11" limit-uptime=8h name=zkv472 password=\
+    zkv472 profile=wati
+add comment="sep/26/2023 11:26:52" limit-uptime=8h name=rtn294 password=\
+    rtn294 profile=wati
 add comment="sep/21/2023 16:32:47" limit-uptime=8h name=yee258 password=\
     yee258 profile=wati
 add comment="sep/11/2023 12:40:32" limit-uptime=8h name=wja422 password=\
@@ -3892,8 +3497,6 @@ add comment="sep/17/2023 10:41:55" limit-uptime=8h name=zsj764 password=\
     zsj764 profile=wati
 add comment="sep/19/2023 21:00:15" limit-uptime=8h name=fpm753 password=\
     fpm753 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=mpu523 password=mpu523 \
-    profile=wati
 add comment="sep/08/2023 12:54:07" limit-uptime=8h name=jrk467 password=\
     jrk467 profile=wati
 add comment="sep/13/2023 14:51:40" limit-uptime=8h name=thg875 password=\
@@ -3910,8 +3513,8 @@ add comment="sep/16/2023 18:49:08" limit-uptime=8h name=erm764 password=\
     erm764 profile=wati
 add comment="sep/22/2023 11:12:30" limit-uptime=8h name=uag544 password=\
     uag544 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=byh248 password=byh248 \
-    profile=wati
+add comment="sep/24/2023 20:29:06" limit-uptime=8h name=byh248 password=\
+    byh248 profile=wati
 add comment="sep/17/2023 17:05:48" limit-uptime=8h name=hcw976 password=\
     hcw976 profile=wati
 add comment="sep/14/2023 18:25:24" limit-uptime=8h name=bsc263 password=\
@@ -3924,24 +3527,18 @@ add comment="sep/05/2023 13:02:59" limit-uptime=8h name=xfx295 password=\
     xfx295 profile=wati
 add comment="sep/12/2023 11:22:11" limit-uptime=8h name=fkm388 password=\
     fkm388 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=bnh333 password=bnh333 \
-    profile=wati
 add comment="sep/12/2023 11:40:58" limit-uptime=8h name=vet938 password=\
     vet938 profile=wati
 add comment="sep/12/2023 12:41:56" limit-uptime=8h name=ixc594 password=\
     ixc594 profile=wati
 add comment="sep/05/2023 12:57:59" limit-uptime=8h name=vnz757 password=\
     vnz757 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=vsd823 password=vsd823 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=tbe378 password=tbe378 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=yya247 password=yya247 \
-    profile=wati
+add comment="sep/26/2023 20:11:14" limit-uptime=8h name=vsd823 password=\
+    vsd823 profile=wati
 add comment="sep/19/2023 08:35:42" limit-uptime=8h name=sis962 password=\
     sis962 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=efy589 password=efy589 \
-    profile=wati
+add comment="sep/23/2023 12:28:46" limit-uptime=8h name=efy589 password=\
+    efy589 profile=wati
 add comment="sep/14/2023 15:21:00" limit-uptime=8h name=udf939 password=\
     udf939 profile=wati
 add comment="sep/22/2023 19:36:42" limit-uptime=8h name=ymz598 password=\
@@ -3954,312 +3551,64 @@ add comment="sep/05/2023 18:26:48" limit-uptime=8h name=ibd625 password=\
     ibd625 profile=wati
 add comment="sep/15/2023 11:42:22" limit-uptime=8h name=dvh672 password=\
     dvh672 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ujc882 password=ujc882 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=mrd525 password=mrd525 \
-    profile=wati
+add comment="sep/26/2023 19:27:36" limit-uptime=8h name=ujc882 password=\
+    ujc882 profile=wati
+add comment="sep/25/2023 00:40:40" limit-uptime=8h name=mrd525 password=\
+    mrd525 profile=wati
 add comment="sep/20/2023 14:42:23" limit-uptime=8h name=ncf295 password=\
     ncf295 profile=wati
 add comment="sep/16/2023 14:07:16" limit-uptime=8h name=pss634 password=\
     pss634 profile=wati
 add comment="sep/20/2023 11:12:25" limit-uptime=8h name=gjw539 password=\
     gjw539 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=bsy522 password=bsy522 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=vmh284 password=vmh284 \
-    profile=wati
 add comment="sep/16/2023 22:34:58" limit-uptime=8h name=fga252 password=\
     fga252 profile=wati
 add comment="sep/15/2023 17:13:16" limit-uptime=8h name=why562 password=\
     why562 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=njh943 password=njh943 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=zfd972 password=zfd972 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=wbs557 password=wbs557 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=emv239 password=emv239 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=zue865 password=zue865 \
-    profile=wati
+add comment="sep/24/2023 12:08:33" limit-uptime=8h name=emv239 password=\
+    emv239 profile=wati
+add comment="sep/28/2023 12:53:57" limit-uptime=8h name=zue865 password=\
+    zue865 profile=wati
 add comment="sep/14/2023 13:21:30" limit-uptime=8h name=xwt457 password=\
     xwt457 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=jwz453 password=jwz453 \
-    profile=wati
 add comment="sep/18/2023 00:52:39" limit-uptime=8h name=wds552 password=\
     wds552 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=nxb355 password=nxb355 \
-    profile=wati
 add comment="sep/13/2023 10:59:49" limit-uptime=8h name=fhy669 password=\
     fhy669 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=psv389 password=psv389 \
-    profile=wati
 add comment="sep/21/2023 19:31:45" limit-uptime=8h name=rhe467 password=\
     rhe467 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=vvn358 password=vvn358 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=xnr484 password=xnr484 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=zsr526 password=zsr526 \
-    profile=wati
 add comment="sep/13/2023 11:43:25" limit-uptime=8h name=xkt525 password=\
     xkt525 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ffe475 password=ffe475 \
-    profile=wati
 add comment="sep/12/2023 18:54:44" limit-uptime=8h name=auf658 password=\
     auf658 profile=wati
 add comment="sep/13/2023 13:07:41" limit-uptime=8h name=rvw287 password=\
     rvw287 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ifa563 password=ifa563 \
-    profile=wati
 add comment="sep/20/2023 19:45:39" limit-uptime=8h name=sjj497 password=\
     sjj497 profile=wati
 add comment="sep/21/2023 20:54:51" limit-uptime=8h name=idp679 password=\
     idp679 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=urj778 password=urj778 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=dji273 password=dji273 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=zty924 password=zty924 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=vbi325 password=vbi325 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=fty472 password=fty472 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=tnx886 password=tnx886 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=nnk949 password=nnk949 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=bfj925 password=bfj925 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=vtm552 password=vtm552 \
-    profile=wati
+add comment="sep/25/2023 07:47:19" limit-uptime=8h name=urj778 password=\
+    urj778 profile=wati
+add comment="sep/28/2023 13:53:32" limit-uptime=8h name=bfj925 password=\
+    bfj925 profile=wati
 add comment="sep/10/2023 21:58:22" limit-uptime=8h name=uge753 password=\
     uge753 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=psm695 password=psm695 \
-    profile=wati
 add comment="sep/10/2023 18:36:30" limit-uptime=8h name=tga453 password=\
     tga453 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=cjg723 password=cjg723 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ymb638 password=ymb638 \
-    profile=wati
+add comment="sep/26/2023 20:48:33" limit-uptime=8h name=cjg723 password=\
+    cjg723 profile=wati
+add comment="sep/27/2023 00:31:35" limit-uptime=8h name=ymb638 password=\
+    ymb638 profile=wati
 add comment="sep/22/2023 21:10:39" limit-uptime=8h name=jzc735 password=\
     jzc735 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=afa832 password=afa832 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=xyt366 password=xyt366 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=uzk793 password=uzk793 \
-    profile=wati
+add comment="sep/28/2023 12:33:37" limit-uptime=8h name=afa832 password=\
+    afa832 profile=wati
 add comment="sep/18/2023 13:42:45" limit-uptime=8h name=frc292 password=\
     frc292 profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=imt949 password=imt949 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=tka539 password=tka539 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=khd956 password=khd956 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=tvb455 password=tvb455 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=dgn468 password=dgn468 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=ayc255 password=ayc255 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=jra335 password=jra335 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=wuw697 password=wuw697 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=pwb889 password=pwb889 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=cjf942 password=cjf942 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=tzp953 password=tzp953 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=rsb989 password=rsb989 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=dig279 password=dig279 \
-    profile=wati
-add comment=vc-521-07.10.23-wati limit-uptime=8h name=rfx652 password=rfx652 \
-    profile=wati
-add comment="aug/24/2023 20:04:13" limit-uptime=8h name=kib628 password=\
-    kib628 profile=agus
-add comment="aug/23/2023 19:52:37" limit-uptime=8h name=huy633 password=\
-    huy633 profile=agus
-add comment="aug/23/2023 14:22:24" limit-uptime=8h name=epg788 password=\
-    epg788 profile=agus
-add comment="aug/29/2023 19:13:37" limit-uptime=8h name=gbj243 password=\
-    gbj243 profile=-default-1-hp
-add comment="aug/25/2023 18:33:25" limit-uptime=8h name=zpw956 password=\
-    zpw956 profile=-default-1-hp
-add comment="aug/24/2023 11:27:25" limit-uptime=8h name=hne746 password=\
-    hne746 profile=agus
-add comment="aug/26/2023 16:02:45" limit-uptime=8h name=txk748 password=\
-    txk748 profile=-default-1-hp
-add comment="aug/23/2023 17:54:27" limit-uptime=8h name=bim924 password=\
-    bim924 profile=agus
-add comment="aug/27/2023 05:44:40" limit-uptime=8h name=ndg665 password=\
-    ndg665 profile=-default-1-hp
-add comment="aug/23/2023 19:56:50" limit-uptime=8h name=ipw667 password=\
-    ipw667 profile=agus
-add comment="aug/23/2023 19:51:35" limit-uptime=8h name=sam463 password=\
-    sam463 profile=agus
-add comment="aug/23/2023 19:09:55" limit-uptime=8h name=fvx549 password=\
-    fvx549 profile=agus
-add comment="aug/24/2023 11:29:16" limit-uptime=8h name=zep852 password=\
-    zep852 profile=agus
-add comment="aug/24/2023 11:26:35" limit-uptime=8h name=fyp944 password=\
-    fyp944 profile=agus
-add comment="aug/27/2023 16:29:24" limit-uptime=8h name=vby893 password=\
-    vby893 profile=agus
-add comment="aug/24/2023 18:38:46" limit-uptime=8h name=dvm578 password=\
-    dvm578 profile=agus
-add comment="aug/24/2023 19:29:52" limit-uptime=8h name=uwd277 password=\
-    uwd277 profile=agus
-add comment="aug/24/2023 19:00:17" limit-uptime=8h name=kyb666 password=\
-    kyb666 profile=agus
-add comment="aug/24/2023 18:32:41" limit-uptime=8h name=fzm637 password=\
-    fzm637 profile=agus
-add comment="aug/26/2023 12:39:58" limit-uptime=8h name=vrr629 password=\
-    vrr629 profile=agus
-add comment="aug/30/2023 15:05:25" limit-uptime=8h name=eja946 password=\
-    eja946 profile=agus
-add comment="aug/27/2023 19:09:12" limit-uptime=8h name=cns276 password=\
-    cns276 profile=agus
-add comment="aug/31/2023 19:27:02" limit-uptime=8h name=zmx669 password=\
-    zmx669 profile=agus
-add comment="aug/30/2023 16:18:01" limit-uptime=8h name=kkj597 password=\
-    kkj597 profile=agus
-add comment="aug/30/2023 20:04:21" limit-uptime=8h name=fbb253 password=\
-    fbb253 profile=agus
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=xwa455 password=xwa455 \
     profile=-default-1-hp
-add comment="aug/26/2023 10:40:17" limit-uptime=8h name=cab949 password=\
-    cab949 profile=agus
-add comment="aug/30/2023 07:54:41" limit-uptime=8h name=iga896 password=\
-    iga896 profile=agus
-add comment="aug/26/2023 13:52:14" limit-uptime=8h name=hbu832 password=\
-    hbu832 profile=agus
-add comment="aug/28/2023 11:10:00" limit-uptime=8h name=any394 password=\
-    any394 profile=agus
-add comment="aug/28/2023 11:36:31" limit-uptime=8h name=vsy739 password=\
-    vsy739 profile=agus
-add comment="aug/29/2023 16:15:20" limit-uptime=8h name=bth285 password=\
-    bth285 profile=agus
-add comment="aug/28/2023 11:08:31" limit-uptime=8h name=ccj788 password=\
-    ccj788 profile=agus
-add comment="aug/29/2023 20:02:31" limit-uptime=8h name=pkb632 password=\
-    pkb632 profile=agus
-add comment="aug/27/2023 23:48:43" limit-uptime=8h name=xmx625 password=\
-    xmx625 profile=agus
-add comment="aug/24/2023 20:24:48" limit-uptime=8h name=dmv742 password=\
-    dmv742 profile=agus
-add comment="aug/26/2023 15:13:03" limit-uptime=8h name=hhj426 password=\
-    hhj426 profile=agus
-add comment="aug/27/2023 17:58:53" limit-uptime=8h name=kvr898 password=\
-    kvr898 profile=agus
-add comment="aug/25/2023 21:08:51" limit-uptime=8h name=rzx276 password=\
-    rzx276 profile=agus
-add comment="aug/27/2023 07:17:20" limit-uptime=8h name=zck395 password=\
-    zck395 profile=agus
-add comment="aug/27/2023 13:13:51" limit-uptime=8h name=ipp976 password=\
-    ipp976 profile=agus
-add comment="aug/24/2023 18:26:12" limit-uptime=8h name=rsx438 password=\
-    rsx438 profile=agus
-add comment="aug/29/2023 00:31:46" limit-uptime=8h name=xaw363 password=\
-    xaw363 profile=agus
-add comment="aug/27/2023 08:15:17" limit-uptime=8h name=tri885 password=\
-    tri885 profile=agus
-add comment="aug/27/2023 05:00:50" limit-uptime=8h name=xzm222 password=\
-    xzm222 profile=agus
-add comment="aug/28/2023 23:22:29" limit-uptime=8h name=ngs376 password=\
-    ngs376 profile=agus
-add comment="aug/26/2023 22:59:34" limit-uptime=8h name=dkg642 password=\
-    dkg642 profile=agus
-add comment="aug/27/2023 20:01:53" limit-uptime=8h name=cia768 password=\
-    cia768 profile=agus
-add comment="aug/28/2023 17:24:24" limit-uptime=8h name=gch782 password=\
-    gch782 profile=agus
-add comment="aug/28/2023 19:43:21" limit-uptime=8h name=cwb273 password=\
-    cwb273 profile=agus
-add comment="aug/29/2023 11:36:01" limit-uptime=8h name=svw782 password=\
-    svw782 profile=agus
-add comment="aug/28/2023 18:49:10" limit-uptime=8h name=rcb923 password=\
-    rcb923 profile=agus
-add comment="aug/30/2023 16:42:29" limit-uptime=8h name=mty296 password=\
-    mty296 profile=agus
-add comment="aug/28/2023 20:48:08" limit-uptime=8h name=wzx244 password=\
-    wzx244 profile=agus
-add comment="aug/26/2023 18:04:04" limit-uptime=8h name=skv244 password=\
-    skv244 profile=agus
-add comment="aug/25/2023 13:34:38" limit-uptime=8h name=ubw379 password=\
-    ubw379 profile=agus
-add comment="aug/27/2023 19:26:21" limit-uptime=8h name=dvr345 password=\
-    dvr345 profile=agus
-add comment="aug/26/2023 17:34:18" limit-uptime=8h name=nrd378 password=\
-    nrd378 profile=agus
-add comment="aug/25/2023 20:08:10" limit-uptime=8h name=mkp549 password=\
-    mkp549 profile=agus
-add comment="aug/31/2023 13:35:34" limit-uptime=8h name=txb656 password=\
-    txb656 profile=agus
-add comment="aug/30/2023 11:58:43" limit-uptime=8h name=ddm554 password=\
-    ddm554 profile=agus
-add comment="aug/30/2023 21:45:59" limit-uptime=8h name=nmj593 password=\
-    nmj593 profile=agus
-add comment="aug/24/2023 20:34:13" limit-uptime=8h name=hmr359 password=\
-    hmr359 profile=agus
-add comment="aug/25/2023 13:30:29" limit-uptime=8h name=kvi365 password=\
-    kvi365 profile=agus
-add comment="aug/29/2023 19:22:54" limit-uptime=8h name=bxn997 password=\
-    bxn997 profile=agus
-add comment="aug/30/2023 09:43:12" limit-uptime=8h name=xuk453 password=\
-    xuk453 profile=agus
-add comment="aug/30/2023 11:24:15" limit-uptime=8h name=giu832 password=\
-    giu832 profile=agus
-add comment="aug/29/2023 00:46:58" limit-uptime=8h name=wun625 password=\
-    wun625 profile=agus
-add comment="aug/28/2023 02:45:05" limit-uptime=8h name=zgz476 password=\
-    zgz476 profile=agus
-add comment="aug/30/2023 12:00:49" limit-uptime=8h name=sbe874 password=\
-    sbe874 profile=dian
-add comment="aug/30/2023 12:46:40" limit-uptime=8h name=unj573 password=\
-    unj573 profile=dian
-add comment="aug/30/2023 18:10:35" limit-uptime=8h name=tke849 password=\
-    tke849 profile=dian
-add comment="aug/30/2023 18:24:17" limit-uptime=8h name=rns662 password=\
-    rns662 profile=dian
-add comment="aug/30/2023 18:25:16" limit-uptime=8h name=skc965 password=\
-    skc965 profile=dian
-add comment="sep/01/2023 13:44:23" limit-uptime=8h name=nxt469 password=\
-    nxt469 profile=dian
-add comment="aug/31/2023 20:16:04" limit-uptime=8h name=ygs635 password=\
-    ygs635 profile=dian
-add comment="aug/31/2023 16:07:41" limit-uptime=8h name=kze687 password=\
-    kze687 profile=dian
-add comment="aug/31/2023 21:35:40" limit-uptime=8h name=bvz695 password=\
-    bvz695 profile=dian
-add comment="aug/30/2023 20:13:56" limit-uptime=8h name=zkt856 password=\
-    zkt856 profile=dian
 add comment="sep/02/2023 17:46:52" limit-uptime=8h name=epk335 password=\
     epk335 profile=dian
-add comment="aug/31/2023 11:59:59" limit-uptime=8h name=dwf982 password=\
-    dwf982 profile=dian
-add comment="aug/31/2023 07:31:03" limit-uptime=8h name=ezd224 password=\
-    ezd224 profile=dian
-add comment="aug/31/2023 19:13:02" limit-uptime=8h name=xpe842 password=\
-    xpe842 profile=dian
-add comment="aug/31/2023 15:10:44" limit-uptime=8h name=syr722 password=\
-    syr722 profile=dian
-add comment="aug/31/2023 22:26:17" limit-uptime=8h name=uyu526 password=\
-    uyu526 profile=dian
-add comment="sep/01/2023 09:01:01" limit-uptime=8h name=xav653 password=\
-    xav653 profile=dian
-add comment="sep/01/2023 11:53:44" limit-uptime=8h name=uzk339 password=\
-    uzk339 profile=dian
-add comment="sep/01/2023 17:04:58" limit-uptime=8h name=huj273 password=\
-    huj273 profile=dian
-add comment="sep/01/2023 21:16:35" limit-uptime=8h name=dsx633 password=\
-    dsx633 profile=dian
 add comment="sep/02/2023 23:48:49" limit-uptime=8h name=ezr846 password=\
     ezr846 profile=dian
 add comment="sep/02/2023 17:32:30" limit-uptime=8h name=azs594 password=\
@@ -4320,106 +3669,10 @@ add comment="sep/05/2023 22:24:07" limit-uptime=8h name=hjp884 password=\
     hjp884 profile=dian
 add comment="sep/05/2023 22:14:23" limit-uptime=8h name=afi632 password=\
     afi632 profile=dian
-add comment="aug/23/2023 19:59:23" limit-uptime=8h name=wbs367 password=\
-    wbs367 profile=dian
-add comment="aug/24/2023 22:03:59" limit-uptime=8h name=snw284 password=\
-    snw284 profile=dian
-add comment="aug/23/2023 20:06:06" limit-uptime=8h name=nyc562 password=\
-    nyc562 profile=dian
-add comment="aug/24/2023 19:08:35" limit-uptime=8h name=fir396 password=\
-    fir396 profile=dian
-add comment="aug/24/2023 14:51:28" limit-uptime=8h name=xwx235 password=\
-    xwx235 profile=dian
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=xwt638 password=xwt638 \
     profile=-default-1-hp
-add comment="aug/23/2023 22:50:02" limit-uptime=8h name=zcs592 password=\
-    zcs592 profile=dian
-add comment="aug/24/2023 18:36:55" limit-uptime=8h name=wty845 password=\
-    wty845 profile=dian
-add comment="aug/24/2023 10:16:54" limit-uptime=8h name=dny774 password=\
-    dny774 profile=dian
-add comment="aug/24/2023 18:16:07" limit-uptime=8h name=ptd243 password=\
-    ptd243 profile=dian
-add comment="aug/25/2023 07:51:23" limit-uptime=8h name=wei388 password=\
-    wei388 profile=dian
-add comment="aug/26/2023 21:06:22" limit-uptime=8h name=fxd368 password=\
-    fxd368 profile=dian
-add comment="aug/26/2023 22:56:01" limit-uptime=8h name=gkd276 password=\
-    gkd276 profile=dian
-add comment="aug/26/2023 21:13:53" limit-uptime=8h name=rds575 password=\
-    rds575 profile=dian
-add comment="aug/26/2023 14:53:08" limit-uptime=8h name=ykm755 password=\
-    ykm755 profile=dian
-add comment="aug/26/2023 07:58:19" limit-uptime=8h name=xrz922 password=\
-    xrz922 profile=dian
-add comment="aug/26/2023 08:01:15" limit-uptime=8h name=zxf747 password=\
-    zxf747 profile=dian
-add comment="aug/26/2023 12:44:40" limit-uptime=8h name=fhh748 password=\
-    fhh748 profile=dian
-add comment="aug/26/2023 12:40:23" limit-uptime=8h name=egn282 password=\
-    egn282 profile=dian
-add comment="aug/26/2023 13:21:09" limit-uptime=8h name=udn843 password=\
-    udn843 profile=dian
-add comment="aug/26/2023 20:48:02" limit-uptime=8h name=rrz285 password=\
-    rrz285 profile=dian
-add comment="aug/25/2023 14:17:09" limit-uptime=8h name=ewu364 password=\
-    ewu364 profile=dian
-add comment="aug/25/2023 15:34:29" limit-uptime=8h name=kmh569 password=\
-    kmh569 profile=dian
-add comment="aug/25/2023 17:45:44" limit-uptime=8h name=aad634 password=\
-    aad634 profile=dian
-add comment="aug/25/2023 21:46:13" limit-uptime=8h name=ehu488 password=\
-    ehu488 profile=dian
-add comment="aug/27/2023 19:29:23" limit-uptime=8h name=css744 password=\
-    css744 profile=dian
-add comment="aug/28/2023 05:46:02" limit-uptime=8h name=umz377 password=\
-    umz377 profile=dian
-add comment="aug/27/2023 17:53:30" limit-uptime=8h name=ttt322 password=\
-    ttt322 profile=dian
-add comment="aug/28/2023 18:15:44" limit-uptime=8h name=zwn553 password=\
-    zwn553 profile=dian
-add comment="aug/28/2023 15:29:00" limit-uptime=8h name=vay856 password=\
-    vay856 profile=dian
-add comment="aug/27/2023 13:44:46" limit-uptime=8h name=drp278 password=\
-    drp278 profile=dian
-add comment="aug/27/2023 18:16:36" limit-uptime=8h name=pwy798 password=\
-    pwy798 profile=dian
-add comment="aug/27/2023 22:17:36" limit-uptime=8h name=czw247 password=\
-    czw247 profile=dian
-add comment="aug/27/2023 20:54:30" limit-uptime=8h name=cyj357 password=\
-    cyj357 profile=dian
-add comment="aug/28/2023 17:04:39" limit-uptime=8h name=xda787 password=\
-    xda787 profile=dian
-add comment="aug/29/2023 19:24:50" limit-uptime=8h name=ugk687 password=\
-    ugk687 profile=dian
-add comment="aug/28/2023 20:39:14" limit-uptime=8h name=vnd493 password=\
-    vnd493 profile=dian
-add comment="aug/28/2023 20:08:31" limit-uptime=8h name=szz993 password=\
-    szz993 profile=dian
-add comment="aug/30/2023 09:54:01" limit-uptime=8h name=vmg375 password=\
-    vmg375 profile=dian
-add comment="aug/28/2023 22:36:00" limit-uptime=8h name=kpv959 password=\
-    kpv959 profile=dian
-add comment="aug/29/2023 22:38:43" limit-uptime=8h name=wnt855 password=\
-    wnt855 profile=dian
-add comment="aug/29/2023 06:07:52" limit-uptime=8h name=bde744 password=\
-    bde744 profile=dian
-add comment="aug/30/2023 02:02:47" limit-uptime=8h name=rre465 password=\
-    rre465 profile=dian
-add comment="aug/29/2023 06:22:20" limit-uptime=8h name=udx239 password=\
-    udx239 profile=dian
-add comment="aug/30/2023 08:39:32" limit-uptime=8h name=rrw744 password=\
-    rrw744 profile=dian
-add comment="aug/29/2023 22:24:31" limit-uptime=8h name=ymx875 password=\
-    ymx875 profile=dian
-add comment="aug/30/2023 13:07:46" limit-uptime=8h name=jkj578 password=\
-    jkj578 profile=dian
-add comment="aug/29/2023 11:30:10" limit-uptime=8h name=vcs357 password=\
-    vcs357 profile=dian
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=cbw264 password=cbw264 \
     profile=-default-1-hp
-add comment="sep/01/2023 18:01:03" limit-uptime=8h name=kwh272 password=\
-    kwh272 profile=dian
 add comment="sep/15/2023 14:36:41" limit-uptime=8h name=wuw225 password=\
     wuw225 profile=dian
 add comment="sep/15/2023 09:33:47" limit-uptime=8h name=urg454 password=\
@@ -4470,56 +3723,56 @@ add comment="sep/22/2023 05:28:16" limit-uptime=8h name=nrm972 password=\
     nrm972 profile=dian
 add comment="sep/21/2023 17:40:38" limit-uptime=8h name=xik927 password=\
     xik927 profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=sbe533 password=sbe533 \
-    profile=dian
+add comment="sep/23/2023 10:16:40" limit-uptime=8h name=sbe533 password=\
+    sbe533 profile=dian
 add comment="sep/22/2023 19:01:01" limit-uptime=8h name=bdn939 password=\
     bdn939 profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=srm696 password=srm696 \
-    profile=dian
+add comment="sep/23/2023 17:47:24" limit-uptime=8h name=srm696 password=\
+    srm696 profile=dian
 add comment="sep/22/2023 18:37:43" limit-uptime=8h name=mri639 password=\
     mri639 profile=dian
 add comment="sep/22/2023 01:47:29" limit-uptime=8h name=djx642 password=\
     djx642 profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=zjv847 password=zjv847 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=nzm385 password=nzm385 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=xmg464 password=xmg464 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=whi872 password=whi872 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=vut922 password=vut922 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=bus992 password=bus992 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=kfx286 password=kfx286 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=ctb465 password=ctb465 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=saf847 password=saf847 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=atc789 password=atc789 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=kuh453 password=kuh453 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=mat355 password=mat355 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=ksx756 password=ksx756 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=eck268 password=eck268 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=fci769 password=fci769 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=aks332 password=aks332 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=emb284 password=emb284 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=fdi497 password=fdi497 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=tjr367 password=tjr367 \
-    profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=pji777 password=pji777 \
-    profile=dian
+add comment="sep/23/2023 12:23:23" limit-uptime=8h name=zjv847 password=\
+    zjv847 profile=dian
+add comment="sep/23/2023 22:51:08" limit-uptime=8h name=nzm385 password=\
+    nzm385 profile=dian
+add comment="sep/24/2023 12:58:26" limit-uptime=8h name=xmg464 password=\
+    xmg464 profile=dian
+add comment="sep/24/2023 14:06:00" limit-uptime=8h name=whi872 password=\
+    whi872 profile=dian
+add comment="sep/24/2023 17:58:38" limit-uptime=8h name=vut922 password=\
+    vut922 profile=dian
+add comment="sep/25/2023 13:00:57" limit-uptime=8h name=bus992 password=\
+    bus992 profile=dian
+add comment="sep/30/2023 18:21:25" limit-uptime=8h name=kfx286 password=\
+    kfx286 profile=-default-1-hp
+add comment="sep/25/2023 11:10:59" limit-uptime=8h name=ctb465 password=\
+    ctb465 profile=dian
+add comment="sep/25/2023 19:12:26" limit-uptime=8h name=saf847 password=\
+    saf847 profile=dian
+add comment="sep/24/2023 20:21:17" limit-uptime=8h name=atc789 password=\
+    atc789 profile=dian
+add comment="sep/26/2023 18:30:04" limit-uptime=8h name=kuh453 password=\
+    kuh453 profile=dian
+add comment="sep/26/2023 18:31:49" limit-uptime=8h name=mat355 password=\
+    mat355 profile=dian
+add comment="sep/26/2023 14:35:16" limit-uptime=8h name=ksx756 password=\
+    ksx756 profile=dian
+add comment="sep/26/2023 09:51:33" limit-uptime=8h name=eck268 password=\
+    eck268 profile=dian
+add comment="sep/25/2023 17:39:10" limit-uptime=8h name=fci769 password=\
+    fci769 profile=dian
+add comment="sep/26/2023 21:29:27" limit-uptime=8h name=aks332 password=\
+    aks332 profile=dian
+add comment="sep/26/2023 22:55:16" limit-uptime=8h name=emb284 password=\
+    emb284 profile=dian
+add comment="sep/26/2023 21:08:39" limit-uptime=8h name=fdi497 password=\
+    fdi497 profile=dian
+add comment="sep/26/2023 20:59:14" limit-uptime=8h name=tjr367 password=\
+    tjr367 profile=dian
+add comment="oct/01/2023 21:20:16" limit-uptime=8h name=pji777 password=\
+    pji777 profile=-default-1-hp
 add comment="sep/06/2023 18:30:20" limit-uptime=8h name=tfs556 password=\
     tfs556 profile=dian
 add comment="sep/06/2023 18:31:02" limit-uptime=8h name=jua584 password=\
@@ -4532,8 +3785,8 @@ add comment="sep/06/2023 20:58:19" limit-uptime=8h name=fku267 password=\
     fku267 profile=dian
 add comment="sep/06/2023 21:12:02" limit-uptime=8h name=ppa443 password=\
     ppa443 profile=dian
-add comment=vc-231-07.25.23-dian limit-uptime=8h name=jsh985 password=jsh985 \
-    profile=dian
+add comment="sep/27/2023 07:13:25" limit-uptime=8h name=jsh985 password=\
+    jsh985 profile=dian
 add comment="sep/07/2023 11:41:15" limit-uptime=8h name=ppc445 password=\
     ppc445 profile=dian
 add comment="sep/09/2023 17:12:28" limit-uptime=8h name=mef753 password=\
@@ -4620,12 +3873,8 @@ add comment="sep/16/2023 14:02:46" limit-uptime=8h name=dtw583 password=\
     dtw583 profile=dian
 add comment="sep/15/2023 12:48:38" limit-uptime=8h name=xhn372 password=\
     xhn372 profile=dian
-add comment="sep/01/2023 22:25:42" limit-uptime=8h name=dek944 password=\
-    dek944 profile=agus
 add comment="sep/05/2023 18:51:55" limit-uptime=8h name=kdy975 password=\
     kdy975 profile=agus
-add comment="aug/30/2023 22:37:54" limit-uptime=8h name=pzz528 password=\
-    pzz528 profile=agus
 add comment="sep/02/2023 11:02:17" limit-uptime=8h name=urr899 password=\
     urr899 profile=agus
 add comment="sep/04/2023 09:25:09" limit-uptime=8h name=xzy729 password=\
@@ -4638,8 +3887,6 @@ add comment="sep/09/2023 14:06:42" limit-uptime=8h name=gfs459 password=\
     gfs459 profile=agus
 add comment="sep/07/2023 17:54:14" limit-uptime=8h name=eki879 password=\
     eki879 profile=agus
-add comment="sep/01/2023 10:41:08" limit-uptime=8h name=eyu243 password=\
-    eyu243 profile=agus
 add comment="sep/04/2023 01:22:30" limit-uptime=8h name=ukw969 password=\
     ukw969 profile=agus
 add comment="sep/04/2023 17:26:32" limit-uptime=8h name=txj965 password=\
@@ -4648,8 +3895,6 @@ add comment="sep/05/2023 17:00:24" limit-uptime=8h name=hpy664 password=\
     hpy664 profile=agus
 add comment="sep/06/2023 16:25:18" limit-uptime=8h name=vty444 password=\
     vty444 profile=agus
-add comment="sep/01/2023 19:10:00" limit-uptime=8h name=ner758 password=\
-    ner758 profile=agus
 add comment="sep/04/2023 05:22:39" limit-uptime=8h name=kfr289 password=\
     kfr289 profile=agus
 add comment="sep/02/2023 21:18:18" limit-uptime=8h name=sdd625 password=\
@@ -4672,12 +3917,6 @@ add comment="sep/05/2023 01:27:22" limit-uptime=8h name=ggj355 password=\
     ggj355 profile=agus
 add comment="sep/02/2023 21:10:56" limit-uptime=8h name=rjk656 password=\
     rjk656 profile=agus
-add comment="aug/31/2023 21:00:56" limit-uptime=8h name=rjt552 password=\
-    rjt552 profile=agus
-add comment="sep/01/2023 05:37:22" limit-uptime=8h name=rsw334 password=\
-    rsw334 profile=agus
-add comment="sep/01/2023 21:25:17" limit-uptime=8h name=dtg558 password=\
-    dtg558 profile=agus
 add comment="sep/02/2023 21:40:55" limit-uptime=8h name=dzu382 password=\
     dzu382 profile=agus
 add comment="sep/07/2023 23:33:38" limit-uptime=8h name=tac665 password=\
@@ -4694,22 +3933,10 @@ add comment="sep/06/2023 16:59:53" limit-uptime=8h name=zfe863 password=\
     zfe863 profile=agus
 add comment="sep/08/2023 00:54:36" limit-uptime=8h name=ffv356 password=\
     ffv356 profile=agus
-add comment="aug/31/2023 18:39:50" limit-uptime=8h name=ajb362 password=\
-    ajb362 profile=agus
-add comment="sep/01/2023 10:00:14" limit-uptime=8h name=yfe335 password=\
-    yfe335 profile=agus
-add comment="aug/31/2023 22:47:16" limit-uptime=8h name=gbi553 password=\
-    gbi553 profile=agus
 add comment="sep/02/2023 23:23:58" limit-uptime=8h name=hjh285 password=\
     hjh285 profile=agus
-add comment="sep/01/2023 22:32:00" limit-uptime=8h name=xhp593 password=\
-    xhp593 profile=agus
-add comment="sep/01/2023 22:51:21" limit-uptime=8h name=avj763 password=\
-    avj763 profile=agus
 add comment="sep/06/2023 23:22:54" limit-uptime=8h name=zpy527 password=\
     zpy527 profile=agus
-add comment="sep/01/2023 16:44:22" limit-uptime=8h name=ybh576 password=\
-    ybh576 profile=agus
 add comment="sep/05/2023 21:59:04" limit-uptime=8h name=ute957 password=\
     ute957 profile=agus
 add comment="sep/06/2023 00:03:55" limit-uptime=8h name=adw372 password=\
@@ -4724,84 +3951,26 @@ add comment="sep/04/2023 17:27:42" limit-uptime=8h name=fsb637 password=\
     fsb637 profile=agus
 add comment="sep/06/2023 01:35:57" limit-uptime=8h name=wcx469 password=\
     wcx469 profile=agus
-add comment="aug/31/2023 16:01:41" limit-uptime=8h name=dii469 password=\
-    dii469 profile=agus
-add comment="aug/31/2023 09:08:06" limit-uptime=8h name=ndb797 password=\
-    ndb797 profile=agus
 add comment="sep/03/2023 10:17:31" limit-uptime=8h name=vgu992 password=\
     vgu992 profile=agus
-add comment="aug/27/2023 19:38:35" limit-uptime=8h name=vbd878 password=\
-    vbd878 profile=nazim
-add comment="aug/27/2023 06:15:43" limit-uptime=8h name=fzr843 password=\
-    fzr843 profile=nazim
-add comment="aug/26/2023 19:07:19" limit-uptime=8h name=mfm875 password=\
-    mfm875 profile=nazim
-add comment="aug/27/2023 18:04:13" limit-uptime=8h name=iee983 password=\
-    iee983 profile=nazim
-add comment="aug/27/2023 15:05:33" limit-uptime=8h name=gwd679 password=\
-    gwd679 profile=nazim
-add comment="aug/27/2023 10:51:56" limit-uptime=8h name=emg754 password=\
-    emg754 profile=nazim
-add comment="aug/27/2023 15:20:08" limit-uptime=8h name=ixf836 password=\
-    ixf836 profile=nazim
-add comment="aug/27/2023 19:18:17" limit-uptime=8h name=zcm567 password=\
-    zcm567 profile=nazim
-add comment="aug/28/2023 19:15:03" limit-uptime=8h name=azj427 password=\
-    azj427 profile=nazim
-add comment="aug/28/2023 09:40:48" limit-uptime=8h name=uis256 password=\
-    uis256 profile=nazim
-add comment="aug/27/2023 19:42:37" limit-uptime=8h name=buk535 password=\
-    buk535 profile=nazim
-add comment="aug/28/2023 10:49:54" limit-uptime=8h name=dht484 password=\
-    dht484 profile=nazim
-add comment="aug/28/2023 11:00:02" limit-uptime=8h name=ngv872 password=\
-    ngv872 profile=nazim
-add comment="aug/28/2023 11:45:30" limit-uptime=8h name=spc365 password=\
-    spc365 profile=nazim
-add comment="aug/29/2023 14:10:06" limit-uptime=8h name=uzx378 password=\
-    uzx378 profile=nazim
-add comment="aug/30/2023 21:03:22" limit-uptime=8h name=rfn433 password=\
-    rfn433 profile=nazim
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=bkn326 password=bkn326 \
     profile=-default-1-hp
-add comment="aug/30/2023 09:44:41" limit-uptime=8h name=inz254 password=\
-    inz254 profile=nazim
-add comment="aug/30/2023 16:47:43" limit-uptime=8h name=wew965 password=\
-    wew965 profile=nazim
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=rhc565 password=rhc565 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=guv867 password=guv867 \
     profile=-default-1-hp
 add comment=vc-815-05.15.23-FREE limit-uptime=8h name=gin687 password=gin687 \
     profile=-default-1-hp
-add comment="aug/29/2023 18:30:22" limit-uptime=8h name=csn968 password=\
-    csn968 profile=nazim
-add comment="aug/31/2023 02:57:32" limit-uptime=8h name=ayh475 password=\
-    ayh475 profile=nazim
-add comment="aug/30/2023 18:55:52" limit-uptime=8h name=uau978 password=\
-    uau978 profile=nazim
-add comment="aug/30/2023 20:12:07" limit-uptime=8h name=ywc638 password=\
-    ywc638 profile=nazim
-add comment="sep/01/2023 11:55:37" limit-uptime=8h name=xfx339 password=\
-    xfx339 profile=nazim
 add comment="sep/06/2023 09:43:14" limit-uptime=8h name=tnd223 password=\
     tnd223 profile=nazim
-add comment="aug/31/2023 19:22:32" limit-uptime=8h name=ane984 password=\
-    ane984 profile=nazim
-add comment="sep/01/2023 11:54:07" limit-uptime=8h name=sfc449 password=\
-    sfc449 profile=nazim
 add comment="sep/06/2023 08:26:54" limit-uptime=8h name=aup872 password=\
     aup872 profile=nazim
-add comment="sep/01/2023 22:15:22" limit-uptime=8h name=ajs759 password=\
-    ajs759 profile=nazim
 add comment="sep/02/2023 10:40:37" limit-uptime=8h name=vsf595 password=\
     vsf595 profile=nazim
 add comment="sep/02/2023 11:30:58" limit-uptime=8h name=rkw677 password=\
     rkw677 profile=nazim
 add comment="sep/02/2023 17:17:31" limit-uptime=8h name=uew479 password=\
     uew479 profile=nazim
-add comment="sep/01/2023 15:29:53" limit-uptime=8h name=mff625 password=\
-    mff625 profile=nazim
 add comment="sep/02/2023 16:59:53" limit-uptime=8h name=dmd568 password=\
     dmd568 profile=nazim
 add comment="sep/04/2023 12:18:27" limit-uptime=8h name=dwf742 password=\
@@ -4930,8 +4099,6 @@ add comment="sep/15/2023 17:16:07" limit-uptime=8h name=bay926 password=\
     bay926 profile=nazim
 add comment="sep/16/2023 17:39:41" limit-uptime=8h name=idv698 password=\
     idv698 profile=nazim
-add comment="sep/01/2023 18:57:44" limit-uptime=12h name=dfv836 password=\
-    dfv836 profile=witno-12jam
 add comment="sep/02/2023 07:04:28" limit-uptime=12h name=tki696 password=\
     tki696 profile=witno-12jam
 add comment="sep/02/2023 13:11:16" limit-uptime=12h name=pab686 password=\
@@ -5026,7 +4193,7 @@ add comment="sep/17/2023 19:31:43" limit-uptime=12h name=apc848 password=\
     apc848 profile=witno-12jam
 add comment="sep/17/2023 20:53:09" limit-uptime=12h name=cbe569 password=\
     cbe569 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=vkw975 password=\
+add comment="sep/23/2023 11:45:33" limit-uptime=12h name=vkw975 password=\
     vkw975 profile=witno-12jam
 add comment="sep/18/2023 20:07:44" limit-uptime=12h name=snz723 password=\
     snz723 profile=witno-12jam
@@ -5046,49 +4213,49 @@ add comment="sep/20/2023 20:25:30" limit-uptime=12h name=iwj544 password=\
     iwj544 profile=witno-12jam
 add comment="sep/21/2023 11:17:37" limit-uptime=12h name=rsu449 password=\
     rsu449 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=ghv963 password=\
+add comment="sep/26/2023 16:02:02" limit-uptime=12h name=ghv963 password=\
     ghv963 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=usd877 password=\
+add comment="sep/28/2023 23:51:59" limit-uptime=12h name=usd877 password=\
     usd877 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=eni772 password=\
+add comment="sep/23/2023 10:35:52" limit-uptime=12h name=eni772 password=\
     eni772 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=bmp384 password=\
+add comment="sep/23/2023 13:14:26" limit-uptime=12h name=bmp384 password=\
     bmp384 profile=witno-12jam
 add comment="sep/21/2023 19:07:22" limit-uptime=12h name=ggb655 password=\
     ggb655 profile=witno-12jam
 add comment="sep/21/2023 09:30:09" limit-uptime=12h name=isv728 password=\
     isv728 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=has957 password=\
+add comment="sep/23/2023 15:06:56" limit-uptime=12h name=has957 password=\
     has957 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=fbp742 password=\
+add comment="sep/24/2023 16:22:10" limit-uptime=12h name=fbp742 password=\
     fbp742 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=gvh663 password=\
+add comment="sep/25/2023 17:05:16" limit-uptime=12h name=gvh663 password=\
     gvh663 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=ibv566 password=\
+add comment="sep/25/2023 10:39:30" limit-uptime=12h name=ibv566 password=\
     ibv566 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=ysf529 password=\
+add comment="sep/25/2023 13:26:48" limit-uptime=12h name=ysf529 password=\
     ysf529 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=hhe964 password=\
-    hhe964 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=cjm449 password=\
+add comment=vc-815-05.15.23-FREE limit-uptime=12h name=hhe964 password=hhe964 \
+    profile=-default-1-hp
+add comment="sep/28/2023 17:24:57" limit-uptime=12h name=cjm449 password=\
     cjm449 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=cde262 password=\
+add comment="sep/27/2023 08:21:02" limit-uptime=12h name=cde262 password=\
     cde262 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=fkh483 password=\
+add comment="sep/28/2023 11:58:15" limit-uptime=12h name=fkh483 password=\
     fkh483 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=jym334 password=\
+add comment="sep/27/2023 12:03:31" limit-uptime=12h name=jym334 password=\
     jym334 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=xyg893 password=\
+add comment="sep/27/2023 13:26:13" limit-uptime=12h name=xyg893 password=\
     xyg893 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=etj723 password=\
+add comment="sep/28/2023 18:31:24" limit-uptime=12h name=etj723 password=\
     etj723 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=bkc888 password=\
-    bkc888 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=tcd873 password=\
-    tcd873 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=gmt595 password=\
+add comment=vc-815-05.15.23-FREE limit-uptime=12h name=bkc888 password=bkc888 \
+    profile=-default-1-hp
+add comment=vc-815-05.15.23-FREE limit-uptime=12h name=tcd873 password=tcd873 \
+    profile=-default-1-hp
+add comment="sep/30/2023 10:34:28" limit-uptime=12h name=gmt595 password=\
     gmt595 profile=witno-12jam
-add comment=vc-364-08.01.23-kukuh limit-uptime=12h name=gpw784 password=\
+add comment="sep/30/2023 15:16:31" limit-uptime=12h name=gpw784 password=\
     gpw784 profile=witno-12jam
 add comment="sep/09/2023 22:38:40" limit-uptime=8h name=bik993 password=\
     bik993 profile=agus
@@ -5200,86 +4367,86 @@ add comment="sep/11/2023 19:58:20" limit-uptime=8h name=pwc987 password=\
     pwc987 profile=agus
 add comment="sep/13/2023 23:21:02" limit-uptime=8h name=nuj753 password=\
     nuj753 profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=hku265 password=hku265 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=jab346 password=jab346 \
-    profile=agus
+add comment="sep/26/2023 21:34:06" limit-uptime=8h name=hku265 password=\
+    hku265 profile=agus
+add comment="sep/26/2023 19:21:38" limit-uptime=8h name=jab346 password=\
+    jab346 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=gjz624 password=gjz624 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=exi292 password=exi292 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=uym728 password=uym728 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=icz374 password=icz374 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=ujv565 password=ujv565 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=gra386 password=gra386 \
-    profile=agus
+add comment="sep/29/2023 19:30:02" limit-uptime=8h name=exi292 password=\
+    exi292 profile=agus
+add comment="sep/27/2023 17:20:31" limit-uptime=8h name=uym728 password=\
+    uym728 profile=agus
+add comment="sep/27/2023 22:56:40" limit-uptime=8h name=icz374 password=\
+    icz374 profile=agus
+add comment="sep/27/2023 18:43:45" limit-uptime=8h name=ujv565 password=\
+    ujv565 profile=agus
+add comment="sep/29/2023 07:39:23" limit-uptime=8h name=gra386 password=\
+    gra386 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=vtx427 password=vtx427 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=rhz624 password=rhz624 \
-    profile=agus
+add comment="sep/30/2023 09:35:38" limit-uptime=8h name=rhz624 password=\
+    rhz624 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=nwt576 password=nwt576 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=der496 password=der496 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=afv734 password=afv734 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=kzg948 password=kzg948 \
-    profile=agus
+add comment="sep/27/2023 07:53:46" limit-uptime=8h name=der496 password=\
+    der496 profile=agus
+add comment="sep/27/2023 10:11:38" limit-uptime=8h name=afv734 password=\
+    afv734 profile=agus
+add comment="sep/28/2023 20:29:34" limit-uptime=8h name=kzg948 password=\
+    kzg948 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=pgf366 password=pgf366 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=cid235 password=cid235 \
-    profile=agus
+add comment="oct/01/2023 15:38:02" limit-uptime=8h name=cid235 password=\
+    cid235 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=yde892 password=yde892 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=pvj224 password=pvj224 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=fuk924 password=fuk924 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=ctw848 password=ctw848 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=zxu679 password=zxu679 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=eid363 password=eid363 \
-    profile=agus
+add comment="oct/01/2023 12:34:51" limit-uptime=8h name=fuk924 password=\
+    fuk924 profile=agus
+add comment="oct/02/2023 19:17:50" limit-uptime=8h name=ctw848 password=\
+    ctw848 profile=agus
+add comment="sep/30/2023 17:31:55" limit-uptime=8h name=zxu679 password=\
+    zxu679 profile=agus
+add comment="sep/30/2023 17:13:48" limit-uptime=8h name=eid363 password=\
+    eid363 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=rtf544 password=rtf544 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=pse928 password=pse928 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=hyj367 password=hyj367 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=uvk857 password=uvk857 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=feg775 password=feg775 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=bmr446 password=bmr446 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=jgf852 password=jgf852 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=nfb747 password=nfb747 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=tvk325 password=tvk325 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=bcv783 password=bcv783 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=csk377 password=csk377 \
-    profile=agus
+add comment="oct/02/2023 02:14:41" limit-uptime=8h name=hyj367 password=\
+    hyj367 profile=agus
+add comment="sep/28/2023 08:23:02" limit-uptime=8h name=uvk857 password=\
+    uvk857 profile=agus
+add comment="sep/29/2023 13:23:46" limit-uptime=8h name=feg775 password=\
+    feg775 profile=agus
+add comment="oct/02/2023 20:21:09" limit-uptime=8h name=bmr446 password=\
+    bmr446 profile=agus
+add comment="sep/30/2023 21:03:05" limit-uptime=8h name=jgf852 password=\
+    jgf852 profile=agus
+add comment="sep/28/2023 13:36:49" limit-uptime=8h name=nfb747 password=\
+    nfb747 profile=agus
+add comment="sep/30/2023 21:14:41" limit-uptime=8h name=tvk325 password=\
+    tvk325 profile=agus
+add comment="sep/30/2023 18:44:05" limit-uptime=8h name=bcv783 password=\
+    bcv783 profile=agus
+add comment="oct/02/2023 22:11:06" limit-uptime=8h name=csk377 password=\
+    csk377 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=dzf726 password=dzf726 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=jep945 password=jep945 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=usx832 password=usx832 \
-    profile=agus
+add comment="sep/30/2023 20:34:50" limit-uptime=8h name=jep945 password=\
+    jep945 profile=agus
+add comment="oct/01/2023 08:28:25" limit-uptime=8h name=usx832 password=\
+    usx832 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=cuj649 password=cuj649 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=uwn333 password=uwn333 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=auy476 password=auy476 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=vsi629 password=vsi629 \
-    profile=agus
+add comment="sep/29/2023 21:14:44" limit-uptime=8h name=vsi629 password=\
+    vsi629 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=jxf646 password=jxf646 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=wcu553 password=wcu553 \
@@ -5288,8 +4455,8 @@ add comment=vc-644-08.01.23-agus limit-uptime=8h name=yri578 password=yri578 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=xvw667 password=xvw667 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=gtj355 password=gtj355 \
-    profile=agus
+add comment="sep/28/2023 12:56:05" limit-uptime=8h name=gtj355 password=\
+    gtj355 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=adv364 password=adv364 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=xyb973 password=xyb973 \
@@ -5298,10 +4465,10 @@ add comment=vc-644-08.01.23-agus limit-uptime=8h name=dxd793 password=dxd793 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=tfk498 password=tfk498 \
     profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=myu425 password=myu425 \
-    profile=agus
-add comment=vc-644-08.01.23-agus limit-uptime=8h name=hpw779 password=hpw779 \
-    profile=agus
+add comment="sep/28/2023 13:19:50" limit-uptime=8h name=myu425 password=\
+    myu425 profile=agus
+add comment="sep/30/2023 12:45:02" limit-uptime=8h name=hpw779 password=\
+    hpw779 profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=xvy383 password=xvy383 \
     profile=agus
 add comment=vc-644-08.01.23-agus limit-uptime=8h name=apx495 password=apx495 \
@@ -5370,56 +4537,56 @@ add comment=vc-122-08.07.23-dian limit-uptime=8h name=sbj282 password=sbj282 \
     profile=dian
 add comment=vc-122-08.07.23-dian limit-uptime=8h name=rbj799 password=rbj799 \
     profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=bja645 password=bja645 \
-    profile=dian
+add comment="oct/02/2023 10:47:52" limit-uptime=8h name=bja645 password=\
+    bja645 profile=dian
 add comment=vc-122-08.07.23-dian limit-uptime=8h name=dip694 password=dip694 \
     profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=trn632 password=trn632 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=shi237 password=shi237 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=gyy445 password=gyy445 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=xpr942 password=xpr942 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=wuc424 password=wuc424 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=xis384 password=xis384 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=ytt595 password=ytt595 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=inw466 password=inw466 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=cza376 password=cza376 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=wks477 password=wks477 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=sax573 password=sax573 \
-    profile=dian
+add comment="oct/02/2023 15:29:38" limit-uptime=8h name=trn632 password=\
+    trn632 profile=dian
+add comment="oct/02/2023 19:47:19" limit-uptime=8h name=shi237 password=\
+    shi237 profile=dian
+add comment="oct/02/2023 20:28:14" limit-uptime=8h name=gyy445 password=\
+    gyy445 profile=dian
+add comment="oct/01/2023 14:03:21" limit-uptime=8h name=xpr942 password=\
+    xpr942 profile=dian
+add comment="oct/01/2023 19:59:05" limit-uptime=8h name=wuc424 password=\
+    wuc424 profile=dian
+add comment="oct/01/2023 22:30:28" limit-uptime=8h name=xis384 password=\
+    xis384 profile=dian
+add comment="oct/02/2023 07:45:22" limit-uptime=8h name=ytt595 password=\
+    ytt595 profile=dian
+add comment="oct/02/2023 14:15:18" limit-uptime=8h name=inw466 password=\
+    inw466 profile=dian
+add comment="sep/29/2023 20:15:17" limit-uptime=8h name=cza376 password=\
+    cza376 profile=dian
+add comment="sep/30/2023 16:20:13" limit-uptime=8h name=wks477 password=\
+    wks477 profile=dian
+add comment="sep/30/2023 15:54:50" limit-uptime=8h name=sax573 password=\
+    sax573 profile=dian
 add comment=vc-122-08.07.23-dian limit-uptime=8h name=euu643 password=euu643 \
     profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=wgm455 password=wgm455 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=ndv395 password=ndv395 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=bjy696 password=bjy696 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=sgb993 password=sgb993 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=fpe659 password=fpe659 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=wab865 password=wab865 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=wmy634 password=wmy634 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=utr579 password=utr579 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=adf364 password=adf364 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=yyz978 password=yyz978 \
-    profile=dian
-add comment=vc-122-08.07.23-dian limit-uptime=8h name=ucg694 password=ucg694 \
-    profile=dian
+add comment="sep/29/2023 21:23:48" limit-uptime=8h name=wgm455 password=\
+    wgm455 profile=dian
+add comment="oct/01/2023 20:11:58" limit-uptime=8h name=ndv395 password=\
+    ndv395 profile=dian
+add comment="sep/30/2023 13:53:09" limit-uptime=8h name=bjy696 password=\
+    bjy696 profile=dian
+add comment="sep/29/2023 13:36:50" limit-uptime=8h name=sgb993 password=\
+    sgb993 profile=dian
+add comment="sep/29/2023 07:28:03" limit-uptime=8h name=fpe659 password=\
+    fpe659 profile=dian
+add comment="sep/29/2023 07:17:22" limit-uptime=8h name=wab865 password=\
+    wab865 profile=dian
+add comment="sep/27/2023 12:51:16" limit-uptime=8h name=wmy634 password=\
+    wmy634 profile=dian
+add comment="sep/28/2023 06:09:57" limit-uptime=8h name=utr579 password=\
+    utr579 profile=dian
+add comment="sep/28/2023 16:41:03" limit-uptime=8h name=adf364 password=\
+    adf364 profile=dian
+add comment="sep/28/2023 20:56:34" limit-uptime=8h name=yyz978 password=\
+    yyz978 profile=dian
+add comment="sep/29/2023 06:47:10" limit-uptime=8h name=ucg694 password=\
+    ucg694 profile=dian
 add comment=vc-122-08.07.23-dian limit-uptime=8h name=iyp739 password=iyp739 \
     profile=dian
 add comment=vc-122-08.07.23-dian limit-uptime=8h name=wja787 password=wja787 \
@@ -5510,14 +4677,14 @@ add comment=vc-122-08.07.23-dian limit-uptime=8h name=pau252 password=pau252 \
     profile=dian
 add comment=vc-122-08.07.23-dian limit-uptime=8h name=wru653 password=wru653 \
     profile=dian
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=suf768 password=suf768 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=hbf744 password=hbf744 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=hrv843 password=hrv843 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=psv422 password=psv422 \
-    profile=evi
+add comment="oct/02/2023 10:41:45" limit-uptime=8h name=suf768 password=\
+    suf768 profile=evi
+add comment="oct/02/2023 10:39:22" limit-uptime=8h name=hbf744 password=\
+    hbf744 profile=evi
+add comment="oct/02/2023 14:12:41" limit-uptime=8h name=hrv843 password=\
+    hrv843 profile=evi
+add comment="oct/02/2023 18:45:06" limit-uptime=8h name=psv422 password=\
+    psv422 profile=evi
 add comment=vc-303-08.07.23-evi limit-uptime=8h name=jau993 password=jau993 \
     profile=evi
 add comment=vc-303-08.07.23-evi limit-uptime=8h name=gpy335 password=gpy335 \
@@ -5540,26 +4707,26 @@ add comment=vc-303-08.07.23-evi limit-uptime=8h name=ddb833 password=ddb833 \
     profile=evi
 add comment=vc-303-08.07.23-evi limit-uptime=8h name=exk365 password=exk365 \
     profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=ckv738 password=ckv738 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=fhc883 password=fhc883 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=sry486 password=sry486 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=sjy694 password=sjy694 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=xts638 password=xts638 \
-    profile=evi
+add comment="sep/29/2023 11:35:54" limit-uptime=8h name=ckv738 password=\
+    ckv738 profile=evi
+add comment="sep/29/2023 13:18:49" limit-uptime=8h name=fhc883 password=\
+    fhc883 profile=evi
+add comment="sep/29/2023 13:19:18" limit-uptime=8h name=sry486 password=\
+    sry486 profile=evi
+add comment="sep/29/2023 13:49:29" limit-uptime=8h name=sjy694 password=\
+    sjy694 profile=evi
+add comment="sep/29/2023 15:58:18" limit-uptime=8h name=xts638 password=\
+    xts638 profile=evi
 add comment=vc-303-08.07.23-evi limit-uptime=8h name=bda554 password=bda554 \
     profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=esv356 password=esv356 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=sfs928 password=sfs928 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=mnj927 password=mnj927 \
-    profile=evi
-add comment=vc-303-08.07.23-evi limit-uptime=8h name=erp375 password=erp375 \
-    profile=evi
+add comment="oct/01/2023 17:54:38" limit-uptime=8h name=esv356 password=\
+    esv356 profile=evi
+add comment="sep/29/2023 18:45:37" limit-uptime=8h name=sfs928 password=\
+    sfs928 profile=evi
+add comment="sep/30/2023 14:57:00" limit-uptime=8h name=mnj927 password=\
+    mnj927 profile=evi
+add comment="oct/02/2023 10:31:30" limit-uptime=8h name=erp375 password=\
+    erp375 profile=evi
 add comment=vc-303-08.07.23-evi limit-uptime=8h name=pvh999 password=pvh999 \
     profile=evi
 add comment=vc-303-08.07.23-evi limit-uptime=8h name=ibc579 password=ibc579 \
@@ -5980,146 +5147,1436 @@ add comment="sep/22/2023 09:17:13" limit-uptime=8h name=bby993 password=\
     bby993 profile=nazim
 add comment="sep/22/2023 16:05:20" limit-uptime=8h name=rna595 password=\
     rna595 profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=fjd626 password=fjd626 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=kzy984 password=kzy984 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=pah854 password=pah854 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=wdg877 password=wdg877 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=rvz723 password=rvz723 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=vuv664 password=vuv664 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=sci253 password=sci253 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=kzf394 password=kzf394 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=knv364 password=knv364 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=aax982 password=aax982 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ipn436 password=ipn436 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ngd472 password=ngd472 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=bvg555 password=bvg555 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=tat888 password=tat888 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=rss267 password=rss267 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=izv726 password=izv726 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ydu974 password=ydu974 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=duc745 password=duc745 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=zwj775 password=zwj775 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=suw478 password=suw478 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=nca842 password=nca842 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=khw243 password=khw243 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=kmt648 password=kmt648 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=vhk284 password=vhk284 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=arw262 password=arw262 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=bmd573 password=bmd573 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=nfm677 password=nfm677 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=cub658 password=cub658 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=bgw626 password=bgw626 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=iaw699 password=iaw699 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=kck799 password=kck799 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=hgm452 password=hgm452 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=epy676 password=epy676 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=kds666 password=kds666 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ruh749 password=ruh749 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ryy295 password=ryy295 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=eud398 password=eud398 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=dzx555 password=dzx555 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=rde885 password=rde885 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=vvx648 password=vvx648 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=pyi254 password=pyi254 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=knm644 password=knm644 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=bzt845 password=bzt845 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=djp662 password=djp662 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=hje826 password=hje826 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=mxt492 password=mxt492 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ygt442 password=ygt442 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=mps444 password=mps444 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=dhn358 password=dhn358 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ymv938 password=ymv938 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ezv743 password=ezv743 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=hic375 password=hic375 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=cww752 password=cww752 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=nyf288 password=nyf288 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=bxa768 password=bxa768 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=xgp457 password=xgp457 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=pzy343 password=pzy343 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=swr888 password=swr888 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=yxe594 password=yxe594 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=ssp734 password=ssp734 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=prr837 password=prr837 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=esy398 password=esy398 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=dtx763 password=dtx763 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=naf274 password=naf274 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=wpb752 password=wpb752 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=psi497 password=psi497 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=xfe629 password=xfe629 \
-    profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=awf696 password=awf696 \
-    profile=nazim
+add comment="sep/23/2023 06:23:51" limit-uptime=8h name=fjd626 password=\
+    fjd626 profile=nazim
+add comment="sep/23/2023 12:02:55" limit-uptime=8h name=kzy984 password=\
+    kzy984 profile=nazim
+add comment="sep/23/2023 16:37:02" limit-uptime=8h name=pah854 password=\
+    pah854 profile=nazim
+add comment="sep/23/2023 13:19:05" limit-uptime=8h name=wdg877 password=\
+    wdg877 profile=nazim
+add comment="sep/23/2023 15:54:14" limit-uptime=8h name=rvz723 password=\
+    rvz723 profile=nazim
+add comment="sep/29/2023 09:44:59" limit-uptime=8h name=vuv664 password=\
+    vuv664 profile=nazim
+add comment="sep/23/2023 17:19:51" limit-uptime=8h name=sci253 password=\
+    sci253 profile=nazim
+add comment="sep/24/2023 12:06:04" limit-uptime=8h name=kzf394 password=\
+    kzf394 profile=nazim
+add comment="sep/24/2023 13:11:16" limit-uptime=8h name=knv364 password=\
+    knv364 profile=nazim
+add comment="sep/25/2023 13:17:16" limit-uptime=8h name=aax982 password=\
+    aax982 profile=nazim
+add comment="sep/23/2023 17:34:36" limit-uptime=8h name=ipn436 password=\
+    ipn436 profile=nazim
+add comment="sep/24/2023 13:45:08" limit-uptime=8h name=ngd472 password=\
+    ngd472 profile=nazim
+add comment="sep/24/2023 17:33:54" limit-uptime=8h name=bvg555 password=\
+    bvg555 profile=nazim
+add comment="sep/25/2023 14:41:15" limit-uptime=8h name=tat888 password=\
+    tat888 profile=nazim
+add comment="sep/25/2023 16:18:53" limit-uptime=8h name=rss267 password=\
+    rss267 profile=nazim
+add comment="sep/24/2023 19:39:32" limit-uptime=8h name=izv726 password=\
+    izv726 profile=nazim
+add comment="sep/25/2023 13:32:06" limit-uptime=8h name=ydu974 password=\
+    ydu974 profile=nazim
+add comment="sep/25/2023 13:38:35" limit-uptime=8h name=duc745 password=\
+    duc745 profile=nazim
+add comment="sep/25/2023 20:32:57" limit-uptime=8h name=zwj775 password=\
+    zwj775 profile=nazim
+add comment="sep/26/2023 08:29:54" limit-uptime=8h name=suw478 password=\
+    suw478 profile=nazim
+add comment="sep/26/2023 11:19:47" limit-uptime=8h name=nca842 password=\
+    nca842 profile=nazim
+add comment="sep/26/2023 13:56:13" limit-uptime=8h name=khw243 password=\
+    khw243 profile=nazim
+add comment="sep/27/2023 08:50:03" limit-uptime=8h name=kmt648 password=\
+    kmt648 profile=nazim
+add comment="sep/26/2023 18:18:14" limit-uptime=8h name=vhk284 password=\
+    vhk284 profile=nazim
+add comment="sep/27/2023 09:39:29" limit-uptime=8h name=arw262 password=\
+    arw262 profile=nazim
+add comment="sep/27/2023 10:46:59" limit-uptime=8h name=bmd573 password=\
+    bmd573 profile=nazim
+add comment="sep/28/2023 04:45:55" limit-uptime=8h name=nfm677 password=\
+    nfm677 profile=nazim
+add comment="sep/27/2023 12:58:48" limit-uptime=8h name=cub658 password=\
+    cub658 profile=nazim
+add comment="sep/27/2023 13:03:08" limit-uptime=8h name=bgw626 password=\
+    bgw626 profile=nazim
+add comment="sep/27/2023 17:04:02" limit-uptime=8h name=iaw699 password=\
+    iaw699 profile=nazim
+add comment="sep/28/2023 16:41:01" limit-uptime=8h name=kck799 password=\
+    kck799 profile=nazim
+add comment="sep/27/2023 20:37:27" limit-uptime=8h name=hgm452 password=\
+    hgm452 profile=nazim
+add comment="sep/27/2023 18:57:51" limit-uptime=8h name=epy676 password=\
+    epy676 profile=nazim
+add comment="sep/27/2023 17:07:38" limit-uptime=8h name=kds666 password=\
+    kds666 profile=nazim
+add comment="sep/28/2023 01:05:31" limit-uptime=8h name=ruh749 password=\
+    ruh749 profile=nazim
+add comment="sep/28/2023 16:45:22" limit-uptime=8h name=ryy295 password=\
+    ryy295 profile=nazim
+add comment="sep/29/2023 15:27:28" limit-uptime=8h name=eud398 password=\
+    eud398 profile=nazim
+add comment="sep/28/2023 18:39:51" limit-uptime=8h name=dzx555 password=\
+    dzx555 profile=nazim
+add comment="sep/29/2023 19:38:44" limit-uptime=8h name=rde885 password=\
+    rde885 profile=nazim
+add comment="sep/29/2023 13:49:43" limit-uptime=8h name=vvx648 password=\
+    vvx648 profile=nazim
+add comment="sep/28/2023 17:13:45" limit-uptime=8h name=pyi254 password=\
+    pyi254 profile=nazim
+add comment="sep/28/2023 22:51:42" limit-uptime=8h name=knm644 password=\
+    knm644 profile=nazim
+add comment="sep/29/2023 12:49:22" limit-uptime=8h name=bzt845 password=\
+    bzt845 profile=nazim
+add comment="sep/29/2023 20:32:14" limit-uptime=8h name=djp662 password=\
+    djp662 profile=nazim
+add comment="sep/30/2023 08:20:26" limit-uptime=8h name=hje826 password=\
+    hje826 profile=nazim
+add comment="sep/29/2023 20:48:11" limit-uptime=8h name=mxt492 password=\
+    mxt492 profile=nazim
+add comment="sep/30/2023 13:24:07" limit-uptime=8h name=ygt442 password=\
+    ygt442 profile=nazim
+add comment="sep/30/2023 14:24:44" limit-uptime=8h name=mps444 password=\
+    mps444 profile=nazim
+add comment="sep/30/2023 15:10:32" limit-uptime=8h name=dhn358 password=\
+    dhn358 profile=nazim
+add comment="sep/30/2023 16:35:26" limit-uptime=8h name=ymv938 password=\
+    ymv938 profile=nazim
+add comment="oct/01/2023 15:49:03" limit-uptime=8h name=ezv743 password=\
+    ezv743 profile=nazim
+add comment="oct/01/2023 13:03:39" limit-uptime=8h name=hic375 password=\
+    hic375 profile=nazim
+add comment="oct/01/2023 13:03:23" limit-uptime=8h name=cww752 password=\
+    cww752 profile=nazim
+add comment="oct/01/2023 11:58:46" limit-uptime=8h name=nyf288 password=\
+    nyf288 profile=nazim
+add comment="sep/30/2023 22:16:11" limit-uptime=8h name=bxa768 password=\
+    bxa768 profile=nazim
+add comment="oct/02/2023 06:16:53" limit-uptime=8h name=xgp457 password=\
+    xgp457 profile=nazim
+add comment="oct/02/2023 08:44:58" limit-uptime=8h name=pzy343 password=\
+    pzy343 profile=nazim
+add comment="oct/01/2023 18:49:55" limit-uptime=8h name=swr888 password=\
+    swr888 profile=nazim
+add comment="oct/01/2023 18:49:07" limit-uptime=8h name=yxe594 password=\
+    yxe594 profile=nazim
+add comment="oct/01/2023 20:26:30" limit-uptime=8h name=ssp734 password=\
+    ssp734 profile=nazim
+add comment="oct/01/2023 19:34:48" limit-uptime=8h name=prr837 password=\
+    prr837 profile=nazim
+add comment="oct/02/2023 11:04:13" limit-uptime=8h name=esy398 password=\
+    esy398 profile=nazim
+add comment="oct/02/2023 14:01:37" limit-uptime=8h name=dtx763 password=\
+    dtx763 profile=nazim
+add comment="oct/02/2023 13:32:07" limit-uptime=8h name=naf274 password=\
+    naf274 profile=nazim
+add comment="oct/02/2023 13:50:09" limit-uptime=8h name=wpb752 password=\
+    wpb752 profile=nazim
+add comment="oct/02/2023 14:17:31" limit-uptime=8h name=psi497 password=\
+    psi497 profile=nazim
+add comment="oct/02/2023 15:40:08" limit-uptime=8h name=xfe629 password=\
+    xfe629 profile=nazim
+add comment="oct/02/2023 19:13:28" limit-uptime=8h name=awf696 password=\
+    awf696 profile=nazim
 add comment=vc-854-08.17.23-nazim limit-uptime=8h name=gms349 password=gms349 \
     profile=nazim
-add comment=vc-854-08.17.23-nazim limit-uptime=8h name=sda465 password=sda465 \
-    profile=nazim
+add comment="oct/02/2023 19:20:58" limit-uptime=8h name=sda465 password=\
+    sda465 profile=nazim
+add comment="sep/28/2023 12:00:24" limit-uptime=12h mac-address=\
+    0C:C6:FD:01:01:89 name=ejk729 password=ejk729 profile=wawan
+add comment="sep/29/2023 07:30:05" limit-uptime=12h mac-address=\
+    0C:98:38:3C:BF:9F name=ttt632 password=ttt632 profile=wawan
+add comment="oct/01/2023 09:12:35" limit-uptime=12h mac-address=\
+    B0:B5:C3:98:9F:53 name=srr278 password=srr278 profile=wawan
+add comment="oct/02/2023 17:43:48" limit-uptime=12h mac-address=\
+    B0:B5:C3:98:9F:53 name=xzv936 password=xzv936 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=sbs226 password=\
+    sbs226 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=vvi444 password=\
+    vvi444 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=pir477 password=\
+    pir477 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=esa876 password=\
+    esa876 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=yse928 password=\
+    yse928 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=ivd569 password=\
+    ivd569 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=udc962 password=\
+    udc962 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=cub675 password=\
+    cub675 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=pyf324 password=\
+    pyf324 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=dcz772 password=\
+    dcz772 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=yar583 password=\
+    yar583 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=ynk257 password=\
+    ynk257 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=ava783 password=\
+    ava783 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=ahd878 password=\
+    ahd878 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=brk277 password=\
+    brk277 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=bzn397 password=\
+    bzn397 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=wxx226 password=\
+    wxx226 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=vsn983 password=\
+    vsn983 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=mua579 password=\
+    mua579 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=jsa848 password=\
+    jsa848 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=mvd726 password=\
+    mvd726 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=zbg643 password=\
+    zbg643 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=ttb629 password=\
+    ttb629 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=zcr857 password=\
+    zcr857 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=xge532 password=\
+    xge532 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=vft557 password=\
+    vft557 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=ksu475 password=\
+    ksu475 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=cjx739 password=\
+    cjx739 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=cme889 password=\
+    cme889 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=jue277 password=\
+    jue277 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=mfs844 password=\
+    mfs844 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=ipy428 password=\
+    ipy428 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=kzb897 password=\
+    kzb897 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=gzk978 password=\
+    gzk978 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=jrd958 password=\
+    jrd958 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=pfp986 password=\
+    pfp986 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=snb726 password=\
+    snb726 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=vau768 password=\
+    vau768 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=bdb368 password=\
+    bdb368 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=zrd929 password=\
+    zrd929 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=mwh977 password=\
+    mwh977 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=rws276 password=\
+    rws276 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=xhm982 password=\
+    xhm982 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=kdh488 password=\
+    kdh488 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=nvb245 password=\
+    nvb245 profile=wawan
+add comment=vc-722-08.26.23-wawan limit-uptime=12h name=isj566 password=\
+    isj566 profile=wawan
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=pxv479 password=pxv479 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xcx562 password=xcx562 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=mpj275 password=mpj275 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=asc225 password=asc225 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=kkv465 password=kkv465 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=ddf495 password=ddf495 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=hae259 password=hae259 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xuc848 password=xuc848 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=vrn934 password=vrn934 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=nue892 password=nue892 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=pnu488 password=pnu488 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=gap557 password=gap557 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=ypf628 password=ypf628 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=hne298 password=hne298 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=hfr986 password=hfr986 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=hpd987 password=hpd987 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=fyc245 password=fyc245 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=rwy364 password=rwy364 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=yns893 password=yns893 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=zet942 password=zet942 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=gsz536 password=gsz536 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=ppz584 password=ppz584 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xiz938 password=xiz938 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=sge332 password=sge332 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=nnx355 password=nnx355 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=zct533 password=zct533 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xfa548 password=xfa548 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=rxg999 password=rxg999 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=erh425 password=erh425 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=uwk693 password=uwk693 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=fnj772 password=fnj772 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=rjy522 password=rjy522 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=gup523 password=gup523 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=gdw286 password=gdw286 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=kwz236 password=kwz236 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=rsd786 password=rsd786 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=msb339 password=msb339 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xyz437 password=xyz437 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=wdc847 password=wdc847 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=pgb286 password=pgb286 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=ugr528 password=ugr528 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=vhp666 password=vhp666 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=jxt344 password=jxt344 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=yby654 password=yby654 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=bas623 password=bas623 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=dvp592 password=dvp592 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=zan886 password=zan886 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=ahs925 password=ahs925 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=zjr789 password=zjr789 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=jcw674 password=jcw674 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=dam829 password=dam829 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=csc966 password=csc966 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=jdp485 password=jdp485 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=smw522 password=smw522 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=vwy335 password=vwy335 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=zjv986 password=zjv986 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=fyk827 password=fyk827 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=bvy886 password=bvy886 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xjb845 password=xjb845 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=vmc423 password=vmc423 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xnz599 password=xnz599 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=hga284 password=hga284 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=apn392 password=apn392 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=mek859 password=mek859 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=fjn293 password=fjn293 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=kxz969 password=kxz969 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=vim375 password=vim375 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=myy883 password=myy883 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=gmk387 password=gmk387 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=tne967 password=tne967 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=the279 password=the279 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xvu646 password=xvu646 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=thf263 password=thf263 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=gkf259 password=gkf259 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=nrh648 password=nrh648 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=mdv982 password=mdv982 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=ktz833 password=ktz833 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=vxy458 password=vxy458 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=rfd388 password=rfd388 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=sup564 password=sup564 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=tic523 password=tic523 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=icz585 password=icz585 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=dyw889 password=dyw889 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=vjw658 password=vjw658 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=zgk256 password=zgk256 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=ina787 password=ina787 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=dvs384 password=dvs384 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=kcu948 password=kcu948 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=pjz823 password=pjz823 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=gvc622 password=gvc622 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=rbu994 password=rbu994 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=kvp644 password=kvp644 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=pkn456 password=pkn456 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=aka772 password=aka772 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=szi986 password=szi986 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=xuy926 password=xuy926 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=emp827 password=emp827 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=mjc624 password=mjc624 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=hez659 password=hez659 \
+    profile=dian
+add comment=vc-536-08.27.23-dian limit-uptime=8h name=zyh922 password=zyh922 \
+    profile=dian
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=mgz643 password=mgz643 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=rum624 password=rum624 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=vty739 password=vty739 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ash535 password=ash535 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=wkg394 password=wkg394 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=kej585 password=kej585 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=xzx634 password=xzx634 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ifd374 password=ifd374 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=hei296 password=hei296 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=pxc494 password=pxc494 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=geh642 password=geh642 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ngd783 password=ngd783 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=fsx494 password=fsx494 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ukc679 password=ukc679 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=xkj222 password=xkj222 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=bhv269 password=bhv269 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=fmv924 password=fmv924 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=nps375 password=nps375 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=aax326 password=aax326 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=gih249 password=gih249 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=jkm676 password=jkm676 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ahz454 password=ahz454 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=dvw623 password=dvw623 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=rpv528 password=rpv528 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=bzr645 password=bzr645 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=xyh648 password=xyh648 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ywn873 password=ywn873 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=bxs753 password=bxs753 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=fgj656 password=fgj656 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=nzd479 password=nzd479 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=rty589 password=rty589 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ewf799 password=ewf799 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=vvp643 password=vvp643 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ujp935 password=ujp935 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=fpw239 password=fpw239 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=akg886 password=akg886 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=vni576 password=vni576 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=pih776 password=pih776 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=fvm774 password=fvm774 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=uya759 password=uya759 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=bdp464 password=bdp464 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=rdp923 password=rdp923 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=jwu464 password=jwu464 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=vpn522 password=vpn522 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=agz556 password=agz556 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=vfb582 password=vfb582 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=svi588 password=svi588 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=xux622 password=xux622 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=hkp256 password=hkp256 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=svb593 password=svb593 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=ucd842 password=ucd842 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=mtp734 password=mtp734 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=chy359 password=chy359 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=geg575 password=geg575 \
+    profile=agus
+add comment=vc-524-08.27.23-agus limit-uptime=8h name=rma835 password=rma835 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=gjr886 password=gjr886 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=egm238 password=egm238 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=cjt457 password=cjt457 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=mmn659 password=mmn659 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=arv822 password=arv822 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=izk655 password=izk655 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=ant579 password=ant579 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=gne295 password=gne295 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=pvz398 password=pvz398 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=vdu245 password=vdu245 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=utt349 password=utt349 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=aay975 password=aay975 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=uwi276 password=uwi276 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=vkv834 password=vkv834 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=pmp455 password=pmp455 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=gkh849 password=gkh849 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=ncb598 password=ncb598 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=vxd325 password=vxd325 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=acw835 password=acw835 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=vvx763 password=vvx763 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=cwv494 password=cwv494 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=jbn256 password=jbn256 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=kjv243 password=kjv243 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=gus467 password=gus467 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=dpw697 password=dpw697 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=enu778 password=enu778 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=nkx455 password=nkx455 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=bgi995 password=bgi995 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=rxg343 password=rxg343 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=pii892 password=pii892 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=fyr427 password=fyr427 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=vkp482 password=vkp482 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=dws783 password=dws783 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=prn662 password=prn662 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=uzi755 password=uzi755 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=iut985 password=iut985 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=rie655 password=rie655 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=jwd292 password=jwd292 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=cvk625 password=cvk625 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=mkz438 password=mkz438 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=ngd444 password=ngd444 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=tpr776 password=tpr776 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=zfa278 password=zfa278 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=dff728 password=dff728 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=hhv549 password=hhv549 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=kfz822 password=kfz822 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=imt892 password=imt892 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=pbt888 password=pbt888 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=pyk982 password=pyk982 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=efp367 password=efp367 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=pce898 password=pce898 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=pzh346 password=pzh346 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=cej389 password=cej389 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=pmd858 password=pmd858 \
+    profile=agus
+add comment=vc-928-08.27.23-agus limit-uptime=8h name=yjb763 password=yjb763 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=gkb855 password=gkb855 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=zhy393 password=zhy393 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=fde889 password=fde889 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=kxe667 password=kxe667 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=jgw483 password=jgw483 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=ips475 password=ips475 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=egw254 password=egw254 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=bbk726 password=bbk726 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=bcw933 password=bcw933 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=uex683 password=uex683 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=wrs269 password=wrs269 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=rcc373 password=rcc373 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=epa742 password=epa742 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=fsv378 password=fsv378 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=cmi262 password=cmi262 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=arf775 password=arf775 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=vwv838 password=vwv838 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=nkb456 password=nkb456 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=fwv739 password=fwv739 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=azf256 password=azf256 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=ikh682 password=ikh682 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=tdh929 password=tdh929 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=teg542 password=teg542 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=tde596 password=tde596 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=iks779 password=iks779 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=npe744 password=npe744 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=avt256 password=avt256 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=txu683 password=txu683 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=vbm438 password=vbm438 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=cmi898 password=cmi898 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=zvm839 password=zvm839 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=aee886 password=aee886 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=prk638 password=prk638 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=wbn489 password=wbn489 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=zpk697 password=zpk697 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=vzn244 password=vzn244 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=acf843 password=acf843 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=kdf422 password=kdf422 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=egd534 password=egd534 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=cyj636 password=cyj636 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=fkx955 password=fkx955 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=iza532 password=iza532 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=kni266 password=kni266 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=dxd228 password=dxd228 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=gin483 password=gin483 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=dws875 password=dws875 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=kah238 password=kah238 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=mxa238 password=mxa238 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=aua956 password=aua956 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=uwn363 password=uwn363 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=kay597 password=kay597 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=fun982 password=fun982 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=yfk895 password=yfk895 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=api897 password=api897 \
+    profile=agus
+add comment=vc-332-08.27.23-agus limit-uptime=8h name=vae522 password=vae522 \
+    profile=agus
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=neb465 password=neb465 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cwe965 password=cwe965 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gae895 password=gae895 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=irx378 password=irx378 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=npz323 password=npz323 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mde734 password=mde734 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ect779 password=ect779 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=web688 password=web688 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vwr655 password=vwr655 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zuy375 password=zuy375 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vbc374 password=vbc374 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zav576 password=zav576 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jus495 password=jus495 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xnh848 password=xnh848 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xdh332 password=xdh332 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=uae586 password=uae586 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yff558 password=yff558 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rmt248 password=rmt248 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zem355 password=zem355 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=dis386 password=dis386 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ctj247 password=ctj247 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vkj529 password=vkj529 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jup737 password=jup737 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=pug837 password=pug837 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zib867 password=zib867 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rnc282 password=rnc282 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kcz285 password=kcz285 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zyc525 password=zyc525 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=une683 password=une683 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ezk878 password=ezk878 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jva639 password=jva639 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vvc557 password=vvc557 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yhz543 password=yhz543 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fax697 password=fax697 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kwe986 password=kwe986 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yef477 password=yef477 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ast745 password=ast745 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zwv798 password=zwv798 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=amc449 password=amc449 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=awr424 password=awr424 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rgh375 password=rgh375 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=nge929 password=nge929 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fgs857 password=fgs857 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ayy893 password=ayy893 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xdh237 password=xdh237 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=bdh768 password=bdh768 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mcs727 password=mcs727 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mwz483 password=mwz483 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ypp736 password=ypp736 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gii537 password=gii537 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wzh938 password=wzh938 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vvi882 password=vvi882 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wrg635 password=wrg635 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kpv733 password=kpv733 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fwc497 password=fwc497 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=dch785 password=dch785 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cfv995 password=cfv995 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ypc826 password=ypc826 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mak327 password=mak327 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kdb463 password=kdb463 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jdm852 password=jdm852 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mss894 password=mss894 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=swe477 password=swe477 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gxv277 password=gxv277 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fnm274 password=fnm274 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kuw938 password=kuw938 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mrd594 password=mrd594 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wch299 password=wch299 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vyj626 password=vyj626 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ycv684 password=ycv684 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cxj788 password=cxj788 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wse532 password=wse532 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xmk329 password=xmk329 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ppt896 password=ppt896 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mdm934 password=mdm934 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vcg855 password=vcg855 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xkf596 password=xkf596 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jgb597 password=jgb597 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ggd878 password=ggd878 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=dky876 password=dky876 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=hzz447 password=hzz447 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=nxa873 password=nxa873 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=tub868 password=tub868 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fts975 password=fts975 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=sjd863 password=sjd863 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=uss649 password=uss649 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ika927 password=ika927 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=sxr365 password=sxr365 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vdt799 password=vdt799 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=bfz545 password=bfz545 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ege954 password=ege954 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jwd645 password=jwd645 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zuc256 password=zuc256 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=bne972 password=bne972 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=waz673 password=waz673 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=nfk623 password=nfk623 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cyg487 password=cyg487 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=baa283 password=baa283 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=pef388 password=pef388 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=dzd382 password=dzd382 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=veh776 password=veh776 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cus757 password=cus757 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=utt993 password=utt993 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fbp774 password=fbp774 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rae472 password=rae472 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=tnp759 password=tnp759 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=stx882 password=stx882 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=acw762 password=acw762 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=hzs967 password=hzs967 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=akk335 password=akk335 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=iwi734 password=iwi734 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=aum289 password=aum289 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cdw775 password=cdw775 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zpy268 password=zpy268 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vpe992 password=vpe992 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ryk947 password=ryk947 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=bdx878 password=bdx878 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rwp265 password=rwp265 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=hfs447 password=hfs447 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yad348 password=yad348 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=epv394 password=epv394 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vrd235 password=vrd235 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kku924 password=kku924 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wpe349 password=wpe349 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mxv427 password=mxv427 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yvu733 password=yvu733 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jtu747 password=jtu747 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jgv256 password=jgv256 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wzb776 password=wzb776 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=bjn877 password=bjn877 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kct952 password=kct952 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jhz976 password=jhz976 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gdv379 password=gdv379 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kev272 password=kev272 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=pwn353 password=pwn353 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yrk363 password=yrk363 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ife686 password=ife686 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kzn879 password=kzn879 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=bxs344 password=bxs344 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ewg893 password=ewg893 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=dae324 password=dae324 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gph973 password=gph973 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=eud448 password=eud448 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vrx686 password=vrx686 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yaj222 password=yaj222 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=irw495 password=irw495 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xvp593 password=xvp593 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cew855 password=cew855 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vky527 password=vky527 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vpc328 password=vpc328 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fgv657 password=fgv657 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ccm997 password=ccm997 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=evs794 password=evs794 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ddz962 password=ddz962 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rkk623 password=rkk623 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fdr957 password=fdr957 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gff868 password=gff868 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gyz772 password=gyz772 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=pde283 password=pde283 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cwe466 password=cwe466 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=htj324 password=htj324 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cvn358 password=cvn358 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ibb384 password=ibb384 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=nss758 password=nss758 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yrv354 password=yrv354 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wjr635 password=wjr635 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gtw367 password=gtw367 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mxb954 password=mxb954 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xye497 password=xye497 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fvy538 password=fvy538 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=igx697 password=igx697 \
+    profile=wati
+add comment="sep/29/2023 12:41:17" limit-uptime=8h name=rra534 password=\
+    rra534 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=eph747 password=eph747 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=njp934 password=njp934 \
+    profile=wati
+add comment="oct/02/2023 00:16:16" limit-uptime=8h name=vic385 password=\
+    vic385 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mdt775 password=mdt775 \
+    profile=wati
+add comment="sep/29/2023 13:43:18" limit-uptime=8h name=sng575 password=\
+    sng575 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=dga577 password=dga577 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wcw365 password=wcw365 \
+    profile=wati
+add comment="oct/01/2023 19:47:33" limit-uptime=8h name=kjy927 password=\
+    kjy927 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vea637 password=vea637 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fdf979 password=fdf979 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rzi234 password=rzi234 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gap692 password=gap692 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jvb823 password=jvb823 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=tpc332 password=tpc332 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=azv456 password=azv456 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jfs323 password=jfs323 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=tca683 password=tca683 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=udb944 password=udb944 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=pts846 password=pts846 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vuj263 password=vuj263 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yjh888 password=yjh888 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=uyr458 password=uyr458 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ith564 password=ith564 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xia983 password=xia983 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=cfp866 password=cfp866 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=unr762 password=unr762 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wcn434 password=wcn434 \
+    profile=wati
+add comment="sep/30/2023 16:10:49" limit-uptime=8h name=auz725 password=\
+    auz725 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=uyg853 password=uyg853 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=bwd598 password=bwd598 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=idx472 password=idx472 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=uyx553 password=uyx553 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vwz377 password=vwz377 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=khf578 password=khf578 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=sge323 password=sge323 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zfz955 password=zfz955 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=nra726 password=nra726 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jup466 password=jup466 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=sdw369 password=sdw369 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vgv472 password=vgv472 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=juh758 password=juh758 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xub896 password=xub896 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=gaw229 password=gaw229 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=hcs279 password=hcs279 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=vdw879 password=vdw879 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=icr585 password=icr585 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=kzz762 password=kzz762 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fmk453 password=fmk453 \
+    profile=wati
+add comment="sep/29/2023 23:43:53" limit-uptime=8h name=tpr585 password=\
+    tpr585 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=djx634 password=djx634 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=eyd364 password=eyd364 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zgf795 password=zgf795 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=ncz486 password=ncz486 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=wfc497 password=wfc497 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=mca835 password=mca835 \
+    profile=wati
+add comment="oct/02/2023 06:31:31" limit-uptime=8h name=mrb335 password=\
+    mrb335 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rvm625 password=rvm625 \
+    profile=wati
+add comment="oct/02/2023 19:25:29" limit-uptime=8h name=gxe736 password=\
+    gxe736 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=xji346 password=xji346 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=yms282 password=yms282 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=fcv772 password=fcv772 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=bng763 password=bng763 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rkb447 password=rkb447 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=tck875 password=tck875 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=sbg956 password=sbg956 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=agy969 password=agy969 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=zva778 password=zva778 \
+    profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=jks886 password=jks886 \
+    profile=wati
+add comment="oct/01/2023 00:32:27" limit-uptime=8h name=jsd797 password=\
+    jsd797 profile=wati
+add comment="sep/30/2023 12:41:52" limit-uptime=8h name=vsr564 password=\
+    vsr564 profile=wati
+add comment="oct/01/2023 15:25:26" limit-uptime=8h name=kux424 password=\
+    kux424 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=dbm853 password=dbm853 \
+    profile=wati
+add comment="sep/29/2023 09:22:51" limit-uptime=8h name=gdm859 password=\
+    gdm859 profile=wati
+add comment="oct/01/2023 13:00:12" limit-uptime=8h name=paa425 password=\
+    paa425 profile=wati
+add comment="oct/01/2023 23:53:20" limit-uptime=8h name=kdu226 password=\
+    kdu226 profile=wati
+add comment="sep/30/2023 13:49:37" limit-uptime=8h name=tif524 password=\
+    tif524 profile=wati
+add comment=vc-800-08.27.23-wati limit-uptime=8h name=rvx285 password=rvx285 \
+    profile=wati
+add comment="oct/03/2023 01:48:58" limit-uptime=8h name=efr223 password=\
+    efr223 profile=wati
+add comment="oct/01/2023 10:19:34" limit-uptime=12h name=zfe868 password=\
+    zfe868 profile=witno-12jam
+add comment="oct/01/2023 15:18:02" limit-uptime=12h name=bsc635 password=\
+    bsc635 profile=witno-12jam
+add comment="oct/01/2023 16:14:13" limit-uptime=12h name=msg529 password=\
+    msg529 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=nue979 password=\
+    nue979 profile=witno-12jam
+add comment="oct/01/2023 18:38:28" limit-uptime=12h name=der768 password=\
+    der768 profile=witno-12jam
+add comment="oct/02/2023 09:16:04" limit-uptime=12h name=dbc225 password=\
+    dbc225 profile=witno-12jam
+add comment="oct/02/2023 12:54:43" limit-uptime=12h name=xss227 password=\
+    xss227 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=jxm952 password=\
+    jxm952 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=znr468 password=\
+    znr468 profile=witno-12jam
+add comment="oct/02/2023 18:11:33" limit-uptime=12h name=yyt724 password=\
+    yyt724 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=btc367 password=\
+    btc367 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=vkv934 password=\
+    vkv934 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=atg489 password=\
+    atg489 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=swr642 password=\
+    swr642 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=vsg949 password=\
+    vsg949 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=upw274 password=\
+    upw274 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=eug947 password=\
+    eug947 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=sep685 password=\
+    sep685 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=vfz869 password=\
+    vfz869 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=hyg352 password=\
+    hyg352 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ymj474 password=\
+    ymj474 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=gmf737 password=\
+    gmf737 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=hgg294 password=\
+    hgg294 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ayy279 password=\
+    ayy279 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=iwc965 password=\
+    iwc965 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=hif836 password=\
+    hif836 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=auv586 password=\
+    auv586 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=hnt375 password=\
+    hnt375 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ama452 password=\
+    ama452 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=zzc478 password=\
+    zzc478 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=tus558 password=\
+    tus558 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=khg232 password=\
+    khg232 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=fzm256 password=\
+    fzm256 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=fuz534 password=\
+    fuz534 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ipn888 password=\
+    ipn888 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=wcz927 password=\
+    wcz927 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=bei742 password=\
+    bei742 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=rae458 password=\
+    rae458 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=pxv978 password=\
+    pxv978 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=pkw435 password=\
+    pkw435 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=vzu975 password=\
+    vzu975 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=nia643 password=\
+    nia643 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=bec246 password=\
+    bec246 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=htm623 password=\
+    htm623 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=jzp548 password=\
+    jzp548 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=uvt329 password=\
+    uvt329 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=rzw855 password=\
+    rzw855 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ddb845 password=\
+    ddb845 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=yfv977 password=\
+    yfv977 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=fdz555 password=\
+    fdz555 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=jwe249 password=\
+    jwe249 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=cki694 password=\
+    cki694 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=nmm696 password=\
+    nmm696 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ffj786 password=\
+    ffj786 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=mwz373 password=\
+    mwz373 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=svc764 password=\
+    svc764 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=wft738 password=\
+    wft738 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=hhy338 password=\
+    hhy338 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=vje662 password=\
+    vje662 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=gtz425 password=\
+    gtz425 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=tca885 password=\
+    tca885 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=vsp247 password=\
+    vsp247 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ktv342 password=\
+    ktv342 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=wfz398 password=\
+    wfz398 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ubv992 password=\
+    ubv992 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=izy996 password=\
+    izy996 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ysv357 password=\
+    ysv357 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=drw796 password=\
+    drw796 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ips595 password=\
+    ips595 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=aci488 password=\
+    aci488 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=zea832 password=\
+    zea832 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=ctg889 password=\
+    ctg889 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=cyt769 password=\
+    cyt769 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=kxy992 password=\
+    kxy992 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=cfd322 password=\
+    cfd322 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=fjm743 password=\
+    fjm743 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=bsy352 password=\
+    bsy352 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=pmu596 password=\
+    pmu596 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=xfk848 password=\
+    xfk848 profile=witno-12jam
+add comment=vc-706-08.30.23-witno limit-uptime=12h name=mby264 password=\
+    mby264 profile=witno-12jam
 /ip route
 add comment=isp1 distance=1 gateway=192.168.18.1 routing-mark=ether1
 add comment=isp1>isp2 distance=2 gateway=192.168.23.1 routing-mark=ether1
@@ -6317,202 +6774,426 @@ add interval=1d name=#wajib on-event="/system script run ##pemakaian-bw\r\
     \n\r\
     \n/system script run #####backup-router-email&ftp\r\
     \n\r\
-    \n/system script run ##clear-dns&log" policy=\
+    \n/system script run ##clear-dns&log\r\
+    \n\r\
+    \n/system script run #update-speedtest" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    start-date=sep/03/2021 start-time=04:23:00
+    start-date=jan/01/2023 start-time=04:23:00
 add interval=4w name=###restart-tiap-00-hari on-event="/system reboot" \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     start-date=jan/01/2023 start-time=04:24:55
-add interval=1m name="~ping isp2" on-event=":local intisp \"ether2\"\r\
+add interval=2m name="~ping isp2" on-event=":local intisp \"ether2\"\r\
     \n:local namaisp \"isp2\"\r\
     \n\r\
     \n:local time [/system clock get time]\r\
-    \n:local error \"     \$namaisp mati \$time -\"\r\
-    \n:local aman \"     \$namaisp nyala \$time -\"\r\
+    \n:local error \"    \$namaisp mati \$time -\"\r\
+    \n:local aman \"    \$namaisp nyala \$time -\"\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.1 count=3 ] = 0) do\
+    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.8.8 count=3 ] = 0) do\
     ={\r\
-    \nlog error (\"\$error 1.0.0.1\")\r\
+    \nlog error (\"\$error 8.8.8.8 GOOGLE\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 1.0.0.1\")\r\
+    \n#log warning (\"\$aman 8.8.8.8 GOOGLE\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.4.4 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 8.8.4.4 GOOGLE\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 8.8.4.4 GOOGLE\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.1 count=3 ] = 0) do\
     ={\r\
-    \nlog error (\"\$error 1.1.1.1\")\r\
+    \nlog error (\"\$error 1.1.1.1 CLOUDFLARE\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 1.1.1.1\")\r\
+    \n#log warning (\"\$aman 1.1.1.1 CLOUDFLARE\")\r\
     \n};\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.4.4 count=3 ] = 0) do\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.1 count=3 ] = 0) do\
     ={\r\
-    \nlog error (\"\$error 8.8.4.4\")\r\
+    \nlog error (\"\$error 1.0.0.1 CLOUDFLARE\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 8.8.4.4\")\r\
+    \n#log warning (\"\$aman 1.0.0.1 CLOUDFLARE\")\r\
     \n};\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.4.4 count=3 ] = 0) do\
+    \n#:if ([/ping routing-table=\"\$intisp\" address=1.1.1.2 count=3 ] = 0) d\
+    o={\r\
+    \n#log error (\"\$error 1.1.1.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n#} else={\r\
+    \n##log warning (\"\$aman 1.1.1.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n#};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.2 count=3 ] = 0) do\
     ={\r\
-    \nlog error (\"\$error 8.8.4.4\")\r\
+    \nlog error (\"\$error 1.0.0.2 CLOUDFLARE Malware Blocking Only\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 8.8.4.4\")\r\
+    \n#log warning (\"\$aman 1.0.0.2 CLOUDFLARE Malware Blocking Only\")\r\
     \n};\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.10 count=3 ] = 0) d\
-    o={\r\
-    \nlog error (\"\$error 9.9.9.10\")\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.3 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.1.1.3 CLOUDFLARE Malware and Adult Content Blocki\
+    ng Together\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 9.9.9.10\")\r\
+    \n#log warning (\"\$aman 1.1.1.3 CLOUDFLARE Malware and Adult Content Bloc\
+    king Together\")\r\
     \n};\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.11 count=3 ] = 0) d\
-    o={\r\
-    \nlog error (\"\$error 9.9.9.11\")\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.3 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.0.0.3 CLOUDFLARE Malware and Adult Content Blocki\
+    ng Together\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 9.9.9.11\")\r\
+    \n#log warning (\"\$aman 1.0.0.3 CLOUDFLARE Malware and Adult Content Bloc\
+    king Together\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.9 count=3 ] = 0) do\
     ={\r\
-    \nlog error (\"\$error 9.9.9.9\")\r\
+    \nlog error (\"\$error 9.9.9.9 QUAD 9\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 9.9.9.9\")\r\
+    \n#log warning (\"\$aman 9.9.9.9 QUAD 9\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.112 count=3 ]\
     \_= 0) do={\r\
-    \nlog error (\"\$error 149.112.112.112\")\r\
+    \nlog error (\"\$error 149.112.112.112 QUAD 9\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 149.112.112.112\")\r\
+    \n#log warning (\"\$aman 149.112.112.112 QUAD 9\")\r\
     \n};\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.220 count=3 ] \
-    = 0) do={\r\
-    \nlog error (\"\$error 208.67.220.220\")\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.11 count=3 ] = 0) d\
+    o={\r\
+    \nlog error (\"\$error 9.9.9.11 QUAD 9 Secured ECS: Malware blocking, DNSS\
+    EC Validation\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 208.67.220.220\")\r\
+    \n#log warning (\"\$aman 9.9.9.11 QUAD 9 Secured ECS: Malware blocking, DN\
+    SSEC Validation\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.11 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 149.112.112.11 QUAD 9 Secured ECS: Malware blocking\
+    , DNSSEC Validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 149.112.112.11 QUAD 9 Secured ECS: Malware blocki\
+    ng, DNSSEC Validation\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.10 count=3 ] = 0) d\
+    o={\r\
+    \nlog error (\"\$error 9.9.9.10 QUAD 9 Unsecured: No Malware blocking, no \
+    DNSSEC validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 9.9.9.10 QUAD 9 Unsecured: No Malware blocking, n\
+    o DNSSEC validation\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.10 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 149.112.112.10 QUAD 9 Unsecured: No Malware blockin\
+    g, no DNSSEC validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 149.112.112.10 QUAD 9 Unsecured: No Malware block\
+    ing, no DNSSEC validation\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=208.67.222.222 count=3 ] \
     = 0) do={\r\
-    \nlog error (\"\$error 208.67.222.222\")\r\
+    \nlog error (\"\$error 208.67.222.222 OpenDNS\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 208.67.222.222\")\r\
+    \n#log warning (\"\$aman 208.67.222.222 OpenDNS\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.220 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.220.220 OpenDNS\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.220.220 OpenDNS\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.222.123 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.222.123 OpenDNS FamilyShield\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.222.123 OpenDNS FamilyShield\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.123 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.220.123 OpenDNS FamilyShield\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.220.123 OpenDNS FamilyShield\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.14 count=3 ] = \
     0) do={\r\
-    \nlog error (\"\$error 94.140.14.14\")\r\
+    \nlog error (\"\$error 94.140.14.14 AdGuard\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 94.140.14.14\")\r\
+    \n#log warning (\"\$aman 94.140.14.14 AdGuard\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.15.15 count=3 ] = \
+    0) do={\r\
+    \nlog error (\"\$error 94.140.15.15 AdGuard\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.15.15 AdGuard\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.140 count=3 ] =\
+    \_0) do={\r\
+    \nlog error (\"\$error 94.140.14.140 AdGuard Non-filtering\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.140 AdGuard Non-filtering\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.141 count=3 ] =\
+    \_0) do={\r\
+    \nlog error (\"\$error 94.140.14.141 AdGuard Non-filtering\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.141 AdGuard Non-filtering\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.15 count=3 ] = \
     0) do={\r\
-    \nlog error (\"\$error 94.140.14.15\")\r\
+    \nlog error (\"\$error 94.140.14.15 AdGuard Family protection\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 94.140.14.15\")\r\
+    \n#log warning (\"\$aman 94.140.14.15 AdGuard Family protection\")\r\
     \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.15.16 count=3 ] = \
+    0) do={\r\
+    \nlog error (\"\$error 94.140.15.16 AdGuard Family protection\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.15.16 AdGuard Family protection\")\r\
+    \n};\r\
+    \n\r\
+    \n#:if ([/ping routing-table=\"\$intisp\" address=77.88.8.1 count=3 ] = 0)\
+    \_do={\r\
+    \n#log error (\"\$error 77.88.8.1 Yandex\")\r\
+    \n#} else={\r\
+    \n##log warning (\"\$aman 77.88.8.1 Yandex\")\r\
+    \n#};\r\
+    \n\r\
+    \n#:if ([/ping routing-table=\"\$intisp\" address=77.88.8.8 count=3 ] = 0)\
+    \_do={\r\
+    \n#log error (\"\$error 77.88.8.8 Yandex\")\r\
+    \n#} else={\r\
+    \n##log warning (\"\$aman 77.88.8.8 Yandex\")\r\
+    \n#};\r\
+    \n\r\
     \n\r\
     \n#:delay 1s;\r\
     \n#log info message=\"\$namaisp batasssss\"" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    start-date=apr/11/2022 start-time=17:31:44
-add interval=1m name="~ping isp1" on-event=":local intisp \"ether1\"\r\
+    start-date=jan/01/2023 start-time=17:32:44
+add interval=2m name="~ping isp1" on-event=":local intisp \"ether1\"\r\
     \n:local namaisp \"isp1\"\r\
     \n\r\
     \n:local time [/system clock get time]\r\
     \n:local error \"\$namaisp mati \$time -\"\r\
     \n:local aman \"\$namaisp nyala \$time -\"\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.1 count=3 ] = 0) do\
+    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.8.8 count=3 ] = 0) do\
     ={\r\
-    \nlog error (\"\$error 1.0.0.1\")\r\
+    \nlog error (\"\$error 8.8.8.8 GOOGLE\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 1.0.0.1\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.1 count=3 ] = 0) do\
-    ={\r\
-    \nlog error (\"\$error 1.1.1.1\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 1.1.1.1\")\r\
+    \n#log warning (\"\$aman 8.8.8.8 GOOGLE\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=8.8.4.4 count=3 ] = 0) do\
     ={\r\
-    \nlog error (\"\$error 8.8.4.4\")\r\
+    \nlog error (\"\$error 8.8.4.4 GOOGLE\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 8.8.4.4\")\r\
+    \n#log warning (\"\$aman 8.8.4.4 GOOGLE\")\r\
     \n};\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.8.8 count=3 ] = 0) do\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.1 count=3 ] = 0) do\
     ={\r\
-    \nlog error (\"\$error 8.8.8.8\")\r\
+    \nlog error (\"\$error 1.1.1.1 CLOUDFLARE\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 8.8.8.8\")\r\
+    \n#log warning (\"\$aman 1.1.1.1 CLOUDFLARE\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.1 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.0.0.1 CLOUDFLARE\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.0.0.1 CLOUDFLARE\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.2 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.1.1.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.1.1.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.2 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.0.0.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.0.0.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.3 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.1.1.3 CLOUDFLARE Malware and Adult Content Blocki\
+    ng Together\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.1.1.3 CLOUDFLARE Malware and Adult Content Bloc\
+    king Together\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.3 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.0.0.3 CLOUDFLARE Malware and Adult Content Blocki\
+    ng Together\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.0.0.3 CLOUDFLARE Malware and Adult Content Bloc\
+    king Together\")\r\
+    \n};\r\
+    \n\r\
+    \n#:if ([/ping routing-table=\"\$intisp\" address=9.9.9.9 count=3 ] = 0) d\
+    o={\r\
+    \n#log error (\"\$error 9.9.9.9 QUAD 9\")\r\
+    \n#} else={\r\
+    \n##log warning (\"\$aman 9.9.9.9 QUAD 9\")\r\
+    \n#};\r\
+    \n\r\
+    \n#:if ([/ping routing-table=\"\$intisp\" address=149.112.112.112 count=3 \
+    ] = 0) do={\r\
+    \n#log error (\"\$error 149.112.112.112 QUAD 9\")\r\
+    \n#} else={\r\
+    \n##log warning (\"\$aman 149.112.112.112 QUAD 9\")\r\
+    \n#};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.11 count=3 ] = 0) d\
+    o={\r\
+    \nlog error (\"\$error 9.9.9.11 QUAD 9 Secured ECS: Malware blocking, DNSS\
+    EC Validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 9.9.9.11 QUAD 9 Secured ECS: Malware blocking, DN\
+    SSEC Validation\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.11 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 149.112.112.11 QUAD 9 Secured ECS: Malware blocking\
+    , DNSSEC Validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 149.112.112.11 QUAD 9 Secured ECS: Malware blocki\
+    ng, DNSSEC Validation\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.10 count=3 ] = 0) d\
     o={\r\
-    \nlog error (\"\$error 9.9.9.10\")\r\
+    \nlog error (\"\$error 9.9.9.10 QUAD 9 Unsecured: No Malware blocking, no \
+    DNSSEC validation\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 9.9.9.10\")\r\
+    \n#log warning (\"\$aman 9.9.9.10 QUAD 9 Unsecured: No Malware blocking, n\
+    o DNSSEC validation\")\r\
     \n};\r\
     \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.11 count=3 ] = 0) d\
-    o={\r\
-    \nlog error (\"\$error 9.9.9.11\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 9.9.9.11\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.9 count=3 ] = 0) do\
-    ={\r\
-    \nlog error (\"\$error 9.9.9.9\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 9.9.9.9\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.112 count=3 ]\
-    \_= 0) do={\r\
-    \nlog error (\"\$error 149.112.112.112\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 149.112.112.112\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.220 count=3 ] \
+    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.10 count=3 ] \
     = 0) do={\r\
-    \nlog error (\"\$error 208.67.220.220\")\r\
+    \nlog error (\"\$error 149.112.112.10 QUAD 9 Unsecured: No Malware blockin\
+    g, no DNSSEC validation\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 208.67.220.220\")\r\
+    \n#log warning (\"\$aman 149.112.112.10 QUAD 9 Unsecured: No Malware block\
+    ing, no DNSSEC validation\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=208.67.222.222 count=3 ] \
     = 0) do={\r\
-    \nlog error (\"\$error 208.67.222.222\")\r\
+    \nlog error (\"\$error 208.67.222.222 OpenDNS\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 208.67.222.222\")\r\
+    \n#log warning (\"\$aman 208.67.222.222 OpenDNS\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.220 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.220.220 OpenDNS\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.220.220 OpenDNS\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.222.123 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.222.123 OpenDNS FamilyShield\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.222.123 OpenDNS FamilyShield\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.123 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.220.123 OpenDNS FamilyShield\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.220.123 OpenDNS FamilyShield\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.14 count=3 ] = \
     0) do={\r\
-    \nlog error (\"\$error 94.140.14.14\")\r\
+    \nlog error (\"\$error 94.140.14.14 AdGuard\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 94.140.14.14\")\r\
+    \n#log warning (\"\$aman 94.140.14.14 AdGuard\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.15.15 count=3 ] = \
+    0) do={\r\
+    \nlog error (\"\$error 94.140.15.15 AdGuard\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.15.15 AdGuard\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.140 count=3 ] =\
+    \_0) do={\r\
+    \nlog error (\"\$error 94.140.14.140 AdGuard Non-filtering\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.140 AdGuard Non-filtering\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.141 count=3 ] =\
+    \_0) do={\r\
+    \nlog error (\"\$error 94.140.14.141 AdGuard Non-filtering\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.141 AdGuard Non-filtering\")\r\
     \n};\r\
     \n\r\
     \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.15 count=3 ] = \
     0) do={\r\
-    \nlog error (\"\$error 94.140.14.15\")\r\
+    \nlog error (\"\$error 94.140.14.15 AdGuard Family protection\")\r\
     \n} else={\r\
-    \n#log warning (\"\$aman 94.140.14.15\")\r\
+    \n#log warning (\"\$aman 94.140.14.15 AdGuard Family protection\")\r\
     \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.15.16 count=3 ] = \
+    0) do={\r\
+    \nlog error (\"\$error 94.140.15.16 AdGuard Family protection\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.15.16 AdGuard Family protection\")\r\
+    \n};\r\
+    \n\r\
+    \n#:if ([/ping routing-table=\"\$intisp\" address=77.88.8.1 count=3 ] = 0)\
+    \_do={\r\
+    \n#log error (\"\$error 77.88.8.1 Yandex\")\r\
+    \n#} else={\r\
+    \n##log warning (\"\$aman 77.88.8.1 Yandex\")\r\
+    \n#};\r\
+    \n\r\
+    \n#:if ([/ping routing-table=\"\$intisp\" address=77.88.8.8 count=3 ] = 0)\
+    \_do={\r\
+    \n#log error (\"\$error 77.88.8.8 Yandex\")\r\
+    \n#} else={\r\
+    \n##log warning (\"\$aman 77.88.8.8 Yandex\")\r\
+    \n#};\r\
+    \n\r\
     \n\r\
     \n#:delay 1s;\r\
     \n#log info message=\"\$namaisp batasssss\"" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    start-date=apr/11/2022 start-time=17:31:44
+    start-date=jan/01/2023 start-time=17:32:44
 add comment="Monitor Profile evi" interval=2m11s name=evi on-event=":local dat\
     eint do={:local montharray ( \"jan\",\"feb\",\"mar\",\"apr\",\"may\",\"jun\
     \",\"jul\",\"aug\",\"sep\",\"oct\",\"nov\",\"dec\" );:local days [ :pick \
@@ -6657,11 +7338,11 @@ add interval=15m name="\$      auto OFF" on-event="/ip firewall mangle disable\
 add interval=1d name="\$  auto trial on jm set6" on-event="/ip hotspot profile\
     \_set vlan-hotspot login-by=http-chap,mac-cookie,trial" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    start-date=aug/03/2022 start-time=18:30:00
+    start-date=jan/01/2023 start-time=18:30:00
 add interval=1d name="\$ auto trial off jm set9" on-event=\
     "/ip hotspot profile set vlan-hotspot login-by=http-chap,mac-cookie" \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    start-date=aug/03/2022 start-time=20:30:00
+    start-date=jan/01/2023 start-time=20:30:00
 add interval=3m name="~ping vpn1 &vpn2" on-event=":if ([/ping address=10.123.2\
     2.1 count=5 ] = 0) do={\r\
     \nlog error (\"VPN MATI AUTO REKONEK 5 MENIT\")\r\
@@ -6679,7 +7360,7 @@ add interval=3m name="~ping vpn1 &vpn2" on-event=":if ([/ping address=10.123.2\
     \n};\r\
     \n" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    start-time=startup
+    start-date=jan/01/2023 start-time=17:32:44
 /system script
 add dont-require-permissions=no name=#####backup-router-email&ftp owner=\
     mm1rza policy=\
@@ -6745,9 +7426,10 @@ add dont-require-permissions=no name=#ether1 owner=mm1rza policy=\
     \n"
 add dont-require-permissions=no name=~total-lan-DOWN owner=mm1rza policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    23
+    556
 add dont-require-permissions=no name=~total-lan-UP owner=mm1rza policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=1
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    39
 add dont-require-permissions=no name=#ether2 owner=mm1rza policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=":\
     local bot \"1353625910:AAGAPgQZzOh1JL2vN8jWriJs6XR-xInew04\";\r\
@@ -6846,16 +7528,16 @@ add dont-require-permissions=no name=#ether4 owner=mm1rza policy=\
     \n"
 add dont-require-permissions=no name=~total-ether1-isp1-DOWN owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=0
+    source=15
 add dont-require-permissions=no name=~total-ether1-isp1-UP owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=5
+    source=210
 add dont-require-permissions=no name=~total-ether2-isp2-DOWN owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=1
+    source=23
 add dont-require-permissions=no name=~total-ether2-isp2-UP owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    source=19
+    source=356
 add dont-require-permissions=no name=~total-ether3-isp3-DOWN owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     source=0
@@ -6923,7 +7605,8 @@ add dont-require-permissions=no name="!  isp1   OFF" owner=mm1rza policy=\
     \n\r\
     \n/interface enable vpn1\r\
     \n/interface enable vpn2\r\
-    \n/tool netwatch set disabled=no [find comment=\"     VPN 1\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN1 DNS\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN2 REMOTE\"]\r\
     \n\r\
     \n/ip dns cache flush"
 add dont-require-permissions=no name="!   isp1    ON ( AKTIF )" owner=mm1rza \
@@ -6950,7 +7633,9 @@ add dont-require-permissions=no name="!   isp1    ON ( AKTIF )" owner=mm1rza \
     \n\r\
     \n/interface enable vpn1\r\
     \n/interface enable vpn2\r\
-    \n/tool netwatch set disabled=no [find comment=\"     VPN 1\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN1 DNS\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN2 REMOTE\"]\r\
+    \n\r\
     \n\r\
     \n/ip dns cache flush"
 add dont-require-permissions=no name=#ether5 owner=mm1rza policy=\
@@ -7009,7 +7694,8 @@ add dont-require-permissions=no name="!   isp2    ON ( AKTIF )" owner=mm1rza \
     \n\r\
     \n/interface enable vpn1\r\
     \n/interface enable vpn2\r\
-    \n/tool netwatch set disabled=no [find comment=\"     VPN 1\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN1 DNS\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN2 REMOTE\"]\r\
     \n\r\
     \n/ip dns cache flush"
 add dont-require-permissions=no name="!  isp2   OFF" owner=mm1rza policy=\
@@ -7036,7 +7722,8 @@ add dont-require-permissions=no name="!  isp2   OFF" owner=mm1rza policy=\
     \n\r\
     \n/interface enable vpn1\r\
     \n/interface enable vpn2\r\
-    \n/tool netwatch set disabled=no [find comment=\"     VPN 1\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN1 DNS\"]\r\
+    \n/tool netwatch set disabled=no [find comment=\"     VPN2 REMOTE\"]\r\
     \n\r\
     \n/ip dns cache flush"
 add dont-require-permissions=no name=~total-ether5-isp5-DOWN owner=mm1rza \
@@ -7085,1771 +7772,6 @@ add dont-require-permissions=no name=##clear-dns&log owner=mm1rza policy=\
     \n/system logging action set memory memory-lines=1\r\
     \n/system logging action set memory memory-lines=1000\r\
     \n/queue simple remove [ find name ~\"hs-<\" ]"
-add comment=mikhmon dont-require-permissions=no name="jul/20/2023-|-14:15:32-|\
-    -efw684-|-1000-|-172.16.0.104-|-70:DD:A8:52:1A:98-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/20/2023
-add comment=mikhmon dont-require-permissions=no name="jul/20/2023-|-17:44:53-|\
-    -mud664-|-1000-|-172.16.0.48-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/20/2023
-add comment=mikhmon dont-require-permissions=no name="jul/20/2023-|-19:13:11-|\
-    -tuv834-|-1000-|-172.16.2.13-|-CA:BE:E5:26:3F:F8-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/20/2023
-add comment=mikhmon dont-require-permissions=no name="jul/20/2023-|-19:16:05-|\
-    -vzk749-|-1000-|-172.16.2.6-|-9A:9F:DC:03:D8:F2-|-31d-|-nazim-|-vc-579-07.\
-    09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/20/2023
-add comment=mikhmon dont-require-permissions=no name="jul/20/2023-|-19:32:55-|\
-    -zbz583-|-1000-|-172.16.0.113-|-BE:FE:EA:03:19:88-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/20/2023
-add comment=mikhmon dont-require-permissions=no name="jul/21/2023-|-01:53:08-|\
-    -nah493-|-1000-|-172.16.0.48-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/21/2023
-add comment=mikhmon dont-require-permissions=no name="jul/21/2023-|-09:57:01-|\
-    -man724-|-1000-|-172.16.0.129-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/21/2023
-add comment=mikhmon dont-require-permissions=no name="jul/21/2023-|-10:46:23-|\
-    -afi227-|-1000-|-172.16.2.65-|-7E:84:E4:19:0B:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/21/2023
-add comment=mikhmon dont-require-permissions=no name="jul/21/2023-|-13:10:58-|\
-    -spx237-|-1000-|-172.16.0.231-|-02:F6:9D:98:6A:40-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/21/2023
-add comment=mikhmon dont-require-permissions=no name="jul/21/2023-|-14:58:28-|\
-    -sff725-|-1000-|-172.16.1.99-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/21/2023
-add comment=mikhmon dont-require-permissions=no name="jul/21/2023-|-15:45:05-|\
-    -tmm579-|-1000-|-172.16.0.48-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/21/2023
-add comment=mikhmon dont-require-permissions=no name="jul/21/2023-|-23:45:56-|\
-    -aww737-|-1000-|-172.16.0.48-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/21/2023
-add comment=mikhmon dont-require-permissions=no name="jul/22/2023-|-13:35:47-|\
-    -tak697-|-1000-|-172.16.0.104-|-70:DD:A8:52:1A:98-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/22/2023
-add comment=mikhmon dont-require-permissions=no name="jul/22/2023-|-14:42:35-|\
-    -jvz392-|-1000-|-172.16.2.4-|-88:D5:0C:07:21:EA-|-31d-|-nazim-|-vc-579-07.\
-    09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/22/2023
-add comment=mikhmon dont-require-permissions=no name="jul/22/2023-|-14:54:12-|\
-    -vsm957-|-1000-|-172.16.2.171-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/22/2023
-add comment=mikhmon dont-require-permissions=no name="jul/23/2023-|-17:34:18-|\
-    -ddu839-|-1000-|-172.16.0.129-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/23/2023
-add comment=mikhmon dont-require-permissions=no name="jul/23/2023-|-18:36:12-|\
-    -mrc329-|-1000-|-172.16.3.35-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/23/2023
-add comment=mikhmon dont-require-permissions=no name="jul/23/2023-|-19:25:26-|\
-    -usk423-|-1000-|-172.16.3.43-|-E8:50:8B:1A:E3:81-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/23/2023
-add comment=mikhmon dont-require-permissions=no name="jul/23/2023-|-22:04:35-|\
-    -srn454-|-1000-|-172.16.3.62-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/23/2023
-add comment=mikhmon dont-require-permissions=no name="jul/24/2023-|-11:22:06-|\
-    -svy293-|-1000-|-172.16.3.35-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/24/2023
-add comment=mikhmon dont-require-permissions=no name="jul/24/2023-|-13:54:24-|\
-    -msu948-|-1000-|-172.16.1.99-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/24/2023
-add comment=mikhmon dont-require-permissions=no name="jul/24/2023-|-22:30:37-|\
-    -ymv526-|-1000-|-172.16.3.35-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/24/2023
-add comment=mikhmon dont-require-permissions=no name="jul/25/2023-|-11:35:46-|\
-    -jis735-|-1000-|-172.16.3.167-|-9C:F5:31:88:42:E3-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/25/2023
-add comment=mikhmon dont-require-permissions=no name="jul/25/2023-|-12:34:09-|\
-    -nvj258-|-1000-|-172.16.0.113-|-BE:FE:EA:03:19:88-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/25/2023
-add comment=mikhmon dont-require-permissions=no name="jul/25/2023-|-14:40:01-|\
-    -vij499-|-1000-|-172.16.3.190-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-579-0\
-    7.09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/25/2023
-add comment=mikhmon dont-require-permissions=no name="jul/25/2023-|-14:57:17-|\
-    -tek696-|-1000-|-172.16.3.35-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-579-07\
-    .09.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/25/2023
-add comment=mikhmon dont-require-permissions=no name="jul/25/2023-|-15:04:55-|\
-    -uch854-|-1000-|-172.16.0.117-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-673-06\
-    .05.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/25/2023
-add comment=mikhmon dont-require-permissions=no name="jul/25/2023-|-18:39:17-|\
-    -ztf422-|-1000-|-172.16.0.68-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-673-06.\
-    05.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/25/2023
-add comment=mikhmon dont-require-permissions=no name="jul/25/2023-|-20:47:25-|\
-    -fbf439-|-1000-|-172.16.2.236-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/25/2023
-add comment=mikhmon dont-require-permissions=no name="jul/26/2023-|-11:13:36-|\
-    -pia553-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/26/2023
-add comment=mikhmon dont-require-permissions=no name="jul/26/2023-|-11:35:46-|\
-    -pxt924-|-1000-|-172.16.0.117-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/26/2023
-add comment=mikhmon dont-require-permissions=no name="jul/26/2023-|-12:01:54-|\
-    -uni947-|-1000-|-172.16.1.240-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/26/2023
-add comment=mikhmon dont-require-permissions=no name="jul/26/2023-|-12:37:24-|\
-    -kfp568-|-1000-|-172.16.0.105-|-08:7F:98:B3:29:A1-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/26/2023
-add comment=mikhmon dont-require-permissions=no name="jul/26/2023-|-13:53:16-|\
-    -ccp597-|-1000-|-172.16.3.116-|-74:C1:7D:98:0B:EC-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/26/2023
-add comment=mikhmon dont-require-permissions=no name="jul/26/2023-|-19:07:22-|\
-    -mfm875-|-1000-|-172.16.3.35-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/26/2023
-add comment=mikhmon dont-require-permissions=no name="jul/26/2023-|-20:20:29-|\
-    -gck976-|-1000-|-172.16.2.197-|-F0:79:E8:1E:C6:1D-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/26/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-06:15:45-|\
-    -fzr843-|-1000-|-172.16.3.129-|-9A:9F:DC:03:D8:F2-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-10:51:58-|\
-    -emg754-|-1000-|-172.16.0.144-|-5E:77:A0:30:9F:A0-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-13:43:10-|\
-    -vjh522-|-1000-|-172.16.1.92-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-15:05:35-|\
-    -gwd679-|-1000-|-172.16.0.65-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-15:20:10-|\
-    -ixf836-|-1000-|-172.16.0.45-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-16:33:19-|\
-    -yjw297-|-1000-|-172.16.0.176-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-17:20:45-|\
-    -pna648-|-1000-|-172.16.2.236-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-18:04:15-|\
-    -iee983-|-1000-|-172.16.0.132-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-18:07:06-|\
-    -rwm874-|-1000-|-172.16.0.112-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-18:11:37-|\
-    -rgs978-|-1000-|-172.16.0.105-|-08:7F:98:B3:29:A1-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-19:04:41-|\
-    -dnu638-|-1000-|-172.16.0.42-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-19:18:19-|\
-    -zcm567-|-1000-|-172.16.0.221-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-19:20:55-|\
-    -bvx677-|-1000-|-172.16.0.57-|-46:B2:E1:E8:73:99-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-19:38:37-|\
-    -vbd878-|-1000-|-172.16.0.113-|-BE:FE:EA:03:19:88-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-19:42:40-|\
-    -buk535-|-1000-|-172.16.0.77-|-F4:60:E2:25:F5:52-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-19:43:30-|\
-    -ujm567-|-1000-|-172.16.0.68-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-20:04:34-|\
-    -thb783-|-1000-|-172.16.0.95-|-92:F3:B9:F1:CE:F0-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-20:20:58-|\
-    -zdv352-|-1000-|-172.16.0.134-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/27/2023-|-20:48:41-|\
-    -wam565-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/27/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-09:40:51-|\
-    -uis256-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-10:29:48-|\
-    -mad479-|-1000-|-172.16.0.87-|-C4:E1:A1:F9:80:11-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-10:49:57-|\
-    -dht484-|-1000-|-172.16.0.94-|-84:6F:CE:2D:A5:E5-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-11:00:04-|\
-    -ngv872-|-1000-|-172.16.0.98-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-11:04:40-|\
-    -gxz464-|-1000-|-172.16.0.99-|-76:5D:AD:43:D9:0A-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-11:45:32-|\
-    -spc365-|-1000-|-172.16.0.93-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-13:43:12-|\
-    -bhh529-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-15:16:15-|\
-    -whz778-|-1000-|-172.16.0.38-|-9C:6B:72:A3:4D:D3-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-19:15:05-|\
-    -azj427-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-20:45:38-|\
-    -mts299-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/28/2023-|-23:47:16-|\
-    -hgi937-|-1000-|-172.16.0.81-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/28/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-00:19:32-|\
-    -swa949-|-1000-|-172.16.0.213-|-6A:3E:FA:10:BD:93-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-10:33:25-|\
-    -pbv348-|-1000-|-172.16.0.121-|-5A:C7:22:C3:F9:1A-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-10:46:52-|\
-    -esk364-|-1000-|-172.16.0.183-|-CA:8F:1F:CF:F6:E2-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-11:45:48-|\
-    -bys798-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-13:13:31-|\
-    -ebd242-|-1000-|-172.16.0.45-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-14:06:27-|\
-    -dcr473-|-1000-|-172.16.0.248-|-9A:7C:74:3E:74:77-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-14:10:08-|\
-    -uzx378-|-1000-|-172.16.0.40-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-16:16:48-|\
-    -xuw849-|-1000-|-172.16.1.6-|-58:C6:F0:48:5B:C1-|-31d-|-witno-12jam-|-vc-3\
-    45-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-18:15:44-|\
-    -nsz565-|-1000-|-172.16.0.99-|-76:5D:AD:43:D9:0A-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-18:25:57-|\
-    -uwg589-|-1000-|-172.16.0.118-|-DA:0A:39:44:0C:89-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-18:29:31-|\
-    -hdz276-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-18:30:24-|\
-    -csn968-|-1000-|-172.16.1.19-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-18:45:06-|\
-    -vkf945-|-1000-|-172.16.0.152-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-18:55:37-|\
-    -ing749-|-1000-|-172.16.1.24-|-82:25:C8:90:16:19-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-19:29:43-|\
-    -afc229-|-1000-|-172.16.1.31-|-14:47:2D:99:CD:7B-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-20:13:36-|\
-    -hpv848-|-1000-|-172.16.0.62-|-74:C1:7D:98:0B:EC-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-20:27:43-|\
-    -kmb875-|-1000-|-172.16.1.41-|-14:47:2D:9B:F7:E7-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/29/2023-|-20:42:29-|\
-    -dgp669-|-1000-|-172.16.0.251-|-E6:B6:01:DC:5C:F2-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/29/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-07:55:43-|\
-    -aee759-|-1000-|-172.16.0.156-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-09:16:43-|\
-    -why863-|-1000-|-172.16.1.75-|-28:31:66:8E:F1:A1-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-09:28:59-|\
-    -suk895-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-09:40:00-|\
-    -rue943-|-1000-|-172.16.1.72-|-8C:AA:CE:2C:9D:48-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-09:44:44-|\
-    -inz254-|-1000-|-172.16.0.98-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-10:44:32-|\
-    -dfp556-|-1000-|-172.16.1.22-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-11:49:30-|\
-    -yyn967-|-1000-|-172.16.0.38-|-9C:6B:72:A3:4D:D3-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-14:27:55-|\
-    -bhh994-|-1000-|-172.16.0.213-|-6A:3E:FA:10:BD:93-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-16:47:46-|\
-    -wew965-|-1000-|-172.16.0.104-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-18:29:11-|\
-    -jyp875-|-1000-|-172.16.0.87-|-C4:E1:A1:F9:80:11-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-18:55:54-|\
-    -uau978-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-19:39:09-|\
-    -jzv922-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-20:12:10-|\
-    -ywc638-|-1000-|-172.16.1.133-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-21:03:25-|\
-    -rfn433-|-1000-|-172.16.0.106-|-BE:FE:EA:03:19:88-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/30/2023-|-23:28:00-|\
-    -gge395-|-1000-|-172.16.0.149-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/30/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-02:57:35-|\
-    -ayh475-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-10:58:02-|\
-    -pjb867-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-12:27:49-|\
-    -iuk965-|-1000-|-172.16.0.42-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-14:43:58-|\
-    -htk352-|-1000-|-172.16.0.62-|-74:C1:7D:98:0B:EC-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-18:15:17-|\
-    -rpd539-|-1000-|-172.16.0.84-|-4E:00:A2:FD:07:23-|-31d-|-witno-12jam-|-vc-\
-    345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-19:22:35-|\
-    -ane984-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-20:57:14-|\
-    -bee672-|-1000-|-172.16.1.234-|-7E:5C:B0:99:7D:9D-|-31d-|-wawan-|-vc-226-0\
-    6.18.23-wawan" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-21:32:49-|\
-    -cth858-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="jul/31/2023-|-23:12:50-|\
-    -kun599-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=jul2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    jul/31/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-00:34:52-|\
-    -pwr582-|-1000-|-172.16.0.81-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-01:40:42-|\
-    -dce945-|-1000-|-172.16.0.213-|-6A:3E:FA:10:BD:93-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-11:09:27-|\
-    -atw288-|-1000-|-172.16.2.10-|-DE:32:49:A2:E6:6A-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-11:54:09-|\
-    -sfc449-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-11:55:39-|\
-    -xfx339-|-1000-|-172.16.0.98-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-12:36:29-|\
-    -dfh539-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-15:29:56-|\
-    -mff625-|-1000-|-172.16.2.36-|-70:DD:A8:52:1A:98-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-16:00:55-|\
-    -dsr992-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-16:21:31-|\
-    -fsb398-|-1000-|-172.16.0.45-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-18:57:47-|\
-    -dfv836-|-1000-|-172.16.2.55-|-76:5D:AD:43:D9:0A-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-19:39:56-|\
-    -kxd943-|-1000-|-172.16.0.156-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/01/2023-|-22:15:24-|\
-    -ajs759-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/01/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-00:36:22-|\
-    -vpt489-|-1000-|-172.16.0.57-|-28:31:66:74:A9:E5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-07:04:30-|\
-    -tki696-|-1000-|-172.16.2.91-|-7C:03:AB:BF:31:AD-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-10:40:39-|\
-    -vsf595-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-11:31:00-|\
-    -rkw677-|-1000-|-172.16.0.93-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-11:45:03-|\
-    -pat945-|-1000-|-172.16.2.0-|-5A:C7:22:C3:F9:1A-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-13:11:19-|\
-    -pab686-|-1000-|-172.16.2.107-|-1A:49:3A:90:54:8C-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-14:58:23-|\
-    -hut729-|-1000-|-172.16.1.22-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-16:01:55-|\
-    -fdv269-|-1000-|-172.16.0.152-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-16:19:39-|\
-    -ubz687-|-1000-|-172.16.1.75-|-28:31:66:8E:F1:A1-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-16:59:56-|\
-    -dmd568-|-1000-|-172.16.0.104-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-17:08:23-|\
-    -wcs298-|-1000-|-172.16.0.149-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc\
-    -345-07.06.23-witno" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-17:17:34-|\
-    -uew479-|-1000-|-172.16.0.40-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-18:25:44-|\
-    -wdt938-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-19:02:10-|\
-    -vnu966-|-1000-|-172.16.0.90-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-21:34:53-|\
-    -esd624-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-21:49:51-|\
-    -tbg635-|-1000-|-172.16.1.133-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/02/2023-|-23:43:34-|\
-    -kid328-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/02/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-09:47:08-|\
-    -bss369-|-1000-|-172.16.2.55-|-76:5D:AD:43:D9:0A-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-10:22:05-|\
-    -ugw827-|-1000-|-172.16.0.42-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-12:47:54-|\
-    -tzv526-|-1000-|-172.16.2.185-|-08:7F:98:B3:29:A1-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-16:10:18-|\
-    -fkp337-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-17:43:22-|\
-    -jip327-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-18:29:26-|\
-    -ubc489-|-1000-|-172.16.2.95-|-9C:6B:72:A3:4D:D3-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-18:32:30-|\
-    -jzx892-|-1000-|-172.16.2.205-|-04:E5:98:17:3B:E2-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-18:51:58-|\
-    -zxp782-|-1000-|-172.16.2.204-|-74:C1:7D:98:0B:EC-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-21:21:09-|\
-    -kbc653-|-1000-|-172.16.0.213-|-6A:3E:FA:10:BD:93-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/03/2023-|-21:46:45-|\
-    -zbf925-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/03/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-08:46:42-|\
-    -bft933-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-11:07:44-|\
-    -tdn768-|-1000-|-172.16.2.254-|-3A:50:5C:A7:68:27-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-11:15:05-|\
-    -yep498-|-1000-|-172.16.0.156-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-11:38:37-|\
-    -xxk475-|-1000-|-172.16.3.4-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-12:06:16-|\
-    -kcz364-|-1000-|-172.16.3.6-|-8A:DD:30:E9:A9:0E-|-31d-|-witno-12jam-|-vc-3\
-    64-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-12:15:01-|\
-    -pyp856-|-1000-|-172.16.0.93-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-12:18:29-|\
-    -dwf742-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-12:39:53-|\
-    -brb389-|-1000-|-172.16.0.98-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-12:43:41-|\
-    -bdk732-|-1000-|-172.16.0.40-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-12:56:55-|\
-    -mga754-|-1000-|-172.16.2.36-|-70:DD:A8:52:1A:98-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-13:44:51-|\
-    -ckg782-|-1000-|-172.16.2.121-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-14:25:40-|\
-    -rfm942-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-18:10:16-|\
-    -nbp367-|-1000-|-172.16.0.104-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-18:18:12-|\
-    -vfz278-|-1000-|-172.16.3.30-|-E2:24:AA:4B:8A:42-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-18:21:04-|\
-    -cnn637-|-1000-|-172.16.0.84-|-4E:00:A2:FD:07:23-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-20:14:31-|\
-    -zuw799-|-1000-|-172.16.2.17-|-DA:0A:39:44:0C:89-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/04/2023-|-20:51:40-|\
-    -pur585-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/04/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-08:43:23-|\
-    -ndv425-|-1000-|-172.16.3.59-|-9C:F5:31:88:42:E3-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-09:00:26-|\
-    -htd446-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-10:31:23-|\
-    -feg497-|-1000-|-172.16.3.65-|-0C:A8:A7:9F:5E:3C-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-12:41:25-|\
-    -rvw264-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-12:58:01-|\
-    -vnz757-|-1000-|-172.16.0.45-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-13:03:01-|\
-    -xfx295-|-1000-|-172.16.3.77-|-DE:32:49:A2:E6:6A-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-17:22:17-|\
-    -xrr858-|-1000-|-172.16.0.98-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-18:26:51-|\
-    -ibd625-|-1000-|-172.16.0.156-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-19:06:16-|\
-    -gwk449-|-1000-|-172.16.1.22-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-19:22:16-|\
-    -ukn524-|-1000-|-172.16.3.65-|-0C:A8:A7:9F:5E:3C-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-19:54:31-|\
-    -kvm277-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-20:11:21-|\
-    -hiw944-|-1000-|-172.16.0.149-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/05/2023-|-21:15:44-|\
-    -snt583-|-1000-|-172.16.1.133-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/05/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-00:02:38-|\
-    -eei559-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-00:14:08-|\
-    -tbj865-|-1000-|-172.16.2.188-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-07:30:40-|\
-    -dhg472-|-1000-|-172.16.0.73-|-9C:F5:31:88:DE:A1-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-08:26:57-|\
-    -aup872-|-1000-|-172.16.3.48-|-9A:9F:DC:03:D8:F2-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-09:43:16-|\
-    -tnd223-|-1000-|-172.16.0.93-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-10:10:59-|\
-    -niu775-|-1000-|-172.16.0.94-|-5E:77:A0:30:9F:A0-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-11:55:42-|\
-    -nsn565-|-1000-|-172.16.2.185-|-08:7F:98:B3:29:A1-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-12:02:14-|\
-    -nvy784-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-12:15:55-|\
-    -sih524-|-1000-|-172.16.3.69-|-FC:A5:D0:90:B0:67-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-12:31:33-|\
-    -thv876-|-1000-|-172.16.0.152-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-12:38:50-|\
-    -ncr892-|-1000-|-172.16.0.112-|-9A:3A:AA:94:BD:79-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-17:15:13-|\
-    -bew685-|-1000-|-172.16.0.40-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-19:14:16-|\
-    -tic998-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-21:58:42-|\
-    -ghb549-|-1000-|-172.16.2.188-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/06/2023-|-23:49:19-|\
-    -ecj256-|-1000-|-172.16.3.4-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/06/2023
-add comment=mikhmon dont-require-permissions=no name="aug/07/2023-|-09:13:28-|\
-    -uzm857-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/07/2023
-add comment=mikhmon dont-require-permissions=no name="aug/07/2023-|-10:09:02-|\
-    -fky855-|-1000-|-172.16.0.42-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/07/2023
-add comment=mikhmon dont-require-permissions=no name="aug/07/2023-|-12:12:04-|\
-    -tzh345-|-1000-|-172.16.0.98-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/07/2023
-add comment=mikhmon dont-require-permissions=no name="aug/07/2023-|-18:30:02-|\
-    -ues634-|-1000-|-172.16.2.17-|-DA:0A:39:44:0C:89-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/07/2023
-add comment=mikhmon dont-require-permissions=no name="aug/07/2023-|-18:30:35-|\
-    -izu423-|-1000-|-172.16.0.104-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/07/2023
-add comment=mikhmon dont-require-permissions=no name="aug/07/2023-|-18:37:09-|\
-    -akj959-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/07/2023
-add comment=mikhmon dont-require-permissions=no name="aug/07/2023-|-19:04:15-|\
-    -kkm822-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/07/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-05:31:20-|\
-    -ckn973-|-1000-|-172.16.0.45-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-06:01:55-|\
-    -mep598-|-1000-|-172.16.1.26-|-B0:B5:C3:98:9F:53-|-31d-|-wawan-|-vc-226-06\
-    .18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-08:07:51-|\
-    -fdx565-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-08:53:44-|\
-    -chg438-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-12:54:09-|\
-    -jrk467-|-1000-|-172.16.0.156-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-13:40:59-|\
-    -drg355-|-1000-|-172.16.0.106-|-BE:FE:EA:03:19:88-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-13:47:47-|\
-    -ikj946-|-1000-|-172.16.1.54-|-9C:F5:31:88:42:E3-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-14:09:15-|\
-    -beu442-|-1000-|-172.16.0.152-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-14:54:06-|\
-    -cxs997-|-1000-|-172.16.3.4-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-15:15:58-|\
-    -jpu672-|-1000-|-172.16.1.40-|-28:31:66:8E:F1:A1-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-16:57:31-|\
-    -uag767-|-1000-|-172.16.0.93-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-19:13:11-|\
-    -ctu682-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-19:55:45-|\
-    -mbi878-|-1000-|-172.16.1.133-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-21:31:23-|\
-    -twx983-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/08/2023-|-22:40:52-|\
-    -hik523-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/08/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-07:10:38-|\
-    -tke788-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-10:09:20-|\
-    -jyy879-|-1000-|-172.16.1.114-|-1A:49:3A:90:54:8C-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-10:09:47-|\
-    -cxh334-|-1000-|-172.16.1.41-|-76:5D:AD:43:D9:0A-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-10:17:26-|\
-    -xre694-|-1000-|-172.16.1.26-|-B0:B5:C3:98:9F:53-|-31d-|-wawan-|-vc-226-06\
-    .18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-11:40:21-|\
-    -cfk533-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-14:55:40-|\
-    -khe233-|-1000-|-172.16.0.73-|-9C:F5:31:88:DE:A1-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-15:27:43-|\
-    -cxw422-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-16:04:47-|\
-    -hrj244-|-1000-|-172.16.0.149-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-16:40:01-|\
-    -sim844-|-1000-|-172.16.1.22-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-16:49:33-|\
-    -mxv838-|-1000-|-172.16.1.154-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-19:37:30-|\
-    -gsd943-|-1000-|-172.16.0.42-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-19:46:57-|\
-    -jfx734-|-1000-|-172.16.1.172-|-16:25:6D:D5:FD:70-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-22:22:14-|\
-    -hgx546-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/09/2023-|-23:18:27-|\
-    -smb879-|-1000-|-172.16.3.4-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/09/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-08:10:25-|\
-    -dmp269-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-10:21:32-|\
-    -ugz272-|-1000-|-172.16.1.203-|-F0:79:E8:1E:C6:1D-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-11:29:46-|\
-    -mti864-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-12:26:49-|\
-    -dfa546-|-1000-|-172.16.1.26-|-B0:B5:C3:98:9F:53-|-31d-|-wawan-|-vc-226-06\
-    .18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-12:46:11-|\
-    -awp678-|-1000-|-172.16.0.249-|-74:C1:7D:98:0B:EC-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-14:42:40-|\
-    -rsx886-|-1000-|-172.16.0.57-|-28:31:66:74:A9:E5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-16:01:48-|\
-    -zys437-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-16:24:09-|\
-    -ywk658-|-1000-|-172.16.1.227-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-17:14:09-|\
-    -kru473-|-1000-|-172.16.0.93-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-18:36:32-|\
-    -tga453-|-1000-|-172.16.0.156-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-19:15:37-|\
-    -nzv658-|-1000-|-172.16.1.246-|-14:47:2D:99:CD:7B-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-21:57:37-|\
-    -svw328-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/10/2023-|-21:58:24-|\
-    -uge753-|-1000-|-172.16.1.129-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/10/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-00:06:02-|\
-    -mij998-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-10:21:20-|\
-    -asd252-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-11:02:50-|\
-    -gbw758-|-1000-|-172.16.0.104-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-12:40:15-|\
-    -ran282-|-1000-|-172.16.1.214-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-12:40:35-|\
-    -wja422-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-13:16:56-|\
-    -wxt884-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-17:50:23-|\
-    -udi922-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-18:28:14-|\
-    -ypg869-|-1000-|-172.16.0.149-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-19:56:01-|\
-    -kec282-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-22:27:50-|\
-    -jbk722-|-1000-|-172.16.3.4-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/11/2023-|-23:28:13-|\
-    -unt952-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/11/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-10:50:52-|\
-    -rce263-|-1000-|-172.16.2.120-|-0C:A8:A7:9F:5E:3C-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-11:22:13-|\
-    -fkm388-|-1000-|-172.16.0.45-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-11:41:01-|\
-    -vet938-|-1000-|-172.16.2.125-|-5A:C7:22:C3:F9:1A-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-12:41:58-|\
-    -ixc594-|-1000-|-172.16.2.95-|-9C:6B:72:A3:4D:D3-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-15:28:02-|\
-    -vja456-|-1000-|-172.16.0.50-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-16:38:22-|\
-    -ikf336-|-1000-|-172.16.0.108-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-18:08:24-|\
-    -kkz987-|-1000-|-172.16.0.76-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-18:31:24-|\
-    -mrt797-|-1000-|-172.16.2.17-|-DA:0A:39:44:0C:89-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-18:50:36-|\
-    -edb528-|-1000-|-172.16.0.42-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/12/2023-|-18:54:47-|\
-    -auf658-|-1000-|-172.16.2.65-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/12/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-00:16:23-|\
-    -mhb286-|-1000-|-172.16.1.133-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-00:44:18-|\
-    -vhp355-|-1000-|-172.16.3.4-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-07:17:33-|\
-    -sik757-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-07:40:08-|\
-    -mvj972-|-1000-|-172.16.0.140-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-08:58:44-|\
-    -zxs338-|-1000-|-172.16.0.115-|-5A:1A:F3:1C:81:B9-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-09:08:38-|\
-    -ffp784-|-1000-|-172.16.0.111-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-10:51:15-|\
-    -nnu639-|-1000-|-172.16.0.89-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-10:59:51-|\
-    -fhy669-|-1000-|-172.16.0.135-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-11:29:51-|\
-    -mze935-|-1000-|-172.16.0.81-|-4E:06:BC:1C:A1:62-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-11:43:27-|\
-    -xkt525-|-1000-|-172.16.0.103-|-0C:A8:A7:9F:5E:3C-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-13:07:44-|\
-    -rvw287-|-1000-|-172.16.0.75-|-9A:58:A6:E3:85:BD-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-13:53:44-|\
-    -bru453-|-1000-|-172.16.0.83-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-14:51:43-|\
-    -thg875-|-1000-|-172.16.0.138-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-15:26:46-|\
-    -hcs365-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-16:44:35-|\
-    -uax372-|-1000-|-172.16.0.123-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-18:06:48-|\
-    -gii757-|-1000-|-172.16.0.121-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/13/2023-|-23:34:37-|\
-    -wss993-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/13/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-09:49:17-|\
-    -uvz529-|-1000-|-172.16.0.123-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-12:38:16-|\
-    -but542-|-1000-|-172.16.0.134-|-E8:50:8B:1A:E3:81-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-12:42:30-|\
-    -brw447-|-1000-|-172.16.0.140-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-12:43:27-|\
-    -xxx563-|-1000-|-172.16.0.89-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-13:21:33-|\
-    -xwt457-|-1000-|-172.16.0.135-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-13:33:17-|\
-    -rtp798-|-1000-|-172.16.0.216-|-8C:AA:CE:2C:9D:48-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-14:17:41-|\
-    -bdz435-|-1000-|-172.16.0.218-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-14:44:26-|\
-    -ths547-|-1000-|-172.16.0.111-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-15:21:03-|\
-    -udf939-|-1000-|-172.16.0.116-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-16:56:01-|\
-    -ekr872-|-1000-|-172.16.0.39-|-00:0A:F5:CE:67:14-|-31d-|-wawan-|-vc-226-06\
-    .18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-17:31:17-|\
-    -rvj856-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-17:46:32-|\
-    -tyj485-|-1000-|-172.16.0.239-|-20:74:54:C2:01:A9-|-31d-|-wawan-|-vc-226-0\
-    6.18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-18:06:23-|\
-    -zfg469-|-1000-|-172.16.0.49-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-18:18:30-|\
-    -wix972-|-1000-|-172.16.0.41-|-76:5D:AD:43:D9:0A-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-18:25:27-|\
-    -bsc263-|-1000-|-172.16.0.44-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-19:19:05-|\
-    -gra965-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-21:11:31-|\
-    -abd873-|-1000-|-172.16.0.179-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/14/2023-|-23:15:53-|\
-    -xfz778-|-1000-|-172.16.0.123-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/14/2023
-add comment=mikhmon dont-require-permissions=no name="aug/15/2023-|-09:53:18-|\
-    -zam269-|-1000-|-172.16.0.156-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/15/2023
-add comment=mikhmon dont-require-permissions=no name="aug/15/2023-|-11:42:24-|\
-    -dvh672-|-1000-|-172.16.0.121-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/15/2023
-add comment=mikhmon dont-require-permissions=no name="aug/15/2023-|-14:37:23-|\
-    -tzd442-|-1000-|-172.16.0.83-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/15/2023
-add comment=mikhmon dont-require-permissions=no name="aug/15/2023-|-17:04:37-|\
-    -kyx265-|-1000-|-172.16.1.78-|-88:D5:0C:07:21:EA-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/15/2023
-add comment=mikhmon dont-require-permissions=no name="aug/15/2023-|-17:13:18-|\
-    -why562-|-1000-|-172.16.0.135-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/15/2023
-add comment=mikhmon dont-require-permissions=no name="aug/15/2023-|-17:16:09-|\
-    -bay926-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/15/2023
-add comment=mikhmon dont-require-permissions=no name="aug/15/2023-|-18:35:12-|\
-    -gyw366-|-1000-|-172.16.0.123-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/15/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-07:03:59-|\
-    -eac547-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-11:06:00-|\
-    -hfw873-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-618-07\
-    .25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-12:07:46-|\
-    -eun956-|-1000-|-172.16.0.140-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-14:07:19-|\
-    -pss634-|-1000-|-172.16.0.116-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-14:07:55-|\
-    -ptb827-|-1000-|-172.16.0.121-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-17:08:38-|\
-    -end987-|-1000-|-172.16.1.184-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-17:13:43-|\
-    -ixz577-|-1000-|-172.16.0.39-|-00:0A:F5:CE:67:14-|-31d-|-wawan-|-vc-226-06\
-    .18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-17:39:44-|\
-    -idv698-|-1000-|-172.16.1.188-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-618-0\
-    7.25.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-18:12:00-|\
-    -twe567-|-1000-|-172.16.1.99-|-FC:A5:D0:90:B0:67-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-18:24:21-|\
-    -ksw848-|-1000-|-172.16.0.117-|-DA:0A:39:44:0C:89-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-18:35:05-|\
-    -ayg345-|-1000-|-172.16.0.49-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-18:49:11-|\
-    -erm764-|-1000-|-172.16.1.197-|-08:7F:98:B3:29:A1-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-19:20:23-|\
-    -zwi848-|-1000-|-172.16.1.199-|-9C:F5:31:88:DE:A1-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/16/2023-|-22:35:00-|\
-    -fga252-|-1000-|-172.16.0.123-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/16/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-05:48:17-|\
-    -cdf894-|-1000-|-172.16.1.224-|-B0:B5:C3:98:9F:53-|-31d-|-wawan-|-vc-226-0\
-    6.18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-08:36:58-|\
-    -bib828-|-1000-|-172.16.2.1-|-04:E5:98:17:3B:E2-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-08:42:48-|\
-    -nyk499-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-09:34:53-|\
-    -hvs732-|-1000-|-172.16.0.100-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-09:47:19-|\
-    -gxg334-|-1000-|-172.16.2.7-|-20:47:DA:63:F5:C3-|-31d-|-nazim-|-vc-854-08.\
-    17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-10:09:08-|\
-    -giz657-|-1000-|-172.16.2.14-|-B2:68:C8:BB:26:25-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-10:35:11-|\
-    -ejd265-|-1000-|-172.16.0.218-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-10:41:58-|\
-    -zsj764-|-1000-|-172.16.0.121-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-11:06:36-|\
-    -xwc896-|-1000-|-172.16.0.31-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-11:26:40-|\
-    -fzu277-|-1000-|-172.16.0.58-|-28:31:66:8E:F1:A1-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-15:39:58-|\
-    -une249-|-1000-|-172.16.1.188-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-15:41:25-|\
-    -jgv449-|-1000-|-172.16.0.83-|-62:51:74:99:57:14-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-16:07:06-|\
-    -wwz834-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-854-08\
-    .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-17:05:51-|\
-    -hcw976-|-1000-|-172.16.0.179-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-17:43:21-|\
-    -kam953-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-08\
-    .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-18:56:50-|\
-    -yru638-|-1000-|-172.16.0.44-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-19:24:17-|\
-    -mep852-|-1000-|-172.16.1.202-|-F4:60:E2:25:F5:52-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-19:31:46-|\
-    -apc848-|-1000-|-172.16.0.156-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-20:24:37-|\
-    -wcf633-|-1000-|-172.16.0.121-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-20:53:12-|\
-    -cbe569-|-1000-|-172.16.1.112-|-74:C1:7D:98:0B:EC-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/17/2023-|-23:32:43-|\
-    -pyj799-|-1000-|-172.16.0.123-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/17/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-00:52:42-|\
-    -wds552-|-1000-|-172.16.2.65-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-11:00:48-|\
-    -jmk488-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-08\
-    .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-13:42:47-|\
-    -frc292-|-1000-|-172.16.0.67-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-14:20:02-|\
-    -bvy353-|-1000-|-172.16.1.86-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-854-08\
-    .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:11:54-|\
-    -nxw897-|-1000-|-172.16.0.81-|-7C:03:AB:BF:31:AD-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-15:17:59-|\
-    -npp953-|-1000-|-172.16.1.224-|-B0:B5:C3:98:9F:53-|-31d-|-wawan-|-vc-226-0\
-    6.18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-17:10:33-|\
-    -wad982-|-1000-|-172.16.0.36-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-854-08\
-    .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:17:00-|\
-    -grk773-|-1000-|-172.16.0.35-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-854-08\
-    .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:23:15-|\
-    -ski969-|-1000-|-172.16.0.43-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:24:43-|\
-    -nnu366-|-1000-|-172.16.0.133-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-18:25:38-|\
-    -evx778-|-1000-|-172.16.0.136-|-84:6F:CE:2D:A5:E5-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-20:07:46-|\
-    -snz723-|-1000-|-172.16.0.33-|-9C:F5:31:88:DE:A1-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-20:20:28-|\
-    -arx746-|-1000-|-172.16.0.167-|-20:5E:F7:5D:62:A2-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
-add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-21:24:58-|\
-    -zxb647-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-08\
-    .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/18/2023
 add comment=mikhmon dont-require-permissions=no name="aug/18/2023-|-23:44:12-|\
     -jyg333-|-1000-|-172.16.0.98-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
     10.23-wati" owner=aug2023 policy=\
@@ -8870,29 +7792,9 @@ add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-11:07:28-|\
     10.23-evi" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/19/2023
-add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:14:45-|\
-    -wtz854-|-1000-|-172.16.0.227-|-2E:AC:62:26:12:2E-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/19/2023
-add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-12:46:09-|\
-    -jif542-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-08\
-    .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/19/2023
 add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-15:38:42-|\
     -fbs839-|-1000-|-172.16.0.101-|-36:7C:C2:E8:2E:D9-|-31d-|-evi-|-vc-929-07.\
     10.23-evi" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/19/2023
-add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:04:39-|\
-    -vtc777-|-1000-|-172.16.0.118-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/19/2023
-add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-17:16:24-|\
-    -sme497-|-1000-|-172.16.0.137-|-20:5E:F7:7E:E9:58-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/19/2023
 add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:16:57-|\
@@ -8905,11 +7807,6 @@ add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-18:55:00-|\
     .10.23-wati" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/19/2023
-add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-19:26:50-|\
-    -juh589-|-1000-|-172.16.0.132-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/19/2023
 add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:00:18-|\
     -fpm753-|-1000-|-172.16.0.98-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
     10.23-wati" owner=aug2023 policy=\
@@ -8920,19 +7817,9 @@ add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:40:18-|\
     10.23-wati" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/19/2023
-add comment=mikhmon dont-require-permissions=no name="aug/19/2023-|-21:45:45-|\
-    -rwf874-|-1000-|-172.16.0.133-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-854-0\
-    8.17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/19/2023
 add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-03:15:02-|\
     -kya475-|-1000-|-172.16.0.108-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07\
     .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/20/2023
-add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:11:32-|\
-    -jdg898-|-1000-|-172.16.0.75-|-28:31:66:8E:F1:A1-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/20/2023
 add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-09:37:03-|\
@@ -8990,24 +7877,9 @@ add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-14:51:27-|\
     .17.23-nazim" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/20/2023
-add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:19:10-|\
-    -ngu683-|-1000-|-172.16.0.107-|-B2:68:C8:BB:26:25-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/20/2023
-add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:21:28-|\
-    -yvf699-|-1000-|-172.16.0.187-|-F0:79:E8:1E:C6:1D-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/20/2023
 add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-16:28:19-|\
     -ttg237-|-1000-|-172.16.0.67-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07.\
     10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/20/2023
-add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-18:52:48-|\
-    -aay948-|-1000-|-172.16.0.37-|-DA:0A:39:44:0C:89-|-31d-|-witno-12jam-|-vc-\
-    364-08.01.23-kukuh" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/20/2023
 add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:45:42-|\
@@ -9015,29 +7887,9 @@ add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-19:45:42-|\
     .10.23-wati" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/20/2023
-add comment=mikhmon dont-require-permissions=no name="aug/20/2023-|-20:25:33-|\
-    -iwj544-|-1000-|-172.16.0.156-|-0C:98:38:42:5D:C5-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/20/2023
-add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:30:12-|\
-    -isv728-|-1000-|-172.16.1.167-|-4E:00:A2:FD:07:23-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/21/2023
-add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-09:52:50-|\
-    -ekw788-|-1000-|-172.16.1.169-|-0C:C6:FD:01:01:89-|-31d-|-wawan-|-vc-226-0\
-    6.18.23-wawan" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/21/2023
 add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:01:03-|\
     -mrj392-|-1000-|-172.16.1.125-|-F2:06:C1:CD:C7:61-|-31d-|-evi-|-vc-929-07.\
     10.23-evi" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/21/2023
-add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-11:17:39-|\
-    -rsu449-|-1000-|-172.16.1.180-|-76:5D:AD:43:D9:0A-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/21/2023
 add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-13:12:21-|\
@@ -9055,29 +7907,9 @@ add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-13:55:08-|\
     .17.23-nazim" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/21/2023
-add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-15:40:17-|\
-    -ijh559-|-1000-|-172.16.0.98-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/21/2023
-add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-16:32:50-|\
-    -yee258-|-1000-|-172.16.0.67-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/21/2023
 add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-17:17:08-|\
     -wsp556-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-08\
     .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/21/2023
-add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-19:07:24-|\
-    -ggb655-|-1000-|-172.16.0.118-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc\
-    -364-08.01.23-kukuh" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/21/2023
-add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-19:31:47-|\
-    -rhe467-|-1000-|-172.16.1.6-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/21/2023
 add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-19:56:37-|\
@@ -9085,29 +7917,9 @@ add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-19:56:37-|\
     10.23-evi" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/21/2023
-add comment=mikhmon dont-require-permissions=no name="aug/21/2023-|-20:54:54-|\
-    -idp679-|-1000-|-172.16.1.142-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/21/2023
-add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-00:14:02-|\
-    -zue492-|-1000-|-172.16.0.98-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/22/2023
-add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-03:25:07-|\
-    -syr699-|-1000-|-172.16.0.108-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07\
-    .10.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/22/2023
 add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-09:17:15-|\
     -bby993-|-1000-|-172.16.0.73-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-08\
     .17.23-nazim" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/22/2023
-add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-11:12:32-|\
-    -uag544-|-1000-|-172.16.0.67-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07.\
-    10.23-wati" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/22/2023
 add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-12:59:01-|\
@@ -9120,21 +7932,772 @@ add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-16:05:22-|\
     .17.23-nazim" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/22/2023
-add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-19:36:44-|\
-    -ymz598-|-1000-|-172.16.1.6-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-521-07.1\
-    0.23-wati" owner=aug2023 policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/22/2023
 add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-20:03:41-|\
     -rtd745-|-1000-|-172.16.2.44-|-0A:42:8F:C8:BE:9A-|-31d-|-evi-|-vc-929-07.1\
     0.23-evi" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
     aug/22/2023
-add comment=mikhmon dont-require-permissions=no name="aug/22/2023-|-21:10:41-|\
-    -jzc735-|-1000-|-172.16.0.98-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-06:23:54-|\
+    -fjd626-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-12:02:58-|\
+    -kzy984-|-1000-|-172.16.0.106-|-D2:6B:83:C4:30:ED-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-13:19:08-|\
+    -wdg877-|-1000-|-172.16.0.57-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-13:41:36-|\
+    -bny348-|-1000-|-172.16.0.119-|-20:34:FB:F7:F6:62-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-14:59:52-|\
+    -psh958-|-1000-|-172.16.0.43-|-C0:87:EB:7B:4A:35-|-31d-|-evi-|-vc-929-07.1\
+    0.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-15:45:53-|\
+    -yuf745-|-1000-|-172.16.0.142-|-36:7C:C2:E8:2E:D9-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-15:54:16-|\
+    -rvz723-|-1000-|-172.16.1.245-|-62:2A:CD:15:E2:56-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-16:37:05-|\
+    -pah854-|-1000-|-172.16.0.112-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-17:19:54-|\
+    -sci253-|-1000-|-172.16.0.136-|-9C:F5:31:88:42:E3-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/23/2023-|-17:34:38-|\
+    -ipn436-|-1000-|-172.16.0.53-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/23/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-12:06:06-|\
+    -kzf394-|-1000-|-172.16.0.35-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-13:10:48-|\
+    -icd884-|-1000-|-172.16.0.212-|-96:E1:E1:EA:4D:74-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-13:11:18-|\
+    -knv364-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-13:11:24-|\
+    -ttj422-|-1000-|-172.16.0.211-|-42:6D:A9:D1:D2:0B-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-13:11:51-|\
+    -rgf285-|-1000-|-172.16.0.214-|-6A:F7:CD:31:6B:A2-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-13:45:11-|\
+    -ngd472-|-1000-|-172.16.0.194-|-2E:AC:62:26:12:2E-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-16:14:27-|\
+    -fbp296-|-1000-|-172.16.0.118-|-96:19:3C:8F:BB:31-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-17:33:56-|\
+    -bvg555-|-1000-|-172.16.0.57-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-18:39:57-|\
+    -wks223-|-1000-|-172.16.0.243-|-4A:5D:76:86:19:27-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-18:40:28-|\
+    -abh839-|-1000-|-172.16.0.245-|-0A:C6:F5:AF:69:12-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/24/2023-|-19:39:35-|\
+    -izv726-|-1000-|-172.16.0.250-|-86:8F:E5:EF:A0:50-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/24/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-12:41:56-|\
+    -zfi438-|-1000-|-172.16.0.119-|-20:34:FB:F7:F6:62-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-13:17:18-|\
+    -aax982-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-13:32:08-|\
+    -ydu974-|-1000-|-172.16.1.48-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-13:38:38-|\
+    -duc745-|-1000-|-172.16.1.49-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-14:41:17-|\
+    -tat888-|-1000-|-172.16.0.35-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-16:18:55-|\
+    -rss267-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-19:51:22-|\
+    -hzj999-|-1000-|-172.16.0.66-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07.\
     10.23-wati" owner=aug2023 policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
-    aug/22/2023
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-20:32:59-|\
+    -zwj775-|-1000-|-172.16.1.245-|-62:2A:CD:15:E2:56-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-22:20:15-|\
+    -ggx525-|-1000-|-172.16.1.103-|-DE:E4:4B:BE:63:ED-|-31d-|-wawan-|-vc-226-0\
+    6.18.23-wawan" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-23:29:14-|\
+    -zkv472-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/25/2023-|-23:47:06-|\
+    -gkp592-|-1000-|-172.16.0.239-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/25/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-08:29:56-|\
+    -suw478-|-1000-|-172.16.1.245-|-62:2A:CD:15:E2:56-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add dont-require-permissions=no name=#update-speedtest owner=mm1rza policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/\
+    ip firewall address-list remove [find comment=\"MNET-SPEEDTEST\"]\r\
+    \n/ip dns cache flush\r\
+    \n:delay 1s\r\
+    \n:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file remov\
+    e list-ip-speedtest.rsc }; \r\
+    \n:delay 1s\r\
+    \n/tool fetch url=\"https://mnet.my.id/file/uploads/settingan-mikrotik/ip-\
+    address/list-ip-speedtest.rsc\" mode=http;\r\
+    \n/import list-ip-speedtest.rsc\r\
+    \n:delay 5s\r\
+    \n/file remove list-ip-speedtest.rsc\r\
+    \n:log info message=\"berhasil import list-ip-speedtest.rsc\";"
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-10:55:33-|\
+    -txe836-|-1000-|-172.16.1.124-|-0C:A8:A7:9F:5E:3C-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-10:58:36-|\
+    -sfc932-|-1000-|-172.16.0.203-|-B0:B5:C3:98:9F:53-|-31d-|-wawan-|-vc-226-0\
+    6.18.23-wawan" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-10:59:09-|\
+    -pue698-|-1000-|-172.16.1.123-|-DA:AC:07:3A:6D:7A-|-31d-|-wawan-|-vc-226-0\
+    6.18.23-wawan" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-11:19:49-|\
+    -nca842-|-1000-|-172.16.0.112-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-11:26:29-|\
+    -ijz762-|-1000-|-172.16.0.168-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-11:26:54-|\
+    -rtn294-|-1000-|-172.16.1.131-|-DE:32:49:A2:E6:6A-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-11:57:31-|\
+    -bpr768-|-1000-|-172.16.1.126-|-D8:55:75:CF:9F:CD-|-31d-|-wawan-|-vc-226-0\
+    6.18.23-wawan" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-12:00:02-|\
+    -cdb937-|-1000-|-172.16.1.135-|-20:3B:69:D7:A8:15-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-12:29:20-|\
+    -nts824-|-1000-|-172.16.1.69-|-F2:C9:5C:2B:57:59-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-12:49:27-|\
+    -vvw632-|-1000-|-172.16.0.182-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-13:56:15-|\
+    -khw243-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-16:26:06-|\
+    -pez525-|-1000-|-172.16.0.115-|-CC:2D:83:95:7B:E4-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-18:18:17-|\
+    -vhk284-|-1000-|-172.16.0.57-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-18:25:39-|\
+    -ukt326-|-1000-|-172.16.1.167-|-4E:0F:00:CF:16:24-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-18:34:10-|\
+    -uui924-|-1000-|-172.16.1.173-|-F2:42:05:88:EC:61-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-18:35:20-|\
+    -mbg429-|-1000-|-172.16.1.172-|-6C:D7:1F:2F:8F:AD-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-19:25:56-|\
+    -vgf287-|-1000-|-172.16.1.180-|-0C:98:38:3C:BF:9F-|-31d-|-wawan-|-vc-226-0\
+    6.18.23-wawan" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-19:27:38-|\
+    -ujc882-|-1000-|-172.16.1.91-|-C4:FE:5B:73:81:91-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-20:11:17-|\
+    -vsd823-|-1000-|-172.16.1.177-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/26/2023-|-20:48:36-|\
+    -cjg723-|-1000-|-172.16.0.66-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/26/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-00:31:37-|\
+    -ymb638-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-08:50:05-|\
+    -kmt648-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-09:39:31-|\
+    -arw262-|-1000-|-172.16.0.35-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-10:47:01-|\
+    -bmd573-|-1000-|-172.16.1.245-|-62:2A:CD:15:E2:56-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-11:30:34-|\
+    -wdr722-|-1000-|-172.16.1.246-|-5A:C7:22:C3:F9:1A-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-12:58:50-|\
+    -cub658-|-1000-|-172.16.0.112-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-13:03:10-|\
+    -bgw626-|-1000-|-172.16.0.53-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-13:39:26-|\
+    -yjh974-|-1000-|-172.16.1.230-|-EE:FE:44:80:FB:EB-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-14:59:06-|\
+    -nsf454-|-1000-|-172.16.0.119-|-20:34:FB:F7:F6:62-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-16:15:39-|\
+    -ezj458-|-1000-|-172.16.1.110-|-C0:87:EB:7B:4A:35-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-17:04:04-|\
+    -iaw699-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-17:07:40-|\
+    -kds666-|-1000-|-172.16.1.217-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-18:57:53-|\
+    -epy676-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-20:37:30-|\
+    -hgm452-|-1000-|-172.16.2.50-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/27/2023-|-21:31:45-|\
+    -vej546-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/27/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-01:05:33-|\
+    -ruh749-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-03:50:35-|\
+    -xbr832-|-1000-|-172.16.0.182-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-04:45:58-|\
+    -nfm677-|-1000-|-172.16.1.245-|-62:2A:CD:15:E2:56-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-12:00:27-|\
+    -ejk729-|-1000-|-172.16.2.87-|-0C:C6:FD:01:01:89-|-31d-|-wawan-|-vc-722-08\
+    .26.23-wawan" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-12:33:40-|\
+    -afa832-|-1000-|-172.16.1.177-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-521-07\
+    .10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-12:54:00-|\
+    -zue865-|-1000-|-172.16.2.95-|-16:25:6D:D5:FD:70-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-13:34:22-|\
+    -mvv762-|-1000-|-172.16.0.66-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-13:53:34-|\
+    -bfj925-|-1000-|-172.16.2.99-|-8C:AA:CE:2C:9D:48-|-31d-|-wati-|-vc-521-07.\
+    10.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-15:17:34-|\
+    -kii736-|-1000-|-172.16.1.166-|-38:29:5A:6F:0A:29-|-31d-|-evi-|-vc-929-07.\
+    10.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-16:41:03-|\
+    -kck799-|-1000-|-172.16.1.217-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-16:45:24-|\
+    -ryy295-|-1000-|-172.16.0.53-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-17:13:47-|\
+    -pyi254-|-1000-|-172.16.2.116-|-9C:F5:31:88:42:E3-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-18:39:54-|\
+    -dzx555-|-1000-|-172.16.2.129-|-84:6F:CE:2D:A5:E5-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/28/2023-|-22:51:44-|\
+    -knm644-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/28/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-07:30:07-|\
+    -ttt632-|-1000-|-172.16.1.180-|-0C:98:38:3C:BF:9F-|-31d-|-wawan-|-vc-722-0\
+    8.26.23-wawan" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-09:22:54-|\
+    -gdm859-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-09:45:02-|\
+    -vuv664-|-1000-|-172.16.2.137-|-BE:FE:EA:03:19:88-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-11:35:56-|\
+    -ckv738-|-1000-|-172.16.2.169-|-08:7F:98:C9:79:77-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-12:41:19-|\
+    -rra534-|-1000-|-172.16.1.83-|-9C:6B:72:A3:4D:D3-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-12:49:24-|\
+    -bzt845-|-1000-|-172.16.0.112-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-13:18:51-|\
+    -fhc883-|-1000-|-172.16.2.177-|-96:E1:E1:EA:4D:74-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-13:19:20-|\
+    -sry486-|-1000-|-172.16.2.176-|-42:6D:A9:D1:D2:0B-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-13:43:20-|\
+    -sng575-|-1000-|-172.16.0.66-|-B6:C9:23:09:57:C0-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-13:49:31-|\
+    -sjy694-|-1000-|-172.16.0.119-|-20:34:FB:F7:F6:62-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-13:49:45-|\
+    -vvx648-|-1000-|-172.16.0.35-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-15:27:30-|\
+    -eud398-|-1000-|-172.16.1.242-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-15:58:20-|\
+    -xts638-|-1000-|-172.16.0.115-|-CC:2D:83:95:7B:E4-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-18:45:40-|\
+    -sfs928-|-1000-|-172.16.2.214-|-FC:A5:D0:9A:26:23-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-19:38:46-|\
+    -rde885-|-1000-|-172.16.2.128-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-20:32:16-|\
+    -djp662-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-20:48:14-|\
+    -mxt492-|-1000-|-172.16.1.245-|-62:2A:CD:15:E2:56-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/29/2023-|-23:43:55-|\
+    -tpr585-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/29/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-08:20:29-|\
+    -hje826-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-12:41:55-|\
+    -vsr564-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-13:24:10-|\
+    -ygt442-|-1000-|-172.16.1.217-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-13:49:40-|\
+    -tif524-|-1000-|-172.16.0.182-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-800-08\
+    .27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-14:24:47-|\
+    -mps444-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-14:57:02-|\
+    -mnj927-|-1000-|-172.16.3.13-|-0A:C6:F5:AF:69:12-|-31d-|-evi-|-vc-303-08.0\
+    7.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-15:10:35-|\
+    -dhn358-|-1000-|-172.16.3.22-|-68:BF:C4:33:69:92-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-16:10:51-|\
+    -auz725-|-1000-|-172.16.3.24-|-14:DD:9C:FF:18:F7-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-16:35:29-|\
+    -ymv938-|-1000-|-172.16.0.53-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/30/2023-|-22:16:13-|\
+    -bxa768-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/30/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-00:32:29-|\
+    -jsd797-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-09:12:38-|\
+    -srr278-|-1000-|-172.16.2.24-|-B0:B5:C3:98:9F:53-|-31d-|-wawan-|-vc-722-08\
+    .26.23-wawan" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-11:58:49-|\
+    -nyf288-|-1000-|-172.16.0.112-|-0C:A8:A7:0C:EE:2E-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-13:00:15-|\
+    -paa425-|-1000-|-172.16.1.177-|-7C:2A:DB:AB:C3:50-|-31d-|-wati-|-vc-800-08\
+    .27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-13:03:25-|\
+    -cww752-|-1000-|-172.16.3.21-|-1A:69:4C:CD:1A:EC-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-13:03:41-|\
+    -hic375-|-1000-|-172.16.0.35-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-15:25:28-|\
+    -kux424-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-15:49:05-|\
+    -ezv743-|-1000-|-172.16.2.41-|-70:B7:AA:06:67:47-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-17:54:41-|\
+    -esv356-|-1000-|-172.16.0.76-|-F2:06:C1:CD:C7:61-|-31d-|-evi-|-vc-303-08.0\
+    7.23-evi" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add dont-require-permissions=no name=######dns-ke-isp-original owner=mm1rza \
+    policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    source="/ip dns set servers=192.168.18.1,192.168.23.1\r\
+    \n/ip dns cache flush\r\
+    \n\r\
+    \n/tool netwatch set disabled=yes [find comment=\"     VPN1 DNS\"]\r\
+    \n"
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-18:49:09-|\
+    -yxe594-|-1000-|-172.16.2.129-|-84:6F:CE:2D:A5:E5-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-18:49:58-|\
+    -swr888-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-19:34:50-|\
+    -prr837-|-1000-|-172.16.0.87-|-8C:AA:CE:39:35:BA-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-19:47:36-|\
+    -kjy927-|-1000-|-172.16.2.101-|-18:02:AE:8E:C9:EB-|-31d-|-wati-|-vc-800-08\
+    .27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-20:26:32-|\
+    -ssp734-|-1000-|-172.16.3.53-|-46:42:54:88:A3:36-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="aug/31/2023-|-23:53:22-|\
+    -kdu226-|-1000-|-172.16.0.239-|-9A:47:4B:2C:1F:15-|-31d-|-wati-|-vc-800-08\
+    .27.23-wati" owner=aug2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    aug/31/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-00:16:18-|\
+    -vic385-|-1000-|-172.16.0.182-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-800-08\
+    .27.23-wati" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-06:16:56-|\
+    -xgp457-|-1000-|-172.16.0.53-|-DA:3A:FF:2F:B1:F7-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-06:31:33-|\
+    -mrb335-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-08:45:00-|\
+    -pzy343-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-09:16:06-|\
+    -dbc225-|-1000-|-172.16.0.116-|-28:31:66:8E:F1:A1-|-31d-|-witno-12jam-|-vc\
+    -706-08.30.23-witno" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-10:31:33-|\
+    -erp375-|-1000-|-172.16.0.115-|-CC:2D:83:95:7B:E4-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-10:39:25-|\
+    -hbf744-|-1000-|-172.16.0.148-|-4A:5D:76:86:19:27-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-10:41:47-|\
+    -suf768-|-1000-|-172.16.0.119-|-20:34:FB:F7:F6:62-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-11:04:15-|\
+    -esy398-|-1000-|-172.16.3.34-|-FA:76:75:E2:FB:63-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-12:54:45-|\
+    -xss227-|-1000-|-172.16.2.247-|-76:5D:AD:43:D9:0A-|-31d-|-witno-12jam-|-vc\
+    -706-08.30.23-witno" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-13:32:09-|\
+    -naf274-|-1000-|-172.16.1.242-|-B2:09:C6:29:5F:34-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-13:50:11-|\
+    -wpb752-|-1000-|-172.16.0.162-|-2C:4D:54:A9:F6:A6-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-14:01:39-|\
+    -dtx763-|-1000-|-172.16.0.161-|-9A:9F:DC:03:D8:F2-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-14:12:44-|\
+    -hrv843-|-1000-|-172.16.0.167-|-20:3B:69:D7:A8:15-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-14:17:34-|\
+    -psi497-|-1000-|-172.16.0.35-|-16:B8:31:3E:97:FA-|-31d-|-nazim-|-vc-854-08\
+    .17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-15:40:10-|\
+    -xfe629-|-1000-|-172.16.1.245-|-62:2A:CD:15:E2:56-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-17:43:50-|\
+    -xzv936-|-1000-|-172.16.2.24-|-B0:B5:C3:98:9F:53-|-31d-|-wawan-|-vc-722-08\
+    .26.23-wawan" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-18:11:36-|\
+    -yyt724-|-1000-|-172.16.0.92-|-EC:D0:9F:48:E1:A3-|-31d-|-witno-12jam-|-vc-\
+    706-08.30.23-witno" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-18:45:09-|\
+    -psv422-|-1000-|-172.16.0.191-|-F2:42:05:88:EC:61-|-31d-|-evi-|-vc-303-08.\
+    07.23-evi" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-19:13:30-|\
+    -awf696-|-1000-|-172.16.0.213-|-D2:97:87:1A:F3:99-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-19:21:00-|\
+    -sda465-|-1000-|-172.16.2.128-|-F8:AB:82:1D:E2:7F-|-31d-|-nazim-|-vc-854-0\
+    8.17.23-nazim" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/01/2023-|-19:25:32-|\
+    -gxe736-|-1000-|-172.16.0.64-|-B4:A5:AC:B5:E9:F5-|-31d-|-wati-|-vc-800-08.\
+    27.23-wati" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/01/2023
+add comment=mikhmon dont-require-permissions=no name="sep/02/2023-|-01:49:01-|\
+    -efr223-|-1000-|-172.16.0.204-|-16:DB:D2:B6:35:43-|-31d-|-wati-|-vc-800-08\
+    .27.23-wati" owner=sep2023 policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=\
+    sep/02/2023
 /tool bandwidth-server
 set enabled=no
 /tool e-mail
@@ -9493,7 +9056,7 @@ add comment="     1" down-script="\r\
     \n/ip route disable [find comment=\"isp4>isp1\"]\r\
     \n/ip route disable [find comment=\"isp5>isp1\"]\r\
     \n\r\
-    \n\r\
+    \n/ip dns cache flush\r\
     \n\r\
     \nlog error (\"isp1 mati\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -9515,6 +9078,7 @@ add comment="     1" down-script="\r\
     \n/ip route enable [find comment=\"isp4>isp1\"]\r\
     \n/ip route enable [find comment=\"isp5>isp1\"]\r\
     \n\r\
+    \n/ip dns cache flush\r\
     \n\r\
     \n:delay 500ms;\r\
     \nlog warning (\"isp1 on\")\r\
@@ -9570,13 +9134,8 @@ add comment="     VPN2 REMOTE" down-script="/interface enable vpn2\r\
     \nlog error (\"server vpn2\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
-    8C server vpn2\" keep-result=no;\r\
-    \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%E2%9D%8C+server+\
-    vpn2\" keep-result=no;\r\
-    \n" host=10.123.22.1 interval=5s timeout=2s up-script="/ip route enable [f\
-    ind comment=\"vpn2\"]\r\
+    8C server vpn2\" keep-result=no;" host=10.123.22.1 interval=5s timeout=2s \
+    up-script="/ip route enable [find comment=\"vpn2\"]\r\
     \n/ip route rule enable [find comment=\"vpn2\"]\r\
     \n/ip firewall nat enable [find comment=\"vpn2\"]\r\
     \n/ip firewall mangle enable [find comment=\"vpn2\"]\r\
@@ -9592,12 +9151,7 @@ add comment="     VPN2 REMOTE" down-script="/interface enable vpn2\r\
     \nlog warning (\"server vpn2\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 server vpn2\" keep-result=no;\r\
-    \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%E2%9C%85+server+\
-    vpn2\" keep-result=no;\r\
-    \n"
+    85 server vpn2\" keep-result=no;"
 add comment="     VPN1 DNS" down-script="/interface enable vpn1\r\
     \n/interface enable vpn1\r\
     \n\r\
@@ -9614,18 +9168,16 @@ add comment="     VPN1 DNS" down-script="/interface enable vpn1\r\
     \n/ip route disable [find comment=\"isp2>vpn1\"]\r\
     \n\r\
     \n\r\
+    \n/ip dns set servers=192.168.18.1,192.168.23.1\r\
     \n/ip dns cache flush\r\
+    \n\r\
+    \n\r\
     \n\r\
     \nlog error (\"server vpn1\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
-    8C server vpn1\" keep-result=no;\r\
-    \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%E2%9D%8C+server+\
-    vpn1\" keep-result=no;\r\
-    \n" host=10.123.22.7 interval=5s timeout=2s up-script="/ip route enable [f\
-    ind comment=\"vpn1\"]\r\
+    8C server vpn1\" keep-result=no;" host=10.123.22.7 interval=5s timeout=2s \
+    up-script="/ip route enable [find comment=\"vpn1\"]\r\
     \n/ip route rule enable [find comment=\"vpn1\"]\r\
     \n/ip firewall nat enable [find comment=\"vpn1\"]\r\
     \n/ip firewall mangle enable [find comment=\"vpn1\"]\r\
@@ -9637,6 +9189,8 @@ add comment="     VPN1 DNS" down-script="/interface enable vpn1\r\
     \n/ip route enable [find comment=\"isp4>vpn1\"]\r\
     \n/ip route enable [find comment=\"isp2>vpn1\"]\r\
     \n\r\
+    \n\r\
+    \n/ip dns set servers=10.123.22.7\r\
     \n/ip dns cache flush\r\
     \n:delay 500ms;\r\
     \n\r\
@@ -9645,12 +9199,7 @@ add comment="     VPN1 DNS" down-script="/interface enable vpn1\r\
     \nlog warning (\"server vpn1\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 server vpn1\" keep-result=no;\r\
-    \n\r\
-    \n/tool fetch http-method=get mode=https url=\"https://api.callmebot.com/w\
-    hatsapp.php\\\?&apikey=8988152&phone=+6282138082138&text=%E2%9C%85+server+\
-    vpn1\" keep-result=no;\r\
-    \n"
+    85 server vpn1\" keep-result=no;"
 add comment="     2" down-script="\r\
     \n\r\
     \n/ip route disable [find comment=\"isp2\"]\r\
@@ -9667,6 +9216,7 @@ add comment="     2" down-script="\r\
     \n/ip route disable [find comment=\"isp4>isp2\"]\r\
     \n/ip route disable [find comment=\"isp5>isp2\"]\r\
     \n\r\
+    \n/ip dns cache flush\r\
     \n\r\
     \nlog error (\"isp2 mati\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
@@ -9687,6 +9237,8 @@ add comment="     2" down-script="\r\
     \n/ip route enable [find comment=\"isp3>isp2\"]\r\
     \n/ip route enable [find comment=\"isp4>isp2\"]\r\
     \n/ip route enable [find comment=\"isp5>isp2\"]\r\
+    \n\r\
+    \n/ip dns cache flush\r\
     \n\r\
     \n:delay 500ms;\r\
     \nlog warning (\"isp2 on\")\r\
@@ -9766,8 +9318,8 @@ add comment="253 MIRZA PC RUMAH" down-script="/ip firewall nat disable [find c\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001247315859&text=\\E2\\9D\\\
     8C = komputer mirza rumah\" keep-result=no;\r\
-    \n}" host=10.20.254.3 interval=15s timeout=2s up-script="/ip firewall nat \
-    enable [find comment=\"                REDIRECT vpn > pc mirza\"]\r\
+    \n}" host=10.20.254.3 interval=5s timeout=2s up-script="/ip firewall nat e\
+    nable [find comment=\"                REDIRECT vpn > pc mirza\"]\r\
     \n\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001247315859&text=\\E2\\9C\\\

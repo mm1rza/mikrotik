@@ -1,4 +1,4 @@
-# aug/23/2023 12:00:00 by RouterOS 6.47.10
+# sep/02/2023 00:00:00 by RouterOS 6.47.10
 # software id = L0LJ-RSHY
 #
 # model = RBLHG-5nD

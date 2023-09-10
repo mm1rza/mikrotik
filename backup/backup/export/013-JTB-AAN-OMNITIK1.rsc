@@ -1,4 +1,4 @@
-# aug/23/2023 00:00:00 by RouterOS 6.47.10
+# sep/02/2023 00:00:00 by RouterOS 6.47.10
 # software id = IT1Z-24LQ
 #
 # model = RBLHG-5nD

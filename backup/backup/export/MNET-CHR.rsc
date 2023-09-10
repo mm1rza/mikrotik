@@ -1,4 +1,4 @@
-# aug/23/2023 12:00:01 by RouterOS 6.48.6
+# sep/02/2023 00:00:00 by RouterOS 6.49.8
 # software id = FKGG-UMFD
 #
 #
@@ -93,6 +93,9 @@ add bridge=bridge-vpn insert-queue-before=dhcp-WUZZ local-address=10.124.40.1 \
     \n\r\
     \n" only-one=no parent-queue=dhcp-WUZZ rate-limit=\
     "1000M/1000M 0/0 0/0 0/0 8 3M/3M" remote-address=pool-wuzz
+/queue type
+add kind=pfifo name="default-small ORIGINAL" pfifo-limit=10
+set 10 kind=sfq
 /queue interface
 set ether1 queue=ethernet-default
 /snmp community
@@ -131,7 +134,7 @@ add address=103.143.170.11/27 interface=ether1 network=103.143.170.0
 /ip cloud
 set update-time=no
 /ip dns
-set allow-remote-requests=yes cache-max-ttl=1m cache-size=51200KiB servers=\
+set allow-remote-requests=yes cache-max-ttl=5m cache-size=51200KiB servers=\
     9.9.9.9,1.1.1.1
 /ip dns static
 add address=172.16.0.1 name=hotspot.com ttl=5m
@@ -1445,6 +1448,109 @@ add address=139.195.224.99 comment=rohman6 list=ip-publik-client
 add address=36.68.54.169 comment=akubisarouter23 list=ip-publik-client
 add address=36.68.52.249 comment=akubisarouter23 list=ip-publik-client
 add address=112.78.177.6 comment=muhsin list=ip-publik-client
+add address=139.195.231.124 comment=mnet-router-remote list=ip-publik-client
+add address=112.78.177.7 comment=rumah-router-remote list=ip-publik-client
+add address=149.113.101.88 comment=keryn123 list=ip-publik-client
+add address=149.113.64.160 comment=rohman7 list=ip-publik-client
+add address=36.68.55.229 comment=akubisarouter23 list=ip-publik-client
+add address=36.68.54.69 comment=akubisarouter23 list=ip-publik-client
+add address=149.113.89.179 comment=keryn123 list=ip-publik-client
+add address=149.108.24.98 comment=keryn123 list=ip-publik-client
+add address=149.113.71.182 comment=mnet-router-dns list=ip-publik-client
+add address=149.113.14.49 comment=mnet-router-remote list=ip-publik-client
+add address=139.195.250.70 comment=subeki list=ip-publik-client
+add address=112.78.177.5 comment=rumah-router-dns list=ip-publik-client
+add address=149.113.198.231 comment=rumah-router-dns list=ip-publik-client
+add address=112.78.177.2 comment=rumah-router-dns list=ip-publik-client
+add address=149.108.53.120 comment=keryn123 list=ip-publik-client
+add address=8.34.208.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=8.35.192.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=23.236.48.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=23.251.128.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.0.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.2.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.0.0/23 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.3.0/24 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.4.0/24 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.8.0/21 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.16.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.32.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.64.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.3.128.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.4.0.0/14 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.8.0.0/13 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.16.0.0/12 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.32.0.0/11 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.64.0.0/10 comment=MNET-GOOGLE list=z-list-ip-google
+add address=34.128.0.0/10 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.184.0.0/13 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.192.0.0/14 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.196.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.198.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.199.0.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.199.128.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.200.0.0/13 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.208.0.0/12 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.224.0.0/12 comment=MNET-GOOGLE list=z-list-ip-google
+add address=35.240.0.0/13 comment=MNET-GOOGLE list=z-list-ip-google
+add address=64.15.112.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=64.233.160.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=66.22.228.0/23 comment=MNET-GOOGLE list=z-list-ip-google
+add address=66.102.0.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=66.249.64.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=70.32.128.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=72.14.192.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=74.125.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=104.154.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=104.196.0.0/14 comment=MNET-GOOGLE list=z-list-ip-google
+add address=104.237.160.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=107.167.160.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=107.178.192.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=108.59.80.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=108.170.192.0/18 comment=MNET-GOOGLE list=z-list-ip-google
+add address=108.177.0.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=130.211.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=142.250.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=146.148.0.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=162.216.148.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=162.222.176.0/21 comment=MNET-GOOGLE list=z-list-ip-google
+add address=172.110.32.0/21 comment=MNET-GOOGLE list=z-list-ip-google
+add address=172.217.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=172.253.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=173.194.0.0/16 comment=MNET-GOOGLE list=z-list-ip-google
+add address=173.255.112.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=192.158.28.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=192.178.0.0/15 comment=MNET-GOOGLE list=z-list-ip-google
+add address=193.186.4.0/24 comment=MNET-GOOGLE list=z-list-ip-google
+add address=199.36.154.0/23 comment=MNET-GOOGLE list=z-list-ip-google
+add address=199.36.156.0/24 comment=MNET-GOOGLE list=z-list-ip-google
+add address=199.192.112.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=199.223.232.0/21 comment=MNET-GOOGLE list=z-list-ip-google
+add address=207.223.160.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=208.65.152.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=208.68.108.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=208.81.188.0/22 comment=MNET-GOOGLE list=z-list-ip-google
+add address=208.117.224.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=209.85.128.0/17 comment=MNET-GOOGLE list=z-list-ip-google
+add address=216.58.192.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=216.73.80.0/20 comment=MNET-GOOGLE list=z-list-ip-google
+add address=216.239.32.0/19 comment=MNET-GOOGLE list=z-list-ip-google
+add address=112.78.177.0 comment=rumah-router-dns list=ip-publik-client
+add address=139.195.247.158 comment=mnet-router-remote list=ip-publik-client
+add address=149.113.69.88 comment=rohman3 list=ip-publik-client
+add address=139.195.235.226 comment=mnet-router-dns list=ip-publik-client
+add address=139.195.236.162 comment=mnet-router-remote list=ip-publik-client
+add address=139.195.226.226 comment=rohman2 list=ip-publik-client
+add address=139.195.250.21 comment=mnet-router-dns list=ip-publik-client
+add address=139.0.153.120 comment=keryn123 list=ip-publik-client
+add address=149.113.5.64 comment=mnet-router-remote list=ip-publik-client
+add address=139.195.233.170 comment=rohman3 list=ip-publik-client
+add address=149.113.199.74 comment=mnet-router-remote list=ip-publik-client
+add address=36.68.54.222 comment=akubisarouter23 list=ip-publik-client
+add address=36.68.52.185 comment=akubisarouter23 list=ip-publik-client
+add address=139.0.55.186 comment=keryn123 list=ip-publik-client
+add address=139.195.254.181 comment=mnet-router-remote list=ip-publik-client
+add address=139.0.99.109 comment=keryn123 list=ip-publik-client
 add address=43.254.127.234 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=58.147.188.41 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=103.197.188.181 comment=MNET-SPEEDTEST list=z-list-ip-speedtest
@@ -2122,9 +2228,34 @@ add address=xmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=yougetsignal.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=zd.map.fastly.net comment=MNET-SPEEDTEST list=z-list-ip-speedtest
 add address=zenmate.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
-add address=139.195.231.124 comment=mnet-router-remote list=ip-publik-client
-add address=112.78.177.7 comment=rumah-router-remote list=ip-publik-client
-add address=149.113.101.88 comment=keryn123 list=ip-publik-client
+add address=api.whatismyip.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=pro.ip-api.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=iptools-4.top10vpn.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=www.showmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=showmyip.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=ip-info.ff.avast.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=myip.veepn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=zoogvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=whatismyip.uno comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.whatismyip-address.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=iplocation.io comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=app.uptrends.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=api.ipify.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=api64.ipify.org comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=www.name.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=mylocationnow.io comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=proxylist.geonode.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=brightvpn.com comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=check.privadovpn.com comment=MNET-SPEEDTEST list=\
+    z-list-ip-speedtest
+add address=ifconfig.me comment=MNET-SPEEDTEST list=z-list-ip-speedtest
+add address=36.68.54.118 comment=akubisarouter23 list=ip-publik-client
+add address=139.195.234.62 comment=mnet-router-dns list=ip-publik-client
 /ip firewall filter
 add action=accept chain=input comment="                ACCEPT vpn dynamic" \
     in-interface-list=dynamic
@@ -2409,14 +2540,14 @@ add action=drop chain=prerouting comment="                DROP ddos" \
     dst-port=21-23 protocol=tcp src-address-list=!ip-publik-client
 add action=drop chain=prerouting dst-port=53,5353,853 protocol=tcp
 add action=drop chain=prerouting dst-port=53,5353,853 protocol=udp
-add action=drop chain=prerouting comment=\
-    "                DROP winbox exploit" content=user.dat
 add action=drop chain=prerouting comment="                DROP (neighbor dis 5\
     678) (mac address 20561) (snmp 161,162) (dude 2210,2211) (proxy 3128,8080)\
     \_(btest 2000,3000) (tracert 33434-33534)" dst-port=\
     5678,20561,161,162,2210,2211,3128,8080,2000,3000,33434-33534 protocol=tcp
 add action=drop chain=prerouting dst-port=\
     5678,20561,161,162,2210,2211,3128,8080,2000,3000,33434-33534 protocol=udp
+add action=drop chain=prerouting comment=\
+    "                DROP winbox exploit" content=user.dat
 add action=drop chain=prerouting comment=\
     "TCP invalid combination of flags attack (7 rules)" disabled=yes \
     protocol=tcp tcp-flags=!fin,!syn,!rst,!ack
@@ -2458,6 +2589,7 @@ add action=drop chain=prerouting disabled=yes dst-port=33434-33534 protocol=\
 /ip ipsec policy
 set 0 dst-address=0.0.0.0/0 src-address=0.0.0.0/0
 /ip route
+add distance=1 gateway=103.143.170.9 routing-mark=isp1
 add distance=1 gateway=103.143.170.9
 /ip service
 set telnet disabled=yes
@@ -2516,97 +2648,15 @@ set enabled=yes primary-ntp=216.239.35.4 secondary-ntp=211.233.84.186
 /system package update
 set channel=long-term
 /system scheduler
-add interval=12h name=##backup on-event=\
-    "/system script run ##backup-router-email&ftp" policy=\
+add interval=12h name=##backup on-event="/system script run ##backup-router-em\
+    ail&ftp\r\
+    \n/system script run #update-speedtest" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     start-date=jan/01/2020 start-time=12:00:00
 add interval=1w name="###auto renew licence" on-event=\
     "/system script run ###auto renew licence" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     start-date=sep/03/2021 start-time=04:24:55
-add disabled=yes interval=1m name=~ping on-event=":local intisp \"ether1\"\r\
-    \n:local namaisp \"isp1\"\r\
-    \n\r\
-    \n:local time [/system clock get time]\r\
-    \n:local error \"mati \$time -\"\r\
-    \n:local aman \"nyala \$time -\"\r\
-    \n\r\
-    \n:if ([/ping address=1.0.0.1 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 1.0.0.1\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 1.0.0.1\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=1.1.1.1 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 1.1.1.1\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 1.1.1.1\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=8.8.4.4 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 8.8.4.4\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 8.8.4.4\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=8.8.8.8 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 8.8.8.8\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 8.8.8.8\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=4.2.2.1 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 4.2.2.1\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 4.2.2.1\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=4.2.2.2 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 4.2.2.2\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 4.2.2.2\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=9.9.9.9 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 9.9.9.9\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 9.9.9.9\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=149.112.112.112 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 149.112.112.112\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 149.112.112.112\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=208.67.220.220 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 208.67.220.220\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 208.67.220.220\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=208.67.222.222 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 208.67.222.222\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 208.67.222.222\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=94.140.14.14 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 94.140.14.14\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 94.140.14.14\")\r\
-    \n};\r\
-    \n\r\
-    \n:if ([/ping address=94.140.14.15 count=3 ] = 0) do={\r\
-    \nlog error (\"\$error 94.140.14.15\")\r\
-    \n} else={\r\
-    \n#log warning (\"\$aman 94.140.14.15\")\r\
-    \n};\r\
-    \n\r\
-    \n#:delay 1s;\r\
-    \n#log info message=\"\$namaisp batasssss\"" policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-    start-date=apr/11/2022 start-time=00:00:00
 add disabled=yes interval=13s name="AUTO CARI DNS" on-event=":if ([/ping addre\
     ss=1.1.1.1 count=3] = 0) do={\r\
     \n  :if ([/ping address=8.8.8.8 count=3] = 0) do={\r\
@@ -2622,6 +2672,215 @@ add disabled=yes interval=13s name="AUTO CARI DNS" on-event=":if ([/ping addre\
     \n};" policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     start-time=startup
+add interval=1m name="~ping isp1" on-event=":local intisp \"isp1\"\r\
+    \n:local namaisp \"\"\r\
+    \n\r\
+    \n:local time [/system clock get time]\r\
+    \n:local error \"\$namaisp mati \$time -\"\r\
+    \n:local aman \"\$namaisp nyala \$time -\"\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.8.8 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 8.8.8.8 GOOGLE\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 8.8.8.8 GOOGLE\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=8.8.4.4 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 8.8.4.4 GOOGLE\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 8.8.4.4 GOOGLE\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.1 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.1.1.1 CLOUDFLARE\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.1.1.1 CLOUDFLARE\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.1 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.0.0.1 CLOUDFLARE\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.0.0.1 CLOUDFLARE\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.2 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.1.1.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.1.1.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.2 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.0.0.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.0.0.2 CLOUDFLARE Malware Blocking Only\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.1.1.3 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.1.1.3 CLOUDFLARE Malware and Adult Content Blocki\
+    ng Together\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.1.1.3 CLOUDFLARE Malware and Adult Content Bloc\
+    king Together\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=1.0.0.3 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 1.0.0.3 CLOUDFLARE Malware and Adult Content Blocki\
+    ng Together\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 1.0.0.3 CLOUDFLARE Malware and Adult Content Bloc\
+    king Together\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.9 count=3 ] = 0) do\
+    ={\r\
+    \nlog error (\"\$error 9.9.9.9 QUAD 9\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 9.9.9.9 QUAD 9\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.112 count=3 ]\
+    \_= 0) do={\r\
+    \nlog error (\"\$error 149.112.112.112 QUAD 9\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 149.112.112.112 QUAD 9\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.11 count=3 ] = 0) d\
+    o={\r\
+    \nlog error (\"\$error 9.9.9.11 QUAD 9 Secured ECS: Malware blocking, DNSS\
+    EC Validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 9.9.9.11 QUAD 9 Secured ECS: Malware blocking, DN\
+    SSEC Validation\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.11 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 149.112.112.11 QUAD 9 Secured ECS: Malware blocking\
+    , DNSSEC Validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 149.112.112.11 QUAD 9 Secured ECS: Malware blocki\
+    ng, DNSSEC Validation\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=9.9.9.10 count=3 ] = 0) d\
+    o={\r\
+    \nlog error (\"\$error 9.9.9.10 QUAD 9 Unsecured: No Malware blocking, no \
+    DNSSEC validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 9.9.9.10 QUAD 9 Unsecured: No Malware blocking, n\
+    o DNSSEC validation\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=149.112.112.10 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 149.112.112.10 QUAD 9 Unsecured: No Malware blockin\
+    g, no DNSSEC validation\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 149.112.112.10 QUAD 9 Unsecured: No Malware block\
+    ing, no DNSSEC validation\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.222.222 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.222.222 OpenDNS\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.222.222 OpenDNS\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.220 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.220.220 OpenDNS\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.220.220 OpenDNS\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.222.123 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.222.123 OpenDNS FamilyShield\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.222.123 OpenDNS FamilyShield\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=208.67.220.123 count=3 ] \
+    = 0) do={\r\
+    \nlog error (\"\$error 208.67.220.123 OpenDNS FamilyShield\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 208.67.220.123 OpenDNS FamilyShield\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.14 count=3 ] = \
+    0) do={\r\
+    \nlog error (\"\$error 94.140.14.14 AdGuard\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.14 AdGuard\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.15.15 count=3 ] = \
+    0) do={\r\
+    \nlog error (\"\$error 94.140.15.15 AdGuard\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.15.15 AdGuard\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.140 count=3 ] =\
+    \_0) do={\r\
+    \nlog error (\"\$error 94.140.14.140 AdGuard Non-filtering\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.140 AdGuard Non-filtering\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.141 count=3 ] =\
+    \_0) do={\r\
+    \nlog error (\"\$error 94.140.14.141 AdGuard Non-filtering\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.141 AdGuard Non-filtering\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.14.15 count=3 ] = \
+    0) do={\r\
+    \nlog error (\"\$error 94.140.14.15 AdGuard Family protection\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.14.15 AdGuard Family protection\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=94.140.15.16 count=3 ] = \
+    0) do={\r\
+    \nlog error (\"\$error 94.140.15.16 AdGuard Family protection\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 94.140.15.16 AdGuard Family protection\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=77.88.8.1 count=3 ] = 0) \
+    do={\r\
+    \nlog error (\"\$error 77.88.8.1 Yandex\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 77.88.8.1 Yandex\")\r\
+    \n};\r\
+    \n\r\
+    \n:if ([/ping routing-table=\"\$intisp\" address=77.88.8.8 count=3 ] = 0) \
+    do={\r\
+    \nlog error (\"\$error 77.88.8.8 Yandex\")\r\
+    \n} else={\r\
+    \n#log warning (\"\$aman 77.88.8.8 Yandex\")\r\
+    \n};\r\
+    \n\r\
+    \n\r\
+    \n#:delay 1s;\r\
+    \n#log info message=\"\$namaisp batasssss\"" policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    start-date=apr/11/2022 start-time=00:01:00
+add interval=1d name=#wajib on-event="/ip dns cache flush" policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    start-date=jan/01/2023 start-time=04:23:00
 /system script
 add dont-require-permissions=yes name=##backup-router-email&ftp owner=mm1rza \
     policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
@@ -2648,6 +2907,7 @@ add dont-require-permissions=no name="!              CLEAR LOG" owner=mm1rza \
 add dont-require-permissions=no name=#update-speedtest owner=mm1rza policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/\
     ip firewall address-list remove [find comment=\"MNET-SPEEDTEST\"]\r\
+    \n/ip dns cache flush\r\
     \n:delay 1s\r\
     \n:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file remov\
     e list-ip-speedtest.rsc }; \r\
@@ -2683,98 +2943,35 @@ set allowed-interface-list=none
 /tool mac-server ping
 set enabled=no
 /tool netwatch
-add comment="2 GOOGLE" disabled=yes down-script="\r\
-    \n/ip dns set servers=9.9.9.9,149.112.112.112\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \nlog error (\"VPS DNS GOOGLE\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
-    8C VPS IDNIX DNS GOOGLE\" keep-result=no;" host=8.8.8.8 interval=5s \
-    up-script="\r\
-    \n/ip dns set servers=8.8.8.8,8.8.4.4\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \n:delay 500ms;\r\
-    \nlog warning (\"VPS DNS GOOGLE\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS GOOGLE\" keep-result=no;"
 add comment="~1 CLOUDFLARE " down-script="\r\
+    \n/ip dns cache flush\r\
+    \n\r\
     \nlog error (\"VPS DNS CLOUDFLARE\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
     8C VPS  NOTIF IDNIX DNS CLOUDFLARE\" keep-result=no;\r\
     \n" host=1.1.1.1 interval=10s timeout=1s500ms up-script=":delay 500ms;\r\
+    \n/ip dns cache flush\r\
+    \n\r\
     \nlog warning (\"VPS DNS CLOUDFLARE\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
     85 VPS  NOTIF IDNIX DNS CLOUDFLARE\" keep-result=no;"
-add comment="4 ADGUARD" disabled=yes down-script="\r\
-    \nlog error (\"VPS DNS ADGUARD\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
-    8C VPS IDNIX DNS ADGUARD\" keep-result=no;" host=94.140.14.14 interval=5s \
-    up-script=":delay 500ms;\r\
-    \nlog warning (\"VPS DNS ADGUARD\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS ADGUARD\" keep-result=no;"
-add comment="3 OpenDNS" disabled=yes down-script="\r\
-    \nlog error (\"VPS DNS OpenDNS\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
-    8C VPS IDNIX DNS OpenDNS\" keep-result=no;" host=208.67.222.222 interval=\
-    5s up-script=":delay 500ms;\r\
-    \nlog warning (\"VPS DNS OpenDNS\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS OpenDNS\" keep-result=no;"
-add comment="0 Quad9 Recommended" disabled=yes down-script="\r\
-    \n/ip dns set servers=1.1.1.1,1.0.0.1,8.8.8.8,8.8.4.4\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \nlog error (\"VPS DNS Quad9\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
-    8C VPS IDNIX DNS Quad9\" keep-result=no;" host=9.9.9.9 interval=5s \
-    up-script="\r\
-    \n/ip dns set servers=9.9.9.9,149.112.112.112\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \n:delay 500ms;\r\
-    \nlog warning (\"VPS DNS Quad9\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS Quad9\" keep-result=no;"
-add comment="1 CLOUDFLARE" disabled=yes down-script="\r\
-    \n/ip dns set servers=8.8.8.8,8.8.4.4\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \nlog error (\"VPS DNS CLOUDFLARE\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
-    8C VPS IDNIX DNS CLOUDFLARE\" keep-result=no;\r\
-    \n" host=1.1.1.1 interval=5s up-script="\r\
-    \n/ip dns set servers=1.1.1.1,1.0.0.1\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \n:delay 500ms;\r\
-    \nlog warning (\"VPS DNS CLOUDFLARE\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS CLOUDFLARE\" keep-result=no;"
 add comment="~0 Quad9" down-script="\r\
+    \n/ip dns cache flush\r\
+    \n\r\
     \nlog error (\"VPS DNS Quad9\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
     8C VPS  NOTIF IDNIX DNS Quad9\" keep-result=no;" host=9.9.9.9 interval=\
     10s timeout=1s500ms up-script=":delay 500ms;\r\
+    \n/ip dns cache flush\r\
+    \n\r\
     \nlog warning (\"VPS DNS Quad9\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
     85 VPS  NOTIF IDNIX DNS Quad9\" keep-result=no;"
-add comment="~2 GOOGLE" down-script="\r\
+add comment="~2 GOOGLE" disabled=yes down-script="\r\
     \nlog error (\"VPS DNS GOOGLE\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
@@ -2784,7 +2981,7 @@ add comment="~2 GOOGLE" down-script="\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
     85 VPS NOTIF IDNIX DNS GOOGLE\" keep-result=no;"
-add comment="~3 OpenDNS" down-script="\r\
+add comment="~3 OpenDNS" disabled=yes down-script="\r\
     \nlog error (\"VPS DNS OpenDNS\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
@@ -2794,7 +2991,7 @@ add comment="~3 OpenDNS" down-script="\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
     85 VPS NOTIF IDNIX DNS OpenDNS\" keep-result=no;"
-add comment="~4 ADGUARD" down-script="\r\
+add comment="~4 ADGUARD" disabled=yes down-script="\r\
     \nlog error (\"VPS DNS ADGUARD\")\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9D\\\
@@ -2804,54 +3001,3 @@ add comment="~4 ADGUARD" down-script="\r\
     \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
     vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
     85 VPS NOTIF IDNIX DNS ADGUARD\" keep-result=no;"
-add comment="# CF& GOOGLE" disabled=yes down-script="\r\
-    \n/ip dns set servers=1.1.1.1,1.0.0.1,8.8.8.8,8.8.4.4\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \nlog error (\"VPS DNS CLOUDFLARE n GOOGLE\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS CLOUDFLARE n GOOGLE\" keep-result=no;" host=1.1.1.1 \
-    interval=5s up-script="\r\
-    \n/ip dns set servers=1.1.1.1,1.0.0.1,8.8.8.8,8.8.4.4\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \n:delay 500ms;\r\
-    \nlog warning (\"VPS DNS CLOUDFLARE n GOOGLE\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS CLOUDFLARE n GOOGLE\" keep-result=no;"
-add comment="# 9.9.9 & GG" disabled=yes down-script="\r\
-    \n/ip dns set servers=9.9.9.9,149.112.112.112,1.1.1.1\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \nlog error (\"VPS DNS CLOUDFLARE n CLOUD 9\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS CLOUDFLARE n CLOUD 9\" keep-result=no;" host=9.9.9.9 \
-    interval=5s up-script="\r\
-    \n/ip dns set servers=9.9.9.9,149.112.112.112,8.8.8.8\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \n:delay 500ms;\r\
-    \nlog error (\"VPS DNS CLOUDFLARE n CLOUD 9\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS CLOUDFLARE n CLOUD 9\" keep-result=no;"
-add comment="# 9.9.9 & CF" disabled=yes down-script="\r\
-    \n/ip dns set servers=9.9.9.9,1.1.1.1\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \nlog error (\"VPS DNS CLOUDFLARE n CLOUD 9\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS CLOUDFLARE n CLOUD 9\" keep-result=no;" host=9.9.9.9 \
-    interval=5s up-script="\r\
-    \n/ip dns set servers=9.9.9.9,1.1.1.1\r\
-    \n/ip dns cache flush\r\
-    \n\r\
-    \n:delay 500ms;\r\
-    \nlog error (\"VPS DNS CLOUDFLARE n CLOUD 9\")\r\
-    \n/tool fetch url=\"https://api.telegram.org/bot1353625910:AAGAPgQZzOh1JL2\
-    vN8jWriJs6XR-xInew04/sendmessage\\\?chat_id=-1001184386305&text=\\E2\\9C\\\
-    85 VPS IDNIX DNS CLOUDFLARE n CLOUD 9\" keep-result=no;"

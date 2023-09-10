@@ -1,4 +1,4 @@
-# aug/23/2023 12:00:00 by RouterOS 6.47.10
+# sep/01/2023 12:00:00 by RouterOS 6.47.10
 # software id = LY23-XVZJ
 #
 # model = RBLHG-5nD

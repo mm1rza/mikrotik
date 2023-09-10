@@ -1,4 +1,4 @@
-# aug/23/2023 00:00:01 by RouterOS 6.47.10
+# sep/01/2023 12:00:00 by RouterOS 6.47.10
 # software id = MKXH-7GQY
 #
 # model = RBSXTsq5nD
