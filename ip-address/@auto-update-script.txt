@@ -1,0 +1,43 @@
+
+
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("mnet tidak bisa di ping")
+} else={
+/ip dns cache flush
+	/ip firewall address-list remove [find comment="MNET-SPEEDTEST"]
+	:delay 1s
+	:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file remove list-ip-speedtest.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-speedtest.rsc" mode=http;
+	/import list-ip-speedtest.rsc
+	:delay 5s
+	/file remove list-ip-speedtest.rsc
+};
+
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("mnet tidak bisa di ping")
+} else={
+	/ip firewall address-list remove [find comment="MNET-WHATSAPP"]
+	:delay 1s
+	:if ([:len [/file find name=list-ip-whatsapp.rsc]] > 0) do={/file remove list-ip-whatsapp.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-whatsapp.rsc" mode=http;
+	/import list-ip-whatsapp.rsc
+	:delay 5s
+	/file remove list-ip-whatsapp.rsc
+};
+
+
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("mnet tidak bisa di ping")
+} else={
+	/ip firewall address-list remove [find comment="MNET-GOOGLE"]
+	:delay 1s
+	:if ([:len [/file find name=list-ip-google.rsc]] > 0) do={/file remove list-ip-google.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-google.rsc" mode=http;
+	/import list-ip-google.rsc
+	:delay 5s
+	/file remove list-ip-google.rsc
+};
+

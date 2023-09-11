@@ -1,12 +1,3 @@
-################
-#untuk content raw .whatsapp.com
-#untuk content raw .whatsapp.net
-
-
-
-
-
-
 /ip firewall address-list
 add address=3.33.221.48/32 list=z-list-ip-whatsapp comment="MNET-WHATSAPP"
 add address=3.33.252.61/32 list=z-list-ip-whatsapp comment="MNET-WHATSAPP"

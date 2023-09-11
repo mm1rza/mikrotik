@@ -212,15 +212,16 @@ add interval=15m name="~ping vpn mnet" on-event=\
 /ip route
 add check-gateway=ping distance=1 dst-address=1.1.1.1/32 gateway=10.123.223.1 comment="MNET-VPN"
 add check-gateway=ping distance=1 dst-address=1.0.0.1/32 gateway=10.123.223.1 comment="MNET-VPN"
-add check-gateway=ping distance=1 dst-address=8.8.8.8/32 gateway=10.123.223.1 comment="MNET-VPN"
-add check-gateway=ping distance=1 dst-address=8.8.4.4/32 gateway=10.123.223.1 comment="MNET-VPN"
-add check-gateway=ping distance=1 dst-address=9.9.9.9/32 gateway=10.123.223.1 comment="MNET-VPN"
-add check-gateway=ping distance=1 dst-address=149.112.112.112/32 gateway=10.123.223.1 comment="MNET-VPN"
-add check-gateway=ping distance=1 dst-address=94.140.14.14/32 gateway=10.123.223.1 comment="MNET-VPN"
-add check-gateway=ping distance=1 dst-address=94.140.15.15/32 gateway=10.123.223.1 comment="MNET-VPN"
+#add check-gateway=ping distance=1 dst-address=8.8.8.8/32 gateway=10.123.223.1 comment="MNET-VPN"
+#add check-gateway=ping distance=1 dst-address=8.8.4.4/32 gateway=10.123.223.1 comment="MNET-VPN"
+#add check-gateway=ping distance=1 dst-address=9.9.9.9/32 gateway=10.123.223.1 comment="MNET-VPN"
+#add check-gateway=ping distance=1 dst-address=149.112.112.112/32 gateway=10.123.223.1 comment="MNET-VPN"
+#add check-gateway=ping distance=1 dst-address=94.140.14.14/32 gateway=10.123.223.1 comment="MNET-VPN"
+#add check-gateway=ping distance=1 dst-address=94.140.15.15/32 gateway=10.123.223.1 comment="MNET-VPN"
 
 /ip dns
-set allow-remote-requests=yes servers=1.1.1.1,1.0.0.1,8.8.8.8,8.8.4.4
+set allow-remote-requests=yes servers=1.1.1.1,1.0.0.1
+#set allow-remote-requests=yes servers=1.1.1.1,1.0.0.1,8.8.8.8,8.8.4.4
 /ip dns cache flush
 
 
@@ -232,6 +233,9 @@ set allow-remote-requests=yes servers=1.1.1.1,1.0.0.1,8.8.8.8,8.8.4.4
 # nat dns ke vpn
 /ip firewall nat add action=dst-nat chain=dstnat comment=MNET-VPN dst-port=53,5353,853 protocol=udp to-addresses=10.123.223.1 to-ports=53 place-before=0
 /ip firewall nat add action=dst-nat chain=dstnat comment=MNET-VPN dst-port=53,5353,853 protocol=tcp to-addresses=10.123.223.1 to-ports=53 place-before=0
+
+#/ip firewall nat add action=dst-nat chain=dstnat comment=DNSBebasIDNOVIRUS dst-port=53 protocol=udp src-address-list=ip-local-dns-khusus to-addresses=103.87.68.195 to-ports=1753
+#/ip firewall nat add action=dst-nat chain=dstnat comment=DNSBebasIDNOVIRUS dst-port=53 protocol=tcp src-address-list=ip-local-dns-khusus to-addresses=103.87.68.195 to-ports=1753
 
 # hapus cache dns di mikrotik
 /ip dns cache flush
