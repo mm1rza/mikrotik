@@ -9,10 +9,10 @@ set enabled=yes primary-ntp=216.239.35.4 secondary-ntp=211.233.84.186
 /system clock
 set time-zone-autodetect=no time-zone-name=Asia/Jakarta
 /ip dns
-set allow-remote-requests=yes cache-max-ttl=1d
-#set allow-remote-requests=yes cache-max-ttl=1d servers=8.8.8.8,8.8.4.4
+set allow-remote-requests=yes cache-max-ttl=1d cache-size=51200KiB
 /system package update
 set channel=long-term
+
 
 
 ###################################################
@@ -33,6 +33,52 @@ set api disabled=yes
 set api-ssl disabled=yes
 #/ip firewall nat
 #add action=masquerade chain=srcnat disabled=yes
+
+
+
+###################################################
+## 		 	QUEUE TYPE + QUEUE BASIC 			 ##
+###################################################
+/queue type add kind=pcq name=pcq-download pcq-classifier=dst-address pcq-dst-address6-mask=64 pcq-src-address6-mask=64
+/queue type add kind=pcq name=pcq-upload pcq-classifier=src-address pcq-dst-address6-mask=64 pcq-src-address6-mask=64
+/queue type add kind=pfifo name=default-100 pfifo-limit=100
+/queue type add kind=sfq name=FULL-SPEED-LOKAL
+/queue type add kind=pfifo name=default-500 pfifo-limit=500
+/queue type add kind=pfifo name="default-small ORIGINAL" pfifo-limit=10
+/queue type add kind=sfq name=rumahan-stabil
+
+/queue simple add disabled=yes max-limit=100M/100M name="~~~~  BYPASS  ~~~~" priority=1/1 queue=default-500/default-500 target=192.168.55.0/24
+/queue simple add max-limit=100M/100M name="-            LOKAL           -" packet-marks=lokal priority=1/1 queue=FULL-SPEED-LOKAL/FULL-SPEED-LOKAL target=10.0.0.0/8,172.16.0.0/12
+/queue simple add max-limit=100M/100M name="--             VIP              --" packet-marks=vip priority=1/1 target=10.0.0.0/8,172.16.0.0/12
+/queue simple add max-limit=100M/100M name="---          GAME          ---" packet-marks=game-ml,game-ff priority=2/2 target=10.0.0.0/8,172.16.0.0/12
+/queue simple add max-limit=21M/21M name="----   SPEEDTEST    ----" packet-marks=speedtest priority=1/1 queue=default-500/default-500 target=10.10.0.0/21,10.10.12.3/32
+/queue simple add name="--------ALL TRAFIK--------" target=10.0.0.0/8,172.16.0.0/12
+/queue simple add name=rumahan parent="--------ALL TRAFIK--------" target=10.10.0.0/21,10.10.12.3/32
+/queue simple add name=hotspotan parent="--------ALL TRAFIK--------" target=172.16.0.0/12
+
+
+
+###################################################
+## 			BASIC FIREWALL FILTER 				 ##
+###################################################
+
+/interface list add name=ISP
+/interface list add name=LAN
+
+/ip firewall filter add action=drop chain=forward comment="                DROP ping ke modem isp" dst-address-list=ip-modem-isp protocol=icmp src-address-list=ip-local
+/ip firewall filter add action=drop chain=forward comment="                DROP ping" dst-address-list=z-list-ip-redirect packet-size=!0-800 protocol=icmp
+/ip firewall filter add action=drop chain=forward dst-address-list=z-list-ip-redirect fragment=yes protocol=icmp
+/ip firewall filter add action=drop chain=input packet-size=!0-800 protocol=icmp
+/ip firewall filter add action=drop chain=input fragment=yes protocol=icmp
+/ip firewall filter add action=drop chain=forward comment="                DROP tracert" icmp-options=11:0 in-interface-list=ISP protocol=icmp
+/ip firewall filter add action=drop chain=forward icmp-options=3:3 in-interface-list=ISP protocol=icmp
+/ip firewall filter add action=drop chain=input comment="                DROP (neighbor dis 5678) (mac address 20561) (snmp 161,162) (dude 2210,2211) (proxy 3128,8080) (btest 2000,3000) (tracert 33434-33534) (dns 53,5353,853)" dst-port=5678,20561,161,162,2210,2211,3128,8080,2000,3000,33434-33534,53,5353,853 in-interface-list=ISP protocol=tcp
+/ip firewall filter add action=drop chain=input dst-port=5678,20561,161,162,2210,2211,3128,8080,2000,3000,33434-33534,53,5353,853 in-interface-list=ISP protocol=udp
+/ip firewall filter add action=drop chain=input comment="                DROP (winbox 21,22,23,8291,8728,8729,80,443)" dst-port=21,22,23,8291,8728,8729,80,443,8085 in-interface-list=ISP protocol=tcp
+/ip firewall filter add action=drop chain=input dst-port=21,22,23,8291,8728,8729,80,443,8085 in-interface-list=ISP protocol=udp
+/ip firewall filter add action=drop chain=forward comment="BebasIT | Bypass DPI" content="Location: http://lamanlabuh.aduankonten.id/" disabled=yes in-interface-list=ISP protocol=tcp
+/ip firewall filter add action=drop chain=forward comment="BebasIT | Bypass DPI" disabled=yes in-interface-list=ISP protocol=tcp tcp-flags=rst,ack
+
 
 
 ###################################################
@@ -63,6 +109,7 @@ add name=bwtest policy="local,test,winbox,!telnet,!ssh,!ftp,!reboot,!read,!wri\
 /user set admin123 password="" group=bwtest
 
 #/user set admin password="" group=bwtest
+
 
 
 ###################################################
@@ -111,6 +158,14 @@ add dont-require-permissions=no name=##updatedanupgrade owner=mm1rza policy=\
     \ny"
 
 
+
+
+
+
+####   SELESAI - SELESAI - SELESAI - SELESAI ####
+
+
+
 ###################################################
 ## 				 WIRELESS 						 ##
 ###################################################
@@ -126,6 +181,7 @@ set [ find default-name=wlan1 ] country=no_country_set disabled=no
 set [ find default-name=wlan1 ] frequency-mode=superchannel
 /interface wireless
 set [ find default-name=wlan1 ] mode=station-bridge
+
 
 
 ###################################################

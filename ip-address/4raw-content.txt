@@ -1,0 +1,112 @@
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google address-list-timeout=none-static chain=prerouting content=.googlevideo.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google address-list-timeout=none-static chain=prerouting content=.youtube.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google address-list-timeout=none-static chain=prerouting content=.ytimg.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-tiktok address-list-timeout=none-static chain=prerouting content=.tiktokcdn.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-tiktok address-list-timeout=none-static chain=prerouting content=.tiktokv.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-tiktok address-list-timeout=none-static chain=prerouting content=.tiktok.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-snack address-list-timeout=none-static chain=prerouting content=.snackvideo.in dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-snack address-list-timeout=none-static chain=prerouting content=.myqcloud.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-snack address-list-timeout=none-static chain=prerouting content=.snackvideo.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-whatsapp address-list-timeout=none-static chain=prerouting content=.whatsapp.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-whatsapp address-list-timeout=none-static chain=prerouting content=.whatsapp.net dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=.facebook.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=.facebook.net dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=.fbcdn.net dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=.fbsbx.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=fb.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=fb.gg dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=fbwat.ch dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=messenger.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-facebook address-list-timeout=none-static chain=prerouting content=m.me dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-instagram address-list-timeout=none-static chain=prerouting content=.instagram.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-instagram address-list-timeout=none-static chain=prerouting content=.cdninstagram.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-twitter address-list-timeout=none-static chain=prerouting content=twitter.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-twitter address-list-timeout=none-static chain=prerouting content=.twitter.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-twitter address-list-timeout=none-static chain=prerouting content=.twimg.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-twitter address-list-timeout=none-static chain=prerouting content=t.co dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-telegram address-list-timeout=none-static chain=prerouting content=telegram.org dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-telegram address-list-timeout=none-static chain=prerouting content=api.telegram.org dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-telegram address-list-timeout=none-static chain=prerouting content=core.telegram.org dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-telegram address-list-timeout=none-static chain=prerouting content=web.telegram.org dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-telegram address-list-timeout=none-static chain=prerouting content=t.me dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-telegram address-list-timeout=none-static chain=prerouting content=telesco.pe dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=windowsupdate.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=.windowsupdate.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=.update.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=.windowsupdate.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=download.windowsupdate.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=.download.windowsupdate.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=download.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=wustat.windows.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=ntservicepack.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=go.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-windows-update address-list-timeout=none-static chain=prerouting content=dl.delivery.mp.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-shopee address-list-timeout=none-static chain=prerouting content=shopee.co.id dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-shopee address-list-timeout=none-static chain=prerouting content=.shopee.co.id dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-shopee address-list-timeout=none-static chain=prerouting content=.shopeemobile.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-shopee address-list-timeout=none-static chain=prerouting content=.shopee.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-shopee address-list-timeout=none-static chain=prerouting content=shopee.io dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-shopee address-list-timeout=none-static chain=prerouting content=.shopee.sg dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-tokopedia address-list-timeout=none-static chain=prerouting content=.tokopedia.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-tokopedia address-list-timeout=none-static chain=prerouting content=.tokopedia.net dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-bukalapak address-list-timeout=none-static chain=prerouting content=.bukalapak.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-bukalapak address-list-timeout=none-static chain=prerouting content=bukalapak.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-lazada address-list-timeout=none-static chain=prerouting content=.lazada.co.id dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-lazada address-list-timeout=none-static chain=prerouting content=.lazada.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-lazada address-list-timeout=none-static chain=prerouting content=.lazada. dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-lazada address-list-timeout=none-static chain=prerouting content=.alicdn.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-lazada address-list-timeout=none-static chain=prerouting content=.slatic.net dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-lazada address-list-timeout=none-static chain=prerouting content=.aliyuncs.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-lazada address-list-timeout=none-static chain=prerouting content=.alibaba-inc.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google-meet address-list-timeout=none-static chain=prerouting content=.google.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google-meet address-list-timeout=none-static chain=prerouting content=.googleapis.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google-meet address-list-timeout=none-static chain=prerouting content=.gstatic.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google-meet address-list-timeout=none-static chain=prerouting content=.googleusercontent.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google-meet address-list-timeout=none-static chain=prerouting content=.googlevideo.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google-meet address-list-timeout=none-static chain=prerouting content=.youtube-nocookie.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-google-meet address-list-timeout=none-static chain=prerouting content=.ytimg.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-vidio address-list-timeout=none-static chain=prerouting content=vidio.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-vidio address-list-timeout=none-static chain=prerouting content=.vidio.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-vidio address-list-timeout=none-static chain=prerouting content=vidio.akamaized.net dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-vidio address-list-timeout=none-static chain=prerouting content=vidio-com.akamaized.net dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-vidio address-list-timeout=none-static chain=prerouting content=vidio.com.edgekey.net dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-vidio address-list-timeout=none-static chain=prerouting content=.vidio. dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-microsoft-team address-list-timeout=none-static chain=prerouting content=*.lync.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-microsoft-team address-list-timeout=none-static chain=prerouting content=*.teams.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+/ip firewall raw add action=add-dst-to-address-list address-list=z-list-ip-microsoft-team address-list-timeout=none-static chain=prerouting content=teams.microsoft.com dst-address-list=!ip-privatee-local&dns src-address-list=ip-local disabled=yes
+
+

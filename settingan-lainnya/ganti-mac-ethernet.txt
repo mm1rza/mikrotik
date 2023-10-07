@@ -1,4 +1,5 @@
-/interface ethernet set ether1-isp1 mac-address=94:90:34:B6:84:11
+/interface ethernet set ether1-isp1 mac-address=64:2C:AC:09:AA:01
+/interface ethernet set ether2-isp2 mac-address=64:2C:AC:09:AA:02
 
 74:DF:BF:88:37:11-55	router mnet
 94:90:34:B6:84:11-		route rumah
@@ -12,3 +13,5 @@ a8:a1:59:20:de:52		ASRock Incorporation
 
 /interface bridge set lan-rumah mac-address=00:1B:10:A0:25:11
 
+
+64:2C:AC:09:AA:01		huawei

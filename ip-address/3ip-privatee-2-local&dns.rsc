@@ -83,3 +83,6 @@ add address=api.telegram.org comment="LAINNYA" list=ip-privatee-local&dns
 add address=licence.mikrotik.com comment="LAINNYA" list=ip-privatee-local&dns
 add address=vpn.mnet.my.id comment="LAINNYA" list=ip-privatee-local&dns
 add address=mnet.my.id comment="LAINNYA" list=ip-privatee-local&dns
+
+
+
