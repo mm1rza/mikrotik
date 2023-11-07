@@ -1,1 +1,0 @@
-/queue simple remove [ find name ~"hs-<" ]

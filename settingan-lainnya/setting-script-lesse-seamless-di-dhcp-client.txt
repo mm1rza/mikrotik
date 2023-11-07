@@ -1,9 +1,0 @@
-{
-:if ($bound=1) do={
-log warning ("seamless konek")
-/ip firewall filter disable numbers=0
-} else={
-log error ("seamless mati")
-/ip firewall filter enable numbers=0
-}
-}

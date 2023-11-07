@@ -1,0 +1,212 @@
+##	UPDATE PACKAGE & UPGRADE DI SCRIPT
+## 	BUAT FOLDER BACKUP DI SERVER AGAR BISA AUTO BACKUP
+
+###################################################
+## 				  BASIC SETTING 				 ##
+###################################################
+/system ntp client
+set enabled=yes primary-ntp=216.239.35.4 secondary-ntp=211.233.84.186
+/system clock
+set time-zone-autodetect=no time-zone-name=Asia/Jakarta
+/ip dns
+set allow-remote-requests=yes cache-max-ttl=1d cache-size=51200KiB
+/system package update
+set channel=long-term
+
+
+
+###################################################
+## 				  ADVANCE SETTINGS 				 ##
+###################################################
+/tool romon
+set enabled=yes
+/snmp
+set enabled=yes
+/ip neighbor discovery-settings
+set discover-interface-list=all
+/ip service
+set telnet disabled=yes
+set ftp disabled=yes
+set www disabled=yes
+set ssh disabled=yes
+set api disabled=yes
+set api-ssl disabled=yes
+#/ip firewall nat
+#add action=masquerade chain=srcnat disabled=yes
+
+
+
+###################################################
+## 		 	QUEUE TYPE + QUEUE BASIC 			 ##
+###################################################
+/queue type add kind=pcq name=pcq-download pcq-classifier=dst-address pcq-dst-address6-mask=64 pcq-src-address6-mask=64
+/queue type add kind=pcq name=pcq-upload pcq-classifier=src-address pcq-dst-address6-mask=64 pcq-src-address6-mask=64
+/queue type add kind=pfifo name=default-100 pfifo-limit=100
+/queue type add kind=sfq name=FULL-SPEED-LOKAL
+/queue type add kind=pfifo name=default-500 pfifo-limit=500
+/queue type add kind=pfifo name="default-small ORIGINAL" pfifo-limit=10
+
+/queue simple add disabled=yes max-limit=100M/100M name="~~~~  BYPASS  ~~~~" priority=1/1 queue=default-500/default-500 target=192.168.55.0/24
+/queue simple add max-limit=100M/100M name="-            LOKAL           -" packet-marks=lokal priority=1/1 queue=FULL-SPEED-LOKAL/FULL-SPEED-LOKAL target=10.0.0.0/8,172.16.0.0/12
+/queue simple add max-limit=100M/100M name="--             VIP              --" packet-marks=vip priority=1/1 target=10.0.0.0/8,172.16.0.0/12
+/queue simple add max-limit=100M/100M name="---          GAME          ---" packet-marks=game-ml,game-ff priority=2/2 target=10.0.0.0/8,172.16.0.0/12
+/queue simple add max-limit=21M/21M name="----   SPEEDTEST    ----" packet-marks=speedtest priority=1/1 queue=default-500/default-500 target=10.10.0.0/21,10.10.12.3/32
+/queue simple add name="--------ALL TRAFIK--------" target=10.0.0.0/8,172.16.0.0/12
+/queue simple add name=rumahan parent="--------ALL TRAFIK--------" target=10.10.0.0/21,10.10.12.3/32
+/queue simple add name=hotspotan parent="--------ALL TRAFIK--------" target=172.16.0.0/12
+
+
+
+###################################################
+## 			BASIC FIREWALL FILTER 				 ##
+###################################################
+
+/interface list add name=ISP
+/interface list add name=LAN
+
+/ip firewall filter add action=drop chain=forward comment="                DROP ping ke modem isp" dst-address-list=ip-modem-isp protocol=icmp src-address-list=ip-local
+/ip firewall filter add action=drop chain=forward comment="                DROP ping" dst-address-list=z-list-ip-redirect packet-size=!0-850 protocol=icmp
+/ip firewall filter add action=drop chain=forward dst-address-list=z-list-ip-redirect fragment=yes protocol=icmp
+/ip firewall filter add action=drop chain=input packet-size=!0-800 protocol=icmp
+/ip firewall filter add action=drop chain=input fragment=yes protocol=icmp
+/ip firewall filter add action=drop chain=forward comment="                DROP tracert" icmp-options=11:0 in-interface-list=ISP protocol=icmp
+/ip firewall filter add action=drop chain=forward icmp-options=3:3 in-interface-list=ISP protocol=icmp
+/ip firewall filter add action=drop chain=input comment="                DROP (neighbor dis 5678) (mac address 20561) (snmp 161,162) (dude 2210,2211) (proxy 3128,8080) (btest 2000,3000) (tracert 33434-33534) (dns 53,5353,853)" dst-port=5678,20561,161,162,2210,2211,3128,8080,2000,3000,33434-33534,53,5353,853 in-interface-list=ISP protocol=tcp
+/ip firewall filter add action=drop chain=input dst-port=5678,20561,161,162,2210,2211,3128,8080,2000,3000,33434-33534,53,5353,853 in-interface-list=ISP protocol=udp
+/ip firewall filter add action=drop chain=input comment="                DROP (winbox 21,22,23,8291,8728,8729,80,443)" dst-port=21,22,23,8291,8728,8729,80,443,8085 in-interface-list=ISP protocol=tcp
+/ip firewall filter add action=drop chain=input dst-port=21,22,23,8291,8728,8729,80,443,8085 in-interface-list=ISP protocol=udp
+/ip firewall filter add action=drop chain=forward comment="BebasIT | Bypass DPI" content="Location: http://lamanlabuh.aduankonten.id/" disabled=yes in-interface-list=ISP protocol=tcp
+/ip firewall filter add action=drop chain=forward comment="BebasIT | Bypass DPI" disabled=yes in-interface-list=ISP protocol=tcp tcp-flags=rst,ack
+
+
+
+###################################################
+## 			  USERNAME & PASSWORD 				 ##
+###################################################
+/user group
+add name=bacasaja policy="read,winbox,romon,!local,!telnet,!ssh,!ftp,!reboot,!\
+    write,!policy,!test,!password,!web,!sniff,!sensitive,!api,!dude,!tikapp"
+add name=bwtest policy="local,test,winbox,!telnet,!ssh,!ftp,!reboot,!read,!wri\
+    te,!policy,!password,!web,!sniff,!sensitive,!api,!romon,!dude,!tikapp"
+	
+/user add name=tegalakalakanemen password=walikotanedandutanbae456 group=full
+/user add name=mm1rza password=polisibobo456 group=full
+/user add name=mm1rzamm1rza password=awasadawewe456 group=bacasaja
+/user add name=usermirza password=usermirza456 group=bacasaja
+/user add name=admin1 group=bwtest
+/user add name=admin2 group=bwtest
+/user add name=admin3 group=bwtest
+/user add name=admin123 group=bwtest
+
+/user set tegalakalakanemen password=walikotanedandutanbae456 group=full
+/user set mm1rza password=polisibobo456 group=full
+/user set mm1rzamm1rza password=awasadawewe456 group=bacasaja
+/user set usermirza password=usermirza456 group=bacasaja
+/user set admin1 password="" group=bwtest
+/user set admin2 password="" group=bwtest
+/user set admin3 password="" group=bwtest
+/user set admin123 password="" group=bwtest
+
+#/user set admin password="" group=bwtest
+
+
+
+###################################################
+##	SCRIPT AUTO BACKUP SETINGAN KE SERVER MIRZA	 ##
+###################################################
+/system scheduler
+add interval=12h name="##backup ke server mirza" on-event=\
+    "/system script run ##backupkeservermirza" policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    start-date=jan/01/2020 start-time=00:00:00
+/system script
+add dont-require-permissions=yes name=##backupkeservermirza owner=admin \
+    policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    source=":local ftphost \"vpn.mnet.my.id\"\r\
+    \n:local ftpuser \"mnet\"\r\
+    \n:local ftppassword \"mnet\"\r\
+    \n:local ftppath \"/backup-client/baru-tegal/\"\r\
+    \n\r\
+    \n:local identity [/system identity get name]\r\
+    \n:local mnet1 \"\$identity.backup\"\r\
+    \n:local mnet2 \"\$identity.rsc\"\r\
+    \n\r\
+    \n/system backup save name=\$mnet1\r\
+    \n/export compact file=\$mnet2\r\
+    \n\r\
+    \n:delay 10s;\r\
+    \n/tool fetch address=\"\$ftphost\" src-path=\$mnet1 user=\"\$ftpuser\" mo\
+    de=ftp password=\"\$ftppassword\" dst-path=\"\$ftppath/\$mnet1\" upload=ye\
+    s\r\
+    \n/tool fetch address=\"\$ftphost\" src-path=\$mnet2 user=\"\$ftpuser\" mo\
+    de=ftp password=\"\$ftppassword\" dst-path=\"\$ftppath/\$mnet2\" upload=ye\
+    s"
+add dont-require-permissions=no name=##updatedanupgrade owner=mm1rza policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/\
+    system package update\r\
+    \nset channel=long-term\r\
+    \n:delay 2s;\r\
+    \n/system package update\r\
+    \ncheck-for-updates once\r\
+    \n:delay 3s;\r\
+    \n:if ( [get status] = \"New version is available\") do={ install }\r\
+    \n\r\
+    \n#update frimware\r\
+    \n/system routerboard upgrade\r\
+    \ny\r\
+    \ny"
+
+
+
+
+
+
+####   SELESAI - SELESAI - SELESAI - SELESAI ####
+
+
+
+###################################################
+## 				 WIRELESS 						 ##
+###################################################
+/interface wireless nstreme
+set wlan1 enable-nstreme=yes
+/interface wireless
+set [ find default-name=wlan1 ] disabled=no 
+/interface wireless
+set [ find default-name=wlan1 ] band=5ghz-a/n channel-width=20/40mhz-XX
+/interface wireless
+set [ find default-name=wlan1 ] country=no_country_set disabled=no 
+/interface wireless
+set [ find default-name=wlan1 ] frequency-mode=superchannel
+/interface wireless
+set [ find default-name=wlan1 ] mode=station-bridge
+
+
+
+###################################################
+## 				  IP ADDRESS	 				 ##
+###################################################
+/interface bridge
+add name=bridge
+
+/ip route
+add distance=10 gateway=192.168.55.1
+/ip dns
+set servers=192.168.55.1
+/ip address
+add address=192.168.55.2/24 interface=bridge network=192.168.55.0
+/system identity
+set name=002-AP-asep
+#	002-AP-asep
+#	003-ST-asep
+
+
+/interface bridge port
+add bridge=bridge interface=all
+
+
+####   SELESAI - SELESAI - SELESAI - SELESAI ####
+
+
+
+

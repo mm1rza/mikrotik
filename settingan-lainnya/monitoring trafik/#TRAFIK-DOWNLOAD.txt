@@ -1,4 +1,0 @@
-:local namaINT "lan-client";
-:local rx [/interface get value-name="rx-byte" [find name="$namaINT"]];
-:local rxMB ($rx / 1024 / 1024 / 1024);
-/system sche set comment=$rxMB [find name="#TRAFIK-DOWNLOAD"]
