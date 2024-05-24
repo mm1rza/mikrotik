@@ -1,0 +1,55 @@
+ether1		192.168.1.1
+ether2		192.168.2.1
+ether3		192.168.3.1
+
+
+/ip dhcp-client add interface="ether1" add-default-route=no disabled=no
+/ip dhcp-client add interface="ether2" add-default-route=no disabled=no
+/ip dhcp-client add interface="ether3" add-default-route=no disabled=no
+
+
+/ip dns set allow-remote-requests=yes servers=8.8.8.8,8.8.4.4
+
+
+/ip firewall nat add action=masquerade chain=srcnat comment="Global NAT Masquerade - BILHANET" place-before=*0
+
+
+
+/ip firewall address-list add address=10.0.0.0/8 list=LOCAL
+/ip firewall address-list add address=172.16.0.0/12 list=LOCAL
+/ip firewall address-list add address=192.168.0.0/16 list=LOCAL
+
+
+/routing table add name="via-ISP1" fib
+/routing table add name="via-ISP2" fib
+/routing table add name="via-ISP3" fib
+
+
+/ip route add distance=1 dst-address=1.0.0.1 gateway=192.168.1.1
+/ip route add distance=1 dst-address=1.0.0.2 gateway=192.168.2.1
+/ip route add distance=1 dst-address=1.0.0.3 gateway=192.168.3.1
+/ip route add check-gateway=ping distance=1 gateway=1.0.0.1 target-scope=30
+/ip route add check-gateway=ping distance=2 gateway=1.0.0.2 target-scope=30
+/ip route add check-gateway=ping distance=3 gateway=1.0.0.3 target-scope=30
+/ip route add check-gateway=ping distance=1 gateway=1.0.0.1 routing-table="via-ISP1" target-scope=30
+/ip route add check-gateway=ping distance=1 gateway=1.0.0.2 routing-table="via-ISP2" target-scope=30
+/ip route add check-gateway=ping distance=1 gateway=1.0.0.3 routing-table="via-ISP3" target-scope=30
+
+
+/ip firewall mangle add action=accept chain=prerouting dst-address-list=LOCAL src-address-list=LOCAL comment="Accept All LOCAL IP - BILHANET"
+/ip firewall mangle add action=accept chain=postrouting dst-address-list=LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=accept chain=forward dst-address-list=LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=accept chain=input dst-address-list=LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=accept chain=output dst-address-list=LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=mark-connection chain=input in-interface="ether1" new-connection-mark="via-ether1" passthrough=yes comment="Load Balance PCC - BILHANET"
+/ip firewall mangle add action=mark-connection chain=input in-interface="ether2" new-connection-mark="via-ether2" passthrough=yes
+/ip firewall mangle add action=mark-connection chain=input in-interface="ether3" new-connection-mark="via-ether3" passthrough=yes
+/ip firewall mangle add action=mark-routing chain=output connection-mark="via-ether1" new-routing-mark="via-ISP1" passthrough=yes
+/ip firewall mangle add action=mark-routing chain=output connection-mark="via-ether2" new-routing-mark="via-ISP2" passthrough=yes
+/ip firewall mangle add action=mark-routing chain=output connection-mark="via-ether3" new-routing-mark="via-ISP3" passthrough=yes
+/ip firewall mangle add action=mark-connection chain=prerouting dst-address-type=!local new-connection-mark="via-ether1" passthrough=yes per-connection-classifier=both-addresses-and-ports:3/0 dst-address-list=!LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=mark-connection chain=prerouting dst-address-type=!local new-connection-mark="via-ether2" passthrough=yes per-connection-classifier=both-addresses-and-ports:3/1 dst-address-list=!LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=mark-connection chain=prerouting dst-address-type=!local new-connection-mark="via-ether3" passthrough=yes per-connection-classifier=both-addresses-and-ports:3/2 dst-address-list=!LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=mark-routing chain=prerouting connection-mark="via-ether1" new-routing-mark="via-ISP1" passthrough=yes dst-address-list=!LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=mark-routing chain=prerouting connection-mark="via-ether2" new-routing-mark="via-ISP2" passthrough=yes dst-address-list=!LOCAL src-address-list=LOCAL
+/ip firewall mangle add action=mark-routing chain=prerouting connection-mark="via-ether3" new-routing-mark="via-ISP3" passthrough=yes dst-address-list=!LOCAL src-address-list=LOCAL

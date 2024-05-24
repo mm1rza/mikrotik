@@ -1,0 +1,17 @@
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("MNET tidak bisa di ping")
+} else={
+log warning ("MNET aktif mulai mengunduh config list-dns-static.rsc")
+	/ip dns static remove [find comment="MNET-DNS-STATIC"]
+	/ip dns cache flush
+	log warning ("berhasil menghapus list-dns-static.rsc lama")
+	:delay 1s
+	:if ([:len [/file find name=list-dns-static.rsc]] > 0) do={/file remove list-dns-static.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/dns/list-dns-static.rsc" mode=http;
+	log warning ("berhasil mendownload list-dns-static.rsc baru")
+	/import list-dns-static.rsc
+	:delay 10s
+	/file remove list-dns-static.rsc
+	:log warning message="berhasil import list-dns-static.rsc";
+};
