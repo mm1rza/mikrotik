@@ -24,7 +24,7 @@ add address=224.0.0.0/3 comment=ip-private-local list=ip-privatee-local&dns
 add address=255.255.255.255 comment=ip-private-local list=ip-privatee-local&dns
 add address=240.0.0.0/4 comment=ip-private-local list=ip-privatee-local&dns
 
-
+:delay 1000ms;
 
 
 
@@ -73,16 +73,24 @@ add address=103.87.68.195 comment="DNS BebasID NO VIRUS" list=ip-privatee-local&
 add address=103.87.68.194 comment="DNS BebasID BLOKIR IKLAN" list=ip-privatee-local&dns
 add address=103.87.68.196 comment="DNS BebasID BLOKIR VIRUS, KONTEN DEWASA & JUDI" list=ip-privatee-local&dns
 
+add address=103.88.88.88 comment="DNS APJII" list=ip-privatee-local&dns
+add address=103.88.88.99 comment="DNS APJII" list=ip-privatee-local&dns
+add address=203.119.13.77 comment="DNS APJII" list=ip-privatee-local&dns
+add address=203.119.13.78 comment="DNS APJII" list=ip-privatee-local&dns
+
+:delay 1000ms;
+
 add address=211.233.84.186 comment="SNTP" list=ip-privatee-local&dns
 add address=216.239.35.4 comment="SNTP" list=ip-privatee-local&dns
 
 
 
 add address=download.mikrotik.com comment="LAINNYA" list=ip-privatee-local&dns
-add address=api.telegram.org comment="LAINNYA" list=ip-privatee-local&dns
 add address=licence.mikrotik.com comment="LAINNYA" list=ip-privatee-local&dns
-add address=vpn.mnet.my.id comment="LAINNYA" list=ip-privatee-local&dns
-add address=mnet.my.id comment="LAINNYA" list=ip-privatee-local&dns
 
+add address=api.telegram.org comment="LAINNYA" list=ip-privatee-local&dns
+
+add address=mnet.my.id comment="LAINNYA" list=ip-privatee-local&dns
+add address=all.mnet.my.id comment="LAINNYA" list=ip-privatee-local&dns
 
 

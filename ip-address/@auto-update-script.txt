@@ -1,43 +1,117 @@
-
-
 :if ([/ping address=mnet.my.id count=3 ] = 0) do={
-log error ("mnet tidak bisa di ping")
+log error ("MNET tidak bisa di ping")
 } else={
-/ip dns cache flush
+log warning ("MNET aktif mulai mengunduh config list-ip-speedtest.rsc")
 	/ip firewall address-list remove [find comment="MNET-SPEEDTEST"]
+	/ip dns cache flush
+	log warning ("berhasil menghapus list-ip-speedtest.rsc lama")
 	:delay 1s
 	:if ([:len [/file find name=list-ip-speedtest.rsc]] > 0) do={/file remove list-ip-speedtest.rsc }; 
 	:delay 1s
 	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-speedtest.rsc" mode=http;
+	log warning ("berhasil mendownload list-ip-speedtest.rsc baru")
 	/import list-ip-speedtest.rsc
-	:delay 5s
+	:delay 10s
 	/file remove list-ip-speedtest.rsc
-};
-
-:if ([/ping address=mnet.my.id count=3 ] = 0) do={
-log error ("mnet tidak bisa di ping")
-} else={
-	/ip firewall address-list remove [find comment="MNET-WHATSAPP"]
-	:delay 1s
-	:if ([:len [/file find name=list-ip-whatsapp.rsc]] > 0) do={/file remove list-ip-whatsapp.rsc }; 
-	:delay 1s
-	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-whatsapp.rsc" mode=http;
-	/import list-ip-whatsapp.rsc
-	:delay 5s
-	/file remove list-ip-whatsapp.rsc
+	:log warning message="berhasil import list-ip-speedtest.rsc";
 };
 
 
+
 :if ([/ping address=mnet.my.id count=3 ] = 0) do={
-log error ("mnet tidak bisa di ping")
+log error ("MNET tidak bisa di ping")
 } else={
+log warning ("MNET aktif mulai mengunduh config list-ip-akamai.rsc")
+	/ip firewall address-list remove [find comment="MNET-AKAMAI"]
+	/ip dns cache flush
+	log warning ("berhasil menghapus list-ip-akamai.rsc lama")
+	:delay 1s
+	:if ([:len [/file find name=list-ip-akamai.rsc]] > 0) do={/file remove list-ip-akamai.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-akamai.rsc" mode=http;
+	log warning ("berhasil mendownload list-ip-akamai.rsc baru")
+	/import list-ip-akamai.rsc
+	:delay 10s
+	/file remove list-ip-akamai.rsc
+	:log warning message="berhasil import list-ip-akamai.rsc";
+};
+
+
+
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("MNET tidak bisa di ping")
+} else={
+log warning ("MNET aktif mulai mengunduh config list-ip-apple.rsc")
+	/ip firewall address-list remove [find comment="MNET-APPLE"]
+	/ip dns cache flush
+	log warning ("berhasil menghapus list-ip-apple.rsc lama")
+	:delay 1s
+	:if ([:len [/file find name=list-ip-apple.rsc]] > 0) do={/file remove list-ip-apple.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-apple.rsc" mode=http;
+	log warning ("berhasil mendownload list-ip-apple.rsc baru")
+	/import list-ip-apple.rsc
+	:delay 10s
+	/file remove list-ip-apple.rsc
+	:log warning message="berhasil import list-ip-apple.rsc";
+};
+
+
+
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("MNET tidak bisa di ping")
+} else={
+log warning ("MNET aktif mulai mengunduh config list-ip-google.rsc")
 	/ip firewall address-list remove [find comment="MNET-GOOGLE"]
+	/ip dns cache flush
+	log warning ("berhasil menghapus list-ip-google.rsc lama")
 	:delay 1s
 	:if ([:len [/file find name=list-ip-google.rsc]] > 0) do={/file remove list-ip-google.rsc }; 
 	:delay 1s
 	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-google.rsc" mode=http;
+	log warning ("berhasil mendownload list-ip-google.rsc baru")
 	/import list-ip-google.rsc
-	:delay 5s
+	:delay 10s
 	/file remove list-ip-google.rsc
+	:log warning message="berhasil import list-ip-google.rsc";
 };
 
+
+
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("MNET tidak bisa di ping")
+} else={
+log warning ("MNET aktif mulai mengunduh config list-ip-pustekkom.rsc")
+	/ip firewall address-list remove [find comment="MNET-PUSTEKKOM"]
+	/ip dns cache flush
+	log warning ("berhasil menghapus list-ip-pustekkom.rsc lama")
+	:delay 1s
+	:if ([:len [/file find name=list-ip-pustekkom.rsc]] > 0) do={/file remove list-ip-pustekkom.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-pustekkom.rsc" mode=http;
+	log warning ("berhasil mendownload list-ip-pustekkom.rsc baru")
+	/import list-ip-pustekkom.rsc
+	:delay 10s
+	/file remove list-ip-pustekkom.rsc
+	:log warning message="berhasil import list-ip-pustekkom.rsc";
+};
+
+
+
+:if ([/ping address=mnet.my.id count=3 ] = 0) do={
+log error ("MNET tidak bisa di ping")
+} else={
+log warning ("MNET aktif mulai mengunduh config list-ip-whatsapp.rsc")
+	/ip firewall address-list remove [find comment="MNET-WHATSAPP"]
+	/ip dns cache flush
+	log warning ("berhasil menghapus list-ip-whatsapp.rsc lama")
+	:delay 1s
+	:if ([:len [/file find name=list-ip-whatsapp.rsc]] > 0) do={/file remove list-ip-whatsapp.rsc }; 
+	:delay 1s
+	/tool fetch url="https://mnet.my.id/file/uploads/settingan-mikrotik/ip-address/list-ip-whatsapp.rsc" mode=http;
+	log warning ("berhasil mendownload list-ip-whatsapp.rsc baru")
+	/import list-ip-whatsapp.rsc
+	:delay 10s
+	/file remove list-ip-whatsapp.rsc
+	:log warning message="berhasil import list-ip-whatsapp.rsc";
+};
